@@ -1,0 +1,32 @@
+---
+title: 庫面頂
+description: 「即時搜索」(Live Search)儲存前沿可動態返回建議的產品和縮略圖。
+exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
+source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 0%
+
+---
+
+# 庫面頂
+
+當 [!DNL Live Search] 是 [已安裝](install.md)，當購物者在 [搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 框。 鍵入每個字元後，將使用建議的產品和頂部搜索結果的縮略圖來更新跨距。
+
+[!DNL Live Search] 返回兩個或更多字元的查詢的結果。 對於部分匹配，每個字的最大字元數為20。 「鍵入時搜索」查詢中的字元數不可配置。
+
+>[!NOTE]
+>
+>的 [!DNL Live Search] storefront popover僅適用於使用 *盧馬* 主題，或基於 *盧馬*。 的 *盧馬* 的 [!DNL Commerce] 示例資料。 跨距不支援 *空白* 的子菜單。 請參閱 [使用修改的主題](#working-with-modified-theme) 的子菜單。
+
+## 可搜索屬性
+
+要生成目標明確的結果，請查看 [可搜索](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`)產品屬性。 為確保關聯性，只有在屬性包含含有明確和簡明含義的內容時，才使屬性可搜索。 避免使用包含較不精確、較長文本的屬性，如 `description`，雖然預設情況下啟用搜索功能，但會降低搜索結果的精度。 例如，如果某人搜索「短褲」，而且有帶有「短袖」一詞描述的襯衫，則搜索結果中將包含這些襯衫。
+
+以下屬性始終可搜索：
+
+* `sku`
+* `name`
+* `categories`
+
+![即時搜索跨距](assets/storefront-search-as-you-type.png)
