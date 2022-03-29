@@ -3,20 +3,22 @@ user-guide-title: 即時搜索指南
 user-guide-description: 本指南提供有關使用Adobe Commerce即時搜索的詳細說明。
 breadcrumb-title: 即時搜索指南
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 2%
 
 ---
 
 # 即時搜索商業 {#live-search}
 
-- [即時搜索指南](overview.md)
-- 入門 {#getting-started}
-   - [安裝](install.md)
-   - [發行說明](release-notes.md)
-- 即時搜索店面{#live-search-storefront}
+- [指南概述](guide-overview.md)
+- [即時搜索簡介](overview.md)
+- [發行說明](release-notes.md)
+- 板載即時搜索 {#onboard}
+   - [入門概述](onboarding-overview.md)
+   - [安裝Live Search](install.md)
+- 即時搜索店面 {#live-search-storefront}
    - [快速瀏覽](quick-tour.md)
    - [庫面頂](storefront-popover.md)
    - [造型跨距元素](storefront-popover-styling.md)

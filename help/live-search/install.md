@@ -2,66 +2,22 @@
 title: 安裝Live Search
 description: 瞭解如何從Adobe Commerce安裝、更新和卸載Live Search。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
 
 # 安裝 [!DNL Live Search]
 
-[!DNL Live Search] 是一組獨立 [軟體包](#live-search-packages) 取代了標準Magento Open Source和Adobe Commerce搜索功能。 的 [!DNL Live Search] 模組從伺服器的命令行安裝，並作為 [服務](https://docs.magento.com/user-guide/system/saas.html)。 完成後， [!DNL Live Search] 在 *營銷* 菜單 *SEO &amp; Search* 的 [!DNL Commerce] 管理員。
-
-Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行查詢服務。
-
-![即時搜索體系結構圖](assets/architecture-diagram.svg)
-
-在 [!DNL Live Search] 安裝和配置了模組（將目錄模組作為依賴項）, [!DNL Commerce] 開始與SaaS服務共用搜索和編錄資料。 此時，管理員用戶可以設定、自定義和管理搜索小面、同義詞和促銷規則。
+Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和配置了模組（將目錄模組作為依賴項）, [!DNL Commerce] 開始與SaaS服務共用搜索和編錄資料。 現在， *管理* 用戶可以設定、自定義和管理搜索小面、同義詞和促銷規則。
 
 本主題提供了執行以下操作的說明：
 
 * [安裝 [!DNL Live Search]](#before-you-begin) （方法1和2）
 * [更新 [!DNL Live Search]](#update)
 * [卸載 [!DNL Live Search]](#uninstall)
-
-## 要求 {#requirements}
-
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* 7.3菲律賓比索/7.4
-* [!DNL Composer]
-
-### 支援的平台
-
-* Adobe Commerce在prem(EE):2.4.x
-* Adobe Commerce雲(ECE):2.4.x
-
-## 邊界和閾值
-
-此時， Live Search類別搜索/類別API具有以下支援的限制和靜態邊界：
-
-### 索引
-
-* 每個儲存視圖索引最多300個產品屬性
-* 僅索引Adobe Commerce資料庫中的產品
-* 不為CMS頁編製索引
-
-### 功能
-
-* 店面 [高級（表單）搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 模組
-* [客戶組](https://docs.magento.com/user-guide/customers/customer-groups.html)
-* [自定義價格組](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* 使用的多個庫存庫位 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS擴展
-* [整合B2B功能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
-
-### 查詢
-
-* Live Search無權訪問類別樹的完整分類，這使得某些分層導航搜索方案超出其範圍。
-* Live Search使用唯一的GraphQL終結點進行查詢以支援智慧分頁和按類型搜索等功能。 雖然與 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，存在一些差異，有些欄位可能目前不完全相容。
-
-### Progressive Web Application(PWA)
-
-* 即時搜索不支援 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 此時此刻。
 
 ## 開始之前 {#before-you-begin}
 
@@ -74,10 +30,6 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
    * [方法1](#method-1):安裝時不 [!DNL Elasticsearch]
    * [方法2](#method-2):安裝時 [!DNL Elasticsearch] （無停機時間）
 
-   >[!TIP]
-   >
-   >要在命令行上輸入說明，請將滑鼠懸停在代碼框的最右側，然後按一下 [!UICONTROL **複製**] 的子菜單。 然後，將其貼上到命令行中。 如果您沒有從命令行工作的經驗，請向系統整合商或開發人員尋求幫助。
-
 ## 方法1:安裝而不Elasticsearch {#method-1}
 
 安裝時建議使用此登錄方法 [!DNL Live Search] 至：
@@ -86,6 +38,10 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 * 暫存環境
 
 在此方案中，在 [!DNL Live Search] 服務為目錄中的所有產品編製索引。 在安裝過程中， [!DNL Live Search] 模組已啟用， [!DNL Elasticsearch] 模組被禁用。
+
+>[!TIP]
+>
+>要避免鍵入錯誤，請將滑鼠懸停在代碼框的最右側，按一下 [!UICONTROL **複製**] 連結，然後貼上到命令行中。
 
 1. 安裝Adobe Commerce2.4.x，不 [!DNL Live Search]。
 
@@ -100,7 +56,7 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 1. 運行以下命令以禁用 [!DNL Elasticsearch] 及相關模組，並安裝 [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -117,7 +73,7 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
    * 產品變型源
    * 目錄屬性源
 
-1. 配置 [API密鑰](#configure-api-keys) 至 [同步](#synchronize-catalog-data) 您的目錄資料 [!DNL Live Search] 服務。
+1. 配置 [API密鑰](#configure-api-keys) 並驗證目錄資料 [同步](#synchronize-catalog-data) 與 [!DNL Live Search] 服務。
 
 1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根據 [面向要求](https://docs.magento.com/user-guide/live-search/facets.html)。
 
@@ -134,6 +90,10 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 * 現有生產 [!DNL Commerce] 安裝
 
 在這種情況下， [!DNL Elasticsearch] 臨時管理來自商店的搜索請求，而 [!DNL Live Search] 服務為後台所有產品編製索引，不會中斷正常的店面操作。 [!DNL Elasticsearch] 已禁用， [!DNL Live Search] 在索引和同步所有目錄資料後啟用。
+
+>[!TIP]
+>
+>要避免鍵入錯誤，請將滑鼠懸停在代碼框的最右側，按一下 [!UICONTROL **複製**] 連結，然後貼上到命令行中。
 
 1. 下載 `live-search` 軟體包，從命令行運行以下命令：
 
@@ -161,7 +121,7 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
    * 產品變型源
    * 目錄屬性源
 
-1. 配置 [API密鑰](#configure-api-keys) 至 [同步](#synchronize-catalog-data) 您的目錄資料 [!DNL Live Search] 服務。
+1. 配置 [API密鑰](#configure-api-keys) 並驗證目錄資料 [同步](#synchronize-catalog-data) 與 [!DNL Live Search] 服務。
 
 1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根據 [面向要求](https://docs.magento.com/user-guide/live-search/facets.html)。
 
@@ -169,17 +129,17 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 
 1. 至少等待一小時，以便對資料進行索引和同步。 然後，使用 [GraphQL操場](https://devdocs.magento.com/live-search/graphql-support.html) 使用預設查詢驗證以下內容：
 
-   * 返回的產品數量接近您對商店視圖的預期
-   * 返回Facet
+   * 返回的產品數量接近您對商店視圖的預期。
+   * 返回Facet。
 
-1. 運行以下命令以禁用 [!DNL Elasticsearch] 模組，啟用 [!DNL Live Search] 模組，並運行 `setup`:
+1. 運行以下命令以啟用 [!DNL Live Search] 模組，禁用 [!DNL Elasticsearch]，然後運行 `setup`。
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -198,7 +158,7 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 
 ### Adobe Commerce開發商或SI
 
-開發人員或SI按照配置的「商務服務」部分中所述配置SaaS資料空間。 安裝SaaS模組後，Commerce Services將在「管理配置」邊欄中可用。
+開發人員或SI按照配置的Commerce Services部分中所述配置SaaS資料空間。 在 *管理*，安裝SaaS模組後，Commerce Services將在Configuration邊欄中可用。
 
 ## 同步目錄資料 {#synchronize-catalog-data}
 
@@ -239,7 +199,7 @@ Adobe Commerce方面包括托管搜索管理員、同步目錄資料以及運行
 composer update magento/live-search --with-dependencies
 ```
 
-要更新到主版本（如從1.0到2.0），請編輯項目的根 [!DNL Composer] `.json` 檔案，如下所示：
+要更新到主版本，如從1.0.0到2.0.0，請編輯項目的根 [!DNL Composer] `.json` 檔案，如下所示：
 
 1. 開啟根 `composer.json` 檔案和搜索 `magento/live-search`。
 
@@ -267,7 +227,7 @@ composer update magento/live-search --with-dependencies
 
 | 包 | 說明 |
 |--- |--- |
-| `module-live-search` | 允許商家配置其麵包、同義詞、查詢規則等的搜索設定，並允許訪問只讀GraphQL操作場以test管理員的查詢。 |
+| `module-live-search` | 允許商戶配置其面部設定、同義詞、查詢規則等的搜索設定，並提供對只讀GraphQL操作場的訪問權，以test來自查詢的查詢 *管理*。 |
 | `module-live-search-adapter` | 將搜索請求從店面路由到 [!DNL Live Search] 並將結果呈現在店面。 <br /> — 類別瀏覽 — 從店面路由請求 [頂部導航](https://docs.magento.com/user-guide/catalog/navigation-top.html) 搜索服務。<br /> — 全局搜索 — 路由來自 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 位於店面右上角的 [!DNL Live Search] 服務。 |
 | `module-live-search-storefront-popover` | 「鍵入時搜索」跨距將替換標準快速搜索，並返回頂級搜索結果的動態產品建議和縮略圖。 |
 

@@ -2,9 +2,9 @@
 title: Live Search發行說明
 description: 來自Adobe Commerce的Live Search的最新發佈資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ ht-degree: 1%
 * ![新建](../assets/new.svg)  — 新功能
 * ![修復](../assets/fix.svg)  — 修復和改進
 * ![蟲](../assets/bug.svg)  — 已知問題
+
+## [!DNL Live Search] 2.0
+
+* 與Adobe Commerce(EE)相容：2.4.x
+* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 穩定性：穩定
+
+* ![新建](../assets/new.svg)  — 中的可用行數 [鋪面](quick-tour.md) 可從 *管理*。
+* ![新建](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性。
+* ![新建](../assets/new.svg) - Live Search安裝過程將用高級流程更改進行更新。
+* ![修復](../assets/fix.svg) - [高級搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 連結從店面頁腳中刪除。
+* ![蟲](../assets/bug.svg)  — 以下產品屬性不受支援 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 當用於PWA的beta版時： `description`。 `name`。 `short_description`
+* ![蟲](../assets/bug.svg) - Live Search的測試版PWA不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html)。
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ ht-degree: 1%
 * 穩定性：穩定
 
 * ![新建](../assets/new.svg)  — 店面 [沿](storefront-popover.md) 當購物者在「搜索」框中鍵入查詢時，顯示頂級搜索結果的建議產品和縮略圖。
-* ![新建](../assets/new.svg) - Commerce Admin會話在鍵盤不活動的長時間內保持開啟狀態
+* ![新建](../assets/new.svg)  — 商業 *管理* 會話在鍵盤不活動的長時間內保持開啟狀態
 * ![新建](../assets/new.svg) - [!DNL Live Search] 登機後自動啟用
 * ![修復](../assets/fix.svg)  — 初始索引時間不到1小時
 * ![修復](../assets/fix.svg)  — 接近即時的增量產品更新（安裝和安裝後）
