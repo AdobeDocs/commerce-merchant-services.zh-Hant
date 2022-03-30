@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文檔
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
 
 以下是文檔的最新更改：
 
-* 已更新 [!DNL Live Search] 發行說明 [1.3.1版](/help/live-search/release-notes.md)。
+* 已更新 [!DNL Live Search] 發行說明 [2.0版](/help/live-search/release-notes.md)。
 * 已添加節(_邊界和閾值_) [安裝 [!DNL Live Search]](/help/live-search/install.md) 主題。
 * 已添加 [[!DNL Payment Services] 引導](/help/payment-services/guide-overview.md) 以及新市場擴展和托管服務v1.0.0的最新資訊。
 * 的 [!DNL Live Search] [效能報告儀表板](/help/live-search/performance.md) 提供了消費者使用搜索詞的有效性的洞察。
-* 在中添加了B2B支援 [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html)。
+* 在中添加了B2B支援 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md)。

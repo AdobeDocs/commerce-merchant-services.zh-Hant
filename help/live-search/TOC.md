@@ -2,8 +2,7 @@
 user-guide-title: 即時搜索指南
 user-guide-description: 本指南提供有關使用Adobe Commerce即時搜索的詳細說明。
 breadcrumb-title: 即時搜索指南
-hide: true
-source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
