@@ -1,9 +1,9 @@
 ---
 title: 放置和標籤
 description: 瞭解您可以在站點的各個頁面上放置建議的位置，以及針對每種建議類型常用標籤的建議。
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 有這麼多建議類型可供選擇，您應在每頁上使用哪些？ 如果您不確定從何處開始，請嘗試以下操作：
 
-|首頁|`Recommended for you`| |產品頁|`Viewed this, viewed that`| |購物車|`Bought this, bought that`|
+| 頁面 | 建議類型 |
+|---|---|
+| 首頁 | `Recommended for you` |
+| 產品頁 | `Viewed this, viewed that` |
+| 購物車 | `Bought this, bought that` |
 
 你可以跟蹤 [度量](workspace.md) 並根據需要進行調整。 記住實驗是關鍵。
 

@@ -1,9 +1,9 @@
 ---
 title: 概述
 description: '"[!DNL Product Recommendations] 是一種強大的營銷工具，你可以利用它來增加轉換率、增加收入，並刺激購物者的參與。」'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ ht-degree: 0%
 - 根據以下領域從九種不同的智慧推薦類型中進行選擇：基於購物者、基於項目、基於受歡迎度、趨勢和基於相似性
 - 使用行為資料在購物者的整個店面行程中個性化推薦
 - 衡量與每個建議相關的關鍵指標，以幫助您瞭解建議的影響
-
-- [登機](onboarding.md)
-完成產品建議的安裝和配置。
-
-- [工作區](workspace.md)
-瞭解您在建議工作區中的方法。 建立和編輯建議。
-
-- [類型](type.md)
-瞭解可以部署到站點上各頁的建議。
-
-- [篩選器](filters.md)
-定義包含或排除產品作為建議使用的條件。
-
-- [放置和標籤](placement.md)
-瞭解您可以在站點的各個頁面上放置建議的位置，以及針對每種建議類型常用標籤的建議。
