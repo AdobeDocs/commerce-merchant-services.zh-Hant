@@ -3,27 +3,18 @@ title: 服務文檔
 description: 瀏覽Adobe Commerce產品文檔
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: 文檔
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# 服務文檔 {#documentation}
-
-![Adobe Commerce服務](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![服務文檔](./assets/banner-services-home.png) {#documentation}
 
 Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分。
-
-## 連接到服務
-
-的 [Commerce Services連接器](https://docs.magento.com/user-guide/system/saas.html) 使用API密鑰和私鑰為您的Adobe Commerce或Magento Open Source實例提供整合。 對於資料服務(僅Adobe Commerce)，您還可以在配置中指定資料空間。
-
-## 目錄同步
-
-對於使用目錄資料(產品Recommendations和即時搜索)的服務， [目錄同步](https://docs.magento.com/user-guide/system/catalog-sync.html) 進程將產品資料從Commerce伺服器持續導出到Commerce Services，以使服務保持最新。
 
 ## 可用服務
 
@@ -31,7 +22,7 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
 <tr>
    <td valign="top">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://docs.magento.com/user-guide/recommendations/overview.html">
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(僅Adobe Commerce)<br><em>添加基於購物者行為、流行趨勢、產品相似性等的AI推薦。</em></p>
@@ -65,6 +56,14 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
   </td>
 </tr>
 </table>
+
+## 連接到服務
+
+的 [Commerce Services連接器](https://docs.magento.com/user-guide/system/saas.html) 使用API密鑰和私鑰為您的Adobe Commerce或Magento Open Source實例提供整合。 對於資料服務(僅Adobe Commerce)，您還可以在配置中指定資料空間。
+
+## 目錄同步
+
+對於使用目錄資料(產品Recommendations和即時搜索)的服務， [目錄同步](https://docs.magento.com/user-guide/system/catalog-sync.html) 進程將產品資料從Commerce伺服器持續導出到Commerce Services，以使服務保持最新。
 
 ## 新增功能
 
