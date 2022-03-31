@@ -2,9 +2,9 @@
 title: 安裝Live Search
 description: 瞭解如何從Adobe Commerce安裝、更新和卸載Live Search。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 1. 配置 [API密鑰](#configure-api-keys) 並驗證目錄資料 [同步](#synchronize-catalog-data) 與 [!DNL Live Search] 服務。
 
-1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根據 [面向要求](https://docs.magento.com/user-guide/live-search/facets.html)。
+1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](facets-add.md) 你需要，根據 [面向要求](facets.md)。
 
    您應能在 `cron` 運行屬性源和導出屬性元資料。
 
@@ -123,7 +123,7 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 1. 配置 [API密鑰](#configure-api-keys) 並驗證目錄資料 [同步](#synchronize-catalog-data) 與 [!DNL Live Search] 服務。
 
-1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根據 [面向要求](https://docs.magento.com/user-guide/live-search/facets.html)。
+1. 要使小平面在儲存面中作為濾鏡可用，請添加 [面](facets-add.md) 你需要，根據 [面向要求](facets.md)。
 
    您應能在 `cron` 運行產品和屬性源並將屬性元資料導出到 [!DNL Live Search] 服務。
 
@@ -177,7 +177,7 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 ### 將來的產品更新
 
-在初始同步後，增量產品更新可能需要15分鐘才能可用於儲存前搜索。 要瞭解詳細資訊，請轉到 [流式處理產品更新](https://devdocs.magento.com/live-search/indexing.html)。
+在初始同步後，增量產品更新可能需要15分鐘才能可用於儲存前搜索。 要瞭解詳細資訊，請轉到 [流式處理產品更新](indexing.md)。
 
 ## Test連接 {#test-connection}
 

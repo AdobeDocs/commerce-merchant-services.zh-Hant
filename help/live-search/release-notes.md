@@ -2,9 +2,9 @@
 title: Live Search發行說明
 description: 來自Adobe Commerce的Live Search的最新發佈資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 * 與Adobe Commerce雲(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![新建](../assets/new.svg) - [效能](https://docs.magento.com/user-guide/live-search/performance.html) reporting dashboard提供了消費者使用的搜索術語的洞察。
+* ![新建](../assets/new.svg) - [效能](performance.md) reporting dashboard提供了消費者使用的搜索術語的洞察。
 * ![新建](../assets/new.svg) - [!DNL Live Search] [店面事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 通過事件發佈和訂閱服務以及度量提供對公共資料層的訪問。
 * ![修復](../assets/fix.svg) - [庫面頂](https://devdocs.magento.com/live-search/storefront-popover.html) 有新的 `active` 類 `.search-autocomplete` 控制可見性的容器。
 * ![修復](../assets/fix.svg)  — 在店面， [搜索詞](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 頁腳連結已刪除，其快取已禁用 [!DNL Live Search] 安裝。

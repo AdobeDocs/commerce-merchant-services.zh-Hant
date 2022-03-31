@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文檔
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -59,11 +59,11 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
 
 ## 連接到服務
 
-的 [Commerce Services連接器](https://docs.magento.com/user-guide/system/saas.html) 使用API密鑰和私鑰為您的Adobe Commerce或Magento Open Source實例提供整合。 對於資料服務(僅Adobe Commerce)，您還可以在配置中指定資料空間。
+的 [Commerce Services連接器](saas.md) 使用API密鑰和私鑰為您的Adobe Commerce或Magento Open Source實例提供整合。 對於資料服務(僅Adobe Commerce)，您還可以在配置中指定資料空間。
 
 ## 目錄同步
 
-對於使用目錄資料(產品Recommendations和即時搜索)的服務， [目錄同步](https://docs.magento.com/user-guide/system/catalog-sync.html) 進程將產品資料從Commerce伺服器持續導出到Commerce Services，以使服務保持最新。
+對於使用目錄資料(產品Recommendations和即時搜索)的服務， [目錄同步](catalog-sync.md) 進程將產品資料從Commerce伺服器持續導出到Commerce Services，以使服務保持最新。
 
 ## 新增功能
 
