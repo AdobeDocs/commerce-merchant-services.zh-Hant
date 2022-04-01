@@ -2,9 +2,9 @@
 title: 添加同義詞
 description: 添加Live Search同義詞以改進對搜索請求的響應。
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ ht-degree: 0%
 
 ## 第3步：發佈更改
 
-完成同義詞後，按一下 **發佈更改**。
-在店面，您的更新可能需要兩個小時才能開啟。
+1. 完成同義詞後，按一下 **發佈更改**。
+1. 在店面等待最多兩小時，以便更新可用。
 
 ![發佈更改](assets/synonym-publish.png)
 

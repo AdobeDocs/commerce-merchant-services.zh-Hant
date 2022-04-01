@@ -2,7 +2,7 @@
 title: 造型跨距元素
 description: 有關自定義Live Search儲存前跨距的技術說明。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-有關造型庫面元素的詳細資訊，請參閱 [層疊樣式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 的 [《前端開發人員指南》](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html)。
+有關造型庫面元素的詳細資訊，請參閱 [層疊樣式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 的 [前端開發人員指南](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html)。
 
 ## 類選擇器
 

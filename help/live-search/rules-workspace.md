@@ -2,9 +2,9 @@
 title: 規則工作區
 description: 在Live Search規則工作區中學習方法。
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 | 控制項 | 說明 |
 |--- |--- |
-| 添加規則 | 開啟 [規則編輯器]({% link live-search/rules-add.md %})。 |
+| 添加規則 | 開啟 [規則編輯器](rules-add.md)。 |
 | 狀態 | 按狀態篩選規則清單。 選項：全部、活動、非活動、計畫 |
 | ![列選擇器](assets/btn-show-hide-columns.png) | 指定在網格中可見的列。 選項：上次更新、開始日期、結束日期、狀態 |
 | 搜索 | 按全名或部分匹配搜索規則。 |

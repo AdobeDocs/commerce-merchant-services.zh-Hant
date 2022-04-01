@@ -2,9 +2,9 @@
 title: 安裝Live Search
 description: 瞭解如何從Adobe Commerce安裝、更新和卸載Live Search。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 本主題提供了執行以下操作的說明：
 
-* [安裝 [!DNL Live Search]](#before-you-begin) （方法1和2）
+* 安裝 [!DNL Live Search] （方法1和2）
 * [更新 [!DNL Live Search]](#update)
 * [卸載 [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 ## 配置API密鑰 {#configure-api-keys}
 
-需要Adobe CommerceAPI密鑰及其關聯的私鑰才能連接 [!DNL Live Search] 一個Adobe Commerce。 API密鑰生成並在帳戶中維護 [!DNL Commerce] 許可證持有者，可以與開發商或SI共用。 然後，開發人員可以代表許可證持有者建立和管理SaaS資料空間。
+需要Adobe CommerceAPI密鑰及其關聯的私鑰才能連接 [!DNL Live Search] 一個Adobe Commerce。 API密鑰生成並在帳戶中維護 [!DNL Commerce] 許可證持有者，可以與開發商或SI共用。 然後，開發人員可以代表許可證持有者建立和管理SaaS資料空間。  如果已經有一組API密鑰，則無需重新生成它們。
 
 ### Adobe Commerce牌照持有人
 
-要生成API密鑰和私鑰，請參閱 [Commerce Services連接器](https://docs.magento.com/user-guide/system/saas.html)。
+要生成API密鑰和私鑰，請參閱 [Commerce Services連接器](../landing/saas.md)。
 
 ### Adobe Commerce開發商或SI
 
-開發人員或SI按照配置的Commerce Services部分中所述配置SaaS資料空間。 在 *管理*，安裝SaaS模組後，Commerce Services將在Configuration邊欄中可用。
+開發人員或SI按中所述配置SaaS資料空間 *商務服務* 的子菜單。 在 *管理*,Commerce Services將在 *配置* 安裝SaaS模組時的邊欄。
 
 ## 同步目錄資料 {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 
 ### 將來的產品更新
 
-在初始同步後，增量產品更新可能需要15分鐘才能可用於儲存前搜索。 要瞭解詳細資訊，請轉到 [流式處理產品更新](indexing.md)。
+在初始同步後，增量產品更新可能需要15分鐘才能可用於儲存前搜索。 要瞭解詳細資訊，請轉到 [索引 — 流式處理產品更新](indexing.md)。
 
 ## Test連接 {#test-connection}
 

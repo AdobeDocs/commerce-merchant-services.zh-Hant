@@ -2,9 +2,9 @@
 title: 庫面頂
 description: 「即時搜索」(Live Search)儲存前沿可動態返回建議的產品和縮略圖。
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->的 [!DNL Live Search] storefront popover僅適用於使用 *盧馬* 主題，或基於 *盧馬*。 的 *盧馬* 的 [!DNL Commerce] 示例資料。 跨距不支援 *空白* 的子菜單。 請參閱 [使用修改的主題](#working-with-modified-theme) 的子菜單。
+>的 [!DNL Live Search] storefront popover僅適用於使用 *盧馬* 主題，或基於 *盧馬*。 的 *盧馬* 的 [!DNL Commerce] 示例資料。 跨距不支援 *空白* 的子菜單。 請參閱 [造型跨距元素](storefront-popover-styling.md) 來瞭解更多資訊。
 
 ## 可搜索屬性
 

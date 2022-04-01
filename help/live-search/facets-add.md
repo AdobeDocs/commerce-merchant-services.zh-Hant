@@ -2,7 +2,7 @@
 title: 添加小平面
 description: 瞭解如何將可篩選的產品屬性添加為Live Search Facet。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 步驟2:編輯多面屬性（可選）
 
-1. 要編輯多面屬性，請按一下 **更多** (![更多選擇器](assets/btn-more.png) 選項。
+1. 要編輯多面屬性，請按一下 **更多** (![更多選擇器](assets/btn-more.png))選項。
 1. 在菜單上，按一下 **編輯**。 然後，根據需要調整以下屬性。
 
    * 標籤 — ([無頭](facets-type.md) 僅)輸入要使用的方面標籤。

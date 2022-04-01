@@ -2,7 +2,7 @@
 title: 快速瀏覽
 description: 從店面快速瀏覽Live Search。
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 ## 鍵入時搜索
 
 [!DNL Live Search] 對建議的產品和頂部搜索結果的縮略影像做出響應 [沿](storefront-popover.md) 當購物者將查詢鍵入到 [搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 框。 的 [產品詳細資訊](https://docs.magento.com/user-guide/quick-tour/product-page.html) 當購物者按一下建議或特色產品時，將顯示頁面。 A _查看全部_ 在跨距頁腳中的連結顯示搜索結果頁。
+
 [!DNL Live Search] 返回「鍵入時搜索」結果，查詢包含兩個或多個字元。 對於部分匹配，每個字的最大字元數為20。 查詢中的字元數不可配置。 跨距中包括以下欄位： `name`。 `sku`, `category_ids`。
 
 ![Storefront示例 — 鍵入時搜索](assets/storefront-search-as-you-type.png)
