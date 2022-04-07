@@ -1,17 +1,17 @@
 ---
-title: 在管理員中配置
-description: 安裝後，您可以配置 [!DNL Payment Services] 的子菜單。
+title: 舊式付款服務配置
+description: 安裝後，您可以配置 [!DNL Payment Services] 在儲存配置的管理中。
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# 在管理員中配置
+# 舊式付款服務配置
 
 您可以自定義 [!DNL Payment Services] 使用管理中的有用配置選項滿足您的需要。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 請參閱 [付款選項](payments-options.md#paypal-smart-buttons) 的子菜單。
 
-### 配置PayPal智慧按鈕
+### 配置 [!DNL PayPal Smart Buttons]
 
 您可以在管理員中啟用和配置PayPal智慧按鈕付款選項：
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. 要啟用調試模式，請選擇 `Yes` 為 **[!UICONTROL Debug Mode]** (`No` 禁用)。
 1. 要保存更改，請按一下 **[!UICONTROL Save Config]** 。
 
-#### 配置選項
+### 配置選項
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -106,3 +106,15 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 商店視圖 | 啟用或禁用 [!DNL PayPal Smart Buttons] 產品詳細資訊頁面。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | 商店視圖 | 啟用或禁用 [!DNL PayPal Smart Buttons] 打印。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | 商店視圖 | 啟用或禁用 [!DNL PayPal Smart Buttons] 的子菜單。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] 樣式選項
+
+| 欄位 | [範圍]({% link configuration/scope.md %}) | 說明 |
+|--- |--- |--- |
+| [!UICONTROL Layout] | 儲存視圖 | 定義Paypal智慧按鈕的佈局樣式。 選項： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | 儲存視圖 | 定義Paypal智慧按鈕的顏色。 選項： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | 儲存視圖 | 定義Paypal智慧按鈕的形狀。 選項： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | 儲存視圖 | 定義PayPal智慧按鈕是否使用預設高度。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | 儲存視圖 | 定義PayPal智慧按鈕的高度。 預設值：無 |
+| [!UICONTROL Label] | 儲存視圖 | 定義顯示在PayPal智慧按鈕中的標籤。 選項： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | 儲存視圖 | 啟用標籤。 選項： [!UICONTROL Yes] / [!UICONTROL No] |

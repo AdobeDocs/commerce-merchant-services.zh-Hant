@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明"'
 description: 查看發行說明以瞭解有關所有 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -42,8 +42,6 @@ ht-degree: 1%
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前刪除的產品不會出現在購物車中 _審閱訂單_ 的子菜單。
 
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] 改進管理員中的付款方法標籤。
-
-![已修復問題](../assets/fix.svg)<!-- Issue PAY-2907 --> 改進了事務資料收集，以最好地利用欺詐規則和按儲存容量使用計費保護。
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [不正確的作曲家密鑰](https://support.magento.com/hc/en-us/articles/4406603542541) 在安裝擴展時，用戶 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正確 `MAGEID`。
 

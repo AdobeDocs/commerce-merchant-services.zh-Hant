@@ -2,9 +2,9 @@
 title: 啟用 [!DNL Payment Services] 生產
 description: 通過啟用 [!DNL Payment Services] 生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ ht-degree: 0%
 
 ## 從Adobe請求付款權利
 
-要啟用即時登機，必須從 [Adobe](https://business.adobe.com/resources/payment-services.html)。
+要啟用即時登機，您必須從Adobe請求付款權利：
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 按一下 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 控制項欄。
+
+   ![請求權利](assets/request-entitlements.png)
+
+1. 填寫表單。
+1. 銷售團隊的成員將與您聯繫。
+
+或者，您可以從Adobe請求付款權利 [商業.adobe.com](https://business.adobe.com/resources/payment-services.html)。
 
 >[!IMPORTANT]
 >
