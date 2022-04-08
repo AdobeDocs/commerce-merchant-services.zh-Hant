@@ -2,7 +2,7 @@
 title: 在 [!DNL Express Checkout] Adobe Commerce分機
 description: 瞭解 [!DNL Express Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝和設定擴展。
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -18,24 +18,24 @@ ht-degree: 0%
 開始使用 [!DNL Express Checkout] 對於Adobe Commerce分機，您必須完成幾個單機步驟，以便將您的實例與我們的簽出功能連接起來。
 
 1. [獲取擴展](#get-extension)。
-1. [使用Bolt建立生產或沙盒商戶帳戶](#create-account-with-bolt)。 提供驗證您身份所需的所有資訊。
-1. [提供在Bolt中生成的唯一API密鑰和可發佈密鑰](#obtain-api-credentials)。
-1. [在Bolt帳戶中設定付款提供商](#configure-payment-providers)。
+1. [使用建立生產或沙盒商戶帳戶 [!DNL Bolt]](#create-account-with-bolt)。 提供驗證您身份所需的所有資訊。
+1. [提供在中生成的唯一API密鑰和可發佈密鑰 [!DNL Bolt]](#obtain-api-credentials)。
+1. [在 [!DNL Bolt] 帳戶](#configure-payment-providers)。
 1. [將「啟用」下拉清單設定為「是」](#enable-extension) 來激活擴展。
 1. [定義服務設定](#complete-admin-configuration) 配置 [!DNL Express Checkout] 擴展。
 1. [按一下「Save Config（保存配置）」按鈕](#enable-live-express-checkout) 啟用擴展。
 
 >[!NOTE]
 >
-> 如果未配置螺栓帳戶（上面的步驟2），則無法設定沙箱或生產環境。
+> 如果未配置 [!DNL Bolt] 帳戶（上面第2步）無法設定沙箱或生產環境。
 
 ## 先決條件
 
-為了使用 [!DNL Express Checkout]，對於「螺栓」(Bolt)，必須具有以下功能：
+為了使用 [!DNL Express Checkout]，您必須具有以下 [!DNL Bolt]:
 
 - 支援的付款提供方
-- Bolt中的商家和生產帳戶
-- API和在Bolt中生成的可發佈密鑰
+- 中的商家和生產帳戶 [!DNL Bolt]
+- 在中生成的API和可發佈密鑰 [!DNL Bolt]
 
 請參閱 [先決條件](../express-checkout/prerequisites.md) 的子菜單。
 
@@ -47,18 +47,18 @@ ht-degree: 0%
 
 ## 使用Bolt建立帳戶
 
-在配置 [!DNL Express Checkout] 在您的Adobe Commerce管理員中，需要建立 [生產](https://merchant.bolt.com/register){target=&quot;_blank&quot;和 [沙坑](https://merchant-sandbox.bolt.com/register)Bolt中的{target=&quot;_blank&quot;}商戶帳戶。 提供在Bolt中建立帳戶所需的所有詳細資訊。
+在配置 [!DNL Express Checkout] 在您的Adobe Commerce管理員中，需要建立 [沙坑](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;和 [生產](https://merchant.bolt.com/register){target=&quot;_blank&quot;中的商戶帳戶 [!DNL Bolt]。 提供建立帳戶所需的所有詳細資訊 [!DNL Bolt]。
 
 請參閱 [test和驗證](../express-checkout/testing.md) 的子菜單。
 
 ## 獲取API憑據
 
-使用 [!DNL Express Checkout] 需要Bolt的唯一鍵。 導航至 **開發人員** > **API** > **鍵** 的 **螺栓商家儀表板**。
+使用 [!DNL Express Checkout] 你需要 [!DNL Bolt] 唯一鍵。 導航至 **開發人員** > **API** > **鍵** 的 **螺栓商家儀表板**。
 
-- API密鑰：後端用於與Bolt API交互的私鑰。
-- 可發佈密鑰：前端用於與Bolt API交互的密鑰。
+- API密鑰：後端用於與交互的私鑰 [!DNL Bolt] API。
+- 可發佈密鑰：前端用於與交互的密鑰 [!DNL Bolt] API。
 
-查看 [螺栓環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}頁，以瞭解API和可發佈的鍵 [!DNL Express Checkout] 擴展。
+查看 [[!DNL Bolt] 環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}頁，以瞭解API和可發佈的鍵 [!DNL Express Checkout] 擴展。
 
 >[!CAUTION]
 >
@@ -66,16 +66,20 @@ ht-degree: 0%
 
 ## 配置付款提供方
 
-要連接您的支付服務提供商，請按照 [處理器設定](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;}開發人員Bolt頁。
+要連接您的支付服務提供商，請按照 [處理器設定](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;開發人員 [!DNL Bolt] 的子菜單。
 
 ## 啟用擴展
 
 1. 在 _管理_ 邊欄，導航 **商店** > **配置** > **簽出** 訪問「簽出管理」配置頁。
 
-![快速結帳](../assets/admin-view.png)
+   ![快速結帳](assets/admin-view.png)
 
 1. 在 [!DNL Express Checkout] 視圖，設定 **啟用** 至 `Yes`。
-1. 選擇要使用的方法（生產或沙盒）。
+1. 選擇要使用的方法（沙盒或生產）。
+
+   - 用於測試和開發目的的沙盒
+   - 使用即時付款處理器處理交易記錄的生產
+
 1. 提供唯一API和可發佈密鑰後驗證憑據。
 
 >[!CAUTION]
@@ -101,6 +105,6 @@ ht-degree: 0%
 
 ## 獲取幫助
 
-登機過程旨在指導您完成設定和啟用所有 [!DNL Express Checkout] 功能。 請聯繫Adobe Commerce支援部門以獲取幫助和問題。
+登機過程旨在指導您完成設定和啟用所有 [!DNL Express Checkout] 功能。 請與Adobe Commerce支援部門聯繫以獲取任何幫助。
 
 請參閱 [test和驗證](../express-checkout/testing.md) 的子菜單。

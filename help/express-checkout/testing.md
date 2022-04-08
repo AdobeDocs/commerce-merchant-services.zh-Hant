@@ -2,9 +2,9 @@
 title: 測試 [!DNL Express Checkout] Adobe Commerce分機
 description: 測試和驗證確保 [!DNL Express Checkout] 擴展工作正常。
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 使用沙盒帳戶
 
-test和驗證沙盒時，必須使用假信用卡號和 [沙坑](https://merchant-sandbox.bolt.com/register)在Bolt中{target=&quot;_blank&quot;}商戶帳戶，因此您不會對現有信用卡帳戶建立實際費用。
+test和驗證沙盒時，必須使用假信用卡號和 [沙坑](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;中的商戶帳戶 [!DNL Bolt]，以便您不會為現有信用卡帳戶建立實際費用。
 
 ## 在生產中測試
 
@@ -48,7 +48,7 @@ test和驗證沙盒時，必須使用假信用卡號和 [沙坑](https://merchan
 
 1. 轉到您的店面，將所需的物品放在您的購物車中。
 1. 繼續簽出。
-1. 輸入提示時與螺栓帳戶關聯的電子郵件地址。
+1. 輸入與 [!DNL Bolt] 提示時的帳戶。
 1. 輸入發送到帳戶電子郵件地址的一次性密碼(OTP)。
 1. 選擇環境儀表板：
 
