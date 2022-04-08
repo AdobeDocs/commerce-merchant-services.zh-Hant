@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Express Checkout] 為Adobe Commerce'
 user-guide-description: 瞭解 [!DNL Express Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝並設定擴展。
 breadcrumb-title: 《商戶服務指南》
 hide: true
-source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
+source-git-commit: af8c5288e6d6275c40bcc17a0ab809b4663f7535
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '55'
 ht-degree: 0%
 
 ---
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [簽出流](checkout-flow.md)
    - [裝運詳細資訊](shipping-details.md)
    - [付款方法](payment-methods.md)
+   - [在管理中建立訂單](create-order-admin.md)
    - [故障排除 [!DNL Express Checkout]](troubleshooting.md)
