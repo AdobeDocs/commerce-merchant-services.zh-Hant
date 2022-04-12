@@ -2,9 +2,9 @@
 title: Live Search發行說明
 description: 來自Adobe Commerce的Live Search的最新發佈資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,16 @@ ht-degree: 1%
 * 與Adobe Commerce雲(ECE)相容：2.4.x
 * 穩定性：穩定
 
+現有 [!DNL Live Search] 安裝必須升級到 [!DNL Live Search] 2.0.0利用以下新功能、修復和改進：
+
+* ![新建](../assets/new.svg) - [!DNL Live Search] 現在支援PHP 8.1，用於運行Adobe Commerce2.4.4的安裝。
+* ![新建](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 模組將添加到在安裝過程中禁用的模組清單中。
 * ![新建](../assets/new.svg)  — 中的可用行數 [鋪面](quick-tour.md) 可從 *管理*。
-* ![新建](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性。
-* ![新建](../assets/new.svg) - Live Search安裝過程將用高級流程更改進行更新。
+* ![新建](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性 [!DNL Live Search]。
+* ![新建](../assets/new.svg) - [!DNL Live Search] 安裝過程會隨高級進程更改而更新。
 * ![修復](../assets/fix.svg) - [高級搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 連結從店面頁腳中刪除。
 * ![蟲](../assets/bug.svg)  — 以下產品屬性不受支援 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 當用於PWA的beta版時： `description`。 `name`。 `short_description`
-* ![蟲](../assets/bug.svg) - Live Search的測試版PWA不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html)。
+* ![蟲](../assets/bug.svg) -PWA的Beta版 [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html)。
 
 ## [!DNL Live Search] 1.3.1
 
