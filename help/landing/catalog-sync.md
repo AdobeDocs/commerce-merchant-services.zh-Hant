@@ -1,9 +1,10 @@
 ---
 title: 目錄同步
-description: 「瞭解如何從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 持續更新服務。」
-source-git-commit: 5910874fbd386456c50c4d87098f72fef908a7ae
+description: 瞭解如何從中導出產品資料 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 持續更新服務。
+exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯成表。 進程由 [事件](https://docs.magento.com/user-guide/system/index-management-events.html) 例如產品價格或庫存水準的更改。
 
-目錄同步進程每小時運行一次，以允許 [!DNL Commerce Services] 以使用目錄資料。 目錄同步從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 持續更新服務。 比如說， [!DNL Product Recommendations] 需要當前的目錄資訊來準確返回具有正確名稱、定價和可用性的建議。 您可以使用 _目錄同步_ 用於觀察和管理同步過程的儀表板，或 [命令行介面](#resynccmdline) 觸發目錄同步並重新索引產品資料，使用 [!DNL Commerce Services]。
+目錄同步進程每小時運行一次，以允許 [!DNL Commerce] 服務以使用目錄資料。 目錄同步從 [!DNL Commerce] 伺服器 [!DNL Commerce] 務，使服務保持最新。 比如說， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要當前的目錄資訊來準確返回具有正確名稱、定價和可用性的建議。 您可以使用 _目錄同步_ 用於觀察和管理同步過程的儀表板，或 [命令行介面](#resynccmdline) 觸發目錄同步並重新索引產品資料，使用 [!DNL Commerce] 服務。
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯成表�
 
 ## 命令行介面 {#resynccmdline}
 
-的 `saas:resync` 命令是 `magento/saas-export` 檔案。 您可以使用 [!DNL Commerce Services] 產品，如 [!DNL Product Recommendations] 或 [!DNL Live Search]。
+的 `saas:resync` 命令是 `magento/saas-export` 檔案。 您可以使用 [!DNL Commerce Services] 產品，如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 或 [[!DNL Live Search]](/help/live-search/install.md)。
 
 >[!NOTE]
 >

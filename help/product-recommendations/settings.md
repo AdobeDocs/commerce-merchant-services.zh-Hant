@@ -1,9 +1,10 @@
 ---
 title: 設定
 description: 瞭解如何更改源 [!DNL Product Recommendations] 以及如何啟用可視化建議。
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 0%
 
 1. 在Recommendations源部分，按一下 **編輯配置**。
 
-1. 按照說明配置新 [商務服務]。
+1. 按照說明配置新 [[!DNL Commerce] 服務](/help/landing/saas.md)。
 
 ## 啟用可視建議
 

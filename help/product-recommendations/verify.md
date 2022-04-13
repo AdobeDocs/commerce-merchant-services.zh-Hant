@@ -1,9 +1,10 @@
 ---
 title: 驗證事件集合
 description: 瞭解如何驗證行為資料是否正被發送到Adobe Commerce。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ ht-degree: 0%
 1. 重新載入頁面。
 1. 你應該看到 `ds.js` 或 `ds.min.js` 的 **名稱** 的雙曲餘切值。
 
+![事件收集器JS](assets/filter-ds.png)
+_事件收集器JS_
+
 要確保事件在您的站點（首頁、產品、簽出等）的頁面上激發：
 
 1. 確保禁用瀏覽器上的任何廣告攔截程式並接受站點上的cookie。
@@ -29,6 +33,9 @@ ht-degree: 0%
 1. 選擇 **網路** 頁籤和篩選器 `tp2`。
 1. 重新載入頁面。
 1. 您應在 `tp2` 的 **名稱** 的雙曲餘切值。
+
+![激發事件](assets/filter-tp2.png)
+_驗證事件是否正在激發_
 
 ## 使用Snowploogh Chrome擴展驗證
 
@@ -46,7 +53,8 @@ ht-degree: 0%
 
 1. 驗證 [SaaS資料空間ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 設定正確。
 
-如果在驗證是否收集了事件並將其發送到Adobe Commerce時遇到任何問題， [聯繫人支援](https://support.magento.com/hc/en-us)。
+![雪犁過濾器](assets/snowplow-filter.png)
+_雪犁過濾器_
 
 >[!NOTE]
 >
