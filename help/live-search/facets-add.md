@@ -2,9 +2,9 @@
 title: 添加小平面
 description: 瞭解如何將可篩選的產品屬性添加為Live Search Facet。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
    * 標籤 — ([無頭](facets-type.md) 僅)輸入要使用的方面標籤。
    * 選擇類型 —  *選擇類型* 全部使用 [!DNL Commerce] 店面 `single select`。 對於無頭實施， `multi-select` 類型可以用邏輯運算子(`or` 或 `and`)以確定返回的產品集。
    * 排序類型 — Facets按字母順序排序 [!DNL Commerce] 店面。 對於無頭實現，小平面可按字母順序或按計數排序。 選項：按字母順序排列，計數（僅限無頭）
-   * 最大值 — 輸入顯示在儲存面中的最大刻面值數。 有效條目：0 - 10
+   * 最大值 — 輸入顯示在儲存面中的最大刻面值數。 有效條目：0 - 30;預設值：8
 
 1. 完成後，按一下 **保存**。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 | 標籤 | ([無頭](facets-type.md) 僅) [刻面標籤](facets-type.md) 可以編輯店面中可見的內容，以與您的品牌保持一致。 |
 | 選擇類型 | 顯示 [選擇方法](facets-type.md) 與product屬性關聯。 中的所有方面 [!DNL Commerce] 店面 `Single select` 只是。 無頭實施也支援 `Multi-select` 邏輯運算子 `OR` 和 `AND`。 |
 | 排序類型 | 用於 [排序](facets-type.md) 小平面。 全部 [!DNL Commerce] 店面只按字母順序對小平面進行排序。 無頭實現也可以按 `Count`。 選項：<br />按字母順序 — 按字母順序對小平面排序。<br />計數 — （僅限無頭）根據找到的匹配項數對小平面進行排序。 |
-| 最大值 | 可在每個方面的儲存面中顯示的最大值數。 表示一系列值的小平面將均勻分佈。 預設值：8 |
+| 最大值 | 可在每個方面的儲存面中顯示的最大值數。 表示一系列值的小平面將均勻分佈。 有效條目：0 - 30;預設值：8 |
 
 ### 控制項
 
