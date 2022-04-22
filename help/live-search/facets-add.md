@@ -2,7 +2,7 @@
 title: 添加小平面
 description: 瞭解如何將可篩選的產品屬性添加為Live Search Facet。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ ht-degree: 0%
 
    ![Faceting工作區](assets/facet-edit.png)
 
-1. 將小平面固定到 *篩選器* 清單中，按一下灰色圖釘(![銷釘選擇器](assets/btn-pin-gray.png)。
-1. 要更改固定小平面的順序，請按一下 **移動** (![移動選擇器](assets/btn-move.png) 表徵圖，然後將行拖到 *固定小平面* 的子菜單。
+1. 將小平面固定到 *篩選器* 清單中，按一下灰色圖釘(![銷釘選擇器](assets/btn-pin-gray.png))。
+1. 要更改固定小平面的順序，請按一下 **移動** (![移動選擇器](assets/btn-move.png))表徵圖，並將行拖到 *固定小平面* 的子菜單。
 
 ## 第3步：發佈更改
 

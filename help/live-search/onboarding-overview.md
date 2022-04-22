@@ -2,9 +2,9 @@
 title: 入門概述
 description: Live Search on Boonding流、系統要求、邊界和限制
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 0%
 
 ### PWABeta版
 
+* 與Live Search與本地Commerce商店相比， Live Search的當前BetaPWA實現需要更多的處理時間來返回搜索結果。
 * PWA的β釋放 [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html)。
 * GraphQL在與Beta版本相關時不支援以下產品屬性 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`。 `name`。 `short_description`
 
@@ -55,3 +56,5 @@ ht-degree: 0%
 * [自定義價格組](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用的多個庫存庫位 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS擴展
 * [整合B2B功能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* 產品價格不包括 [增值稅](https://docs.magento.com/user-guide/tax/vat.html) （增值稅）。
+* 無論在哪些情況下， [股票期權](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 配置。
