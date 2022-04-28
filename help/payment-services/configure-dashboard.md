@@ -3,9 +3,10 @@ title: 在儀表板中配置
 description: 安裝後，您可以配置 [!DNL Payment Services] 的子菜單。
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ ht-degree: 0%
 1. 要保存更改，請按一下 **[!UICONTROL Save]** 頁面右上角。
 1. 導航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 按一下 **[!UICONTROL Flush Cache]** 刷新所有無效的快取。
 
-您可以配置 [!DNL PayPal Smart Buttons] 樣式。 請參閱 [配置 [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) 的子菜單。
+您可以配置 [!DNL PayPal Smart Buttons] 樣式。 請參閱 [PayPal的按鈕樣式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 的子菜單。
