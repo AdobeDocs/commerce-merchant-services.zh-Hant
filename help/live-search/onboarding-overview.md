@@ -2,9 +2,9 @@
 title: 入門概述
 description: Live Search on Boonding流、系統要求、邊界和限制
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ ht-degree: 0%
 * 僅索引Adobe Commerce資料庫中的產品
 * 不為CMS頁編製索引
 
-### 查詢限制
+### 同義詞
+
+* [!DNL Live Search] 每個同義詞最多可管理200個同義詞 `Data Space ID`。
+
+### 查詢
 
 * [!DNL Live Search] 無權訪問類別樹的完整分類，這使得某些分層導航搜索方案超出其範圍。
 * [!DNL Live Search] 使用唯一的GraphQL終結點進行查詢以支援智慧分頁和按類型搜索等功能。 雖然與 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，存在一些差異，有些欄位可能目前不完全相容。
