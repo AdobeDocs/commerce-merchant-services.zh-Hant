@@ -2,9 +2,9 @@
 title: 安裝Live Search
 description: 瞭解如何從Adobe Commerce安裝、更新和卸載Live Search。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
+source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,14 @@ Live Search作為Adobe市場的擴展安裝。 在 [!DNL Live Search] 安裝和�
 如果一切正常，恭喜！ [!DNL Live Search] 已安裝、已連接並可供使用。
 
 如果在店面遇到問題，請檢查 `var/log/system.log` 檔案，用於服務端的API通信失敗或錯誤。
+
+## 正在檢查已安裝的版本
+
+在更新Live Search之前，請從命令行運行以下命令以檢查當前安裝的Live Search版本：
+
+```bash
+composer show magento/module-live-search | grep version
+```
 
 ## 更新 [!DNL Live Search] {#update}
 

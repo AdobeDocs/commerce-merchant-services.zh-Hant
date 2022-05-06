@@ -2,9 +2,9 @@
 title: Live Search Guide概述
 description: 來自Adobe Commerce的Live Search可提供快速、超相關且直觀的搜索體驗。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ Live Search為管理員提供三個區域：
 
 [幫助中心](https://support.magento.com/hc/en-us)  — 請參閱與即時搜索相關的故障排除文章。
 [支援票證](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket)  — 提交票證以接收其他幫助。
+
+在提交支援票證之前，請從命令行運行以下命令以檢查當前安裝的Live Search版本：
+
+```bash
+composer show magento/module-live-search | grep version
+```
