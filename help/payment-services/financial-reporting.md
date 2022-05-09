@@ -4,16 +4,16 @@ description: '"[!DNL Payment Services] 提供全面的報告，以便您能夠�
 role: User
 feature: Payments
 level: Intermediate
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # 財務報告
 
-[!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
+[!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
 
 ![財務報告視圖](assets/reports-view.png)
 

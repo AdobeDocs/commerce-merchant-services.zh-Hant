@@ -2,9 +2,9 @@
 title: 連接實例
 description: 使用API密鑰和私鑰連接您的Commerce實例，並在配置中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### Commerce API密鑰和私鑰
 
-部署一些Adobe Commerce和Magento Open Source功能時，將SaaS（軟體即服務） — 即Commerce Services。 要使用這些服務，您必須使用API密鑰和私鑰將Commerce實例連接到這些服務，並在 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
+部分 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 功能部署為SaaS（軟體即服務），即Commerce Services。 要使用這些服務，您必須使用API密鑰和私鑰將Commerce實例連接到這些服務，並在 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
 
 建立由MageID標識的Commerce帳戶時，可以生成Commerce API密鑰和私鑰。 使用Commerce Services，如 [!DNL Payment Services]。 [!DNL Product Recommendations]或 [!DNL Live Search]，許可證持有者必須生成這些密鑰才能通過權利驗證。 然後，這些密鑰可以傳遞給代表許可證持有者管理項目和環境的系統整合商或開發團隊。 如果您是解決方案整合商，您也有權根據自己的需要使用這些服務。 在這種情況下，商業夥伴合同的簽名者應生成密鑰。
 
@@ -67,8 +67,8 @@ ht-degree: 0%
 
 建立SaaS項目時，Commerce會根據您的Commerce許可證生成一個或多個SaaS資料空間：
 
-* Adobe Commerce — 一個生產資料空間；兩個測試資料空間
-* Magento Open Source — 一個生產資料空間；無測試資料空間
+* [!DNL Adobe Commerce]  — 一個生產資料空間；兩個測試資料空間
+* [!DNL Magento Open Source]  — 一個生產資料空間；無測試資料空間
 
 ### 配置SaaS項目
 

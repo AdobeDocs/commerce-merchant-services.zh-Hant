@@ -4,26 +4,26 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 使用命令行
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # 命令行配置
 
-安裝後 [!DNL Payment Services]，您可以輕鬆地從 [管理員內](configure-admin.md) 或通過命令行介面(CLI)。
+安裝後 [!DNL Payment Services]，您可以輕鬆地從 [在家裡](payments-home.md) 或通過命令行介面(CLI)。
 
 ## 配置資料導出
 
-[!DNL Payment Services] 將從Magento Open Source和Adobe Commerce導出的訂單資料與從付款提供方匯總的付款資料合併，以建立有用的報表。 的 [!DNL Payment Services] extension使用索引器來高效地收集報表的所有必要資料。
+[!DNL Payment Services] 合併從中導出的訂單資料 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 使用付款提供方的聚合付款資料建立有用報表。 的 [!DNL Payment Services] extension使用索引器來高效地收集報表的所有必要資料。
 
 瞭解中使用的資料 [!DNL Payment Services] 報告，請參閱 [訂單付款狀態報表](order-payment-status.md#data-used-in-the-report)。
 
-### 在Magento Open Source上配置cron
+### 在上配置cron [!DNL Magento Open Source]
 
-如果您想使用 `BY SCHEDULE` Magento Open Source上的索引模式，必須配置cron。 請參閱 [配置並運行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)。
+如果您想使用 `BY SCHEDULE` 索引模式 [!DNL Magento Open Source]，必須配置cron。 請參閱 [配置並運行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)。
 
 ### 設定索引器
 

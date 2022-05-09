@@ -2,9 +2,9 @@
 title: 啟用 [!DNL Payment Services] 生產
 description: 通過啟用 [!DNL Payment Services] 生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
    如果尚未配置，則此選項可見 [!DNL Payment Services] 作為一個或多個Magento網站的付款方式。
 
-   您將被引導到管理中的配置區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** > _[!UICONTROL Recommended Solutions]_>_[!UICONTROL Payment Services]_)，在其中可以啟用 [!DNL Payment Services] 選項 [付款方式](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
+   您將被引導到「首頁」視圖中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，在其中可以啟用 [!DNL Payment Services] 選項 [付款方式](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
 
 1. 在 _[!UICONTROL General Configuration]_。**[!UICONTROL Enable]**至 `Yes`。
 1. 設定 **[!UICONTROL Payment Action]**，同時 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，至以下項之一：
@@ -32,13 +32,13 @@ ht-degree: 0%
    | `Authorize` | 批准採購並暫停資金。 在被商戶「捕獲」之前，不提取該金額。 |
    | `Authorize and Capture` | 批准購買，商家「捕獲」資金。 |
 
-1. 按一下 **[!UICONTROL Save Config]**.
-1. 按一下 **[!UICONTROL Go to Payment Services]** 被引導回 [!DNL Payment Services] 家。
+1. 按一下 **[!UICONTROL Save]**.
+1. 按一下 **[!UICONTROL Go to Payment Services]** 被引導回 [!DNL Payment Services] 回家。
 1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
 
    應在每次配置更改後進行清除。
 
-請參閱 [配置付款服務](configure-admin.md) 的子菜單。
+請參閱 [配置付款服務](settings.md) 的子菜單。
 
 ## 完整的商戶登機
 
@@ -64,14 +64,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果撤消對 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source來處理您的付款（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。
+   >如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。
 
 ## 從Adobe請求付款權利
 
 要啟用即時登機，您必須從Adobe請求付款權利：
 
 1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 按一下 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 控制項欄。
+1. 按一下 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 回家。
 
    ![請求權利](assets/request-entitlements.png)
 
@@ -88,10 +88,9 @@ ht-degree: 0%
 
 為了 [!DNL Payment Services] _商戶ID_:
 
-1. 在 _管理_ 邊欄，導航 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
-1. 在左面板中，展開 **[!UICONTROL Sales]** 選擇 **[!UICONTROL Payment Methods]**。
-1. 展開 _[!UICONTROL Recommended Solutions]_的子菜單。
-1. 在 _[!UICONTROL Payment Services]_的_[!UICONTROL General Configuration]_ 的子菜單。
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 在「首頁」視圖中，按一下 **[!UICONTROL Settings]**。 請參閱 [首頁](payments-home.md) 的子菜單。
 1. 選擇所需 _商戶ID_ 並將其提交給銷售代表，銷售代表將配置正確的定價層。
 
 ## 啟用即時付款
@@ -100,21 +99,19 @@ A _生產商ID_ 在 [配置](configure-admin.md)。 不要更改或更改此ID�
 
 要啟用即時付款，請執行以下操作：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
-1. 在左面板中，展開 **[!UICONTROL Sales]** 選擇 **[!UICONTROL Payment Methods]**。
-1. 展開 _[!UICONTROL Recommended Solutions]_的子菜單。
-1. 在 _[!UICONTROL Payment Services]_的_[!UICONTROL General Configuration]_ 的子菜單。
-1. 設定 **[!UICONTROL Method]** 至 `Production`。
-1. 按一下 **[!UICONTROL Save Config]**.
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 在首頁上，按一下 **[!UICONTROL Settings]** 頁面右上角。 請參閱 [首頁](payments-home.md) 的子菜單。
+1. 在 _[!UICONTROL General Configuration]_節集&#x200B;**[!UICONTROL Payment mode]**至 `Production`。
+1. 按一下 **[!UICONTROL Save]**.
 1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
 
    >[!IMPORTANT]
    >
    >如果您未清除快取，則客戶在結帳期間無法看到PayPal付款選項。
 
-如果導航回 [!DNL Payment Services] 「首頁」，「沙盒付款模式」消息將不再顯示，因為您正在處理即時付款。
+如果導航回 [!DNL Payment Services] 「首頁」，「沙盒」付款模式消息將不再顯示，因為您正在處理即時付款。
 
-請參閱 [在管理員中配置](configure-admin.md) 的子菜單。
+請參閱 [在管理員中配置](configure-admin.md) 選項。
 
 >[!IMPORTANT]
 >

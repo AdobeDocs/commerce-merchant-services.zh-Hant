@@ -2,16 +2,16 @@
 title: Test和驗證
 description: 測試和驗證有助於確保 [!DNL Payment Services] 功能按預期工作，並為客戶提供最佳付款選項
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # Test和驗證
 
-在你曝光之前 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source給購物者來說，在沙盒環境中test是個好主意 _和_ 生產。 測試和驗證有助於確保 [!DNL Payment Services] 功能可按預期運行，並為您的商店和客戶提供最佳付款選項。
+在你曝光之前 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 在沙盒環境中test是個好主意 _和_ 生產。 測試和驗證有助於確保 [!DNL Payment Services] 功能可按預期運行，並為您的商店和客戶提供最佳付款選項。
 
 ## Test沙盒環境
 

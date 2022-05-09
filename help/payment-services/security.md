@@ -2,9 +2,9 @@
 title: 安全性和合規性
 description: 查看您的站點的安全性和合規性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 商業安全
 
-Adobe Commerce和Magento Open Source包括對幾種安全功能的支援。
+[!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 包括對幾種安全功能的支援。
 
 請參閱 [安全](https://docs.magento.com/user-guide/stores/security.html)核心使用手冊中的{target=&quot;_blank&quot;}，用於查看安全最佳實踐，並瞭解如何管理管理員會話和憑據、實施驗證碼驗證和管理網站限制。
 

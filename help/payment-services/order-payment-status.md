@@ -4,22 +4,22 @@ description: 使用「訂單付款狀態」報表可查看訂單的付款狀態�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # 訂單付款狀態報表
 
-[!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
+[!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
 
 ![財務報告視圖](assets/reports-view.png)
 
 「訂單付款狀態」報表可幫助您輕鬆瞭解特定訂單在訂單至現金處理流程中的位置。 此報表允許您快速查看訂單的付款狀態並確定任何潛在問題。
 
-您不必開啟多個視圖來人工交叉參考訂單和付款。 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以查看訂單和付款的概覽 — 所有這些都在訂單付款狀態報表中。
+您不必開啟多個視圖來人工交叉參考訂單和付款。 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您可以查看訂單和付款的概覽 — 所有這些都在訂單付款狀態報表中。
 
 請參閱「管理員」中此報表中的付款狀態、開票和發運狀態、退款狀態、爭議狀態等。
 

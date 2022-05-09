@@ -2,9 +2,9 @@
 title: 設定測試沙盒
 description: 使用PayPal沙盒帳戶使用 [!DNL Payment Services] test。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ PayPal沙盒帳戶允許您使用 [!DNL Payment Services] test。 PayPal要求�
 要完成入門沙盒操作：
 
 1. 導航到 [PayPal開發人員帳戶頁](https://developer.paypal.com/developer/accounts/)。
-1. 按一下 **[!UICONTROL Log in to Dashboard]** 並使用您的現有憑據登錄PayPal開發人員帳戶，或按一下 **註冊** 建立帳戶。
+1. 按一下 **[!UICONTROL Log in to Home]** 並使用您的現有憑據登錄PayPal開發人員帳戶，或按一下 **註冊** 建立帳戶。
 1. 建立PayPal沙盒帳戶：
    1. 轉到 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**。
    1. 按一下 **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ PayPal沙盒帳戶允許您使用 [!DNL Payment Services] test。 PayPal要求�
 
    如果尚未完成的沙盒登錄，則此選項可見 [!DNL Payment Services]。
 
-   自動生成沙盒商戶ID並將其填充到 [配置](configure-admin.md)。 不要更改或更改此ID。
+   自動生成沙盒商戶ID並將其填充到 [設定](settings.md)。 不要更改或更改此ID。
 
    您將收到一個PayPal窗口，用於連接PayPal帳戶以開始接受付款。
 
@@ -59,7 +59,7 @@ PayPal沙盒帳戶允許您使用 [!DNL Payment Services] test。 PayPal要求�
 
 >[!IMPORTANT]
 >
->如果撤消對 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source來處理您的付款（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。
+>如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。
 
 ## 啟用聯繫電話號碼
 

@@ -2,24 +2,24 @@
 title: 安裝 [!DNL Payment Services]
 description: 安裝Payments Services擴展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # 安裝 [!DNL Payment Services]
 
-安裝 [!DNL Payment Services] Adobe Commerce和Magento Open Source的擴展是使用 [!DNL Payment Services]。
+安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用 [!DNL Payment Services]。
 
 ![[!DNL Payment Services] 擴展管理員視圖](assets/admin-view.png)
 
-的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的擴展可以與連結到MagentoID([馬吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在註冊過程中提供。 Composer在初始安裝Adobe Commerce時或在以前未將Composer鍵保存到 `auth.json` 的子菜單。
+的 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以使用連結到MagentoID([馬吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在註冊過程中提供。 Composer在初始安裝時使用這些鍵 [!DNL Adobe Commerce]，或在以前未將Composer鍵保存到 `auth.json` 的子菜單。
 
 請參閱 [獲取您的身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 的子菜單。
 
-安裝此擴展有兩種方法 —  [Adobe Commerce在雲基礎架構上](https://devdocs.magento.com/payment-services/install-payments.html#magento-commerce-cloud) 或 [內部](https://devdocs.magento.com/payment-services/install-payments.html#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
+安裝此擴展有兩種方法 —  [[!DNL Adobe Commerce] 雲基礎架構](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部](install.md#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
 
 ## 更新最小穩定性設定
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 安裝擴展
 
-可以安裝 [!DNL Payment Services] 在雲基礎架構和內部實例上擴展Adobe Commerce。
+可以安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 雲基礎架構和內部實例。
 
-### Adobe Commerce在雲基礎架構上
+### [!DNL Adobe Commerce] 雲基礎架構
 
 此方法用於安裝 [!DNL Payment Services] Commerce Cloud實例的擴展。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    的 `composer update` 命令更新所有依賴關係。 如果不想同時更新所有依賴關係，請改用以下命令： `composer require magento/payment-services`。
 
-1. 升級Adobe Commerce:
+1. 升級 [!DNL Adobe Commerce]:
 
    ```bash
    bin/magento setup:upgrade

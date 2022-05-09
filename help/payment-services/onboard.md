@@ -4,16 +4,16 @@ description: 將實例與 [!DNL Payment Services] 功能。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # 板載 [!DNL Payment Services]
 
-開始使用 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您必須完成幾個連接實例和付款功能的入門步驟。
+開始使用 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，您必須完成一些附加步驟，以便將實例與付款功能連接。
 
 ## 登機流
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 完成沙箱或即時付款的登錄後，可以從 [!DNL Payment Services] 的子菜單。
 
-如果同時啟用了沙盒和即時支付，則您可以輕鬆地從 [!DNL Payment Services] 家。
+如果同時啟用了沙盒和即時支付，則您可以輕鬆地從 [!DNL Payment Services] 回家。
 
 ## 先決條件
 

@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 在儲存配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 您可以自定義 [!DNL Payment Services] 使用管理中的有用配置選項滿足您的需要。
 
-配置時 [!DNL Payment Services] 對於Adobe Commerce和管理Magento Open Source，這些配置僅適用於在 [!UICONTROL Method] 欄位 [!UICONTROL General Configuration]。 在配置欄位中所做的任何更改都與切換 [!UICONTROL Method] 選擇 — 如果切換方法，則不會重置選擇。
+配置時 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 在Admin中，這些配置僅適用於在 _[!UICONTROL Method]_欄位_[!UICONTROL General Configuration]_。 在配置欄位中所做的任何更改都與切換 _[!UICONTROL Method]_選擇 — 如果切換方法，則不會重置選擇。
 
 查看 [[!UICONTROL General Configuration] 節](#general-configuration) 的子菜單。
 
 ## 常規配置
 
-您可以啟用 [!DNL Payment Services] 為您的商店啟用沙盒測試或即時付款 [!UICONTROL General Configuration] 的子菜單。
+您可以啟用 [!DNL Payment Services] 為您的商店啟用沙盒測試或即時付款 _[!UICONTROL General Configuration]_的子菜單。
 
 1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左面板中，展開 **[!UICONTROL Sales]** 選擇 **[!UICONTROL Payment Methods]**。
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >您 [!UICONTROL Sandbox Merchant ID] 和 [!UICONTROL Production Merchant ID] 在您完成沙箱和/或生產後，自動生成並呈現在他們受人尊重的領域。 不要刪除或更改這些ID。
+   >您 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 在您完成沙箱和/或生產後，自動生成並呈現在他們受人尊重的領域。 不要刪除或更改這些ID。
 
 1. 按一下 **[!UICONTROL Save Config]** 的子菜單。
 

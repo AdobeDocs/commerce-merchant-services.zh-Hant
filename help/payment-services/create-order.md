@@ -2,18 +2,18 @@
 title: 建立訂單 [!DNL Payment Services]
 description: 管理員提供了使用 [!DNL Payment Services] 由商家直接向需要幫助的客戶發送。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # 建立訂單 [!DNL Payment Services]
 
-您可以自定義 [!DNL Payment Services] 使用管理中的配置選項滿足您的需要。
+您可以使用 [[!DNL Payment Services] 設定](settings.md)。
 
-[!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以直接由商家為需要幫助的客戶執行管理員的訂單。 的 **[!UICONTROL Create New Order]** 表單包含完成正常結帳流程所需的所有資訊，包括包含信用卡資訊的托管欄位。 請參閱 [建立訂單](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;}，瞭解有關所需步驟的詳細資訊。
+[!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 允許您直接由商家為需要幫助的客戶執行管理員的訂單。 的 **[!UICONTROL Create New Order]** 表單包含完成正常結帳流程所需的所有資訊，包括包含信用卡資訊的托管欄位。 請參閱 [建立訂單](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;}，瞭解有關所需步驟的詳細資訊。
 
 ## 托管信用卡欄位
 

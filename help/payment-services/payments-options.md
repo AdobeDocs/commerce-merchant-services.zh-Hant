@@ -2,18 +2,18 @@
 title: 付款選項
 description: 設定付款選項以自定義可用於商店客戶的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # 付款選項
 
-與Adobe Commerce和Magento Open Source [!DNL Payment Services]，您可以使用多個付款選項。 您可以通過以下方式配置這些付款選項：
+與 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您可以使用多個付款選項。 您可以通過以下方式配置這些付款選項：
 
-* [儀表板](configure-dashboard.md)
+* [首頁](payments-home.md)
 * [儲存配置](configure-admin.md) （建議使用舊式付款選項或多商店設定）
 
 根據您在結帳流程中的位置，每種付款方式有不同的行為：
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 [!UICONTROL Credit Card Fields] 為信用卡或借記卡付款方法提供簡單而安全的結帳。 當購物者使用信用卡欄位簽出時，他們會輸入自己的姓名、帳單地址以及信用卡或借記卡資訊，以下單。 客戶資訊在購買會話期間被安全地使用，以無縫地引導客戶通過結帳流程。
 
-您可以配置 [!UICONTROL Credit Card Fields] 在儲存配置或Payment Services控制面板中。 請參閱 [配置 [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) 的子菜單。
+您可以配置 [!UICONTROL Credit Card Fields] 在儲存配置或支付服務主目錄中。 請參閱 [配置 [!DNL Payment Services]](settings.md#configure-credit-card-fields) 的子菜單。
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]使用PayPal完成購買，儲存購物者的送貨地址、帳單地址和付款詳細資訊以供以後使用。 購物者可以使用PayPal以前儲存或提供的任何支付方式。
 
-您可以配置 [!DNL PayPal Smart Buttons] 在儲存配置或Payment Services控制面板中。  請參閱 [配置 [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) 的子菜單。
+您可以配置 [!DNL PayPal Smart Buttons] 在儲存配置或支付服務主目錄中。  請參閱 [配置 [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) 的子菜單。
 
 ### PayPal按鈕
 

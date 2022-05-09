@@ -4,22 +4,22 @@ description: 使用「支付」報告可以完全透明地記錄支付金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # 支付報告
 
-[!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
+[!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
 
 ![財務報告視圖](assets/reports-view.png)
 
 「支付」報告一覽式顯示了全面的支付資訊，使您對支付金額、處理量以及財務調節的交易級別的詳細報告具有完全的透明度。
 
-您不必開啟多個控制面板或視圖來交叉參考訂單和付款或調節帳戶。 [!DNL Payment Services] 對於Adobe Commerce和Magento Open Source，您可以從一個地方 — 支付報告 — 採取所有這些行動，以便您能夠高效地查看和管理支付。
+您不必開啟多個視圖以交叉參考訂單和付款或調節帳戶。 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能夠從一個位置執行所有這些操作 — 支付報告 — 以便您能夠高效地查看和管理支付。
 
 請參閱管理員的「支付」報表中的連結商業訂單和交易ID、交易金額、每筆交易的付款方法等。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 資料源選擇的工作方式如下：
 
-* 如果沒有處於「即時」模式的儲存，則資料源選擇的預設值為 [!UICONTROL Sandbox]_。
+* 如果沒有處於「即時」模式的儲存，則資料源選擇的預設值為 _[!UICONTROL Sandbox]_。
 * 如果在「即時」模式下有任何儲存（一個或多個），則資料源選擇的預設值為 _[!UICONTROL Live]_。
 * 報告導出始終遵循資料源選擇。
 
