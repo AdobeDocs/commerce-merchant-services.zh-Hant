@@ -2,16 +2,16 @@
 title: 造型跨距元素
 description: 有關自定義Live Search儲存前跨距的技術說明。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# 造型跨距元素
+# 造型 [!DNL Popover] 元素
 
-的 [鋪面](storefront-popover.md) 始終顯示產品 `name` 和 `price`，且無法配置欄位的選擇。 但是，可以使用CSS類設定跨距元素的樣式。 例如，以下聲明會更改跨距容器和頁腳的背景顏色。
+的 [[!DNL storefront popover]](storefront-popover.md) 始終顯示產品 `name` 和 `price`，且無法配置欄位的選擇。 但是， [!DNL popover] 元素可以使用CSS類設定樣式。 例如，以下聲明更改了 [!DNL popover] 容器和頁腳。
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 容器可見性
 
-的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`。  的 `.active` class表示容器的可見性。 的 `.active` 當「跨距」(popover)開啟時，將有條件地添加類。
+的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`。  的 `.active` class表示容器的可見性。 的 `.active` 在 [!DNL popover] 開啟。
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 類選擇器
 
-以下類選擇器可用於在跨距中對容器、建議和產品元素進行樣式設定。
+以下類選擇器可用於對中的容器、建議和產品元素進行樣式化 [!DNL popover]。
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 `.livesearch.popover-container`
 
-![跨距容器](assets/livesearch-popover-container.png)
+![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 使用修改的主題 {#working-with-modified-theme}
 
-庫前跨距可與自定義 [主題](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 繼承所需檔案的 *盧馬*。 的 `top.search` 在 `header-wrapper` 的 `Magento_Search` 不能修改模組。
+的 [!DNL storefront popover] 可與自定義 [主題](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 繼承所需檔案的 *盧馬*。 的 `top.search` 在 `header-wrapper` 的 `Magento_Search` 不能修改模組。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## 禁用跨距
+## 禁用 [!DNL popover]
 
-禁用跨距並恢復標準 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能，輸入以下命令：
+禁用 [!DNL popover] 並恢復標準 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能，輸入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
