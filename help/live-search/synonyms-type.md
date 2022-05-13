@@ -2,9 +2,9 @@
 title: 同義詞的類型
 description: 單向和雙向Live Search同義詞擴展了關鍵字的定義。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 ### 關鍵字映射
 
 此技術使用可搜索的產品屬性而不是同義詞來建立產品之間基於關鍵字的關聯。 因此，映射的產品可以出現在另一產品的搜索結果中。 要瞭解更多資訊，請參閱 [搜索結果](https://docs.magento.com/user-guide/catalog/search-results.html)。
+
+### 使用單詞
+
+如果同義詞詞包含多個詞，則詞之間的空白會導致它們被視為單獨的同義詞。 例如，如果將「time piece」定義為「watch」的同義詞，則「time」和「piece」這兩個詞將被視為單獨的同義詞。
 
 ### 單數和複數的使用
 
