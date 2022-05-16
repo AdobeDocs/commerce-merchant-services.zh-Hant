@@ -1,10 +1,10 @@
 ---
-title: 即時搜索索引
-description: 瞭解Live Search如何索引產品屬性
+title: '"[!DNL Live Search] 索引"'
+description: 「瞭解如何 [!DNL Live Search] 索引product屬性屬性。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 8cc10feccda91fc1d9ead35f9b2b1e8ea19d4c95
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 庫面頂
-description: 「即時搜索」(Live Search)儲存前沿可動態返回建議的產品和縮略圖。
+title: '"[!DNL Storefront Popover]"'
+description: 「 [!DNL Live Search storefront popover] 動態返回建議的產品和縮略圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---

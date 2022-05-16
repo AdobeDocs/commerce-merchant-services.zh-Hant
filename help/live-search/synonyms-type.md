@@ -1,10 +1,10 @@
 ---
-title: 同義詞的類型
-description: 單向和雙向Live Search同義詞擴展了關鍵字的定義。
+title: '"同義詞的類型"'
+description: 「單向和雙向 [!DNL Live Search] 同義詞擴展關鍵字的定義。」
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---

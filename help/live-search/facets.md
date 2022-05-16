@@ -1,10 +1,10 @@
 ---
-title: 小平面
-description: 即時搜索小平面使用屬性值的多個維作為搜索條件。
+title: '"Facets"'
+description: '"[!DNL Live Search] facets將屬性值的多個維用作搜索條件。"'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -26,30 +26,30 @@ Faceting是一種高效能過濾方法，它使用多個維屬性值作為搜索
 |--- |--- |
 | [類別顯示設定](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 錨點 —  `Yes` |
 | [屬性屬性](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [目錄輸入類型](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`。 `Dropdown`。 `Multiple Select`。 `Price` |
-| Attribute storefront properties | 在分層導航中使用 —  `Filterable (with results)` |
+| 屬性儲存面屬性 | 在分層導航中使用 —  `Filterable (with results)` |
 
-## Default attribute values
+## 預設屬性值
 
 以下產品屬性具有 [儲存屬性](https://docs.magento.com/user-guide/stores/attributes-product.html) 用於 [!DNL Live Search] 並預設啟用。
 
-| 屬性 | 店面屬性 | Attribute |
+| 屬性 | 店面屬性 | 屬性 |
 |---|---|---|
 | 可排序 | 用於在產品清單中排序 | `price` |
-| 可搜索 | Use in Search | `price` <br />`sku`<br />`name` |
+| 可搜索 | 在搜索中使用 | `price` <br />`sku`<br />`name` |
 | 可篩選InSearch | 在分層導航中使用 — 可過濾（帶結果） | `price`<br />`visibility`<br />`category_name` |
 
 ## 預設非系統屬性屬性
 
 下表顯示了非系統屬性的預設搜索和可篩選屬性，包括特定於Luma示例資料的屬性。 設定 *在搜索中使用* 屬性屬性 `Yes` 使屬性可在兩者中搜索 [!DNL Live Search] 和Adobe Commerce。
 
-| 屬性代碼 | Searchable | 在分層導航中使用 |
+| 屬性代碼 | 可搜索 | 在分層導航中使用 |
 |--- |--- |--- |
-| 活動 | Yes | 可篩選（帶結果） |
+| 活動 | 是 | 可篩選（帶結果） |
 | 屬性_品牌 | 是 | 否 |
-| 品牌 | 是 | No |
+| 品牌 | 是 | 否 |
 | 氣候 | 是 | 可篩選（帶結果） |
-| 領 | Yes | Filterable (with results) |
-| 顏色 | 是 | Filterable (with results) |
+| 領 | 是 | 可篩選（帶結果） |
+| 顏色 | 是 | 可篩選（帶結果） |
 | 成本 | 是 | 否 |
 | eco_collection | 是 | 可篩選（帶結果） |
 | 性別 | 是 | 可篩選（帶結果） |
@@ -57,20 +57,20 @@ Faceting是一種高效能過濾方法，它使用多個維屬性值作為搜索
 | 材料 | 是 | 可篩選（帶結果） |
 | 目的 | 是 | 可篩選（帶結果） |
 | 帶袋 | 是 | 可篩選（帶結果） |
-| 樣式_常規 | 是 | Filterable (with results) |
+| 樣式_常規 | 是 | 可篩選（帶結果） |
 
 ## 預設系統屬性
 
-The following table shows the default search and filterable properties of system attributes.
+下表顯示了系統屬性的預設搜索和可篩選屬性。
 
-| Attribute Code | 可搜索 | 在分層導航中使用 |
+| 屬性代碼 | 可搜索 | 在分層導航中使用 |
 |--- |--- |--- |
 | allow_open_amount | 是 | 可篩選（帶結果） |
-| 描述 | 是 | No |
+| 描述 | 是 | 否 |
 | 名稱 | 是 | 否 |
-| 價格 | Yes | Filterable (with results) |
-| short_description | Yes | 否 |
-| sku | Yes | 否 |
+| 價格 | 是 | 可篩選（帶結果） |
+| short_description | 是 | 否 |
+| sku | 是 | 否 |
 | 狀態 | 是 | 否 |
 | 稅_class_id | 是 | 否 |
 | url_key | 是 | 否 |

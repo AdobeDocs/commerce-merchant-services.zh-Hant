@@ -1,10 +1,10 @@
 ---
-title: 效能
-description: Live Search效能控制板提供了消費者使用的搜索術語的洞察力。
+title: '"效能"'
+description: 「 [!DNL Live Search] 效能儀表板可讓消費者深入瞭解使用的搜索詞。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---

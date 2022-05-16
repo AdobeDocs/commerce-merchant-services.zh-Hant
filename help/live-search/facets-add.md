@@ -1,10 +1,10 @@
 ---
-title: 添加小平面
-description: 瞭解如何將可篩選的產品屬性添加為Live Search Facet。
+title: '"添加小平面"'
+description: '"瞭解如何將可篩選的產品屬性添加為 [!DNL Live Search] facets」'
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---

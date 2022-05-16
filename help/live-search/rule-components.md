@@ -1,10 +1,10 @@
 ---
-title: 規則元件
-description: 瞭解Live Search規則元件和運算子。
+title: '"規則元件"'
+description: 「瞭解 [!DNL Live Search] 規則元件和運算子。」
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---

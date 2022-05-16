@@ -1,27 +1,27 @@
 ---
-user-guide-title: 即時搜索指南
-user-guide-description: 本指南提供有關使用Adobe Commerce即時搜索的詳細說明。
-breadcrumb-title: 即時搜索指南
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] 指南"'
+user-guide-description: 「本指南提供有關使用 [!DNL Live Search] 來自Adobe Commerce。」
+breadcrumb-title: '"[!DNL Live Search] 指南"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
-# 即時搜索商業 {#live-search}
+# [!DNL Live Search] 為商業 {#live-search}
 
 - [指南概述](guide-overview.md)
-- [即時搜索簡介](overview.md)
+- [簡介 [!DNL Live Search]](overview.md)
 - [發行說明](release-notes.md)
 - 板載即時搜索 {#onboard}
    - [入門概述](onboarding-overview.md)
-   - [安裝Live Search](install.md)
-- 即時搜索店面 {#live-search-storefront}
+   - [安裝 [!DNL Live Search]](install.md)
+- [!DNL Live Search] 店面 {#live-search-storefront}
    - [快速瀏覽](quick-tour.md)
-   - [庫面頂](storefront-popover.md)
-   - [造型跨距元素](storefront-popover-styling.md)
-- 即時搜索管理{#live-search-admin}
+   - [店面 [!DNL Popover]](storefront-popover.md)
+   - [造型 [!DNL Popover] 元素](storefront-popover-styling.md)
+- [!DNL Live Search] 管理{#live-search-admin}
    - [工作區](workspace.md)
    - [效能](performance.md)
    - 小平面 {#facets}
