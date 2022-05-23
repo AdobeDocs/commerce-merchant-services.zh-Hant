@@ -4,9 +4,9 @@ description: 使用「支付」報告可以完全透明地記錄支付金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ ht-degree: 0%
 1. 按一下「事務處理日期日曆」選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 在網格中查看指定日期的支付狀態。
+
+## 顯示和隱藏列
+
+預設情況下，「補償金」報告會顯示大多數可用資訊列。 但是，您可以自定義在報告中看到的列。
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**。
+1. 按一下 _列設定_ 表徵圖。![列設定表徵圖](assets/column-settings.png))。
+1. 要自定義您在報表中看到的列，請選中或取消選中清單中的列。
+
+   「支付」報告將立即顯示您在「列設定」菜單中所做的任何更改。 列首選項將被保存，並且如果您從報表視圖中導航，將保持有效。
 
 ## 下載交易記錄
 

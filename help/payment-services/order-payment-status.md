@@ -4,9 +4,9 @@ description: 使用「訂單付款狀態」報表可查看訂單的付款狀態�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ ht-degree: 0%
 1. 按一下 **[!UICONTROL Order dates]** 日曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 在網格中查看指定日期的訂單付款狀態。
+
+## 顯示和隱藏列
+
+預設情況下，「訂單付款狀態」報表顯示所有可用的資訊列。 但是，您可以自定義在報告中看到的列。
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**。
+1. 按一下 _列設定_ 表徵圖。![列設定表徵圖](assets/column-settings.png))。
+1. 要自定義您在報表中看到的列，請選中或取消選中清單中的列。
+
+   訂單付款狀態報表將立即顯示您在「列設定」菜單中所做的任何更改。 列首選項將被保存，並且如果您從報表視圖中導航，將保持有效。
 
 ## 查看狀態
 
