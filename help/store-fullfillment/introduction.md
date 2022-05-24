@@ -1,16 +1,17 @@
 ---
-title: 簡介 [!DNL Store Fulfillment]
+title: 關於 [!DNL Store Fulfillment]
 description: 瞭解如何 [!DNL Store Fulfillment by Walmart Technologies] 支援向Adobe Commerce和Magento Open Source客戶購買線上、接貨(BOPIS)服務。 使用Store Assist Mobile可簡化BOPIS的完成和對商店聯營公司和Commerce客戶的訂單處理。
 role: User
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: e1172526b133e08d6c1c2278b91c788e9c9766c6
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# 簡介 [!DNL Store Fulfillment by Walmart Technologies]
+
+# 關於 [!DNL Store Fulfillment by Walmart Technologies]
 
 Store Fullimment for Walmart Commerce Technologies為Adobe Commerce提供的Store Fullimment是一款與您的 [!DNL Commerce] 商店提供卓越的線上購買體驗，在商店購買(BOPIS)客戶體驗。
 
