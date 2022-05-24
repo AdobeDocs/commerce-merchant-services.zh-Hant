@@ -4,9 +4,9 @@ description: 使用「支付」報告可以完全透明地記錄支付金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![財務報告視圖](assets/reports-view.png)
 
 「支付」報告一覽式顯示了全面的支付資訊，使您對支付金額、處理量以及財務調節的交易級別的詳細報告具有完全的透明度。
+
+>[!NOTE]
+>
+>付款報表僅顯示已捕獲的訂單 — 付款活動設定為 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — 或 [標籤為 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html)。
 
 您不必開啟多個視圖以交叉參考訂單和付款或調節帳戶。 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能夠從一個位置執行所有這些操作 — 支付報告 — 以便您能夠高效地查看和管理支付。
 
@@ -106,7 +110,7 @@ ht-degree: 0%
 | [!UICONTROL Provider] | 付款提供方 |
 | [!UICONTROL Provider trans] | 事務ID |
 | [!UICONTROL Trans date] | 啟動交易記錄的日期和時間 |
-| [!UICONTROL Type] | 事務類型 — *[!UICONTROL PAYMENT]*。 *[!UICONTROL AUTH]*。 *[!UICONTROL BONUS]*。 *[!UICONTROL CHARGEBACK]*。 *[!UICONTROL CORRECTION]*。 *[!UICONTROL CURRENCY_CONVERSATION]*。 *[!UICONTROL DEPOSIT]*。 *[!UICONTROL DISBURSEMENT]*。 *[!UICONTROL DISPUTE]*。 *[!UICONTROL FEES]*。 *[!UICONTROL HOLD]*。 *[!UICONTROL HOLD_RELEASE]*。 *[!UICONTROL INCENTIVES]*。 *[!UICONTROL OTHERS]*。 *[!UICONTROL RECOUP]*。 *[!UICONTROL REFUND]*。 *[!UICONTROL REVERSAL]*。 *[!UICONTROL WITHDRAWAL]* <br> <br>請參閱 [交易記錄類型](#transaction-types) 的子菜單。 |
+| [!UICONTROL Type] | 事務類型 — *[!UICONTROL PAYMENT]*。 *[!UICONTROL BONUS]*。 *[!UICONTROL CHARGEBACK]*。 *[!UICONTROL CORRECTION]*。 *[!UICONTROL CURRENCY_CONVERSATION]*。 *[!UICONTROL DEPOSIT]*。 *[!UICONTROL DISBURSEMENT]*。 *[!UICONTROL DISPUTE]*。 *[!UICONTROL FEES]*。 *[!UICONTROL HOLD]*。 *[!UICONTROL HOLD_RELEASE]*。 *[!UICONTROL INCENTIVES]*。 *[!UICONTROL OTHERS]*。 *[!UICONTROL RECOUP]*。 *[!UICONTROL REFUND]*。 *[!UICONTROL REVERSAL]*。 *[!UICONTROL WITHDRAWAL]* <br> <br>請參閱 [交易記錄類型](#transaction-types) 的子菜單。 |
 | [!UICONTROL Status] | 交易記錄的當前狀態 — *[!UICONTROL SUCCESS]*。 *[!UICONTROL DENIED]*。 *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | 指示貸項(*CR*)或借方(*DR*) |
 | [!UICONTROL Reference ID] | 此事件相關的原始事務ID |
