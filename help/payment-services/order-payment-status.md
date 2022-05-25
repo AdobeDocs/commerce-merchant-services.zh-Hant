@@ -4,9 +4,9 @@ description: 使用「訂單付款狀態」報表可查看訂單的付款狀態�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ ht-degree: 0%
 
    將刷新訂單付款狀態報表資料， *[!UICONTROL Update complete]* 將顯示確認，並且網格中會顯示最新資訊。
 
+## 查看爭議
+
+您可以查看有關商店訂單的任何爭議，並從「訂單付款狀態」報表定位至「PayPal解決中心」以對其採取措施。
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**。
+1. 導航到 **[!UICONTROL Disputes column]**。
+1. 查看特定訂單的任何爭議，並查看 [爭端狀況](#order-payment-status-information)。
+1. 按一下爭議ID連結(以 _PP-D-_)轉到 [PayPal解決中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327)。
+1. 根據需要對爭端採取適當行動。
+
+   要按狀態對爭議排序，請按一下「爭議」列標題。
+
 ## 下載訂單付款狀態
 
 無論您是查看預設的30天狀態還是自定義的時間範圍，都可以下載所有狀態都可見的.csv檔案。
@@ -171,7 +183,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | [!UICONTROL Refund Status] | 訂單上的退款狀態（如退貨、RMA和貸項通知單中的資訊） —    *[!UICONTROL Requires refund]*。 *[!UICONTROL Refund requested]*。 *[!UICONTROL Refunded]*。 *[!UICONTROL Refund failed]*&#x200B;或 *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 訂單的退款總額 |
 | [!UICONTROL Cur] | 訂單退還金額的幣種類型 |
-| [!UICONTROL Dispute Status] | 對訂單的任何爭議的狀態（來自爭議和拖欠的資訊） — *[!UICONTROL New]*。 *[!UICONTROL Representment]*。 *[!UICONTROL Accepted]*。 *[!UICONTROL Pre-arbitration received]*。 *[!UICONTROL Arbitration]*&#x200B;或 *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | 對訂單的任何爭議的狀態（來自爭議和拖欠的資訊） — *[!UICONTROL Open]*。 *[!UICONTROL Waiting for buyer response]*。 *[!UICONTROL Waiting for seller response]*。 *[!UICONTROL Under review]*。 *[!UICONTROL Resolved]*&#x200B;或 *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | 訂單的Commerce交易記錄中使用的付款方法 |
 | [!UICONTROL Website] | 從中下達訂單的網站 |
 | [!UICONTROL Store] | 從中下訂單的商店 |
