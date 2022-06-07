@@ -4,9 +4,9 @@ description: 「瞭解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fullment還提供端到端的履行工作流，該工作流可幫助商家
 
 ## 儲存完成擴展
 
-Store Fulfillment擴展與Adobe Commerce整合，因此您可以從管理員管理Adobe Commerce操作和客戶介面的配置。
+支援並增強本機Adobe Commerce功能
 
 * 支援大多數產品類型 — 簡單、可配置、分組、捆綁和虛擬
 
@@ -39,11 +39,11 @@ Store Fulfillment擴展與Adobe Commerce整合，因此您可以從管理員管�
 
 * 與ERP、OMS和WMS等銷售點(POS)商戶系統整合，用於庫存管理
 
-* 與Luma主題完全相容。
+* 與Luma主題完全相容
 
-* 為無頭店和Venia店面提供GraphQL支援。
+* 為無頭店和維尼亞店面提供GraphQL支援
 
-* 支援Walmart Commerce Technology的Store Assist應用。 此應用會直接將提貨單發送到您員工位於正確商店的手持設備，這樣，在客戶到達提貨時，就可以快速、準確地提貨並將提貨單交給客戶。
+* 支援Walmart Commerce Technology的Store Assist應用。 此應用會直接將提貨單發送到您員工位於正確商店的手持設備，以便可以快速、準確地提貨、提貨，並在客戶簽入時將提貨單交給客戶。
 
 ## 應用商店協助
 
@@ -61,7 +61,7 @@ iOS和Android™設備的Store Assist App與Walmart Commerce Technology交互，
 
 商店履行通過添加以下功能來提供改進的購物體驗和簡化的履行工作流程來增強Adobe Commerce的能力：
 
-* **儲存位置選擇器(SLS)** — 向Adobe Commerce產品、購物車和結帳介面添加商店取貨選項、庫存可用性和商店選擇器。
+* **儲存位置選擇器(SLS)** — 除了本機結帳外，還顯示產品和購物車頁面上的商店提貨選項、庫存可用性和商店選擇器。
 
 * **庫存可用性** — 向Adobe CommerceInventory management添加其他產品和全球配置選項，以支援商店級庫存分配，以推動及時的本地完成。
 
