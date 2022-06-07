@@ -2,7 +2,7 @@
 title: '''[!DNL Store Fulfillment by Walmart Technologies] 發行說明'''
 description: 查看發行說明以瞭解有關所有 [!DNL Store Fulfillment by Walmart Technologies] 版本。
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: df045a8d2089bbaf2c13015cfa05c16842bd2b3f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,5 +23,4 @@ ht-degree: 0%
 
 * Adobe Commerce:2.4.x
 * Adobe Commerce雲(ECE):2.4.x
-* Magento Open Source:2.4.x
 * 穩定性：穩定
