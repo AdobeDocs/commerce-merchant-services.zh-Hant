@@ -2,9 +2,9 @@
 title: 設定測試沙盒
 description: 使用PayPal沙盒帳戶使用 [!DNL Payment Services] test。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ PayPal沙盒帳戶允許您使用 [!DNL Payment Services] test。 PayPal要求�
 
 >[!IMPORTANT]
 >
->如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。
+>如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。 在您的Payment Services首頁上，將顯示有關已撤消的同意的警報。 要消除警報，請按一下 **[!UICONTROL Do not show again]**。
 
 ## 啟用聯繫電話號碼
 
