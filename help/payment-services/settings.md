@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 的下一頁。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
    >
    >您 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 在您完成沙箱和/或生產後，自動生成並呈現在他們受人尊敬的領域中。 不要刪除或更改這些ID。
 
+1. 在 **[!UICONTROL Scope]** 下拉菜單，您要為其啟用付款方法。
 1. 要更改付款功能和店面顯示的預設設定，請根據需要設定附加選項：
 
    - [信用卡欄位](#credit-card-fields)

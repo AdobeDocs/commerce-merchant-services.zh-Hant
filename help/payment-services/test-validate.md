@@ -2,7 +2,7 @@
 title: Test和驗證
 description: 測試和驗證有助於確保 [!DNL Payment Services] 功能按預期工作，並為客戶提供最佳付款選項
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 599405b908cc8b770c917a18ad488a1f69be222b
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 測試 [!DNL Payment Services] 在沙箱環境中是一個重要的驗證步驟，即使它是僅連接到PayPal沙箱的模擬環境，而不是連接到真正的銀行和商家。
 
 1. 從您的商店完成成功結帳， [信用卡欄位](payments-options.md#credit-card-fields) 或 [PayPal智慧按鈕](payments-options.md#paypal-smart-buttons)。 請參閱 [使用沙盒模式](#use-sandbox-mode) 的子菜單。
-1. 捕獲(當付款活動為 [設定為 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)) [退款](refunds.md)或 [虛](voids.md) 剛剛完成的訂單。 您也可以 [建立發票](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;}（如果您的付款活動設定為） `Authorize` 而不是 `Authorize and Capture`。
+1. 捕獲(當付款活動為 [設定為 `Authorize and Capture`](production.md#set-payment-services-as-payment-method)。 [退款](refunds.md)或 [虛](voids.md) 剛剛完成的訂單。 您也可以 [建立發票](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;}（如果您的付款活動設定為） `Authorize` 而不是 `Authorize and Capture`。
 1. 在24-48小時內，查看 [支付報告](payouts.md)。
 1. 請參閱 [訂單付款狀態報表](order-payment-status.md)。
 
