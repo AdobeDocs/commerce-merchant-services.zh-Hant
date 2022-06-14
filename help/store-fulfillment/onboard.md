@@ -1,93 +1,58 @@
 ---
-title: 入門概述
-description: '"連接 [!DNL Commerce] 實例 [!DNL Store Fulfillment Manager] 完成幾個單車步驟。」'
+title: Onboarding Overview for Store Fulfillment services（Onboarding Overview for Store Fulfillment服務入門概述）
+description: '"[!DNL Live Search] 登機流、系統要求、邊界和限制」'
 role: User, Admin
 level: Intermediate
-exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-# 入門概述
+# Onboarding Overview for Store Fullment
 
-通過在您的Commerce實例上安裝擴展並配置API連接實現板載儲存完成。 這些連接可在您的Commerce實例、用於庫存管理的第三方系統和Store Assist應用之間實現通信和資料同步。
+開始 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 通過設定、配置和啟用以下元件：
 
-完成登錄後，請通過Commerce Admin配置和管理解決方案
+- **儲存完成擴展** — 在您的Adobe Commerce實例上安裝並配置此第三方擴展。 安裝後，您可以從管理員配置和管理Store Fulfillment解決方案以支援 [!DNL buy online, pickup in store] (BOPIS)商務店面場景。
 
-![[!DNL Store Fulfillment Service] 管理視圖中的配置](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] 管理視圖中的配置](assets/store-fulfillment-admin-home.png)
 
-## 入門概述
+- **儲存履行帳戶** — 在啟用過程中，客戶經理會建立您的Store Fulfilment帳戶，並為您提供帳戶資訊和憑據。 需要這些憑據才能啟用Adobe Commerce與Store Fulliment解決方案之間的連接。
 
-1. 為Adobe Commerce安裝Walmart Technologies的Store Fullimfilling。
+- **應用商店協助** — 提供與端對端儲存履行工作流關聯的儲存，以管理移動設備的BOPIS訂單。 Store Associates可以下載和安裝Walmart的 [!DNL Store Assist] iOS和安卓設備。 該應用程式的啟動過程由沃爾瑪商業技術客戶中心作為單獨的程式進行管理。 但是， [某些應用配置設定](user-setup.md) 由Adobe Commerce管理員完成。
 
-1. 從管理員處啟用解決方案並完成整合的一般配置、其活動功能，並完成入門表單以連接到履行服務。
+   | 應用商店幫助應用 — 「入門」視圖 | 應用商店協助應用 — 模組視圖 |
+   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+   | ![[!DNL Store Assist App Getting Started] 移動設備上的視圖](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移動設備上](assets/store-assist-orders-small.png) |
 
-1. 配置傳遞方法。
 
-1. 將源設定為物理儲存並配置目錄中的產品。
 
-1. 選擇並配置電子郵件模板，以管理線上購買、在店取貨(BOPIS)交易的客戶通信。
 
-1. 為Store Assist應用建立用戶和角色。
+## 預配步驟
 
-1. 配置後台進程的計畫，以將資料同步到履行服務。
+- **註冊[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 完成註冊表 [商業.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或聯繫您的Adobe Commerce客戶經理尋求幫助。
 
-## 要求
+- **啟動儲存履行的預配請求** — 填寫由客戶經理提供的入門表，以提供開始預配過程所需的資訊。
 
-安裝、部署和使用解決方案必須滿足以下要求。
+- **獲取您的Store Fulfillment帳戶憑據** — 在為您建立商店履行帳戶後，您將收到將商店履行解決方案與Adobe Commerce整合所需的憑據。
 
-* **商業帳戶資訊** — 安裝 [!DNL Channel Manager] 需要 [商業帳戶](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有「所有者」或「管理員」訪問權限的帳戶ID和憑據 [!DNL Adobe Commerce] 實例。
+- **[下載原始碼以安裝 [!DNL Store Fulfillment] 擴展](install.md)**
 
-* 對於 [!DNL Adobe Commerce] 在雲基礎架構項目上，軟體安裝程式必須具有對雲項目的管理員權限。 請參閱 [管理用戶訪問](https://devdocs.magento.com/cloud/project/user-admin.html)。
+## 登機步驟
 
-* **通過Walmart Technologies軟體存檔（.zip檔案）訪問Store Fulfillment以安裝Store Fulfilment解決方案** — 在啟動和啟用過程中，您的客戶客戶代表將提供對安裝檔案的下載訪問。
+1. [為Adobe Commerce安裝Store Fulfilment擴展](install.md)。
 
-* **使用Composer和[!DNL Commerce CLI]** — 請參閱 [常規CLI安裝](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;，瞭解有關使用這些工具在上安裝和配置擴展的資訊 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 平台。
+1. 從管理員那裡， [啟用解決方案](enable-general.md)。
 
-* [!DNL Inventory Management] Adobe Commerce和Magento Open Source
+1. [從Adobe Commerce管理員配置商店履行擴展](service-config-settings-overview.md)。
 
-   您必須在Adobe Commerce和Magento Open Source實例上安裝並啟用了Inventory management擴展。 通常，此擴展在Adobe Commerce2.3.x及更高版本上預設安裝並啟用。 有關詳細資訊，請參見 [安裝Inventory management](https://devdocs.magento.com/extensions/inventory-management/) 在Adobe Commerce開發人員文檔中。
+1. [連接 [!DNL Store Fulfillment] 使用提供給您的Store Fulfilment憑據的服務。](connect-set-up-service.md)
 
-## 平台和版本要求
+1. [為Store Assist應用建立用戶和角色](user-setup.md)
 
-的 [!DNL Store Fulfillment] 解決方案可在以下平台上向Adobe Commerce客戶提供。
+1. [下載Walmart的 [!DNL Store Assist] 應用到所需設備。 該應用在應用商店(iOS)和遊戲商店(Android)上都可用](app-setup.md)
 
-* Adobe Commerce雲基礎架構(ECE)
-* Adobe Commerce內部(EE)
+成功安裝、配置、完成登錄並有權訪問 [!DNL Store Assist] app，你可以 [開始建立訂單和測試](test-and-deploy.md)。
 
-「儲存履行」解決方案與以下軟體版本相容。
 
-**軟體相容性**
-
-| **軟體** | **最低版本** | **最大版本** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
-| 作曲家 | 1.x | 2.x |
-| 瑪麗亞 | 十點二 | 十點四 |
-| MySQL | 5.7 | 8.0 |
-| 菲律賓比索 | 7.4 | 8.1 |
-
-有關詳細要求，請查閱Adobe Commerce [系統要求](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 的子菜單。
-
-### 業務需求
-
-您的企業必須滿足以下最低標準才能實施「商店完成」解決方案。
-
-* 僅限美國企業
-
-* B2C零售商、銷售D2C的CPG製造商或銷售D2C或面向小型企業的分銷商
-
-* 至少一個實體商店或倉庫
-
-* 為Adobe Commerce管理您的產品庫存（是MSI）,Inventory management
-
-* 使商戶庫存合併的能力
-
-* 在支援Store Fullimment解決方案的所有位置儲存Wi-Fi可用性
-
-* 商店和倉庫的會員在輪班期間可以訪問iOS或安卓移動設備，不管是個人設備，還是商家提供的
-
-* 使用「商店履行」解決方案管理的產品必須具有包含SKU或UPC產品代碼的產品屬性

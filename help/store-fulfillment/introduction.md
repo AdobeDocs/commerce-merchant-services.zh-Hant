@@ -1,12 +1,12 @@
 ---
 title: '"簡介 [!DNL Store Fulfillment]"'
-description: 「瞭解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] 支援線上購買、在店取貨(BOPIS)，供客戶使用。 使用Store Assist Mobile簡化BOPIS的完成和對商店聯營商和Commerce客戶的訂單處理。"
+description: 「瞭解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 支援線上購買、在店取貨(BOPIS)，供客戶使用。 使用Store Assist Mobile簡化BOPIS的完成和對商店聯營商和Commerce客戶的訂單處理。"
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fullimment for Walmart Commerce Technologies為Adobe Commerce提供的Store Fullimment是一款與您的 [!DNL Commerce] 商店提供卓越的線上購買體驗，在商店購買(BOPIS)客戶體驗。
 
-![按Walmart Technologies管理配置進行的商店完成](assets/store-fulfillment-admin-home.png)
+![儲存履行解決方案Adobe管理配置](assets/store-fulfillment-admin-home.png)
 
 Store Fullment還提供端到端的履行工作流，該工作流可幫助商家降低成本，同時提高轉換率、平均訂單價值和客戶滿意度。 此工作流提供：
 
