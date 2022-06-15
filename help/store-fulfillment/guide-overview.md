@@ -1,12 +1,12 @@
 ---
-title: '"[!DNL Store Fulfillment by Walmart Commerce Technologies] 指南概述」'
-description: 有關 [!DNL Store Fulfillment] 為Adobe Commerce管理員提供，包括安裝和安裝
+title: '"[!DNL Store Fulfillment] 指南概述」'
+description: '"有關 [!DNL Store Fulfillment] 為Adobe Commerce管理員提供，包括安裝和登機。」'
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 | 指南 | 說明 |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce2.4使用手冊](https://docs.magento.com/user-guide/) | 針對兩個Adobe Commerce的以商戶為重點的檔案 |
+| [Adobe Commerce2.4使用手冊](https://docs.magento.com/user-guide/) | 以商戶為重點的Adobe Commerce檔案 |
 | [Adobe Commerce2.4開發人員指南](https://devdocs.magento.com/) | 用於構建和自定義Adobe Commerce的以開發人員為重點的文檔 |
 
 ## 支援

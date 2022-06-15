@@ -1,9 +1,9 @@
 ---
 title: Onboarding Overview for Store Fulfillment services（Onboarding Overview for Store Fulfillment服務入門概述）
-description: '"[!DNL Live Search] 登機流、系統要求、邊界和限制」'
+description: '"[!DNL Live Search] 登機流、系統要求、邊界和限制。」'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ ht-degree: 0%
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] 移動設備上的視圖](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移動設備上](assets/store-assist-orders-small.png) |
 
-
-
-
 ## 預配步驟
 
 - **註冊[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 完成註冊表 [商業.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或聯繫您的Adobe Commerce客戶經理尋求幫助。
@@ -47,12 +44,11 @@ ht-degree: 0%
 
 1. [從Adobe Commerce管理員配置商店履行擴展](service-config-settings-overview.md)。
 
-1. [連接 [!DNL Store Fulfillment] 使用提供給您的Store Fulfilment憑據的服務。](connect-set-up-service.md)
+1. [連接 [!DNL Store Fulfillment] 使用提供給您的「商店履行」憑據提供服務](connect-set-up-service.md)。
 
-1. [為Store Assist應用建立用戶和角色](user-setup.md)
+1. [為Store Assist應用建立用戶和角色](user-setup.md)。
 
-1. [下載Walmart的 [!DNL Store Assist] 應用到所需設備。 該應用在應用商店(iOS)和遊戲商店(Android)上都可用](app-setup.md)
+1. [下載Walmart的 [!DNL Store Assist] 應用到所需設備。 該應用在應用商店(iOS)和遊戲商店(Android)上都可用](app-setup.md)。
 
 成功安裝、配置、完成登錄並有權訪問 [!DNL Store Assist] app，你可以 [開始建立訂單和測試](test-and-deploy.md)。
-
 

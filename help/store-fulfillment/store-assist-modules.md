@@ -1,27 +1,27 @@
 ---
 title: '"儲存協助履行工作流"'
-description: 「瞭解Store Assist應用中提供的Pick、Stage、Hand-Off和Orders模組。 這些模組為BOPIS訂單啟用了端對端儲存履行工作流。 Store Associates使用這些模組來管理和向客戶交付儲存裝貨單。
+description: 「瞭解Store Assist應用中提供的Pick、Stage、Hand-Off和Orders模組。 這些模組為BOPIS訂單啟用了端對端儲存履行工作流。 Store Associates使用這些模組來管理和向客戶交付商店代貨訂單。」
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# 儲存協助工作流
+# 儲存協助履行工作流
 
 Store Assist應用為Store Associates提供四個模組，用於管理線上購買的店內完成流程，在商店訂單中提貨：
 
-**[選擇](#pick-module)** — 全面瞭解所有訂購的物料和工具，以確保選取正確的物料和適當的數量。 儲存關聯可以同時選擇一個或多個訂單以提高效率
+- **[選擇](#pick-module)** — 全面瞭解所有訂購的物料和工具，以確保選取正確的物料和適當的數量。 儲存關聯可以同時選擇一個或多個訂單以提高效率。
 
-**[舞台](#stage-module)** — 輸入客戶在前往商店時下訂單的位置，以便Store Associates可以輕鬆地找到訂單切換
+- **[舞台](#stage-module)** — 輸入客戶在前往商店時下訂單的位置，以便Store Associates可以輕鬆地找到訂單切換
 
-**[關閉](#hand-off)** — 在客戶到達商店後獲得即時通知，以無縫地減少其等待時間和切換訂單
+- **[關閉](#hand-off-module)** — 在客戶到達商店後獲得即時通知，以無縫地減少其等待時間和切換訂單
 
-**[訂單](#orders-module)** — 查看為商店下達的所有訂單的清單，以便每個人都知道每個訂單的訂單數和狀態。
+- **[訂單](#orders-module)** — 查看為商店下達的所有訂單的清單，以便每個人都知道每個訂單的訂單數和狀態。
 
 >[!NOTE]
 >

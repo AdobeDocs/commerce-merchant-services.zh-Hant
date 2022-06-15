@@ -1,14 +1,15 @@
 ---
-title: 儲存履行的配置概述
-description: 瞭解可用於Store Fullment解決方案的Admin配置設定類別及其配置方式。
+title: 儲存履行配置概述
+description: 瞭解可用於自定義儲存履行解決方案提供的擴展履行功能的管理配置設定類型，以及指向完成配置說明的連結。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # 儲存履行配置概述
 
@@ -26,10 +27,9 @@ ht-degree: 0%
 | [多個網站/範圍配置](multi-site-and-scope-config.md) | 為多個網站/商店範圍配置庫存和交付方法。 | 否 |
 | [後台進程系統配置](background-processes.md) | 配置用於將資料與履行服務同步的後台進程的計畫。 | 否 |
 | [儲存位置和映射設定](store-location-map-provider-setup.md) | 配置使用距離提供程式搜索零售商店並在SLS映射中顯示此資訊的功能 | 是 |
-| [簽入體驗設定](store-location-map-provider-setup.md) | 配置車色和車牌選項，這些選項將在簽入過程中可用 | 是 |
+| [簽入體驗設定](check-in-experience-setup.md) | 配置車色和車牌選項，這些選項將在簽入過程中可用 | 是 |
 | [用戶設定](user-setup.md) | 管理使用Store Assist應用的儲存關聯的用戶帳戶、角色和權限。 範圍。 | 是 |
 | [應用程式設定](app-setup.md) | 查看完成登機過程所需的Store Assist應用的可用配置。 無法從Adobe Commerce管理員配置這些設定。 | 是 |
-
 
 ## 使用配置引用
 

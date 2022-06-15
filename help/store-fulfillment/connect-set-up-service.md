@@ -3,9 +3,9 @@ title: 連接儲存履行解決方案
 description: 通過建立和授權Adobe Commerce整合併將商店履行帳戶憑據添加到Adobe Commerce服務配置，建立Adobe Commerce與商店履行解決方案之間的聯繫。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 完成進貨單後，將為您建立Walmart Store Fulfillment帳戶。 當以下憑據可用時，您將收到這些憑據：
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

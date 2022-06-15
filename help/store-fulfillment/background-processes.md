@@ -1,15 +1,16 @@
 ---
-title: 後台進程
-description: '"配置 [!DNL Store Fulfillment] 用於將資料與履行服務同步的後台流程」                   '
+title: 後台進程配置
+description: '"配置 [!DNL Store Fulfillment] 後台流程，用於將資料與履行服務同步。」                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # 後台進程配置
 
@@ -19,9 +20,6 @@ ht-degree: 0%
 
 ## 管理儲存完成的計畫任務
 
-從管理員，轉到 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**。
-
+從管理員，轉到 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**。
 
 查看Store Fulfillment服務的預設配置。 根據您的訂單處理量和資源可用性，您可能需要調整這些設定。
-
-

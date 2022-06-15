@@ -1,25 +1,26 @@
 ---
 title: 安裝
-description: 添加說明
+description: '"安裝 [!DNL Store Fulfillment solution] 使用Composer for PHP的Adobe Commerce店面。」'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # 安裝
 
-完成初始安裝 [!DNL Store Fulfillment] 在非生產環境中擴展，隊列管理器運行並快取配置為允許異常處理。 您的環境應包括任何其他開發工具，以確保在操作和維護您的Adobe Commerce實例時採用最佳做法。
+完成初始安裝 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 在非生產環境中擴展，隊列管理器運行並快取配置為允許異常處理。 確保您的開發環境包括開發工具，以確保操作和維護您的Adobe Commerce實例的最佳做法。
 
 ## 先決條件
 
 查看 [要求](solution-requirements.md) 在您安裝 [!DNL Store Fulfillment] 延期到Adobe Commerce。
 
-如果已安裝用於Adobe Commerce擴展的Store Fulfillment的預發行版或測試版，請在安裝當前版本之前將其刪除。
+如果已安裝用於Adobe Commerce擴展的Store Fulfillment的預發行版或測試版，請在安裝當前版本之前使用以下命令將其刪除。
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **在Adobe Commerce安裝第三方擴展的體驗** — 有關參考，請參閱Adobe Commerce文檔。
 
-   - [在雲基礎架構實例上安裝Adobe Commerce的擴展](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [在雲基礎架構實例上安裝Adobe Commerce的擴展](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)。
 
-   - [為Adobe Commerce本地實例安裝擴展](https://devdocs.magento.com/extensions/install/)
+   - [為Adobe Commerce本地實例安裝擴展](https://devdocs.magento.com/extensions/install/)。
 
 ### 步驟1:下載擴展包
 
@@ -79,7 +80,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. 將Store Fulfillment Services擴展添加到 `composer.json`
+1. 將Store Fulfillment Services擴展添加到 `composer.json`。
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 登錄到伺服器。
 
-   對於Adobe Commerce雲基礎架構上的安裝，請使用SSH登錄到遠程環境。
+   對於在Adobe Commerce的雲基礎架構上安裝， [使用SSH登錄到遠程環境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh)。
 
 1. 驗證是否啟用了Store Fullimment Services模組。
 
@@ -182,7 +183,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 其他步驟
 
-如果需要，請使用 [設定:static-content: 部署](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) CLI命令，用於將靜態視圖檔案部署到生產環境。
+如果需要，請使用 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI命令，用於將靜態視圖檔案部署到生產環境。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >有關詳細資訊，請參見 [靜態內容部署Adobe Commerce最佳做法](https://support.magento.com/hc/en-us/articles/360031624091) 在Adobe Commerce幫助中心。
-

@@ -1,15 +1,16 @@
 ---
 title: 銷售電子郵件
-description: 配置事務性電子郵件模板的設定，以便在訂單和履行過程中與客戶通信並儲存管理員。
+description: 配置事務性電子郵件模板，以便在完成儲存代收訂單的過程中與客戶和儲存管理員通信。
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # 銷售電子郵件
 

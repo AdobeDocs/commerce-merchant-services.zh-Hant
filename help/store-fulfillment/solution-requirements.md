@@ -1,17 +1,17 @@
 ---
-title: 服務要求
-description: 「配置和登錄要求 [!DNL Store Fulfillment Manager] 服務"
+title: 儲存完成要求
+description: 「配置和登錄要求 [!DNL Store Fulfillment solution]"
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Adobe Commerce的商店供貨要求
+# 儲存滿足要求Adobe Commerce
 
 您必須滿足以下技術和業務要求才能安裝並啟用Adobe Commerce的應用商店履行解決方案。
 
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 * 僅限美國企業
 
-* B2C零售商、銷售D2C的CPG製造商或銷售D2C或面向小型企業的分銷商
+* B2C零售商、銷售D2C的CPG製造商或銷售D2C或銷售給小型企業的分銷商
 
 * 至少一個實體商店或倉庫
 

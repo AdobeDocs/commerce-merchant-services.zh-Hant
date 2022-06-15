@@ -1,20 +1,21 @@
 ---
 title: 用戶設定
-description: '設定增強的Inventory management來源作為商店。 '
+description: '設定增強的Inventory management來源作為商店，以支援Adobe Commerce的商店履行解決方案。 '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
+
 
 # 用戶設定
 
 Store Assist應用程式用戶在Adobe Commerce管理。 然而，這些用戶並不直接與Adobe Commerce互動。 用戶管理在Adobe Commerce配置，以在Adobe Commerce和應用程式之間啟用安全連接。
 
-應用商店履行應用用戶模型與其他Adobe Commerce用戶模型分開。 應用通過用戶角色和用戶維護其自己的權限模型，這些角色和用戶可以分配給所有或特定位置。 支援以下權限：領料單、分配單和物料數量減少（和取消）。
+應用商店履行應用用戶模型與其他Adobe Commerce用戶模型分開。 應用通過用戶角色和用戶維護其自己的權限模型，這些用戶可以分配給所有或特定位置。 支援以下權限：領料單、分配單和物料數量減少（和取消）。
 
 >[!TIP]
 >
@@ -42,7 +43,6 @@ Store Assist應用程式用戶在Adobe Commerce管理。 然而，這些用戶�
 
 從管理系統設定中管理Store Assist應用程式用戶配置檔案：  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**。
 
-
 | **欄位** | **說明** | **範圍** | **必需** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | 啟用或禁用用戶。 | 全球 | 是 |
@@ -54,8 +54,3 @@ Store Assist應用程式用戶在Adobe Commerce管理。 然而，這些用戶�
 | **介面區域設定** | 如果您的商店有多種語言，請將「介面區域設定」設定為用於管理介面的語言。 | 全球 | 否 |
 | **活動自** | 要設定開始日期，請選擇日曆表徵圖。 | 全球 | 否 |
 | **活動到** | 通過選擇日曆表徵圖來設定到期日。 設定到期日期對設定臨時用戶或角色分配非常有用。 到期日期後，用戶帳戶狀態將更改為 `Inactive`，但如有必要，仍可更新帳戶。 | 全球 | 否 |
-
-
-
-
-
