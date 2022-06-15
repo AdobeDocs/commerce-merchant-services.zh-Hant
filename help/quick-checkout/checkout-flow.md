@@ -2,9 +2,9 @@
 title: '"簽出流"'
 description: 「概述 [!DNL Quick Checkout] Adobe Commerce。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
 - 裝運方法
 - 複核付款方法
 
-請參閱 [故障排除](../quick-checkout/troubleshooting.md) 主題，以獲取現有的Adobe Commerce用戶身份下訂單時遇到的問題。
+如果以現有Adobe Commerce用戶身份下單時遇到問題，請參閱 [排除快速簽出問題](https://support.magento.com/hc/en-us/articles/6909450342541) 在Adobe Commerce幫助中心。
 
 >[!NOTE]
 >

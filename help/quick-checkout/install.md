@@ -2,9 +2,9 @@
 title: '"安裝 [!DNL Quick Checkout] Adobe Commerce分機」'
 description: 「按照這些步驟安裝 [!DNL Quick Checkout] 你的Adobe Commerce計畫"
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 您可能在嘗試安裝 [!DNL Quick Checkout] 擴展。
 
-請參閱 [故障排除](../quick-checkout/troubleshooting.md) 主題，以獲取詳細資訊 [!DNL Quick Checkout]。
+如果您在 [!DNL Quick Checkout] 安裝過程，請參見 [排除快速簽出問題](https://support.magento.com/hc/en-us/articles/6909450342541) 在Adobe Commerce幫助中心。
 
 ## 先決條件
 
