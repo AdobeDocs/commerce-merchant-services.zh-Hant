@@ -4,9 +4,9 @@ description: 「瞭解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ iOS和Android™設備的Store Assist App與Walmart Commerce Technology交互，
 * **事務性電子郵件** — 擴展管理功能 [!UICONTROL Sales Emails] 要為線上購買添加電子郵件模板，請在店內進行提貨交易。 這些模板支援在訂單拾取過程中客戶和儲存關聯之間的即時通信。
 
 * **靈活的履行** — 擴展 [!DNL Commerce] 支援方案以處理延交訂單、數量減少和部分訂單履行，同時方便支援這些方案所需的任何取消和貸項通知單。
+
+>[!TIP]
+>
+> 如想快速演示「商店履行」解決方案，請參閱 [儲存完成概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 可用 _Adobe Commerce視頻和Tutorials_。
+
