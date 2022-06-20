@@ -2,9 +2,9 @@
 title: '"同義詞的類型"'
 description: 「單向和雙向 [!DNL Live Search] 同義詞擴展關鍵字的定義。」
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ ht-degree: 0%
 
 請記住以下最佳做法，以便從即時搜索同義詞中獲取最大價值。
 
-### 關鍵字映射
+### 避免「停止」
 
-此技術使用可搜索的產品屬性而不是同義詞來建立產品之間基於關鍵字的關聯。 因此，映射的產品可以出現在另一產品的搜索結果中。 要瞭解更多資訊，請參閱 [搜索結果](https://docs.magento.com/user-guide/catalog/search-results.html)。
+Live Search從同義詞中篩選出常用英語「停止詞」，例如：
+
+a, a, a, a, a, a, a, a, a, as, a, be, ba, for, if, in, into, is, it, no, on, on, or，或者，這樣， t, the, the, the, te, te, to, with, will
+
+停止字不會使同義詞更有意義，但會增加必須處理的資料量。
 
 ### 使用單詞
 
@@ -46,3 +50,7 @@ ht-degree: 0%
 ### 一致性
 
 與目錄中術語的使用方式保持一致。 請記住，在使用方面可能存在地區差異，有時在行業內也存在差異。
+
+### 關鍵字映射
+
+此技術使用可搜索的產品屬性而不是同義詞來建立產品之間基於關鍵字的關聯。 因此，映射的產品可以出現在另一產品的搜索結果中。 要瞭解更多資訊，請參閱 [搜索結果](https://docs.magento.com/user-guide/catalog/search-results.html)。
