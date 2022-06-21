@@ -2,9 +2,9 @@
 title: 安裝和配置
 description: 瞭解如何安裝、更新和卸載 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
+source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -62,17 +62,7 @@ composer require magento/module-visual-product-recommendations
 composer update magento/product-recommendations --with-dependencies
 ```
 
-要更新為主版本（如從2.0到3.0），必須編輯項目的根 `composer.json` 的子菜單。 (請參閱 [發行說明](release-notes.md) 有關最新版本的資訊。) 例如，開啟主 `composer.json` 檔案和搜索 `magento/product-recommendations` 模組：
-
-```json
-"require": {
-    ...
-    "magento/product-recommendations": "^2.0",
-    ...
-}
-```
-
-讓我們把主版本從 `2.0` 至 `3.0`:
+要更新到主版本，如從3.0到4.0，必須編輯根 `composer.json` 檔案。 (請參閱 [發行說明](release-notes.md) 有關最新版本的資訊。) 例如，開啟主 `composer.json` 檔案和搜索 `magento/product-recommendations` 模組：
 
 ```json
 "require": {
@@ -82,11 +72,25 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
+讓我們把主版本從 `3.0` 至 `4.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^4.0",
+    ...
+}
+```
+
 保存 `composer.json` 檔案和運行：
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
+
+>[!NOTE]
+>
+> 在產品Recommendations的3.x.x版中，您只需一個API密鑰。 在4.x.x版和更高版本中，必須提供生產公用和專用API密鑰以及沙盒公用和專用API密鑰。 如果不提供兩對API密鑰，您將無法訪問管理中的「產品Recommendations」功能。 但是，資料收集將繼續在您的商店中，現有建議將繼續顯示給您的購物者。
 
 ## 卸載 [!DNL Product Recommendations] {#uninstall}
 

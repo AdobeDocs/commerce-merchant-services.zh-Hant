@@ -1,9 +1,10 @@
 ---
 title: 發行說明
 description: 的最新發佈資訊 [!DNL Product Recommendations] Adobe Commerce。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,11 @@ ht-degree: 0%
 請參閱開發人員文檔以 [瞭解產品相容性](https://devdocs.magento.com/release/availability.html)。
 
 ## Adobe Commerce2.3.x和2.4.x
+
+## 4.0.0magento/product-recommendations
+
+* ![新建](../assets/new.svg)  — 已添加 [就緒性指標](create.md) 以幫助您直觀顯示每種建議類型的培訓進度。
+* ![新建](../assets/new.svg)  — 這是主版本。 你必須 [編輯](install-configure.md#update) 根 `composer.json` 檔案。 此版本還要求您在安裝和配置產品Recommendations時提供兩個API密鑰： [生產密鑰和沙盒密鑰](../landing/saas.md)。
 
 ## 3.3.7magento/product-recommendations
 

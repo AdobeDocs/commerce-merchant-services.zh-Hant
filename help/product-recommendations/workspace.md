@@ -1,9 +1,10 @@
 ---
 title: 工作區
 description: 瞭解如何配置、管理和監控產品建議效能。
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ _Recommendations設定_
 | 收入 | 受當前時間範圍建議所驅動的收入。 |
 | 收入 | (Lifetime Revenue)由建議驅動的Lifetime Revenue。 |
 | 可視性 | 為視圖註冊的建議單位的百分比。 |
-| CTR | （已註冊的按一下百分比）註冊按一下的建議的單位印象百分比。 |
-| vCtr | （可查看已註冊的按一下百分比）註冊按一下的建議單元的可查看印象百分比。 |
+| CTR | （點擊率）註冊點擊量的建議書的單位印象百分比。 |
+| vCtr | （可查看點擊率）註冊點擊的推薦單元的可查看印象百分比。 |

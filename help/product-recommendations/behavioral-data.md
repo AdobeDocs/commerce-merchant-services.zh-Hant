@@ -1,9 +1,10 @@
 ---
 title: 行為資料
 description: 瞭解行為資料以及何時開始使用它。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ ht-degree: 0%
 - 某些建議類型的訓練速度比其他類型快
 - Adobe Commerce每四小時重新計算行為資料。 雖然您當時在技術上可以部署建議單元，但要知道建議在您的站點上使用的時間越長，建議就越準確。
 
+要幫助您直觀地查看每種建議類型的培訓進度， [建立建議](create.md) 頁顯示就緒指示器。
+
 在收集生產資料並訓練機器學習模型時，您可以實施 [剩餘任務](implementation-workflow.md) 將建議部署到店面。 在您完成測試和配置建議之後，機器學習模型已收集和計算了足夠的資料來構建相關建議，從而允許您將建議部署到您的店面。
 
-## 備份建議
+## 備份建議 {#backuprecs}
 
 如果沒有足夠的輸入資料來提供一個單位內所有請求的建議項目，Adobe Commerce將提供備份建議來填充建議單位。 例如，如果部署 `Recommended for you` 首次在您的網站上購物的推薦類型沒有生成足夠的行為資料，無法準確推薦個性化產品。 在本例中，Adobe Commerce基於 `Most viewed` 推薦類型。
 
