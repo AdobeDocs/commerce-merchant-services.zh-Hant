@@ -2,9 +2,9 @@
 title: '" [!DNL Quick Checkout] Adobe Commerce分機」'
 description: 「瞭解 [!DNL Quick Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝和設定擴展。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ ht-degree: 0%
 
 ## 啟用擴展
 
-1. 在 _管理_ 邊欄，導航 **商店** > **配置** > **簽出** 訪問「簽出管理」配置頁。
+1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **配置**。
+1. 在左面板中，展開 **銷售** 選擇 **簽出**。
 
    ![快速簽出](assets/admin-view.png)
 
