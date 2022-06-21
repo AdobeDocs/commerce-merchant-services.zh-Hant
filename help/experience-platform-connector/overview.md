@@ -1,9 +1,9 @@
 ---
 title: 指南概述
 description: Adobe Experience Platform連接器連接Adobe Commerce [!DNL Commerce] 例如其他Adobe Experience Cloud產品。
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送到Adobe Experience Platform邊緣，以便Adobe Analytics和Adobe Target等其他Adobe Experience Cloud產品可以使用 [!DNL Commerce] 資料。 通過連接 [!DNL Commerce] 資料到Adobe Experience Cloud的其他產品，您可以執行任務，如分析站點上的用戶行為、執行AB測試和建立個性化市場活動。
 
-店面事件捕獲購物者交互，如 `View Page`。 `View Product`。 `Add to Cart`等等。 捕獲的資料不包括個人身份資訊(PII)。 所有用戶標識符，如cookie ID和IP地址，都是嚴格匿名的。 [瞭解更多資訊](https://www.adobe.com/privacy/experience-cloud.html)。 請參閱此頁末尾的店面事件完整清單。
+店面事件捕獲購物者交互，如 `View Page`。 `View Product`。 `Add to Cart`等等。 捕獲的資料不包括個人身份資訊(PII)。 所有用戶標識符，如cookie ID和IP地址，都是嚴格匿名的。 [瞭解更多資訊](https://www.adobe.com/privacy/experience-cloud.html)。 請參閱 [儲存事件](events.md)。
 
 ## 使用Experience Platform連接器的先決條件 {#prereqs}
 
@@ -43,7 +43,7 @@ Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送�
 當前，Experience Platform連接器存在以下已知問題：
 
 - 安裝了B2B模組的Adobe Commerce企業版不支援搜索事件。
-- Storefront資料連接到Adobe Experience Platform邊緣後，需要幾個小時才能從Commerce到達各個目的地。
+- 從Adobe Commerce到Adobe Experience Platform邊緣後，Storefront資料需要大約一個小時才能到達各個目的地。
 
 ## 支援
 
