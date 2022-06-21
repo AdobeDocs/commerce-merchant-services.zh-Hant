@@ -1,9 +1,9 @@
 ---
 title: 建立自定義事件
 description: 瞭解如何建立自定義事件將您的Adobe Commerce資料連接到其他AdobeDX產品。
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ mse.publish.custom({
 
 >[!NOTE]
 >
-> 使用自定義事件可能會影響OOTBAdobe Analytics報告。
+> 使用自定義事件可能會影響預設的Adobe Analytics報告。
 
 ## 處理事件覆蓋（自定義屬性）
 
@@ -104,4 +104,4 @@ mse.publish.productPageView({
 
 >[!NOTE]
 >
-> 使用自定義屬性覆蓋事件可能會影響OOTBAdobe Analytics報告。
+> 使用自定義屬性覆蓋事件可能會影響預設的Adobe Analytics報告。
