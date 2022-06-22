@@ -2,9 +2,9 @@
 title: 建立新建議
 description: 瞭解如何建立產品推薦單元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ _推薦單元_
 
    對於每個頁面類型，最多可以建立五個活動建議單元，對於頁面生成器，最多可建立25個活動建議單元。 達到限制後，頁面類型將呈灰色顯示。
 
-   ![建議名稱](assets/create-recommendation.png)
-   _建議名稱和位置_
+   ![建議名稱和頁](assets/create-recommendation.png)
+   _建議名稱和頁面位置_
 
 1. 在 _選擇建議類型_ ，指定 [建議類型](type.md) 要顯示在所選頁面上。 對於某些頁面， [放置](placement.md) 建議的範圍限於某些類型。
 
@@ -54,10 +54,10 @@ _推薦單元_
 
    基於上述因素，計算並顯示準備值。 當建議類型的就緒性值為75%或更高時，建議類型即可部署。 建議類型在準備情況至少為50%時被視為已部分就緒。 最後，當建議類型的就緒性值小於50%時，建議類型被認為未準備好部署。
 
-1. 在 _店面顯示標籤_ ，輸入 [標籤](placement.md#recommendation-labels) 你的購物者可以看到的，比如「暢銷貨」。
-
-   ![建議名稱](assets/create-recommendation-select-type.png)
+   ![建議類型](assets/create-recommendation-select-type.png)
    _建議類型_
+
+1. 在 _店面顯示標籤_ ，輸入 [標籤](placement.md#recommendation-labels) 你的購物者可以看到的，比如「暢銷貨」。
 
 1. 在 _選擇產品數_ 部分，使用滑塊指定要在建議單元中顯示多少個產品。
 
@@ -72,12 +72,12 @@ _推薦單元_
 
    的 _選擇職位_ 部分顯示為所選頁面類型建立的所有建議（如果有）。
 
-   ![建議名稱](assets/create-recommendation-select-placement.png)
-   _建議類型_
+   ![建議訂單](assets/create-recommendation-select-placement.png)
+   _第頁上的建議順序_
 
 1. （可選）在 _篩選器_ 的 [應用篩選器](filters.md) 以控制推薦單元中出現的產品。
 
-   ![建議名稱](assets/create-recommendation-select-placement.png)
+   ![建議篩選器](assets/create-recommendation-filter-products.png)
    _推薦產品篩選器_
 
 1. 完成後，按一下以下選項之一：
