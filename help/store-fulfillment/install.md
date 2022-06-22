@@ -4,9 +4,9 @@ description: '"安裝 [!DNL Store Fulfillment solution] 使用Composer for PHP�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies軟體存檔（.zip檔案）對商店訂單的訪問** — 在啟動和啟用過程中，請與客戶經理合作，以訪問儲存完成擴展的安裝檔案。
 
-- **Adobe Commerce帳戶資訊** — 安裝 [!DNL Channel Manager] 需要 [商業帳戶](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有「所有者」或「管理員」訪問權限的帳戶ID和憑據 [!DNL Adobe Commerce] 項目。
+- **Adobe Commerce帳戶資訊** — 安裝 [!DNL Store Fulfillment] 解決方案需要 [商業帳戶](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有「所有者」或「管理員」訪問權限的帳戶ID和憑據 [!DNL Adobe Commerce] 項目。
 
 - 對於 [!DNL Adobe Commerce] 在雲基礎架構項目上，軟體安裝程式必須具有對雲項目的管理員權限。 請參閱 [管理用戶訪問](https://devdocs.magento.com/cloud/project/user-admin.html)。
 
