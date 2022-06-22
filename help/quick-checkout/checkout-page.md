@@ -2,9 +2,9 @@
 title: '"簽出頁"'
 description: 「Adobe Commerce的結帳頁面概述。」
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ ht-degree: 0%
 >
 > 完成第一步後，簽出顯示簽出總數和相應的側欄資訊。
 
-請參閱 [簽出流](../quick-checkout/onboarding.md) 主題，以獲取有關 [!DNL Quick Checkout] 。
+請參閱 [簽出流](../quick-checkout/checkout-flow.md) 主題，以獲取有關 [!DNL Quick Checkout] 。
