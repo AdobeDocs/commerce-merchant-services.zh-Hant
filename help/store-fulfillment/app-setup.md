@@ -4,9 +4,9 @@ description: 設定 [!DNL Store Assist] app用於管理端到端商店履行工�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Store Assist應用需要兩種配置：
 
    - **切換過程** — 當Store Associate將訂單交付給客戶時啟用可選流程，例如，要求客戶簽名或提示關聯檢查客戶ID。
 
-   - **在切換時啟用項目拒絕** — 允許客戶在訂單切換期間返回或取消訂單項目。
+   - **在切換時啟用項目拒絕** — 允許客戶在訂單切換期間返回或取消訂單項。
    與Walmart Commerce Technologies客戶服務團隊合作，為Store Assist應用程式完成前端配置。
 
 ## 應用下載和安裝
@@ -67,7 +67,7 @@ Store Assist應用需要兩種配置：
 
 - 儲存關聯需要以下資訊才能登錄：
 
-   - 與您的Store Assist帳戶關聯的公司名稱
+   - **[!UICONTROL Company name]** 與Store Assist帳戶關聯
 
-   - 儲存Assist帳戶憑據 — 其帳戶的用戶名和密碼憑據。
+   - **儲存協助帳戶憑據** — 其帳戶的用戶名和密碼憑據。
    Adobe Commerce管理員可以建立用戶帳戶並為具有以下條件的儲存位置的Store Assist應用用戶帳戶設定權限 [店內裝貨](merchant-store-configuration.md#pickup-location-configuration) 在「管理儲存」設定中啟用。

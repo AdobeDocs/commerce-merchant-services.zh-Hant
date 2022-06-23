@@ -3,13 +3,13 @@ title: 儲存位置和映射系統配置
 description: 配置距離提供程式以支援店面UI中的商店位置映射。 應用商店履行解決方案需要一個距離提供商來啟用零售商店搜索以及端到端履行工作流的其他映射和計畫功能。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # 儲存位置和映射設定
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 要配置距離提供程式：
 
-1. 從 [!UICONTROL Stores > General] 在管理中，為映射內容類型添加Google映射整合。
+1. 從 **[!UICONTROL Stores > General]** 在管理中，為映射內容類型添加Google映射整合。
 
    - 轉到 **[!UICONTROL Stores > Configuration  > General > Content Management]**。
 
    - 將您的GoogleAPI密鑰添加到 **[!UICONTROL Google Maps API Key]** 的子菜單。
 
-1. 從 [!UICONTROL Stores > Inventory] 在Admin中，選擇Store Fulfilment的距離提供程式。
+1. 從 **[!UICONTROL Stores > Inventory]** 在Admin中，選擇Store Fulfilment的距離提供程式。
 
    - 轉到 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**。
 

@@ -3,13 +3,13 @@ title: Test和部署儲存履行
 description: Test計畫驗證「商店履行」功能。 Test包括庫存同步API、已取消訂單的端到端履行工作流、Store Fullment應用程式用戶管理和客戶簽入體驗。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Test和部署Adobe Commerce的儲存履行
 
@@ -136,7 +136,6 @@ test計畫的此部分包括test通過Adobe Commerce取消的訂單的端到端�
 </td>
 <td>
 <ul>
-<td>
 <li>訂單歷史記錄更新為 <code>We refunded $X online. Transaction ID: transactionID</code> 和 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>訂單狀態為 <code>Closed</code>。 （我們已設定「付款審核」。）</li>
 <li>在Adobe Commerce建立的貸項通知單。 （等到cron工作。）</li>
@@ -449,7 +448,7 @@ test計畫的此部分包括以下功能的「儲存代貨單的簽入體驗」�
 
 - 替代裝貨聯繫人 — 驗證用於添加 [!UICONTROL Alternate Pickup Contact] 選擇 [!UICONTROL Preferred Contact] 商店代貨訂單。
 
-- 簽入表單 — 驗證提交儲存裝貨單簽入請求的工作流。
+- 檢入表單 — 驗證提交「儲存」分揀單的檢入請求的工作流。
 
 **功能區：** 購物車結帳，簽入儲存裝貨單的表單</br>
 **角色：** 管理員、客戶、儲存關聯</br>
@@ -566,7 +565,7 @@ test計畫的這一部分介紹了在Store Assist應用中測試訂單、選擇�
 </tr>
 <tr>
 <td>
-<strong>單次領料快樂路徑，彎邊領料</strong></td>
+<strong>單訂單領料 — 快樂路徑、彎邊領料</strong></td>
 <td>挑選單個和多數量物料。 不提貨，也不提貨（有分段）。
 </td>
 <td>
@@ -645,22 +644,3 @@ test計畫的這一部分介紹了在Store Assist應用中測試訂單、選擇�
 >[!TIP]
 >
 >有關Adobe Commerce雲基礎架構項目的部署指南、核對清單和最佳實踐，請參閱 [部署儲存](https://devdocs.magento.com/cloud/live/stage-prod-live.html) 在Adobe Commerce開發人員文檔中。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

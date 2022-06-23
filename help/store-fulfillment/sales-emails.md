@@ -4,9 +4,9 @@ description: 配置事務性電子郵件模板，以便在完成儲存代收訂�
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 銷售電子郵件
 
-Store Fulfillment提供一組擴展的事務性電子郵件模板，以支援訂單和履行工作流。 它們提供跨渠道的一致、自動通信和消息傳遞 — 通知客戶和儲存管理員有關訂單狀態更改、店內皮卡訂單的說明等。
+Store Fulfillment提供一組擴展的事務性電子郵件模板，以支援訂單和履行工作流。 它們提供跨渠道的一致、自動通信和消息傳遞 — 通知客戶和儲存管理員有關訂單狀態更改、店內提貨單的說明等。
 
 儲存完成電子郵件模板配置了預設消息和設定。 Adobe Commerce的商戶管理員可以管理和修改配置，並選擇電子郵件模板以在不同情況下與客戶進行通信。 管理員也可以配置和自定義模板。
 
