@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 的下一頁。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ ht-degree: 0%
 1. 要更改在結帳期間顯示的付款方法的名稱，請在 **[!UICONTROL Checkout title]** 的子菜單。
 1. 至 [設定付款活動](production.md#set-payment-services-as-payment-method)切換 **[!UICONTROL Payment action]** 至 `Authorize` 或 `Authorize and Capture`。
 1. 要啟用調試模式，請切換 **[!UICONTROL Debug Mode]** 選擇器。
+
+   啟用調試模式時，有關信用卡付款的額外調試資訊將寫入 `var/log/payment.log` 的子菜單。 此資訊可讓您更深入地瞭解特定付款，以幫助進行故障排除。
+
 1. 按一下 **[!UICONTROL Save]**.
 
    如果嘗試在不保存更改的情況下從此視圖中導航，則會出現一個模式，提示您放棄更改、繼續編輯或保存更改。
@@ -88,6 +91,9 @@ ht-degree: 0%
 
 1. 更改 [稍後付費消息](payments-options.md#pay-later-button)，切換 **[!UICONTROL Display Pay Later message]** 的雙曲餘切值。
 1. 要啟用調試模式，請切換 **[!UICONTROL Debug Mode]** 選擇器。
+
+   啟用調試模式時，有關PayPal付款的額外調試資訊將寫入 `var/log/payment.log` 的子菜單。 此資訊可讓您更深入地瞭解特定付款，以幫助進行故障排除。
+
 1. 按一下 **[!UICONTROL Save]**.
 
    如果嘗試在不保存更改的情況下從此視圖中導航，則會出現一個模式，提示您放棄更改、繼續編輯或保存更改。
