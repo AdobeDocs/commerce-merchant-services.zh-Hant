@@ -1,15 +1,15 @@
 ---
 title: 應用程式設定
-description: '"設定 [!DNL Store Assist] app管理端到端商店履行工作流和線上購買流程，在商店訂單中提貨。」 '
+description: 設定 [!DNL Store Assist] app用於管理端到端商店履行工作流和線上購買流程，在商店訂單中提貨。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 應用程式設定
 
@@ -55,14 +55,15 @@ Store Assist應用需要兩種配置：
    - **切換過程** — 當Store Associate將訂單交付給客戶時啟用可選流程，例如，要求客戶簽名或提示關聯檢查客戶ID。
 
    - **在切換時啟用項目拒絕** — 允許客戶在訂單切換期間返回或取消訂單項目。
-
    與Walmart Commerce Technologies客戶服務團隊合作，為Store Assist應用程式完成前端配置。
 
 ## 應用下載和安裝
 
 完成Store Assist應用程式配置後，Store Associates可以從其移動設備下載、安裝和登錄Store Assist應用程式。
 
-- 從下載Store Assist應用 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) 或者Google Play店。
+- 驗證移動設備是否滿足 [硬體和軟體要求](solution-requirements.md#store-assist-app-requirements) 的XML。
+
+- 從下載Store Assist應用 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;}或 [Google Play店](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
 
 - 儲存關聯需要以下資訊才能登錄：
 
@@ -70,4 +71,3 @@ Store Assist應用需要兩種配置：
 
    - 儲存Assist帳戶憑據 — 其帳戶的用戶名和密碼憑據。
    Adobe Commerce管理員可以建立用戶帳戶並為具有以下條件的儲存位置的Store Assist應用用戶帳戶設定權限 [店內裝貨](merchant-store-configuration.md#pickup-location-configuration) 在「管理儲存」設定中啟用。
-
