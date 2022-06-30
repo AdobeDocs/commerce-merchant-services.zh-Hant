@@ -1,10 +1,11 @@
 ---
-title: '"使用 [!DNL Quick Checkout] 管理員"'
-description: '"管理員提供使用 [!DNL Quick Checkout] 直接從管理員處向需要幫助的客戶發送。」'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: 建立訂單 [!DNL Quick Checkout] 在管理員中
+description: 管理員提供使用 [!DNL Quick Checkout] 由商家直接向需要幫助的客戶發送。
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,4 +27,4 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> 在早期採用者計畫(EAP)期間，用戶無法使用OTP登錄自動填寫發運和付款詳細資訊。
+> 用戶無法使用OTP登錄自動填寫所有發運和付款詳細資訊。
