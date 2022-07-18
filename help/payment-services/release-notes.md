@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] 發行說明"'
 description: 查看發行說明以瞭解有關所有 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -69,7 +69,7 @@ _2022年3月31日_
 
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-2742 --> 您現在可以在商店視圖層啟用和禁用可用的付款方法（如Venmo）。 以前，您只能按網站配置付款方式。
 
-![已修復問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 你現在可以選擇 [啟用或禁用單個PayPal智慧按鈕](settings.md#paypal-smart-buttons)。
+![已修復問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 你現在可以選擇 [啟用或禁用單個PayPal智慧按鈕](settings.md#payment-buttons)。
 
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前刪除的產品不會出現在購物車中 _審閱訂單_ 的子菜單。
 
