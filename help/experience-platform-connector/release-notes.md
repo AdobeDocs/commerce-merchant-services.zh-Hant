@@ -1,9 +1,10 @@
 ---
-title: 《項目信標發佈說明》
-description: 來自Adobe Commerce的Project Beacon的最新發佈資訊。
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: 發行說明
+description: Adobe CommerceAdobe Experience Platform連接器的最新發佈資訊。
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +19,8 @@ ht-degree: 0%
 
 ## Experience Platform連接器1.1.0
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce(EE)相容：2.4.4
+* 與Adobe Commerce雲(ECE)相容：2.4.4
 * 穩定性：穩定
 
 ## 文檔
