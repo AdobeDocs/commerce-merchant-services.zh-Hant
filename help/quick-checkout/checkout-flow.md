@@ -2,9 +2,9 @@
 title: '"簽出流"'
 description: 「概述 [!DNL Quick Checkout] Adobe Commerce。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 0%
 
 1. 當出現提示時，輸入與 [!DNL Bolt] 帳戶。
 1. 輸入發送到該密碼的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或電話號碼。
+
+![OTP彈出窗口](assets/pop-up.png)
+
 1. 一旦使用 [!DNL Bolt] 帳戶，結帳詳細資訊自動填寫：
 
    - 裝運資訊
@@ -39,8 +42,8 @@ ht-degree: 0%
 
 的 [!DNL Quick Checkout] 允許在簽出流程中使用多個用例：
 
-- [來賓用戶](../quick-checkout/checkout-adobe-commerce.md) 註冊或新 [!DNL Bolt] 帳戶。
-- 現有 [Adobe Commerce用戶](../quick-checkout/checkout-adobe-commerce.md) 有/沒有註冊 [!DNL Bolt] 帳戶。
+- [來賓用戶](../quick-checkout/checkout-bolt.md) 註冊或新 [!DNL Bolt] 帳戶。
+- 現有 [Adobe Commerce用戶](../quick-checkout/checkout-adobe-commerce.md) 有或沒有註冊 [!DNL Bolt] 帳戶。
 
 ## 獲取幫助
 
