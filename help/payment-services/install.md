@@ -2,9 +2,9 @@
 title: 安裝 [!DNL Payment Services]
 description: 安裝Payments Services擴展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,6 @@ ht-degree: 0%
 請參閱 [獲取您的身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 的子菜單。
 
 安裝此擴展有兩種方法 —  [[!DNL Adobe Commerce] 雲基礎架構](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部](install.md#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
-
-## 更新最小穩定性設定
-
-安裝擴展之前，必須更改 `minimum-stability` 要求 `RC` （釋放候選人） `composer.json` 的子菜單。 可以使用IDE或您最喜愛的文本編輯器（如Visual Studio Code或「崇高文本」）。
-
-在 `composer.json` 檔案，更改 `"minimum-stability": "stable"` 至 `"minimum-stability": "RC"`。
 
 ## 安裝擴展
 
