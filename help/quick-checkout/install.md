@@ -2,9 +2,9 @@
 title: '"安裝 [!DNL Quick Checkout] Adobe Commerce分機」'
 description: 「按照這些步驟安裝 [!DNL Quick Checkout] 你的Adobe Commerce計畫"
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 更新最小穩定性設定
 
-在安裝擴展之前，可以更改 `minimum-stability` 要求 `RC` （釋放候選人） `composer.json` 的子菜單。 可以使用IDE或您最喜愛的文本編輯器（如Visual Studio Code或「崇高文本」）。
+安裝擴展之前，請確保 `minimum-stability` 的 `composer.json` 檔案設定為 `"stable"`:
 
-在 `composer.json` 檔案，更改 `"minimum-stability": "stable"` 至 `"minimum-stability": "RC"`。
+`"minimum-stability": "stable"`
 
 ## 安裝擴展
 
