@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文檔
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(僅Adobe Commerce)<br><em>添加基於購物者行為、流行趨勢、產品相似性等的AI推薦。</em></p>
-    <br>
+    </br>
   </td>
   <td valign="top">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" />
@@ -34,7 +34,7 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
     <p>(僅Adobe Commerce)<br><em>實施此基於AI的搜索工具，為B2C購物者提供更智慧、更快和相關的結果。</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 <tr>
@@ -44,14 +44,32 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
     </div>
     <em>通過輕鬆提供各種付款方法（包括免息付款分期付款），以及在管理員控制面板中查看付款處理、訂單和發票的單一視圖，提高客戶滿意度。</em>
-    <br>
+    </br>
   </td>
     <td valign="top">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" />
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>在單個平台上為B2B和B2C客戶構建多渠道的商務體驗。 從目錄到支付到履行，這種面向未來的技術為您提供了一個無限靈活、可擴展和可擴展的商業平台。</em></p>
+    <p><em>將您的商店與全球最大的網際網路購物目的地整合在一起。 此服務通過將Commerce與您的Amazon銷售中心帳戶連接並提供目錄和訂單資料的自動化和同步，使Amazon銷售得以實現。 完全管理所有Amazon清單，實施簡單或智慧的定價規則，並通過單個Commerce控制面板維護您的訂單和庫存。</em></p>
+    </br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
+    </div>
+    <em>通過將Adobe Commerce或Magento Open Source產品目錄與沃爾瑪市場整合，提高銷售量、接觸新客戶、優化銷售運營並節省時間。 使商店管理員和運營人員能夠從商業環境無縫地管理沃爾瑪市場的銷售、庫存和產品定價。</em>
+    </br>
+  </td>
+    <td valign="top">
+       <img alt="儲存履行" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
+    </div>
+    <p>(僅Adobe Commerce)<br><em>通過提供通過移動設備實現的端到端無縫的渠道完成工作流，提供卓越的線上購買，在商店(BOPIS)中接貨，最大限度地提高商店員工的生產效率。</em></p>
     <br>
   </td>
 </tr>
@@ -74,3 +92,6 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
 * 已添加 [[!DNL Payment Services] 引導](/help/payment-services/guide-overview.md) 以及新市場擴展和托管服務v1.0.0的最新資訊。
 * 的 [!DNL Live Search] [效能報告儀表板](/help/live-search/performance.md) 提供了消費者使用搜索詞的有效性的洞察。
 * 在中添加了B2B支援 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md)。
+* 已添加 [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) 為那些希望從他們的 [!DNL Commerce] 實例。
+* 已添加 [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) 對於希望改進線上購買的客戶，在商店中提貨(BOPIS)客戶體驗，並為店內和路邊提貨提供支援移動的無縫的人道履行工作流程。
+
