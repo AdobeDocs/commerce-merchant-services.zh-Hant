@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 在儲存配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 6f13c39f915c382e99c747d9a88e16ed10bebaf3
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,8 @@ ht-degree: 0%
 | [!UICONTROL Title] | 商店視圖 | 在結帳期間，在「付款方法」視圖中將要顯示為此付款選項標題的文本添加。 選項：文本欄位 |
 | [!UICONTROL Payment Action] | 網站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}，用於指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | 網站 | 在購物車、產品頁面、迷你購物車和結帳流程中啟用或禁用「稍後付款」消息。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | 商店視圖 | 在顯示付款按鈕的位置啟用或禁用供應商付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | 商店視圖 | 啟用或禁用顯示付款按鈕的「供應商」付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | 商店視圖 | 啟用或禁用顯示付款按鈕的Apple支付付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL PayPal Pay Later Enabled] | 商店視圖 | 啟用或禁用顯示付款按鈕的支付後付款選項外觀。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或禁用調試模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | 商店視圖 | 啟用或禁用 [!DNL PayPal Smart Buttons] 產品詳細資訊頁面。 選項： [!UICONTROL Yes] / [!UICONTROL No] |

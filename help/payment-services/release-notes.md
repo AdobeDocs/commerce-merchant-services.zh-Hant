@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明"'
 description: 查看發行說明以瞭解有關所有 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 ## v1.2.0
 
 _2022年6月29日_
+
+![已知問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple支付與移動和案頭上的Safari瀏覽器v15.5不相容。 使用Safari 15.5版時，您無法使用Apple支付完成結帳。
 
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，當登錄用戶為其帳戶選擇了除預設地址之外的其他計費/發運地址時，簽出失敗。 我們解決了此問題，現在已發送選定的開單/發運地址（而不是預設保存的地址），並且結帳已成功完成。
 

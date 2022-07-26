@@ -4,9 +4,9 @@ description: 使用「訂單付款狀態」報表可查看訂單的付款狀態�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ ht-degree: 0%
 
 資料源選擇的工作方式如下：
 
-* 如果你沒有商店 [!DNL Payment Services] 在即時模式下，資料源選擇預設為 [!UICONTROL Sandbox]_。
+* 如果你沒有商店 [!DNL Payment Services] 在即時模式下，資料源選擇預設為 _[!UICONTROL Sandbox]_。
 * 如果您有使用 [!DNL Payment Services] 在即時模式下，資料源選擇預設為 _[!UICONTROL Live]_。
 * 報告導出始終遵循資料源選擇。
 
 為您的 [!UICONTROL Order Payment Status] 報告：
 
 1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**。
-1. 按一下 **[!UICONTROL Data source]** 選擇 _[!UICONTROL Live]_或 [!UICONTROL Sandbox]_。
+1. 按一下 **[!UICONTROL Data source]** 選擇 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_。
 
    根據所選資料源重新生成報告結果。
 
@@ -105,11 +105,23 @@ ht-degree: 0%
 
 ## 查看狀態
 
+「訂單付款狀態」報表視圖顯示每個付款服務訂單的全面事務處理狀態和付款狀態資訊。
+
+### 交易記錄狀態
+
 預設情況下，在網格中顯示30天的訂單付款狀態。
 
 向左和向右滾動以查看 [訂單付款狀態資訊](#column-descriptions)，包括訂單日期、授權日期、開票、發運、支付狀態等。
 
 在搜索中返回或在預設的30天訂單付款狀態中顯示的行數顯示在「訂單付款狀態」視圖網格的上方以及「訂單日期日曆」選擇器篩選器。
+
+### 付薪狀態
+
+「支付狀態」列顯示任何付款的當前狀態。 A `Capture failed` 付款顯示紅色警報狀態和 `Voided` 付款顯示灰色警報狀態。
+
+### 退款狀態
+
+「退款狀態」列顯示任何退款的當前狀態。 A `Capture failed` 付款顯示紅色警報狀態和 `Voided` 付款顯示灰色警報狀態。
 
 ## 更新報表資料
 
