@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明"'
 description: 查看發行說明以瞭解有關所有 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _2022年6月29日_
 ### 托管服務更新
 
 本發行說明描述了在當前v1.2.0版本和托管服務的上一1.1.0版本之間在常規版本控制功能版本之外發生和發佈的功能更改和修復。
+
+![新建](../assets/new.svg)<!-- Issue PAY-3420 --> Apple支付現已作為PayPal智慧按鈕提供。 此 [付款選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 使客戶能夠在其設備上使用Touch ID使用Apple支付，該支付使用儲存在其iOS或macOS設備上的信用卡和借記卡付款憑據。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 商店訂單的爭議現可在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes)。 您可以直接從PayPal解決中心導航 [!DNL Payment Services] 就糾紛採取行動。
 
