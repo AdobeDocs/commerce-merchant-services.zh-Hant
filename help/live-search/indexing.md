@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 索引"'
 description: 「瞭解如何 [!DNL Live Search] 索引product屬性屬性。"
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 產品屬性屬性（元資料）決定了屬性在目錄中的使用方式、其在儲存中的外觀和行為，以及資料傳輸操作中包括的資料。 屬性元資料的範圍是 `website/store/store view`。
 
-的 [!DNL Live Search] API允許客戶端按具有 [storefront屬性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 設定為 `Yes` 在Adobe Commerce行政區。
+的 [!DNL Live Search] API允許客戶端按具有 [storefront屬性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 設定為 `Yes` 在Adobe Commerce行政區。 啟用後， `Search Weight` 和 `Visible in Advanced Search` 可以為屬性設定。
 
 >[!NOTE]
 >
