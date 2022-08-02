@@ -5,16 +5,16 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文檔
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
+source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # <!-- use banner as heading -->![服務文檔](./assets/banner-services-home.png) {#documentation}
 
-Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分。
+Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
 
 ## 可用服務
 
@@ -46,17 +46,17 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
     <em>通過輕鬆提供各種付款方法（包括免息付款分期付款），以及在管理員控制面板中查看付款處理、訂單和發票的單一視圖，提高客戶滿意度。</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
-    <strong>[!DNL Amazon Sales Channel]</strong></a>
+  <td valign="top">
+    <img alt="儲存履行" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
-    <p><em>將您的商店與全球最大的網際網路購物目的地整合在一起。 此服務通過將Commerce與您的Amazon銷售中心帳戶連接並提供目錄和訂單資料的自動化和同步，使Amazon銷售得以實現。 完全管理所有Amazon清單，實施簡單或智慧的定價規則，並通過單個Commerce控制面板維護您的訂單和庫存。</em></p>
+    <p>(僅Adobe Commerce)<br><em>通過提供通過移動設備實現的端到端無縫的人員履行工作流，提供卓越的線上購買、在商店(BOPIS)接貨體驗，並最大限度地提高商店員工的工作效率。</em></p>
     </br>
   </td>
-</tr>
-<tr>
-  <td valign="top">
+  </tr>
+  <tr>
+   <td valign="top">
     <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
@@ -64,12 +64,12 @@ Adobe提供托管服務的集合，以幫助商家支援其業務的關鍵部分
     <em>通過將Adobe Commerce或Magento Open Source產品目錄與沃爾瑪市場整合，提高銷售量、接觸新客戶、優化銷售運營並節省時間。 使商店管理員和運營人員能夠從商業環境無縫地管理沃爾瑪市場的銷售、庫存和產品定價。</em>
     </br>
   </td>
-  <td valign="top">
-    <img alt="儲存履行" src="assets/store-fulfillment-landing-graphic.png"/>
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
-    <strong>[!DNL Store Fulfillment]</strong></a>
+    <td valign="top">
+       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" />
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
+    <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p>(僅Adobe Commerce)<br><em>通過提供通過移動設備實現的端到端無縫的渠道完成工作流，提供卓越的線上購買，在商店(BOPIS)中接貨，最大限度地提高商店員工的生產效率。</em></p>
+    <p><em>將您的商店與全球最大的網際網路購物目的地整合在一起。 此服務通過將Commerce與您的Amazon銷售中心帳戶連接並提供目錄和訂單資料的自動化和同步，使Amazon銷售得以實現。 完全管理所有Amazon清單，實施簡單或智慧的定價規則，並通過單個Commerce控制面板維護您的訂單和庫存。</em></p>
     </br>
   </td>
 </tr>
