@@ -2,9 +2,9 @@
 title: '" [!DNL Quick Checkout] Adobe Commerce分機」'
 description: 「瞭解 [!DNL Quick Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝和設定擴展。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 - [!DNL Publishable key]:前端用於與交互的密鑰 [!DNL Bolt] API。
 - [!DNL Signing secret]:用於對從接收的請求進行簽名驗證 [!DNL Bolt]。
 
-![快速簽出](assets/account-credentials.png)
+   ![快速簽出](assets/account-credentials.png)
 
 查看 [[!DNL Bolt] 環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;頁，以瞭解密鑰和簽名密鑰 [!DNL Bolt] 為 [!DNL Quick Checkout] 擴展。
 
@@ -73,6 +73,13 @@ ht-degree: 0%
 1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **配置**。
 1. 在左面板中，展開 **銷售** 選擇 **簽出**。
 1. 在 [!DNL Quick Checkout] 視圖，設定 **啟用** 至 `Yes`。
+
+![快速簽出](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> 只有在 **啟用** 設定為 `Yes`。
+
 1. 選擇要使用的方法（沙盒或生產）。
 
    - 用於測試和開發目的的沙盒
@@ -80,7 +87,7 @@ ht-degree: 0%
 
 1. 在提供您的唯一API和 [!DNL Publishable keys]。
 
-![快速簽出](assets/extension-view.png)
+![快速簽出](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
