@@ -2,9 +2,9 @@
 title: 指南概述
 description: Adobe Experience Platform連接器連接Adobe Commerce [!DNL Commerce] 例如其他Adobe Experience Cloud產品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送�
 - 安裝 [Experience Platform連接器延伸部](install.md)。
 
    Experience Platform連接器擴展從伺服器的命令行安裝，並作為 [服務](../landing/saas.md)。 完成該過程後，Experience Platform連接器出現在 **系統** 菜單 **服務** 的 [!DNL Commerce] _管理_。
+- [上載購物者配置檔案](profile.md) 因此，店面資料可歸因於特定購物者，以提升其購物體驗。
 
 ## 觀眾
 
 本指南針對必須將其Adobe Commerce店面資料連接到其他AdobeDX產品的Adobe Commerce商家而設計。
+
+### PWA Studio支援
+
+查看 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 文檔，瞭解有關如何在Experience Platform庫面中使用PWA Studio連接器的資訊。
 
 ## 已知問題
 

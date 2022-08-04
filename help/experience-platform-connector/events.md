@@ -2,9 +2,9 @@
 title: 事件
 description: 瞭解哪些事件捕獲資料並查看完整的架構定義。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 0%
 | [註銷](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | 配置檔案 |
 | [建立帳戶](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | 配置檔案 |
 | [編輯帳戶](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | 配置檔案 |
+| [已發送搜索請求](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | 搜索 |
+| [已接收搜索響應](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | 搜索 |
 
 >[!NOTE]
 >
