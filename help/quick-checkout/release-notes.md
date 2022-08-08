@@ -1,10 +1,11 @@
 ---
-title: '"[!DNL Quick Checkout] 發行說明"'
+title: '''[!DNL Quick Checkout] 發行說明'''
 description: 查看發行說明以瞭解有關所有 [!DNL Quick Checkout] 版本。
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
+source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '263'
+ht-degree: 1%
 
 ---
 
@@ -30,10 +31,14 @@ ht-degree: 0%
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] Adobe Commerce自動識別網路中的每個購物者 [按一下購買](checkout-flow.md) 就在你的網站上。
 
+![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] Adobe Commerce允許購物者同時 [登錄Adobe Commerce和博爾特網路](checkout-flow.md/#quick-checkout-use-cases) 提供更好的 `one-click checkout` 體驗。
+
 ![新建](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] Adobe Commerce支援 [沙盒帳戶](testing.md#testing-in-sandbox) 允許商戶在test模式下評估擴展。
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-780 --> 您的購物者可以通過 [[!DNL Quick Checkout]](checkout-page.md) 或通過 [手動訂單建立](create-order-admin.md)。
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-666 --> 商家可以配置 [!DNL Quick Checkout] 基本付款活動，如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)或在沙盒和生產環境之間切換。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-288 --> 自定義 [用戶會話生存期](user-session-lifetime.md) 為 [!DNL Quick Checkout] Adobe Commerce。
 
 ![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 使用 [合成器密鑰不正確](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝期間 [!DNL Quick Checkout] 阻止用戶 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正確 `MAGEID`。
