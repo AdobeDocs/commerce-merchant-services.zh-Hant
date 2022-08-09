@@ -2,9 +2,9 @@
 title: '" [!DNL Quick Checkout] Adobe Commerce分機」'
 description: 「瞭解 [!DNL Quick Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝和設定擴展。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,8 @@ ht-degree: 0%
 
 ## 獲取幫助
 
-登機過程旨在指導您完成設定和啟用 [!DNL Express Checkout] 功能。 通過您指定的Slack聯繫Adobe Commerce工程團隊 [AdobeBeta程式渠道](http://adobe-beta-programs.slack.com/) 幫助渠道。
+登機過程旨在指導您完成設定和啟用 [!DNL Express Checkout] 功能。
+
+通過以下網站與Adobe Commerce支援部門聯繫： [Adobe Commerce幫助中心](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) 尋求任何幫助。
 
 查看 [test和驗證](../quick-checkout/testing.md) 的子菜單。
