@@ -2,9 +2,9 @@
 title: '"Facets"'
 description: '"[!DNL Live Search] facets將屬性值的多個維用作搜索條件。"'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ Faceting是一種高效能過濾方法，它使用多個維屬性值作為搜索
 
 用於分層導航的類別和產品屬性要求與可篩選屬性類似。 每個屬性的儲存面屬性必須設定為 `filterable (with results)`。
 
-* 最多可以將100個屬性配置為具有 [!DNL Live Search]。
-* [!DNL Live Search] 索引多達300個屬性，作為可篩選/可搜索/可排序，並在搜索中可見。
+Live Search最多支援：
+
+* 100個配置為facet的屬性
+* 50個可排序屬性
+* 200個可篩選屬性
+* 200個可搜索屬性
 
 | 設定 | 說明 |
 |--- |--- |
