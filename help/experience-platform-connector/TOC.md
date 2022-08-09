@@ -2,8 +2,7 @@
 user-guide-title: Adobe Experience PlatformAdobe Commerce連接器
 user-guide-description: 本指南提供了有關使用Adobe Experience Platform連接器進行Adobe Commerce的詳細說明。
 breadcrumb-title: Adobe Experience PlatformAdobe Commerce連接器
-hide: true
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 2%

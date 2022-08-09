@@ -1,17 +1,17 @@
 ---
 title: 指南概述
-description: Adobe Experience Platform連接器連接Adobe Commerce [!DNL Commerce] 例如其他Adobe Experience Cloud產品。
+description: Adobe Commerce的Adobe Experience Platform連接器將您的商業實例連接到其他Adobe Experience Cloud產品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Experience Platform連接器概述
 
-Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送到Adobe Experience Platform邊緣，以便Adobe Analytics和Adobe Target等其他Adobe Experience Cloud產品可以使用 [!DNL Commerce] 資料。 通過連接 [!DNL Commerce] 資料到Adobe Experience Cloud的其他產品，您可以執行任務，如分析站點上的用戶行為、執行AB測試和建立個性化市場活動。
+Experience Platform連接器擴展使Adobe Commerce商家能夠向Adobe Experience Platform邊緣發送資料，以便Adobe Analytics和Adobe Target等Adobe Experience Cloud其它產品能夠使用該商業資料。 通過將您的Commerce資料連接到Adobe Experience Cloud的其他產品，您可以執行任務，如分析站點上的用戶行為、執行AB測試和建立個性化市場活動。
 
 店面事件捕獲購物者交互，如 `View Page`。 `View Product`。 `Add to Cart`等等。 捕獲的資料不包括個人身份資訊(PII)。 所有用戶標識符，如cookie ID和IP地址，都是嚴格匿名的。 [瞭解更多資訊](https://www.adobe.com/privacy/experience-cloud.html)。 請參閱 [儲存事件](events.md)。
 
@@ -36,7 +36,7 @@ Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送�
 
 - 安裝 [Experience Platform連接器延伸部](install.md)。
 
-   Experience Platform連接器擴展從伺服器的命令行安裝，並作為 [服務](../landing/saas.md)。 完成該過程後，Experience Platform連接器出現在 **系統** 菜單 **服務** 的 [!DNL Commerce] _管理_。
+   Experience Platform連接器擴展從伺服器的命令行安裝，並作為 [服務](../landing/saas.md)。 完成該過程後，Experience Platform連接器出現在 **系統** 菜單 **服務** 中 _管理_。
 - [上載購物者配置檔案](profile.md) 因此，店面資料可歸因於特定購物者，以提升其購物體驗。
 
 ## 觀眾
@@ -54,8 +54,8 @@ Experience Platform連接器擴展使Adobe Commerce商家能夠將資料發送�
 - 安裝了B2B模組的Adobe Commerce企業版不支援搜索事件。
 - 從Adobe Commerce到Adobe Experience Platform邊緣後，Storefront資料需要大約一個小時才能到達各個目的地。
 
-## 支援
+如果您需要資訊或有本指南未包括的問題，請使用以下資源：
 
-如果您需要資訊或有本指南未包括的問題，請發佈到以下Slack渠道：
-
-- `#beacon-ama`
+- [幫助中心](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;
+- [支援票證](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 提交票證以接收其他幫助。
+- Slack: `#beacon-ama`

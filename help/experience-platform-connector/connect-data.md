@@ -1,9 +1,10 @@
 ---
 title: 將Commerce資料連接到Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連接到Adobe Experience Platform。
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Datastream ID允許從Adobe Experience Platform事件轉發到其他AdobeDX產�
 | IMS組織（全球） | 屬於購買AdobeDX產品的組織的ID。 此ID將你的Adobe Commerce實例連結到Adobe Experience Platform。 |
 | 資料流ID（儲存視圖） | 允許資料從Adobe Experience Platform流到其他AdobeDX產品的ID。 此ID可以與您特定Adobe Commerce實例中的特定storeView關聯。 |
 
-安裝了Experience Platform連接器擴展後，Adobe Commerce和Adobe Experience Platform之間的連結已建立，並且指定了Datastream ID, [!DNL Commerce] 資料開始流向Adobe Experience Platform邊緣和其他AdobeDX產品。
+安裝了Experience Platform連接器擴展，建立了Adobe Commerce和Adobe Experience Platform之間的連結，並指定了Datastream ID,Commerce資料開始流向Adobe Experience Platform邊緣和其他AdobeDX產品。
 
 ## 邊緣的商業資料
 

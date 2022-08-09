@@ -2,16 +2,16 @@
 title: 事件
 description: 瞭解哪些事件捕獲資料並查看完整的架構定義。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 # Experience Platform連接器事件
 
-下面列出 [!DNL Commerce] 安裝Experience Platform連接器擴展時可用的事件。 這些事件收集的資料被發送到Adobe Experience Platform邊緣。 您還可以建立 [自定義事件](custom-events.md) 收集未在機箱中提供的其他資料。
+下面列出了安裝Experience Platform連接器擴展時可用的Commerce事件。 這些事件收集的資料被發送到Adobe Experience Platform邊緣。 您還可以建立 [自定義事件](custom-events.md) 收集未在機箱中提供的其他資料。
 
 按一下事件名稱以查看完整的架構定義。
 

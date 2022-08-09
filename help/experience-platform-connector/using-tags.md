@@ -1,9 +1,10 @@
 ---
 title: 使用Adobe Experience Platform標籤收集商業資料
 description: 瞭解如何使用Adobe Experience Platform標籤收集Commerce資料。
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 要收集Commerce事件資料，請執行以下操作：
 
-- 安裝 [Adobe Commerce事件SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk)。 有關PHP店面，請參見 [安裝](install.md) 主題。 有關PWA Studio店面，請參閱 [PWA Studio指南](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)。
+- 安裝 [Adobe Commerce事件SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk)。 有關PHP店面，請參見 [安裝](install.md) 主題。 有關PWA Studio店面，請參閱 [PWA Studio指南](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)。
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ _Experience Platform連接器帶標籤的資料流_
    - **名稱**: `Account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
-   - **[可選] 路徑**: `accountContext.accountEmail`
+   - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
@@ -210,7 +211,7 @@ _Experience Platform連接器帶標籤的資料流_
    - **名稱**: `Account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
-   - **[可選] 路徑**: `accountContext.accountEmail`
+   - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
@@ -259,7 +260,7 @@ _Experience Platform連接器帶標籤的資料流_
    - **名稱**: `Account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
-   - **[可選] 路徑**: `accountContext.accountEmail`
+   - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
@@ -344,12 +345,23 @@ _Experience Platform連接器帶標籤的資料流_
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.sku`
 
-1. 幣種代碼：
+1. 產品幣種：
 
-   - **名稱**: `Currency code`
+   - **名稱**: `Product currency`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.currencyCode`
+
+1. 幣種代碼：
+
+   - **名稱**: `Currency code`
+   - **擴展**: `Core`
+   - **資料元素類型**: `Custom Code`
+   - **開啟編輯器**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. 特價：
 
@@ -370,7 +382,11 @@ _Experience Platform連接器帶標籤的資料流_
    - **名稱**: `Product price`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
-   - **開啟編輯器**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **開啟編輯器**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. 產品視圖：
 
@@ -414,7 +430,7 @@ _Experience Platform連接器帶標籤的資料流_
    - **開啟編輯器**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. 搜索輸入排序
@@ -517,7 +533,7 @@ _Experience Platform連接器帶標籤的資料流_
    - **開啟編輯器**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. 搜索結果產品：
@@ -712,13 +728,13 @@ _Experience Platform連接器帶標籤的資料流_
    - **開啟編輯器**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ _Experience Platform連接器帶標籤的資料流_
    - **開啟編輯器**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ _Experience Platform連接器帶標籤的資料流_
    - **開啟編輯器**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

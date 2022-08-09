@@ -2,16 +2,16 @@
 title: 建立自定義事件
 description: 瞭解如何建立自定義事件將您的Adobe Commerce資料連接到其他AdobeDX產品。
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # 建立自定義事件
 
-可以擴展 [業務平台](events.md) 通過建立自己的儲存事件來收集行業特有的資料。 建立和配置自定義事件時，它將發送到 [Adobe Commerce事件收集器](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector)。
+可以擴展 [業務平台](events.md) 通過建立自己的儲存事件來收集行業特有的資料。 建立和配置自定義事件時，它將發送到 [Adobe Commerce事件收集者](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors)。
 
 ## 處理自定義事件
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 示例：
 
-通過MSE SDK發佈的自定義事件：
+通過Adobe Commerce事件SDK發佈的自定義事件：
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ mse.publish.custom({
 
 示例：
 
-通過MSE SDK發佈的替代的產品視圖：
+具有通過Adobe Commerce事件SDK發佈的替代的產品視圖：
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ mse.publish.productPageView({
 }
 ```
 
-通過MSE SDK發佈的具有Adobe Commerce覆蓋的產品視圖：
+通過Adobe Commerce事件SDK發佈的具有Adobe Commerce替代的產品視圖：
 
 ```javascript
 mse.publish.productPageView({
