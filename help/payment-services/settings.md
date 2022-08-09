@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 的下一頁。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      > Apple支付預設為沙箱模式，但您也 [必須有Apple開發員帳戶](test-validate.md#test-in-sandbox-environment) （包括假信用卡和帳單資訊）以test它。 在完成任何操作後，當您準備在生產模式下使用Apple支付 [測試和驗證](test-validate.md)，請聯繫銷售人員，以啟用您的即時商店。
+      > 用Apple付你錢 [必須有Apple開發員帳戶](test-validate.md#test-in-sandbox-environment) （包括假信用卡和帳單資訊）以test它。 準備好在沙盒中使用Apple支付時 *或* 生產模式，完成任何 [測試和驗證](test-validate.md)，請聯繫您的銷售代表，以便為您的即時商店啟用它。
 
 1. 要啟用調試模式，請切換 **[!UICONTROL Debug Mode]** 選擇器。
 1. 按一下 **[!UICONTROL Save]**.
