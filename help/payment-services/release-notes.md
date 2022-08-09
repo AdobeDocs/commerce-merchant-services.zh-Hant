@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] 發行說明"'
 description: 查看發行說明以瞭解有關所有 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
+source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -45,7 +45,7 @@ _2022年6月29日_
 
 ![已修復問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 當Commerce Services憑據無效時， [!DNL Payment Services] 現在，首頁將出現在管理員中。 出現憑據錯誤，警告您憑據無效。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 當前與 [`commerce-data-export` v101.20及更高版本](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0)，使其與 [[!DNL Channel manager] 擴展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 當前與不相容 `commerce-data-export` v101.20及更高版本，使其與 [[!DNL Channel manager] 擴展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)。
 
 ### 托管服務更新
 
@@ -67,7 +67,7 @@ _2022年3月31日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2127 --> 一般可用性發佈 — [!DNL Payment Services] 現在 [相容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility)。
 
-![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 現在可供加拿大商家使用。 商家可以查看其中任何一個 [法語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies) 或 [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies)。
+![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 現在可供加拿大商家使用。 商家可以查看其中任何一個 [法語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 或 [英語](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies)。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支援 [加元](overview.md#accepted-credit-cards-and-currencies) 信用卡和PayPal交易。
 
