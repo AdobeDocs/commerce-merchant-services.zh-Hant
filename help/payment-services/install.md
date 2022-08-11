@@ -2,28 +2,38 @@
 title: 安裝 [!DNL Payment Services]
 description: 安裝Payments Services擴展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
+source-git-commit: 43599d041899251f7716e215284b6eff9312943d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # 安裝 [!DNL Payment Services]
 
-安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用 [!DNL Payment Services]。
+下載和安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用 [!DNL Payment Services]。
 
 ![[!DNL Payment Services] 擴展管理員視圖](assets/admin-view.png)
 
-的 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以使用連結到MagentoID([馬吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在註冊過程中提供。 Composer在初始安裝時使用這些鍵 [!DNL Adobe Commerce]，或在以前未將Composer鍵保存到 `auth.json` 的子菜單。
+## 下載擴展
 
-請參閱 [獲取您的身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 的子菜單。
+必須先從下載擴展 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 安裝之前。
 
-安裝此擴展有兩種方法 —  [[!DNL Adobe Commerce] 雲基礎架構](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部](install.md#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
+1. 導航到 [Commerce Marketplace中的付款服務擴展](https://marketplace.magento.com/magento-payment-services.html)。
+1. 要選擇版本和版本，請切換 **[!UICONTROL Edition]** 和 **[!UICONTROL Your store version]** 選擇。
+1. 按一下 **[!UICONTROL Add to Cart]**.
+1. 完成簽出並按一下 **[!UICONTROL Place Order]**。
+1. 檢查與您的Marketplace下載關聯的電子郵件以獲取訂單確認和詳細資訊。
 
 ## 安裝擴展
 
-可以安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 雲基礎架構和內部實例。
+可以安裝 [!DNL Payment Services] 擴展 [!DNL Adobe Commerce] 在雲基礎架構和內部實例上，這些實例連結到MagentoID([馬吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions))中提供的，並帶有Composer鍵。 [!DNL Magento] 開放原始碼客戶使用內部說明。
+
+Composer在初始安裝時使用這些鍵 [!DNL Adobe Commerce]，或在以前未將Composer鍵保存到 `auth.json` 的子菜單。
+
+請參閱 [獲取您的身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 的子菜單。
+
+請參閱 [安裝擴展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 的子菜單。
 
 ### [!DNL Adobe Commerce] 雲基礎架構
 
@@ -45,9 +55,9 @@ ht-degree: 0%
 
 1. 提交並推送更改。
 
-### 內部
+### 本地和其他配置
 
-此方法用於安裝 [!DNL Payment Services] 本地實例的擴展。
+此方法用於安裝 [!DNL Payment Services] 本地實例的擴展和 [!DNL Magento] 開源客戶。
 
 1. 要獲取擴展，請運行以下命令：
 
@@ -63,7 +73,7 @@ ht-degree: 0%
 
    的 `composer update` 命令更新所有依賴關係。 如果不想同時更新所有依賴關係，請改用以下命令： `composer require magento/payment-services`。
 
-1. 升級 [!DNL Adobe Commerce]:
+1. 升級實例：
 
    ```bash
    bin/magento setup:upgrade
@@ -76,7 +86,7 @@ ht-degree: 0%
    ```
 
 1. 提交更改。
-1. 要確保部署已提交的代碼，請更新您的本地實例。
+1. 要確保部署已提交的代碼，請更新實例。
 
 ## 升級擴展
 

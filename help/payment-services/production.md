@@ -2,7 +2,7 @@
 title: 啟用 [!DNL Payment Services] 生產
 description: 通過啟用 [!DNL Payment Services] 生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # 啟用 [!DNL Payment Services] 生產
 
-在Oracle Payments Services擴展後 [已安裝](install.md)，您的實例 [已配置和連接](connect.md)，你 [設定沙盒](sandbox.md) 經過測試後，您可以繼續將服務投入生產並完成 [聯機](onboard.md)。
+您可以將服務投入生產並完成 [聯機](onboard.md)，按照本主題中的步驟，在您執行以下操作後：
+
+* [安裝](install.md) 支付服務擴展
+* [配置和連接](connect.md) 你的實例
+* [設定](sandbox.md) 和 [test](test-validate.md) 您的沙盒
 
 ## 設定 [!DNL Payment Services] 作為付款方式
 
