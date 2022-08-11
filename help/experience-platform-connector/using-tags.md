@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform標籤收集商業資料
 description: 瞭解如何使用Adobe Experience Platform標籤收集Commerce資料。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ _Experience Platform連接器帶標籤的資料流_
    ![建立新資料元素](assets/create-new-data-elements.png)
    _建立新資料元素_
 
-1. 設定 **名稱** 至 `Sign out`。
+1. 設定 **名稱** 至 `sign out`。
 
 1. 設定 **擴展** 至 `Adobe Experience Platform Web SDK`。
 
@@ -76,16 +76,22 @@ _Experience Platform連接器帶標籤的資料流_
    ![更新註銷值](assets/signout-value.png)
    _更新註銷值_
 
+1. 選擇 **保存**。
+
 1. 建立規則：
 
    ![建立新規則](assets/create-new-rule.png)
    _建立新規則_
+
+1. 選擇 **添加** 在 **事件**。
 
 1. 設定 **擴展** 至 `Adobe Client Data Layer`。
 
 1. 設定 **事件類型** 至 `Data Pushed`。
 
 1. 選擇 **特定事件** 並設定 **要註冊的事件/密鑰** 至 `sign-out`。
+
+1. 選擇 **保留更改** 的子菜單。
 
 1. 添加操作。
 
@@ -159,36 +165,44 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 帳戶電子郵件：
 
-   - **名稱**: `Account email`
+   - **名稱**: `account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
-   - **名稱**: `Account type`
+   - **名稱**: `account type`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.accountType`
 
 1. 帳戶ID:
 
-   - **名稱**: `Account ID`
+   - **名稱**: `account id`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑***: `accountContext.accountId`
 
 1. 登錄：
 
-   - **名稱**: `Sign in`
+   - **名稱**: `sign in`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
+   - **欄位組**: `person` > `accountID`
+   - **帳戶ID**: **值** = `%account id%`
+   - **欄位組**: `person` > `accountType`
+   - **帳戶類型**: **值** = `%account type%`
+   - **欄位組**: `person` > `personalEmailID`
+   - **個人電子郵件地址**: **值** = `%account email%`
+   - **欄位組**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **欄位組**: `userAccount` > `login`
    - **訪問者登錄**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Sign in`
+- **名稱**: `sign in`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `sign-in`
@@ -198,7 +212,7 @@ _Experience Platform連接器帶標籤的資料流_
 - **擴展**: `Adobe Experience Platform Web SDK`
 - **操作類型**: `Send event`
 - **類型**: `userAccount.login`
-- **XDM資料**: `%sign-in%`
+- **XDM資料**: `%sign in%`
 
 ### 建立帳戶 {#createaccount}
 
@@ -208,30 +222,38 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 帳戶電子郵件：
 
-   - **名稱**: `Account email`
+   - **名稱**: `account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
-   - **名稱**: `Account type`
+   - **名稱**: `account type`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.accountType`
 
 1. 帳戶ID:
 
-   - **名稱**: `Account ID`
+   - **名稱**: `account id`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
-   - **[可選] 路徑***: `accountContext.accountId`
+   - **[可選] 路徑**: `accountContext.accountId`
 
 1. 建立帳戶：
 
    - **名稱**: `Create account`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
+   - **欄位組**: `person` > `accountID`
+   - **帳戶ID**: **值** = `%account id%`
+   - **欄位組**: `person` > `accountType`
+   - **帳戶類型**: **值** = `%account type%`
+   - **欄位組**: `person` > `personalEmailID`
+   - **個人電子郵件地址**: **值** = `%account email%`
+   - **欄位組**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **欄位組**: `userAccount` > `createProfile`
    - **建立帳戶配置檔案**: **值** = `1`
 
@@ -257,30 +279,38 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 帳戶電子郵件：
 
-   - **名稱**: `Account email`
+   - **名稱**: `account email`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 帳戶類型：
 
-   - **名稱**: `Account type`
+   - **名稱**: `account type`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `accountContext.accountType`
 
 1. 帳戶ID:
 
-   - **名稱**: `Account ID`
+   - **名稱**: `account id`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
-   - **[可選] 路徑***: `accountContext.accountId`
+   - **[可選] 路徑**: `accountContext.accountId`
 
 1. 編輯帳戶：
 
    - **名稱**: `Edit account`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
+   - **欄位組**: `person` > `accountID`
+   - **帳戶ID**: **值** = `%account id%`
+   - **欄位組**: `person` > `accountType`
+   - **帳戶類型**: **值** = `%account type%`
+   - **欄位組**: `person` > `personalEmailID`
+   - **個人電子郵件地址**: **值** = `%account email%`
+   - **欄位組**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **欄位組**: `userAccount` > `updateProfile`
    - **建立帳戶配置檔案**: **值** = `1`
 
@@ -306,17 +336,17 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 頁名：
 
-   - **名稱**: `Page name`
+   - **名稱**: `page name`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `pageContext.pageName`
 
 #### 規則 
 
-- **名稱**: `Page view`
+- **名稱**: `page view`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
-- **特定事件**: `Core-Library Loaded`
+- **特定事件**: `page-view`
 
 ##### 操作
 
@@ -333,28 +363,28 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品名稱：
 
-   - **名稱**: `Product name`
+   - **名稱**: `product name`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.name`
 
 1. 產品SKU:
 
-   - **名稱**: `Product sku`
+   - **名稱**: `product sku`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.sku`
 
 1. 產品幣種：
 
-   - **名稱**: `Product currency`
+   - **名稱**: `product currency`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.currencyCode`
 
 1. 幣種代碼：
 
-   - **名稱**: `Currency code`
+   - **名稱**: `currency code`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -365,21 +395,21 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 特價：
 
-   - **名稱**: `Special price`
+   - **名稱**: `special price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.specialPrice`
 
 1. 常規價格：
 
-   - **名稱**: `Regular price`
+   - **名稱**: `regular price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.regularPrice`
 
 1. 產品價格：
 
-   - **名稱**: `Product price`
+   - **名稱**: `product price`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -390,14 +420,24 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品視圖：
 
-   - **名稱**: `Product view`
+   - **名稱**: `product view`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 選擇 **提供單個項目** 並按一下 **添加項** 按鈕 因為此視圖是用於PDP的，所以可以用單個項填充。
+   - **欄位組**: `productListItems` > `name`
+   - **名稱**: **值** = `%product name%`
+   - **欄位組**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **欄位組**: `productListItems` > `priceTotal`
+   - **價格合計**: **值** = `%product price%`
+   - **欄位組**: `productListItems` > `currencyCode`
+   - **幣種代碼**: **值** = `%currency code%`
+   - **欄位組**: `commerce` > `productViews` > `value`
+   - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Product view`
+- **名稱**: `product view`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `product-page-view`
@@ -417,14 +457,14 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索輸入
 
-   - **名稱**: `Search input`
+   - **名稱**: `search input`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `searchInputContext.units[0]`
 
 1. 搜索輸入短語
 
-   - **名稱**: `Search input phrase`
+   - **名稱**: `search input phrase`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -435,7 +475,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索輸入排序
 
-   - **名稱**: `Search input sort`
+   - **名稱**: `search input sort`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -454,7 +494,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索輸入篩選器
 
-   - **名稱**: `Search input filters`
+   - **名稱**: `search input filters`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -488,7 +528,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索請求：
 
-   - **名稱**: `Search request`
+   - **名稱**: `search request`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 #### 規則 
 
-- **名稱**: `Search request sent`
+- **名稱**: `search request sent`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `search-request-sent`
@@ -520,14 +560,14 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索結果：
 
-   - **名稱**: `Search results`
+   - **名稱**: `search results`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `searchResultsContext.units[0]`
 
 1. 產品的搜索結果數：
 
-   - **名稱**: `Search result number of products`
+   - **名稱**: `search result number of products`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -538,7 +578,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索結果產品：
 
-   - **名稱**: `Search result products`
+   - **名稱**: `search result products`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -556,7 +596,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索結果建議：
 
-   - **名稱**: `Search result products`
+   - **名稱**: `search result products`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -570,19 +610,21 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 搜索響應：
 
-   - **名稱**: `Search response`
+   - **名稱**: `search response`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `siteSearch` > `suggestions`。 選擇 **提供整個對象**。
+   - **資料元素**: `%search result suggestions%`
    - **欄位組**: `siteSearch` > `numberOfResults`
    - **值**: `%search result number of products%`
    - **欄位組**: `productListItems`。 選擇 **提供整個對象**。
+   - **資料元素**: `%search result products%`
    - **欄位組**: `searchResponse` > `value`
    - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Search Response Received`
+- **名稱**: `search response received`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `search-response-received`
@@ -602,42 +644,42 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品名稱：
 
-   - **名稱**: `Product name`
+   - **名稱**: `product name`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.name`
 
 1. 產品sku:
 
-   - **名稱**: `Product sku`
+   - **名稱**: `product sku`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.sku`
 
 1. 幣種代碼：
 
-   - **名稱**: `Currency code`
+   - **名稱**: `currency code`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.currencyCode`
 
 1. 產品特價：
 
-   - **名稱**: `Product special price`
+   - **名稱**: `product special price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.specialPrice`
 
 1. 產品定價：
 
-   - **名稱**: `Product regular price`
+   - **名稱**: `product regular price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.regularPrice`
 
 1. 產品價格：
 
-   - **名稱**: `Product price`
+   - **名稱**: `product price`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -648,14 +690,14 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 購物車：
 
-   - **名稱**: `Cart`
+   - **名稱**: `cart`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `shoppingCartContext`
 
 1. 購物車ID:
 
-   - **名稱**: `Cart id`
+   - **名稱**: `cart id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -666,18 +708,26 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 添加到購物車：
 
-   - **名稱**: `Add to cart`
+   - **名稱**: `add to cart`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 選擇 **提供單個項目** 並按一下 **添加項** 按鈕 因為此視圖是用於PDP的，所以可以用單個項填充。
+   - **欄位組**: `productListItems` > `name`
+   - **名稱**: **值** = `%product name%`
+   - **欄位組**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **欄位組**: `productListItems` > `priceTotal`
+   - **價格合計**: **值** = `%product price%`
+   - **欄位組**: `productListItems` > `currencyCode`
+   - **幣種代碼**: **值** = `%currency code%`
    - **欄位組**: `commerce` > `cart` > `cartID`
    - **購物車ID**: **值** = `%cart id%`
-   - **欄位組**: `commerce` > `productListAdds` > `id`
-   - **唯一標識符**: **值** = `1`
+   - **欄位組**: `commerce` > `productListAdds` > `value`
+   - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Add to cart`
+- **名稱**: `add to cart`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `add-to-cart`
@@ -697,21 +747,21 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 店面：
 
-   - **名稱**: `Storefront`
+   - **名稱**: `storefront`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `storefrontInstanceContext`
 
 1. 購物車：
 
-   - **名稱**: `Cart`
+   - **名稱**: `cart`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `shoppingCartContext`
 
 1. 購物車ID:
 
-   - **名稱**: `Cart id`
+   - **名稱**: `cart id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -722,7 +772,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品清單項：
 
-   - **名稱**: `Product list items:`
+   - **名稱**: `product list items:`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -757,18 +807,19 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 查看購物車：
 
-   - **名稱**: `View cart`
+   - **名稱**: `view cart`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 對於 `productListItems`，可能有多個預計算項。 選擇 **productListItems** > **填充整個陣列**。
+   - **資料元素**: `%product list items%`
    - **欄位組**: `commerce` > `cart` > `cartID`
    - **購物車ID**: **值** = `%cart id%`
-   - **欄位組**: `commerce` > `productListAdds` > `id`
-   - **唯一標識符**: **值** = `1`
+   - **欄位組**: `commerce` > `productListViews` > `value`
+   - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `View cart`
+- **名稱**: `view cart`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `shopping-cart-view`
@@ -788,42 +839,42 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品名稱：
 
-   - **名稱**: `Product name`
+   - **名稱**: `product name`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.name`
 
 1. 產品sku:
 
-   - **名稱**: `Product sku`
+   - **名稱**: `product sku`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.sku`
 
 1. 幣種代碼：
 
-   - **名稱**: `Currency code`
+   - **名稱**: `currency code`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.currencyCode`
 
 1. 產品特價：
 
-   - **名稱**: `Product special price`
+   - **名稱**: `product special price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.specialPrice`
 
 1. 產品定價：
 
-   - **名稱**: `Product regular price`
+   - **名稱**: `product regular price`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `productContext.pricing.regularPrice`
 
 1. 產品價格：
 
-   - **名稱**: `Product price`
+   - **名稱**: `product price`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -834,14 +885,14 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 購物車：
 
-   - **名稱**: `Cart`
+   - **名稱**: `cart`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `shoppingCartContext`
 
 1. 購物車ID:
 
-   - **名稱**: `Cart id`
+   - **名稱**: `cart id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -852,18 +903,26 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 從購物車中刪除：
 
-   - **名稱**: `Remove from cart`
+   - **名稱**: `remove from cart`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 選擇 **提供單個項目** 並按一下 **添加項** 按鈕 因為此視圖是用於PDP的，所以可以用單個項填充。
+   - **欄位組**: `productListItems` > `name`
+   - **名稱**: **值** = `%product name%`
+   - **欄位組**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **欄位組**: `productListItems` > `priceTotal`
+   - **價格合計**: **值** = `%product price%`
+   - **欄位組**: `productListItems` > `currencyCode`
+   - **幣種代碼**: **值** = `%currency code%`
    - **欄位組**: `commerce` > `cart` > `cartID`
    - **購物車ID**: **值** = `%cart id%`
-   - **欄位組**: `commerce` > `productListRemovals`
-   - **唯一標識符**: **值** = `1`
+   - **欄位組**: `commerce` > `productListRemovals` > `value`
+   - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Remove from cart`
+- **名稱**: `remove from cart`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `remove-from-cart`
@@ -883,21 +942,21 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 店面：
 
-   - **名稱**: `Storefront`
+   - **名稱**: `storefront`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `storefrontInstanceContext`
 
 1. 購物車：
 
-   - **名稱**: `Cart`
+   - **名稱**: `cart`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `shoppingCartContext`
 
 1. 購物車ID:
 
-   - **名稱**: `Cart id`
+   - **名稱**: `cart id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -908,7 +967,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品清單項：
 
-   - **名稱**: `Product list items`
+   - **名稱**: `product list items`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -943,18 +1002,19 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 啟動簽出：
 
-   - **名稱**: `Initiate checkout`
+   - **名稱**: `initiate checkout`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 對於 `productListItems`，可能有多個預計算項。 選擇 **productListItems** > **填充整個陣列**。
+   - **資料元素**: `%product list items%`
    - **欄位組**: `commerce` > `cart` > `cartID`
    - **購物車ID**: **值** = `%cart id%`
-   - **欄位組**: `commerce` > `checkouts`
-   - **唯一標識符**: **值** = `1`
+   - **欄位組**: `commerce` > `checkouts` > `value`
+   - **值**: **值** = `1`
 
 #### 規則 
 
-- **名稱**: `Initiate checkout`
+- **名稱**: `initiate checkout`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `initiate-checkout`
@@ -974,21 +1034,21 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 店面：
 
-   - **名稱**: `Storefront`
+   - **名稱**: `storefront`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `storefrontInstanceContext`
 
 1. 購物車：
 
-   - **名稱**: `Cart`
+   - **名稱**: `cart`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `shoppingCartContext`
 
 1. 購物車ID:
 
-   - **名稱**: `Cart id`
+   - **名稱**: `cart id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -999,14 +1059,14 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 順序：
 
-   - **名稱**: `Order`
+   - **名稱**: `order`
    - **擴展**: `Adobe Client Data Layer`
    - **資料元素類型**: `Data Layer Computed State`
    - **[可選] 路徑**: `orderContext`
 
 1. 商業訂單：
 
-   - **名稱**: `Commerce order`
+   - **名稱**: `commerce order`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -1042,7 +1102,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 訂單發運：
 
-   - **名稱**: ` Order shipping`
+   - **名稱**: `order shipping`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -1057,7 +1117,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 升級ID:
 
-   - **名稱**: `Promotion id`
+   - **名稱**: `promotion id`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -1068,7 +1128,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 產品清單項：
 
-   - **名稱**: `Product list items`
+   - **名稱**: `product list items`
    - **擴展**: `Core`
    - **資料元素類型**: `Custom Code`
    - **開啟編輯器**:
@@ -1103,14 +1163,15 @@ _Experience Platform連接器帶標籤的資料流_
 
 1. 下單：
 
-   - **名稱**: `Place order`
+   - **名稱**: `place order`
    - **擴展**: `Adobe Experience Platform Web SDK`
    - **資料元素類型**: `XDM object`
    - **欄位組**: `productListItems`。 對於 `productListItems`，可能有多個預計算項。 選擇 **productListItems** > **填充整個陣列**。
+   - **資料元素**: `%product list items%`
    - **欄位組**: `commerce` > `order`
    - **唯一標識符**: **值** = `%commerce order%`
    - **欄位組**: `commerce` > `shipping`
-   - **唯一標識符**: **值** = ` %order shipping%`
+   - **唯一標識符**: **值** = `%order shipping%`
    - **欄位組**: `commerce` > `promotionID`
    - **升級ID**: **值** = `%promotion id%`
    - **欄位組**: `commerce` > `purchases` > `value`
@@ -1118,7 +1179,7 @@ _Experience Platform連接器帶標籤的資料流_
 
 #### 規則 
 
-- **名稱**: `Place order`
+- **名稱**: `place order`
 - **擴展**: `Adobe Client Data Layer`
 - **事件類型**: `Data Pushed`
 - **特定事件**: `place-order`

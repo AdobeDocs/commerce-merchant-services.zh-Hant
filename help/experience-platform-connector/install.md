@@ -2,9 +2,9 @@
 title: 從Adobe Commerce安裝和配置Adobe Experience Platform連接器
 description: 瞭解如何從Adobe Commerce安裝、配置、更新和卸載Adobe Experience Platform連接器。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 ## 安裝擴展
 
-1. 安裝Experience Platform連接器集合包。
+該Experience Platform連接器作為從 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html)。
+
+1. 下載 `experience-platform-connector` 軟體包，從命令行運行以下命令：
 
    ```bash
    composer require magento/experience-platform-connector
