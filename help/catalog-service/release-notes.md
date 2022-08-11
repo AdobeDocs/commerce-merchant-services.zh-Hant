@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] 發行說明"'
-description: '"最新發佈資訊 [!DNL Catalog Service] 為Adobe Commerce。」'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] 發行說明'''
+description: 的最新發佈資訊 [!DNL Catalog Service] Adobe Commerce。
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '153'
+ht-degree: 2%
 
 ---
-
 
 # [!DNL Catalog Service] 發行說明
 
@@ -32,6 +32,7 @@ ht-degree: 0%
 
 ## 已知限制
 
+* 不支援捆綁和分組產品。
 * 不支援層定價。
 * 在映像陣列中，只有第一個映像包含角色。
 * 不檢索變型的影像。
