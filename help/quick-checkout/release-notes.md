@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] 發行說明'''
 description: 查看發行說明以瞭解有關所有 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,17 @@ ht-degree: 1%
 
 請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 以瞭解產品相容性。
 
+## v1.1.0
+
+_2022年8月12日_
+
+![已修復問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 用戶體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在只包括啟用擴展時可見和已驗證的參數。
+
+![已修復問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 現有發運地址與Bolt Wallet的相容性改進。
+
 ## v1.0.0
+
+_2022年8月9日_
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 一般可用性發佈 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在與Adobe Commerce版2.4.1至2.4.4相容。
 
@@ -41,4 +51,6 @@ ht-degree: 1%
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-288 --> 自定義 [用戶會話生存期](user-session-lifetime.md) 為 [!DNL Quick Checkout] Adobe Commerce。
 
-![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 使用 [合成器密鑰不正確](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝期間 [!DNL Quick Checkout] 阻止用戶 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正確 `MAGEID`。
+![已修復問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 用戶體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 允許您在提供所有必需參數時保存配置。
+
+![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 常用 [故障排除](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝過程中的問題 [!DNL Quick Checkout]。
