@@ -2,9 +2,9 @@
 title: 付款選項
 description: 設定付款選項以自定義可用於商店客戶的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 0%
 客戶可以在其設備上使用Touch ID [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)它使用儲存在其iOS或macOS設備上的信用卡和借記卡付款憑證。
 
 的 [!DNL Apple Pay] 按鈕可從產品頁面、迷你購物車、購物車和結帳視圖中看到。
+
+>[!NOTE]
+>
+> 要使用Apple支付，請與銷售代表聯繫，以便為您的即時商店啟用它。
 
 ### [!DNL Pay Later] 按鈕
 

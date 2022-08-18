@@ -4,9 +4,9 @@ description: 安裝後，您可以配置 [!DNL Payment Services] 的下一頁。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ ht-degree: 0%
       >
       > 用Apple付你錢 [必須有Apple開發員帳戶](test-validate.md#test-in-sandbox-environment) （包括假信用卡和帳單資訊）以test它。 準備好在沙盒中使用Apple支付時 *或* 生產模式，完成任何 [測試和驗證](test-validate.md)，請聯繫您的銷售代表，以便為您的即時商店啟用它。
 
+      當您開啟/關閉付款按鈕或PayPal Pay Later消息的可見性時，該配置的可視預覽將顯示在「設定」頁的底部。
+
 1. 要啟用調試模式，請切換 **[!UICONTROL Debug Mode]** 選擇器。
 1. 按一下 **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ ht-degree: 0%
 1. 修改 **[!UICONTROL Shape]**&#x200B;選中 `Pill` 或 `Rect`。
 1. 要啟用按鈕高度選擇器，請切換 **[!UICONTROL Responsive button height]** 選擇器。
 1. 修改 **[!UICONTROL Label]**，選擇所需的標籤選項。
+
+   當您更改佈局、顏色、形狀、高度和標籤的配置選項時，該配置的可視預覽會顯示在「設定」頁的底部。
+
 1. 按一下 **[!UICONTROL Save]**.
 
    如果嘗試在不保存更改的情況下從此視圖中導航，則會出現一個模式，提示您放棄更改、繼續編輯或保存更改。
