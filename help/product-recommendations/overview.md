@@ -1,14 +1,15 @@
 ---
-title: 概述
+title: 簡介 [!DNL Product Recommendations]
 description: '"[!DNL Product Recommendations] 是一種強大的營銷工具，你可以利用它來增加轉換率、增加收入，並刺激購物者的參與。」'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# 概述
+# 簡介 [!DNL Product Recommendations]
 
 產品推薦是一種強大的營銷工具，您可以利用它來增加轉換、增加收入和刺激購物者的參與。 Adobe Commerce產品建議由 [Adobe Sensei](https://www.adobe.com/sensei.html)它利用人工智慧和機器學習算法對聚集的訪問者資料進行深入分析。 此資料與您的Adobe Commerce目錄結合後，將帶來高度吸引力、相關性和個性化的體驗。
 
@@ -31,3 +32,9 @@ ht-degree: 0%
 - 根據以下領域從九種不同的智慧推薦類型中進行選擇：基於購物者、基於項目、基於受歡迎度、趨勢和基於相似性
 - 使用行為資料在購物者的整個店面行程中個性化推薦
 - 衡量與每個建議相關的關鍵指標，以幫助您瞭解建議的影響
+
+## [!DNL Product Recommendations] 演示
+
+觀看此視頻以瞭解 [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

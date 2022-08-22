@@ -4,9 +4,9 @@ description: 瞭解如何安裝和使用 [!DNL Payment Services] 作為您的全
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ ht-degree: 0%
 1. 激活 [!DNL Payment Services] 以開始處理即時付款。
 
 要獲取完整說明並啟動登機過程，請參見 [板載 [!DNL Payment Services]](onboard.md)。
+
+## [!DNL Payment Services] 演示
+
+觀看此視頻以瞭解 [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
