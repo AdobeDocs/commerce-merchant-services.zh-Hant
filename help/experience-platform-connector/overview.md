@@ -2,9 +2,9 @@
 title: 指南概述
 description: Adobe Commerce的Adobe Experience Platform連接器將您的商業實例連接到其他Adobe Experience Cloud產品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Experience Platform連接器擴展使Adobe Commerce商家能夠向Adobe Experience Platform邊緣發送資料，以便Adobe Analytics和Adobe Target等Adobe Experience Cloud其它產品能夠使用該商業資料。 通過將您的Commerce資料連接到Adobe Experience Cloud的其他產品，您可以執行任務，如分析站點上的用戶行為、執行AB測試和建立個性化市場活動。
 
 店面事件捕獲購物者交互，如 `View Page`。 `View Product`。 `Add to Cart`等等。 捕獲的資料不包括個人身份資訊(PII)。 所有用戶標識符，如cookie ID和IP地址，都是嚴格匿名的。 [瞭解更多資訊](https://www.adobe.com/privacy/experience-cloud.html)。 請參閱 [儲存事件](events.md)。
+
+Experience Platform連接器出現在Commerce Admin中的 **系統** >服務> **Experience Platform連接器**。
+
+![Experience Platform連接器擴展管理視圖](assets/epc-adminui.png)
 
 ## 使用Experience Platform連接器的先決條件 {#prereqs}
 
