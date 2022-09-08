@@ -1,56 +1,78 @@
 ---
-title: '''[!DNL Quick Checkout] 發行說明'''
-description: 查看發行說明以瞭解有關所有 [!DNL Quick Checkout] 版本。
+title: '[!DNL Quick Checkout] 發行說明'
+description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
 
 # 發行說明
 
-本發行說明描述了 [!DNL Quick Checkout] 包括：
+以下版本說明的初始版本 [!DNL Quick Checkout] 包括：
 
-![新建](../assets/new.svg) 新功能
-![已修復問題](../assets/fix.svg) 修復和改進
+![新增](../assets/new.svg) 新功能
+![修正問題](../assets/fix.svg) 修正和改良
 ![已知問題](../assets/bug.svg) 已知問題
 
-請參閱 [即將發佈的版本](https://devdocs.magento.com/release/) 瞭解發行計畫和支援。
+請參閱 [即將發行的版本](https://devdocs.magento.com/release/) 了解發行計畫和支援。
 
-請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 以瞭解產品相容性。
+請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 請參閱開發人員檔案，了解產品相容性。
+
+## v1.2.0
+
+_2022年9月8日_
+
+![新增](../assets/new.svg)<!-- Issue BOLT-341 --> 正式發行 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在與Adobe Commerce 2.4.5版相容。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] Adobe Commerce和Magento Open Source提供 [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 以及設定和使用擴充功能的所有必要資訊。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-364 --> 管理員使用者 [可以設定使用者角色和權限](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 允許其他使用者檢視 [!DNL Quick Checkout] 管理面板。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 「管理面板」現在包含包含特定區段的頁首，例如 **概述**, **報表**，和 **設定**.
+
+![新增](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 「管理面板」新增了「歡迎」Widget，提供Gainsight提供的功能導覽。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 併入 **設定** 步驟，此步驟會在未於 [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 檢視。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 併入 **資源** 區段，視入門階段而變更。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 包括 **說明與支援** 區段。
+
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-369 --> 此 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在會在頁尾中顯示擴充功能版本。
 
 ## v1.1.0
 
 _2022年8月12日_
 
-![已修復問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 用戶體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在只包括啟用擴展時可見和已驗證的參數。
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在僅包含啟用擴充功能時可見和驗證的參數。
 
-![已修復問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 現有發運地址與Bolt Wallet的相容性改進。
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 改進現有發運地址與Bolt錢包的相容性。
 
 ## v1.0.0
 
 _2022年8月9日_
 
-![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 一般可用性發佈 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在與Adobe Commerce版2.4.1至2.4.4相容。
+![新增](../assets/new.svg)<!-- Issue BOLT-341 --> 正式發行 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在與Adobe Commerce 2.4.1至2.4.4版相容。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-340 --> 的 [!DNL Quick Checkout] Adobe Commerce可以為Adobe Commerce [雲基礎架構](install.md#adobe-commerce-on-cloud-infrastructure) 或 [本地](install.md#on-premises) 實例。 這些方法需要使用命令行介面。
+![新增](../assets/new.svg)<!-- Issue BOLT-340 --> 此 [!DNL Quick Checkout] 適用於Adobe Commerce，可為Adobe Commerce安裝 [雲基礎架構](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部](install.md#on-premises) 例項。 這些方法需要使用命令列介面。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] 為Adobe Commerce提供了優化的店面 [按一下簽出體驗](overview.md) 沒有為消費者需要的填充欄位。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] Adobe Commerce提供最佳化的店面， [一鍵式結帳體驗](overview.md) 無需為消費者填寫欄位。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] Adobe Commerce自動識別網路中的每個購物者 [按一下購買](checkout-flow.md) 就在你的網站上。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] for Adobe Commerce會自動辨識其網路中的每位購物者 [一鍵式購買](checkout-flow.md) 直接在您的網站上。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] Adobe Commerce允許購物者同時 [登錄Adobe Commerce和博爾特網路](checkout-flow.md/#quick-checkout-use-cases) 提供更好的 `one-click checkout` 體驗。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] Adobe Commerce允許購物者同時 [同時登入Adobe Commerce和Bolt網路](checkout-flow.md/#quick-checkout-use-cases) 提供更好的 `one-click checkout` 體驗。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] Adobe Commerce支援 [沙盒帳戶](testing.md#testing-in-sandbox) 允許商戶在test模式下評估擴展。
+![新增](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] Adobe Commerce支援 [沙箱帳戶](testing.md#testing-in-sandbox) 可讓商戶在測試模式中評估擴充功能。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-780 --> 您的購物者可以通過 [[!DNL Quick Checkout]](checkout-page.md) 或通過 [手動訂單建立](create-order-admin.md)。
+![新增](../assets/new.svg)<!-- Issue BOLT-780 --> 購物者可透過 [[!DNL Quick Checkout]](checkout-page.md) 擴充功能或透過 [手動訂單建立](create-order-admin.md).
 
-![新建](../assets/new.svg)<!-- Issue BOLT-666 --> 商家可以配置 [!DNL Quick Checkout] 基本付款活動，如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)或在沙盒和生產環境之間切換。
+![新增](../assets/new.svg)<!-- Issue BOLT-666 --> 商戶可以設定 [!DNL Quick Checkout] 具有基本付款動作，例如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)，或在沙箱和生產環境之間切換。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-288 --> 自定義 [用戶會話生存期](user-session-lifetime.md) 為 [!DNL Quick Checkout] Adobe Commerce。
+![新增](../assets/new.svg)<!-- Issue BOLT-288 --> 自訂 [使用者工作階段期限](user-session-lifetime.md) for [!DNL Quick Checkout] Adobe Commerce。
 
-![已修復問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 用戶體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 允許您在提供所有必需參數時保存配置。
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 可讓您在提供所有必要參數時儲存設定。
 
-![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 常用 [故障排除](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝過程中的問題 [!DNL Quick Checkout]。
+![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 常見 [疑難排解](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝期間發生的問題 [!DNL Quick Checkout].
