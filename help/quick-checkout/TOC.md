@@ -1,32 +1,35 @@
 ---
-user-guide-title: '"[!DNL Quick Checkout] Adobe Commerce'
-user-guide-description: 「瞭解 [!DNL Quick Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝並設定擴展。」
-breadcrumb-title: 《商戶服務指南》
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+user-guide-title: '"[!DNL Quick Checkout] 針對Adobe Commerce'
+user-guide-description: 「了解 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，以及如何成功上線並設定擴充功能。」
+breadcrumb-title: 商家服務指南
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 3%
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Quick Checkout] 為Adobe Commerce {#quick-checkout}
+# [!DNL Quick Checkout] 針對Adobe Commerce {#quick-checkout}
 
 - [簡介 [!DNL Quick Checkout]](overview.md)
 - [發行說明](release-notes.md)
 - 板載 [!DNL Quick Checkout] {#getting-started}
-   - [先決條件](prerequisites.md)
+   - [必要條件](prerequisites.md)
    - [安裝](install.md)
-   - [登機](onboarding.md)
-- Test和驗證 {#test-validate}
+   - [入門](onboarding.md)
+   - [!DNL Quick Checkout] 管理面板 {#quick-checkout-admin-panel}
+      - [[!DNL Quick Checkout] 管理面板](admin-panel.md)
+      - [使用者設定](user-roles-setup.md)
+- 測試和驗證 {#test-validate}
    - [測試](testing.md)
    - [開發人員資訊](developer.md)
-- 簽出 {#manage-checkout}
-   - [簽出頁](checkout-page.md)
-   - 簽出選項 {#checkout-options}
-      - [簽出流](checkout-flow.md)
-      - [螺栓用戶簽出](checkout-bolt.md)
-      - [Adobe Commerce用戶簽出](checkout-adobe-commerce.md)
+- 結帳 {#manage-checkout}
+   - [結帳頁面](checkout-page.md)
+   - 結帳選項 {#checkout-options}
+      - [結帳流程](checkout-flow.md)
+      - [螺栓用戶結帳](checkout-bolt.md)
+      - [Adobe Commerce使用者結帳](checkout-adobe-commerce.md)
    - [付款方法](payment-methods.md)
-- [用戶會話生存期](user-session-lifetime.md)
+- [使用者工作階段存留期](user-session-lifetime.md)
 - [在管理中建立訂單](create-order-admin.md)
