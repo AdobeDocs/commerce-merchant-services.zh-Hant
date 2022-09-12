@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Payment Services] 發行說明"'
+title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 以下版本說明說明已發生且在托管服務的一般版本化功能版本之外發行的功能變更和修正。
 
 +++托管服務更新
+
+_2022年9月12日_
+
+![新增](../assets/new.svg)<!-- Issue PAY-3705 --> 此 `increment_id` 現在可用於調節外部ERP系統的支付。 會傳播至 [`custom_id` _和_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)，可在PayPal網頁鈎點和商家活動詳細資訊中顯示，以支付款項。
 
 _2022年8月31日_
 
