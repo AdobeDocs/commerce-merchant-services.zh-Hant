@@ -1,36 +1,38 @@
 ---
-title: 從Adobe Commerce安裝和配置Adobe Experience Platform連接器
-description: 瞭解如何從Adobe Commerce安裝、配置、更新和卸載Adobe Experience Platform連接器。
+title: 從Adobe Commerce安裝及設定Adobe Experience Platform Connector
+description: 了解如何從Adobe Commerce安裝、設定、更新和解除安裝Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
 
-# 安裝和配置Experience Platform連接器
+# 安裝及配置Experience Platform連接器
 
-在安裝擴展之前， [查看先決條件](overview.md#prereqs)。
+安裝擴充功能前， [檢閱必要條件](overview.md#prereqs).
 
-## 安裝擴展
+## 安裝擴充功能
 
-該Experience Platform連接器作為從 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html)。
+Experience Platform連接器擴充功能會從伺服器的命令列安裝，並以 [服務](../landing/saas.md). 程式完成後， **Experience Platform連接器** 顯示於 **系統** 菜單 **服務** 在商務中 _管理_.
 
-1. 下載 `experience-platform-connector` 軟體包，從命令行運行以下命令：
+Experience Platform連接器是以 [Adobe市集](https://marketplace.magento.com/magento-experience-platform-connector.html).
+
+1. 若要下載 `experience-platform-connector` 軟體包，從命令行運行以下內容：
 
    ```bash
    composer require magento/experience-platform-connector
    ```
 
-   此元包包含以下模組和擴展：
+   此元包含下列模組和擴充功能：
 
-   * `module-platform-connector-admin`  — 更新管理員UI，以便您可以為特定的Adobe Commerce實例選擇資料流ID
-   * `module-platform-connector`  — 設定 `ImsOrgId` 和 `datastreamId` 在Adobe Commerce店面事件SDK中
-   * `data-services`  — 為店面事件提供屬性上下文。 例如，當發生簽出事件時，將包括有關購物車中有多少物料的資訊以及這些物料的產品屬性資料。
-   * `services-id`  — 將您的Adobe Commerce實例連接到 [Adobe CommerceSaaS](../landing/saas.md) 使用沙盒和生產API密鑰，並將密鑰發送到Adobe Experience Platform以檢索IMS組織ID
+   * `module-platform-connector-admin`  — 更新管理員UI，以便您選取特定Adobe Commerce例項的資料流ID
+   * `module-platform-connector`  — 設定 `ImsOrgId` 和 `datastreamId` 在Adobe Commerce Storefront Event SDK中
+   * `data-services`  — 為店面事件提供屬性上下文。 例如，發生結帳事件時，會納入關於購物車中有多少項目和這些項目的產品屬性資料的資訊。
+   * `services-id`  — 將您的Adobe Commerce執行個體連線至 [Adobe Commerce SaaS](../landing/saas.md) 使用沙箱和生產API金鑰並傳至Adobe Experience Platform以擷取IMS組織ID
 
-1. （可選）要包括 [!DNL Live Search] 資料，包括搜索事件，安裝 [[!DNL Live Search]](../live-search/install.md) 擴展。
+1. （選用）納入 [!DNL Live Search] 資料，包括搜尋事件，安裝 [[!DNL Live Search]](../live-search/install.md) 擴充功能。
 
 ## 更新Experience Platform連接器 {#update}
 
@@ -40,11 +42,11 @@ ht-degree: 0%
 composer update magento/experience-platform-connector --with-dependencies
 ```
 
-要更新到主版本，如從1.0.0到2.0.0，請編輯項目的根 [!DNL Composer] `.json` 檔案，如下所示：
+若要更新為主要版本，例如從1.0.0更新為2.0.0，請編輯專案的根 [!DNL Composer] `.json` 檔案如下：
 
-1. 開啟根 `composer.json` 檔案和搜索 `magento/platform-connector`。
+1. 開啟根 `composer.json` 檔案和搜索 `magento/platform-connector`.
 
-1. 在 `require` 部分，按如下方式更新版本號：
+1. 在 `require` 部分，請按如下方式更新版本號：
 
    ```json
    "require": {
@@ -54,7 +56,7 @@ composer update magento/experience-platform-connector --with-dependencies
     }
    ```
 
-1. **保存** `composer.json`。 然後，從命令行運行以下命令：
+1. **儲存** `composer.json`. 然後，從命令列執行下列動作：
 
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
@@ -62,4 +64,4 @@ composer update magento/experience-platform-connector --with-dependencies
 
 ## 卸載Experience Platform連接器 {#uninstall}
 
-要卸載Experience Platform連接器，請參閱 [卸載模組](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html)。
+要卸載Experience Platform連接器，請參閱 [解除安裝模組](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
