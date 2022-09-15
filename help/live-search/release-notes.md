@@ -1,115 +1,116 @@
 ---
-title: '"[!DNL Live Search] 發行說明"'
-description: '"最新發佈資訊 [!DNL Live Search] 來自Adobe Commerce。」'
+title: "[!DNL Live Search] 發行說明"
+description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
+source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '886'
 ht-degree: 1%
 
 ---
 
 # [!DNL Live Search] 發行說明
 
-本發行說明描述 [!DNL Live Search] 包括：
+以下版本說明 [!DNL Live Search] 包括：
 
-* ![新建](../assets/new.svg)  — 新功能
-* ![修復](../assets/fix.svg)  — 修復和改進
-* ![蟲](../assets/bug.svg)  — 已知問題
+* ![新增](../assets/new.svg)  — 新功能
+* ![修正](../assets/fix.svg)  — 修正和改良
+* ![錯誤](../assets/bug.svg)  — 已知問題
 
 ## [!DNL Live Search] 2.0.3
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![新建](../assets/new.svg) - Live Search現在支援B2B功能，方法是遵守類別權限、共用目錄和特定於客戶組的定價。
+* ![新增](../assets/new.svg) - Live Search現在支援B2B功能，方法是採用類別權限、共用目錄和客戶群特定定價。
 
-商家必須升級Live Search擴展版>= 2.0.3才能訪問這些功能。
+商家必須升級Live Search擴充功能版本>= 2.0.3才能存取這些功能。
 
-我們建議用戶在推向生產之前升級和test。 在驗證其測試環境結果後，請考慮在非高峰時段升級生產環境。
+我們建議使用者先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 >[!NOTE]
 >
->從8月9日起，將分階段增加對後端服務的B2B支援，預計將在8月底之前完成遷移。 如果Live Search擴展未升級，則您的店面將繼續正常工作，但沒有B2B功能。
+>自8月9日起，將分階段在後端服務上新增B2B支援，預計移轉作業將於8月底完成。 如果Live Search擴充功能未升級，您的店面將可繼續正常運作，但沒有B2B功能。
 
 ### 已知限制/錯誤：
 
-* ![蟲](../assets/bug.svg)  — 建議來源於不能顯示給客戶組的產品。
-* ![蟲](../assets/bug.svg)  — 如果未添加到「預設共用目錄」，則不顯示產品。
-* B2B和Live Search forPWA Studio在PWA Studio添加對它的支援之前將不可用。
-* 產品覆蓋和產品屬性饋送可能存在需要管理員運行的同步問題 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正確重新同步。
+* ![錯誤](../assets/bug.svg)  — 建議來源於無法向客戶組顯示的產品。
+* ![錯誤](../assets/bug.svg)  — 若未新增至「預設共用目錄」，則不會顯示產品。
+* 在PWA Studio新增支援前，將無法使用具有PWA Studio即時搜尋的B2B。
+* 產品覆寫和產品屬性摘要可能有同步問題，需要管理員執行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正確重新同步。
+* 若您啟用或停用「目錄權限/共用目錄/B2B」功能，則 `productOverrides` 索引器未更新，且標籤錯誤為「有效」。 使用 `bin/magento saas:resync --feed=productOverrides` 以修正問題。
 
 ## [!DNL Live Search] 2.0
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-現有 [!DNL Live Search] 安裝必須升級到 [!DNL Live Search] 2.0.0利用以下新功能、修復和改進：
+現有 [!DNL Live Search] 安裝必須升級為 [!DNL Live Search] 2.0.0可善用下列新功能、修正和改良：
 
-* ![新建](../assets/new.svg) - [!DNL Live Search] 現在支援PHP 8.1，用於運行Adobe Commerce2.4.4的安裝。
-* ![新建](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 模組將添加到在安裝過程中禁用的模組清單中。
-* ![新建](../assets/new.svg)  — 中的可用行數 [[!DNL storefront popover]](quick-tour.md) 可從 *管理*。
-* ![新建](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性 [!DNL Live Search]。
-* ![新建](../assets/new.svg) - [!DNL Live Search] 安裝過程會隨高級進程更改而更新。
-* ![修復](../assets/fix.svg) - [高級搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 連結從店面頁腳中刪除。
-* ![蟲](../assets/bug.svg)  — 以下產品屬性不受支援 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 當用於PWA的beta版時： `description`。 `name`。 `short_description`
-* ![蟲](../assets/bug.svg) -PWA的Beta版 [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html)。
+* ![新增](../assets/new.svg) - [!DNL Live Search] 運行Adobe Commerce 2.4.4的安裝現在支援PHP 8.1。
+* ![新增](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 模組會新增至安裝期間停用的模組清單。
+* ![新增](../assets/new.svg) - [[!DNL storefront popover]](quick-tour.md) 可從 *管理*.
+* ![新增](../assets/new.svg)  — 測試版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性 [!DNL Live Search].
+* ![新增](../assets/new.svg) - [!DNL Live Search] 安裝程式會隨進階程式變更而更新。
+* ![修正](../assets/fix.svg) - [進階搜尋](https://docs.magento.com/user-guide/catalog/search-advanced.html) 從店面頁尾移除的連結。
+* ![錯誤](../assets/bug.svg)  — 不支援下列產品屬性 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 若與測試版PWA相關： `description`, `name`, `short_description`
+* ![錯誤](../assets/bug.svg)  — 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![修復](../assets/fix.svg) - [自定義價格屬性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 配置為 [面]({% link live-search/facets-add.md %})。
-* ![修復](../assets/fix.svg)  — 已修復問題，導致在沒有 [貨幣符號](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`)。
-* ![修復](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 現在顯示 [特殊價格](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最終價格）。
+* ![修正](../assets/fix.svg) - [自訂價格屬性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 設為 [face]({% link live-search/facets-add.md %})。
+* ![修正](../assets/fix.svg)  — 修正若無 [貨幣符號](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`)可用。
+* ![修正](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 現在會顯示 [特價](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最低最終價格）。
 
 ## [!DNL Live Search] 1.3.0
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![新建](../assets/new.svg) - [效能](performance.md) reporting dashboard提供了消費者使用的搜索術語的洞察。
-* ![新建](../assets/new.svg) - [!DNL Live Search] [店面事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 通過事件發佈和訂閱服務以及度量提供對公共資料層的訪問。
-* ![修復](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 有新的 `active` 類 `.search-autocomplete` 控制可見性的容器。
-* ![修復](../assets/fix.svg)  — 在店面， [搜索詞](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 頁腳連結已刪除，其快取已禁用 [!DNL Live Search] 安裝。
-* ![蟲](../assets/bug.svg)  — 搜索適配器的修補程式可處理重複的產品。
-* ![蟲](../assets/bug.svg) - [!DNL Live Search] 支援 [單源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多個（虛擬）庫存位置的（物理）庫存 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html)。 此時不支援多個庫存來源。
+* ![新增](../assets/new.svg) - [效能](performance.md) 「報表控制面板」可提供購物者所使用搜尋詞的深入分析。
+* ![新增](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 可透過事件發佈和訂閱服務及量度來存取通用資料層。
+* ![修正](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 有新 `active` 類別 `.search-autocomplete` 控制可見性的容器。
+* ![修正](../assets/fix.svg)  — 在店面， [搜尋詞](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 頁尾連結已移除，且其快取已停用 [!DNL Live Search] 安裝。
+* ![錯誤](../assets/bug.svg)  — 搜索適配器的修補程式可處理重複產品。
+* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 支援 [單源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多個（虛擬）的（物理）清點位置 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 目前不支援多個庫存來源。
 
 ## [!DNL Live Search] 1.2.0
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![新建](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) 當購物者在「搜索」框中鍵入查詢時，顯示頂級搜索結果的建議產品和縮略圖。
-* ![新建](../assets/new.svg)  — 商業 *管理* 會話在鍵盤不活動的長時間內保持開啟狀態
-* ![新建](../assets/new.svg) - [!DNL Live Search] 登機後自動啟用
-* ![修復](../assets/fix.svg)  — 初始索引時間不到1小時
-* ![修復](../assets/fix.svg)  — 接近即時的增量產品更新（安裝和安裝後）
-* ![修復](../assets/fix.svg)  — 同義詞編輯器中的可排序列
-* ![修復](../assets/fix.svg) - [!DNL Live Search] 如果搜索條件包含空排序順序值，則不再引發錯誤
-* ![修復](../assets/fix.svg)  — 如果屬性代碼包含字串「to」或「from」，則範圍篩選不再斷開
+* ![新增](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) 當購物者在「搜尋」方塊中輸入查詢時，顯示最上層搜尋結果的建議產品和縮圖影像。
+* ![新增](../assets/new.svg)  — 商務 *管理* 在鍵盤長時間不活動期間，工作階段保持開啟
+* ![新增](../assets/new.svg) - [!DNL Live Search] 上線後自動啟用
+* ![修正](../assets/fix.svg)  — 初始索引時間不到1小時
+* ![修正](../assets/fix.svg)  — 幾乎即時增量產品更新（安裝和安裝後）
+* ![修正](../assets/fix.svg)  — 同義詞編輯器中的可排序列
+* ![修正](../assets/fix.svg) - [!DNL Live Search] 如果搜尋條件包含空的排序順序值，則不再擲回錯誤
+* ![修正](../assets/fix.svg)  — 如果屬性代碼包含「to」或「from」字串，則範圍篩選不再中斷
 
 ## [!DNL Live Search] 1.1.0
 
 * 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce雲(ECE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![蟲](../assets/bug.svg) - [!DNL Live Search] 服務僅支援 [基本幣種](https://docs.magento.com/user-guide/stores/currency-configuration.html) Adobe Commerce裝置。
-* ![蟲](../assets/bug.svg)  — 添加方面時，當設定為時，「產品屬性饋送」不能正確更新 `Update on Save`。 要避免此問題，請轉到 [索引管理](https://docs.magento.com/user-guide/system/index-management.html) 並將產品屬性訂閱源設定為 `Update by Schedule`。
-* ![蟲](../assets/bug.svg) - [!DNL Live Search] 同義詞是按儲存視圖定義的，但是當前按網站儲存，並用同義詞的組合標識 `environmentId` + `storeViewCode`。 因此，Adobe Commerce安裝內的所有網站和儲存視圖共用同一組同義詞。 最近為儲存視圖建立的同義詞集優先。
-* ![蟲](../assets/bug.svg)  — 如果同義詞詞包含多個詞，則每個詞都被視為單獨的同義詞。 例如，如果將「time piece」定義為「watch」的同義詞，則「time」和「piece」都被視為watch的同義詞。
+* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 服務僅支援 [基本貨幣](https://docs.magento.com/user-guide/stores/currency-configuration.html) Adobe Commerce裝置。
+* ![錯誤](../assets/bug.svg)  — 新增面向時，產品屬性摘要在設為 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://docs.magento.com/user-guide/system/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
+* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 同義字是根據商店檢視而定義，但目前是根據網站儲存，並以 `environmentId` + `storeViewCode`. 因此，Adobe Commerce安裝中所有網站和儲存檢視都會共用相同的同義字集。 最近建立的儲存視圖同義詞集優先。
+* ![錯誤](../assets/bug.svg)  — 如果同義詞詞包含多個單詞，則每個單詞都被視為單獨的同義詞。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會視為watch的同義字。
 
-## 文檔
+## 檔案
 
-要瞭解更多資訊：
+若要深入了解：
 
-* [Adobe Commerce開發人員文檔](https://devdocs.magento.com/)
+* [Adobe Commerce開發人員檔案](https://devdocs.magento.com/)
 * [Adobe Commerce使用手冊](https://docs.magento.com/user-guide/)
-* [[!DNL Live Search] 在市場上](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] 在Marketplace上](https://marketplace.magento.com/magento-live-search.html)
