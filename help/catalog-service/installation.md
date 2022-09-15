@@ -1,78 +1,78 @@
 ---
-title: '"登機和安裝"'
-description: '"瞭解如何安裝 [!DNL Catalog Service]"'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: 入門和安裝
+description: 了解如何安裝 [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
+# 入門和安裝
 
-# 登機和安裝
+歡迎合作夥伴和客戶開始使用 [!DNL Catalog Service] (適用於2022年8月9日發行的Adobe Commerce Beta版)。 若要參與，您必須閱讀並同意 [Adobe Commerce測試版計畫條款](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
-歡迎合作夥伴和客戶開始使用 [!DNL Catalog Service] 2022年8月9日發佈的Adobe CommerceBeta版。 要參與，您必須閱讀並同意我們 [Adobe CommerceBeta計畫術語](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy)。
+簽署合約後，請洽詢我們的團隊 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公用Slack管道。 我們將提供與 [!DNL Catalog Service] 測試版。
 
-簽署協定後，請與我們的團隊聯繫 [#storefront服務](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公共Slack頻道。 我們將提供與 [!DNL Catalog Service] 測試版。
+## 必要條件
 
-## 先決條件
+的上線程式 [!DNL Catalog Service] 需要訪問伺服器的命令行。 如果您不熟悉從命令列進行工作，請要求開發人員或系統整合商提供協助。
 
-登機過程 [!DNL Catalog Service] 需要訪問伺服器的命令行。 如果您不熟悉從命令行工作，請咨詢開發人員或系統整合商以獲得幫助。
+### 軟體需求
 
-### 軟體要求
+- Adobe Commerce 2.4.x
+- PHP 8.1、7.4、7.3
+- 撰寫器：2.x、1.x
 
-- Adobe Commerce2.4.x
-- 8.1、7.4、7.3菲律賓比索
-- 作曲家：2.x,1.x
+### 支援平台
 
-### 支援的平台
-
-- Adobe Commerce在雲基礎架構方面：2.4.x
+- Adobe Commerce雲基礎架構：2.4.x
 - Adobe Commerce駐地：2.4.x
 
-## 安裝擴展
+## 安裝擴充功能
 
-可以安裝 [!DNL Catalog Service] 在雲基礎架構和內部實例上擴展Adobe Commerce。
+您可以安裝 [!DNL Catalog Service] 雲端基礎架構和內部部署執行個體上Adobe Commerce的擴充功能。
 
-的 [!DNL Catalog Service] 與連結到MagentoID([馬吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 Composer在初始安裝時使用這些鍵 [!DNL Adobe Commerce]，或在以前未將Composer鍵保存到 `auth.json` 的子菜單。
+此 [!DNL Catalog Service] 與撰寫器金鑰一起安裝，這些金鑰連結至MagentoID([馬吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 撰寫器在初始安裝期間使用這些金鑰 [!DNL Adobe Commerce]，或在撰寫器金鑰先前未儲存至的情況下 `auth.json` 檔案。
 
-請參閱 [獲取您的身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 的子菜單。
+請參閱 [取得驗證金鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 以取得關於取得撰寫器金鑰的詳細資訊。
 
-### Adobe Commerce在雲基礎架構上
+### Adobe Commerce雲基礎架構
 
-使用此方法安裝 [!DNL Catalog Service] Commerce Cloud實例的擴展。
+使用此方法來安裝 [!DNL Catalog Service] Commerce Cloud例項的擴充功能。
 
-1. 開啟 `<Commerce_root>/composer.json` 文本編輯器中的檔案，並更新 `require` 下列各節：
+1. 開啟 `<Commerce_root>/composer.json` 檔案，並更新 `require` 區段如下：
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. 更新依賴項並安裝擴展：
+1. 在本機測試新設定並更新相依性：
 
    ```bash
    composer update
    ```
 
-   該命令更新所有依賴關係。
+   命令會更新所有相依性。
 
-1. 提交並推送更改。
+1. 提交並推送您的更改 `composer.json` 和 `composer.lock`.
 
-### 內部
+### 內部部署
 
-使用此方法安裝 [!DNL Catalog Service] 本地實例的擴展。
+使用此方法來安裝 [!DNL Catalog Service] 內部部署執行個體的擴充功能。
 
-1. 開啟 `<Commerce_root>/composer.json` 文本編輯器中的檔案，並更新 `require` 下列各節：
+1. 開啟 `<Commerce_root>/composer.json` 檔案，並更新 `require` 區段如下：
 
    ```json
    "require": {
@@ -86,13 +86,13 @@ ht-degree: 0%
    }
    ```
 
-1. 更新依賴項並安裝擴展：
+1. 更新相依性並安裝擴充功能：
 
    ```bash
    composer update
    ```
 
-   該命令更新所有依賴關係。
+   命令會更新所有相依性。
 
 1. 升級Adobe Commerce:
 
@@ -108,6 +108,10 @@ ht-degree: 0%
 
 ## 配置目錄導出
 
-安裝後 [!DNL Catalog Service]，必須配置 [Commerce Services連接器](../landing/saas.md) 指定API密鑰並選擇SaaS資料空間。
+安裝後 [!DNL Catalog Service]，您必須設定 [商務服務連接器](../landing/saas.md) 指定API密鑰並選擇SaaS資料空間。
 
-要確保目錄導出正確運行，請確認 [瘋狂的工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 和 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 正在運行，並且Product Feed索引器已設定為「按計畫更新」。
+若要確保目錄匯出正確執行：
+
+- 確認 [cron作業](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 執行中。
+- 驗證 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 執行中。
+- 確保 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`，和 `Product Variant Feed` 索引器設定為 `Update by Schedule`.
