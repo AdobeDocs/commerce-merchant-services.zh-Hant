@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 發行說明"
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
+source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 * ![錯誤](../assets/bug.svg)  — 若未新增至「預設共用目錄」，則不會顯示產品。
 * 在PWA Studio新增支援前，將無法使用具有PWA Studio即時搜尋的B2B。
 * 產品覆寫和產品屬性摘要可能有同步問題，需要管理員執行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正確重新同步。
-* 若您啟用或停用「目錄權限/共用目錄/B2B」功能，則 `productOverrides` 索引器未更新，且標籤錯誤為「有效」。 使用 `bin/magento saas:resync --feed=productOverrides` 以修正問題。
+* 若您啟用或停用「目錄權限/共用目錄/B2B」功能，則 `catalog_data_exporter_product_overrides` 索引器未更新，且標籤錯誤為 `valid`. 使用 `bin/magento saas:resync --feed=productOverrides` 以修正問題。
 
 ## [!DNL Live Search] 2.0
 
