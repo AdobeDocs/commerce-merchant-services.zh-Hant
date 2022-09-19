@@ -1,71 +1,71 @@
 ---
-title: '"安裝 [!DNL Quick Checkout] Adobe Commerce分機」'
-description: 「按照這些步驟安裝 [!DNL Quick Checkout] 你的Adobe Commerce計畫"
+title: '"安裝 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」'
+description: 「請依照下列步驟安裝 [!DNL Quick Checkout] 在您的Adobe Commerce專案中。」
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # 安裝 [!DNL Quick Checkout]
 
-的 [!DNL Quick Checkout] Adobe Commerce的擴展和Magento Open Source [!DNL Composer keys]，它們與 [MagentoID(mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)在註冊過程中提供的{target=&quot;_blank&quot;}。 Composer在初始安裝Adobe Commerce時或在 [!DNL Composer keys] 以前未保存到 `auth.json` 的子菜單。
+此 [!DNL Quick Checkout] Adobe Commerce和 [!DNL Magento Open Source] 可與 [!DNL Composer keys]，連結至商務帳戶 [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)註冊過程中提供的{target=&quot;_blank&quot;}。 撰寫器在初始安裝Adobe Commerce期間或在 [!DNL Composer keys] 之前未儲存至 `auth.json` 檔案。
 
-請參閱 [獲取身份驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;主題，瞭解有關獲取的詳細資訊 [!DNL Composer keys]。
+請參閱 [獲取驗證密鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;}主題，以了解有關獲取的詳細資訊 [!DNL Composer keys].
 
-安裝此擴展有兩種方法 —  [Adobe Commerce在雲基礎架構上](#magento-commerce-cloud) 或 [本地](#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
+安裝此擴充功能有兩種方式： [Adobe Commerce雲基礎架構](#magento-commerce-cloud) 或 [內部](#on-premises) 安裝。 這些方法要求您使用命令行介面(CLI)。
 
 ## 更新最小穩定性設定
 
-安裝擴展之前，請確保 `minimum-stability` 的 `composer.json` 檔案設定為 `"stable"`:
+安裝擴充功能前，請確定 `minimum-stability` 欄位 `composer.json` 檔案設為 `"stable"`:
 
 `"minimum-stability": "stable"`
 
-## 安裝擴展
+## 安裝擴充功能
 
-可以安裝 [!DNL Quick Checkout] 在雲基礎架構和內部實例上擴展Adobe Commerce。
+您可以安裝 [!DNL Quick Checkout] 雲端基礎架構和內部部署執行個體上Adobe Commerce的擴充功能。
 
-### Adobe Commerce在雲基礎架構上
+### Adobe Commerce雲基礎架構
 
-此方法用於安裝 [!DNL Quick Checkout] Commerce Cloud實例的擴展。
+此方法用於安裝 [!DNL Quick Checkout] Commerce Cloud例項的擴充功能。
 
-1. 在本地工作站上，更改為雲項目根目錄。
+1. 在本機工作站上，變更為雲端專案根目錄。
 
-1. 更新 `composer.json` 檔案：
-
-   ```bash
-   composer require magento/quick-checkout --no-update
-   ```
-
-1. 更新依賴項並安裝擴展：
-
-   ```bash
-   composer update
-   ```
-
-   的 `composer update` 命令更新所有依賴關係。 如果不想同時更新所有依賴關係，請改用以下命令： `composer update magento/quick-checkout`。
-
-1. 提交並推送更改。
-
-### 內部
-
-此方法用於安裝 [!DNL Quick Checkout] 本地實例的擴展。
-
-1. 將「快速簽出」模組添加到 `require` 的下界 `composer.json` 檔案：
+1. 更新您的 `composer.json` 檔案：
 
    ```bash
    composer require magento/quick-checkout --no-update
    ```
 
-1. 更新依賴項並安裝擴展：
+1. 更新相依性並安裝擴充功能：
 
    ```bash
    composer update
    ```
 
-   的 `composer update` 命令更新所有依賴關係。 如果不想同時更新所有依賴關係，請改用以下命令： `composer update magento/quick-checkout`。
+   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
+
+1. 提交並推送您的變更。
+
+### 內部部署
+
+此方法用於安裝 [!DNL Quick Checkout] 內部部署實例的擴展。
+
+1. 將快速結帳模組新增至 `require` 區段 `composer.json` 檔案：
+
+   ```bash
+   composer require magento/quick-checkout --no-update
+   ```
+
+1. 更新相依性並安裝擴充功能：
+
+   ```bash
+   composer update
+   ```
+
+   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
 
 1. 升級Adobe Commerce:
 
@@ -80,28 +80,28 @@ ht-degree: 0%
    ```
 
 1. 提交更改。
-1. 更新您的內部實例，以確保部署已提交的代碼。
+1. 更新您的內部部署執行個體，以確保已部署已提交的程式碼。
 
-## 升級擴展
+## 升級擴充功能
 
-當我們發佈 [!DNL Quick Checkout]，您可以輕鬆升級擴展。
+當我們發行 [!DNL Quick Checkout]，您可以輕鬆升級擴充功能。
 
-1. 要獲取包的最新版本，請執行以下操作：
+1. 若要取得套件的最新版本：
 
    ```bash
    composer update
    ```
 
-   的 `composer update` 命令更新所有依賴關係。 如果不想同時更新所有依賴關係，請改用以下命令： `composer update magento/quick-checkout`。
+   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
 
-1. 提交並推送更改。
+1. 提交並推送您的變更。
 
-## 故障排除
+## 疑難排解
 
-您可能在嘗試安裝 [!DNL Quick Checkout] 擴展。
+嘗試安裝時，您可能會看到錯誤 [!DNL Quick Checkout] 擴充功能。
 
-如果您在 [!DNL Quick Checkout] 安裝過程，請參見 [排除快速簽出問題](https://support.magento.com/hc/en-us/articles/6909450342541) 在Adobe Commerce幫助中心。
+若您在 [!DNL Quick Checkout] 安裝程式，請參閱 [疑難排解快速結帳問題](https://support.magento.com/hc/en-us/articles/6909450342541) Adobe Commerce幫助中心。
 
-## 先決條件
+## 必要條件
 
-查看 [先決條件](../quick-checkout/prerequisites.md) 的子菜單。
+請參閱 [必要條件](../quick-checkout/prerequisites.md) 主題以取得詳細資訊。

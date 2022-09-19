@@ -2,7 +2,7 @@
 title: 入門和安裝
 description: 了解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
+source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 您可以安裝 [!DNL Catalog Service] 雲端基礎架構和內部部署執行個體上Adobe Commerce的擴充功能。
 
-此 [!DNL Catalog Service] 與撰寫器金鑰一起安裝，這些金鑰連結至MagentoID([馬吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 撰寫器在初始安裝期間使用這些金鑰 [!DNL Adobe Commerce]，或在撰寫器金鑰先前未儲存至的情況下 `auth.json` 檔案。
+此 [!DNL Catalog Service] 隨撰寫器金鑰安裝，這些金鑰連結至商務帳戶 [馬吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 撰寫器在初始安裝期間使用這些金鑰 [!DNL Adobe Commerce]，或在撰寫器金鑰先前未儲存至的情況下 `auth.json` 檔案。
 
 請參閱 [取得驗證金鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 以取得關於取得撰寫器金鑰的詳細資訊。
 
