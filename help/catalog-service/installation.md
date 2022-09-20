@@ -2,9 +2,9 @@
 title: 入門和安裝
 description: 了解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -115,3 +115,9 @@ ht-degree: 0%
 - 確認 [cron作業](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 執行中。
 - 驗證 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 執行中。
 - 確保 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`，和 `Product Variant Feed` 索引器設定為 `Update by Schedule`.
+
+## [!DNL Catalog Service] 示範
+
+觀看此影片以了解 [!DNL Catalog Service] 安裝與測試：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
