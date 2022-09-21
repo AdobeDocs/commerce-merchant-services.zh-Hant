@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 1%
@@ -36,7 +36,6 @@ ht-degree: 1%
 * 捆綁包和分組產品
 * 從目錄中刪除變體時，不會收到任何更新
 * B2B可見性覆蓋：產品可供搜尋，或新增至購物車供特定客戶群組使用
-
 
 ## 測試版
 
