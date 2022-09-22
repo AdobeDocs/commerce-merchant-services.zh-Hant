@@ -1,7 +1,7 @@
 ---
 title: 產品查詢
 description: '''Adobe Commerce目錄服務的''products'' GraphQL查詢參考指南'''
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 產品查詢
 
-Adobe Commerce的目錄服務 `products` 查詢會傳回指定為輸入之SKU的詳細資訊。 雖然此查詢與 [`products` 查詢](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) 核心Adobe Commerce和Magento Open Source皆提供，但有一些差異。
+Adobe Commerce的目錄服務 `products` 查詢會傳回指定為輸入之SKU的詳細資訊。 雖然此查詢與 [`products` 查詢](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 核心Adobe Commerce和Magento Open Source皆提供，但有一些差異。
 
 目錄服務查詢需要一或多個SKU值作為輸入。 查詢主要用於檢索資訊以呈現以下類型的內容：
 
