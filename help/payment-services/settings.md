@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在家裡。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
+source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1594'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,8 @@ ht-degree: 0%
 1. 在 **[!UICONTROL Scope]** 要啟用付款方法的下拉式功能表。
 1. 要更改結帳期間顯示的付款方法的名稱，請編輯 **[!UICONTROL Checkout title]** 欄位。
 1. 結束日期 [設定付款活動](production.md#set-payment-services-as-payment-method)切換 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
-1. 若要啟用除錯模式，請切換 **[!UICONTROL Debug Mode]** 選取器。
+1. 若要啟用或停用結帳頁面上的信用卡欄位，請切換 **[!UICONTROL Show on checkout page]** 選取器。
+1. 若要啟用或停用除錯模式，請切換 **[!UICONTROL Debug Mode]** 選取器。
 1. 按一下 **[!UICONTROL Save]**.
 
    如果您嘗試在未儲存變更的情況下離開此檢視，會出現一個強制回應，提示您捨棄變更、繼續編輯或儲存變更。
@@ -113,6 +114,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 商店檢視 | 在結帳期間，在「付款方法」視圖中添加要顯示為此付款選項標題的文本。 選項： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}，適用於指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | 網站 | 啟用或停用信用卡欄位以在結帳頁面上顯示。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用除錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 付款按鈕
@@ -125,6 +127,7 @@ ht-degree: 0%
 1. 要更改付款方法的名稱（如結帳期間所示），請編輯 **[!UICONTROL Checkout Title]** 欄位。
 1. 結束日期 [設定付款活動](production.md#set-payment-services-as-payment-method)切換 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
 1. 使用切換選取器來啟用或停用 [!DNL PayPal smart button] 顯示功能：
+   - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
@@ -152,6 +155,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 商店檢視 | 在結帳期間，在「付款方法」視圖中添加要顯示為此付款選項標題的文本。 選項：文字欄位 |
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}，適用於指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 商店檢視 | 啟用或禁用 [!DNL PayPal Smart Buttons] 在結帳頁面上。 選項： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 商店檢視 | 啟用或禁用 [!DNL PayPal Smart Buttons] 在產品詳細資料頁面上。 選項： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店檢視 | 啟用或禁用 [!DNL PayPal Smart Buttons] 在迷你購物車預覽中。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | 商店檢視 | 啟用或禁用 [!DNL PayPal Smart Buttons] 在購物車頁面上。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
