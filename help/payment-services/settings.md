@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在家裡。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ ht-degree: 0%
 >
 > 如需多商店或舊版設定，請參閱 [在管理員中進行設定](configure-admin.md) 主題。
 
-## 啟用支付服務
+## 配置常規設定
 
-您可以啟用 [!DNL Payment Services] ，並在 [!UICONTROL General] 區段。
+此 [!UICONTROL General] 設定提供啟用或禁用「支付服務」作為您的支付方法的功能，以及向客戶交易添加資訊，以用自定義資訊標籤或為網站或儲存視圖加上前置詞。
+
+### 啟用支付服務
+
+您可以啟用 [!DNL Payment Services] ，並啟用沙箱測試或即時付款。
 
 1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
    此 _[!UICONTROL General]_小節包含用來啟用的設定 [!DNL Payment Services] 作為付款方式。
 
-1. 啟用 [!DNL Payment Services] 作為您商店的付款方式， _[!UICONTROL General]_切換(**[!UICONTROL Enable Payment Services as payment method]**) `Yes`.
+1. 啟用 [!DNL Payment Services] 作為您商店的付款方式， _[!UICONTROL General]_切換&#x200B;**[!UICONTROL Enable Payment Services as payment method]**to `Yes`.
 
 1. 如果您仍在測試 [!DNL Payment Services] 為您的商店設定 **付款模式** to `Sandbox`. 如果您已準備好啟用即時付款，請將其設定為 `Production`.
 
@@ -49,7 +53,31 @@ ht-degree: 0%
 
 您現在可以繼續變更 [付款選項](#configure-payment-options) 功能和店面顯示。
 
-### 一般配置選項
+### 添加軟描述符
+
+您可以新增 [!UICONTROL Soft Descriptor] 至您的網站或個別商店檢視設定。 軟描述符顯示在客戶交易銀行對帳單上。 例如，如果您有多個商店/品牌/目錄，則可借由在 [!UICONTROL Soft Descriptor] 欄位。
+
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![首頁檢視](assets/payment-services-menu-small.png)
+
+1. 按一下 **[!UICONTROL Settings]**. 請參閱 [簡介 [!DNL Payment Services] 首頁](payments-home.md) 以取得更多資訊。
+1. 在 **[!UICONTROL Scope]** 要為其建立軟描述符的下拉菜單。 若是初始設定，請將此項目保留為 **[!UICONTROL Default]** 來設定預設值。
+1. 在文字欄位中新增自訂文字（最多22個字元），取代 `Custom descriptor`.
+1. 按一下 **[!UICONTROL Save]**.
+1. 要為網站或儲存視圖建立配置的預設值以外的軟描述符，請執行以下操作：
+   1. 在 **[!UICONTROL Scope]** 要為其建立軟描述符的下拉菜單。
+   1. 切換 *關閉* **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，視您選取的範圍而定)。
+   1. 在文字欄位中新增自訂文字。
+   1. 按一下 **[!UICONTROL Save]**.
+1. 為網站或儲存區啟用預設軟描述符 *或* 用於父網站的軟描述符：
+   1. 在 **[!UICONTROL Scope]** 要啟用現有軟描述符的下拉菜單。
+   1. 切換 *on* **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，視您選取的範圍而定)。
+   1. 按一下 **[!UICONTROL Save]**.
+
+   如果您嘗試在未儲存變更的情況下離開此檢視，會出現一個強制回應，提示您捨棄變更、繼續編輯或儲存變更。
+
+### 配置選項
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -57,6 +85,7 @@ ht-degree: 0%
 | [!UICONTROL Payment mode] | 商店檢視 | 設定商店的方法或環境。 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | 商店檢視 | 您的沙箱商戶ID，會在沙箱上線期間自動產生。 |
 | [!UICONTROL Production Merchant ID] | 商店檢視 | 您的生產商ID，會在沙箱上線期間自動產生。 |
+| [!UICONTROL Soft Descriptor] | 網站或商店檢視 | 將軟描述符添加到您的網站和儲存視圖，以向客戶交易添加資訊，從而勾勒品牌、商店或產品線。 此 [!UICONTROL Use website] 切換應用在網站級別添加的任何軟描述符。 此 [!UICONTROL Use default] 切換應用添加為預設的任何軟描述符。 |
 
 ## 配置付款選項
 
@@ -144,7 +173,7 @@ ht-degree: 0%
 
 1. 若要在水準版面中啟用標幟，請切換 **[!UICONTROL Show tagline]** 選取器。
 1. 若要修改 **[!UICONTROL Color]**，請選取所需的顏色選項。
-1. 若要修改 **[!UICONTROL Shape]**，選取 `Pill` 或 `Rect`.
+1. 若要修改 **[!UICONTROL Shape]**，選取 `Pill` 或 `Rectangle`.
 1. 若要啟用按鈕高度選取器，請切換 **[!UICONTROL Responsive button height]** 選取器。
 1. 若要修改 **[!UICONTROL Label]**，請選取所需的標籤選項。
 
