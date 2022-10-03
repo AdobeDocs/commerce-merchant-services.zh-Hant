@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _2021年6月28日_
 
 _2022年9月30日_
 
-![新增](../assets/new.svg)<!-- Issue PAY-784 --> 支付服務現在包括設定商家帳戶的能力 [使用多個PayPal業務帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). 這可讓商家使用不同貨幣在多個國家/地區經營您的商店，或將Adobe Commerce用於您的部分業務。
+![新增](../assets/new.svg)<!-- Issue PAY-784 --> 支付服務現在包括設定商家帳戶的能力 [使用多個PayPal業務帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 這可讓商家使用不同貨幣在多個國家/地區經營您的商店，或將Adobe Commerce用於您的部分業務。
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3231 --> 商家可以 [新增 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 至網站或個別商店檢視顯示於客戶交易銀行對帳單的設定，以勾勒品牌、商店或產品線。
 
-![新增](../assets/new.svg)<!-- Issue PAY-3707 --> [啟用或禁用信用卡欄位和PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) ，以在「支付服務」設定中結帳。
+![新增](../assets/new.svg)<!-- Issue PAY-3707 --> [啟用或禁用信用卡欄位和PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) ，以在「支付服務」設定中結帳。
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3546 --> 客戶點按 **[!UICONTROL Edit cart]**，頁面會重新導向至購物車頁面並顯示更新的項目，而非顯示空的購物車。
 
