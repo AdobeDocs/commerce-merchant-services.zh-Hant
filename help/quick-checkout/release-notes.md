@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 發行說明'
 description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 1%
 請參閱 [即將發行的版本](https://devdocs.magento.com/release/) 了解發行計畫和支援。
 
 請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 請參閱開發人員檔案，了解產品相容性。
+
+## 管理面板更新
+
+以下版本說明說明在「管理面板」的一般版本控制功能版本之外所發生和發行的功能變更和修正。
+
++++管理面板更新
+
+_2022年10月5日_
+
+![新增](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理面板整合 [Gainsight支援的功能導覽](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> 此 **報表** 標籤 [!DNL Quick Checkout] 「管理面板」包含即將推出的圖表和報告資訊的大綱。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> 此 **報表** 標籤 [!DNL Quick Checkout] 「管理面板」會顯示即將可用的圖表和報表資訊的篩選日期範圍。
+
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在會在頁尾中顯示react應用程式版本。
+
++++
 
 ## v1.2.0
 
