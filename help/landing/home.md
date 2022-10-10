@@ -1,20 +1,20 @@
 ---
-title: 服務文檔
-description: 瀏覽Adobe Commerce產品文檔
+title: 服務檔案
+description: Adobe Commerce產品檔案的Browse Services
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
-breadcrumb-title: 文檔
+breadcrumb-title: 檔案
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
+source-git-commit: 8d36cd54e6e5ca2fe70afd0152c23fa73031aea0
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# <!-- use banner as heading -->![服務文檔](./assets/banner-services-home.png) {#documentation}
+# <!-- use banner as heading -->![服務檔案](./assets/banner-services-home.png) {#documentation}
 
-Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
+Adobe提供服務集合，協助商戶支援其業務的關鍵元件。
 
 ## 可用服務
 
@@ -25,7 +25,7 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
-    <p>(僅Adobe Commerce)<br><em>添加基於購物者行為、流行趨勢、產品相似性等的AI推薦。</em></p>
+    <p>(僅限Adobe Commerce)<br><em>根據購物者行為、熱門趨勢、產品相似度等，新增由AI推動的建議。</em></p>
     </br>
   </td>
   <td valign="top">
@@ -33,7 +33,7 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
-    <p>(僅Adobe Commerce)<br><em>實施此基於AI的搜索工具，為B2C購物者提供更智慧、更快和相關的結果。</em></p>
+    <p>(僅限Adobe Commerce)<br><em>實作這項由AI支援的搜尋工具，為B2C購物者提供更智慧、更快速且相關的結果。</em></p>
     </br>
   </td>
 </tr>
@@ -43,15 +43,15 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
     </div>
-    <em>通過輕鬆提供各種付款方法（包括免息付款分期付款），以及在管理員控制面板中查看付款處理、訂單和發票的單一視圖，提高客戶滿意度。</em>
+    <em>輕鬆提供各種付款方法，包括免息付款分期付款，以及直接在您的「管理控制面板」中查看付款處理、訂單和發票的單一檢視，以提高客戶滿意度。</em>
     </br>
   </td>
   <td valign="top">
-    <img alt="儲存履行" src="assets/store-fulfillment-landing-graphic.png"/>
+    <img alt="儲存完成" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
-    <p>(僅Adobe Commerce)<br><em>通過提供通過移動設備實現的端到端無縫的人員履行工作流，提供卓越的線上購買、在商店(BOPIS)接貨體驗，並最大限度地提高商店員工的工作效率。</em></p>
+    <p>(僅限Adobe Commerce)<br><em>通過移動設備提供端到端、無縫的全通道履行工作流程，提供卓越的線上購買、在商店中購物(BOPIS)客戶體驗，並最大限度地提高商店員工的工作效率。</em></p>
     </br>
   </td>
   </tr>
@@ -61,7 +61,7 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
     </div>
-    <em>通過將Adobe Commerce或Magento Open Source產品目錄與沃爾瑪市場整合，提高銷售量、接觸新客戶、優化銷售運營並節省時間。 使商店管理員和運營人員能夠從商業環境無縫地管理沃爾瑪市場的銷售、庫存和產品定價。</em>
+    <em>通過將Adobe Commerce或Magento Open Source產品目錄與沃爾瑪市場整合來增加銷售、觸及新客戶、簡化銷售操作並節省時間。 使商店管理員和操作人員能夠從商務環境無縫地管理沃爾瑪市場的銷售、庫存和產品定價。</em>
     </br>
   </td>
     <td valign="top">
@@ -69,7 +69,7 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>將您的商店與全球最大的網際網路購物目的地整合在一起。 此服務通過將Commerce與您的Amazon銷售中心帳戶連接並提供目錄和訂單資料的自動化和同步，使Amazon銷售得以實現。 完全管理所有Amazon清單，實施簡單或智慧的定價規則，並通過單個Commerce控制面板維護您的訂單和庫存。</em></p>
+    <p><em>將您的商店與全球最大的網際網路購物目的地整合。 此服務可將Commerce與您的Amazon Seller Central帳戶連結，並同時提供目錄和訂單資料的自動化和同步化，以實現Amazon銷售。 完全管理所有Amazon清單，實作簡單或智慧型定價規則，並透過單一商務控制面板維護訂單和庫存。</em></p>
     </br>
   </td>
 </tr>
@@ -77,20 +77,30 @@ Adobe提供一系列服務，幫助商家支援其業務的關鍵部分。
 
 ## 連接到服務
 
-的 [Commerce Services連接器](saas.md) 使用API密鑰和私鑰為您的Adobe Commerce或Magento Open Source實例提供整合。 對於資料服務(僅Adobe Commerce)，您還可以在配置中指定資料空間。
+此 [商務服務連接器](saas.md) 使用API金鑰和私密金鑰，提供Adobe Commerce或Magento Open Source例項的整合。 若為資料服務(僅限Adobe Commerce)，您也可以在設定中指定資料空間。
 
 ## 目錄服務
 
-的 [目錄服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) 提供豐富的只讀目錄資料，以快速而全面地呈現與產品相關的內容（包括產品詳細資訊頁面和產品清單頁面）。 它為您的客戶提供了優化的產品體驗，同時提高了效能、改進了可擴充性和增加了轉換。
+此 [目錄服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) 提供豐富的唯讀目錄資料，以快速且完整地呈現店面上的產品相關內容，包括產品詳細資訊頁面和產品清單頁面。 它為客戶提供最佳化的產品體驗，同時提升效能、改善可擴充性並提高轉換率。
 
 ## 新增功能
 
-以下是文檔的最新更改：
+下列項目是說明檔案的最新變更：
 
-* *付款服務* — 為 [下載擴展](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)，改進了IP的工作流 [連接到Commerce Services連接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html), [添加的資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) 連接服務主題以確定其服務是否已連接（如果未連接則應執行什麼操作）。
-* 現在可用！—[目錄服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) 為Adobe Commerce
-* *即時搜索* — 將新資訊添加到 [安裝Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) 和 [入門概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 有關新模組中引入的OpenSearch搜索引擎的主題(有關Adobe Commercev2.4.6的可用性)。
-* *Experience Platform連接器* — 添加主題 [關於使用標籤](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) 和主題 [關於如何上傳購物者個人資料](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) 說明如何建立配置檔案和使用AEP標籤的主題。
-* *快速簽出* — 改進 [登機主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 通過重新排序步驟並包括管理員UI中出現的最新產品更改。
-* *付款服務*—[Apple現已提供](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 中。
-* *Experience Platform連接器* — 添加新 [有關更新XDM架構的主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) 有Adobe Commerce特有的欄位名。
+* **支付服務**<!-- Issue PAY-3483, PAY-3611, PAY-3655, PAY-3705, PAY-3742 -->
+   * *新增* 新增 [可用資料主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) 說明如何將financial reporting資料用於外部對賬。
+   * 修訂說明檔案以包含 [新資料視覺效果檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) 支付報告。
+   * 修訂「設定」主題以包含 [預覽付款按鈕在商店中的顯示方式](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 變更設定時，新增 [啟用/禁用信用卡和用於結帳的PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
+* **快速結帳**<!-- BOLT-406 -->
+   * *新增* 新增 [「管理面板」的概觀主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
+   * *新增* 新增 [使用者設定主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 以引導使用者設定角色和權限。
+
+<!-- 
+|   Service    |    Change   |   Type    |
+|  ---  |  ---  |  ---  |
+|  [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)  |   Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.    |    New   |
+|       |   Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.    |    Update   |
+|       |   Revised the Settings topic to include information about [previewing how payment buttons will appear in a store](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) when the configuration is changed and how to [enable/disable credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).    |   Update    |
+|   [**Quick Checkout**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)    |    Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).   |   New    |
+|       |   Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.    |       |
+ -->
