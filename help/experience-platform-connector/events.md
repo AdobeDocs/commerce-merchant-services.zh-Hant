@@ -1,10 +1,10 @@
 ---
 title: 事件
-description: 了解每個事件擷取並檢視完整結構定義的哪些資料。
+description: 了解每個事件擷取的資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->所有事件都包括 `personID` 欄位，此欄位是人員的唯一識別碼。
+>所有店面事件包括 `personID` 欄位，此欄位是人員的唯一識別碼。
 
 ## addToCart
 
-在產品新增至購物車或購物車中的產品數量增加時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+在產品新增至購物車或購物車中的產品數量增加時觸發。
+
+### XDM事件名稱
+
+`commerce.productListAdds`
 
 ### 類型
 
@@ -34,10 +38,71 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `productListAdds` | 指出產品是否已新增至購物車。 值 `1` 表示已新增產品。 |
+| `productListItems` | 新增至購物車的產品陣列 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 已應用所有折扣和稅後此訂單的合計 |
-| `quantity` | 客戶已表示他們需要該產品的件數 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 新增至購物車的產品件數 |
+| `discountAmount` | 指示應用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主影像URL |
+| `selectedOptions` | 用於可配置產品的欄位。 `attribute` 標識可配置產品的屬性，例如 `size` 或 `color` 和 `value` 識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
+
+## openCart
+
+建立新購物車時觸發，即產品新增至空購物車時。
+
+### XDM事件名稱
+
+`commerce.productListOpens`
+
+### 類型
+
+店面
+
+### 收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `productListOpens` | 指出是否已建立購物車。 值 `1` 表示已建立購物車。 |
+| `productListItems` | 新增至購物車的產品陣列 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 新增至購物車的產品件數 |
+| `discountAmount` | 指示應用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主影像URL |
+| `selectedOptions` | 用於可配置產品的欄位。 `attribute` 標識可配置產品的屬性，例如 `size` 或 `color` 和 `value` 識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
+
+## removeFromCart
+
+每次移除產品或每次減少購物車中的產品數量時觸發。
+
+### XDM事件名稱
+
+`commerce.productListRemovals`
+
+### 類型
+
+店面
+
+### 收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `productListRemovals` | 指出是否從購物車中移除產品。 值 `1` 表示產品已從購物車中移除。 |
+| `productListItems` | 從購物車移除的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 從購物車移除的產品件數 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
 | `productImageUrl` | 產品的主影像URL |
@@ -46,7 +111,11 @@ ht-degree: 0%
 
 ## shoppingCartView
 
-任何購物車頁面載入時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+任何購物車頁面載入時觸發。
+
+### XDM事件名稱
+
+`commerce.productListViews`
 
 ### 類型
 
@@ -59,11 +128,11 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `productListViews` | 指出是否已檢視產品清單 |
-| `productListItems` | 新增至購物車的產品陣列 |
+| `productListItems` | 購物車中的一系列產品 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 已應用所有折扣和稅後此訂單的合計 |
-| `quantity` | 客戶已表示他們需要該產品的件數 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 購物車中的產品件數 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
 | `productImageUrl` | 產品的主影像URL |
@@ -72,7 +141,11 @@ ht-degree: 0%
 
 ## pageView
 
-在任何頁面載入時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+在任何頁面載入時觸發。
+
+### XDM事件名稱
+
+`web.webpagedetails.pageViews`
 
 ### 類型
 
@@ -88,7 +161,11 @@ ht-degree: 0%
 
 ## productPageView
 
-任何產品頁面載入時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+任何產品頁面載入時觸發。
+
+### XDM事件名稱
+
+`commerce.productViews`
 
 ### 類型
 
@@ -101,10 +178,10 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `productViews` | 指出是否已檢視產品 |
-| `productListItems` | 新增至購物車的產品陣列 |
+| `productListItems` | 購物車中的一系列產品 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 已應用所有折扣和稅後此訂單的合計 |
+| `priceTotal` | 產品行項目的總價 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
 | `productImageUrl` | 產品的主影像URL |
@@ -112,7 +189,11 @@ ht-degree: 0%
 
 ## startCheckout
 
-購物者按一下結帳按鈕時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+購物者按一下結帳按鈕時觸發。
+
+### XDM事件名稱
+
+`commerce.checkouts`
 
 ### 類型
 
@@ -125,11 +206,11 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `checkouts` | 指出結帳過程中是否發生動作 |
-| `productListItems` | 新增至購物車的產品陣列 |
+| `productListItems` | 購物車中的一系列產品 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 已應用所有折扣和稅後此訂單的合計 |
-| `quantity` | 客戶已表示他們需要該產品的件數 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 購物車中的產品件數 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
 | `productImageUrl` | 產品的主影像URL |
@@ -138,7 +219,11 @@ ht-degree: 0%
 
 ## completeCheckout
 
-購物者下訂單時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+購物者下訂單時觸發。
+
+### XDM事件名稱
+
+`commerce.order`
 
 ### 類型
 
@@ -163,11 +248,11 @@ ht-degree: 0%
 | `shippingMethod` | 由客戶選擇的運送方法，例如標準運送、快速運送、店內取貨等 |
 | `shippingAmount` | 購物車中物料的總發運成本 |
 | `promotionID` | 促銷活動的唯一識別碼（如果有） |
-| `productListItems` | 新增至購物車的產品陣列 |
+| `productListItems` | 購物車中的一系列產品 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 已應用所有折扣和稅後此訂單的合計 |
-| `quantity` | 客戶已表示他們需要該產品的件數 |
+| `priceTotal` | 產品行項目的總價 |
+| `quantity` | 購物車中的產品件數 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於訂單總計的貨幣代碼。 |
 | `productImageUrl` | 產品的主影像URL |
@@ -175,11 +260,15 @@ ht-degree: 0%
 
 ## 登入
 
-購物者嘗試登入時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+購物者嘗試登入時觸發。
 
 >[!NOTE]
 >
 > 當嘗試特定動作時，就會觸發此事件。 它不表示動作成功。
+
+### XDM事件名稱
+
+`userAccount.login`
 
 ### 類型
 
@@ -201,11 +290,15 @@ ht-degree: 0%
 
 ## 登出
 
-當購物者嘗試登出時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+當購物者嘗試登出時觸發。
 
 >[!NOTE]
 >
 > 當嘗試特定動作時，就會觸發此事件。 它不表示動作成功。
+
+### XDM事件名稱
+
+`userAccount.logout`
 
 ### 類型
 
@@ -223,11 +316,15 @@ ht-degree: 0%
 
 ## createAccount
 
-購物者嘗試建立帳戶時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+購物者嘗試建立帳戶時觸發。
 
 >[!NOTE]
 >
 > 當嘗試特定動作時，就會觸發此事件。 它不表示動作成功。
+
+### XDM事件名稱
+
+`userAccount.createProfile`
 
 ### 類型
 
@@ -250,11 +347,15 @@ ht-degree: 0%
 
 ## editAccount
 
-購物者嘗試編輯帳戶時觸發。 [完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+購物者嘗試編輯帳戶時觸發。
 
 >[!NOTE]
 >
 > 當嘗試特定動作時，就會觸發此事件。 它不表示動作成功。
+
+### XDM事件名稱
+
+`userAccount.updateProfile`
 
 ### 類型
 
@@ -293,11 +394,13 @@ ht-degree: 0%
 - 導覽至上一頁
 - 導覽至不同頁面
 
-[完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
+
+### XDM事件名稱
+
+`searchRequest`
 
 ### 類型
 
@@ -323,11 +426,13 @@ ht-degree: 0%
 
 在「即時搜尋」傳回彈出視窗或搜尋結果頁面的「依您輸入時搜尋」結果時觸發。
 
-[完整結構](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
+
+### XDM事件名稱
+
+`searchResponse`
 
 ### 類型
 
@@ -342,4 +447,4 @@ ht-degree: 0%
 | `searchResponse` | 指示是否已接收到搜索響應 |
 | `suggestions` | 字串的陣列，包含目錄中存在且與搜尋查詢類似的產品和類別名稱 |
 | `numberOfResults` | 傳回的產品數 |
-| `productListItems` | 新增至購物車的一系列產品。 包括 `SKU`（庫存單位）和 `name` （顯示名稱或人類看得懂的名稱）。 |
+| `productListItems` | 購物車中的一系列產品。 包括 `SKU`（庫存單位）和 `name` （顯示名稱或人類看得懂的名稱）。 |

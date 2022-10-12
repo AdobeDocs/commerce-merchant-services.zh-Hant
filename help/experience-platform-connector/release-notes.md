@@ -1,29 +1,36 @@
 ---
 title: 發行說明
-description: Adobe CommerceAdobe Experience Platform連接器的最新發佈資訊。
+description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 5%
 
 ---
 
 # 發行說明
 
-本發行說明描述了最新版本的Experience Platform連接器，包括：
+以下版本說明最新版本的Experience Platform連接器，並包括：
 
-* ![新建](../assets/new.svg)  — 新功能
-* ![修復](../assets/fix.svg)  — 修復和改進
-* ![蟲](../assets/bug.svg)  — 已知問題
+* ![新增](../assets/new.svg)  — 新功能
+* ![修正](../assets/fix.svg)  — 修正和改良
+* ![錯誤](../assets/bug.svg)  — 已知問題
 
-## Experience Platform連接器1.0.0
+## 2.0.0
 
-* ![新建](../assets/new.svg)  — 一般可用性版本
+* ![新增](../assets/new.svg)  — 新增兩個 [storefront事件](events.md): `openCart` 和 `removeFromCart`
+* ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
+* ![新增](../assets/new.svg)  — 新增在 [連接](connect-data.md) 您的Adobe Commerce例項至Experience Platform
+* ![修正](../assets/fix.svg)  — 更新資料流範圍要求，讓資料流ID必須限定在網站的範圍，而非儲存檢視
 
-## 文檔
+## 1.0.0
 
-要瞭解更多資訊：
+* ![新增](../assets/new.svg)  — 正式發行
 
-* [Adobe Commerce開發人員文檔](https://devdocs.magento.com/)
+## 檔案
+
+若要深入了解：
+
+* [Adobe Commerce開發人員檔案](https://devdocs.magento.com/)
 * [Adobe Commerce使用手冊](https://docs.magento.com/user-guide/)
