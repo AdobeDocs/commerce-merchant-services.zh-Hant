@@ -2,22 +2,40 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] 發行說明
-
-{{catalog-service-beta}}
 
 以下版本說明 [!DNL Catalog Service] 包括：
 
 * ![新增](../assets/new.svg)  — 新功能
 * ![修正](../assets/fix.svg)  — 修正和改良
 * ![錯誤](../assets/bug.svg)  — 已知問題
+
+## 1.0版
+
+發行日期：2022-10-04與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+
+![新增](../assets/new.svg)  — 現在支援捆綁和分組產品。
+![新增](../assets/new.svg)  — 新增B2B可見性覆寫。 產品現在可供搜尋，並可針對特定客戶群組新增至購物車。
+![修正](../assets/fix.svg)  — 服務現在更穩定，效能也有所提高。
+
+### 已知限制
+
+尚不支援下列功能：
+
+* 分層定價
+* 從目錄中刪除變體時，不會收到更新
+* 動態屬性有效負載的最大大小為&lt;9MB
+* 捆綁產品的固定價格
+* 分組產品的總價
+* 支援虛擬、可下載和禮品卡產品類型
+* 最低廣告價格(MAP)
 
 ## 0.3版 — 測試版+
 

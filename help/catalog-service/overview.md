@@ -2,16 +2,14 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] 針對Adobe Commerce，提供比原生Adobe Commerce GraphQL查詢更快速擷取產品顯示頁面和產品清單頁面內容的方法。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] 針對Adobe Commerce
-
-{{catalog-service-beta}}
 
 此 [!DNL Catalog Service] 針對Adobe Commerce擴充功能，提供豐富檢視模型（唯讀）目錄資料，以快速且完整地呈現與產品相關的店面體驗，包括：
 
