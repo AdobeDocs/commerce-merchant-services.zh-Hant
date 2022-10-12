@@ -4,7 +4,7 @@ description: 使用「訂單付款狀態」報表可查看訂單的付款狀態�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
 
-![財務報告視圖](assets/report-view.png)
+![財務報告視圖](assets/reports-justpayouts.png)
 
 訂單付款狀態報表可幫助您輕鬆了解特定訂單在現金處理流程訂單中的位置。 此報表可讓您快速檢視訂單的付款狀態，並識別任何潛在問題。
 

@@ -4,7 +4,7 @@ description: 使用「支付」報表可以完全透明地顯示支付金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
 
-![財務報告視圖](assets/report-view.png)
+![財務報告視圖](assets/reports-justpayouts.png)
 
 有兩種可用的「支付」報表視圖，使您能夠查看有關所有支付的深入資訊：
 
