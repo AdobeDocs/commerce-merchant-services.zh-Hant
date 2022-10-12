@@ -1,160 +1,164 @@
 ---
 title: 發行說明
-description: 的最新發佈資訊 [!DNL Product Recommendations] Adobe Commerce。
+description: 的最新發行資訊 [!DNL Product Recommendations] 從Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 發行說明
 
-發行說明包含對以下內容的更新 [!DNL Product Recommendations] 模組：
+發行說明包含下列更新 [!DNL Product Recommendations] 模組：
 
 * 截至2021年3月， [!DNL Product Recommendations] 現在支援 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) 店面。
 * [!DNL Product Recommendations] 元包： `magento/product-recommendations`
-* 頁面生成器支援 [!DNL Product Recommendations] （可選）模組： `magento/module-page-builder-product-recommendations`
-* 支援視覺相似性推薦類型 [!DNL Product Recommendations] （可選）模組： `magento/module-visual-product-recommendations`
+* 中的頁面產生器支援 [!DNL Product Recommendations] （可選）模組： `magento/module-page-builder-product-recommendations`
+* 支援的視覺相似度建議類型 [!DNL Product Recommendations] （可選）模組： `magento/module-visual-product-recommendations`
 
 發行說明包括：
 
-* ![新建](../assets/new.svg)  — 新功能
-* ![修復](../assets/fix.svg)  — 修復和改進
+* ![新增](../assets/new.svg)  — 新功能
+* ![修正](../assets/fix.svg)  — 修正和改良
 
-請參閱開發人員文檔以 [瞭解產品相容性](https://devdocs.magento.com/release/availability.html)。
+請參閱開發人員檔案，以 [了解產品相容性](https://devdocs.magento.com/release/availability.html).
 
-## Adobe Commerce2.3.x和2.4.x
+## Adobe Commerce 2.3.x和2.4.x
 
-## 4.0.0magento/product-recommendations
+## 4.0.0 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 已添加 [就緒性指標](create.md) 以幫助您直觀顯示每種建議類型的培訓進度。
-* ![新建](../assets/new.svg)  — 這是主版本。 你必須 [編輯](install-configure.md#update) 根 `composer.json` 檔案。 此版本還要求您在安裝和配置產品Recommendations時提供兩個API密鑰： [生產密鑰和沙盒密鑰](../landing/saas.md)。
+* ![新增](../assets/new.svg)  — 新增 [就緒指標](create.md) 可協助您視覺化每種建議類型的訓練進度。
+* ![新增](../assets/new.svg)  — 這是主要版本。 您必須 [編輯](install-configure.md#update) 根 `composer.json` 檔案。 此版本也要求您在安裝和設定產品Recommendations時提供兩個API金鑰： [生產金鑰和沙箱金鑰](../landing/saas.md).
 
-## 3.3.7magento/product-recommendations
+### 已知限制
 
-* ![新建](../assets/new.svg)  — 已添加PHP 8.1支援
-* ![新建](../assets/new.svg)  — 改進影像大小調整，以便在參考顯示模板中更一致地處理不同大小的影像
+* 此 `websiteCode` 如果值包含底線(_)，則會錯誤地傳回值。
 
-## 3.3.6magento/product-recommendations
+## 3.3.7 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 優化 [!DNL Product Recommendations] 元包，明確列出依賴項
+* ![新增](../assets/new.svg)  — 新增PHP 8.1支援
+* ![新增](../assets/new.svg)  — 改善影像大小調整功能，以便在參考顯示範本中更一致地處理不同大小的影像
 
-### 3.3.5magento/product-recommendations
+## 3.3.6 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 已添加 [B2B支援](onboarding.md#b2bsupport) 在產品Recommendations
-* ![新建](../assets/new.svg)  — 將新源添加到 [同步目錄資料](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 到Commerce Services的命令行
+* ![新增](../assets/new.svg)  — 最佳化 [!DNL Product Recommendations] 明確列出依賴項
 
-### 3.3.3magento/product-recommendations
+### 3.3.5 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 新增 [推薦類型](type.md):轉換（查看到購物車）、轉換（查看到購買）和最近查看。 這些新建議類型可在 `magento/product-recommendations` 模組3.2.2和更高版本。
-* ![修復](../assets/fix.svg)  — 解決了Application Firewall(WAF)錯誤阻止Cookie的問題
-* ![修復](../assets/fix.svg)  — 已修復問題，其中未在中顯示分配給非預設商店視圖的產品 _Recommendations產品預覽_ 為特定儲存視圖建立建議時的面板
-* ![修復](../assets/fix.svg)  — 已修復問題，因為頁面生成器中的某些建議單元名稱阻止建議單元顯示在店面上
+* ![新增](../assets/new.svg)  — 新增 [B2B支援](onboarding.md#b2bsupport) 在產品Recommendations
+* ![新增](../assets/new.svg)  — 新增摘要至 [同步目錄資料](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 到Commerce Services
 
-### 3.3.2magento/product-recommendations
+### 3.3.3 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 修復缺少B2B支援的依賴項
+* ![新增](../assets/new.svg)  — 新增 [建議類型](type.md):轉換（檢視到購物車）、轉換（檢視到購買）和最近查看。 這些新建議類型可在 `magento/product-recommendations` 模組3.2.2和更新版本。
+* ![修正](../assets/fix.svg)  — 修正Ambeyt的Web應用程式防火牆(WAF)錯誤封鎖Cookie的問題
+* ![修正](../assets/fix.svg)  — 修正指派給非預設商店檢視的產品未顯示在 _Recommendations產品預覽_ 面板
+* ![修正](../assets/fix.svg)  — 修正頁面產生器中某些建議單位名稱無法讓建議單位顯示在店面的問題
 
-### 3.3.1magento/product-recommendations
+### 3.3.2 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 增加對B2B客戶組定價的支援。 設定 [價格篩選](filters.md) 在推薦單元上，登錄的B2B客戶查看所顯示產品的客戶組定價集。
+* ![修正](../assets/fix.svg)  — 修正B2B支援缺少相依性的問題
 
-### 3.3.0magento/product-recommendations
+### 3.3.1 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 增加了對Adobe客戶端資料層的支援，以標準化跨Adobe Commerce功能和服務的行為資料收集。 查看 [自述](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) 來瞭解更多資訊。
+* ![新增](../assets/new.svg)  — 新增對B2B客戶群定價的支援。 當您設定 [價格篩選](filters.md) 在建議單位上，已登入的B2B客戶會看見所顯示產品的客戶群組定價集。
 
-### 3.2.6magento/product-recommendations
+### magento/product-recommendations的3.3.0
 
-* ![修復](../assets/fix.svg)  — 修復了JavaScript模式錯誤
-* ![修復](../assets/fix.svg)  — 解決了Application Firewall(WAF)錯誤阻止Cookie的問題
+* ![新增](../assets/new.svg)  — 新增Adobe用戶端資料層支援，以標準化Adobe Commerce功能和服務的行為資料收集。 請參閱 [讀我檔案](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) 了解更多。
 
-### 3.2.5magento/product-recommendations
+### 3.2.6 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 將Magento服務更名為 [商務服務](https://docs.magento.com/user-guide/system/saas.html) 並改進了管理員的可用性
+* ![修正](../assets/fix.svg)  — 修正JavaScript強制回應錯誤
+* ![修正](../assets/fix.svg)  — 修正Ambeyt的Web應用程式防火牆(WAF)錯誤封鎖Cookie的問題
 
-### 3.2.4magento/product-recommendations
+### 3.2.5 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 在索引產品屬性時修復「無法檢索可配置產品選項資料」錯誤
+* ![新增](../assets/new.svg)  — 將Magento服務重新命名為 [商務服務](https://docs.magento.com/user-guide/system/saas.html) 並改善「管理員」中的可用性
 
-### 3.2.3magento/product-recommendations
+### 3.2.4 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 已修復目錄同步期間「無法檢索可配置產品選項資料」錯誤
-* ![修復](../assets/fix.svg)  — 在啟用「將儲存代碼添加到URL」配置時修復了未正確設定儲存代碼的問題
-* ![修復](../assets/fix.svg)  — 改進對管理面板配置更改的檢測，以確保這些更改反映在目錄同步資料中
+* ![修正](../assets/fix.svg)  — 修正在索引產品屬性時「無法擷取可設定產品選項資料」錯誤
 
-### 3.2.2magento/product-recommendations
+### 3.2.3 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 添加了 [預覽建議結果](create.md) 創作時。 這可能要求您將模組更新為最新版本。
-* ![新建](../assets/new.svg)  — 添加了 [監控和管理](https://docs.magento.com/user-guide/system/catalog-sync.html) 管理員的目錄同步進程。
-* ![新建](../assets/new.svg)  — 已添加 [篩選](filters.md) 以控制在建議書中顯示的產品。
-* ![新建](../assets/new.svg)  — 已添加 [視覺相似性](type.md#visualsim) 建議類型。
+* ![修正](../assets/fix.svg)  — 修正目錄同步期間「無法擷取可設定產品選項資料」錯誤
+* ![修正](../assets/fix.svg)  — 修正當您啟用「新增商店代碼至URL」設定時，商店代碼未正確設定的問題
+* ![修正](../assets/fix.svg)  — 改善「管理面板」組態變更的偵測，確保這些變更反映在目錄同步資料中
 
-### 1.2.1頁面生成器的magento/module-page-builder-product-recommendations
+### 3.2.2 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 增加了對3.2.0+版本的支援 `magento/product-recommendations` 模組
+* ![新增](../assets/new.svg)  — 新增 [預覽建議結果](create.md) 在建立時。 您可能需要將模組更新至最新版本。
+* ![新增](../assets/new.svg)  — 新增 [監視和管理](https://docs.magento.com/user-guide/system/catalog-sync.html) 管理員的目錄同步程式。
+* ![新增](../assets/new.svg)  — 新增 [篩選器](filters.md) 控制建議中顯示的產品。
+* ![新增](../assets/new.svg)  — 新增 [視覺相似度](type.md#visualsim) 建議類型。
 
-### 3.1.0magento/product-recommendations
+### 1.2.1針對頁面產生器的magento/module-page-builder-product-recommendations
 
-* ![新建](../assets/new.svg)  — 添加了 [重新同步](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 通過命令行將目錄連接到SaaS服務。
-* ![新建](../assets/new.svg)  — 增加了對資料庫表前置詞的支援
-* ![修復](../assets/fix.svg)  — 已刪除PHP 7.1支援
+* ![新增](../assets/new.svg)  — 新增對3.2.0+版的 `magento/product-recommendations` 模組
 
-### 3.0.8magento/product-recommendations
+### 3.1.0 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 修復了在配置模組之前為資料收集發送事件的問題，導致無效通信
+* ![新增](../assets/new.svg)  — 新增 [重新同步](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 通過命令行將目錄發送到SaaS服務。
+* ![新增](../assets/new.svg)  — 新增對資料庫表前置詞的支援
+* ![修正](../assets/fix.svg)  — 刪除PHP 7.1支援
 
-### 3.0.6magento/product-recommendations
+### 3.0.8 magento/product-recommendations
 
-* ![新建](../assets/new.svg) - **(Beta)** 包括對新產品的支援 [視覺相似性](type.md#visualsim) 建議類型。
+* ![修正](../assets/fix.svg)  — 修正在設定模組之前，為資料收集傳送事件，導致無效流量的問題
 
-### 1.0.0magento/module-visual-product-recommendations
+### 3.0.6 magento/product-recommendations
 
-* ![新建](../assets/new.svg) - **(Beta)** [視覺相似性](type.md#visualsim)。 使用 _視覺相似性_ 建議類型，您可以將建議單元部署到產品詳細資訊頁面，該頁面顯示的產品在視覺上與查看的產品相似。
+* ![新增](../assets/new.svg) - **（測試版）** 包括對新 [視覺相似度](type.md#visualsim) 建議類型。
 
-### 3.0.5magento/product-recommendations
+### 1.0.0 magento/module-visual-product-recommendations
 
-* ![修復](../assets/fix.svg)  — 修復了目錄導出過程中可能出現的「無法檢索產品選項資料」錯誤。
-* ![修復](../assets/fix.svg)  — 中的貨幣符號 _收入_ 列 _產品Recommendations_ 儀表板現在可以正確反映已配置的基本貨幣。
+* ![新增](../assets/new.svg) - **（測試版）** [視覺相似度](type.md#visualsim). 使用 _視覺相似度_ 建議類型，您可以將建議單位部署至產品詳細資料頁面，該頁面會顯示視覺上類似於正在檢視之產品的產品。
 
-### 3.0.4magento/product-recommendations
+### 3.0.5 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 增加對Adobe Commerce的支2.4.0
+* ![修正](../assets/fix.svg)  — 修正目錄匯出期間可能發生的「無法擷取產品選項資料」錯誤。
+* ![修正](../assets/fix.svg)  — 貨幣符號，位於 _收入_ 欄 _產品Recommendations_ 控制面板現在會正確反映設定的基本貨幣。
 
-### 3.0.3magento/product-recommendations
+### 3.0.4 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 改進店面模板中的符號實現
+* ![修正](../assets/fix.svg)  — 新增對Adobe Commerce 2.4.0的支援
 
-### 1.0.4頁面生成器的magento/module-page-builder-product-recommendations
+### 3.0.3 magento/product-recommendations
 
-* ![新建](../assets/new.svg)  — 編輯頁面生成器內容類型時添加了產品建議名稱
+* ![修正](../assets/fix.svg)  — 改善店面範本中的符號實作
 
-### 3.0.2magento/product建議
+### 1.0.4針對頁面產生器的magento/module-page-builder-product-recommendations
 
-* ![新建](../assets/new.svg)  — 在頁面生成器中選擇建議單位時，在網格上添加了狀態列
-* ![修復](../assets/fix.svg)  — 解決了產品和映像URL中存在不正確的http/https協定的問題
+* ![新增](../assets/new.svg)  — 編輯頁面產生器內容類型時新增產品建議名稱
 
-### 3.0.1magento/product-recommendations
+### 3.0.2 magento/product-recommendations
 
-這是主版本。 你必須 [編輯](install-configure.md#update) 項目的root composer.json檔案。
+* ![新增](../assets/new.svg)  — 在頁面產生器中選取建議單位時，在格線上新增狀態欄
+* ![修正](../assets/fix.svg)  — 修正產品和影像URL中http/https通訊協定不正確的問題
 
-* ![新建](../assets/new.svg)  — 獲取 [!DNL Product Recommendations] 從備用SaaS資料空間。 這樣，您就可以在其他非生產環境中使用在產品環境中計算的產品建議。 [交換SaaS資料空間](settings.md) 進一步說明了此功能。
+### 3.0.1 magento/product-recommendations
 
-* ![修復](../assets/fix.svg)  — 修復了使用「塊原點」的購物者禁止結帳的問題
-* ![修復](../assets/fix.svg)  — 修復了發送無關附加購物車事件的問題
+這是主要版本。 您必須 [編輯](install-configure.md#update) 您專案的根composer.json檔案。
 
-### 1.0.3頁面生成器的magento/module-page-builder-product-recommendations
+* ![新增](../assets/new.svg)  — 擷取 [!DNL Product Recommendations] 從備用SaaS資料空間。 這可讓您將在產品環境中計算的產品建議用於其他非生產環境。 [切換SaaS資料空間](settings.md) 進一步說明此功能。
 
-* ![新建](../assets/new.svg)  — 頁面生成器支援。 通過頁面生成器整合，您可以準確而大量地將建議單元放置在頁面生成器創作的內容上的任意位置。 您還可以自行設定標題和建議單元的樣式。 轉到 [頁面生成器](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 的子菜單。
+* ![修正](../assets/fix.svg)  — 修正使用「區塊來源」的購物者無法結帳的問題
+* ![修正](../assets/fix.svg)  — 修正傳送無關附加至購物車事件的問題
 
-### 2.0.0magento/product-recommendations
+### 1.0.3針對頁面產生器的magento/module-page-builder-product-recommendations
 
-* ![新建](../assets/new.svg)  — 一般可用性發佈！
+* ![新增](../assets/new.svg)  — 頁面產生器支援。 透過頁面產生器整合，您可以在頁面產生器撰寫的內容上，將建議單位精確精細地放置在任何任意位置。 您也可以設定標題和建議單位本身的樣式。 前往 [頁面產生器](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 以取得更多資訊。
 
-## 文檔
+### 2.0.0 magento/product-recommendations
 
-瞭解有關 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 開發：
+* ![新增](../assets/new.svg)  — 正式發行！
+
+## 檔案
+
+若要深入了解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 開發：
 
 * [使用手冊](overview.md)
-* [開發人員文檔](https://devdocs.magento.com/recommendations/product-recs.html)
+* [開發人員檔案](https://devdocs.magento.com/recommendations/product-recs.html)
