@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在存放區設
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 0%
 您可以自訂 [!DNL Payment Services] 管理中實用的設定選項，以符合您的需求。
 
 設定時 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 在「管理員」中，這些設定只會套用至 _[!UICONTROL Method]_欄位_[!UICONTROL General Configuration]_. 您在設定欄位中所做的任何變更，都與切換 _[!UICONTROL Method]_選擇(selection) — 如果切換方法，則選擇不會重置。
-
-請參閱 [[!UICONTROL General Configuration] 節](#general-configuration) 以取得更多資訊。
 
 ## 一般配置
 
@@ -38,6 +36,7 @@ ht-degree: 0%
    >您的 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 會在您完成沙箱和/或生產的上線作業後，自動產生並呈現在其可敬的領域中。 請勿移除或變更這些ID。
 
 1. 按一下 **[!UICONTROL Save Config]** 來儲存變更。
+1. 導覽至 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下 **[!UICONTROL Flush Cache]** 刷新所有無效快取。
 
 ### 配置選項
 
@@ -64,6 +63,7 @@ ht-degree: 0%
 1. 結束日期 [設定付款活動](production.md#set-payment-services-as-payment-method)，選取 **[!UICONTROL Authorize]** 或 **授權和捕獲**.
 1. 針對 **除錯模式**，選擇 `Yes` 啟用偵錯模式(或 `No` 停用)。
 1. 按一下 **[!UICONTROL Save Config]** 來儲存變更。
+1. 導覽至 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下 **[!UICONTROL Flush Cache]** 刷新所有無效快取。
 
 #### 配置選項
 
@@ -92,6 +92,7 @@ ht-degree: 0%
 1. 若要停用 [稍後付費訊息](payments-options.md#pay-later-button) （如果需要），請選取 `No` for **[!UICONTROL Display Pay Later Message]**.
 1. 若要啟用偵錯模式，請選取 `Yes` 針對 **[!UICONTROL Debug Mode]** (`No` 停用)。
 1. 若要儲存變更，請按一下 **[!UICONTROL Save Config]** .
+1. 導覽至 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下 **[!UICONTROL Flush Cache]** 刷新所有無效快取。
 
 ### 配置選項
 
@@ -119,3 +120,7 @@ ht-degree: 0%
 | [!UICONTROL Height] | 商店檢視 | 定義PayPal智慧按鈕的高度。 預設值：無 |
 | [!UICONTROL Label] | 商店檢視 | 定義顯示在PayPal智慧按鈕中的標籤。 選項： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | 商店檢視 | 啟用標籤。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+
+## 刷新快取
+
+如果您變更設定， [手動刷新快取](/help/payment-services/settings.md#flush-the-cache) 讓您的商店顯示最新的組態設定。
