@@ -2,9 +2,9 @@
 title: 安裝 [!DNL Payment Services]
 description: 安裝Payments Services擴充功能。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 0%
 1. 更新相依性並安裝擴充功能：
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer require magento/payment-services`.
+   使用 `composer update` 命令更新所有根依賴項。
 
 1. 提交並推送您的變更。
 
@@ -68,10 +68,10 @@ ht-degree: 0%
 1. 更新相依性並安裝擴充功能：
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer require magento/payment-services`.
+   使用 `composer update` 命令更新所有根依賴項。
 
 1. 升級您的執行個體：
 
@@ -95,10 +95,10 @@ ht-degree: 0%
 1. 若要取得套件的最新版本：
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   此 `composer update` 命令更新所有依賴項。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/payment-services`.
+   使用 `composer update` 命令更新所有根依賴項。
 
 1. 提交並推送您的變更。
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-確認您的撰寫器金鑰已連結至 `MageID` 使用期間 [!DNL Payment Services] 註冊。
+確認您的撰寫器金鑰有效，且您擁有其他Magento套件的存取權。
 
 若要查看已設定哪些撰寫器金鑰：
 
