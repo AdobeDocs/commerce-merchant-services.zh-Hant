@@ -2,9 +2,9 @@
 title: 發行說明
 description: 的最新發行資訊 [!DNL Product Recommendations] 從Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.3.x和2.4.x
 
-## 4.0.0 magento/product-recommendations
+### 4.0.0 magento/product-recommendations
 
 * ![新增](../assets/new.svg)  — 新增 [就緒指標](create.md) 可協助您視覺化每種建議類型的訓練進度。
 * ![新增](../assets/new.svg)  — 這是主要版本。 您必須 [編輯](install-configure.md#update) 根 `composer.json` 檔案。 此版本也要求您在安裝和設定產品Recommendations時提供兩個API金鑰： [生產金鑰和沙箱金鑰](../landing/saas.md).
@@ -36,12 +36,12 @@ ht-degree: 0%
 
 * 此 `websiteCode` 如果值包含底線(_)，則會錯誤地傳回值。
 
-## 3.3.7 magento/product-recommendations
+### 3.3.7 magento/product-recommendations
 
 * ![新增](../assets/new.svg)  — 新增PHP 8.1支援
 * ![新增](../assets/new.svg)  — 改善影像大小調整功能，以便在參考顯示範本中更一致地處理不同大小的影像
 
-## 3.3.6 magento/product-recommendations
+### 3.3.6 magento/product-recommendations
 
 * ![新增](../assets/new.svg)  — 最佳化 [!DNL Product Recommendations] 明確列出依賴項
 

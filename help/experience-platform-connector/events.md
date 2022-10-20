@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每個事件擷取的資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ ht-degree: 0%
 | `searchResponse` | 指示是否已接收到搜索響應 |
 | `suggestions` | 字串的陣列，包含目錄中存在且與搜尋查詢類似的產品和類別名稱 |
 | `numberOfResults` | 傳回的產品數 |
-| `productListItems` | 購物車中的一系列產品。 包括 `SKU`（庫存單位）和 `name` （顯示名稱或人類看得懂的名稱）。 |
+| `productListItems` | 購物車中的一系列產品。 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `productImageUrl` | 產品的主影像URL |

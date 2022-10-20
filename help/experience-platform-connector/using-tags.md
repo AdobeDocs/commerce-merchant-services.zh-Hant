@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform標籤收集商務資料
 description: 了解如何使用Adobe Experience Platform標籤收集商務資料。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ _Experience Platform連接器資料流與標籤_
 - [&#39;searchRequestSent&#39;](#searchrequestsent)
 - [&#39;searchResponseReceived&#39;](#searchresponsereceived)
 - [&#39;addToCart&#39;](#addtocart)
+- [&#39;openCart&#39;](#opencart)
 - [&#39;viewCart&#39;](#viewcart)
 - [&#39;removeFromCart&#39;](#removefromcart)
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
@@ -783,6 +784,39 @@ _Experience Platform連接器資料流與標籤_
 - **動作類型**: `Send event`
 - **類型**: `commerce.productListAdds`
 - **XDM資料**: `%add to cart%`
+
+### openCart {#opencart}
+
+建立新購物車時觸發，當產品新增至空購物車時即會觸發。
+
+#### 資料元素
+
+建立下列資料元素：
+
+1. 開啟購物車：
+
+   - **名稱**: `open cart`
+   - **擴充功能**: `Adobe Experience Platform Web SDK`
+   - **資料元素類型**: `XDM object`
+   - **欄位組**: `commerce` > `productListOpens` > `value`
+   - **value**: **值** = `1`
+   - **欄位組**: `commerce` > `cart` > `cartID`
+   - **購物車ID**: **值** = `%cart id%`
+   - **欄位組**: `productListItems`. 針對 `productListItems`，可預先計算多個項目。 選擇 **productListItems** > **提供整個陣列**.
+
+#### 規則 
+
+- **名稱**: `open cart`
+- **擴充功能**: `Adobe Client Data Layer`
+- **事件類型**: `Data Pushed`
+- **特定事件**: `open-cart`
+
+##### 動作
+
+- **擴充功能**: `Adobe Experience Platform Web SDK`
+- **動作類型**: `Send event`
+- **類型**: `commerce.productListOpens`
+- **XDM資料**: `%open cart%`
 
 ### viewCart {#viewcart}
 
