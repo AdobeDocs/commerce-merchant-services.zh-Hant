@@ -2,7 +2,7 @@
 title: 發行說明
 description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,12 +27,14 @@ ht-degree: 3%
 
 以下版本說明說明與Experience Platform連接器使用的擴充功能相關的功能變更和修正。
 
-+++托管服務更新
++++支援的服務更新
 
 _2022年10月12日_
 
 * ![新增](../assets/new.svg)  — 新增兩個 [storefront事件](events.md): `openCart` 和 `removeFromCart` 至Adobe Commerce Storefront事件SDK和收集器
 * ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
