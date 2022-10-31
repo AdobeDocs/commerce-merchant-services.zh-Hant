@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] 針對Adobe Commerce，提供比原生Adobe Commerce GraphQL查詢更快速擷取產品顯示頁面和產品清單頁面內容的方法。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
+source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 此 [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) 請求和接收產品資料。 GraphQL是一種查詢語言，前端用戶端用來與後端(如Adobe Commerce)上定義的應用程式程式設計介面(API)通訊。 GraphQL是一種常見的通信方法，因為它重量輕，允許系統整合商指定每個響應的內容和順序。
 
 Adobe Commerce有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查詢（讀取操作）和突變（寫入操作），使購物者能夠與許多類型的頁面進行交互，包括產品、客戶帳戶、購物車、結帳等。 但是，傳回產品資訊的查詢沒有針對速度進行最佳化。 服務GraphQL系統只能對產品和相關資訊執行查詢。 這些查詢比類似的核心查詢更具效能。
+
+您可以將這些查詢發送到網關(網址為https://catalog-service.adobe.io/graphql)，以運行這些查詢。
 
 ## 架構
 
