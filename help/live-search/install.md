@@ -2,9 +2,9 @@
 title: "安裝 [!DNL Live Search]"
 description: 「了解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ composer update magento/live-search --with-dependencies
 |--- |--- |
 | `module-live-search` | 允許商戶配置其面向、同義字、查詢規則等的搜索設定，並提供對只讀GraphQL操作場的訪問，以測試來自 *管理*. |
 | `module-live-search-adapter` | 將搜索請求從店面路由到 [!DNL Live Search] 服務，並將結果轉譯到店面。 <br /> — 類別瀏覽 — 從店面路由請求 [頂端導覽](https://docs.magento.com/user-guide/catalog/navigation-top.html) 到搜尋服務。<br /> — 全域搜尋 — 路由來自 [快速搜尋](https://docs.magento.com/user-guide/catalog/search-quick.html) 框的右上方 [!DNL Live Search] 服務。 |
-| `module-live-search-storefront-popover` | 彈出式視窗會取代標準快速搜尋，並傳回最上層搜尋結果的動態產品建議和縮圖。 |
+| `module-live-search-storefront-popover` | 彈出式視窗會取代標準快速搜尋，並傳回最上層搜尋結果的資料和縮圖。 |
 
 ## [!DNL Live Search] 相依性 {#dependencies}
 
