@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Quick Checkout] (Adobe Commerce管理面板)」'
 description: 「了解 [!DNL Quick Checkout] 「管理面板」可協助您成功上線、設定及視覺化擴充功能。
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | [!UICONTROL Overview] | 「概述」索引標籤會顯示所有要使用的資源 [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | 「報表」索引標籤會全面顯示 [!DNL Quick Checkout] 報告資訊。 |
+| [!UICONTROL Reports] | 「報表」索引標籤會全面顯示 [!DNL Quick Checkout] 資訊。 |
 
 ## 說明與支援
 

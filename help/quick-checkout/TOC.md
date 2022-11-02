@@ -2,10 +2,10 @@
 user-guide-title: '"[!DNL Quick Checkout] 針對Adobe Commerce'
 user-guide-description: 「了解 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，以及如何成功上線並設定擴充功能。」
 breadcrumb-title: 商家服務指南
-source-git-commit: 9f531ce359680e442fe62fe49169ecbb03e56bbc
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,12 @@ ht-degree: 2%
    - [必要條件](prerequisites.md)
    - [安裝](install.md)
    - [入門](onboarding.md)
+   - [設定](settings-quick-checkout.md)
    - [!DNL Quick Checkout] 管理面板 {#quick-checkout-admin-panel}
       - [配置管理面板](admin-panel.md)
       - [使用者設定](user-roles-setup.md)
+   - [!DNL Quick Checkout] 報告 {#quick-checkout-reporting}
+      - [報表](reports.md)
 - 測試和驗證 {#test-validate}
    - [測試](testing.md)
    - [開發人員資訊](developer.md)
