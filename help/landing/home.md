@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 檔案
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -62,15 +62,15 @@ Adobe提供商務、整合和資料服務的集合，以協助商戶支援其業
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
+       <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon銷售渠道</strong></a> <br><em>(可供Magento Open Source)</em>
     <div>與全球最大的線上購物目的地整合，以透過單一控制面板實現Amazon銷售、提供資料自動化和同步化、管理Amazon清單等。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>頻道管理員</strong></a> <br><em>(可供Magento Open Source)</em>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>管道管理員</strong></a> <br><em>(可供Magento Open Source)</em>
     <div>通過與沃爾瑪市場整合來增加銷售、接觸新客戶、優化運營並節省時間。 使員工能夠無縫地管理Walmart Marketplace的銷售、庫存和定價 — 所有這些都在商務中。</div>
   </td>
    </tr>
