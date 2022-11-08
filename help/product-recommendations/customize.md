@@ -1,9 +1,10 @@
 ---
 title: 自訂
 description: 了解如何自訂您的產品建議。
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -110,7 +111,7 @@ ht-degree: 0%
 
 例如，如果您的商店銷售某些有機產品，則這些產品上可能會有自訂屬性，指定為 `Organic = Yes`. 您可能需要存取店面上的此屬性值，以便在這些產品出現在Recommendations時，給予特別的視覺處理。 同樣地，存取這些自訂產品屬性值可讓您標示產品，或在網站的展示層驅動自訂邏輯。
 
-![新增徽章](assets/unit.png)
+![新增徽章](assets/unit-custom.png)
 
 若要在頁面上呈現建議單位時確定自訂產品屬性可用，請設定 `Used in Product Listing` 屬性 `Yes` 在 [產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) 頁面。
 
