@@ -2,9 +2,9 @@
 title: 發行說明
 description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '219'
 ht-degree: 3%
 
 ---
@@ -35,6 +35,12 @@ _2022年10月12日_
 * ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.0.1
+
+_2022年11月10日_
+
+* ![修正問題](../assets/fix.svg)  — 現在，Adobe Experience Platform內容僅在成功載入「Storefront事件收集器」和「Storefront事件SDK」後設定。
 
 ## 2.0.0
 
