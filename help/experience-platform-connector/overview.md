@@ -2,9 +2,9 @@
 title: 指南概述
 description: 了解如何使用Adobe Commerce連接器將Experience Platform資料與Adobe Experience Platform整合。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Experience Platform連接器會顯示在「商務管理員」下方 **系統** >
 
 如果您需要資訊或有本指南未涵蓋的問題，請使用下列資源：
 
-- [協助中心](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
-- [支援票證](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 提交票證以接收其他幫助。
+- [協助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
+- [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} — 提交票證以接收其他幫助。
