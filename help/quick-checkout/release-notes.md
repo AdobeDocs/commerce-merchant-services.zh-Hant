@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 發行說明'
 description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ _2022年8月9日_
 
 ![修正問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 可讓您在提供所有必要參數時儲存設定。
 
-![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 常見 [疑難排解](https://support.magento.com/hc/en-us/articles/6909450342541) 安裝期間發生的問題 [!DNL Quick Checkout].
+![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 常見 [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 安裝期間發生的問題 [!DNL Quick Checkout].
