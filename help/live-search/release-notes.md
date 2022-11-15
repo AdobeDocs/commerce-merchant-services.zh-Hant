@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] 發行說明"
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,18 @@ ht-degree: 0%
 * ![新增](../assets/new.svg)  — 新功能
 * ![修正](../assets/fix.svg)  — 修正和改良
 * ![錯誤](../assets/bug.svg)  — 已知問題
+
+## [!DNL Live Search] 2.0.5
+
+* 與Adobe Commerce(EE)相容：2.4.x
+* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
+* 穩定性：穩定
+
+* ![修正](../assets/fix.svg)  — 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤現已修正。
+
+商家必須升級Live Search擴充功能版本>= 2.0.5才能存取這些功能。
+
+建議您先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 ## [!DNL Live Search] 2.0.4
 
@@ -30,8 +42,6 @@ ht-degree: 0%
 * ![修正](../assets/fix.svg)  — 過去，搜尋不存在的詞語時，Live Search會傳回錯誤。 此錯誤現已修正。
 
 商家必須升級Live Search擴充功能版本>= 2.0.4才能存取這些功能。
-
-我們建議使用者先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 ## [!DNL Live Search] 2.0.3
 
