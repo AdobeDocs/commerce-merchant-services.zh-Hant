@@ -2,9 +2,9 @@
 title: 「入門概述」
 description: '"[!DNL Live Search] 入門流程、系統要求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 ### 索引
 
-* 每個商店檢視索引最多300個產品屬性
-* 僅從Adobe Commerce資料庫中索引產品
-* 未為CMS頁編製索引
+* 每個商店檢視索引最多300個產品屬性。
+* 僅從Adobe Commerce資料庫中索引產品。
+* CMS頁面未編列索引。
 
 ### 查詢
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 ### 規則
 
-* 每個資料空間ID的規則數上限為50。
+* 每個商店檢視的規則數上限為50。
 * 每個規則的條件數上限為10。
 * 每個規則的事件數上限為25。
 
 ### 同義字
 
-* [!DNL Live Search] 可以管理每個最多200個同義字 `Data Space ID`.
+* [!DNL Live Search] 每個商店檢視最多可管理200個同義字。
 
 ### PWA測試版
 
