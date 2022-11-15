@@ -4,9 +4,9 @@ description: 有關 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL 
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 834faafdc35280908dfd468b3527b9f6cbe5e024
+source-git-commit: 83040fecfc4f0ffbd3f6b3fc5e098443dadcdb5e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # [!DNL Payment Services] 指南概述
 
 本指南適用於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 內容包括安裝和上線的詳細資訊 [!DNL Payment Services]，以及服務的設定和管理。 此版本假設基本了解核心商務組態和功能。
+
+>[!TIP]
+>
+>要獲得支付服務方面的幫助，請參閱 [支援](#support).
 
 [!DNL Payment Services] 管理員有兩個區域：
 
@@ -40,5 +44,5 @@ ht-degree: 0%
 
 ![說明資源](assets/help-resources.png)
 
-* [協助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en) — 請參閱 [!DNL Payment Services] — 知識庫中的相關故障排除文章。
+* [協助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en) — 搜索 [!DNL Payment Services] — 知識庫中的相關故障排除文章。
 * [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) — 提交票證以接收其他幫助。
