@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Quick Checkout] 報告」'
-description: '"[!DNL Quick Checkout] 提供全面的報告資訊。」'
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] 報告'
+description: '''[!DNL Quick Checkout] 提供全面的報告資訊。'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # 報表
 
@@ -28,9 +28,9 @@ ht-degree: 0%
 | 圖表 | 說明 |
 |---|---|
 | [!UICONTROL Checkout abandonment] | 未完成購買就退出結帳程式的訪客百分比。 |
-| [!UICONTROL Checkout abandonment breakdown] | 結帳放棄率除以訪客類型。 選項： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | 結帳放棄率除以訪客類型。 工具提示顯示「螺栓」和「來賓」之間的百分比差異。 選項： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | 訪客完成結帳程式所花費的平均時間。 |
-| [!UICONTROL Average checkout time breakdown] | 平均結帳時間除以訪客類型。 選項： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | 平均結帳時間除以訪客類型。 工具提示顯示「螺栓」和「來賓」之間的百分比差異。 選項： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | 下單數除以訪客類型。 選項： [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## 趨勢報表
@@ -55,4 +55,3 @@ ht-degree: 0%
 |---|---|
 | [!UICONTROL Preset] | 顯示預設預設集的下拉式清單，可用來顯示特定的資料範圍。 依預設：最近30天 |
 | [!UICONTROL Date range] | 下拉式清單可讓您根據選取的日期選取特定的資料範圍。 |
-
