@@ -2,9 +2,9 @@
 title: 「入門概述」
 description: '"[!DNL Live Search] 入門流程、系統要求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ ht-degree: 0%
 ### 目前不支援
 
 * 此 [進階搜尋](https://docs.magento.com/user-guide/catalog/search-advanced.html) 模組在 [!DNL Live Search] 已安裝，且店面頁尾中的「進階搜尋」連結會遭到移除。
-* [客戶群組](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [自訂價格群組](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用的多個庫存位置 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS擴充功能
-* [整合的B2B功能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * 產品價格不包括 [增值稅](https://docs.magento.com/user-guide/tax/vat.html) （增值稅）。
-* 無庫存產品會出現在搜尋結果中，無論 [股票期權](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 設定。

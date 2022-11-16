@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 發行說明"
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 * ![修正](../assets/fix.svg)  — 修正和改良
 * ![錯誤](../assets/bug.svg)  — 已知問題
 
-## [!DNL Live Search] 2.0.5
+## [!DNL Live Search] 2.0.5 {#205}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 建議您先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
-## [!DNL Live Search] 2.0.4
+## [!DNL Live Search] 2.0.4 {#204}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -43,7 +43,9 @@ ht-degree: 1%
 
 商家必須升級Live Search擴充功能版本>= 2.0.4才能存取這些功能。
 
-## [!DNL Live Search] 2.0.3
+我們建議使用者先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
+
+## [!DNL Live Search] 2.0.3 {#203}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -69,7 +71,7 @@ ht-degree: 1%
 * 產品覆寫和產品屬性摘要可能有同步問題，需要管理員執行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正確重新同步。
 * 若您啟用或停用「目錄權限/共用目錄/B2B」功能，則 `catalog_data_exporter_product_overrides` 索引器未更新，且標籤錯誤為 `valid`. 使用 `bin/magento saas:resync --feed=productOverrides` 以修正問題。
 
-## [!DNL Live Search] 2.0
+## [!DNL Live Search] 2.0 {#20}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -86,7 +88,7 @@ ht-degree: 1%
 * ![錯誤](../assets/bug.svg)  — 不支援下列產品屬性 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 若與測試版PWA相關： `description`, `name`, `short_description`
 * ![錯誤](../assets/bug.svg)  — 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1
+## [!DNL Live Search] 1.3.1 {#131}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -96,7 +98,7 @@ ht-degree: 1%
 * ![修正](../assets/fix.svg)  — 修正若無 [貨幣符號](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`)可用。
 * ![修正](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 現在會顯示 [特價](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最低最終價格）。
 
-## [!DNL Live Search] 1.3.0
+## [!DNL Live Search] 1.3.0 {#130}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -109,7 +111,7 @@ ht-degree: 1%
 * ![錯誤](../assets/bug.svg)  — 搜索適配器的修補程式可處理重複產品。
 * ![錯誤](../assets/bug.svg) - [!DNL Live Search] 支援 [單源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多個（虛擬）的（物理）清點位置 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 目前不支援多個庫存來源。
 
-## [!DNL Live Search] 1.2.0
+## [!DNL Live Search] 1.2.0 {#120}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
@@ -124,7 +126,7 @@ ht-degree: 1%
 * ![修正](../assets/fix.svg) - [!DNL Live Search] 如果搜尋條件包含空的排序順序值，則不再擲回錯誤
 * ![修正](../assets/fix.svg)  — 如果屬性代碼包含「to」或「from」字串，則範圍篩選不再中斷
 
-## [!DNL Live Search] 1.1.0
+## [!DNL Live Search] 1.1.0 {#110}
 
 * 與Adobe Commerce(EE)相容：2.4.x
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
