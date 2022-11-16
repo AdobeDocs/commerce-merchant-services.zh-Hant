@@ -2,9 +2,9 @@
 title: 入門和安裝
 description: 了解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
+source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -41,15 +41,11 @@ ht-degree: 0%
 1. 開啟 `<Commerce_root>/composer.json` 檔案，並更新 `require` 區段如下：
 
    ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
+   "require":{
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
+   "magento/catalog-service": "^1.0.0"
+      }
    ```
 
 1. 在本機測試新設定並更新相依性：
@@ -70,13 +66,8 @@ ht-degree: 0%
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/catalog-service": "^1.0.0"
    }
    ```
 
@@ -99,6 +90,23 @@ ht-degree: 0%
    ```bash
    bin/magento cache:clean
    ```
+
+
+## 目錄服務和API網格
+
+此 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使開發人員能夠使用AdobeIO將專用或第三方API和其他介面與Adobe產品整合。
+
+將API Mesh與目錄服務搭配使用的第一步，是將API Mesh連線至您的執行個體。 請參閱 [建立網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+若要完成設定，您需要 [AdobeIO CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 已安裝。
+
+在AdobeIO上配置網格後，運行以下命令以連接新網格。
+
+```bash
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
+```
+
+執行此命令後，目錄服務應通過API網格運行。
 
 ## 配置目錄導出
 
