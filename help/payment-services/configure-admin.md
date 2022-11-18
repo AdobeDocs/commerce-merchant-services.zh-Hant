@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在存放區設
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 0%
 1. 在 _[!UICONTROL Payment Services]_部分，展開_[!UICONTROL Credit Card Fields]_ 區段。
 1. 針對 **[!UICONTROL Title]**，輸入文本（如果需要）以更改付款方法的名稱，如結帳期間所示。
 1. 結束日期 [設定付款活動](production.md#set-payment-services-as-payment-method)，選取 **[!UICONTROL Authorize]** 或 **授權和捕獲**.
+1. 針對 **[!UICONTROL Show on checkout page]**，選擇 `Yes` 啟用或停用結帳頁面上的信用卡欄位。
+1. 針對 **[!UICONTROL Vault Enabled]**，選擇 `Yes` 啟用信用卡保險儲存以進行結帳。
 1. 針對 **除錯模式**，選擇 `Yes` 啟用偵錯模式(或 `No` 停用)。
 1. 按一下 **[!UICONTROL Save Config]** 來儲存變更。
 1. 導覽至 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下 **[!UICONTROL Flush Cache]** 刷新所有無效快取。

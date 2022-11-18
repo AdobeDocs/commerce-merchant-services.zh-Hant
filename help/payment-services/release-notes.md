@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _2021年6月28日_
 
 +++
 
+## v1.5.0
+
+_2022年11月18日_
+
+![新增](../assets/new.svg)<!-- Issue PAY-3880 --> 購物者現在可以 [在結帳期間保存其信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 用於以後購買同一商家帳戶內的同一商店或其他商店。
+
+![新增](../assets/new.svg)<!-- Issue PAY-3950 --> 商戶現在可以啟用 [即時購買商務功能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 以供購物者(使用 [保險信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html))以加速結帳。
+
 ## v1.4.1
 
 _2022年10月14日_
 
-![新增](../assets/new.svg)<!-- Issue PAY-3766 --> 當客戶的付款方法被拒絕時，可見的錯誤消息將更具描述性。 它建議客戶重新輸入付款資訊，然後重試，嘗試其他付款方法，或聯繫其銀行，了解拒絕的交易。
+![修正](../assets/fix.svg)<!-- Issue PAY-3766 --> 當客戶的付款方法被拒絕時，可見的錯誤消息將更具描述性。 它建議客戶重新輸入付款資訊，然後重試，嘗試其他付款方法，或聯繫其銀行，了解拒絕的交易。
 
 ## v1.4.0
 
