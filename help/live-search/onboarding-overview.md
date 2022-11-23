@@ -2,7 +2,7 @@
 title: 「入門概述」
 description: '"[!DNL Live Search] 入門流程、系統要求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 ### 查詢
 
 * [!DNL Live Search] 無法存取類別樹的完整分類，這會導致部分分層導覽搜尋案例超出其範圍。
-* [!DNL Live Search] 使用唯一的GraphQL端點進行查詢，以支援智慧化面向和「按類型搜索」等功能。 雖然類似 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，則會有一些差異，而目前某些欄位可能不完全相容。
+* [!DNL Live Search] 使用唯一的GraphQL端點進行查詢，以支援智慧化面向和「按類型搜索」等功能。 雖然類似 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)，則會有一些差異，而目前某些欄位可能不完全相容。
 
 ### 規則
 

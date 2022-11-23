@@ -2,9 +2,9 @@
 title: "安裝 [!DNL Live Search]"
 description: 「了解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模�
 
    您應可在 `cron` 執行產品和屬性摘要，並將屬性中繼資料匯出至 [!DNL Live Search] 服務。
 
-1. 至少等待一小時，以便對資料進行索引和同步。 然後，使用 [GraphQL操作場](https://devdocs.magento.com/live-search/graphql-support.html) 使用預設查詢來驗證下列內容：
+1. 至少等待一小時，以便對資料進行索引和同步。 然後，使用 [GraphQL操作場](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 使用預設查詢來驗證下列內容：
 
    * 傳回的產品計數接近您對商店檢視的預期值。
    * 會傳回Facet。

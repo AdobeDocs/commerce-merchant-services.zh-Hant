@@ -1,24 +1,24 @@
 ---
-title: '"Facet技術說明"'
-description: 「有關使用的技術說明 [!DNL Live Search] facets」
+title: "Facet技術說明"
+description: 「關於使用的技術說明 [!DNL Live Search] 刻面」
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# 方面技術說明
+# Facet技術說明
 
-Faceting是一種高效能的過濾方法，它使用可搜索的靜態和動態屬性值的多個維作為搜索標準。
+Faceting是一種高效能篩選方法，使用可搜尋的靜態和動態屬性值的多個維度作為搜尋准則。
 
-[!DNL Live Search] 使用 `productSearch` 返回faceting的查詢和特定於 [!DNL Live Search]。 請參閱 [`productSearch` 查詢](https://devdocs.magento.com/live-search/product-search.html) 的上界。
+[!DNL Live Search] 使用 `productSearch` 傳回faceting的查詢，以及 [!DNL Live Search]. 請參閱 [`productSearch` 查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 以取得程式碼範例。
 
-## 方面聚合
+## 面向聚合
 
-如果店面有三個方面（類別、顏色和價格），購物者在這三個方面都進行篩選(顏色=藍色，價格在$10.00-50.00，類別= `promotions`)。
+如果店面有三個Facet（類別、顏色和價格），且購物者對這三個Facet進行篩選(顏色=藍色，價格為$10.00-50.00，類別= `promotions`)。
 
-* `categories` 聚合 — 聚合 `categories`的 `color` 和 `price` 過濾器，但不是 `categories` 的子菜單。
-* `color` 聚合 — 聚合 `color`的 `price` 和 `categories` 過濾器，但不是 `color` 的子菜單。
-* `price` 聚合 — 聚合 `price`的 `color` 和 `categories` 過濾器，但不是 `price` 的子菜單。
+* `categories` 匯總 — 匯總 `categories`，套用 `color` 和 `price` 篩選，但不是 `categories` 篩選。
+* `color` 匯總 — 匯總 `color`，套用 `price` 和 `categories` 篩選，但不是 `color` 篩選。
+* `price` 匯總 — 匯總 `price`，套用 `color` 和 `categories` 篩選，但不是 `price` 篩選。
