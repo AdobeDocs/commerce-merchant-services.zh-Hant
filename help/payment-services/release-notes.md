@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄設定」控制項顯示或隱藏欄。
 
 +++
+
+## v1.5.1
+
+_2022年11月23日_
+
+![新增](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services現在會在使用者代理標題中納入版本號碼，以便要求能夠追蹤、篩選或淘汰未使用的端點。
+
+![修正問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 使用智慧按鈕從產品頁面下訂單時，Payment Services現在可正確顯示訂單資料。
 
 ## v1.5.0
 
