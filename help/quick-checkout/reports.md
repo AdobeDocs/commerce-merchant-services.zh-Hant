@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 報告'
 description: '''[!DNL Quick Checkout] 提供全面的報告資訊。'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 您必須啟用 [**結帳追蹤**](../quick-checkout/settings-quick-checkout.md) ，讓Adobe Commerce可以與Bolt共用結帳資訊。 預設情況下，此配置選項設定為 **是**. 如果此選項已停用(設為 **否**)，則報表會受到影響。
+> 若要允許Adobe Commerce與Bolt共用結帳資訊，請 [**結帳追蹤**](../quick-checkout/settings-quick-checkout.md)  必須在「管理」中啟用。 預設情況下，此配置選項設定為 **是**. 如果此選項設為 **否**，則報表會受到影響。 Bolt每天在東部標準時間(EST)凌晨03:00刷新報告資訊一次。
 
 ## 概述報表
 
