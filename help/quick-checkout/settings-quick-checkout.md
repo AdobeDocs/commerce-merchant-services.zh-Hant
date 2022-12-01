@@ -1,13 +1,13 @@
 ---
-title: '"配置 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」'
-description: 「了解 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。」
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
+description: 了解 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
+exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] 設定
 
@@ -18,18 +18,24 @@ ht-degree: 0%
 1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **設定**.
 1. 在左側面板中，展開 **銷售** 選取 **結帳**.
 
-   ![快速結帳](assets/quick-checkout-main-view-react.png)
+   ![快速結帳](assets/quick-checkout-main-view-admin.png)
 
 請參閱 [入門](../quick-checkout/onboarding.md) 主題，以了解如何設定 [!DNL Quick Checkout] Adobe Commerce。
 
 ## 啟用擴充功能
+
+![快速結帳](assets/enable-method.png)
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
 | [!UICONTROL Enable] | 網站 | 啟用或禁用 [!DNL Quick Checkout] 的URL。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | 網站 | 為 [!DNL Quick Checkout]. 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 帳戶憑證
+
+![快速結帳](assets/account-creds.png)
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -37,7 +43,11 @@ ht-degree: 0%
 | [!UICONTROL Publishable key] | 網站 | 前端用來與 [!DNL Bolt] API。 |
 | [!UICONTROL Signing secret] | 網站 | 用於對從接收到的請求進行簽名驗證 [!DNL Bolt]. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 服務設定
+
+![快速結帳](assets/service-settings.png)
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -45,3 +55,6 @@ ht-degree: 0%
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}，適用於指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用除錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | 網站 | 定義Adobe Commerce是否允許與Bolt共用結帳追蹤資訊。 預設為啟用。 如果停用，則會影響報表。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Next Stage After Login Mode] | 網站 | 變更客戶登入後的導覽流程。 選項： [!UICONTROL Payment] / [!UICONTROL Shipping] |
+
+{style=&quot;table-layout:auto&quot;}

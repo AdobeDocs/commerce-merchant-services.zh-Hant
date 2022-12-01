@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」
 description: 「了解 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，以及如何成功上線並設定擴充功能。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ ht-degree: 0%
 1. 將範圍切換為 **主要網站**.
 1. 按一下 **設定回呼URL** 按鈕。 如此可啟用 [!DNL Bolt] 以判斷購物者是否有帳戶。 如果出現，則會顯示OTP彈出窗口。
 
->[!CAUTION]
->
-> 將範圍切換到 **主要網站** 確保設定正確的URL。 每個網站可以有多個網域。
+   >[!CAUTION]
+   >
+   > 將範圍切換到 **主要網站** 確保設定正確的URL。 每個網站可以有多個網域。
 
 請參閱 [站點、儲存和查看範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;}主題，以取得Adobe Commerce中範圍的詳細資訊。
+
+## 配置服務設定
+
+![快速結帳](assets/service-settings.png)
+
+1. 設定 **啟用結帳追蹤** to `Yes`.
+
+   >[!CAUTION]
+   >
+   > 停用此選項會影響報表，因為Adobe Commerce不允許與Bolt共用結帳追蹤資訊。
+
+1. 選取 **登入後的下一階段** 選項，以在客戶登入後變更導覽流程。 預設會設為 **付款** 頁面。
 
 ## 取得協助
 

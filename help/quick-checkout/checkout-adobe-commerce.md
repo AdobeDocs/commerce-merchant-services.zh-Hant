@@ -2,9 +2,9 @@
 title: "Adobe Commerce使用者的結帳流程"
 description: 「 [!DNL Quick Checkout] Adobe Commerce使用者的流量。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 > 只有當購物者位於結帳頁面時，才會顯示「螺栓OTP」快顯視窗。 購物者可以關閉該快顯視窗，選擇退出登入Bolt。
 
-如果購物者在結帳前已登入Adobe Commerce，則 [!DNL Bolt] 結帳期間不會顯示OTP快顯視窗。
+如果購物者在結帳前已登入Adobe Commerce，則 [!DNL Bolt] OTP快顯視窗在結帳期間不會顯示，但會顯示訊息，建議購物者登入以存取其Bolt Wallet。
 
 如果您在以現有Adobe Commerce使用者的身分下訂單時遇到問題，請參閱 [疑難排解快速結帳問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 文章(在Adobe Commerce說明中心)。
 

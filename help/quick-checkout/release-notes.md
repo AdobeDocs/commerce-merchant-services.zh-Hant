@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 發行說明'
 description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ ht-degree: 0%
 以下版本說明說明在「管理面板」的一般版本控制功能版本之外所發生和發行的功能變更和修正。
 
 +++管理面板更新
+
+_2022年11月30日_
+
+![新增](../assets/new.svg)<!-- Issue BOLT-502 --> 現在， [報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 索引標籤有新的「去年」預設集。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-471 --> 改善 [!DNL Quick Checkout] 管理面板會顯示 [工具提示](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-514 --> 改善 [!DNL Quick Checkout] 「管理面板」會顯示正確的訂單總數、色彩的一致性，以及所有圖表的正確圖例。
 
 _2022年11月2日_
 
@@ -52,6 +60,16 @@ _2022年10月5日_
 ![修正問題](../assets/fix.svg)<!-- Issue BOLT-369 --> 現在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在頁尾中顯示應用程式版本。
 
 +++
+
+## v1.4.0
+
+_2022年11月30日_
+
+![新增](../assets/new.svg)<!-- Issue BOLT-513 --> 現在，當Adobe Commerce客戶在結帳程式期間登入商店且有Bolt帳戶時，便會顯示登入購物者Bolt帳戶的選項。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-512 --> 新的設定會自動偵測登入的購物者是否也可登入Bolt。
+
+![新增](../assets/new.svg)<!-- Issue BOLT-480 --> 中的新設定 [!DNL Quick Checkout] 「管理面板」可讓您將預設導覽流程變更為 **裝運** Bolt客戶登入後的頁面。 依預設，會設定為 **付款** 頁面。
 
 ## v1.3.0
 
