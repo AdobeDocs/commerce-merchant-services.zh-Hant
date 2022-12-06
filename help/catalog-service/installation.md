@@ -2,9 +2,9 @@
 title: 入門和安裝
 description: 了解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
+## 配置目錄導出
+
+安裝後 [!DNL Catalog Service]，您必須設定 [商務服務連接器](../landing/saas.md) 指定API密鑰並選擇SaaS資料空間。
+
+若要確保目錄匯出正確執行：
+
+- 確認 [cron作業](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 執行中。
+- 驗證 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 執行中。
+- 確保 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`，和 `Product Variant Feed` 索引器設定為 `Update by Schedule`.
+
 ## 目錄服務和API網格
 
-此 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使開發人員能夠使用AdobeIO將專用或第三方API和其他介面與Adobe產品整合。
+此 [Adobe Developer App Builder的API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使開發人員能夠使用AdobeIO將專用或第三方API和其他介面與Adobe產品整合。
 
 將API Mesh與目錄服務搭配使用的第一步，是將API Mesh連線至您的執行個體。 請參閱 [建立網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 若要完成設定，您需要 [AdobeIO CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 已安裝。
 
-在AdobeIO上配置網格後，運行以下命令以連接新網格。
+在AdobeIO上配置Mesh後，運行以下命令，該命令將添加 `CommerceCatalogServiceGraph` 源到網格。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ where `variables.json` 是儲存AdobeIO常用值的單獨檔案。
 }
 ```
 
-執行此命令後，目錄服務應通過API網格運行。
-
-## 配置目錄導出
-
-安裝後 [!DNL Catalog Service]，您必須設定 [商務服務連接器](../landing/saas.md) 指定API密鑰並選擇SaaS資料空間。
-
-若要確保目錄匯出正確執行：
-
-- 確認 [cron作業](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 執行中。
-- 驗證 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 執行中。
-- 確保 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`，和 `Product Variant Feed` 索引器設定為 `Update by Schedule`.
+執行此命令後，目錄服務應通過API網格運行。 您可以執行 `aio api-mesh:get` 命令查看更新網格的配置。
 
 ## [!DNL Catalog Service] 示範
 
