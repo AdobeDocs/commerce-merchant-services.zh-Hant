@@ -4,9 +4,9 @@ description: 收集所有商務服務的檔案中的變更
 seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
-source-git-commit: d329d037566647b5a121e99219bde4cc5bd15aee
+source-git-commit: 1b56588d6a4ed2e3be17cce7bca7337690d1b169
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,9 @@ ht-degree: 0%
 
 | 服務 | 變更 | 類型 |
 |  ---  |  ---  |  ---  |
-| [**支付服務**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) | 已新增有關「設定」和舊版設定主題的資訊 [刷新快取](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#flush-the-cache) 變更後。<!--PAY-3750 --> | 更新 |
-|  | 新增 [可用資料主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) 說明如何將financial reporting資料用於外部對賬。 | 新增 |
-|  | 修訂說明檔案以包含 [新資料視覺效果檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) 支付報告。 | 更新 |
-|  | 新增 [啟用/禁用信用卡和用於結帳的PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options). | 更新 |
-| [**快速結帳**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) | 更新 [發行說明](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) 頁面，其中包含v1.3.0快速結帳擴充功能和「管理面板」發行。<!-- BOLT-293 --> | 更新 |
-|  | 新增 [快速結帳管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 關於報告並更新現有 [入門](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html?lang=en) 主題，其中包含「設定」頁面中新設定的相關資訊。<!-- BOLT-459 --> | 新增 |
-|  | 新增 [「管理面板」的概觀主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html). | 新增 |
-|  | 新增 [使用者設定主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 以引導使用者設定角色和權限。 | 新增 |
-| [即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) | 已更新 [發行說明](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) （適用於即時搜尋2.04版）。 | 更新 |
-| [產品Recommendations](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html) | 已移轉 [產品Recommendations開發人員內容](https://devdocs.magento.com/recommendations/product-recs.html) 至現有 [產品Recommendations區段](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/admin/create.html). <!-- COMDOX-227 --> | 更新 |
+| [**支付服務**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) | 向 [付款選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#credit-card-fields) 和 [簡介](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#features) 主題。<!--integration branch --> | 更新 |
+|  | 新增新卡儲存功能的資訊，作為新的 [卡儲存主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html#payments-checkout)，和現有 [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#card-vaulting) 和 [舊式設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-credit-card-fields) 主題。 此外，在 [付款選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#credit-card-vaulting) 和 [安全性主題](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html#card-vaulting). | 新增、更新 |
+|  | 將發行說明主題更新為 [v1.5.0和1.5.1發行資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html#v1.5.1). | 更新 |
+| [**快速結帳**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) | 已更新發行說明主題，其中包含 [v1.4.0發行資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en#v1.4.0).<!-- BOLT-480 --> | 更新 |
+| [**目錄服務**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) | 將資訊新增至 [釐清install命令會將來源新增至現有的API網格](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html#configure-catalog-export).<!-- xx --> | 更新 |
+|  | 將發行說明主題更新為 [v1.1.1發行資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html#v1.1-release). | 更新 |
