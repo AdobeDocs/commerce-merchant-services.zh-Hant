@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +52,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄設定」控制項顯示或隱藏欄。
 
 +++
+
+## v1.5.2
+
+_2022年12月22日_
+
+![修正問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改進當拒絕付款方法時在付款服務中的開票。
+
+![修正問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示PayPal智慧按鈕，其具有 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank}結帳頁面的自訂範本。
 
 ## v1.5.1
 
