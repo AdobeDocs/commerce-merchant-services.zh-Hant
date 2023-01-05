@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 發行說明"
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 * 穩定性：穩定
 
 * ![新增](../assets/new.svg)  — 即時搜尋現在支援以管理員中的「顯示無庫存產品」設定進行篩選。 如果「顯示無現貨產品」設為false, `inStock = true` 會新增至篩選器。
-* ![修正](../assets/fix.svg)  — 為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 如果您想要取代功能，資料仍會透過GraphQL傳遞。
+* ![修正](../assets/fix.svg)  — 為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 資料仍會透過GraphQL傳遞，以備您取代功能時使用。
 * ![修正](../assets/fix.svg) - `categories` 和 `categoryPath` 已更換 `categoryIds` 類別篩選。 請參閱 [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 主題。
 * ![修正](../assets/fix.svg)  — 先前，系結至B2B公司的使用者在執行搜尋時，會收到錯誤的客戶群組代碼。 Live Search現在會傳回正確的值。
 * ![修正](../assets/fix.svg)  — 過去，搜尋不存在的詞語時，Live Search會傳回錯誤。 此錯誤現已修正。
@@ -56,20 +56,6 @@ ht-degree: 1%
 商家必須升級Live Search擴充功能版本>= 2.0.3才能存取這些功能。
 
 我們建議使用者先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
-
->[!NOTE]
->
->自8月9日起，將分階段在後端服務上新增B2B支援，預計移轉作業將於8月底完成。 如果Live Search擴充功能未升級，您的店面將可繼續正常運作，但沒有B2B功能。
-
-### 已知限制/錯誤：
-
-* ![錯誤](../assets/bug.svg)  — 建議來源於無法向客戶組顯示的產品。
-* ![錯誤](../assets/bug.svg)  — 若未新增至「預設共用目錄」，則不會顯示產品。
-* ![錯誤](../assets/bug.svg)  — 即使產品已使用屬性設定，且回應中傳回「否」貯體，搜尋適配器仍不會為布林產品屬性轉譯「否」貯體。
-* 雖然某些產品和查詢可能會傳回非英文結果，但目前不支援多語言查詢。
-* 在PWA Studio新增支援前，將無法使用具有PWA Studio即時搜尋的B2B。
-* 產品覆寫和產品屬性摘要可能有同步問題，需要管理員執行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正確重新同步。
-* 若您啟用或停用「目錄權限/共用目錄/B2B」功能，則 `catalog_data_exporter_product_overrides` 索引器未更新，且標籤錯誤為 `valid`. 使用 `bin/magento saas:resync --feed=productOverrides` 以修正問題。
 
 ## [!DNL Live Search] 2.0 {#20}
 
