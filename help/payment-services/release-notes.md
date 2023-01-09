@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _2022年12月22日_
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改進當拒絕付款方法時在付款服務中的開票。
 
-![修正問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示PayPal智慧按鈕，其具有 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank}結帳頁面的自訂範本。
+![修正問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示商戶使用的PayPal智慧按鈕 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank}結帳頁面的自訂範本。 以前，迷你圖會間歇性顯示按鈕。
 
 ## v1.5.1
 

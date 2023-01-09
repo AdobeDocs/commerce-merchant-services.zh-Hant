@@ -1,83 +1,83 @@
 ---
-title: 設定測試沙盒
-description: 使用PayPal沙盒帳戶使用 [!DNL Payment Services] test。
+title: 設定測試沙箱
+description: 使用PayPal沙箱帳戶來使用 [!DNL Payment Services] 在測試模式中。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
-# 設定測試沙盒
+# 設定測試沙箱
 
-在啟動入門沙盒之前，您必須註冊一個免費PayPal開發人員帳戶，並建立商家（用於入門）和購物者帳戶（用於測試結賬）。 如果需要，可以建立多個開發人員帳戶。
+在開始建立沙箱之前，您必須註冊免費的PayPal開發人員帳戶，並同時建立商家帳戶（以用於上線）和購物者帳戶（以用於測試結帳）。 您可以視需要建立多個開發人員帳戶。
 
-PayPal沙盒帳戶允許您使用 [!DNL Payment Services] test。 PayPal要求您使用PayPal開發人員門戶生成的業務沙盒test帳戶、電子郵件和密碼進行沙盒登錄。 *在沙盒登錄過程中不要建立其他帳戶。*
+PayPal沙箱帳戶可讓您使用 [!DNL Payment Services] 在測試模式中。 PayPal要求您使用PayPal開發人員入口網站產生的商業沙箱測試帳戶、電子郵件和密碼，以便沙箱上線。 *在沙箱上線程式期間，請勿建立其他帳戶。*
 
-## 沙盒登機
+## 沙箱上線
 
-要完成入門沙盒操作：
+若要完成沙箱上線：
 
-1. 導航到 [PayPal開發人員帳戶頁](https://developer.paypal.com/developer/accounts/)。
-1. 按一下 **[!UICONTROL Log in to Home]** 並使用現有的PayPal開發人員門戶生成的業務沙盒test帳戶登錄，或按一下 **註冊** 建立帳戶。
-1. 建立PayPal沙盒帳戶：
-   1. 轉到 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**。
+1. 導覽至 [PayPal開發人員帳戶頁面](https://developer.paypal.com/developer/accounts/).
+1. 按一下 **[!UICONTROL Log in to Dashboard]** 並使用您現有的PayPal開發人員入口網站產生的商業沙箱測試帳戶登入，或按一下 **註冊** 來建立帳戶。
+1. 建立PayPal沙箱帳戶：
+   1. 前往 _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. 按一下 **[!UICONTROL Create account]**.
 
-      如果在沙盒PayPal登錄過程中建立了PayPal沙盒帳戶，則必須 [重置登機沙箱](#reset-your-sandbox-account) 因為或者你無法驗證你的電子郵件。
+      如果您在沙箱PayPal上線程式期間建立了PayPal沙箱帳戶，則您必須 [重設您的上線沙箱](#reset-your-sandbox-account) 因為或者你無法驗證你的電子郵件。
 
-   1. 選擇 **[!UICONTROL Business]** 作為「帳戶類型」，然後按一下 **[!UICONTROL Create]**。
-   1. 在 _[!UICONTROL Sandbox Accounts]_中，按一下_[!UICONTROL Manage accounts]_ 建立的沙盒帳戶的列。
+   1. 選擇 **[!UICONTROL Business]** 作為「帳戶類型」，然後按一下 **[!UICONTROL Create]**.
+   1. 在 _[!UICONTROL Sandbox Accounts]_區段中，按一下_[!UICONTROL Manage accounts]_ 欄。
    1. 按一下 **[!UICONTROL View/edit account]**.
 
-      ![PayPal — 檢視/編輯沙盒帳戶](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png)
 
-   1. 複製並保存電子郵件ID和系統生成的密碼，以供將來使用。
+   1. 複製並儲存電子郵件ID和系統產生的密碼，以供日後使用。
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 按一下 **[!UICONTROL Sandbox onboarding]**.
 
-   如果尚未完成的沙盒登錄，則此選項可見 [!DNL Payment Services]。
+   如果您尚未完成的沙箱上線，則會顯示此選項 [!DNL Payment Services].
 
-   自動生成沙盒商戶ID並將其填充到 [設定](settings.md)。 不要更改或更改此ID。
+   沙箱商戶ID會自動產生並填入 [設定](settings.md). 請勿變更或更改此ID。
 
-   您將收到一個PayPal窗口，用於連接PayPal帳戶以開始接受付款。
+   您將看到一個PayPal窗口，用於連接PayPal帳戶以開始接受付款。
 
-1. 輸入PayPal業務帳戶（而非PayPal沙盒帳戶）和國家/地區的電子郵件，然後按一下 **[!UICONTROL Next]**。
+1. 輸入PayPal業務帳戶（而非PayPal沙箱帳戶）和您的國家/地區的電子郵件，然後按一下 **[!UICONTROL Next]**.
 
-   ![PayPal — 連接PayPal付款帳戶](assets/paypal-connectacct.png)
+   ![PayPal - Connect PayPal支付帳戶](assets/paypal-connectacct.png)
 
-1. 使用以前保存的沙盒帳戶憑據，繼續遵循PayPal流。
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 使用您先前儲存的沙箱帳戶憑證，繼續遵循PayPal流程。
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   的 **[!UICONTROL Sandbox onboarding]** 按鈕不再可見，您會看到「沙盒付款掛起」文本。
+   此 **[!UICONTROL Sandbox onboarding]** 按鈕不再顯示，您會看到「沙箱付款待定」文字。
 
-當PayPal沙盒登錄獲得批准時，您應看到一則通知，指出您的付款系統當前處於沙盒模式且未處理即時付款。
+核准PayPal沙箱上線後，您應會看到通知，指出您的付款系統目前處於沙箱模式，且未處理即時付款。
 
 >[!IMPORTANT]
 >
->如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。 在您的Payment Services首頁上，將顯示有關已撤消的同意的警報。 要消除警報，請按一下 **[!UICONTROL Do not show again]**。
+>如果您撤銷 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 對於處理您的付款（在您的PayPal帳戶設定中），您商店中的訂單無法由 [!DNL Payment Services]. 在您的「支付服務」首頁上，會顯示有關已撤銷同意的警報。 若要關閉警報，請按一下 **[!UICONTROL Do not show again]**.
 
-### 重置沙盒帳戶
+### 重設您的沙箱帳戶
 
-如果在沙盒PayPal登機過程中建立了PayPal沙盒帳戶，則必須重置登機沙盒，因為或者無法驗證電子郵件。
+如果您在沙箱PayPal上線程式期間建立了PayPal沙箱帳戶，則您必須重設上線沙箱，因為或無法驗證電子郵件。
 
-要重置沙盒帳戶：
+重設沙箱帳戶：
 
-1. 按一下 **[!UICONTROL Reset sandbox]**. [建立PayPal業務沙盒帳戶](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account)。
-1. 按一下 **[!UICONTROL Sandbox onboarding]** 並完成後續步驟。
+1. 按一下 **[!UICONTROL Reset sandbox]**. [建立PayPal商業沙箱帳戶](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. 按一下 **[!UICONTROL Sandbox onboarding]** 並完成下一組步驟。
 
 ## 啟用聯繫電話號碼
 
-聯繫電話號碼允許您獲取PayPal從客戶那裡收集的聯繫電話號碼。 PayPal總是從PayPal帳戶持有人處收集聯繫電話，以幫助確認他們的身份，並聯繫他們以解決他們帳戶上的問題或完成他們的履行過程。 不過，PayPal不鼓勵直接從商家使用聯繫電話，因為這可能對銷售產生負面影響。 查看 [PayPal獲取聯繫電話](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) 的子菜單。
+聯繫電話號碼允許您獲取PayPal從客戶收集的聯繫電話號碼。 PayPal總是從PayPal賬戶持有者收集聯繫電話，以幫助確認其身份，並聯繫他們以解決其賬戶上的問題，或完成其履行流程。 不過，PayPal不鼓勵直接從商家使用聯繫電話號碼，因為這可能對銷售產生負面影響。 請參閱 [PayPal獲取聯繫電話](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) 檔案以取得詳細資訊。
 
-此功能是 `off` 預設值。 啟用後，當客戶在結帳頁外完成「品牌結帳」流時，商店管理員可以看到電話號碼。
+此功能為 `off` 依預設。 若您啟用此功能，當客戶在結帳頁面外完成「品牌結帳」流程時，商店管理員就會看到電話號碼。
 
 >[!IMPORTANT]
 >
->此設定不適用於其他簽出流。
+>此設定不適用於其他結帳流程。
 
-## Test沙盒環境
+## 在沙箱環境中測試
 
-請參閱 [Test和驗證](test-validate.md) 的子菜單。
+請參閱 [測試和驗證](test-validate.md) 以取得更多資訊。
