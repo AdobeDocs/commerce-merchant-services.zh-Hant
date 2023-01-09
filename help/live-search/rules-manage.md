@@ -2,9 +2,9 @@
 title: "管理規則"
 description: 「了解如何管理現有 [!DNL Live Search] 規則。」
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 在 *規則* ，在要編輯的網格中查找規則，然後按一下 **更多** (...)選項。
 1. 按一下 **編輯** 來存取規則編輯器。
 1. 視需要更新條件、運算子和事件。
-1. 視需要更新名稱、開始和結束日期及說明欄位。
+1. 視需要更新名稱、開始和結束日期及說明欄位。 所有規則名稱必須是唯一的。
 1. 測試規則。
 1. 發佈變更。
 規則會新增至規則工作區中的清單。 雖然作用中規則會立即生效，但快取查詢結果在店面中重新整理可能需要15分鐘。

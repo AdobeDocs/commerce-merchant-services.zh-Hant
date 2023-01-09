@@ -2,9 +2,9 @@
 title: "添加規則"
 description: 「了解如何建立 [!DNL Live Search] 規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 此處輸入的資訊會顯示在 [規則詳細資料](rules-workspace.md) 中。
 
-1. 在 *詳細資料*，請輸入 **名稱** 規則。
+1. 在 *詳細資料*，請輸入 **名稱** 規則。 所有規則名稱必須是唯一的。
 1. 輸入簡報 **說明** 規則。
 1. 輸入 **開始日期** 和 **結束日期** 讓規則生效，或從日曆中選擇日期。
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |--- |--- |
-| 名稱 | 規則的名稱。 |
+| 名稱 | 規則的名稱。 規則名稱必須是唯一的。 |
 | 開始日期 | 規則的開始日期（如果已排程）。 |
 | 結束日期 | 規則的結束日期（如果已排程）。 |
 | 說明 | 規則的簡短說明。 |
