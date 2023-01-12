@@ -2,9 +2,9 @@
 title: "添加規則"
 description: 「了解如何建立 [!DNL Live Search] 規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 步驟1:新增規則
 
 1. 在管理員中，前往 **行銷** > SEO與搜尋> **即時搜尋**.
-1. 設定 **範圍** 識別 [商店檢視](https://docs.magento.com/user-guide/configuration/scope.html) 規則的位置。
+1. 設定 **範圍** 識別 [商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 規則的位置。
 1. 按一下 **規則** 標籤。
 1. 按一下 **新增規則** 來啟動規則編輯器。
 

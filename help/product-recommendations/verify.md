@@ -1,69 +1,69 @@
 ---
 title: 驗證事件集合
-description: 瞭解如何驗證行為資料是否正被發送到Adobe Commerce。
+description: 了解如何驗證行為資料是否傳送至Adobe Commerce。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # 驗證事件集合
 
-在你之後 [安裝和配置](install-configure.md) 這樣 `magento/product-recommendations` 模組，您可以驗證行為資料是否正在發送到Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplough Chrome擴展。 如果需要其他幫助，請參閱 [故障排除 [!DNL Product Recommendations] 模組](https://support.magento.com/hc/en-us/articles/360042224851) 的子菜單。
+在 [安裝和配置](install-configure.md) the `magento/product-recommendations` 模組，您可以驗證行為資料是否傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplough Chrome擴充功能。 如果您需要其他幫助，請參閱 [疑難排解 [!DNL Product Recommendations] 模組](https://support.magento.com/hc/en-us/articles/360042224851) 在支援知識庫中。
 
-## 在Chrome中使用開發人員工具驗證
+## 在Chrome中使用開發人員工具進行驗證
 
-要確保事件收集器JS檔案正在載入到所有網站頁：
+若要確保在所有網站頁面上載入事件收集器JS檔案：
 
-1. 在Chrome中，選擇 **定制和控制GoogleChrome** 選擇 **更多工具** > **開發人員工具**。
-1. 選擇 **網路** 頁籤 **JS** 的雙曲餘切值。
+1. 在Chrome中，選擇 **自訂和控制Google Chrome** 然後選取 **更多工具** > **開發人員工具**.
+1. 選擇 **網路** 標籤，然後選取 **JS** 類型。
 1. 篩選 `ds.`
 1. 重新載入頁面。
-1. 你應該看到 `ds.js` 或 `ds.min.js` 的 **名稱** 的雙曲餘切值。
+1. 您應該會看到 `ds.js` 或 `ds.min.js` 在 **名稱** 欄。
 
 ![事件收集器JS](assets/filter-ds.png)
 _事件收集器JS_
 
-要確保事件在您的站點（首頁、產品、簽出等）的頁面上激發：
+若要確保事件在您網站的頁面（首頁、產品、結帳等）上引發：
 
-1. 確保禁用瀏覽器上的任何廣告攔截程式並接受站點上的cookie。
-1. 在Chrome中，選擇 **定制和控制GoogleChrome** （瀏覽器右上角的三個垂直點），然後選擇 **更多工具** > **開發人員工具**。
-1. 選擇 **網路** 頁籤和篩選器 `tp2`。
+1. 請務必停用瀏覽器上的任何廣告封鎖程式，並接受網站上的Cookie。
+1. 在Chrome中，選擇 **自訂和控制Google Chrome** （瀏覽器右上角的三個垂直點），然後選取 **更多工具** > **開發人員工具**.
+1. 選擇 **網路** 標籤和篩選 `tp2`.
 1. 重新載入頁面。
-1. 您應在 `tp2` 的 **名稱** 的雙曲餘切值。
+1. 您應會在下方看到呼叫 `tp2` 在 **名稱** 欄。
 
-![激發事件](assets/filter-tp2.png)
-_驗證事件是否正在激發_
+![引發事件](assets/filter-tp2.png)
+_確認事件正在觸發_
 
-## 使用Snowploogh Chrome擴展驗證
+## 使用Snowploogh Chrome擴充功能驗證
 
-安裝 [Chrome的雪犁分析調試器擴展](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm)。 此擴展顯示正在收集併發送到Adobe Commerce的事件。
+安裝 [Chrome專用Snowplough Analytics除錯程式擴充功能](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm). 此擴充功能會顯示正在收集並傳送至Adobe Commerce的事件。
 
-1. 確保禁用瀏覽器上的任何廣告攔截程式並接受站點上的cookie。
+1. 請務必停用瀏覽器上的任何廣告封鎖程式，並接受網站上的Cookie。
 
-1. 在Chrome中，選擇 **定制和控制GoogleChrome** （瀏覽器右上角的三個垂直點），然後選擇 **更多工具** > **開發人員工具**。
+1. 在Chrome中，選擇 **自訂和控制Google Chrome** （瀏覽器右上角的三個垂直點），然後選取 **更多工具** > **開發人員工具**.
 
-1. 選擇 **雪犁分析調試器** 頁籤。
+1. 選擇 **Snowplough Analytics除錯程式** 標籤。
 
-1. 在 **事件** 列，選擇 **結構化事件**。
+1. 在 **事件** 欄，選擇 **結構化事件**.
 
-1. 向下滾動，直到您看到 **上下文資料 _n_**。 在&#x200B;**架構**。
+1. 向下捲動，直到您看到 **內容資料 _n_**. 在&#x200B;**結構**.
 
-1. 驗證 [SaaS資料空間ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 設定正確。
+1. 確認 [SaaS資料空間ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 已正確設定。
 
 ![雪犁過濾器](assets/snowplow-filter.png)
 _雪犁過濾器_
 
 >[!NOTE]
 >
-> 值 `Data validity : NOT FOUND` 在調試器中指示內部架構。 Snowplough Chrome插件無法使用內部架構驗證事件。 這對實際功能沒有影響。
+> 值 `Data validity : NOT FOUND` 在debugger中，表示內部結構。 Snowplough Chrome外掛程式無法使用內部結構來驗證事件。 這對實際功能沒有影響。
 
-## 驗證事件是否正確觸發
+## 確認事件正確引發
 
-要驗證用於度量的事件是否正確觸發，請查找 `impression-render`。 `view`, `rec-click` 雪犁分析調試器中的事件。 查看 [完整事件清單](https://devdocs.magento.com/recommendations/events.html)。
+若要確認用於量度的事件正確引發，請尋找 `impression-render`, `view`，和 `rec-click` Snowplough Analytics偵錯工具中的事件。 請參閱 [事件完整清單](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> 如果 [Cookie限制模式](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) 啟用，Adobe Commerce在購物者同意前不收集行為資料。 如果禁用Cookie限制模式，則預設情況下會收集行為資料。
+> 若 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 啟用後，Adobe Commerce才會收集行為資料，直到購物者同意為止。 如果停用「Cookie限制模式」，預設會收集行為資料。

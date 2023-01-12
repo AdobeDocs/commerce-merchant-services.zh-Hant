@@ -2,9 +2,9 @@
 title: 發行說明
 description: 的最新發行資訊 [!DNL Product Recommendations] 從Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 * ![新增](../assets/new.svg)  — 新功能
 * ![修正](../assets/fix.svg)  — 修正和改良
 
-請參閱開發人員檔案，以 [了解產品相容性](https://devdocs.magento.com/release/availability.html).
+請參閱開發人員檔案，以 [了解產品相容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x和2.4.x
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 ### 3.3.5 magento/product-recommendations
 
 * ![新增](../assets/new.svg)  — 新增 [B2B支援](onboarding.md#b2bsupport) 在產品Recommendations
-* ![新增](../assets/new.svg)  — 新增摘要至 [同步目錄資料](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 到Commerce Services
+* ![新增](../assets/new.svg)  — 新增摘要至 [同步目錄資料](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 到Commerce Services
 
 ### 3.3.3 magento/product-recommendations
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ### 3.2.5 magento/product-recommendations
 
-* ![新增](../assets/new.svg)  — 將Magento服務重新命名為 [商務服務](https://docs.magento.com/user-guide/system/saas.html) 並改善「管理員」中的可用性
+* ![新增](../assets/new.svg)  — 將Magento服務重新命名為 [商務服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 並改善「管理員」中的可用性
 
 ### 3.2.4 magento/product-recommendations
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 ### 3.2.2 magento/product-recommendations
 
 * ![新增](../assets/new.svg)  — 新增 [預覽建議結果](create.md) 在建立時。 您可能需要將模組更新至最新版本。
-* ![新增](../assets/new.svg)  — 新增 [監視和管理](https://docs.magento.com/user-guide/system/catalog-sync.html) 管理員的目錄同步程式。
+* ![新增](../assets/new.svg)  — 新增 [監視和管理](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 管理員的目錄同步程式。
 * ![新增](../assets/new.svg)  — 新增 [篩選器](filters.md) 控制建議中顯示的產品。
 * ![新增](../assets/new.svg)  — 新增 [視覺相似度](type.md#visualsim) 建議類型。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### 3.1.0 magento/product-recommendations
 
-* ![新增](../assets/new.svg)  — 新增 [重新同步](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 通過命令行將目錄發送到SaaS服務。
+* ![新增](../assets/new.svg)  — 新增 [重新同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 通過命令行將目錄發送到SaaS服務。
 * ![新增](../assets/new.svg)  — 新增對資料庫表前置詞的支援
 * ![修正](../assets/fix.svg)  — 刪除PHP 7.1支援
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 ### 1.0.3針對頁面產生器的magento/module-page-builder-product-recommendations
 
-* ![新增](../assets/new.svg)  — 頁面產生器支援。 透過頁面產生器整合，您可以在頁面產生器撰寫的內容上，將建議單位精確精細地放置在任何任意位置。 您也可以設定標題和建議單位本身的樣式。 前往 [頁面產生器](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 以取得更多資訊。
+* ![新增](../assets/new.svg)  — 頁面產生器支援。 透過頁面產生器整合，您可以在頁面產生器撰寫的內容上，將建議單位精確精細地放置在任何任意位置。 您也可以設定標題和建議單位本身的樣式。 前往 [頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 以取得更多資訊。
 
 ### 2.0.0 magento/product-recommendations
 
@@ -164,4 +164,4 @@ ht-degree: 0%
 若要深入了解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 開發：
 
 * [使用手冊](overview.md)
-* [開發人員檔案](https://devdocs.magento.com/recommendations/product-recs.html)
+* [開發人員檔案](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

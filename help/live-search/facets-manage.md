@@ -2,9 +2,9 @@
 title: "管理Facet"
 description: 「了解如何管理現有 [!DNL Live Search] 刻面」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 要編輯Facet標籤，請執行以下操作之一：
 
-   * 若 [!DNL Commerce] storefront，編輯 [屬性標籤](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * 若 [!DNL Commerce] storefront，編輯 [屬性標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * 對於無標題實作，按一下第一欄中的值，並視需要編輯文字。
 
    ![編輯標籤](assets/facet-edit-label.png)

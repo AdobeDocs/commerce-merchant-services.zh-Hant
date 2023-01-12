@@ -2,9 +2,9 @@
 title: "規則工作區"
 description: 「學習如何 [!DNL Live Search] 規則工作區。」
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 設定範圍
 
-若您的Adobe Commerce安裝包含多個商店檢視，請設定 **範圍** 到 [商店檢視](https://docs.magento.com/user-guide/configuration/scope.html) 規則的位置。
+若您的Adobe Commerce安裝包含多個商店檢視，請設定 **範圍** 到 [商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 規則的位置。
 
 ## 顯示/隱藏列
 

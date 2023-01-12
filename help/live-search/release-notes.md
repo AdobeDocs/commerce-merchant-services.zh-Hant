@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 發行說明"
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1041'
 ht-degree: 1%
 
 ---
@@ -70,9 +70,9 @@ ht-degree: 1%
 * ![新增](../assets/new.svg) - [[!DNL storefront popover]](quick-tour.md) 可從 *管理*.
 * ![新增](../assets/new.svg)  — 測試版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 相容性 [!DNL Live Search].
 * ![新增](../assets/new.svg) - [!DNL Live Search] 安裝程式會隨進階程式變更而更新。
-* ![修正](../assets/fix.svg) - [進階搜尋](https://docs.magento.com/user-guide/catalog/search-advanced.html) 從店面頁尾移除的連結。
+* ![修正](../assets/fix.svg) - [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 從店面頁尾移除的連結。
 * ![錯誤](../assets/bug.svg)  — 不支援下列產品屬性 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) 若與測試版PWA相關： `description`, `name`, `short_description`
-* ![錯誤](../assets/bug.svg)  — 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![錯誤](../assets/bug.svg)  — 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ## [!DNL Live Search] 1.3.1 {#131}
 
@@ -80,9 +80,9 @@ ht-degree: 1%
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![修正](../assets/fix.svg) - [自訂價格屬性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 設為 [face]({% link live-search/facets-add.md %})。
-* ![修正](../assets/fix.svg)  — 修正若無 [貨幣符號](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`)可用。
-* ![修正](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 現在會顯示 [特價](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最低最終價格）。
+* ![修正](../assets/fix.svg) - [自訂價格屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 設為 [face]({% link live-search/facets-add.md %})。
+* ![修正](../assets/fix.svg)  — 修正若無 [貨幣符號](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可用。
+* ![修正](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 現在會顯示 [特價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) （最低最終價格）。
 
 ## [!DNL Live Search] 1.3.0 {#130}
 
@@ -91,11 +91,11 @@ ht-degree: 1%
 * 穩定性：穩定
 
 * ![新增](../assets/new.svg) - [效能](performance.md) 「報表控制面板」可提供購物者所使用搜尋詞的深入分析。
-* ![新增](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 可透過事件發佈和訂閱服務及量度來存取通用資料層。
+* ![新增](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 可透過事件發佈和訂閱服務及量度來存取通用資料層。
 * ![修正](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 有新 `active` 類別 `.search-autocomplete` 控制可見性的容器。
-* ![修正](../assets/fix.svg)  — 在店面， [搜尋詞](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 頁尾連結已移除，且其快取已停用 [!DNL Live Search] 安裝。
+* ![修正](../assets/fix.svg)  — 在店面， [搜尋詞](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#popular-search-terms) 頁尾連結已移除，且其快取已停用 [!DNL Live Search] 安裝。
 * ![錯誤](../assets/bug.svg)  — 搜索適配器的修補程式可處理重複產品。
-* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 支援 [單源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多個（虛擬）的（物理）清點位置 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 目前不支援多個庫存來源。
+* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 支援 [單源](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) 具有多個（虛擬）的（物理）清點位置 [股票](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). 目前不支援多個庫存來源。
 
 ## [!DNL Live Search] 1.2.0 {#120}
 
@@ -118,8 +118,8 @@ ht-degree: 1%
 * 與Adobe Commerce for Cloud(ECE)相容：2.4.x
 * 穩定性：穩定
 
-* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 服務僅支援 [基本貨幣](https://docs.magento.com/user-guide/stores/currency-configuration.html) Adobe Commerce裝置。
-* ![錯誤](../assets/bug.svg)  — 新增面向時，產品屬性摘要在設為 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://docs.magento.com/user-guide/system/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
+* ![錯誤](../assets/bug.svg) - [!DNL Live Search] 服務僅支援 [基本貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce裝置。
+* ![錯誤](../assets/bug.svg)  — 新增面向時，產品屬性摘要在設為 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
 * ![錯誤](../assets/bug.svg) - [!DNL Live Search] 同義字是根據商店檢視而定義，但目前是根據網站儲存，並以 `environmentId` + `storeViewCode`. 因此，Adobe Commerce安裝中所有網站和儲存檢視都會共用相同的同義字集。 最近建立的儲存視圖同義詞集優先。
 * ![錯誤](../assets/bug.svg)  — 如果同義詞詞包含多個單詞，則每個單詞都被視為單獨的同義詞。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會視為watch的同義字。
 
@@ -127,6 +127,6 @@ ht-degree: 1%
 
 若要深入了解：
 
-* [Adobe Commerce開發人員檔案](https://devdocs.magento.com/)
-* [Adobe Commerce使用手冊](https://docs.magento.com/user-guide/)
+* [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
+* [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce.html)
 * [[!DNL Live Search] 在Marketplace上](https://marketplace.magento.com/magento-live-search.html)

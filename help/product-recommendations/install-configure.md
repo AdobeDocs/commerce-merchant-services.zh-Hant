@@ -2,9 +2,9 @@
 title: 安裝和配置
 description: 了解如何安裝、更新和解除安裝 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-啟用 [!DNL Product Recommendations] 在「頁面產生器」中，您可以新增現有的作用中 [建議單位](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 至在「頁面產生器」中建立的任何內容，例如頁面、區塊和動態區塊。
+啟用 [!DNL Product Recommendations] 在「頁面產生器」中，您可以新增現有的作用中 [建議單位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 至在「頁面產生器」中建立的任何內容，例如頁面、區塊和動態區塊。
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定 [!DNL Product Recommendations] {#configure}
 
-安裝 `magento/product-recommendations` 模組，您必須設定 [商務服務連接器](https://docs.magento.com/user-guide/configuration/services/saas.html) 指定API密鑰並選擇SaaS資料空間。
+安裝 `magento/product-recommendations` 模組，您必須設定 [商務服務連接器](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 指定API密鑰並選擇SaaS資料空間。
 
-若要確保目錄匯出正確執行，請確認 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 工作和 [索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 執行中 `Product Feed` 索引器設定為 `Update by Schedule`.
+若要確保目錄匯出正確執行，請確認 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 工作和 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 執行中 `Product Feed` 索引器設定為 `Update by Schedule`.
 
 當您通過API密鑰成功連結到Commerce Services並指定SaaS資料空間時，目錄同步將開始。 然後 [驗證](verify.md) 行為資料會傳送到您的店面。
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 解除安裝 [!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以 [解除安裝](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) product-recommendations模組。
+如有必要，您可以 [解除安裝](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) product-recommendations模組。

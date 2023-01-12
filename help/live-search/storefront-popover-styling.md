@@ -2,9 +2,9 @@
 title: '"樣式 [!DNL Popover] 元素」'
 description: 「關於自訂 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-有關樣式店面元素的詳細資訊，請參閱 [階層式樣式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 在 [前端開發人員指南](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+有關樣式店面元素的詳細資訊，請參閱 [階層式樣式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [前端開發人員指南](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## 類別選取器
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 使用修改的主題 {#working-with-modified-theme}
 
-此 [!DNL storefront popover] 可與自訂 [主題](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 會繼承 *盧馬*. 此 `top.search` 在 `header-wrapper` 的 `Magento_Search` 不得修改模組。
+此 [!DNL storefront popover] 可與自訂 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 會繼承 *盧馬*. 此 `top.search` 在 `header-wrapper` 的 `Magento_Search` 不得修改模組。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 停用 [!DNL popover]
 
-若要停用 [!DNL popover] 並恢復標準 [快速搜尋](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能，請輸入以下命令：
+若要停用 [!DNL popover] 並恢復標準 [快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能，請輸入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

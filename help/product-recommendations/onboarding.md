@@ -2,9 +2,9 @@
 title: 入門
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，以決定每個購物者或客戶群的產品可見度和定價。 [!DNL Product Recommendations] now [支援](release-notes.md) 本功能 [類別權限](https://docs.magento.com/user-guide/catalog/category-permissions.html), [共用目錄](https://docs.magento.com/user-guide/catalog/catalog-shared.html)，和 [客戶群特定定價](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). 例如，如果您已從零售客戶區段隱藏特定類別，則該區段中的購物者將不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議的產品都會根據每個購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面通常需要複雜的邏輯，以決定每個購物者或客戶群的產品可見度和定價。 [!DNL Product Recommendations] now [支援](release-notes.md) 本功能 [類別權限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)，和 [客戶群特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您已從零售客戶區段隱藏特定類別，則該區段中的購物者將不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議的產品都會根據每個購物者的客戶群組，反映正確的客戶群組特定價格。

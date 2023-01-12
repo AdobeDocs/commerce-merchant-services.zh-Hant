@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 索引」'
 description: 「了解如何 [!DNL Live Search] 索引產品屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 屬性元資料的範圍是 `website/store/store view`.
 
-此 [!DNL Live Search] API可讓用戶端依任何具有 [storefront屬性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 設為 `Yes` (在Adobe Commerce管理員中)。 啟用後， `Search Weight` 和 `Visible in Advanced Search` 可為屬性設定。
+此 [!DNL Live Search] API可讓用戶端依任何具有 [storefront屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 設為 `Yes` (在Adobe Commerce管理員中)。 啟用後， `Search Weight` 和 `Visible in Advanced Search` 可為屬性設定。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ## 用戶端搜尋
 
-此 [!DNL Live Search] API可讓用戶端透過設定 [storefront屬性](https://docs.magento.com/user-guide/catalog/product-attributes.html), *用於排序產品清單* to `Yes`. 此設定會根據主題，將屬性納入 [排序依據](https://docs.magento.com/user-guide/catalog/navigation.html) 目錄頁面上的分頁控制項。 最多可以通過以下方式編製產品屬性索引： [!DNL Live Search]，使用 [店面屬性](https://docs.magento.com/user-guide/stores/attributes-product.html) 可供搜尋及篩選。
+此 [!DNL Live Search] API可讓用戶端透過設定 [storefront屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *用於排序產品清單* to `Yes`. 此設定會根據主題，將屬性納入 [排序依據](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目錄頁面上的分頁控制項。 最多可以通過以下方式編製產品屬性索引： [!DNL Live Search]，使用 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可供搜尋及篩選。
 索引元資料儲存在索引管道中，並可由搜尋服務存取。
 
 ![[!DNL Live Search] 索引元資料API圖](assets/index-metadata-api.svg)
