@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Catalog Service] 指南」'
 user-guide-description: 「本指南提供使用 [!DNL Catalog Service] Adobe Commerce。」
 breadcrumb-title: '"[!DNL Catalog Service] 指南」'
 hide: true
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: ce07de2e22fc75e5b22a7db08f9f753a6c3567a3
 workflow-type: tm+mt
-source-wordcount: '59'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
@@ -19,4 +19,5 @@ ht-degree: 3%
    - [產品查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
    - [productSearch查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
    - [refineProduct查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+- [目錄服務和API網格](mesh.md)
 - [發行說明](release-notes.md)
