@@ -2,10 +2,10 @@
 title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
 description: 了解 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '274'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **設定**.
 1. 在左側面板中，展開 **銷售** 選取 **結帳**.
 
-   ![快速結帳](assets/quick-checkout-main-view-admin.png)
+   ![快速結帳](assets/configuration-view.png)
 
 請參閱 [入門](../quick-checkout/onboarding.md) 主題，以了解如何設定 [!DNL Quick Checkout] Adobe Commerce。
 
@@ -52,9 +52,11 @@ ht-degree: 0%
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
 | [!UICONTROL Title] | 商店檢視 | 在結帳期間，在「付款方法」視圖中添加要顯示為此付款選項標題的文本。 選項： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}，適用於指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用除錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | 網站 | 定義Adobe Commerce是否允許與Bolt共用結帳追蹤資訊。 預設為啟用。 如果停用，則會影響報表。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Next Stage After Login Mode] | 網站 | 變更客戶登入後的導覽流程。 選項： [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | 網站 | 定義 [!DNL Quick Checkout] 允許在結帳期間自動登入。 預設為啟用。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | 網站 | 選取客戶自動登入的網路。 預設啟用Bolt。 選項： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style=&quot;table-layout:auto&quot;}
