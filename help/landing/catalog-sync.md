@@ -2,9 +2,9 @@
 title: 目錄同步
 description: 了解如何從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 不斷更新服務。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯為表�
 
 >[!NOTE]
 >
-> 此 _目錄同步_ 只有在安裝產品Recommendations服務時，才可使用控制面板。
+> 此 _目錄同步_ 只有在 _產品Recommendations_ 模組被安裝並僅反映與該功能相關的資料預測。 支援其他商務服務，例如 _即時搜尋_ 和 _目錄服務_ 是為未來而規劃的。
 
 若要存取目錄同步控制面板，請選取 **系統** > _資料傳輸_ > **目錄同步**.
 
