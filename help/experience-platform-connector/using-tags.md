@@ -2,16 +2,16 @@
 title: 使用Adobe Experience Platform標籤收集商務資料
 description: 了解如何使用Adobe Experience Platform標籤收集商務資料。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Experience Platform標籤收集商務資料
 
-雖然您可以使用Experience Platform連接器來發佈和訂閱店面事件，但某些商戶可能已使用資料收集解決方案，例如 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). 對於這些商家，Adobe Commerce僅在使用Adobe Commerce事件SDK的Experience Platform連接器中提供發佈選項。
+雖然您可以使用Experience Platform連接器來發佈和訂閱店面事件，但某些商戶可能已使用資料收集解決方案，例如 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). 對於這些商家，Adobe Commerce僅在使用Adobe Commerce事件SDK的Experience Platform連接器中提供發佈選項。
 
 ![Experience Platform連接器資料流](assets/tags-data-flow.png)
 _Experience Platform連接器資料流與標籤_
@@ -32,7 +32,7 @@ _Experience Platform連接器資料流與標籤_
 
 若要將Commerce Storefront資料對應至Adobe Experience Platform，請在Adobe Experience Platform標籤中設定並安裝下列項目：
 
-1. [設定標籤屬性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) Adobe Experience Platform資料收集。
+1. [設定標籤屬性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) Adobe Experience Platform資料收集。
 
 1. 在 **製作**，選取 **擴充功能** 和安裝及設定下列擴充功能：
 
@@ -130,7 +130,7 @@ _Experience Platform連接器資料流與標籤_
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
 - [&#39;placeOrder&#39;](#placeorder)
 
-### 登出 {#signout}
+### 登出
 
 當購物者嘗試登出時觸發。
 
@@ -160,7 +160,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `userAccount.logout`
 - **XDM資料**: `%sign-out%`
 
-### 登入 {#signin}
+### 登入
 
 購物者嘗試登入時觸發。
 
@@ -219,7 +219,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `userAccount.login`
 - **XDM資料**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 購物者嘗試建立帳戶時觸發。
 
@@ -278,7 +278,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `userAccount.createProfile`
 - **XDM資料**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 購物者嘗試編輯帳戶時觸發。
 
@@ -337,7 +337,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `userAccount.updateProfile`
 - **XDM資料**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 在任何頁面載入時觸發。
 
@@ -366,7 +366,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `web.webPageDetails.pageViews`
 - **XDM資料**: `%page view%`
 
-### productView {#productview}
+### productView
 
 任何產品頁面載入時觸發。
 
@@ -471,7 +471,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.productViews`
 - **XDM資料**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 由「當您輸入時搜尋」彈出視窗中的事件和搜尋結果頁面上的事件觸發。
 
@@ -576,7 +576,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `searchRequest`
 - **XDM資料**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 在「即時搜尋」傳回彈出視窗或搜尋結果頁面的「依您輸入時搜尋」結果時觸發。
 
@@ -671,7 +671,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `searchResponse`
 - **XDM資料**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 在產品新增至購物車時，或每次購物車中的產品數量增加時觸發。
 
@@ -785,7 +785,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.productListAdds`
 - **XDM資料**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 建立新購物車時觸發，當產品新增至空購物車時即會觸發。
 
@@ -818,7 +818,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.productListOpens`
 - **XDM資料**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 任何購物車頁面載入時觸發。
 
@@ -921,7 +921,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.productListViews`
 - **XDM資料**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 從購物車移除產品或每次購物車中產品數量減少時觸發。
 
@@ -1026,7 +1026,7 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.productListRemovals`
 - **XDM資料**: `%remove from cart%`
 
-### initiateCheckout {#initiatecheckout}
+### initiateCheckout
 
 購物者按一下結帳按鈕時觸發。
 
@@ -1129,13 +1129,20 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.checkouts`
 - **XDM資料**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 購物者下訂單時觸發。
 
 #### 資料元素
 
 建立下列資料元素：
+
+1. 帳戶電子郵件：
+
+   - **名稱**: `account email`
+   - **擴充功能**: `Adobe Client Data Layer`
+   - **資料元素類型**: `Data Layer Computed State`
+   - **[可選] 路徑**: `accountContext.emailAddress`
 
 1. 店面：
 
@@ -1290,6 +1297,9 @@ _Experience Platform連接器資料流與標籤_
    - **促銷活動ID**: **值** = `%promotion id%`
    - **欄位組**: `commerce` > `purchases` > `value`
    - **value**: **值** = `1`
+   - **個人電子郵件地址**: **值** = `%account email%`
+   - **欄位組**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
 
 #### 規則 
 
@@ -1307,19 +1317,16 @@ _Experience Platform連接器資料流與標籤_
 
 ## 設定身分
 
-Experience Platform連接器描述檔會根據 `personID` 和 `personalEmail` XDM體驗事件中的身分欄位。 
+Experience Platform連接器描述檔會根據 `identityMap` 和 `personalEmail` XDM體驗事件中的身分欄位。 
 
 如果您先前的設定需仰賴不同欄位，則可繼續使用這些欄位。 要設定Experience Platform連接器配置檔案標識欄位，必須設定以下欄位：
 
-- `personalEmail`  — 僅帳戶事件 — 請依照上述步驟處理帳戶事件
-- `personID`  — 所有其他事件：
-
-   - 如果您已捕獲 `ECID` 在標籤中，您可以 `personID` 在所有Adobe Experience Platform Web SDK規則中 `%ECID%`.
-   - 要捕獲 `ECID` 在標籤中，您必須新增 **自訂程式碼** 依照 [標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). 請參閱下列範例。
+- `personalEmail`  — 僅帳戶事件 — 請遵循上述步驟， [帳戶事件](#createaccount)
+- `identityMap`  — 所有其他事件。 請參閱下列範例。
 
 ### 範例
 
-下列影像顯示如何設定 `pageView` 事件 `personID` 在Experience Platform連接器中：
+下列步驟顯示如何設定 `pageView` 事件 `identityMap` 在Experience Platform連接器中：
 
 1. 使用ECID的自訂程式碼設定資料元素：
 
@@ -1328,13 +1335,24 @@ Experience Platform連接器描述檔會根據 `personID` 和 `personalEmail` XD
 
 1. 新增ECID自訂程式碼：
 
-   ![在資料元素中設定ECID的程式碼](assets/code-to-set-ecid.png)
-   _在資料元素中設定ECID的程式碼_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. 更新將personID設為ECID的XDM結構：
+1. 使用更新XDM結構 `identityMap` 設為ECID:
 
-   ![將personID設為ECID](assets/set-personid-as-ecid.png)
-   _將personID設為ECID_
+   ![將identityMap設為ECID](assets/identity-map-data-element.png)
+   _將identityMap設為ECID_
 
 1. 定義可擷取ECID的規則動作：
 
@@ -1343,7 +1361,7 @@ Experience Platform連接器描述檔會根據 `personID` 和 `personalEmail` XD
 
 ## 設定同意
 
-Adobe Commerce和Experience Platform連接器資料收集同意預設為啟用。 選擇退出可透過 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). 如果您選擇使用 `mg_dnt` 管理同意。 此 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) 有數個管理同意的其他選項。
+Adobe Commerce和Experience Platform連接器資料收集同意預設為啟用。 選擇退出可透過 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). 如果您選擇使用 `mg_dnt` 管理同意。 此 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 有數個管理同意的其他選項。
 
 1. 建立 **核心自訂程式碼** 資料元素(`%do not track cookie%`) `mg_dnt` cookie:
 

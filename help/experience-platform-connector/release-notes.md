@@ -2,10 +2,10 @@
 title: 發行說明
 description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 3%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -35,6 +35,13 @@ _2022年10月12日_
 * ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.1.0
+
+_2023年1月17日_
+
+* ![新增](../assets/new.svg)  — 更新 [Experience Platform連接器管理員](connect-data.md) 以便您能指定自己的AEP Web SDK(alloy)。 此外，新增可讓已註冊後台測試版計畫的商家傳送 [後台事件資料](connect-data.md#data-collection) 到邊緣。 這些事件包含 [訂單狀態資訊](events.md#beta-order-status-events) 訂單，例如訂單被下放、取消、退貨或發運。 如果您想參加後台測試計畫，請聯繫 [drios@adobe.com](mailto:drios@adobe.com).
+* ![修正](../assets/fix.svg) 變更為使用 `identityMap` 而非 `personID` 設定推送至邊緣之任何資料的主要身分時。
 
 ## 2.0.1
 

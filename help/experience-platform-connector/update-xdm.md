@@ -2,9 +2,9 @@
 title: 新增欄位群組至XDM結構
 description: 了解如何將Adobe Commerce專用欄位群組新增至XDM結構。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
    - 個人聯繫人詳細資訊
    - 商務詳細資訊
    - Adobe Analytics體驗事件商務(如果您想要將資料傳送至Adobe Analytics)
-   - 人員識別碼
+   - 身分對應
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ ht-degree: 0%
 
    您的XDM結構現在包含商務專用欄位群組，以便從商務店面收集資料 [事件](events.md) 在XDM中表示。
 
-1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含「商務」專用欄位群組的XDM結構。
+1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的架構。
+
+   資料集是資料集合（通常為表格）的儲存和管理結構，其中包含結構（欄）和欄位（列）。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+
+1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含商務專用欄位群組和對應資料集的XDM結構。
+
+   資料流會將收集的資料轉送到資料集。 資料會根據選取的架構，在資料集中呈現。
