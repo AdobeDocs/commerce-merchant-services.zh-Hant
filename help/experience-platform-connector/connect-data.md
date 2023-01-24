@@ -2,7 +2,7 @@
 title: 將商務資料連結至Adobe Experience Platform
 description: 了解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ ht-degree: 0%
 >
 >對於已註冊我們後台測試版計畫的商家，您將看到一個複選框以啟用後台活動。 如果您想參加後台測試計畫，請聯繫 [drios@adobe.com](mailto:drios@adobe.com).
 
-![BetaExperience Platform連接器配置](assets/epc-config-beta.png)
-
 在 **資料收集** 區段中，您可以指定要收集和傳送至Experience Platform邊緣的資料類型。 只要AEP Web SDK和組織ID有效，預設會自動傳送店面事件。 請參閱事件主題以深入了解 [店面](events.md#storefront-events) 和 [後台](events.md#beta-order-status-events) 事件。
+
+![BetaExperience Platform連接器配置](assets/epc-config-beta.png)
 
 >[!NOTE]
 >
