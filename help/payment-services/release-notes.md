@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 以下版本說明說明已發生且在托管服務的一般版本化功能版本之外發行的功能變更和修正。
 
 +++托管服務更新
+
+_2023年1月25日_
+
+![已知問題](../assets/bug.svg)<!-- Issue PAY-4102 --> 新安裝的Payment Services無法配置Commerce Services，導致Payment Services無法運行。 若要修正此問題，請將您的Payment Services擴充功能更新至1.5.3版。
 
 _2022年9月12日_
 
@@ -53,13 +57,19 @@ _2021年6月28日_
 
 +++
 
+## v1.5.3
+
+_2022年1月25日_
+
+![修正問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 已針對不相容的已知問題發行修正。 此版本會將服務ID擴充功能版本鎖定至最新穩定版本，重新啟用新的Payment Services安裝以設定Commerce Services。
+
 ## v1.5.2
 
 _2022年12月22日_
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改進當拒絕付款方法時在付款服務中的開票。
 
-![修正問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示商戶使用的PayPal智慧按鈕 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank}結帳頁面的自訂範本。 以前，迷你圖會間歇性顯示按鈕。
+![修正問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示商戶使用的PayPal智慧按鈕 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 結帳頁面的自訂範本。 以前，迷你圖會間歇性顯示按鈕。
 
 ## v1.5.1
 
