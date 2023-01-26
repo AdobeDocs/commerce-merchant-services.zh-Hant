@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] 發行說明"
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 1%
@@ -59,7 +59,7 @@ _2021年6月28日_
 
 ## v1.5.3
 
-_2022年1月25日_
+_2023年1月25日_
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 已針對不相容的已知問題發行修正。 此版本會將服務ID擴充功能版本鎖定至最新穩定版本，重新啟用新的Payment Services安裝以設定Commerce Services。
 
