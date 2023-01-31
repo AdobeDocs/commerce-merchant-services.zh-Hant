@@ -2,9 +2,9 @@
 title: 指南概述
 description: 了解如何使用Adobe Commerce連接器將Experience Platform資料與Adobe Experience Platform整合。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ Experience Platform連接器會顯示在「商務管理員」下方 **系統** >
 1. [建立或更新](update-xdm.md) 具有商務專用欄位群組的XDM結構。
 1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的架構。
 1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含「商務」專用欄位群組的XDM結構。
-1. （可選） [上傳購物者設定檔](profile.md) 至Adobe Experience Platform，以便將店面資料歸因於特定的購物者，以增強其購物體驗。
 
 ## 對象
 
