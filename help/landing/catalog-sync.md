@@ -2,9 +2,9 @@
 title: 目錄同步
 description: 了解如何從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 不斷更新服務。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯為表�
 
 ### 同步未運行
 
-如果同步未在排程上執行，或未同步任何內容，請參閱 [知識庫](https://support.magento.com/hc/en-us/articles/360042224851).
+如果同步未在排程上執行，或未同步任何內容，請參閱 [知識庫](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 同步失敗
 
-如果目錄同步的狀態為 **失敗**，提交 [支援票證](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+如果目錄同步的狀態為 **失敗**，提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 命令列介面 {#resynccmdline}
 

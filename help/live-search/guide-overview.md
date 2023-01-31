@@ -1,37 +1,37 @@
 ---
 title: '"[!DNL Live Search] 指南概述」'
-description: '"[!DNL Live Search] Adobe Commerce提供了超快、超相關、直觀的搜索體驗。」'
+description: '"[!DNL Live Search] 來自Adobe Commerce，提供超快、超相關且直覺的搜尋體驗。」'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
-# Live Search Guide概述
+# 即時搜尋指南概述
 
-[!DNL Live Search] Adobe Commerce公司為Adobe Commerce公司提供超快，超相關，直觀的搜索體驗，無需額外付費。 [!DNL Live Search] 由 [Adobe Sensei](https://www.adobe.com/sensei.html) 使用人工智慧和機器學習算法對聚集的訪問者資料進行深入分析。 此資料與您的Adobe Commerce目錄結合後，將帶來高度吸引力、相關性和個性化的購物體驗。 注重速度、相關性和易用性， [!DNL Live Search] 對購物者和商家來說都是改變遊戲規則的。
+[!DNL Live Search] Adobe Commerce為Adobe Commerce提供快速、超相關且直覺的搜尋體驗，不需額外付費。 [!DNL Live Search] 由 [Adobe Sensei](https://www.adobe.com/sensei.html) 使用人工智慧和機器學習演算法，對匯總的訪客資料執行深度分析。 此資料與Adobe Commerce目錄結合後，可產生高度吸引人、相關且個人化的購物體驗。 以速度、相關性和易用性為重點， [!DNL Live Search] 是消費者和商戶的改變。
 
-Live Search為管理員提供三個區域：
+Live Search有三個管理員區域：
 
-* 店面：使用CSS樣式自定義 [!DNL storefront popover]。
-* 管理員：使用此區域可訪問配置和設定。
+* 店面：使用CSS樣式來自訂 [!DNL storefront popover].
+* 管理員：使用此區域訪問配置和設定。
 * 命令行介面：使用此工具執行安裝和後端配置任務。
 
-## 其他文檔
+## 其他檔案
 
 | 指南 | 說明 |
 |--- |--- |
-| Adobe Commerce2.4使用手冊 | Adobe Commerce和Magento Open Source的以商戶為重點的檔案 |
-| Adobe Commerce2.4開發人員指南 | 用於構建和自定義Adobe Commerce或Magento Open Source的以開發人員為重點的文檔 |
+| Adobe Commerce 2.4使用手冊 | 適用於Adobe Commerce和Magento Open Source的以商戶為中心的檔案 |
+| Adobe Commerce 2.4開發人員指南 | 以開發人員為中心的檔案，用於建置和自訂Adobe Commerce或Magento Open Source |
 
 ## 支援
 
-如果您需要資訊或有本指南未包括的問題，請使用以下資源：
+如果您需要資訊或有本指南未涵蓋的問題，請使用下列資源：
 
-[幫助中心](https://support.magento.com/hc/en-us)  — 請參閱與即時搜索相關的故障排除文章。
-[支援票證](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket)  — 提交票證以接收其他幫助。
+[協助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 請參閱即時搜尋相關疑難排解文章。
+[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 提交票證以接收其他幫助。
 
 在提交支援票證之前，請從命令行運行以下命令以檢查當前安裝的Live Search版本：
 

@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
+source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ _2022年3月31日_
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 先前移除的產品不會出現在購物車上 _審核訂單_ 頁面。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2842 --> 測試信用卡交易記錄 [可能因PayPal而失敗](https://support.magento.com/hc/en-us/articles/5201041963917) 在沙箱環境中處理付款時。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2842 --> 測試信用卡交易記錄 [可能因PayPal而失敗](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 在沙箱環境中處理付款時。
 
 ## v1.0.0
 
@@ -187,8 +187,8 @@ _2021年11月29日_
 
 ![新增](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以輕鬆 [自訂外觀和風格](payments-options.md) 的PayPal智慧按鈕和信用卡欄位 [!DNL Payment Services] 擴充功能。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [撰寫器密鑰不正確](https://support.magento.com/hc/en-us/articles/4406603542541) 在安裝擴充功能期間，使用者無法 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正確 `MAGEID`.
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [撰寫器密鑰不正確](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安裝擴充功能期間，使用者無法 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正確 `MAGEID`.
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 報告 [不能立即同步](https://support.magento.com/hc/en-us/articles/4406114741517).
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 報告 [不能立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙箱帳戶](https://support.magento.com/hc/en-us/articles/4406954952461) for [!DNL Payment Services] 如果您在上線期間建立該帳戶，則無法驗證。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) for [!DNL Payment Services] 如果您在上線期間建立該帳戶，則無法驗證。

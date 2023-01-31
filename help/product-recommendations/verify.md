@@ -2,16 +2,16 @@
 title: 驗證事件集合
 description: 了解如何驗證行為資料是否傳送至Adobe Commerce。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # 驗證事件集合
 
-在 [安裝和配置](install-configure.md) the `magento/product-recommendations` 模組，您可以驗證行為資料是否傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplough Chrome擴充功能。 如果您需要其他幫助，請參閱 [疑難排解 [!DNL Product Recommendations] 模組](https://support.magento.com/hc/en-us/articles/360042224851) 在支援知識庫中。
+在 [安裝和配置](install-configure.md) the `magento/product-recommendations` 模組，您可以驗證行為資料是否傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplough Chrome擴充功能。 如果您需要其他幫助，請參閱 [疑難排解 [!DNL Product Recommendations] 模組](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 在支援知識庫中。
 
 ## 在Chrome中使用開發人員工具進行驗證
 

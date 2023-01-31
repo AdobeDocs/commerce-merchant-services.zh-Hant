@@ -2,9 +2,9 @@
 title: "安裝 [!DNL Live Search]"
 description: 「了解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模�
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-如需其他說明，請參閱 [[!DNL Live Search] 目錄未同步](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) 在支援知識庫中。
+如需其他說明，請參閱 [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) 在支援知識庫中。
 
 ### 未來產品更新
 
