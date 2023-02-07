@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
+source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,33 @@ ht-degree: 0%
 * ![新增](../assets/new.svg) 新功能
 * ![修正](../assets/fix.svg) 修正和改良
 * ![錯誤](../assets/bug.svg) 已知問題
+
+## 第1.4版
+
+發行日期：2023-2-7與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+
+![新增](../assets/new.svg) 發佈目錄服務元資料包以簡化安裝步驟。
+![修正](../assets/fix.svg) API可擴充性和效能改善。
+
+
+### 已知限制
+
+尚不支援下列功能：
+
+* 以固定價格捆綁產品
+* 從目錄中刪除變體時，不會收到任何更新。
+* 動態屬性有效負載的最大大小為9MB。
+* 組產品價格。 可使用簡單的產品價格計算。
+* 在影像陣列中，只有第一個影像包含角色。
+* 色票
+* 透過產品URL載入產品詳細資料頁面。
+
+使用核心GraphQL API可解決下列限制：
+
+* 最低廣告價格
+* 分層定價
+* 可下載的產品和禮品卡
+* 類別(`categories` 和 `categoryList`)
 
 ## 第1.3版
 
