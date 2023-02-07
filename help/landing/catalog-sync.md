@@ -2,9 +2,9 @@
 title: 目錄同步
 description: 了解如何從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 不斷更新服務。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯為表�
 
 >[!NOTE]
 >
-> 從命令列觸發資料重新同步時，最多可能需要一小時的時間才能更新資料。
+> 首次執行資料同步時，請務必執行 `productattributes` 摘要先、後 `productoverrides`，在執行 `products` 摘要。
 
 命令選項：
 
@@ -130,6 +130,8 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `variants` — 可配置產品的產品變化，如顏色和大小
 - `productattributes` — 產品屬性，例如 `activity`, `gender`, `tops`, `bottoms`等
 - `productoverrides` — 特定於客戶的定價和目錄可見性規則，例如基於類別權限的規則
+
+從命令列觸發資料重新同步時，最多可能需要一小時的時間才能更新資料。
 
 ### 範例
 
