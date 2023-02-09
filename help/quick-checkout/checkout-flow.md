@@ -2,9 +2,9 @@
 title: "Adobe Commerce的結帳流程"
 description: 「 [!DNL Quick Checkout] 在Adobe Commerce。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 1. 繼續結帳。
 
 ![結帳](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> 您可以為商家啟用自動登錄。 請參閱 [Bolt的啟用自動登錄主題](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以取得更多資訊。
 
 1. 出現提示時，請輸入與 [!DNL Bolt] 帳戶。
 1. 輸入發送給該密碼的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或電話號碼。

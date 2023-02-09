@@ -2,9 +2,9 @@
 title: 「 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」
 description: 「了解 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，以及如何成功上線並設定擴充功能。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ ht-degree: 0%
 
 1. 選取 **登入後的下一階段** 選項，以在客戶登入後變更導覽流程。 預設會設為 **付款** 頁面。
 1. 定義 [!DNL Quick Checkout] 允許 **自動登入** 結帳期間。 預設會啟用，以自動登入 [!DNL Bolt] 網路。
+
+   >[!NOTE]
+   >
+   > 請參閱 [Bolt的啟用自動登錄文檔](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以取得更多資訊。
 
 ## 取得協助
 

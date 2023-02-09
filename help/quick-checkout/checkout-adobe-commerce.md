@@ -2,9 +2,9 @@
 title: "Adobe Commerce使用者的結帳流程"
 description: 「 [!DNL Quick Checkout] Adobe Commerce使用者的流量。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 如果您在以現有Adobe Commerce使用者的身分下訂單時遇到問題，請參閱 [疑難排解快速結帳問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 文章(在Adobe Commerce說明中心)。
 
-### 自動登入
+## 自動登入
+
+自動登入元件會偵測購物者何時具有作用中的螺栓工作階段，並自動將購物者登入。 這會略過帳戶偵測和一次性密碼(OTP)步驟，因為購物者在先前的工作階段中完成這些步驟。
 
 您可以為 [!DNL Quick Checkout] 使用者。 您可以啟用設定，在結帳期間自動登入使用者。
 
