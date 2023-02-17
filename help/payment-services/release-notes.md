@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
+source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄設定」控制項顯示或隱藏欄。
 
 +++
+
+## v1.6.0
+
+_2023年2月17日_
+
+![新增](../assets/fix.svg)<!-- Issue PAY-3540 --> 新增 [適用於歐盟(EU)和英國的商戶交易的PCI 3DS合規性功能](security.md#3ds). 這一額外的安全層要求購買者向其信用卡發行商驗證，有助於防止線上欺詐，並且是歐盟(EU)法規的一部分。
+
+![新增](../assets/fix.svg)<!-- Issue PAY-3609 --> 將 [在管理員中啟用卡儲存](vaulting.md##use-vaulting-in-the-admin). 這可讓商戶使用其拱形付款方法，在管理員中為客戶建立訂單。
 
 ## v1.5.4
 
