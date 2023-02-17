@@ -2,9 +2,9 @@
 title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶來使用 [!DNL Payment Services] 在測試模式中。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ PayPal沙箱帳戶可讓您使用 [!DNL Payment Services] 在測試模式中。 
 
    您將看到一個PayPal窗口，用於連接PayPal帳戶以開始接受付款。
 
-1. 輸入PayPal業務帳戶（而非PayPal沙箱帳戶）和您的國家/地區的電子郵件，然後按一下 **[!UICONTROL Next]**.
+1. 輸入您在步驟3中生成的PayPal沙箱帳戶（而非您的PayPal業務帳戶資訊）以及您的國家/地區的電子郵件和密碼。
+1. 按一下 **[!UICONTROL Next]**.
 
    ![PayPal - Connect PayPal支付帳戶](assets/paypal-connectacct.png)
 
