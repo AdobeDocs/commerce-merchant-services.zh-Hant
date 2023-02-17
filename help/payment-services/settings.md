@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在家裡。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. 啟用 [3DS安全驗證](security.md#3ds) (`Off` 依預設)切換 **[!UICONTROL 3DS Secure authentication]** 選擇器 `Always` 或 `When required`.
 1. 若要啟用或停用結帳頁面上的信用卡欄位，請切換 **[!UICONTROL Show on checkout page]** 選取器。
 1. 啟用或禁用 [卡卡保險](#card-vaulting)，切換 **[!UICONTROL Vault enabled]** 選取器。
+1. 啟用或禁用 [管理員中的拱形付款方法](#card-vaulting) （若要讓商戶使用其拱形付款方法，為管理員中的客戶完成訂單），請切換 **[!UICONTROL Show vaulted methods in Admin]** 選取器。
 1. 若要啟用或停用除錯模式，請切換 **[!UICONTROL Debug Mode]** 選取器。
 1. 按一下 **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定的付款方法。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | 網站 | 啟用或禁用 [3DS安全驗證](security.md#3ds). 選項： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 網站 | 啟用或停用信用卡欄位以在結帳頁面上顯示。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 網站 | 啟用或禁用 [信用卡保險](#card-vaulting). 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 商店檢視 | 啟用或禁用 [信用卡保險](vaulting.md). 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 商店檢視 | 在管理員中啟用或停用商家完成客戶訂單的能力 [使用保險付款方法](vaulting.md). 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用除錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 付款按鈕
@@ -230,6 +232,8 @@ ht-degree: 0%
 ## 卡儲存
 
 您可以啟用允許客戶儲存（或「保存」）其「我的帳戶」中的信用卡資訊以用於將來購買的功能。
+
+您也可以在「管理員」中使用卡儲存功能，為現有客戶完成後續訂單。
 
 在 [信用卡欄位設定](#credit-card-fields).
 
