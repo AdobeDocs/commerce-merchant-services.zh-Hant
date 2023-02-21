@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
+source-git-commit: 09d79c80a53355ac113067b1b7ae3dca68a98f20
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -63,7 +63,7 @@ _2023年2月17日_
 
 ![新增](../assets/fix.svg)<!-- Issue PAY-3540 --> 新增 [適用於歐盟(EU)和英國的商戶交易的PCI 3DS合規性功能](security.md#3ds). 這一額外的安全層要求購買者向其信用卡發行商驗證，有助於防止線上欺詐，並且是歐盟(EU)法規的一部分。
 
-![新增](../assets/fix.svg)<!-- Issue PAY-3609 --> 將 [在管理員中啟用卡儲存](vaulting.md##use-vaulting-in-the-admin). 這可讓商戶使用其拱形付款方法，在管理員中為客戶建立訂單。
+![新增](../assets/fix.svg)<!-- Issue PAY-3609 --> 將 [在管理員中啟用卡儲存](vaulting.md#use-vaulting-in-the-admin). 這可讓商戶使用其拱形付款方法，在管理員中為客戶建立訂單。
 
 ## v1.5.4
 
