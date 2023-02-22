@@ -1,15 +1,15 @@
 ---
-title: 連線您的執行個體
+title: 連接您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-# 連線您的執行個體
+# 連接您的執行個體
 
 [!DNL Payment Services] 由Commerce Services提供支援，並部署為SaaS（軟體即服務）。 您使用API金鑰和私密金鑰來連線您的Commerce執行個體，並使用 [商務服務連接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **您只設定此連線一次。**
 

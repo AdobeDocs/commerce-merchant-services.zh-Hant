@@ -4,14 +4,14 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在存放區設
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
-# 舊式支付服務配置
+# 舊版 [!DNL Payment Services] 設定
 
 您可以自訂 [!DNL Payment Services] 管理中實用的設定選項，以符合您的需求。
 

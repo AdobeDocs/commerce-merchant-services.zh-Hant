@@ -2,9 +2,9 @@
 title: 啟用 [!DNL Payment Services] 生產
 description: 透過啟用 [!DNL Payment Services] 生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    如果您尚未設定，則會顯示此選項 [!DNL Payment Services] 作為一個或多個網站的付款方法。
 
-   系統會將您導向至「首頁」檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可在此啟用 [!DNL Payment Services] 選項 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
+   系統會將您導向至「首頁」檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可在此啟用 [!DNL Payment Services] 選項 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. 在 _[!UICONTROL General Configuration]_，設定&#x200B;**[!UICONTROL Enable]**to `Yes`.
 1. 設定 **[!UICONTROL Payment Action]**，兩者皆適用 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，變更為下列其中一項：
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Save]**.
 1. 按一下 **[!UICONTROL Go to Payment Services]** 被送回 [!DNL Payment Services] 家。
-1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    每次設定變更後，都應執行清除作業。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 1. 繼續使用PayPal流程，使用您的PayPal帳戶憑證（而非您的沙箱帳戶憑證），或註冊新的PayPal帳戶。
 1. 在管理員側欄上，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   此 _[!UICONTROL Live onboarding]_按鈕不再顯示，您會看到「[!UICONTROL Live payments pending]」。
+   此 _[!UICONTROL Live onboarding]_按鈕不再顯示，而您會看到「[!UICONTROL Live payments pending]」。
 
    在該文本框中，可能還會要求您使用PayPal確認您的電子郵件地址以完成上線。
 
@@ -107,7 +107,7 @@ A _生產商ID_ 會自動產生，並填入 [配置](configure-admin.md). 請勿
 1. 在首頁上，按一下 **[!UICONTROL Settings]** 頁面的右上角。 請參閱 [首頁](payments-home.md) 以取得更多資訊。
 1. 在 _[!UICONTROL General Configuration]_區段集&#x200B;**[!UICONTROL Payment mode]**to `Production`.
 1. 按一下 **[!UICONTROL Save]**.
-1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

@@ -4,9 +4,9 @@ description: 使用「支付」報表可以完全透明地顯示支付金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -154,8 +154,8 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示信用(*CR*)或借項(*DR*) |
 | [!UICONTROL Reference ID] | 與此事件相關的原始交易ID |
 | [!UICONTROL Invoice] | 交易的發票ID（每張訂單一張） |
-| [!UICONTROL Commerce order] | 商務訂單ID <br> <br>查看相關 [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}，按一下ID。 |
-| [!UICONTROL Commerce trans] | 商務交易ID <br> <br>查看相關 [交易資訊](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}，按一下ID。 |
+| [!UICONTROL Commerce order] | 商務訂單ID <br> <br>查看相關 [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
+| [!UICONTROL Commerce trans] | 商務交易ID <br> <br>查看相關 [交易資訊](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}，按一下ID。 |
 | [!UICONTROL Pay method] | 信用卡類型 — *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]* — 和關聯的卡提供者(例如 *簽證* 或 *MasterCard*) |
 | [!UICONTROL Trans amt] | 交易金額 |
 | [!UICONTROL Cur] | 交易記錄金額的幣種單位 |
@@ -184,19 +184,19 @@ ht-degree: 0%
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 在買方和賣方之間為訂單轉移的資金 |
 | [!UICONTROL AUTH] | 授權和授權撤消事務 |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | 拖欠款項費用和拖欠款項費用衝銷交易 |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | 合作夥伴費用、支付費用和費用回撥交易 |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | 從銀行或虧損帳戶中收回 |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

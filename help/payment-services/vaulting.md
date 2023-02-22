@@ -1,15 +1,15 @@
 ---
-title: 信用卡保險
+title: 信用卡保險儲存
 description: 購物者可儲存（儲存）其信用卡詳細資訊，以供日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# 信用卡保險
+# 信用卡保險儲存
 
 透過信用卡儲存，將一次性客戶轉化為忠誠的購物者。 購物者可在結帳期間儲存（或「保管庫」）其信用卡憑證，以用於稍後購買相同或其他商戶帳戶的商品。
 
