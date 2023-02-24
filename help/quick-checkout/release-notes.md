@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 發行說明'
 description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _2022年10月5日_
 ![修正問題](../assets/fix.svg)<!-- Issue BOLT-369 --> 現在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在頁尾中顯示應用程式版本。
 
 +++
+
+## v1.8.0
+
+_2023年2月24日_
+
+![修正問題](../assets/fix.svg)<!-- Issue BOLT-592 --> 在 [管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 使用 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 作為付款方式。 此功能可讓客戶在結帳時以Braintree作為付款方式下單 [!DNL Quick Checkout] 啟用。
 
 ## v1.7.0
 

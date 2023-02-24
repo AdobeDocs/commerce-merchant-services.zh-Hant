@@ -2,7 +2,7 @@
 title: "Adobe Commerce的結帳流程"
 description: 「 [!DNL Quick Checkout] 在Adobe Commerce。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%

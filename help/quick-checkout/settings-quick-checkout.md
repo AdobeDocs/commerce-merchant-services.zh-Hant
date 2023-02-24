@@ -2,10 +2,10 @@
 title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
 description: 了解 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
