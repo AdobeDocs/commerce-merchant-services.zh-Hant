@@ -1,7 +1,8 @@
 ---
 title: 收集資料
 description: 了解事件如何收集產品建議的資料。
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 此 [Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 列出部署到店面的所有事件。 不過，該清單中有一個事件子集，專屬於產品Recommendations。 當購物者與店面上的建議單位互動時，這些事件會收集資料，並為用來協助您分析建議執行狀況的量度提供動力。
 
-| Event | 說明 | [用於量度？](workspace.md) |
+| 事件 | 說明 | [用於量度？](workspace.md) |
 | --- | --- | --- |
 | `impression-render` | 建議單位會呈現在頁面上。 | 是 |
 | `rec-add-to-cart-click` | 客戶點按 **新增至購物車** 按鈕，查看建議單位中的項目。 | 是，當 **新增至購物車** 「建議」範本中顯示按鈕。 |
