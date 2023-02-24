@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 以下版本說明 [!DNL Catalog Service] 包括：
 
-* ![新增](../assets/new.svg) 新功能
-* ![修正](../assets/fix.svg) 修正和改良
-* ![錯誤](../assets/bug.svg) 已知問題
+![新增](../assets/new.svg) 新功能
+![修正](../assets/fix.svg) 修正和改良
+![錯誤](../assets/bug.svg) 已知問題
 
-## 第1.4版
+## 目前主要版本
+
+### 第1.4版
 
 發行日期：2023-2-7與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
 
 ![新增](../assets/new.svg) 發佈目錄服務元資料包以簡化安裝步驟。
 ![修正](../assets/fix.svg) API可擴充性和效能改善。
 
-
-### 已知限制
+#### 已知限制
 
 尚不支援下列功能：
 
@@ -44,7 +45,7 @@ ht-degree: 0%
 * 可下載的產品和禮品卡
 * 類別(`categories` 和 `categoryList`)
 
-## 第1.3版
+### 第1.3版
 
 發行日期：2023-1-17與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
 
@@ -53,7 +54,7 @@ ht-degree: 0%
 ![新增](../assets/new.svg) 新增對虛擬產品的支援。
 ![修正](../assets/fix.svg) API可擴充性和效能改善。
 
-### 已知限制
+#### 已知限制
 
 尚不支援下列功能：
 
@@ -72,14 +73,14 @@ ht-degree: 0%
 * 可下載的產品和禮品卡
 * 類別(`categories` 和 `categoryList`)
 
-## 第1.1版
+### 第1.1版
 
 發行日期：2022-11-18與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
 
 ![新增](../assets/new.svg) 目錄服務現在支援Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修正](../assets/fix.svg) 我們已改善API的可擴充性和整體效能。
 
-### 已知限制
+#### 已知限制
 
 尚不支援下列功能：
 
@@ -98,7 +99,7 @@ ht-degree: 0%
 * 可下載的產品和禮品卡
 * 類別(`categories` 和 `categoryList`)
 
-## 1.0版
+### 1.0版
 
 發行日期：2022-10-04與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
 
@@ -106,7 +107,7 @@ ht-degree: 0%
 ![新增](../assets/new.svg) 新增B2B可見性覆寫。 產品現在可供搜尋，並可針對特定客戶群組新增至購物車。
 ![修正](../assets/fix.svg) 服務現在更穩定，效能也有所提高。
 
-### 已知限制
+#### 已知限制
 
 尚不支援下列功能：
 
@@ -118,7 +119,11 @@ ht-degree: 0%
 * 支援虛擬、可下載和禮品卡產品類型
 * 最低廣告價格(MAP)
 
-## 0.3版 — 測試版+
+## 舊版
+
++++測試版
+
+### 0.3版 — 測試版+
 
 發行日期：2022-09-12與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：Beta
 
@@ -127,7 +132,7 @@ ht-degree: 0%
 ![修正](../assets/fix.svg) 提高服務的穩定性和效能
 ![新增](../assets/new.svg) 從目錄中刪除產品時，會收到更新
 
-### 已知限制
+#### 已知限制
 
 尚不支援下列功能：
 
@@ -136,7 +141,7 @@ ht-degree: 0%
 * 從目錄中刪除變體時，不會收到任何更新
 * B2B可見性覆蓋：產品可供搜尋，或新增至購物車供特定客戶群組使用
 
-## 測試版
+### 測試版
 
 發行日期：2022-08-09與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：Beta
 
@@ -150,10 +155,12 @@ ht-degree: 0%
 * 客戶群組價格和價格範圍。 在沒有客戶群組的購物者，系統會傳回後援的預設價格。
 * 使用B2B客戶專屬定價的產品類型。
 
-### 已知限制
+#### 已知限制
 
 * 不支援捆綁和分組的產品。
 * 不支援分層定價。
 * 在影像陣列中，只有第一個影像包含角色。
 * 不會擷取變體的影像。
 * 從目錄中刪除產品或變體時，不會收到更新。
+
++++

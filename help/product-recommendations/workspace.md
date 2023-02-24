@@ -1,15 +1,15 @@
 ---
-title: 工作區
+title: '''[!DNL Product Recommendations] 工作區的'
 description: 了解如何設定、管理和監控產品建議效能。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# 工作區
+# [!DNL Product Recommendations] 工作區
 
 此 [!DNL Product Recommendations] 工作區會顯示先前設定之建議的清單，其中包含可協助您追蹤每個建議成功的量度。 清單可設定為計算最後一天、周或月的量度。 您可以使用量度，根據建議單位被檢視或點按的頻率建立可操作的深入分析，或分析建議的執行成效。
 
