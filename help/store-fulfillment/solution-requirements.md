@@ -4,16 +4,16 @@ description: 布建和上線的需求 [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-# Adobe Commerce的商店完成需求
+# Adobe Commerce的儲存完成需求
 
-您必須符合下列技術和業務需求，才能安裝並啟用適用於Adobe Commerce的商店完成解決方案。
+以下各節詳細說明安裝和啟用適用於Adobe Commerce的商店完成解決方案的技術和業務需求。
 
 ## 平台和軟體版本需求
 
@@ -47,8 +47,8 @@ ht-degree: 2%
 
 **最低硬體需求**
 
-- 1GB RAM
-- 600MB可用磁碟空間
+- 1 GB RAM
+- 600 MB可用磁碟空間
 
 ## 業務需求
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 - 僅限美國企業
 
-- B2C零售商、銷售D2C的CPG製造商，或銷售D2C或銷售給小型企業的經銷商
+- 企業對消費者(B2C)零售商、消費者包裝商品(CPG)製造商直接銷售給消費者(D2C)，或直接銷售給消費者或小型企業的經銷商
 
 - 至少一個實體商店或倉庫
 

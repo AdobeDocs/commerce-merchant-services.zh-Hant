@@ -4,9 +4,9 @@ description: '"安裝 [!DNL Store Fulfillment solution] 用於使用PHP的撰寫
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 將存檔檔案解壓縮到新目錄。
 
-1. 檢閱檔案清單，以確認已擷取的檔案。
+1. 檢閱檔案清單，確認已成功擷取檔案。
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱 [靜態內容在Adobe Commerce中部署最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Adobe Commerce幫助中心。
+>如需詳細資訊，請參閱 [靜態內容在Adobe Commerce中部署最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) 文章(在Adobe Commerce說明中心)。
+

@@ -4,9 +4,9 @@ description: 設定 [!DNL Store Assist] 若要管理線上購買的端對端商�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -63,11 +63,11 @@ Store Assist應用程式需要兩種配置：
 
 - 確認行動裝置符合 [硬體和軟體要求](solution-requirements.md#store-assist-app-requirements) （商店完成解決方案）。
 
-- 從下載Store Assist應用程式 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;}或 [Google Play商店](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+- 從下載Store Assist應用程式 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates需要下列資訊才能登入：
 
    - **[!UICONTROL Company name]** 與商店協助帳戶關聯
 
    - **儲存協助帳戶憑證** — 其帳戶的用戶名和密碼憑據。
-   Adobe Commerce管理員可以建立使用者帳戶，並為 [!DNL Store Assist app] 儲存位置的用戶帳戶 [店內取貨](merchant-store-configuration.md#pickup-location-configuration) 在「管理員商店」設定中啟用。
+   Adobe Commerce管理員可以建立和管理 [!DNL Store Assist app] 所有儲存位置的用戶帳戶 [店內取貨](merchant-store-configuration.md#pickup-location-configuration) 在「管理員商店」設定中啟用。

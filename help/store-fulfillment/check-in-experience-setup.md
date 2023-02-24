@@ -1,12 +1,12 @@
 ---
 title: 簽入體驗設定
-description: 配置在客戶完成「提貨訂單」表單時，可為其組織提貨客戶提供的「提貨」和「模型」選項。
+description: 配置在客戶完成「提貨訂單」表單時，他們可以選擇的提貨和型號。
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

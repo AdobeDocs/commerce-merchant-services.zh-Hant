@@ -1,18 +1,18 @@
 ---
-title: 銷售電子郵件
+title: 銷售電子郵件模板
 description: 配置交易式電子郵件模板，以便在「儲存裝貨訂單」的完成流程期間與客戶和儲存管理員進行通信。
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# 銷售電子郵件
+# 銷售電子郵件模板
 
 商店履行提供一組擴展的交易式電子郵件模板，以支援訂單和履行工作流。 它們提供跨通道的一致、自動通信和消息傳送 — 通知客戶和儲存管理員訂單狀態更改、店內提貨訂單的說明等。
 

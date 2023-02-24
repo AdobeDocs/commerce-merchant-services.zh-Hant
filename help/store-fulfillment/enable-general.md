@@ -4,7 +4,7 @@ description: 配置常規設定以啟用 [!DNL Store Fulfillment] 為您的商�
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -530,3 +530,4 @@ ht-degree: 0%
 <td>否</td>
 </tr>
 </tbody></table>
+
