@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 發行說明'
 description: 「查看發行說明，了解 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 2%
 
 ## v1.3.0
 
-<!-- Add release notes when version 1.3.0 is released -->
+發行日期：2023-02-27與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce(ECE)相容：2.4.x穩定性：正式發行
+
+此版本包含下列更新：
+
+![新增](../assets/fix.svg)<!-- WMTP-795 --> 已新增功能，可借由將「系統配置」設定的預設範圍從網站變更為全域，來停用特定網站的「商店完成」解決方案。
 
 ## v1.2.0
 
-與下列商務版本相容：
-
-* Adobe Commerce(EE):2.4.x
-* Adobe Commerce for Cloud(ECE):2.4.x
-* 穩定性：穩定
+發行日期：2022-09-27與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce(ECE)相容：2.4.x穩定性：正式發行
 
 此版本包含下列更新：
 
@@ -36,21 +36,13 @@ ht-degree: 2%
 
 ## v1.1.0
 
-與下列商務版本相容：
-
-* Adobe Commerce(EE):2.4.0 - 2.4.4
-* Adobe Commerce for Cloud(ECE):2.4.0 - 2.4.4
-* 穩定性：穩定
+發行日期：2022-07-15與Adobe Commerce(EE)相容：2.4.0 - 2.4.4與Adobe Commerce(ECE)相容：2.4.0 - 2.4.4穩定性：正式發行
 
 ![新增](../assets/fix.svg)<!-- WMTP-731 --> 簡化 [簽入體驗設定](check-in-experience-setup.md) ，添加預設車牌和模型選項。 在舊版中，商家必須手動配置汽車製造和模型選擇。
 
 ## v1.0.0
 
-初始發行，與下列商務版本相容：
-
-* Adobe Commerce(EE):2.4.x
-* Adobe Commerce for Cloud(ECE):2.4.x
-* 穩定性：穩定
+發行日期：2022-03-04與Adobe Commerce(EE)相容：2.4.0 - 2.4.4與Adobe Commerce(ECE)相容：2.4.0 - 2.4.4穩定性：正式發行
 
 ## 商店協助應用程式
 
