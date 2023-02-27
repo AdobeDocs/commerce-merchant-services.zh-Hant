@@ -4,7 +4,7 @@ description: 配置常規設定以啟用 [!DNL Store Fulfillment] 為您的商�
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>啟用或停用解決方案。 啟用後，請設定和使用「商店完成」功能，並建立Adobe Commerce商店與 [!DNL Store Fulfillment] 服務。 停用後，所有商店完成功能都會停用，而Adobe Commerce和商店完成服務之間沒有通訊。 無法處理或接收訂單資訊。</td>
-<td>全球</td>
+<td>網站</td>
 <td>是</td>
 </tr>
 </tbody>

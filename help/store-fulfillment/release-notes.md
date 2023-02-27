@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 發行說明'
 description: 「查看發行說明，了解 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 3%
 ![新增](../assets/new.svg) 新功能
 ![修正問題](../assets/fix.svg) 修正和改良
 ![已知問題](../assets/bug.svg) 已知問題
+
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
 
 ## v1.2.0
 
@@ -50,4 +54,4 @@ ht-degree: 3%
 
 ## 商店協助應用程式
 
-如需新版Store Assist應用程式的相關資訊，請參閱 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;}或 [Google Play商店](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
+如需新版Store Assist應用程式的相關資訊，請參閱 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
