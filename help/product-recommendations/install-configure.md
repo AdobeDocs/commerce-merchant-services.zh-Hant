@@ -2,9 +2,9 @@
 title: 安裝和配置
 description: 了解如何安裝、更新和解除安裝 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ composer require magento/product-recommendations
 
 ### 新增頁面產生器支援 {#pbsupport}
 
-[!DNL Product Recommendations] 適用於頁面產生器是選用模組，需另行安裝。 使用 [!DNL Product Recommendations] 使用Page Builder，執行下列命令以安裝模組：
+[!DNL Product Recommendations] for Page Builder是選用模組，需另外安裝。 使用 [!DNL Product Recommendations] 使用Page Builder，執行下列命令以安裝模組：
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
@@ -38,9 +38,7 @@ composer require magento/module-page-builder-product-recommendations
 
 啟用 [!DNL Product Recommendations] 在「頁面產生器」中，您可以新增現有的作用中 [建議單位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 至在「頁面產生器」中建立的任何內容，例如頁面、區塊和動態區塊。
 
->[!NOTE]
->
->[!DNL Page Builder] 只能為預設存放區檢視建立建議單位。
+請參閱 [使用 [!DNL Product Recommendations] 搭配頁面產生器內容](page-builder.md) 以取得進一步指示。
 
 ### 新增視覺相似度建議類型 {#vissimsupport}
 

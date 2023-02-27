@@ -2,9 +2,9 @@
 title: 建立新建議
 description: 了解如何建立產品建議單位。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ _建議單位_
 
    >[!NOTE]
    >
-   > 只能為預設商店檢視建立頁面產生器建議單位。 若要進一步了解如何使用頁面產生器建立產品建議，請參閱 [新增內容 — 產品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > 必須在預設商店檢視中建立頁面產生器建議單位，然後便可在任何地方使用。 若要進一步了解如何使用頁面產生器建立產品建議，請參閱 [新增內容 — 產品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. 按一下 **建立建議**.
 
