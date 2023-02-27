@@ -4,9 +4,9 @@ description: 「為 [!DNL Store Fulfillment solution] Adobe Commerce·Inventory 
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management來源轉移
 
 此 [!DNL Store Fulfillment] 解決方案使用原生Adobe Commerce Inventory management。 依預設， [!DNL Commerce] 配置將所有Web庫存分配給預設庫存，但無法分配其他來源。 由於網站只能分配單個庫存，因此商家必須配置新庫存，並根據需要將其預設來源庫存轉移到分配給適當範圍的來源。 然後，可將源分配給新庫存。
+
+>[!IMPORTANT]
+>
+>商家必須維護組和捆綁產品類型中包含的所有產品的預設來源。 這些產品需要滿足庫存物料中最小數量閾值的庫存數量，並且包括庫存狀態 [!UICONTROL In Stock].
 
 這些設定變更可協助您完成下列三項工作：
 

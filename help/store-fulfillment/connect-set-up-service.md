@@ -4,9 +4,9 @@ description: 建立和授權Adobe Commerce整合，並將存放履行帳戶憑�
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 將必要的驗證憑證和連線資料新增至Adobe Commerce管理員，將Store Fullment Services與Adobe Commerce連線。
 
-- **[設定 [!DNL Commerce integration settings]](#create-the-commerce-integration)** — 為Store Fullment Services建立Adobe Commerce整合，並生成訪問令牌，以驗證來自Store Fullment Server的傳入請求。
+- **[設定 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** — 為Store Fullment Services建立Adobe Commerce整合，並生成訪問令牌，以驗證來自Store Fullment Server的傳入請求。
 
 - **[配置Store Fullment Services的帳戶憑據](#configure-store-fulfillment-account-credentials)** — 新增憑證，將Adobe Commerce連線至您的商店履行帳戶。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 建立Adobe Commerce整合
 
-若要將Adobe Commerce與商店完成服務整合，您需建立商務整合，並產生存取權杖，以用於驗證來自商店完成伺服器的請求。
+若要將Adobe Commerce與商店完成服務整合，您需建立商務整合，並產生存取權杖，以用於驗證來自商店完成伺服器的請求。 您也必須更新Adobe Commerce [!UICONTROL Consumer Settings] 防止 `The consumer isn't authorized to access %resources.` 從Adobe Commerce到 [!DNL Store Fulfillment] 服務。
 
 1. 從管理員建立商店履行的整合。
 
@@ -41,10 +41,16 @@ ht-degree: 0%
 
 1. 請與您的帳戶管理員合作，完成商店履行端的設定，並授權整合。
 
+1. 啟用Adobe Commerce [!UICONTROL Consumer Settings] 選項 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - 從管理員，前往 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - 設定 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 選項 **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->如需詳細指示，請參閱 [整合](https://docs.magento.com/user-guide/system/integrations.html) 在 _Adobe Commerce使用手冊_.
+> 整合代號是環境專屬的。 如果您從不同環境（例如從中繼環境還原生產資料）中還原具有源資料的環境的資料庫，則排除 `oauth_token` 表，以便在還原操作期間不會覆蓋整合令牌詳細資訊。
+
 
 ## 配置儲存履行帳戶憑據
 

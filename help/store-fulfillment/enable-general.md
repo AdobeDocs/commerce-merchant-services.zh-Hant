@@ -4,9 +4,9 @@ description: 配置常規設定以啟用 [!DNL Store Fulfillment] 為您的商�
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>在更改所需密碼之前，密碼保持有效的天數。 保留為空以停用此選項。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-</tbody>
-</table>
-
-### 雙因素驗證
-
-<table>
-<thead>
-<tr>
-<td><strong>欄位</strong></td>
-<td><strong>說明</strong></td>
-<td><strong>範圍</strong></td>
-<td><strong>必填</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>啟用或禁用儲存關聯的雙因素身份驗證。 當啟用時，提示儲存關聯提供由驗證提供者生成的一次性密碼。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>設定雙因素驗證的實施策略。<br></br><strong>[!UICONTROL Optional]</strong>:如果未設定提供程式，儲存關聯可以繞過雙因素驗證。<br></br><strong>[!UICONTROL Mandatory]</strong>:需要儲存關聯才能完成雙因素驗證。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>選擇一個或多個要提供儲存關聯的身份驗證提供程式服務。 若要設定雙因素驗證和驗證，商店關聯必須從安裝在其行動裝置上的可用提供者之一安裝驗證應用程式。</td>
 <td>全球</td>
 <td>否</td>
 </tr>
