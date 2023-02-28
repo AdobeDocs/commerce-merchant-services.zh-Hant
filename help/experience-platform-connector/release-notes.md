@@ -2,10 +2,10 @@
 title: 發行說明
 description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 2%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,12 @@ _2022年10月12日_
 * ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.1.1
+
+_2023年2月28日_
+
+* ![新增](../assets/new.svg)  — 新增對PHP 8.2的支援，用於所有Experience Platform連接器模組
 
 ## 2.1.0
 
