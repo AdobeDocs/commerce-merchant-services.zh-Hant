@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ ht-degree: 0%
 ![新增](../assets/new.svg) 新增 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
 ![修正](../assets/fix.svg) 改善效能和API可擴充性。
 
-### 第1.4版
-
-發行日期：2023-2-7與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
-
-![新增](../assets/new.svg) 發佈目錄服務元資料包以簡化安裝步驟。
-![修正](../assets/fix.svg) API可擴充性和效能改善。
-
 #### 已知限制
 
 尚不支援下列功能：
@@ -50,7 +43,13 @@ ht-degree: 0%
 * 最低廣告價格
 * 分層定價
 * 可下載的產品和禮品卡
-* 類別(`categories` 和 `categoryList`)
+
+### 第1.4版
+
+發行日期：2023-2-7與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+
+![新增](../assets/new.svg) 發佈目錄服務元資料包以簡化安裝步驟。
+![修正](../assets/fix.svg) API可擴充性和效能改善。
 
 ### 第1.3版
 

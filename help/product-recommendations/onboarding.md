@@ -2,9 +2,9 @@
 title: 入門
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 ## 需求
 
-- Adobe Commerce 2.3.x、2.4.x
-- PHP 7.3 / 7.4 / 8.1
-- 撰寫器
+- Adobe Commerce 2.3.x、2.4.4+
+- PHP 8.1、8.2
+- 撰寫器2
 
 ### 支援平台
 
-- Adobe Commerce on premise(EE):2.4.x
-- Adobe Commerce on Cloud(ECE):2.4.x
+- Adobe Commerce on premise(EE):2.4.4+
+- Adobe Commerce on Cloud(ECE):2.4.4+
 
 ### 頁面產生器支援
 

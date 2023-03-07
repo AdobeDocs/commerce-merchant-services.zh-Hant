@@ -2,9 +2,9 @@
 title: "安裝 [!DNL Live Search]"
 description: 「了解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模�
 
 在此情境中，店面操作會在 [!DNL Live Search] 服務對目錄中的所有產品進行索引。 在安裝期間， [!DNL Live Search] 模組已啟用， [!DNL Elasticsearch] 模組已停用。
 
->[!TIP]
+>[!NOTE]
 >
->若要避免輸入錯誤，請將滑鼠指標暫留在程式碼方塊的最右側，按一下 [!UICONTROL **複製**] 連結，然後貼到命令列中。
+>自2023年3月起，Live Search僅支援2.4.4版及更新版本。
 
-1. 安裝Adobe Commerce 2.4.x(不含 [!DNL Live Search].
+1. 安裝Adobe Commerce 2.4.4+(不含 [!DNL Live Search].
 
 1. 若要下載 `live-search` 軟體包，從命令行運行以下內容：
 
