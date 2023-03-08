@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _2021年6月28日_
 
 _2023年2月17日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![新增](../assets/new.svg)<!-- Issue PAY-3540 --> 新增 [適用於歐盟(EU)和英國的商戶交易的PCI 3DS合規性功能](security.md#3ds). 這一額外的安全層要求購買者向其信用卡發行商驗證，有助於防止線上欺詐，並且是歐盟(EU)法規的一部分。
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3609 --> 將 [在管理員中啟用卡儲存](vaulting.md#use-vaulting-in-the-admin). 這可讓商戶使用其拱形付款方法，在管理員中為客戶建立訂單。
@@ -69,17 +71,23 @@ _2023年2月17日_
 
 _2023年1月29日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 修正購買者無法使用產品頁面、迷你購物車和購物車上的智慧按鈕下單的問題。 買家現在可以成功完成訂單。
 
 ## v1.5.3
 
 _2023年1月25日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 已針對不相容的已知問題發行修正。 此版本會將服務ID擴充功能版本鎖定至最新穩定版本，重新啟用新的Payment Services安裝以設定Commerce Services。
 
 ## v1.5.2
 
 _2022年12月22日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改進當拒絕付款方法時在付款服務中的開票。
 
@@ -89,6 +97,8 @@ _2022年12月22日_
 
 _2022年11月23日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![新增](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services現在會在使用者代理標題中納入版本號碼，以便要求能夠追蹤、篩選或淘汰未使用的端點。
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 使用智慧按鈕從產品頁面下訂單時，Payment Services現在可正確顯示訂單資料。
@@ -96,6 +106,8 @@ _2022年11月23日_
 ## v1.5.0
 
 _2022年11月18日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3880 --> 購物者現在可以 [在結帳期間保存其信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 用於以後購買同一商家帳戶內的同一商店或其他商店。
 
@@ -105,11 +117,15 @@ _2022年11月18日_
 
 _2022年10月14日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![修正](../assets/fix.svg)<!-- Issue PAY-3766 --> 當客戶的付款方法被拒絕時，可見的錯誤消息將更具描述性。 它建議客戶重新輸入付款資訊，然後重試，嘗試其他付款方法，或聯繫其銀行，了解拒絕的交易。
 
 ## v1.4.0
 
 _2022年9月30日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-784 --> 支付服務現在包括設定商家帳戶的能力 [使用多個PayPal業務帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 這可讓商家使用不同貨幣在多個國家/地區經營您的商店，或將Adobe Commerce用於您的部分業務。
 
@@ -123,11 +139,15 @@ _2022年9月30日_
 
 _2022年9月6日_
 
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-3663 --> 現在，當商家的商店擷取授權使用非全域貨幣的訂單時，擷取程式會完成，不會顯示錯誤。
 
 ## v1.3.0
 
 _2022年8月9日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-XX --> 正式發行 — [!DNL Payment Services] 現在 [相容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _2022年8月9日_
 ## v1.2.0
 
 _2022年6月29日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay與行動裝置和案頭版上的Safari瀏覽器v15.5不相容。 使用Safari 15.5版時，您無法使用Apple Pay完成結帳。
 
@@ -152,6 +174,8 @@ _2022年6月29日_
 ## v1.1.0
 
 _2022年3月31日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行 — [!DNL Payment Services] 現在 [相容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _2022年3月31日_
 ## v1.0.0
 
 _2021年11月29日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行 — [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 現在與 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 2.4.0版至2.4.3-p1版。
 
