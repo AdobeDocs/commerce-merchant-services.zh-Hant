@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 
 ### 第1.5版
 
-發行日期：2023-3-6與Adobe Commerce(EE)相容：2.4.4+與Adobe Commerce for Cloud(ECE)相容：2.4.4+穩定性：正式發行
+_2023年3月6日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 新增 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
 ![修正](../assets/fix.svg) 改善效能和API可擴充性。
@@ -46,14 +48,18 @@ ht-degree: 0%
 
 ### 第1.4版
 
-發行日期：2023-2-7與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+_2023年2月7日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 發佈目錄服務元資料包以簡化安裝步驟。
 ![修正](../assets/fix.svg) API可擴充性和效能改善。
 
 ### 第1.3版
 
-發行日期：2023-1-17與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+_2023年1月17日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 簡化並改善入門體驗。
 ![新增](../assets/new.svg) 生產前測試可使用新的客戶沙箱端點。
@@ -62,14 +68,18 @@ ht-degree: 0%
 
 ### 第1.1版
 
-發行日期：2022-11-18與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+_2022年11月18日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 目錄服務現在支援Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修正](../assets/fix.svg) 我們已改善API的可擴充性和整體效能。
 
 ### 1.0版
 
-發行日期：2022-10-04與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：正式發行
+_2022年10月4日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 現在支援捆綁和分組產品。
 ![新增](../assets/new.svg) 新增B2B可見性覆寫。 產品現在可供搜尋，並可針對特定客戶群組新增至購物車。
@@ -81,7 +91,9 @@ ht-degree: 0%
 
 ### 0.3版 — 測試版+
 
-發行日期：2022-09-12與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：Beta
+_2022年9月12日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 變體支援的影像：系統會根據選取的選項傳回產品影像
 ![新增](../assets/new.svg) 價格支援的角色：僅允許特定客戶群組的成員查看產品價格
@@ -90,7 +102,9 @@ ht-degree: 0%
 
 ### 測試版
 
-發行日期：2022-08-09與Adobe Commerce(EE)相容：2.4.x與Adobe Commerce for Cloud(ECE)相容：2.4.x穩定性：Beta
+_2022年8月9日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 此 `products` 和 `refineProduct` 查詢會傳回下列資料：
 
