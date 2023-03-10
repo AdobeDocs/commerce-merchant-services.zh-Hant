@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 請參閱發行說明，了解 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄設定」控制項顯示或隱藏欄。
 
 +++
+
+## v2.0.0
+
+_2023年3月10日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg)<!-- Issue PAY-4152 --> 新增對PHP 8.2和Adobe Commerce 2.4.6的支援。與PHP 7.x不相容。
+
+## v1.6.1
+
+_2023年3月10日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![修正](../assets/fix.svg)<!-- Issue PAY-4226 --> 修正新「付款服務」商無法在「管理員」中使用結帳的問題。 付款服務先前使用的是商務客戶ID，新客戶則不存在。
+
+![修正](../assets/fix.svg)<!-- Issue PAY-4205 --> 修正在使用 [PayPal選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 現在，客戶可將其訂單發運至非在商家稅務設定中設定為預設的狀態。
+
+![修正](../assets/fix.svg)<!-- Issue PAY-4202 --> 修正客戶無法使用卡保險儲存來完成購買或刪除商店的保險儲存付款方法的問題 [使用 `Authorize and Capture` 付款動作](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前，當客戶嘗試使用或修改其保險儲存信用卡時，會出現「找不到提供者保管庫ID」錯誤。
 
 ## v1.6.0
 
