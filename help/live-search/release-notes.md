@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] 發行說明'
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,17 @@ _2023年3月14日_
 
 ## 舊版
 
-+++2.0.4和之前版本
++++2.0.5和之前版本
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+* ![修正](../assets/fix.svg)  — 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤已修正。
+
+商家必須升級Live Search擴充功能版本>= 2.0.5才能存取這些功能。
+
+建議您先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
