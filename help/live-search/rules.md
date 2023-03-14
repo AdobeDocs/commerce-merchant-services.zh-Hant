@@ -2,9 +2,9 @@
 title: "規則"
 description: '"[!DNL Live Search] 規則會結合邏輯與動作，以塑造購物體驗。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,29 @@ ht-degree: 0%
 * `Any`  — 使用 `OR` 邏輯運算子來連接多個條件。
 
 撰寫複雜規則時，可協助以縮排方式將其寫出，以說明傳回您要達成的結果所需的條件、相關事件、產品名稱或SKU。 然後，建立規則並測試結果。
+
+## 具有多個規則的優先順序
+
+一次只會將一個規則套用至搜尋詞。
+如果發現多個規則適用於搜尋片語，則會套用所有這些規則。 如果兩條規則之間有衝突……`rule 1` 提升sku1，但 `rule 2` 隱藏相同的SKU，然後隱藏最近套用的規則(`rule 2`)優先。
+
+* 規則的順序為「上次修改時間」時間戳記。 最近修改的規則會先套用，之後會以時間戳記順序套用舊規則。
+* 此 `query is` 條件優先於其他條件。 如果較新的規則包含 `query contains` 條件，但較舊的規則 `query is` 條件， `query is` 規則。
+
+### 店面請求
+
+如果包含 `query is` 條件符合搜尋片語，則會套用。 如果有多個相符規則，且 `query is` 條件，則會套用最近更新的作用中規則。
+否則，會套用最近更新的作用中規則。
+
+### 預覽請求
+
+在管理員中提出的請求的運作方式稍有不同。 在管理員中預覽時，會套用所有規則，包括過期和排程的規則。
+
+* 如果預覽的規則有 `query is` 條件，則會套用。
+* 如果預覽的規則沒有 `query is` 條件，以及後續的作用中符合規則， `query is` 找到條件， `query is` 規則。
+* 如果預覽的規則沒有 `query is` 條件，且沒有其他規則 `query is` 找到條件，然後套用預覽的規則。
+
+## 類別規則和類別產品分配
+
+[!DNL Live Search] 可讓您依類別篩選。
+不過，在Adobe Commerce中，您可以使用 [類別產品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此類類別在運行時建立，不存在於類別資料庫中。 因此，L[!DNL Live Search] 無法讀取或使用此類別類型。

@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] 發行說明'
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -17,26 +17,57 @@ ht-degree: 0%
 ![修正](../assets/fix.svg) 修正和改良
 ![錯誤](../assets/bug.svg) 已知問題
 
+## [!DNL Live Search] 3.0.1 {#301}
 
-## 最新主要版本
+_2023年3月14日_
 
-### [!DNL Live Search] 2.0.5 {#205}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+### 新功能
 
-![修正](../assets/fix.svg) 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤現已修正。
+* 規則預覽中的產品項目卡
+* [產品清單頁面Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+* [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+* 新增拖放功能，以建立Pin事件
+* 新的Pin操作：
+   * 按一下「固定到點」(Pin to spot) — 按一下「固定」(Pin)按鈕可建立「固定」(Pin)事件
+   * 釘到頂端 — 將產品置於第一個位置
+   * 釘到底部 — 將產品放在結果底部
+   * 只要按一下即可取消固定事件
+* [規則的智慧排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
-商家必須升級Live Search擴充功能版本>= 2.0.5才能存取這些功能。
+### 更新
 
-建議使用者在推送至生產環境前先升級並測試。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
+* 配置規則現在會自動對位置進行唯一排序
+* 刪除現有事件現在會更新預覽
+* 無法儲存沒有事件的規則
+* 移除面向「選取類型」選取器
+* 新增未儲存規則的「編輯」新狀態
+
+### 修正
+
+* 修正儲存期間發生未完成事件時的伺服器錯誤
+* 修正有多個事件時正確刪除特定事件的問題
+* 修正新增新事件時，現有規則事件不會更新的問題
+* 修正了從詳細資訊中按第二下「編輯」的問題， [!DNL Live Search] 需要重新載入的頁面
+* 同義詞：修正使用者點出輸入時，無法將焦點傳回欄位的問題
+* 其他微幅錯誤修正和效能更新
+
+
+* ![錯誤](../assets/bug.svg)  — 僅Live Search Widget支援依「建議您」排名。 預設LUMA和PWA搜尋功能不支援此功能。
+* ![錯誤](../assets/bug.svg)  — 自訂價格屬性Facet無法在LUMA中正確呈現，但API會對這些Facet進行適當篩選。
+
+商戶必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.1以存取這些功能。
+
+建議您先升級並測試再推送至生產環境。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
+
+## 舊版
+
++++2.0.4和之前版本
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 「即時搜尋」現在支援以管理員中的「顯示無庫存產品」設定進行篩選。 如果「顯示無現貨產品」設為false, `inStock = true` 會新增至篩選器。
 ![修正](../assets/fix.svg) 為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 資料仍會透過GraphQL傳遞，以備您取代功能時使用。
@@ -44,27 +75,23 @@ ht-degree: 0%
 ![修正](../assets/fix.svg) 先前，系結至B2B公司的使用者在執行搜尋時，會收到錯誤的客戶群組代碼。 Live Search現在會傳回正確的值。
 ![修正](../assets/fix.svg) 以前，當搜尋不存在的詞語時，即時搜尋會傳回錯誤。 此錯誤現已修正。
 
-商家必須升級Live Search擴充功能版本>= 2.0.4才能存取這些功能。
+商戶必須升級 [!DNL Live Search] 擴充功能版本>= 2.0.4以存取這些功能。
 
 建議使用者在推送至生產環境前先升級並測試。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 現場搜尋現在支援B2B功能，方法是採用類別權限、共用目錄和客戶群專屬定價。
 
-商家必須升級Live Search擴充功能版本>= 2.0.3才能存取這些功能。
+商戶必須升級 [!DNL Live Search] 擴充功能版本>= 2.0.3以存取這些功能。
 
 建議使用者在推送至生產環境前先升級並測試。 在驗證其測試環境結果後，考慮在非高峰時段升級生產環境。
 
 ### [!DNL Live Search] 2.0 {#20}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 現有 [!DNL Live Search] 安裝必須升級為 [!DNL Live Search] 2.0.0可善用下列新功能、修正和改良：
 
@@ -77,15 +104,9 @@ ht-degree: 0%
 ![錯誤](../assets/bug.svg) 不支援下列產品屬性 [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) 若與測試版PWA相關： `description`, `name`, `short_description`
 ![錯誤](../assets/bug.svg) 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
-## 舊版
-
-+++1.3.1和之前版本
-
 ### [!DNL Live Search] 1.3.1 {#131}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 設為 [face]({% link live-search/facets-add.md %})。
 ![修正](../assets/fix.svg) 修正當沒有 [貨幣符號](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可用。
@@ -93,9 +114,7 @@ ht-degree: 0%
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) [效能](performance.md) 「報表控制面板」可提供購物者所使用搜尋詞的深入分析。
 ![新增](../assets/new.svg) [!DNL Live Search] [Storefront事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 可透過事件發佈和訂閱服務及量度來存取通用資料層。
@@ -106,9 +125,7 @@ ht-degree: 0%
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) 當購物者在「搜尋」方塊中輸入查詢時，顯示最上層搜尋結果的建議產品和縮圖影像。
 ![新增](../assets/new.svg) 商務 *管理* 在鍵盤長時間不活動期間，工作階段保持開啟
@@ -121,13 +138,11 @@ ht-degree: 0%
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-* 與Adobe Commerce(EE)相容：2.4.x
-* 與Adobe Commerce for Cloud(ECE)相容：2.4.x
-* 穩定性：穩定
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![錯誤](../assets/bug.svg) 此 [!DNL Live Search] 服務僅支援 [基本貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce裝置。
 ![錯誤](../assets/bug.svg) 新增面向時，產品屬性摘要在設為時無法正確更新 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
-![錯誤](../assets/bug.svg) [!DNL Live Search] 同義字是根據商店檢視而定義，但目前是根據網站儲存，並以 `environmentId` + `storeViewCode`. 因此，Adobe Commerce安裝中所有網站和儲存檢視都會共用相同的同義字集。 最近建立的儲存視圖同義詞集優先。
+![錯誤](../assets/bug.svg) [!DNL Live Search] 同義字是根據商店檢視而定義，但目前是根據網站儲存，並以 `environmentId` 和 `storeViewCode`. 因此，所有網站和Adobe Commerce安裝內的儲存檢視都會共用同義字。 最近建立的儲存視圖同義詞集優先。
 ![錯誤](../assets/bug.svg) 如果同義詞詞包含多個單詞，則每個單詞都被視為單獨的同義詞。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會視為watch的同義字。
 
 +++

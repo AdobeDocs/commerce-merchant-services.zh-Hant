@@ -2,16 +2,16 @@
 title: "添加同義詞"
 description: '"添加 [!DNL Live Search] 同義字，以改善對搜尋請求的回應。」'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # 添加同義詞
 
-新增您自己策劃的即時搜尋同義字清單，以提高客戶參與度。 [!DNL Live Search] 可以管理每個最多200個同義字 `Data Space ID`.
+新增您自己策劃的 [!DNL Live Search] 同義詞。 [!DNL Live Search] 可以管理每個最多200個同義字 `Data Space ID`.
 
 ![[!DNL Live Search] 同義詞](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    ![添加單向同義詞](assets/synonym-add-one-way.png)
 
-1. 輸入 **關鍵字** 和 **擴展** 術語。 請使用逗號分隔多個詞語。
+1. 輸入 **關鍵字** 和 **擴展** 詞語。 請使用逗號分隔多個詞語。
 
    ![單向同義詞示例](assets/synonym-add-one-way-example.png)
 
@@ -65,8 +65,6 @@ ht-degree: 0%
 
 1. 完成同義詞後，按一下 **發佈變更**.
 1. 等待最多2小時，以便您的更新在店面中可用。
-
-![發佈變更](assets/synonym-publish.png)
 
 ## 欄位說明
 

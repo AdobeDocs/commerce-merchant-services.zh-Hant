@@ -2,16 +2,16 @@
 title: "安裝 [!DNL Live Search]"
 description: 「了解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # 安裝 [!DNL Live Search]
 
-Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模組（以目錄模組作為依賴項）安裝並配置， [!DNL Commerce] 開始與SaaS服務共用搜索和編錄資料。 此時， *管理* 使用者可以設定、自訂及管理搜尋Facet、同義字和銷售規則。
+[!DNL Live Search] 會以擴充功能的形式從Marketplace安裝。 在 [!DNL Live Search] 模組（以目錄模組作為依賴項）安裝並配置， [!DNL Commerce] 開始與SaaS服務共用搜索和編錄資料。 此時， *管理* 使用者可以設定、自訂及管理搜尋Facet、同義字和銷售規則。
 
 本主題提供執行下列作業的指示：
 
@@ -56,8 +56,7 @@ Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模�
 1. 運行以下命令以禁用 [!DNL Elasticsearch] 和相關模組，並安裝 [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ Live Search是以Adobe市集的擴充功能安裝。 在 [!DNL Live Search] 模�
 
 ## 方法2:使用Elasticsearch安裝 {#method-2}
 
+>[!IMPORTANT]
+>
+>由於2023年8月Elasticsearch7日終止支援公告，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱 [移轉至OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 在 _升級指南_.
+
 安裝時，建議使用此上線方法 [!DNL Live Search] 至：
 
 * 現有生產 [!DNL Commerce] 安裝
 
 在這種情況下， [!DNL Elasticsearch] 暫時管理來自店面的搜尋請求，而 [!DNL Live Search] 服務對後台的所有產品進行索引，不會中斷正常的店面操作。 [!DNL Elasticsearch] 已停用， [!DNL Live Search] 在所有目錄資料已編列索引並同步後啟用。
-
->[!TIP]
->
->若要避免輸入錯誤，請將滑鼠指標暫留在程式碼方塊的最右側，按一下 [!UICONTROL **複製**] 連結，然後貼到命令列中。
 
 1. 若要下載 `live-search` 軟體包，從命令行運行以下內容：
 
@@ -209,9 +208,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-若要更新為主要版本，例如從1.0.0更新為2.0.0，請編輯專案的根 [!DNL Composer] `.json` 檔案如下：
+若要更新為主要版本，例如從2.0.0更新為3.0.1，請編輯專案的根 [!DNL Composer] `.json` 檔案如下：
 
-1. 如果您目前已安裝 `magento/live-search` 版本 `1.3.1` 或更低版本，且您正在升級至版本 `2.0.0` 或更高版本，在升級前運行以下命令：
+1. 如果您目前已安裝 `magento/live-search` 版本 `2.0.3` 或更低版本，且您正在升級至版本 `3.0.0` 或更高版本，在升級前運行以下命令：
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ composer update magento/live-search --with-dependencies
 
 | 相依性 | 說明 |
 |--- |--- |
-| 匯出模組 | 以下模組收集和同步目錄資料：<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | 配置與Commerce Services的連接時需要。 |
-| `module-services-id` | 配置與Commerce Services的連接時需要。 |
+| 匯出模組 | 以下模組收集和同步目錄資料：<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | 配置與Commerce Services的連接時需要。 |
+| `services-id` | 配置與Commerce Services的連接時需要。 |

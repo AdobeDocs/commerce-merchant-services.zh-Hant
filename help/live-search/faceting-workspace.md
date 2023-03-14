@@ -2,9 +2,9 @@
 title: "Faceting Workspace"
 description: 「學習如何 [!DNL Live Search] faceting workspace。」
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ ht-degree: 0%
    * 固定
    * 動態
 
-   ![Faceting工作區](assets/facets-filter-by.png)
-
 ## 新增Facet
 
 1. 按一下 **新增Facet**.
@@ -40,7 +38,6 @@ ht-degree: 0%
 | 欄 | 說明 |
 |--- |--- |
 | （第一欄） | 列出已固定和動態Facet，由 [標籤](facets-type.md) 供購物者檢視。 |
-| 選擇類型 | 此 [選擇方法](facets-type.md) 會指派給對應的產品屬性。 此 `single select` 「類型」(type)用於所有 [!DNL Commerce] 店面。 對於無頭式實作， `multi-select` 類型可以用邏輯運算子(`or` 或 `and`)，以判斷傳回的產品集。 |
 | 排序類型 | 此 [排序順序](facets-type.md) 小平面值。 Facet按字母順序排列 [!DNL Commerce] 店面。 針對 [無頭] 實作中，Facet可依字母順序或依計數排序。 選項：字母順序，計數（僅限無頭） |
 | 最大值 | 在店面中以篩選形式提供的小面值數目，最多10個。 |
 

@@ -2,10 +2,10 @@
 user-guide-title: '"[!DNL Live Search] 指南」'
 user-guide-description: 「本指南提供使用 [!DNL Live Search] 來自Adobe Commerce。」
 breadcrumb-title: '"[!DNL Live Search] 指南」'
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 2%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 2%
    - [入門概述](onboarding-overview.md)
    - [安裝 [!DNL Live Search]](install.md)
 - [!DNL Live Search] 店面 {#live-search-storefront}
+   - [產品清單頁面Widget](plp-styling.md)
    - [快速導覽](quick-tour.md)
    - [店面 [!DNL Popover]](storefront-popover.md)
    - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
@@ -41,6 +42,9 @@ ht-degree: 2%
       - [規則工作區](rules-workspace.md)
       - [新增規則](rules-add.md)
       - [管理規則](rules-manage.md)
+   - [商務組態設定](configuration.md)
    - [設定](settings.md)
    - [索引](indexing.md)
-- [意見反應](feedback.md)
+- GraphQL查詢 {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

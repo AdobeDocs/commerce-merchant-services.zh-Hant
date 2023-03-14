@@ -2,9 +2,9 @@
 title: "同義詞的類型"
 description: 「單向和雙向 [!DNL Live Search] 同義詞擴展了關鍵字的定義。」
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## 最佳實務
 
-請記得下列最佳實務，以便從即時搜尋的同義字中取得最多資訊。
+請記得下列最佳實務，以便充分運用 [!DNL Live Search] 同義詞。
 
 ### 避免「停止字詞」
 
-即時搜尋會從同義字中篩選出常見的英文「停止字詞」，例如：
+[!DNL Live Search] 從同義字中篩除常見的英文「停止字詞」，例如：
 
 a, a，和，是，a,a,a,a,a,a,a,a,a,a,b,b,,a,f,if,in,in,i，是，it,no,n,on,on，或者，這，這，它，它，它，它，是，wil,with
 

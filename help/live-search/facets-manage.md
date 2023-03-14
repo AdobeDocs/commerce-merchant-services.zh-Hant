@@ -2,9 +2,9 @@
 title: "管理Facet"
 description: 「了解如何管理現有 [!DNL Live Search] 刻面」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ ht-degree: 0%
    ![固定和動態Facet](assets/facets-pinned-unpinned.png)
 
 ## 移動固定面
+
+>[!NOTE]
+>
+>固定刻面的順序僅在無頭實施中受支援。 如果需要有序的刻面，請使用 [!DNL Live Search] PLP介面工具集。
 
 可將行移動到不同位置，以更改固定小平面的順序。 固定小平面具有 *移動* 圖示(![移動選擇器](assets/btn-move.png))。 與固定Facet不同，動態Facet無法移動。
 

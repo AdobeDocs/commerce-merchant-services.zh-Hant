@@ -2,23 +2,23 @@
 title: "Facet類型"
 description: '"[!DNL Live Search] Facet是動態的，並在相關時顯示在「篩選器」清單中。'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # 刻面類型
 
-全部 [!DNL Live Search] Facet是動態的，且會出現在Facet中 *篩選器* 僅在相關時列出。 可用Facet的清單會根據傳回的產品而變更。 下列特性會影響其呈現方式和行為：
+[!DNL Live Search] 會使用各種facet類型，且會顯示在 *篩選器* 僅在相關時列出。 可用Facet的清單會根據傳回的產品而變更。 下列特性會影響其呈現方式和行為：
 
 * 固定的刻面 — 最常使用的刻面可固定到清單的頂部。 其餘多面體列於 *排序類型* 在固定刻面之後排序。
-* 智慧型Facet — 可 [Adobe Sensei](https://www.adobe.com/sensei.html) 查找與產品集和查詢最相關的資訊。 計算會考慮整個目錄的屬性元資料，並在查詢時確定查詢的最相關面。
+* 動態Facet — 可 [Adobe Sensei](https://www.adobe.com/sensei.html) 查找與產品集和查詢最相關的資訊。 計算會考慮整個目錄的屬性元資料，並在查詢時確定查詢的最相關面。
 * 熱門面向 — 搜尋結果中最常出現的產品屬性。
 * 價格面 — 按價格範圍返回產品。 您可以在 [*設定*](settings.md) 標籤。
 
-查詢時， [!DNL Live Search] 會以智慧型和熱門面向群組產生搜尋結果。
+查詢時， [!DNL Live Search] 會以動態和常用刻面群組產生搜尋結果。
 
 ![Facet — 價格](assets/storefront-search-results-run-price.png)
 
@@ -27,18 +27,6 @@ ht-degree: 0%
 為 [!DNL Commerce] storefront由搜索適配器處理，該適配器將路由請求並在storefront中呈現結果。 全部 [!DNL Commerce] 無論指派給對應屬性的輸入類型為何，店面刻面都會以單選選項的字母順序排序。 店面中可用的刻面會根據目前主題呈現，並反映針對分層導覽的呈現方式所做的任何自訂。
 
 相反， [無頭](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) 實作由API處理，並支援其他選項。 無頭刻面可以按字母順序或按計數排序，並可以有單選或多選選項。
-
-### 選擇類型
-
-對於無頭實作，Facet可定義為 `single select` 或 `multi-select` 邏輯運算子，用於決定傳回的產品集。 例如， `green AND blue` 或 `green OR blue`.
-
-![Facet — 選擇類型](assets/facets-select-type.png)
-
-| 選擇類型 | 說明 |
-|--- |--- |
-| 單選 | 單選Facet提供多個選項，但可讓購物者僅選擇一個值。 |
-| 多選（或） | （僅限無頭）購物者可以選擇多個選項，而傳回的產品可以符合任何選取的值。 範例： `green OR blue` |
-| 多選（和） | （僅限無頭）購物者可以選擇多個選項，且傳回的產品必須符合所有選取的值。 範例： `green AND blue` |
 
 ### Facet標籤
 

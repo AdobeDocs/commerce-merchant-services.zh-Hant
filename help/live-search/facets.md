@@ -2,9 +2,9 @@
 title: "Facets"
 description: '"[!DNL Live Search] facet使用屬性值的多個維作為搜索標準。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Faceting是高效能篩選的方法，使用多個屬性值維度作為搜尋准
 
 面向的類別和產品屬性要求類似於用於分層導航的可篩選屬性。 每個屬性的店面屬性必須設定為 `filterable (with results)`.
 
-Live Search最多支援：
+[!DNL Live Search] 最多支援：
 
 * 100個屬性設定為Facet
 * 50個可排序屬性
@@ -29,7 +29,7 @@ Live Search最多支援：
 | 設定 | 說明 |
 |--- |--- |
 | [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 錨點 —  `Yes` |
-| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目錄輸入類型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目錄輸入類型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` （僅限介面工具集）, `Text swatch` （僅限widget） |
 | 屬性店面屬性 | 用於搜索結果分層導航 —  `Yes` |
 
 ## 預設屬性值

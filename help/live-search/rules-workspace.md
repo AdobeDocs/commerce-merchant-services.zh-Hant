@@ -2,9 +2,9 @@
 title: "規則工作區"
 description: 「學習如何 [!DNL Live Search] 規則工作區。」
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ ht-degree: 0%
 1. 在右上角，按一下 **顯示/隱藏** ![欄選取器](assets/btn-show-hide-columns.png) 欄。
 可見的欄在選項功能表中有藍色的勾號。 規則名稱是唯一無法隱藏的欄。
 
-   ![規則工作區](assets/rules-workspace-show-hide-columns.png)
-
 1. 在功能表中，執行下列任一操作：
 
    * 要顯示隱藏列，請按一下任何列名稱，但不帶複選標籤。
    * 要隱藏可見列，請按一下帶有複選標籤的任何列名。
 
-   ![規則工作區](assets/rules-workspace-all-columns.png)
-
 ## 依狀態篩選規則
 
 1. 如果您的商店有許多規則，您可以依狀態篩選規則以縮短清單。 依預設，規則清單會顯示所有規則。
-
-   ![規則 — 依狀態篩選](assets/rules-workspace-filter-status.png)
 
 1. 若要僅列出具有特定狀態設定的規則，請設定 **狀態** 至下列其中一項：
 
@@ -51,8 +45,6 @@ ht-degree: 0%
    * 作用中
    * 非作用中
    * 已排程
-
-   ![規則 — 依狀態篩選](assets/rules-workspace-filter-status-active.png)
 
 ## 依名稱搜尋規則
 

@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] 動態傳回建議的產品和縮圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 當 [!DNL Live Search] is [已安裝](install.md), [!DNL popover] 當購物者在 [搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 框。 在輸入每個字元後， [!DNL popover] 會以最上層搜尋結果的建議產品和縮圖影像更新。
 
 [!DNL Live Search] 傳回兩個或兩個以上字元的查詢結果。 若是部分比對，每個字詞的字元數上限為20。 「按鍵入搜索」查詢中的字元數不可配置。
-
->[!NOTE]
->
->此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *盧馬* 主題，或根據 *盧馬*. 此 *盧馬* 主題包含在 [!DNL Commerce] 範例資料。 此 [!DNL popover] 不支援 *空白* 主題。 請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多。
 
 ## 可搜尋屬性
 
@@ -42,3 +38,9 @@ ht-degree: 0%
 1. 展開 *目錄搜尋* 區段。
 1. 設定 **自動完成限制** 至您要在 [!DNL popover].
 1. 完成後，按一下 **儲存設定**.
+
+## 限制
+
+* 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *盧馬* 主題，或根據 *盧馬*.
+* 此 [!DNL popover] 不支援 *空白* 主題。 請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多。
+* 此 [!DNL popover] 「快速訂購」表單不支援。

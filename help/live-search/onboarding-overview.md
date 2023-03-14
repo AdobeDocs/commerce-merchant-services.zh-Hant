@@ -1,10 +1,10 @@
 ---
 title: 「入門概述」
-description: '"[!DNL Live Search] 入門流程、系統要求、界限和限制」'
+description: '"[!DNL Live Search] 入門流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -19,29 +19,36 @@ ht-degree: 0%
 
 ## 需求 {#requirements}
 
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.4+
-* PHP 8.1、8.2
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+* PHP 8.1 / 8.2
 * [!DNL Composer]
 
 ### 支援平台
 
-* Adobe Commerce on prem(EE):2.4.4+
+* Adobe Commerce內部部署(EE):2.4.4+
 * Adobe Commerce on Cloud(ECE):2.4.4+
 
 ## 邊界和閾值
 
-此時， [!DNL Live Search] search/category API有下列支援的限制和靜態界限：
+目前， [!DNL Live Search] search/category API有下列支援的限制和靜態界限：
 
 ### 索引
 
 * 每個商店檢視索引最多300個產品屬性。
 * 僅從Adobe Commerce資料庫中索引產品。
+* 產品必須位於預設共用目錄中。
 * CMS頁面未編列索引。
 
 ### 查詢
 
 * [!DNL Live Search] 無法存取類別樹的完整分類，這會導致部分分層導覽搜尋案例超出其範圍。
-* [!DNL Live Search] 使用唯一的GraphQL端點進行查詢，以支援智慧型facet和「隨您搜尋」等功能。 雖然類似 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)，則會有一些差異，而目前某些欄位可能不完全相容。
+* [!DNL Live Search] 使用唯一的GraphQL端點來進行查詢，以支援動態facet和「隨您類型搜尋」等功能。 雖然類似 [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)，則會有一些差異，而有些欄位可能不完全相容。
+
+若要使用目錄權限限制客戶群組：
+
+* 必須將產品指派給根類別。
+* 必須為「未登入」客戶群組授予「允許」瀏覽權限。
+* 若要將產品限制在「未登入」客戶群組，請前往每個類別，並設定每個客戶群組的權限。
 
 ### 規則
 
@@ -53,15 +60,21 @@ ht-degree: 0%
 
 * [!DNL Live Search] 每個商店檢視最多可管理200個同義字。
 
-### PWA測試版
+### PWA支援
 
-* 與原生Commerce店面的Live Search相比，目前Live Search測試版PWA實作傳回搜尋結果的處理時間更長。
-* 測試版PWA [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-* GraphQL不支援下列產品屬性，因為它用於 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+「即時搜尋」支援會視為測試版，因為並非所有PWA都已透過測試 [!DNL Live Search]. 搜尋和產品清單頁面等基本功能可在Venia中運作，但Graphql的某些設定可能無法正常運作。
+
+* 目前的測試版PWA實作 [!DNL Live Search] 傳回搜尋結果的處理時間比 [!DNL Live Search] 與原生商務店面。
+* [!DNL Live Search] PWA不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 直接篩選 `description`, `name`, `short_description` GraphQL不支援搭配使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但會以較一般的篩選器傳回。
 
 ### 目前不支援
 
 * 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組在 [!DNL Live Search] 已安裝，且店面頁尾中的「進階搜尋」連結會遭到移除。
-* [自訂價格群組](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
 * 使用的多個庫存位置 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) 或其他OMS擴充功能
 * 產品價格不包括 [增值稅](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) （增值稅）。
+* [層價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 即時搜尋彈出視窗和產品清單頁面Widget中不支援。
+
+## Cookie
+
+[!DNL Live Search] 將使用者互動資料收集為其基本功能的一部分，並使用cookie來儲存此資料。 收集任何使用者資訊時，使用者必須同意儲存Cookie。 [!DNL Live Search] 和 [!DNL Product Recommendations] 共用資料流，因此會使用相同的cookie機制。 請參閱 [處理Cookie限制](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
