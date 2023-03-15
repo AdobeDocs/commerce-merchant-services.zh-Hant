@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 發行說明'
 description: 請參閱發行說明，了解 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
+source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,8 @@ _2022年10月5日_
 _2023年2月24日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg)<!-- Issue BOLT-520 --> 正式發行 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現已預先安裝於Adobe Commerce Cloud 2.4.6及更新版本中。
 
 ![修正問題](../assets/fix.svg)<!-- Issue BOLT-592 --> 在 [管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 使用 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 作為付款方式。 此功能可讓客戶在結帳時以Braintree作為付款方式下單 [!DNL Quick Checkout] 啟用。
 
