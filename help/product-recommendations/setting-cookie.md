@@ -1,7 +1,8 @@
 ---
 title: 處理Cookie限制
 description: 了解產品建議如何處理Cookie限制。
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

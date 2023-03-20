@@ -2,7 +2,7 @@
 title: 無頭
 description: 了解如何整合 [!DNL Product Recommendations] 在無頭的店前。
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    要傳回的最低必要事件 [!DNL Product Recommendations] 結果：
 
-   | Event | 類別 |
+   | 事件 | 類別 |
    |--- | ---|
    | `view` | 產品 |
    | `add-to-cart` | 產品 |
@@ -37,12 +37,12 @@ ht-degree: 0%
 
    啟用 [量度報告](workspace.md)，則需要下列其他事件：
 
-   | Event | 類別 |
+   | 事件 | 類別 |
    |--- | ---|
    | `impression-render` | recommendation-unit |
    | `view` | recommendation-unit |
    | `rec-click` | recommendation-unit |
-   | `rec-add-to-cart-click` | recommendation-unit（如果建議範本中顯示「新增至購物車」按鈕） |
+   | `rec-add-to-cart-click` | recommendation-unit（如果建議範本中出現「新增至購物車」按鈕） |
 
 1. 觸發事件時，請使用 [Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 來處理事件並將其傳送至Adobe Sensei。
 

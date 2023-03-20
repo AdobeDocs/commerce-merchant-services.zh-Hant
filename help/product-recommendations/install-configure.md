@@ -2,9 +2,9 @@
 title: 安裝和配置
 description: 了解如何安裝、更新和解除安裝 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 在Product Recommendations 3.x.x版中，您只需要單一API金鑰。 在4.x.x版及更新版本中，您必須提供生產公開和私人API金鑰，以及沙箱公開和私人API金鑰。 如果您未提供兩組API金鑰，將無法存取「管理」中的「產品Recommendations」功能。 不過，資料收集會繼續在您的店面進行，而現有的建議會繼續顯示給您的購物者。
+> 在Product Recommendations 3.x.x版中，您只需要單一API金鑰。 在4.x.x版及更新版本中，您必須提供生產公開和私人API金鑰，以及沙箱公開和私人API金鑰。 如果您未提供兩組API金鑰，則無法存取「管理員」中的「產品Recommendations」功能。 不過，資料收集會繼續在您的店面進行，而現有的建議會繼續顯示給您的購物者。
 
 ## 解除安裝 [!DNL Product Recommendations] {#uninstall}
 

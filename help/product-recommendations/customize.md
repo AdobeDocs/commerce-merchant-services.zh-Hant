@@ -2,9 +2,9 @@
 title: 自訂
 description: 了解如何自訂您的產品建議。
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
    >
    >檔案名稱 `layout` 如果您的存放區使用協力廠商擴充功能，則目錄可能會不同。
 
-1. 現在來修改 `catalog_product_view.xml` 檔案，讓建議單位出現在產品詳細資料頁面上的產品影像之後。 在自定義此XML檔案之前，我們先查看該檔案，並了解需要修改的部分：
+1. 修改 `catalog_product_view.xml` 檔案，讓建議單位出現在產品詳細資料頁面上的產品影像之後。 自定義此XML檔案之前，請先查看該檔案，並了解需要修改的部分：
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 1. 現在來指定不同的內容區塊以修改此檔案。
 
-   您將更改引用塊 `name` 從 `main.content` to `product.info.media`.
+   更改引用塊 `name` 從 `main.content` to `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

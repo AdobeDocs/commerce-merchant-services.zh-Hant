@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新發行資訊 [!DNL Product Recommendations] 從Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,6 +26,21 @@ ht-degree: 0%
 
 ## 最新主要版本
 
+### 5.0.0 magento/product-recommendations
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 更新產品Recommendations以支援Adobe Commerce 2.4.6。
+![新增](../assets/new.svg) 這是主要版本。 [編輯](install-configure.md#update) 根 `composer.json` 檔案。
+
+#### 已知限制
+
+* 此 `websiteCode` 如果值包含底線(_)，則會錯誤地傳回值。
+
+### 舊版
+
++++4.0.1和之前版本
+
 ### 4.0.1 magento/product-recommendations
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
@@ -42,10 +57,6 @@ ht-degree: 0%
 #### 已知限制
 
 * 此 `websiteCode` 如果值包含底線(_)，則會錯誤地傳回值。
-
-### 舊版
-
-+++3.3.7和之前版本
 
 ### 3.3.7 magento/product-recommendations
 
