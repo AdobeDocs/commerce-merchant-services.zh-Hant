@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] 針對Adobe Commerce提供透過通用GraphQL端點整合多個資料來源的方式。'
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,11 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 
 執行此命令後，目錄服務應通過API網格運行。 您可以執行 `aio api-mesh:get` 命令查看更新網格的配置。
 
-## 使用API Mesh
+## API Mesh範例
 
 API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce例項。 它也可用來設定現有的商務資料以啟用新功能。
+
+### 啟用層價
 
 在此範例中，API Mesh可用來啟用Adobe Commerce中的層級價格。
 取代 `name `, `endpoint`，和 `x-api-key` 值。
@@ -126,7 +128,7 @@ API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce�
 
 配置後，請查詢Mesh以獲取分層定價：
 
-```json
+```graphql
 query {
   products(skus: ["24-MB04"]) {
     sku
@@ -149,6 +151,98 @@ query {
         }
       }
     }
+  }
+}
+```
+
+### 取得實體ID
+
+此網格會附加 `entityId` 到ProductView介面。 取代 `name `, `endpoint`，和 `x-api-key` 值。
+
+```json
+{
+    "meshConfig": {
+      "sources": [
+        {
+          "name": "<Commerce Instance Name>",
+          "handler": {
+            "graphql": {
+              "endpoint": "<Adobe Commerce GraphQL endpoint>"
+            }
+          },
+          "transforms": [
+              {
+                  "prefix": {
+                      "includeRootOperations": true,
+                        "value": "Core_"
+                  }
+              }
+          ]
+        },
+        {
+          "name": "CommerceCatalogServiceGraph",
+          "handler": {
+            "graphql": {
+              "endpoint": "https://catalog-service.adobe.io/graphql",
+              "operationHeaders": {
+                "Magento-Store-View-Code": "{context.headers['magento-store-view-code']}",
+                "Magento-Website-Code": "{context.headers['magento-website-code']}",
+                "Magento-Store-Code": "{context.headers['magento-store-code']}",
+                "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>",
+                "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
+              },
+              "schemaHeaders": {
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>"
+              }
+            }
+          }
+        }
+      ],
+      "additionalTypeDefs": "extend interface ProductView {\n  entityId: String\n}\n extend type SimpleProductView {\n  entityId: String\n}\n extend type ComplexProductView {\n  entityId: String\n}\n",
+      "additionalResolvers": [
+        {  
+            "targetTypeName": "ComplexProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n    items {\n  sku\n uid\n  }\n    }",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          },
+          {
+            "targetTypeName": "SimpleProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n items {\n  sku\n uid\n }}",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          }
+      ]
+    }
+  }
+```
+
+`entityId` 現在可以查詢：
+
+```graphql
+query {
+  products(skus: ["MH07"]){
+    sku
+    name
+    id
+    entityId
   }
 }
 ```

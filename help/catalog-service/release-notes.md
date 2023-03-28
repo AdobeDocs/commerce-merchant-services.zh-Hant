@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,32 @@ ht-degree: 0%
 ![修正](../assets/fix.svg) 修正和改良
 ![錯誤](../assets/bug.svg) 已知問題
 
-## 目前主要版本
+## 最新主要版本
+
+### 第1.6版
+
+_2023年3月28日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 新增色票至 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查詢。
+![新增](../assets/new.svg) 新增取得 `entityId` 使用 [API Mesh](mesh.md).
+
+#### 已知限制
+
+尚不支援下列功能：
+
+* 以固定價格捆綁產品
+* 從目錄中刪除變體時，不會收到任何更新。
+* 動態屬性有效負載的最大大小為9 MB。
+* 組產品價格。 可使用簡單的產品價格計算。
+* 在影像陣列中，只有第一個影像包含角色。
+
+使用API Mesh和核心GraphQL API可解決下列限制：
+
+* 最低廣告價格
+* [分層定價](mesh.md)
+* 可下載的產品和禮品卡
 
 ### 第1.5版
 
@@ -27,24 +52,6 @@ _2023年3月6日_
 
 ![新增](../assets/new.svg) 新增 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
 ![修正](../assets/fix.svg) 改善效能和API可擴充性。
-
-#### 已知限制
-
-尚不支援下列功能：
-
-* 以固定價格捆綁產品
-* 從目錄中刪除變體時，不會收到任何更新。
-* 動態屬性有效負載的最大大小為9MB。
-* 組產品價格。 可使用簡單的產品價格計算。
-* 在影像陣列中，只有第一個影像包含角色。
-* 色票
-* 透過產品URL載入產品詳細資料頁面。
-
-使用核心GraphQL API可解決下列限制：
-
-* 最低廣告價格
-* 分層定價
-* 可下載的產品和禮品卡
 
 ### 第1.4版
 
@@ -73,7 +80,7 @@ _2022年11月18日_
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 目錄服務現在支援Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![修正](../assets/fix.svg) 我們已改善API的可擴充性和整體效能。
+![修正](../assets/fix.svg) 改善API可擴充性和整體效能。
 
 ### 1.0版
 
