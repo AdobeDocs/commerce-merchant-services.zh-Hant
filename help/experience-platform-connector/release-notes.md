@@ -2,9 +2,9 @@
 title: 發行說明
 description: 來自Adobe Commerce的Adobe Experience Platform連接器最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 請參閱 [即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) 了解發行計畫和支援。
 
-請參閱 [可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) 了解產品相容性。
+請參閱開發人員檔案，以 [了解產品相容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 支援的服務更新
 
@@ -29,12 +29,24 @@ ht-degree: 1%
 
 +++支援的服務更新
 
+_2023年3月30日_
+
+* ![新增](../assets/new.svg)  — 新增新的擴充功能，稱為 `data-services-b2b` 包括 [申請清單事件](events.md#b2b-events) 針對B2B商戶
+* ![新增](../assets/new.svg)  — 新增 `uniqueIdentifier` 欄位至 [搜尋](events.md#search-events) 事件。 此新欄位可讓商家交叉參考哪些搜尋請求與哪些搜尋回應相對應。
+
 _2022年10月12日_
 
 * ![新增](../assets/new.svg)  — 新增兩個 [storefront事件](events.md): `openCart` 和 `removeFromCart` 至Adobe Commerce Storefront事件SDK和收集器
 * ![新增](../assets/new.svg)  — 新增對 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_2023年3月30日_
+
+* ![新增](../assets/new.svg)  — 捆綁 `commerce-data-export` 和 `saas-export` 相依性 `experience-platform-connector` 擴充功能。 之前，您必須個別安裝這些相依性。 這些相依性以及商戶配置可讓伺服器端處理 [後台事件](events.md#back-office-events).
+* ![新增](../assets/new.svg)  — 新增名為 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _2023年2月28日_
 
 _2023年1月17日_
 
-* ![新增](../assets/new.svg)  — 更新 [Experience Platform連接器管理員](connect-data.md) 以便您能指定自己的AEP Web SDK(alloy)。 此外，新增可讓已註冊後台測試版計畫的商家傳送 [後台事件資料](connect-data.md#data-collection) 到邊緣。 這些事件包含 [訂單狀態資訊](events.md#beta-order-status-events) 訂單，例如訂單被下放、取消、退貨或發運。 如果您想參加後台測試計畫，請聯繫 [drios@adobe.com](mailto:drios@adobe.com).
+* ![新增](../assets/new.svg)  — 更新 [Experience Platform連接器管理員](connect-data.md) 以便您能指定自己的AEP Web SDK(alloy)。 此外，新增可讓已註冊後台測試版計畫的商家傳送 [後台事件資料](connect-data.md#data-collection) 到邊緣。 這些事件包含 [訂單狀態資訊](events.md#beta-order-status-events) 訂單，例如訂單被下放、取消、退貨或發運。
 * ![修正](../assets/fix.svg) 變更為使用 `identityMap` 而非 `personID` 設定推送至邊緣之任何資料的主要身分時。
 
 ## 2.0.1
