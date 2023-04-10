@@ -2,9 +2,9 @@
 title: 新增欄位群組至XDM結構
 description: 了解如何將Adobe Commerce專用欄位群組新增至XDM結構。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
    - 參考索引鍵
    - 個人聯繫人詳細資訊
    - 商務詳細資訊
-   - Adobe Analytics體驗事件商務(如果您想要將資料傳送至Adobe Analytics)
+   - Adobe Analytics ExperienceEvent商務(如果您想要將資料傳送至Adobe Analytics)
    - 身分對應
 
    >[!NOTE]
