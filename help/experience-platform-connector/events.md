@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每個事件擷取的資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `searchRequest` | 指出是否已傳送搜尋請求 |
-| `uniqueIdentifier` | 此特定搜尋請求的唯一ID |
+| `id` | 此特定搜尋請求的唯一ID |
 | `filter` | 指示是否應用了任何篩選器來限制搜索結果 |
 | `attribute` （篩選） | 用於確定是否將項目包括在搜索結果中的項目的面向 |
 | `value` | 用於確定搜索結果中包括哪些項的屬性值 |
@@ -365,7 +365,7 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | `searchResponse` | 指示是否已接收到搜索響應 |
-| `uniqueIdentifier` | 此特定搜尋回應的唯一ID |
+| `id` | 此特定搜尋回應的唯一ID |
 | `suggestions` | 字串的陣列，包含目錄中存在且與搜尋查詢類似的產品和類別名稱 |
 | `numberOfResults` | 傳回的產品數 |
 | `productListItems` | 購物車中的一系列產品。 |
@@ -391,8 +391,10 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionListOpens` | 值 `1` 表示已開啟申請清單 |
-| `requisitionList` | 包含唯一 `ID` , `name`，和 `description` 申請清單 |
+| `requisitionList` | 客戶建立的申請清單的屬性 |
+| `ID` | 申請清單的唯一標識符 |
+| `name` | 客戶指定的申請清單的名稱 |
+| `description` | 客戶指定的申請清單的說明 |
 
 ### addToRequistionList
 
@@ -410,8 +412,10 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionListAdds` | 值 `1` 表示產品已添加到申請清單中 |
-| `requisitionList` | 包含唯一 `ID`,  `name`，和 `description` 申請清單 |
+| `requisitionList` | 客戶建立的申請清單的屬性 |
+| `ID` | 申請清單的唯一標識符 |
+| `name` | 客戶指定的申請清單的名稱 |
+| `description` | 客戶指定的申請清單的說明 |
 | `productListItems` | 已新增至申請清單的產品陣列 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
@@ -419,6 +423,7 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 | `priceTotal` | 產品行項目的總價 |
 | `discountAmount` | 指示應用的折扣金額 |
 | `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款項的幣種代碼 |
+| `selectedOptions` | 用於可配置產品的欄位。 `attribute` 標識可配置產品的屬性，例如 `size` 或 `color` 和 `value` 識別屬性的值，例如 `small` 或 `black`. |
 
 ### removeFromRequistionList
 
@@ -432,8 +437,10 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionListRemovals` | 值 `1` 表示產品已從申請清單中刪除 |
-| `requisitionList` | 包含唯一 `ID`和 `description` 申請清單 |
+| `requisitionList` | 客戶建立的申請清單的屬性 |
+| `ID` | 申請清單的唯一標識符 |
+| `name` | 客戶指定的申請清單的名稱 |
+| `description` | 客戶指定的申請清單的說明 |
 | `productListItems` | 已新增至申請清單的產品陣列 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
