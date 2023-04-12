@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每個事件擷取的資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
+source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4592'
 ht-degree: 0%
 
 ---
@@ -471,8 +471,8 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 | 欄位 | 說明 |
 |---|---|
 | `address` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
-| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | 順序中的產品陣列 |
+| `id` | 此產品條目的行項目標識符。 產品本身是透過 `product` 欄位。 |
 | `name` | 產品的顯示名稱或人類看得懂的名稱 |
 | `SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `quantity` | 購物車中的產品件數 |
@@ -480,6 +480,8 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 | `discountAmount` | 指示應用的折扣金額 |
 | `order` | 包含訂單的相關資訊 |
 | `purchaseID` | 賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的 |
+| `priceTotal` | 在應用所有折扣和稅後，此訂單的總價 |
+| `currencyCode` | 用於訂單總計的ISO 4217貨幣代碼 |
 | `purchaseOrderNumber` | 由購買者為此購買或合同分配的唯一標識符 |
 | `payments` | 此訂單的付款清單 |
 | `paymentType` | 此訂單的付款方式。 枚舉，允許自定義值。 |
@@ -489,9 +491,14 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 | `createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00` |
 | `shipping` | 一個或多個產品的發運詳細資訊 |
 | `shippingMethod` | 由客戶選擇的運送方法，例如標準運送、快速運送、店內取貨等 |
-| `shippingAddress` | 實際運送地址 |
-| `street1` | 主要街道級別資訊、公寓編號、街道編號和街道名稱 |
 | `shippingAmount` | 客戶需要支付的運費。 |
+| `address` | 實際運送地址 |
+| `street1` | 主要街道級別資訊、公寓編號、街道編號和街道名稱 |
+| `street2` | 街道級別資訊的其他欄位 |
+| `city` | 城市名稱 |
+| `state` | 州名。 這是自由格式欄位。 |
+| `postalCode` | 位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。 |
+| `country` | 政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。 |
 | `billingAddress` | 帳單郵遞區號 |
 | `street1` | 主要街道級別資訊、公寓編號、街道編號和街道名稱 |
 | `street2` | 街道級別資訊的其他欄位 |
@@ -499,6 +506,8 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 | `state` | 州名。 這是自由格式欄位。 |
 | `postalCode` | 位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。 |
 | `country` | 政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。 |
+| `personalEmail` | 個人電子郵件地址 |
+| `address` | 技術地址，例如，RFC2822和後續標準中通常定義的&#39;name@domain.com&#39; |
 
 ### orderItemsShipped
 
@@ -509,7 +518,7 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 #### 從orderItemsShipped收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|按順序排列的產品陣列| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 枚舉，允許自定義值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款項的貨幣代碼| |`paymentAmount`|付款的價值| |`trackingNumber`|發運承運人為訂單物料發運提供的跟蹤編號| |`trackingURL`|跟蹤訂單物料發運狀態的URL| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一個或多個產品的發運詳細資訊| |`shippingMethod`|客戶選擇的發運方法，如標準交貨、快速交貨、在商店取貨等| |`shippingAddress`|實際運送地址| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`shippingAmount`|客戶需要支付的運費。| |`billingAddress`|帳單郵遞區號| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，這是自由格式欄位，可以使用任何語言提供國家/地區名稱。|
+|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`productListItems`|按順序排列的產品陣列| |`id`|此產品條目的行項目標識符。 產品本身是透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`priceTotal`|已應用所有折扣和稅後此訂單的總價| |`currencyCode`|用於訂單總計的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 枚舉，允許自定義值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款項的貨幣代碼| |`paymentAmount`|付款的價值| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一個或多個產品的發運詳細資訊| |`shippingMethod`|客戶選擇的發運方法，如標準交貨、快速交貨、在商店取貨等| |`trackingNumber`|發運承運人為訂單物料發運提供的跟蹤編號| |`trackingURL`|跟蹤訂單物料發運狀態的URL| |`shipDate`|從訂單中發運一個或多個物料的日期| |`address`|實際運送地址| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。| |`shippingAmount`|客戶需要支付的運費。| |`billingAddress`|帳單郵遞區號| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術地址，例如，RFC2822和後續標準中通常定義的「name@domain.com」|
 
 ### orderCancelled
 
@@ -520,7 +529,7 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 #### 從orderCancelled收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|按順序排列的產品陣列| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間|
+|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`productListItems`|按順序排列的產品陣列| |`id`|此產品條目的行項目標識符。 產品本身是透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術地址，例如，RFC2822和後續標準中通常定義的「name@domain.com」|
 
 ### creditMemoIssued
 
@@ -531,7 +540,7 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 #### 從creditMemoIssued收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|按順序排列的產品陣列| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間|
+|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`productListItems`|按順序排列的產品陣列| |`id`|此產品條目的行項目標識符。 產品本身是透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術地址，例如，RFC2822和後續標準中通常定義的「name@domain.com」|
 
 ### orderShipmentCompleted
 
@@ -542,4 +551,4 @@ B2B事件包含 [申請表](https://experienceleague.adobe.com/docs/commerce-adm
 #### 從orderShimptingCompleted收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|按順序排列的產品陣列| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`taxAmount`|購買者作為最終付款的一部分支付的稅額。| |`createdDate`|在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 枚舉，允許自定義值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款項的貨幣代碼| |`paymentAmount`|付款的價值| |`shipping`|一個或多個產品的發運詳細資訊| |`shippingMethod`|客戶選擇的發運方法，如標準交貨、快速交貨、在商店取貨等| |`shippingAddress`|實際運送地址| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`shippingAmount`|客戶需要支付的運費。| |`personalEmail`|指定個人電子郵件地址| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`billingAddress`|帳單郵遞區號| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，此資料僅包含郵遞區號的一部分。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，這是自由格式欄位，可以使用任何語言提供國家/地區名稱。|
+|欄位|說明| |—|—| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`productListItems`|按順序排列的產品陣列| |`id`|此產品條目的行項目標識符。 產品本身是透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品行項目的總價| |`discountAmount`|指示應用的折扣金額| |`order`|包含有關訂單的資訊| |`purchaseID`|賣方為此採購或合同分配的唯一標識符。 無法保證ID是唯一的| |`priceTotal`|已應用所有折扣和稅後此訂單的總價| |`currencyCode`|用於訂單總計的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合同分配的唯一標識符| |`taxAmount`|購買者作為最終付款的一部分支付的稅額。| |`createdDate`|在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 枚舉，允許自定義值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款項的貨幣代碼| |`paymentAmount`|付款的價值| |`shipping`|一個或多個產品的發運詳細資訊| |`shippingMethod`|客戶選擇的發運方法，如標準交貨、快速交貨、在商店取貨等| |`address`|實際運送地址| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，這只會包含部分郵遞區號。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。| |`shippingAmount`|客戶需要支付的運費。| |`address`|例如， `name@domain.com` 如RFC2822和後續標準中通常定義| |`billingAddress`|帳單郵遞區號| |`street1`|主要街道級別資訊、公寓號、街號和街道名稱| |`street2`|街道資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 這是自由格式欄位。| |`postalCode`|位置的郵遞區號。 郵遞區號不適用於所有國家/地區。 在某些國家/地區，此資料僅包含郵遞區號的一部分。| |`country`|政府管理領土的名稱。 除 `xdm:countryCode`，此為自由格式欄位，可以使用任何語言提供國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術地址，例如，RFC2822和後續標準中通常定義的「name@domain.com」|
