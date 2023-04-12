@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ ht-degree: 0%
 
 ## 最新主要版本
 
-### 第1.6版
+### 第1.7版
 
-_2023年3月28日_
+_2023年4月12日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新增](../assets/new.svg) 新增色票至 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查詢。
-![新增](../assets/new.svg) 新增取得 `entityId` 使用 [API Mesh](mesh.md).
+![新增](../assets/new.svg) 目錄服務現在會清除已刪除的產品變體。
+![修正](../assets/fix.svg) 基礎架構可擴充性和效能改善。
 
 #### 已知限制
 
 尚不支援下列功能：
 
 * 以固定價格捆綁產品
-* 從目錄中刪除變體時，不會收到任何更新。
 * 動態屬性有效負載的最大大小為9 MB。
 * 組產品價格。 可使用簡單的產品價格計算。
 * 在影像陣列中，只有第一個影像包含角色。
@@ -43,6 +42,15 @@ _2023年3月28日_
 * 最低廣告價格
 * [分層定價](mesh.md)
 * 可下載的產品和禮品卡
+
+### 第1.6版
+
+_2023年3月28日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 新增色票至 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查詢。
+![新增](../assets/new.svg) 新增取得 `entityId` 使用 [API Mesh](mesh.md).
 
 ### 第1.5版
 
