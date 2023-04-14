@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 發行說明'
 description: 「查看發行說明，了解 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。」
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
+source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '194'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,15 @@ ht-degree: 0%
 ![新增](../assets/new.svg) 新功能
 ![修正問題](../assets/fix.svg) 修正和改良
 ![已知問題](../assets/bug.svg) 已知問題
+
+## v1.4.0
+
+*2023年4月13日*
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/fix.svg) [!DNL Store Fulfillment] 現在 [相容 [!DNL Adobe Commerce] 2.4.0 - 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
 
 ## v1.3.0
 
