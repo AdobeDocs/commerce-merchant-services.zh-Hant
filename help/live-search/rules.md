@@ -2,9 +2,9 @@
 title: "規則"
 description: '"[!DNL Live Search] 規則會結合邏輯與動作，以塑造購物體驗。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ ht-degree: 0%
 ## 類別規則和類別產品分配
 
 [!DNL Live Search] 可讓您依類別篩選。
-不過，在Adobe Commerce中，您可以使用 [類別產品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此類類別在運行時建立，不存在於類別資料庫中。 因此，L[!DNL Live Search] 無法讀取或使用此類別類型。
+不過，在Adobe Commerce中，您可以使用 [類別產品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此類類別在運行時建立，不存在於類別資料庫中。 因此， [!DNL Live Search] 無法讀取或使用此類別類型。
