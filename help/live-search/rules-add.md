@@ -2,9 +2,9 @@
 title: "添加規則"
 description: 「了解如何建立 [!DNL Live Search] 規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ ht-degree: 0%
    ![規則 — 符合](assets/rule-event-pin-product.png)
 
 您也可以按一下釘圖示，將產品釘到其目前位置。 使用刪節號上下文菜單「釘到頂部」或「釘到底部」。
+
+>[!NOTE]
+>
+>您只能釘選查詢中傳回的產品。
 
 或者，您可以手動設定事件：
 
