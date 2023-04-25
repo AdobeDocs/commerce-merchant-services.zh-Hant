@@ -2,9 +2,9 @@
 title: 目錄同步
 description: 了解如何從 [!DNL Commerce] 伺服器 [!DNL Commerce Services] 不斷更新服務。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯為表�
 1. 在 _重新同步資料_ ，按一下 [!UICONTROL Resync].
 
    [!DNL Commerce] 在下次排程的同步視窗中同步目錄。 根據目錄的大小，此操作可能需要很長時間。
+
 
 ## 同步的目錄產品
 
@@ -132,6 +133,14 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `productoverrides` — 特定於客戶的定價和目錄可見性規則，例如基於類別權限的規則
 
 從命令列觸發資料重新同步時，最多可能需要一小時的時間才能更新資料。
+
+如果您使用 [SaaS價格索引](../price-index/index.md) 需要重新同步，請運行以下命令：
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### 範例
 

@@ -2,9 +2,9 @@
 title: 「入門概述」
 description: '"[!DNL Live Search] 入門流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 0%
 ### 同義字
 
 * [!DNL Live Search] 每個商店檢視最多可管理200個同義字。
+
+## 價格索引器
+
+Live Search客戶可以使用 [SaaS價格索引器](../price-index/index.md)，提供更快的價格更新和同步時間。
 
 ### PWA支援
 

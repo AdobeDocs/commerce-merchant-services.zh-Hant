@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 發行說明'
 description: 的最新發行資訊 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![錯誤](../assets/bug.svg) 已知問題
 
 ## 最新主要版本
+
+_2023年4月25日_
+
+![新增](../assets/new.svg) 目錄服務客戶現在可以利用 [SaaS價格索引器](../price-index/index.md).
 
 ### 第1.7版
 

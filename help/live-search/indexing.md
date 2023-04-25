@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 索引」'
 description: 「了解如何 [!DNL Live Search] 索引產品屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 
 此 [!DNL Live Search] API可讓用戶端依任何具有 [storefront屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 設為 `Yes` (在Adobe Commerce管理員中)。 啟用後， `Search Weight` 和 `Visible in Advanced Search` 可為屬性設定。
 
+[!DNL Live Search] 不會將已刪除的產品或設為 `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] 不會將已刪除的產品或設為 `Not Visible Individually`.
+> 商務客戶 [!DNL Live Search] 可以利用更快的價格更新，以及使用 [SaaS價格索引器](../price-index/index.md).
 
 ## 索引管線
 

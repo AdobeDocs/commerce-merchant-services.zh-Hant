@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] 發行說明'
 description: 「 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
+source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 ![新增](../assets/new.svg) 新功能
 ![修正](../assets/fix.svg) 修正和改良
 ![錯誤](../assets/bug.svg) 已知問題
+
+
+_2023年4月25日_
+
+![新增](../assets/new.svg) Live Search客戶現在可以利用 [SaaS價格索引器](../price-index/index.md).
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -54,8 +59,8 @@ _2023年3月14日_
 * 其他微幅錯誤修正和效能更新
 
 
-* ![錯誤](../assets/bug.svg)  — 僅Live Search Widget支援依「建議您」排名。 預設LUMA和PWA搜尋功能不支援此功能。
-* ![錯誤](../assets/bug.svg)  — 自訂價格屬性Facet無法在LUMA中正確呈現，但API會對這些Facet進行適當篩選。
+* ![錯誤](../assets/bug.svg)  — 僅Live Search Widget支援依「建議您」排名。 預設Luma和PWA搜尋功能不支援此功能。
+* ![錯誤](../assets/bug.svg)  — 自訂價格屬性Facet在Luma中無法正確呈現，但API會對這些Facet正確篩選。
 
 商戶必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.1以存取這些功能。
 
