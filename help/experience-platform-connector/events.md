@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每個事件擷取的資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `eventType` | 此時間系列記錄的主要事件類型，例如： `userAccount.login` |
 | `person` | 個別演員、聯絡人或擁有者 |
 | `accountID` | 擷取使用者帳戶ID |
-| `personalEmailID` | 指定個人電子郵件的唯一標識符 |
+| `accountType` | 擷取使用者帳戶類型，例如 `Personal` 或 `Company`（若適用） |
+| `personalEmailID` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
+| `personalEmail` | 捕獲聯繫人詳細資訊 — 電子郵件和關聯資訊 |
 | `address` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
 | `userAccount` | 指出任何忠誠度詳細資訊、偏好設定、登入程式和其他帳戶偏好設定 |
 | `login` | 指出訪客是否嘗試登入 |
@@ -260,7 +261,6 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `eventType` | 此時間系列記錄的主要事件類型，例如： `userAccount.logout` |
 | `userAccount` | 指出任何忠誠度詳細資訊、偏好設定、登入程式和其他帳戶偏好設定 |
 | `logout` | 指出訪客是否嘗試登出 |
 
@@ -280,11 +280,11 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `eventType` | 此時間系列記錄的主要事件類型，例如： `account.createProfile` |
 | `person` | 個別演員、聯絡人或擁有者 |
 | `accountID` | 擷取使用者帳戶ID |
 | `accountType` | 擷取使用者帳戶類型，例如 `Personal` 或 `Company`（若適用） |
-| `personalEmailID` | 指定個人電子郵件的唯一標識符 |
+| `personalEmailID` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
+| `personalEmail` | 捕獲聯繫人詳細資訊 — 電子郵件和關聯資訊 |
 | `address` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
 | `userAccount` | 指出任何忠誠度詳細資訊、偏好設定、登入程式和其他帳戶偏好設定 |
 | `createProfile` | 指出使用者是否已建立帳戶設定檔 |
@@ -305,12 +305,11 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `eventType` | 此時間系列記錄的主要事件類型，例如： `account.updateProfile` |
 | `person` | 個別演員、聯絡人或擁有者 |
 | `accountID` | 擷取使用者帳戶ID |
 | `accountType` | 擷取使用者帳戶類型，例如 `Personal` 或 `Company`（若適用） |
-| `personalEmailID` | 指定個人電子郵件的唯一標識符 |
-| `personalEmail` | 指定個人電子郵件地址 |
+| `personalEmailID` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
+| `personalEmail` | 捕獲聯繫人詳細資訊 — 電子郵件和關聯資訊 |
 | `address` | 例如， `name@domain.com` RFC2822和後續標準中通常定義的 |
 | `userAccount` | 指出任何忠誠度詳細資訊、偏好設定、登入程式和其他帳戶偏好設定 |
 | `updateProfile` | 指出使用者是否已更新其帳戶設定檔 |
