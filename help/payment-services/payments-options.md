@@ -2,9 +2,9 @@
 title: 付款選項
 description: 設定付款選項以自訂商店客戶可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 0%
 啟用 [信用卡保險](#vaulting) 讓購物者儲存（儲存）其信用卡資訊，以便稍後快速結帳。
 
 您可以設定 [!UICONTROL Credit Card Fields] 在儲存配置或支付服務首頁中。 請參閱 [設定](settings.md#credit-card-fields) 以取得更多資訊。
+
+您也可以變更信用卡欄位的版面、寬度、高度和外部樣式。 請參閱 [PayPal檔案](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 以取得更多資訊。
 
 ## [!DNL PayPal Smart Buttons]
 

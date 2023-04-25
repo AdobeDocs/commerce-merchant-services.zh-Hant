@@ -4,7 +4,7 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在家裡。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%
@@ -254,4 +254,3 @@ ht-degree: 0%
 請參閱 [站點、儲存和查看範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 以取得網站、商店和商店檢視階層的詳細資訊。
 
 您的銷售代表可以建立新 [範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 的商家帳戶，並將附加網站上的PayPal上顯示，這樣您設定為顯示的任何PayPal按鈕都會顯示在您的網站上。 請連絡您的銷售代表，以取得在您的網站上使用多個PayPal帳戶的協助。
-
