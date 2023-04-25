@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 檔案
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 # Adobe Commerce服務指南
 
 Adobe提供商務、整合和資料服務的集合，以協助商戶支援其業務的關鍵元件。
+
+>[!BEGINSHADEBOX &quot;發行資訊&quot;]
+
+請參閱 [檔案的新增功能](whats-new.md) 或 [發行說明](release-notes-all.md) 對每個商務服務。
+>[!ENDSHADEBOX]
+
+## 商務服務
 
 <table>
 <tr>
@@ -76,6 +83,34 @@ Adobe提供商務、整合和資料服務的集合，以協助商戶支援其業
    </tr>
 </table>
 
-## 連接到服務
+## 資料服務
 
-此 [商務服務連接器](saas.md) 使用API金鑰和私密金鑰，提供Adobe Commerce或Magento Open Source例項的整合。 若為資料服務(僅限Adobe Commerce)，您也可以在設定中指定資料空間。
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>運用Adobe Commerce與Adobe Experience Platform邊緣之間的連線，將商務資料用於其他Adobe Experience Cloud產品，例如Adobe Analytics和Adobe Target。</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>Commerce Services Connector使用API金鑰和私密金鑰，提供Adobe Commerce或Magento Open Source例項的整合。 若為資料服務(僅限Adobe Commerce)，您也可以在設定中指定資料空間。</div>
+  </td>
+   </tr>
+</table>
+
+## 整合服務
+
+<table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+    <div>目錄同步會將產品資料從商務伺服器匯出至商務服務，讓服務保持最新。 由事件（如產品價格或庫存水準的更改）觸發的索引器，可編譯目錄資料。 您可以透過*目錄同步*控制面板或命令列介面來觀察和管理此程式。</div>
+  </td>
+</tr>
+</table>
