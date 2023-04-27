@@ -4,16 +4,16 @@ description: 使用SaaS價格索引來提高效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # SaaS價格索引
 
-SaaS價格索引加快了客戶提交價格更改後反映在其網站上所花費的時間。 此可選模組允許具有大型、複雜目錄或具有多個網站或客戶組的商戶更快、更持續地處理價格變化。
+SaaS價格索引加快了價格更改在提交後反映在SaaS客戶網站上所花的時間。 此可選模組允許具有大型、複雜目錄或具有多個網站或客戶組的商戶更快、更持續地處理價格變化。
 
 管道的最大瓶頸是：已將大量計算程式（例如索引和價格計算）從PHP核心移至Adobe的雲基礎架構。 這可讓商戶快速擴大資源，以提高價格指數化時間，並以更快的速度反映這些對網站的更改。
 
@@ -47,8 +47,8 @@ SaaS價格索引使用一組模組來提供功能。 所需模組的清單可能
 這些模組會將新摘要新增至管理員。 這些饋送將價格計算所需的資料傳輸到SaaS索引器，並忽略PHP核心價格索引器。
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
