@@ -2,9 +2,9 @@
 title: 簡介 [!DNL Live Search]
 description: '"[!DNL Live Search] 來自Adobe Commerce，提供超快、超相關且直覺的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
+source-git-commit: 5319c1474346ed3eb3cd2cf097813b00d8f56503
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 觀看此影片以了解 [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+如需如何使用和設定即時搜尋的更深入影片，請參閱 [關於 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) 主題。
