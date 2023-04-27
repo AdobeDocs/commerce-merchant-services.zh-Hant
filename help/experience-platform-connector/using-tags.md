@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform標籤收集商務資料
 description: 了解如何使用Adobe Experience Platform標籤收集商務資料。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ _Experience Platform連接器資料流與標籤_
 - **類型**: `commerce.order`
 - **XDM資料**: `%place order%`
 
-## 設定身分
+## 在店面事件中設定身分
 
-Experience Platform連接器描述檔會根據 `identityMap` 和 `personalEmail` XDM體驗事件中的身分欄位。 
+店面事件包含的設定檔資訊是根據 `personalEmail` （適用於帳戶事件）和 `identityMap` （適用於所有其他店面事件）欄位。 Experience Platform連接器會結合併根據這兩個欄位產生描述檔。 不過，每個欄位有不同的步驟可依循以建立設定檔：
 
-如果您先前的設定需仰賴不同欄位，則可繼續使用這些欄位。 要設定Experience Platform連接器配置檔案標識欄位，必須設定以下欄位：
+>[!NOTE]
+>
+>如果您先前的設定需仰賴不同欄位，則可繼續使用這些欄位。
 
-- `personalEmail`  — 僅帳戶事件 — 請遵循上述步驟， [帳戶事件](#createaccount)
-- `identityMap`  — 所有其他事件。 請參閱下列範例。
+- `personalEmail`  — 僅適用於帳戶事件。 請遵循概述的步驟、規則和動作 [abos](#createaccount)
+- `identityMap`  — 套用至所有其他店面事件。 請參閱下列範例。
 
 ### 範例
 
@@ -1337,7 +1339,7 @@ Experience Platform連接器描述檔會根據 `identityMap` 和 `personalEmail`
    ![使用自訂程式碼設定資料元素](assets/set-custom-code-ecid.png)
    _使用自訂程式碼設定資料元素_
 
-1. 新增ECID自訂程式碼：
+1. 選擇 [!UICONTROL Open Editor] 並新增下列自訂程式碼：
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Experience Platform連接器描述檔會根據 `identityMap` 和 `personalEmail`
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Experience Platform連接器描述檔會根據 `identityMap` 和 `personalEmail`
 
    ![擷取ECID](assets/rule-retrieve-ecid.png)
    _擷取ECID_
+
+## 在後台事件中設定標識
+
+與使用ECID來識別和連結設定檔資訊的店面事件不同，後台事件資料是以SaaS為基礎，因此沒有ECID可用。 對於後台活動，您需要使用電子郵件來唯一識別購物者。 在本節中，您將學習如何使用電子郵件將後台事件資料連結至ECID。
+
+1. 建立身分對應元素。
+
+   ![後台身份映射](assets/custom-code-backoffice.png)
+   _建立後台標識映射_
+
+1. 選擇 [!UICONTROL Open Editor] 並新增下列自訂程式碼：
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. 將此新元素新增至每個 `identityMap` 欄位。
+
+   ![更新每個identityMap](assets/add-element-back-office.png)
+   _更新每個identityMap_
 
 ## 設定同意
 
