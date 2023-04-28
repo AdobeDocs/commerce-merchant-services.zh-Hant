@@ -1,9 +1,9 @@
 ---
-user-guide-title: '[!DNL Payment Services] 指南'
-user-guide-description: 本指南提供安裝和設定的詳細資訊 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 儲存。
-breadcrumb-title: '[!DNL Payment Services] 指南'
+user-guide-title: '"[!DNL Payment Services] 指南」'
+user-guide-description: 「本指南提供安裝和設定的詳細資訊 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 儲存。」
+breadcrumb-title: '"[!DNL Payment Services] 指南」'
 index: true
-source-git-commit: 28bf1a8e9758acbe3415fd270476ad8cc4dcbf17
+source-git-commit: 6976c357ad268d7383306a1ffb407d128b951b30
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
