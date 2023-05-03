@@ -2,9 +2,9 @@
 title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
 description: 了解 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **設定**.
 1. 在左側面板中，展開 **銷售** 選取 **結帳**.
 
-   ![快速結帳](assets/configuration-view.png)
+   ![快速結帳](assets/config-new-logo-view.png)
 
 請參閱 [入門](../quick-checkout/onboarding.md) 主題，以了解如何設定 [!DNL Quick Checkout] Adobe Commerce。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 | [!UICONTROL Enable] | 網站 | 啟用或禁用 [!DNL Quick Checkout] 的URL。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | 網站 | 為 [!DNL Quick Checkout]. 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 帳戶憑證
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 | [!UICONTROL Publishable key] | 網站 | 前端用來與 [!DNL Bolt] API。 |
 | [!UICONTROL Signing secret] | 網站 | 用於對從接收到的請求進行簽名驗證 [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 服務設定
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 | [!UICONTROL Automatic Login Enabled] | 網站 | 定義 [!DNL Quick Checkout] 允許在結帳期間自動登入。 預設為啟用。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | 網站 | 選取客戶自動登入的網路。 預設啟用Bolt。 選項： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
