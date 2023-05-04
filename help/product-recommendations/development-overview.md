@@ -2,9 +2,9 @@
 title: 產品Recommendations管理員開發
 description: 概略介紹產品Recommendations架構和開發功能。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請參閱使用手冊，了解如何將產品Recommendations整合至 [無頭](headless.md) 環境。
+>如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請參閱使用手冊，了解如何將產品Recommendations整合至 [無頭](headless.md) 環境。 無頭例項必須實作事件，才能支援產品建議工作區。
 
 ## 架構概觀
 

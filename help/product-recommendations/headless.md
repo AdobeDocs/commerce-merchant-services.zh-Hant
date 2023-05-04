@@ -2,9 +2,9 @@
 title: 無頭
 description: 了解如何整合 [!DNL Product Recommendations] 在無頭的店前。
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 您可以整合 [!DNL Product Recommendations] 在無頭的店前，使用 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 或自訂前端技術，例如React或Vue JS。
 
+自訂和無頭式整合器應參照這些Luma和PWA指示，作為建議的實作。 在無頭式解決方案中實作產品Recommendations有許多方式，本檔案不涵蓋所有案例。 整合商必須針對其實作進行事件、設計和測試。
+
 [!DNL Product Recommendations] 要求 [行為與目錄資料](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) 手術。 在無頭實作中，目錄資料同步程式維持不變，但行為資料收集需要變更。
+
+>[!NOTE]
+>
+>無頭例項必須實作事件，才能為產品Recommendations控制面板提供動力。
 
 要整合 [!DNL Product Recommendations] 在無頭的店面，您必須：
 

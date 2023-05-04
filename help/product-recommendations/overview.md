@@ -2,9 +2,9 @@
 title: 簡介 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] 是功能強大的行銷工具，可用來提高轉換率、增加收入並刺激購物者參與。'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 在店面上會以帶有標籤的單位呈現產品建議，例如「檢視過此產品的客戶也檢視過」。 您可以直接從Adobe Commerce管理員在商店檢視中建立、管理和部署建議。
 
+如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請了解如何 [整合](headless.md) [!DNL Product Recommendations] 進你的無頭店。
+
 >[!NOTE]
 >
-> 如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請了解如何 [整合](headless.md) [!DNL Product Recommendations] 進你的無頭店。
+>開發無頭式或自訂實作有許多方式。 本指南說明使用PWA Studio執行此作業的一種方式。 它不涵蓋所有情況或可能性。
 
 ## 隱私權
 

@@ -2,7 +2,7 @@
 title: 入門
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 請參閱 [[!DNL Page Builder] 整合](page-builder.md) 有關如何添加 [!DNL Product Recommendations] into [!DNL Page Builder] 內容。
 
-## SaaS價格索引
+### SaaS價格索引
 
 產品建議客戶可使用 [SaaS價格索引](../price-index/index.md)，可提供更快速的價格變更更新和同步時間。
 

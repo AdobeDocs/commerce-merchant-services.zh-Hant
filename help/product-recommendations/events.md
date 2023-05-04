@@ -2,9 +2,9 @@
 title: 收集資料
 description: 了解事件如何收集產品建議的資料。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ ht-degree: 0%
 
 如果您的店面是以PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請參閱使用手冊，了解如何將產品Recommendations整合至 [無頭](headless.md) 環境。
 
+## 警告
+
 廣告封鎖程式和隱私權設定可防止 `magento/product-recommendations` 模組來擷取事件，並可能導致參與和收入 [量度](workspace.md) 被低估。
+
+事件不會擷取在商家網站上發生的所有交易。 活動旨在讓商家了解網站上正在發生的事件的一般概念。
+
+無頭式實作必須實作事件，才能為產品Recommendations控制面板提供動力。
 
 >[!NOTE]
 >
