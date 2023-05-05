@@ -2,9 +2,9 @@
 title: 指南概述
 description: 了解如何使用Adobe Commerce連接器將Experience Platform資料與Adobe Experience Platform整合。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,12 @@ Experience Platform連接器會顯示在「商務管理員」下方 **系統** >
 ## 入門步驟
 
 1. [安裝](install.md) Experience Platform連接器延伸模組。
-1. [登入](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帳戶和 [檢視](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的組織ID。 組織ID是與您布建之Experience Cloud公司相關聯的ID。 此ID是24個字元的英數字串，後面接著（且必須包含） `@AdobeOrg`.
-1. [Connect](connect-data.md) Adobe Commerce例項到Adobe Experience Platform。
+1. [登入](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帳戶和 [查看以確認](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的組織ID。 組織ID是與您布建之Experience Cloud公司相關聯的ID。 此ID是24個字元的英數字串，後面接著（且必須包含） `@AdobeOrg`.
 1. [建立或更新](update-xdm.md) 具有商務專用欄位群組的XDM結構。
-1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的架構。
+1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的架構。 此資料集將包含您傳送的商務資料。
 1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含「商務」專用欄位群組的XDM結構。
+1. [連接到Commerce Services](../landing/saas.md).
+1. [連線至Adobe Experience Platform](connect-data.md).
 
 ## 對象
 

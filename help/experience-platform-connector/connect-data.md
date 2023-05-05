@@ -2,9 +2,9 @@
 title: 將商務資料連結至Adobe Experience Platform
 description: 了解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 - 商務服務連接器
 - Experience Platform連接器
 
-若要將您的Adobe Commerce執行個體連結至Adobe Experience Platform，您必須同時設定兩個連接器，從「商務服務」連接器開始，然後使用「Experience Platform」連接器完成。
+若要將您的Adobe Commerce執行個體連結至Adobe Experience Platform，您必須設定兩個連接器，從「商務服務」連接器開始，然後使用Experience Platform連接器完成。
 
 ## 更新Commerce Services連接器
 
@@ -56,7 +56,11 @@ ht-degree: 0%
 
 ## 資料收集
 
-在 **資料收集** 節，選擇要發送到Experience Platform邊緣的storefront和/或back office資料。 若要確保您的Adobe Commerce例項可以開始資料收集，請檢閱 [必要條件](overview.md#prerequisites).
+在本節中，您可指定要傳送至Experience Platform邊緣的資料類型。 資料類型有兩種：用戶端和伺服器端。
+
+用戶端資料是在店面上擷取的資料。 這包括購物者互動，例如 `View Page`, `View Product`, `Add to Cart`，和 [申請表](events.md#b2b-events) 資訊（適用於B2B商戶）。 伺服器端資料或後台資料是在商務伺服器中擷取的資料。 這包括訂單狀態的相關資訊，例如訂單是否已下達、已取消、已退還、已發運或已完成。
+
+在 **資料收集** 區段，選取您要傳送至Experience Platform邊緣的資料類型。 若要確保您的Adobe Commerce例項可以開始資料收集，請檢閱 [必要條件](overview.md#prerequisites).
 
 請參閱事件主題以深入了解 [店面](events.md#storefront-events) 和 [後台](events.md#back-office-events) 事件。
 
@@ -110,11 +114,32 @@ ht-degree: 0%
 | 後台事件 | 如果勾選此選項，事件裝載會包含匿名的訂單狀態資訊，例如訂單已下、已取消、已退還或已發運。 |
 | 資料流ID（網站） | 允許資料從Adobe Experience Platform流向其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce例項內的特定網站相關聯。 如果您指定自己的Experience PlatformWeb SDK，請勿在此欄位中指定資料流ID。 Experience Platform連接器會使用與該SDK相關聯的資料流ID，並忽略此欄位中指定的任何資料流ID（如果有的話）。 |
 
-## 驗證資料是否正傳送至Experience Platform
+>[!NOTE]
+>
+>上線後，店面資料會開始流向Experience Platform邊緣。 後台資料需要5分鐘才會出現在邊緣。 後續更新會根據cron排程顯示在邊緣。
 
-上線後，店面資料會開始流向Experience Platform邊緣。 上線後，後台資料需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
+## 確認已收集事件資料
 
-當商務資料傳送至Experience Platform邊緣時，您可以建立如下的報表：
+若要確認正從您的商務商店收集資料，請使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 來檢查您的商務網站。 確認正在收集資料後，您可以執行會傳回來自 [建立的資料集](overview.md#prerequisites).
 
-![Adobe Experience Platform中的商務資料](assets/aem-data-1.png)
-_Adobe Experience Platform中的商務資料_
+1. 選擇 **查詢** 在Experience Platform的左側導覽中，然後按一下 [!UICONTROL Create Query].
+
+   ![查詢編輯器](assets/query-editor.png)
+
+1. 查詢編輯器開啟時，輸入可從資料集中選取資料的查詢。
+
+   ![建立查詢](assets/create-query.png)
+
+   例如，您的查詢可能如下所示：
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. 查詢執行後，結果會顯示在 **結果** 標籤，在 **主控台** 標籤。 此視圖顯示查詢的表格輸出。
+
+   ![查詢編輯器](assets/query-results.png)
+
+在此範例中，您會看到 [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)等。 此檢視可讓您驗證您的商務資料是否到達邊緣。
+
+如果結果不符合預期，請開啟資料集並尋找任何失敗的批次匯入。 深入了解 [疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
