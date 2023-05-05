@@ -3,9 +3,10 @@ title: SaaS價格索引安裝
 description: 安裝SaaS價格索引
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-source-git-commit: 077be6d893b800b9571a869237501e58accc01e8
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,9 @@ ht-degree: 0%
 視需要手動執行上述索引器。 否則，資料會在標準同步程式中重新整理。 深入了解 [目錄同步](../landing/catalog-sync.md) 服務。
 
 Luma和Adobe Commerce Core GraphQL使用者可以安裝 `catalog-adapter` 提供Luma和Core GraphQl相容性並禁用PHP核心價格索引器的模組。
-若要使用 `catalog-adapter` 模組， [!DNL Live Search] 必須先安裝。 關注 [安裝 [!DNL Live Search]](../live-search/install.md) 說明，再繼續。
+若要使用 `catalog-adapter` 模組， [!DNL Live Search] 和 [!DNL Catalog Service] 必須先安裝並設定。 關注 [安裝 [!DNL Live Search]](../live-search/install.md) 和 [目錄服務安裝](../catalog-service/installation.md) 說明，再繼續。
+
+要配置Live Search和目錄適配器，請遵循 [商務服務連接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 說明。
 
 ```bash
 composer require adobe-commerce/catalog-adapter

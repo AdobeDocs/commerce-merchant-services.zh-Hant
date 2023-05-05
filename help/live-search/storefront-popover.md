@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「 [!DNL Live Search storefront popover] 動態傳回建議的產品和縮圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,4 @@ ht-degree: 0%
 * 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *盧馬* 主題，或根據 *盧馬*.
 * 此 [!DNL popover] 不支援 *空白* 主題。 請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多。
 * 此 [!DNL popover] 「快速訂購」表單不支援。
+* 商戶可以自定義和擴展小部件或店面元素(例如：將色票整合至即時搜尋結果)，方法是使用 [目錄服務](../catalog-service/overview.md) Storefront API，但這不屬於Adobe支援團隊的範疇。

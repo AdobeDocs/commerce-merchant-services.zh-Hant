@@ -4,9 +4,9 @@ description: 使用SaaS價格索引來提高效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-使用Luma和Adobe Commerce Core GraphQL的客戶可以安裝提供Luma相容性的模組，並停用PHP核心價格索引器：
+使用Luma和Adobe Commerce Core GraphQL的客戶可以安裝提供Luma和Core GraphQL相容性的模組，並停用PHP核心價格索引器：
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ adobe-commerce/catalog-adapter
 根據產品類型、價格複雜性和目錄大小等因素，SaaS價格索引可能是適合您商店的合適解決方案。 閱讀下列限制並判斷這是否適合您的網站。
 
 目前，SaaS價格索引支援簡單、分組、虛擬、可配置和捆綁動態產品類型。
-即將推出可下載、禮品卡和捆綁固定產品類型的支援。
-
-SaaS價格索引支援基價：
-
-* 最低/最高常規價格
-* 最低/最高最終價格
-* 特價
-* 客戶組價格
-* 目錄規則價格
-
-選擇使用新的定價摘要後，您可以聯絡 [支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 來幫你還原。
+即將推出可下載、禮品卡和捆綁固定產品類型的支援
 
 新摘要應手動同步至 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否則，資料會在標準同步程式中重新整理。 取得 [目錄同步](../landing/catalog-sync.md) 程式。
 
