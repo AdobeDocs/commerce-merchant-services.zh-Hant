@@ -1,6 +1,6 @@
 ---
 title: 簡介 [!DNL Product Recommendations]
-description: '''[!DNL Product Recommendations] 是功能強大的行銷工具，可用來提高轉換率、增加收入並刺激購物者參與。'
+description: '"[!DNL Product Recommendations] 是一種強大的營銷工具，你可以利用它來增加轉換率、增加收入，並刺激購物者的參與。」'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # 簡介 [!DNL Product Recommendations]
 
-產品建議是功能強大的行銷工具，可用來增加轉換、增加收入及刺激購物者參與。 Adobe Commerce產品建議由 [Adobe Sensei](https://www.adobe.com/sensei.html)，此工具使用人工智慧和機器學習演算法，對匯總的訪客資料執行深入分析。 此資料與Adobe Commerce目錄結合後，可提供吸引人、相關且個人化的體驗。
+產品推薦是一種強大的營銷工具，您可以利用它來增加轉換、增加收入和刺激購物者的參與。 Adobe Commerce產品建議由 [Adobe Sensei](https://www.adobe.com/sensei.html)它利用人工智慧和機器學習算法對聚集的訪問者資料進行深入分析。 此資料與您的Adobe Commerce目錄結合後，將帶來高度吸引力、相關性和個性化的體驗。
 
-在店面上會以帶有標籤的單位呈現產品建議，例如「檢視過此產品的客戶也檢視過」。 您可以直接從Adobe Commerce管理員在商店檢視中建立、管理和部署建議。
+產品建議以帶有標籤的單位形式顯示在店面上，例如「也查看過此產品的客戶」。 您可以直接從Adobe Commerce管理員建立、管理和部署跨儲存視圖的建議。
 
-如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請了解如何 [整合](headless.md) [!DNL Product Recommendations] 進你的無頭店。
+如果您的店面是使用PWA Studio實現的，請參閱 [PWA文檔](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自定義前端技術（如React或Vue JS），請瞭解如何 [整合](headless.md) [!DNL Product Recommendations] 進你的無頭店。
 
 >[!NOTE]
 >
->開發無頭式或自訂實作有許多方式。 本指南說明使用PWA Studio執行此作業的一種方式。 它不涵蓋所有情況或可能性。
+>開發無頭實施或自定義實施的方法有很多。 本指南介紹使用PWA Studio執行此操作的一種方法。 它並不涵蓋所有的情況或可能性。
 
-## 隱私權
+## 隱私
 
-用於產品建議的資料收集不包含任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都會嚴格進行匿名處理。 若要進一步了解，請參閱 [Adobe隱私權原則](https://www.adobe.com/privacy/policy.html).
+用於產品建議目的的資料收集不包括任何個人識別資訊(PII)。 此外，所有用戶標識符如cookie ID和IP地址都嚴格匿名化。 要瞭解更多資訊，請參閱 [Adobe隱私策略](https://www.adobe.com/privacy/policy.html)。
 
 ## 產品建議與產品關係
 
-鑑於線上購物的複雜性不斷變化，對店面最有用的往往是多種關鍵技術的組合。 同時使用 [!DNL Product Recommendations] 和 [產品關係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) 可讓您在促銷產品時有更大的彈性。 您可以善用 [!DNL Product Recommendations] 由Adobe Sensei提供技術支援，可大規模聰明地自動化您的建議。 然後，您可以運用 [相關產品規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 您必須手動干預，並確保對目標購物者區段提出特定建議，或必須符合特定業務目標時。
+鑑於線上購物的複雜性不斷變化，對店面最有利的往往是多種關鍵技術的結合。 同時使用 [!DNL Product Recommendations] 和 [產品關係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) 在產品推廣時為您提供了更大的靈活性。 你可以利用 [!DNL Product Recommendations] 由Adobe Sensei提供支援，可智慧地實現建議的自動化。 那麼，你可以利用 [相關產品規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 當您必須手動干預並確保向目標購物者群體提供特定推薦時，或者必須達到某些商業目標時。
 
-產品建議可讓您：
+產品建議允許您：
 
-- 根據下列區域，從九種不同的智慧型建議類型中選擇：以購物者為基礎、以項目為基礎、以人氣為基礎、趨勢和以相似度為基礎
-- 使用行為資料，在購物者的店面歷程中個人化建議
-- 測量與每個建議相關的關鍵量度，協助您了解建議的影響
+- 根據以下領域從九種不同的智慧推薦類型中進行選擇：基於購物者、基於項目、基於受歡迎度、趨勢和基於相似性
+- 使用行為資料在購物者的整個店面行程中個性化推薦
+- 衡量與每個建議相關的關鍵指標，以幫助您瞭解建議的影響
 
-## [!DNL Product Recommendations] 示範
+## [!DNL Product Recommendations] 演示
 
-觀看此影片以了解 [!DNL Product Recommendations]:
+觀看此視頻以瞭解 [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

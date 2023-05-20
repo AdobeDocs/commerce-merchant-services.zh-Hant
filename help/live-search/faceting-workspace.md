@@ -1,6 +1,6 @@
 ---
 title: "Faceting Workspace"
-description: 「學習如何 [!DNL Live Search] faceting workspace。」
+description: 「學學如何 [!DNL Live Search] 「」
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
@@ -9,41 +9,41 @@ ht-degree: 0%
 
 ---
 
-# Facet Workspace
+# Faceting工作區
 
-此 [!DNL Live Search] 工作區會列出目前可用的所有Facet，並可存取設定和管理Facet所需的工具。 固定的Facet會先出現在現有Facet的清單中，接著是動態Facet。 您可以篩選清單，以顯示所有刻面，或僅顯示已固定或動態的刻面。
+的 [!DNL Live Search] 工作區列出了當前可用的所有小平面，並提供了對設定和管理小平面所需工具的訪問權限。 固定小平面首先出現在現有小平面清單中，然後是動態小平面。 可以篩選清單以顯示所有小平面，或僅顯示已固定或動態的小平面。
 
 ![Faceting工作區](assets/faceting-workspace.png)
 
 ## 設定範圍
 
-若您的Adobe Commerce安裝包含多個商店檢視，請設定 **範圍** 到 [商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 的Facet設定。
+如果您的Adobe Commerce安裝包含多個商店視圖，請設定 **範圍** 到 [商店視圖](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 應用方面設定。
 
 ## 篩選清單
 
-1. 按一下 **篩選依據** 控制。
+1. 按一下 **篩選依據** 控制項。
 1. 選擇以下選項之一：
 
    * 所有篩選器
-   * 固定
+   * 已固定
    * 動態
 
-## 新增Facet
+## 添加方面
 
-1. 按一下 **新增Facet**.
-1. 請參閱 [新增Facet](facets-add.md) 以取得詳細指示。
+1. 按一下 **添加小平面**。
+1. 請參閱 [添加小平面](facets-add.md) 的上界。
 
-## 欄說明
+## 列說明
 
-| 欄 | 說明 |
+| 列 | 說明 |
 |--- |--- |
-| （第一欄） | 列出已固定和動態Facet，由 [標籤](facets-type.md) 供購物者檢視。 |
-| 排序類型 | 此 [排序順序](facets-type.md) 小平面值。 Facet按字母順序排列 [!DNL Commerce] 店面。 針對 [無頭] 實作中，Facet可依字母順序或依計數排序。 選項：字母順序，計數（僅限無頭） |
-| 最大值 | 在店面中以篩選形式提供的小面值數目，最多10個。 |
+| （第一列） | 列出被固定的小平面和動態小平面 [標籤](facets-type.md) 對購物者來說是可見的。 |
+| 排序類型 | 的 [排序順序](facets-type.md) 方面值。 小平面按字母順序排序 [!DNL Commerce] 店面。 對於 [頭] 實現中，facet可按字母順序或按計數排序。 選項：按字母順序排列，計數（僅限無頭） |
+| 最大值 | 在儲存面中作為篩選器可用的多面值數，最多為10。 |
 
 ## 控制項
 
-| 控制 | 說明 |
+| 控制項 | 說明 |
 |--- |--- |
-| 新增Facet | 開啟 [刻面編輯器](facets-add.md). |
-| 篩選依據 | 決定 [刻面類型](facets-type.md) 清單中顯示的。 選項：全部，固定，動態 |
+| 添加小平面 | 開啟 [刻面編輯器](facets-add.md)。 |
+| 篩選依據 | 確定 [小平面類型](facets-type.md) 清單中的。 選項：全部，固定，動態 |

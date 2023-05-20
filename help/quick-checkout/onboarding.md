@@ -1,6 +1,6 @@
 ---
-title: 「 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」
-description: 「了解 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，以及如何成功上線並設定擴充功能。」
+title: '" [!DNL Quick Checkout] Adobe Commerce分機」'
+description: 「瞭解 [!DNL Quick Checkout] 將有利於您的Adobe Commerce實例以及如何成功安裝和設定擴展。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -9,156 +9,156 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] 入門
+# [!DNL Quick Checkout] 登機
 
-若要開始使用 [!DNL Quick Checkout] 針對Adobe Commerce擴充功能，您必須完成幾個入門步驟，才能使用我們的結帳功能連線您的執行個體。
+開始使用 [!DNL Quick Checkout] 對於Adobe Commerce分機，您必須完成幾個單機步驟，以便將您的實例與我們的簽出功能連接起來。
 
-![快速結帳](assets/overview-admin-panel.png)
+![快速簽出](assets/overview-admin-panel.png)
 
-1. [取得擴充功能](#get-extension).
-1. [建立生產或沙箱商戶帳戶，使用 [!DNL Bolt]](#create-account-with-bolt). 提供驗證您身分的所有必要資訊。
-1. [提供唯一 [!DNL API Key] 和 [!DNL Publishable Key]](#obtain-api-credentials) 產生於 [!DNL Bolt].
-1. [在 [!DNL Bolt] 帳戶](#configure-payment-providers).
-1. [將「啟用」下拉式清單設為「是」](#enable-extension) 啟動擴充功能。
-1. [定義服務設定](#complete-admin-configuration) 若要設定 [!DNL Quick Checkout] 擴充功能。
-1. [按一下儲存設定](#enable-live-quick-checkout) 按鈕以啟用擴充功能。
-1. 將範圍切換為 **主要網站** 和 [按一下設定回呼URL](#check-shopper-valid-account) 按鈕。
+1. [獲取擴展](#get-extension)。
+1. [使用建立生產或沙盒商戶帳戶 [!DNL Bolt]](#create-account-with-bolt)。 提供驗證您身份所需的所有資訊。
+1. [提供唯一 [!DNL API Key] 和 [!DNL Publishable Key]](#obtain-api-credentials) 生成 [!DNL Bolt]。
+1. [在 [!DNL Bolt] 帳戶](#configure-payment-providers)。
+1. [將「啟用」下拉清單設定為「是」](#enable-extension) 來激活擴展。
+1. [定義服務設定](#complete-admin-configuration) 配置 [!DNL Quick Checkout] 擴展。
+1. [按一下「Save Config（保存配置）」](#enable-live-quick-checkout) 按鈕啟用擴展。
+1. 將作用域切換到 **主網站** 和 [按一下「配置回調URL」](#check-shopper-valid-account) 按鈕
 
-如果Gainsight已啟用，便會觸發 **參觀** 按鈕 [!DNL Quick Checkout] 管理面板關於 [!DNL Quick Checkout] Adobe Commerce:
+如果啟用了Gainsight，則會觸發 **參觀** 按鈕 [!DNL Quick Checkout] 管理面板關於 [!DNL Quick Checkout] Adobe Commerce:
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** >進階：
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** >高級：
 
-   ![快速結帳](assets/gainsight-admin.png)
+   ![快速簽出](assets/gainsight-admin.png)
 
-如果未啟用Gainsight，請繼續入門步驟。
+如果未啟用Gainsight，請繼續上門步驟。
 
-請參閱 [[!DNL Quick Checkout] 管理面板](../quick-checkout/admin-panel.md) 主題以取得詳細資訊。
+查看 [[!DNL Quick Checkout] 管理面板](../quick-checkout/admin-panel.md) 的子菜單。
 
 >[!NOTE]
 >
-> 如果您未設定 [!DNL Bolt] 帳戶無法設定沙箱或生產環境。
+> 如果未配置 [!DNL Bolt] 無法設定沙盒或生產環境的帳戶。
 
-## 必要條件
+## 先決條件
 
-若要使用 [!DNL Quick Checkout]，您必須具備下列 [!DNL Bolt]:
+為了使用 [!DNL Quick Checkout]，您必須具有以下 [!DNL Bolt]:
 
-- 支援的支付提供商
+- 支援的付款提供方
 - 中的商家和生產帳戶 [!DNL Bolt]
-- API和 [!DNL Publishable key] 產生於 [!DNL Bolt]
+- API和 [!DNL Publishable key] 生成 [!DNL Bolt]
 
-請參閱 [必要條件](../quick-checkout/prerequisites.md) 主題以取得詳細資訊。
+請參閱 [先決條件](../quick-checkout/prerequisites.md) 的子菜單。
 
-請參閱 [API憑證](#obtain-api-credentials) 了解如何建立或存取 [!DNL API keys] 例項。
+請參閱 [API憑據](#obtain-api-credentials) 瞭解如何建立或訪問 [!DNL API keys] 比如你。
 
-## 取得擴充功能
+## 獲取擴展
 
-請參閱 [安裝](../quick-checkout/install.md) 主題，以取得擴充功能的詳細資訊。
+查看 [安裝](../quick-checkout/install.md) 主題，瞭解有關獲取擴展的詳細資訊。
 
-## 使用建立帳戶 [!DNL Bolt]
+## 建立帳戶 [!DNL Bolt]
 
-在設定 [!DNL Quick Checkout] 在您的Adobe Commerce管理員中，必須建立 [沙箱](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  商戶帳戶 [!DNL Bolt]. 提供在中建立帳戶所需的所有詳細資訊 [!DNL Bolt].
+在配置 [!DNL Quick Checkout] 在您的Adobe Commerce管理員中，需要建立 [沙坑](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  商戶帳戶 [!DNL Bolt]。 提供建立帳戶所需的所有詳細資訊 [!DNL Bolt]。
 
-請參閱 [測試與驗證](../quick-checkout/testing.md) 主題以取得詳細資訊。
+請參閱 [test和驗證](../quick-checkout/testing.md) 的子菜單。
 
-## 取得API憑證
+## 獲取API憑據
 
-若要使用 [!DNL Quick Checkout] 您需要 [!DNL Bolt] 唯一索引鍵和 [!DNL signing secret]. 取得下列內容 [!DNL API keys] 瀏覽至 **開發人員** > **API** > **金鑰** 在 **螺栓商家儀表板**.
+使用 [!DNL Quick Checkout] 你需要 [!DNL Bolt] 唯一鍵和 [!DNL signing secret]。 獲取以下內容 [!DNL API keys] 通過導航 **開發人員** > **API** > **鍵** 的 **螺栓商家儀表板**。
 
-- [!DNL API key]:後端用來與互動的私密金鑰 [!DNL Bolt] API。
-- [!DNL Publishable key]:前端用來與 [!DNL Bolt] API。
-- [!DNL Signing secret]:用於對從接收到的請求進行簽名驗證 [!DNL Bolt].
+- [!DNL API key]:後端用於與交互的私鑰 [!DNL Bolt] API。
+- [!DNL Publishable key]:前端用於與交互的密鑰 [!DNL Bolt] API。
+- [!DNL Signing secret]:用於對從接收的請求進行簽名驗證 [!DNL Bolt]。
 
-   ![快速結帳](assets/account-credentials.png)
+   ![快速簽出](assets/account-credentials.png)
 
-請參閱 [[!DNL Bolt] 環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 頁面，了解金鑰和簽署密碼，來自 [!DNL Bolt] 針對 [!DNL Quick Checkout] 擴充功能。
-
->[!CAUTION]
->
-> 您必須建立 [!DNL API keys] 適用於沙箱和生產環境。
-
-## 配置支付提供程式
-
-要連接您的支付服務提供商，請遵循 [處理器設定](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} 開發人員 [!DNL Bolt] 頁面。
-
-## 啟用擴充功能
-
-1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **設定**.
-1. 在左側面板中，展開 **銷售** 選取 **結帳**.
-1. 在 [!DNL Quick Checkout] 檢視，設定 **啟用** to `Yes`.
-
-![快速結帳](assets/quick-checkout-view-no-enable.png)
+查看 [[!DNL Bolt] 環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 頁面，瞭解密鑰和簽名密碼 [!DNL Bolt] 為 [!DNL Quick Checkout] 擴展。
 
 >[!CAUTION]
 >
-> 只有在 **啟用** 設為 `Yes`.
+> 必須建立 [!DNL API keys] 用於沙盒和生產環境。
 
-1. 選取要使用的方法（沙箱或生產）。
+## 配置付款提供方
 
-   - 用於測試和開發用途的沙箱
-   - 處理與即時支付處理者的事務處理的生產
+要連接您的支付服務提供商，請按照 [處理器設定](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} 開發者 [!DNL Bolt] 的子菜單。
 
-1. 提供您的唯一API後驗證憑證，並 [!DNL Publishable keys].
+## 啟用擴展
 
-![快速結帳](assets/quick-checkout-main-view.png)
+1. 在 _管理_ 邊欄，轉到 **商店** > _設定_ > **配置**。
+1. 在左面板中，展開 **銷售** 選擇 **簽出**。
+1. 在 [!DNL Quick Checkout] 視圖，設定 **啟用** 至 `Yes`。
 
-請參閱 [設定](../quick-checkout/settings-quick-checkout.md) 主題，以取得 [!DNL Quick Checkout] Adobe Commerce擴充功能。
+![快速簽出](assets/quick-checkout-view-no-enable.png)
 
 >[!CAUTION]
 >
-> 您必須提供唯一API，並 [!DNL Publishable] 在啟用擴充功能前，金鑰（否則客戶將看到付款表單，無法下訂單）。
+> 只有在 **啟用** 設定為 `Yes`。
+
+1. 選擇要使用的方法（沙盒或生產）。
+
+   - 用於測試和開發目的的沙盒
+   - 使用即時付款處理器處理交易記錄的生產
+
+1. 在提供您的唯一API和 [!DNL Publishable keys]。
+
+![快速簽出](assets/quick-checkout-main-view.png)
+
+請參閱 [設定](../quick-checkout/settings-quick-checkout.md) 主題，瞭解有關 [!DNL Quick Checkout] Adobe Commerce分機。
+
+>[!CAUTION]
+>
+> 必須提供唯一的API和 [!DNL Publishable] 鍵，否則客戶將看到付款表單，無法下訂單。
 
 ## 完成管理配置
 
-1. 在 _管理_ 邊欄，導覽至 **商店** > **設定** > **結帳** 存取「一般結帳管理員」設定頁面。
-1. 在 _服務設定_ 一節，提供啟用擴充功能所需的所有詳細資訊。
-1. 設定 _付款活動_ 至任一選項：
+1. 在 _管理_ 邊欄，導航 **商店** > **配置** > **簽出** 訪問常規「簽出管理」配置頁。
+1. 在 _服務設定_ 部分，提供啟用擴展所需的所有詳細資訊。
+1. 設定 _付款活動_ 選項之一：
 
-   - `Authorize`:請勿在授權時自動捕獲事務。
-   - `Authorize and Capture`:根據授權自動捕獲事務。
+   - `Authorize`:不要在授權時自動捕獲事務。
+   - `Authorize and Capture`:在授權時自動捕獲事務。
 
-如需Adobe Commerce標準結帳選項的詳細資訊，請參閱 [簽出](https://docs.magento.com/user-guide/configuration/sales/checkout.html) 主題。
+有關Adobe Commerce標準結帳選項的詳細資訊，請參閱 [簽出](https://docs.magento.com/user-guide/configuration/sales/checkout.html) 主題。
 
-## 啟用即時快速結帳
+## 啟用即時快速簽出
 
-若要啟用 [!DNL Quick Checkout] Adobe Commerce擴充功能：
+啟用 [!DNL Quick Checkout] 對於Adobe Commerce分機：
 
-1. 檢查 [!UICONTROL Enable] 下拉式清單設為 **是** 啟動擴充功能。
-1. 按一下 **儲存設定**.
+1. 檢查 [!UICONTROL Enable] 下拉清單設定為 **是** 來激活擴展。
+1. 按一下 **保存配置**。
 
 ## 檢查購物者有效帳戶
 
-檢查購物者是否具有 [!DNL Bolt] 帳戶：
+檢查購物者是否 [!DNL Bolt] 帳戶：
 
-1. 將範圍切換為 **主要網站**.
-1. 按一下 **設定回呼URL** 按鈕。 如此可啟用 [!DNL Bolt] 以判斷購物者是否有帳戶。 如果出現，則會顯示OTP彈出窗口。
+1. 將範圍切換到 **主網站**。
+1. 按一下 **配置回調URL** 按鈕 這啟用 [!DNL Bolt] 確定購物者是否有賬戶。 如果出現，則出現OTP彈出窗口。
 
    >[!CAUTION]
    >
-   > 將範圍切換到 **主要網站** 確保設定正確的URL。 每個網站可以有多個網域。
+   > 將範圍切換到 **主網站** 確保設定了正確的URL。 每個網站可以具有多個域。
 
-請參閱 [站點、儲存和查看範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} 主題，以取得Adobe Commerce中作用域的詳細資訊。
+查看 [站點、儲存和視圖範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} 主題，以瞭解有關Adobe Commerce作用域的更多資訊。
 
 ## 配置服務設定
 
-![快速結帳](assets/service-settings.png)
+![快速簽出](assets/service-settings.png)
 
-1. 設定 **啟用結帳追蹤** to `Yes`.
+1. 設定 **啟用簽出跟蹤** 至 `Yes`。
 
    >[!CAUTION]
    >
-   > 停用此選項會影響報表，因為Adobe Commerce不允許與Bolt共用結帳追蹤資訊。
+   > 禁用此選項將影響報告，因為不允許Adobe Commerce與Bolt共用簽出跟蹤資訊。
 
-1. 選取 **登入後的下一階段** 選項，以在客戶登入後變更導覽流程。 預設會設為 **付款** 頁面。
-1. 定義 [!DNL Quick Checkout] 允許 **自動登入** 結帳期間。 預設會啟用，以自動登入 [!DNL Bolt] 網路。
+1. 選擇 **登錄後的下一階段** 選項，以更改客戶登錄後的導航流。 預設情況下，它設定為 **付款** 的子菜單。
+1. 定義 [!DNL Quick Checkout] 允許 **自動登錄** 簽出時。 預設情況下，它啟用為自動登錄到 [!DNL Bolt] 網路。
 
    >[!NOTE]
    >
-   > 請參閱 [Bolt的啟用自動登錄文檔](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以取得更多資訊。
+   > 請參閱 [Bolt的啟用自動登錄文檔](https://help.bolt.com/products/embedded/direct-api/auto-login/) 的子菜單。
 
-## 取得協助
+## 獲取幫助
 
-入門程式旨在引導您完成設定及啟用 [!DNL Express Checkout] 功能。
+登機過程旨在指導您完成設定和啟用 [!DNL Express Checkout] 功能。
 
-請透過以下連絡Adobe Commerce支援： [Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 以求任何協助。
+通過以下網站與Adobe Commerce支援部門聯繫： [Adobe Commerce幫助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 尋求任何幫助。
 
-請參閱 [測試與驗證](../quick-checkout/testing.md) 主題以取得詳細資訊。
+查看 [test和驗證](../quick-checkout/testing.md) 的子菜單。

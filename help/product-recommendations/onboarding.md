@@ -1,6 +1,6 @@
 ---
-title: 入門
-description: 了解 [!DNL Product Recommendations].
+title: 登機
+description: 瞭解中的要求和支援的平台 [!DNL Product Recommendations]。
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
 source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
@@ -9,41 +9,41 @@ ht-degree: 0%
 
 ---
 
-# 入門
+# 登機
 
-的上線程式 [!DNL Product Recommendations] 需要訪問伺服器的命令行，並包含以下步驟。 如果您不熟悉從命令列進行工作，請要求開發人員或系統整合商提供協助。
+登機過程 [!DNL Product Recommendations] 需要訪問伺服器的命令行，並包括以下步驟。 如果您不熟悉從命令行工作，請咨詢開發人員或系統整合商以獲得幫助。
 
-- [實作工作流程](implementation-workflow.md)
+- [實施工作流](implementation-workflow.md)
 - [安裝和配置](install-configure.md)
 - [設定](settings.md)
 - [驗證](verify.md)
-- [中繼環境](staging-environment.md)
+- [暫存環境](staging-environment.md)
 
-## 需求
+## 要求
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1、8.2
-- 撰寫器2
+- Adobe Commerce2.4.4+
+- 8.1、8.2菲律賓比索
+- 作曲家2
 
-### 支援平台
+### 支援的平台
 
-- Adobe Commerce on premise(EE):2.4.4+
-- Adobe Commerce on Cloud(ECE):2.4.4+
+- Adobe Commerce駐地：2.4.4+
+- Adobe Commerce雲(ECE):2.4.4+
 
-### 頁面產生器支援
+### 頁面生成器支援
 
-[!DNL Product Recommendations] 可新增至頁面作為「頁面產生器」內容類型。 若要將頁面產生器支援新增至產品Recommendations，請參閱 [安裝和配置](install-configure.md).
+[!DNL Product Recommendations] 可以作為頁面生成器內容類型添加到頁面。 要將頁面生成器支援添加到產品Recommendations，請參閱 [安裝和配置](install-configure.md)。
 
-請參閱 [[!DNL Page Builder] 整合](page-builder.md) 有關如何添加 [!DNL Product Recommendations] into [!DNL Page Builder] 內容。
+請參閱 [[!DNL Page Builder] 整合](page-builder.md) 有關如何添加的說明 [!DNL Product Recommendations] 入 [!DNL Page Builder] 內容。
 
 ### SaaS價格索引
 
-產品建議客戶可使用 [SaaS價格索引](../price-index/index.md)，可提供更快速的價格變更更新和同步時間。
+產品建議客戶可以使用 [SaaS價格索引](../price-index/index.md)提供更快的價格更新和同步時間。
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，以決定每個購物者或客戶群的產品可見度和定價。 [!DNL Product Recommendations] now [支援](release-notes.md) 本功能 [類別權限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)，和 [客戶群特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您已從零售客戶區段隱藏特定類別，則該區段中的購物者將不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議的產品都會根據每個購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面往往需要複雜的邏輯，要求每個購物者或顧客群體都能看到產品並確定價格。 [!DNL Product Recommendations] 現在 [支援](release-notes.md) 此功能 [類別權限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。 [共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), [特定於客戶組的定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。 例如，如果您在零售客戶細分市場中隱藏了某些類別，則該細分市場中的購物者將不會為這些類別中的產品顯示推薦資訊。 此外，當您為特定客戶組和公司定義共用目錄時，這些購物者只會看到他們可以訪問的產品的建議。 所有推薦產品均反映基於每位顧客客戶群的正確客戶群價格。
 
 >[!NOTE]
 >
->商戶可以使用 [目錄服務](../catalog-service/overview.md) Storefront API，但任何自訂都超出Adobe支援團隊的範圍。
+>商戶可通過使用 [目錄服務](../catalog-service/overview.md) Storefront API，但任何自定義都超出了Adobe支援團隊的範圍。

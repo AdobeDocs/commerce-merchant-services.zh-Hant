@@ -1,6 +1,6 @@
 ---
 title: '"[!DNL Quick Checkout] Adobe Commerce開發人員資訊」'
-description: '"[!DNL Quick Checkout] 開發人員資訊。」'
+description: '"[!DNL Quick Checkout] 開發商資訊。」'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 開發人員資訊
 
-本主題包含與Adobe Commerce密切合作的開發人員的相關資訊，以及 [!DNL Magento Open Source] 程式碼，並想了解 [!DNL Quick Checkout] 擴充功能。
+本主題包含與Adobe Commerce密切合作的開發人員的資訊， [!DNL Magento Open Source] 代碼，並希望瞭解有關 [!DNL Quick Checkout] 擴展。
 
-## 延伸點
+## 擴展點
 
-使用擴充點來自訂 [!DNL Quick Checkout].
+使用擴展點定制 [!DNL Quick Checkout]。
 
-使用擴充功能點，您就可以自訂內容，而實際上不需變更應用程式程式碼中的核心元件。
+通過使用擴展點，您可以進行自定義，而無需實際更改應用程式碼中的核心元件。
 
 ## 發運詳細資訊步驟
 
-擴充點可用來自訂在使用登入後的自動步驟導覽 [!DNL Bolt].
+擴展點可用於在登錄後自定義自動步驟導航 [!DNL Bolt]。
 
-購物者登入後 [!DNL Bolt]，所有有效資訊都會預填並重新導向至付款詳細資料步驟以下單。 請參閱 [結帳流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主題以取得詳細資訊。
+一旦購物者登錄 [!DNL Bolt]，所有有效資訊都會預先填寫並重定向到付款詳細資訊步驟以下達訂單。 查看 [簽出流](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 的子菜單。
 
-此擴充點可防止導覽至付款步驟，且在有需要購物者在運送步驟上執行其他動作的擴充功能時，此功能相當實用。 請參閱下列範例，了解如何搭配mixin使用擴充功能點：
+此擴展點允許阻止導航到付款步驟，並且在存在需要購物者在發運步驟上執行附加操作的擴展時非常有用。 有關如何將擴展點與混合使用的示例，請參閱下面的示例：
 
-1. 在 `require-config.js` 位於 `app/code/Vendor/ModuleName/view/frontend/`.
+1. 在中註冊新混音 `require-config.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/`。
 
    ```js
    var config = {
@@ -41,7 +41,7 @@ ht-degree: 0%
    };
    ```
 
-1. 在 `can-navigate-to-payment.js` 位於 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. 在 `can-navigate-to-payment.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`。
 
    ```js
    define([
@@ -60,6 +60,6 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 這是德國(DE)中想停留在「運送詳細資訊」步驟的購物者的範例。
+> 這是德國(DE)中希望保持「發運詳細資訊」步驟的購物者的示例。
 
-檢查 [[!DNL Bolt] 開發人員說明](https://help.bolt.com/developers/) 如需詳細資訊，請參閱 [!DNL Bolt] 供開發人員使用。
+檢查 [[!DNL Bolt] 開發者幫助](https://help.bolt.com/developers/) 的 [!DNL Bolt] 為開發人員準備。

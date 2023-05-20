@@ -1,6 +1,6 @@
 ---
 title: 指南概述
-description: 了解如何使用Adobe Commerce連接器將Experience Platform資料與Adobe Experience Platform整合。
+description: 瞭解如何使用Experience Platform連接器將Adobe Commerce資料與Adobe Experience Platform整合。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
@@ -11,46 +11,46 @@ ht-degree: 0%
 
 # Experience Platform連接器概述
 
-Experience Platform連接器擴充功能可讓Adobe Commerce商戶傳送 [店面](events.md#storefront-events) 和 [後台](events.md#back-office-events) 資料傳送至Adobe Experience Platform邊緣，以便其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)可以使用該商務資料。 將您的商務資料連結至Adobe Experience Cloud中的其他產品，您可以執行工作，例如分析網站上的使用者行為、執行AB測試，以及建立個人化促銷活動。
+Experience Platform連接器擴展允許Adobe Commerce商家 [店面](events.md#storefront-events) 和 [後台辦公室](events.md#back-office-events) 資料到Adobe Experience Platform邊緣，因此Adobe Analytics和Adobe Target等其他Adobe Experience Cloud產品可以使用該商務資料。 通過將您的Commerce資料連接到Adobe Experience Cloud的其他產品，您可以執行任務，如分析站點上的用戶行為、執行AB測試和建立個性化市場活動。
 
-[店面事件](events.md#storefront-events) 擷取購物者互動，例如 `View Page`, `View Product`, `Add to Cart`，和 [申請表](events.md#b2b-events) 資訊（適用於B2B商戶）。 [後台](events.md#back-office-events) 事件會擷取訂單狀態的相關資訊，例如訂單已下放、取消、已退還、已發運或完成。 擷取的資料不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都會嚴格進行匿名處理。 [深入了解](https://www.adobe.com/privacy/experience-cloud.html).
+[店面事件](events.md#storefront-events) 捕獲購物者交互，例如 `View Page`。 `View Product`。 `Add to Cart`, [申請表](events.md#b2b-events) 資訊（針對B2B商戶）。 [後台辦公室](events.md#back-office-events) 事件捕獲有關訂單狀態的資訊，如訂單已下達、取消、退款、已發運或已完成。 捕獲的資料不包括個人身份資訊(PII)。 所有用戶標識符，如cookie ID和IP地址，都是嚴格匿名的。 [瞭解更多資訊](https://www.adobe.com/privacy/experience-cloud.html)。
 
-Experience Platform連接器會顯示在「商務管理員」下方 **系統** >服務> **Experience Platform連接器**.
+Experience Platform連接器出現在Commerce Admin中的 **系統** >服務> **Experience Platform連接器**。
 
-![Experience Platform連接器擴充功能管理檢視](assets/epc-adminui.png)
+![Experience Platform連接器擴展管理視圖](assets/epc-adminui.png)
 
-## 必要條件 {#prereqs}
+## 先決條件 {#prereqs}
 
-若要使用Experience Platform連接器，您必須具備下列條件：
+要使用Experience Platform連接器，必須具有以下內容：
 
-- Adobe Commerce 2.4.3或更新版本
-- Adobe ID與組織ID
-- [Adobe客戶端資料層(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). 收集店面事件資料時需要ACDL。
-- 其他AdobeDX產品的使用權限
+- Adobe Commerce2.4.3或更新
+- Adobe ID和組織ID
+- [Adobe客戶端資料層(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)。 ACDL是收集儲存前事件資料所必需的。
+- 其他AdobeDX產品的權利
 
-## 入門步驟
+## 登機步驟
 
-1. [安裝](install.md) Experience Platform連接器延伸模組。
-1. [登入](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帳戶和 [查看以確認](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的組織ID。 組織ID是與您布建之Experience Cloud公司相關聯的ID。 此ID是24個字元的英數字串，後面接著（且必須包含） `@AdobeOrg`.
-1. [建立或更新](update-xdm.md) 具有商務專用欄位群組的XDM結構。
-1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的架構。 此資料集將包含您傳送的商務資料。
-1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含「商務」專用欄位群組的XDM結構。
-1. [連接到Commerce Services](../landing/saas.md).
-1. [連線至Adobe Experience Platform](connect-data.md).
+1. [安裝](install.md) Experience Platform連接器擴展。
+1. [登錄](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帳戶 [查看以確認](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的組織ID。 組織ID是與您預配的Experience Cloud公司關聯的ID。 此ID是24個字元的字母數字字串，後跟（必須包括） `@AdobeOrg`。
+1. [建立或更新](update-xdm.md) 您的XDM架構，具有特定於Commerce的欄位組。
+1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基於您建立或更新的架構。 此資料集將包含您發送的Commerce資料。
+1. [建立資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選擇包含特定於Commerce的欄位組的XDM架構。
+1. [連接到Commerce Services](../landing/saas.md)。
+1. [連接到Adobe Experience Platform](connect-data.md)。
 
-## 對象
+## 觀眾
 
-本指南是為想將其Adobe Commerce資料連結至其他AdobeDX產品的Adobe Commerce商家所設計。
+本指南針對希望將其Adobe Commerce資料與其他AdobeDX產品連接的Adobe Commerce商家而設計。
 
 ### PWA Studio支援
 
-請參閱 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 說明檔案，以取得如何在PWA Studio店面中使用Experience Platform連接器的資訊。
+查看 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 文檔，瞭解有關如何在Experience Platform庫面中使用PWA Studio連接器的資訊。
 
 ### AEM支援 {#aem-support}
 
-請參閱 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) 說明檔案，了解如何使用CIF - Connector，將AEM轉譯的產品頁面的storefront事件資料傳送至Experience Platform。
+查看 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) 文檔，瞭解如何使用CIF -Experience Platform連接器將AEM呈現的產品頁面中的storefront事件資料發送到Experience Platform。
 
-如果您需要資訊或有本指南未涵蓋的問題，請使用下列資源：
+如果您需要資訊或有本指南未包括的問題，請使用以下資源：
 
-- [協助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [幫助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
 - [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票證以接收其他幫助。

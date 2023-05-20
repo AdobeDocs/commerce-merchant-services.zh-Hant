@@ -1,39 +1,40 @@
 ---
-title: 產品清單頁面Widget
-description: 「啟用和設計 [!DNL Live Search Product Listing Page Widget]"
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+title: 產品清單頁面構件
+description: 啟用和設計 [!DNL Live Search Product Listing Page Widget]
+exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
-# 產品清單頁面Widget
+# 產品清單頁面構件
 
-此 [!DNL Live Search Product Listing Page Widget] (PLP)使用商務服務平台，提供效能、可搜尋和可刻面的產品清單頁面。 本主題說明如何啟用和設定PLP介面工具集的樣式。
+的 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台提供效能、可搜索和可刻面的產品清單頁。 本主題介紹如何啟用和設定PLP小部件的樣式。
 
-## 啟用PLP介面工具集
+## 啟用PLP構件
 
-當 [!DNL Live Search] 服務時，預設搜尋功能會轉換為 [!DNL Live Search] 自動。
-必須在「管理員」中啟用PLP介面工具集。
+當 [!DNL Live Search] 服務已安裝，預設搜索功能將轉換為 [!DNL Live Search] 的下界。
+必須在管理中啟用PLP構件。
 
-1. 前往 **商店** >設定> **設定** > **[!DNL Live Search]** > **店面功能** 設定 **啟用產品清單小工具** 「是」。
-1. 選擇 **儲存設定** 以儲存設定。
+1. 轉到 **商店** >設定> **配置** > **[!DNL Live Search]** > **店面功能** 設定 **啟用產品清單小部件** &quot;是&quot;
+1. 選擇 **保存配置** 按鈕。
 
-## 樣式範例
+## 樣式示例
 
-您可以自訂PLP介面工具集的外觀和風格，以符合您的網站，使用 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+您可以自定義PLP小部件的外觀，使其與站點匹配 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)。
 
 >[!NOTE]
 >
->不會繼承Adobe Commerce主題中具有自訂類別的元素。 這些元素必須由其特定類定位，才能與自訂類匹配；主要動作類別無法用於介面工具集按鈕。
->將繼承CSS內的一般目標元素； `button` 會套用至介面工具集按鈕。
+>不繼承在Adobe Commerce主題中具有自定義類的元素。 這些元素必須由其特定類作為目標，才能與自定義類匹配；主操作類不能用於小部件按鈕。
+>將繼承CSS中的通用目標元素； `button` 將應用於小部件按鈕。
 
-突出顯示的div包含目標類 `ds-sdk-product-item__product-name`.
+突出顯示的視頻包含目標類 `ds-sdk-product-item__product-name`。
 
 ![分頁](assets/plp-css-example.png)
 
-新增規則以使產品成為大寫，借此自訂產品名稱。
+通過添加規則使產品名稱大寫來自定義產品名稱。
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -60,54 +61,54 @@ ht-degree: 0%
 
 * `.ds-plp-pagination_item`
 
-![分頁項目](assets/plp-css-pagination-item.png)
+![分頁項](assets/plp-css-pagination-item.png)
 
 * `.ds-plp-pagination_item--current`
 
-![分頁目前項目](assets/plp-css-pagination-item-current.png)
+![分頁當前項](assets/plp-css-pagination-item-current.png)
 
-### 介面工具集
+### 小部件
 
 * `.ds-widgets`:外div
 * `.ds-widgets__actions`:左側內div
 * `.ds-widgets__results`:右側內div
 
-![介面工具集結果](assets/plp-css-widgets.png)
+![小部件結果](assets/plp-css-widgets.png)
 
-### 排序下拉式清單
+### 排序下拉清單
 
 * `.ds-sdk-sort-dropdown`
 
-![排序下拉式清單](assets/plp-css-dropdown.png)
+![排序下拉清單](assets/plp-css-dropdown.png)
 
 * `.ds-sdk-sort-dropdown__button`
 
-![下拉式按鈕](assets/plp-css-dropdown-button.png)
+![下拉按鈕](assets/plp-css-dropdown-button.png)
 
 * `.ds-sdk-sort-dropdown__items`
 
-![下拉式項目](assets/plp-css-dropdown-items.png)
+![下拉項](assets/plp-css-dropdown-items.png)
 
 * `.ds-sdk-sort-dropdown__items--item`
 
-![下拉式項目](assets/plp-css-dropdown-item.png)
+![下拉項](assets/plp-css-dropdown-item.png)
 
 * `.ds-sdk-sort-dropdown__items--item-selected`
 
-![下拉式清單選取的項目](assets/plp-css-dropdown-selected.png)
+![下拉選定項](assets/plp-css-dropdown-selected.png)
 
 * `.ds-sdk-sort-dropdown__items--item-active`
 
-![下拉式活動選取](assets/plp-css-dropdown-active.png)
+![下拉活動選擇](assets/plp-css-dropdown-active.png)
 
-### Facet
+### 小平面
 
 * `.ds-plp-facets`
 * `.ds-plp-facets__header`
 * `.ds-plp-facets__header_title`
 * `.ds-plp-facets__header__clear-all`
 
-![Facet標題](assets/plp-css-facets-title-clear.png){width="350"}
+![小平面標題](assets/plp-css-facets-title-clear.png){width="350"}
 
 * `.ds-plp-facets__pills`
 * `.ds-sdk-pill`
@@ -117,11 +118,11 @@ ht-degree: 0%
 * `.ds-sdk-pill__label`
 * `.ds-sdk-pill__cta`
 
-![Facet標籤](assets/plp-css-pill-label-cta.png){width="350"}
+![Facets標籤](assets/plp-css-pill-label-cta.png){width="350"}
 
 * `.ds-plp-facets__list`
 
-![Facet清單](assets/plp-css-facets-list.png){width="350"}
+![小平面清單](assets/plp-css-facets-list.png){width="350"}
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
@@ -132,14 +133,14 @@ ht-degree: 0%
 
 * `.ds-sdk-labelled-input`
 
-![標籤輸入](assets/plp-css-labelled-input.png)
+![已標籤輸入](assets/plp-css-labelled-input.png)
 
 * `.ds-sdk-labelled-input__input`
 * `.ds-sdk-labelled-input__label`
 
 ![輸入標籤](assets/plp-css-labelled-input-label.png)
 
-### 產品項目
+### 產品物料
 
 * `.ds-sdk-product-item`
 * `.ds-sdk-product-item__image`
@@ -153,7 +154,7 @@ ht-degree: 0%
 
 ![產品](assets/plp-css-product.png)
 
-### 載入
+### 正在載入
 
 * `.ds-sdk-loading`
 * `.ds-sdk-loading__spinner`

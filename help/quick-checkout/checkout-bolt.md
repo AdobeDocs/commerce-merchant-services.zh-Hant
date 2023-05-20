@@ -1,6 +1,6 @@
 ---
-title: 「Bolt使用者在Adobe Commerce的結帳流程」
-description: 概觀 [!DNL Quick Checkout] 在Adobe Commerce中為Bolt使用者傳送流量。
+title: "Adobe CommerceBolt用戶的結帳流程"
+description: 概述 [!DNL Quick Checkout] 給Adobe Commerce的博爾特用戶。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
@@ -11,37 +11,37 @@ ht-degree: 0%
 
 # 來賓用戶
 
-訪客結帳體驗與Adobe使用者體驗不同。 當購物者進入結帳的電子郵件地址時， [!DNL Quick Checkout] 驗證它並查找現有 [!DNL Bolt] 帳戶。
+來賓結帳體驗與Adobe用戶體驗不同。 當購物者將電子郵件地址輸入結帳時， [!DNL Quick Checkout] 驗證並查找現有 [!DNL Bolt] 帳戶。
 
 >[!WARNING]
 >
-> 此 [!DNL In-Store Pickup] 當 [!DNL Quick Checkout] 啟用。
+> 的 [!DNL In-Store Pickup] 當 [!DNL Quick Checkout] 的子菜單。
 
 ## 已註冊 [!DNL Bolt] 帳戶
 
-若 [!DNL Bolt] 帳戶，購物者會繼續使用 [!DNL Quick Checkout] 順暢的結帳體驗：
+如果 [!DNL Bolt] 顧客會繼續 [!DNL Quick Checkout] 無縫的結賬體驗：
 
-1. 輸入發送給該密碼的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或行動裝置，視 [使用者的偏好設定(位於 [!DNL Bolt] 帳戶](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+1. 輸入發送到該密碼的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或移動地址，具體取決於 [中的用戶首選項 [!DNL Bolt] 帳戶](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}。
 
-![OTP快顯視窗](assets/new-logo-otp-email.png)
+![OTP彈出窗口](assets/new-logo-otp-email.png)
 
-1. 使用 [!DNL Bolt] 帳戶時，系統會自動新增詳細資訊：
+1. 一旦使用 [!DNL Bolt] 帳戶，詳細資訊會自動添加：
 
    - 裝運資訊
-   - 付款方法
+   - 付款方式
 
 1. 下訂單。
 
 >[!TIP]
 >
-> 訪客使用者下訂單，且可以選擇在Adobe Commerce中註冊。
+> 來賓用戶下訂單，他們可以選擇在Adobe Commerce註冊。
 
-## 新增 [!DNL Bolt] 帳戶
+## 新建 [!DNL Bolt] 帳戶
 
-若否 [!DNL Bolt] 找到帳戶後，購物者會繼續其預設的現成Adobe Commerce結帳，而購物者會提供所有必要的詳細資料以下訂單：
+否 [!DNL Bolt] 找到帳戶後，購物者會繼續執行預設的開箱外Adobe Commerce結賬，而購物者會提供所有必要的詳細資訊來訂購：
 
-- 運費和帳單資訊
+- 發運和開單資訊
 - 裝運方法
 - 複核付款方法
-- 將出現一個要註冊的複選框 [!DNL Bolt] 以在下訂單前加快結帳。 購物者可同意條款與條件，以建立其 [!DNL Bolt] 帳戶。
-- 訪客使用者下訂單，且可以選擇在Adobe Commerce中註冊。
+- 出現一個複選框以註冊 [!DNL Bolt] 以加快簽出速度，然後下訂單。 購物者可以同意條款和條件來建立 [!DNL Bolt] 帳戶。
+- 來賓用戶下訂單，他們可以選擇在Adobe Commerce註冊。

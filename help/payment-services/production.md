@@ -1,6 +1,6 @@
 ---
-title: 啟用 [!DNL Payment Services] 生產
-description: 透過啟用 [!DNL Payment Services] 生產。
+title: 啟用 [!DNL Payment Services] 用於生產
+description: 通過啟用 [!DNL Payment Services] 生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
@@ -9,120 +9,120 @@ ht-degree: 0%
 
 ---
 
-# 啟用 [!DNL Payment Services] 生產
+# 啟用 [!DNL Payment Services] 用於生產
 
-您可以將服務投入生產，並完成 [上線程式](onboard.md)，依照本主題中的步驟，在您執行下列動作後：
+您可以將服務投入生產並完成 [聯機](onboard.md)，按照本主題中的步驟，在您執行以下操作後：
 
 * [安裝](install.md) 支付服務擴展
-* [配置和連接](connect.md) 您的例項
-* [設定](sandbox.md) 和 [測試](test-validate.md) 您的沙箱
+* [配置和連接](connect.md) 你的實例
+* [設定](sandbox.md) 和 [test](test-validate.md) 您的沙盒
 
-## 設定 [!DNL Payment Services] 付款方式
+## 設定 [!DNL Payment Services] 作為付款方式
 
-在 [配置商務服務](connect.md#configure-commerce-services) 啟用 [沙箱測試](sandbox.md#enable-sandbox-testing) 或 [即時支付](#enable-live-payments)，您必須 [!DNL Payment Services] 作為您的付款方式。
+在你之後 [配置Commerce Services](connect.md#configure-commerce-services) 啟用 [沙盒測試](sandbox.md#enable-sandbox-testing) 或 [活支付](#enable-live-payments)，必須設定 [!DNL Payment Services] 作為付款方式。
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 按一下 **[!UICONTROL Enable Payment Services]**.
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 按一下 **[!UICONTROL Enable Payment Services]**。
 
-   如果您尚未設定，則會顯示此選項 [!DNL Payment Services] 作為一個或多個網站的付款方法。
+   如果尚未配置，則此選項可見 [!DNL Payment Services] 作為一個或多個網站的付款方式。
 
-   系統會將您導向至「首頁」檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可在此啟用 [!DNL Payment Services] 選項 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   您將被引導到「首頁」視圖中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，在其中可以啟用 [!DNL Payment Services] 選項 [付款方式](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}。
 
-1. 在 _[!UICONTROL General Configuration]_，設定&#x200B;**[!UICONTROL Enable]**to `Yes`.
-1. 設定 **[!UICONTROL Payment Action]**，兩者皆適用 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，變更為下列其中一項：
+1. 在 _[!UICONTROL General Configuration]_。**[!UICONTROL Enable]**至 `Yes`。
+1. 設定 **[!UICONTROL Payment Action]**，同時 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，至以下項之一：
 
    | 設定 | 說明 |
    |---|---|
-   | `Authorize` | 批准購買並保留資金。 在商戶&quot;捕獲&quot;該金額之前，該金額不會撤回。 |
-   | `Authorize and Capture` | 核准購買，而商戶「擷取」資金。 |
+   | `Authorize` | 批准採購並暫停資金。 在被商戶&quot;捕獲&quot;之前，不提取該金額。 |
+   | `Authorize and Capture` | 批准購買，商家「捕獲」資金。 |
 
-1. 按一下 **[!UICONTROL Save]**.
-1. 按一下 **[!UICONTROL Go to Payment Services]** 被送回 [!DNL Payment Services] 家。
-1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. 按一下 **[!UICONTROL Save]**。
+1. 按一下 **[!UICONTROL Go to Payment Services]** 被引導回 [!DNL Payment Services] 回家。
+1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}。
 
-   每次設定變更後，都應執行清除作業。
+   應在每次配置更改後進行清除。
 
-請參閱 [配置支付服務](settings.md) 有關配置信用卡欄位和PayPal智慧按鈕的詳細資訊。
+請參閱 [配置付款服務](settings.md) 的子菜單。
 
-## 完整的商家入門
+## 完整的商戶登機
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 按一下 **[!UICONTROL Live onboarding]**.
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 按一下 **[!UICONTROL Live onboarding]**。
 
-   如果您尚未完成的即時上線，則會顯示此選項 [!DNL Payment Services].
+   如果尚未完成的即時登錄，則此選項可見 [!DNL Payment Services]。
 
-   您將看到PayPal窗口。
+   您會看到一個PayPal窗口。
 
-1. 繼續使用PayPal流程，使用您的PayPal帳戶憑證（而非您的沙箱帳戶憑證），或註冊新的PayPal帳戶。
-1. 在管理員側欄上，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
+1. 繼續使用PayPal流，使用PayPal帳戶憑據（而不是沙盒帳戶憑據）或註冊新的PayPal帳戶。
+1. 在管理員側欄上，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   此 _[!UICONTROL Live onboarding]_按鈕不再顯示，而您會看到「[!UICONTROL Live payments pending]」。
+   的 _[!UICONTROL Live onboarding]_按鈕不再可見，您會看到「[!UICONTROL Live payments pending]的子菜單。
 
-   在該文本框中，可能還會要求您使用PayPal確認您的電子郵件地址以完成上線。
+   在該文本框中，可能還會要求您確認您與PayPal的電子郵件地址以完成登錄。
 
-1. 如果系統提示您確認電子郵件地址，請檢查您的電子郵件，以取得PayPal寄出的確認訊息，然後按一下以確認您的電子郵件地址。
-1. 在管理員側欄上，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 重新整理您的瀏覽器視窗。
+1. 如果系統提示您確認您的電子郵件地址，請檢查您的電子郵件以獲取從PayPal發送的確認消息，然後按一下以確認您的電子郵件地址。
+1. 在管理員側欄上，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 刷新瀏覽器窗口。
 
-   核准您的PayPal商家上線後，您應會看到通知，指出您的付款系統處於沙箱模式，且不處理即時付款。
+   當您的PayPal商戶登機獲得批准時，您應看到一則通知，指出您的付款系統處於沙箱模式且未處理即時付款。
 
    >[!IMPORTANT]
    >
-   >如果您撤銷 [!DNL Payment Services] for [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 對於處理您的付款（在您的PayPal帳戶設定中），您商店中的訂單無法由 [!DNL Payment Services]. 在您的支付服務首頁上，會顯示有關已撤銷同意的警報。
+   >如果撤消對 [!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。 在您的付款服務首頁上，將顯示有關已吊銷的同意的警報。
 
 ## 從Adobe請求付款權利
 
-要啟用即時上線，您必須向Adobe請求付款權利：
+要啟用即時登機，您必須從Adobe請求付款權利：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 按一下 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 家。
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 按一下 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 回家。
 
-   ![要求權益](assets/request-entitlements.png)
+   ![請求權利](assets/request-entitlements.png)
 
 1. 填寫表單。
-1. 銷售團隊的一名成員將與您聯繫。
+1. 銷售團隊的成員將與您聯繫。
 
-或者，您也可以在以下網址向Adobe申請付款權利： [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+或者，您可以從Adobe請求付款權利 [商業.adobe.com](https://business.adobe.com/resources/payment-services.html)。
 
 >[!IMPORTANT]
 >
->**即時入門** 在核准付款權利之前無法存取。
+>**現場登機** 在批准付款權限之前無法訪問。
 
 ## 配置定價層
 
-要獲取 [!DNL Payment Services] _商家ID_:
+為了 [!DNL Payment Services] _商戶ID_:
 
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 在「首頁」檢視中，按一下 **[!UICONTROL Settings]**. 請參閱 [首頁](payments-home.md) 以取得更多資訊。
-1. 選取所需 _商家ID_ 並將其提交給您的銷售代表，銷售代表將配置正確的定價層。
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 在「首頁」視圖中，按一下 **[!UICONTROL Settings]**。 請參閱 [首頁](payments-home.md) 的子菜單。
+1. 選擇所需 _商戶ID_ 並將其提交給銷售代表，銷售代表將配置正確的定價層。
 
-## 啟用即時支付
+## 啟用即時付款
 
-A _生產商ID_ 會自動產生，並填入 [配置](configure-admin.md). 請勿變更或更改此ID。
+A _生產商ID_ 在 [配置](configure-admin.md)。 不要更改或更改此ID。
 
 要啟用即時付款，請執行以下操作：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 在首頁上，按一下 **[!UICONTROL Settings]** 頁面的右上角。 請參閱 [首頁](payments-home.md) 以取得更多資訊。
-1. 在 _[!UICONTROL General Configuration]_區段集&#x200B;**[!UICONTROL Payment mode]**to `Production`.
-1. 按一下 **[!UICONTROL Save]**.
-1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
+1. 在首頁上，按一下 **[!UICONTROL Settings]** 頁面右上角。 請參閱 [首頁](payments-home.md) 的子菜單。
+1. 在 _[!UICONTROL General Configuration]_節集&#x200B;**[!UICONTROL Payment mode]**至 `Production`。
+1. 按一下 **[!UICONTROL Save]**。
+1. [清除快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}。
 
    >[!IMPORTANT]
    >
-   >如果您未清除快取，客戶在結帳期間將看不到PayPal付款選項。
+   >如果您未清除快取，則客戶在結帳期間無法看到PayPal付款選項。
 
-如果您導覽回 [!DNL Payment Services] 首頁，沙箱付款模式訊息不會再出現，因為您現在正在處理即時付款。
+如果導航回 [!DNL Payment Services] 「首頁」，「沙盒」付款模式消息將不再顯示，因為您正在處理即時付款。
 
-請參閱 [在管理員中進行設定](configure-admin.md) 舊版設定選項。
+請參閱 [在管理員中配置](configure-admin.md) 選項。
 
 >[!IMPORTANT]
 >
->如果您撤銷 [!DNL Payment Services] 對於處理您的付款（在您的PayPal帳戶設定中），您商店中的訂單無法由 [!DNL Payment Services]. 如果要重新啟用付款處理，必須重新完成上線。 在您的支付服務首頁上，會顯示有關已撤銷同意的警報。
+>如果撤消對 [!DNL Payment Services] 處理付款時（在PayPal帳戶設定中），您的商店中的訂單無法由 [!DNL Payment Services]。 如果要重新啟用付款處理，必須再次完成登記。 在您的付款服務首頁上，將顯示有關已吊銷的同意的警報。
 
-## 在生產環境中測試
+## Test
 
-強烈建議您先在生產中測試Payments（使用真實信用卡和銀行），然後再向購物者顯示此功能。
+強烈建議您在將此功能向購物者公開之前，先將付款test到生產中，再使用真實信用卡和銀行。
 
-請參閱 [測試和驗證](test-validate.md) 以取得更多資訊。
+請參閱 [Test和驗證](test-validate.md) 的子菜單。

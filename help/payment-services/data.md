@@ -1,6 +1,6 @@
 ---
 title: 可用資料
-description: 使用financial reporting資料來調解與非商務系統的報告。
+description: 使用財務報告資料協調報告與非Commerce系統。
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # 可用資料
 
-您可以使用某些訂單和付款資料，以便跨外部系統協調Adobe Commerce財務報告。
+您可以獲得一些訂單和支付資料，以便跨外部系統協調Adobe Commerce財務報告。
 
 ## 與ERP系統協調
 
-您可以使用與特定訂單關聯的增量ID，將Adobe Commerce財務報告與非Adobe企業資源計畫(ERP)系統進行調節。
+您可以使用與特定訂單關聯的增量ID調節Adobe Commerce財務報告與非Adobe企業資源計畫(ERP)系統。
 
-當Payment Services將商務訂單傳送至PayPal時，增加的ID會納入為 `custom_id` _和_ 在 `invoice_id` (其中也包含隨機字串，在 `increment_id`)。
+當Oracle Payment Services將Commerce訂單發送到PayPal時，增量ID將作為 `custom_id` _和_ 的 `invoice_id` (它還包含隨機字串 `increment_id`)。
 
-ID在商戶活動詳細資訊中很容易被訪問，以便支付費用，在PayPal網路鈎中也可以。
+ID在商家活動細節中很容易被訪問，用於支付和在PayPal網鈎中。
 
-此 `invoice_id` 和 `custom_id` 顯示在商家活動詳細資訊底部附近，以支付：
+的 `invoice_id` 和 `custom_id` 顯示在商家活動詳細資訊底部附近，用於支付：
 
-![`custom_id` 在商家活動詳細資訊中](assets/merchant-activity-ids.png)
+![`custom_id` 商戶活動詳細資訊](assets/merchant-activity-ids.png)
 
-`custom_id` 和 `invoice_id` 在PayPal的Webhook中：
+`custom_id` 和 `invoice_id` 在PayPal網上搜索的細節中：
 
 ```json
    ...
@@ -76,7 +76,7 @@ ID在商戶活動詳細資訊中很容易被訪問，以便支付費用，在Pay
    ...
 ```
 
-如需詳細資訊，請參閱PayPal的REST API檔案：
+有關詳細資訊，請參閱PayPal的REST API文檔：
 
-* [`purchase_unit`, `custom_id` 和 `invoice_id` 駐留](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit, — 折疊)
+* [`purchase_unit`, `custom_id` 和 `invoice_id` 駐](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit, — 折疊)
 * [顯示訂單詳細資訊](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
