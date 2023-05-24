@@ -1,6 +1,6 @@
 ---
-title: "添加同義詞"
-description: '"添加 [!DNL Live Search] 改進對搜索請求的響應。」'
+title: "新增同義字"
+description: '"新增 [!DNL Live Search] 同義字可改善對搜尋請求的回應。」'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
@@ -9,67 +9,67 @@ ht-degree: 0%
 
 ---
 
-# 添加同義詞
+# 新增同義字
 
-通過添加您自己策劃的清單來增加客戶參與 [!DNL Live Search] 同義詞。 [!DNL Live Search] 每個同義詞最多可管理200個同義詞 `Data Space ID`。
+透過新增您自己精心組織的清單來提高客戶參與度 [!DNL Live Search] 同義字。 [!DNL Live Search] 最多可管理每個200個同義字 `Data Space ID`.
 
-![[!DNL Live Search] 同義詞](assets/synonym-workspace.png)
+![[!DNL Live Search] 同義字](assets/synonym-workspace.png)
 
-## 步驟1:添加同義詞
+## 步驟1：新增同義字
 
-1. 在管理員中，轉到 **營銷** > SEO &amp; Search > **[!DNL Live Search]**。
-1. 對於多個儲存，設定 **範圍** 到 [商店視圖](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 的子菜單。
-1. 按一下 **同義詞** 頁籤。
-1. 按一下 **添加同義詞** 按鈕
+1. 在Admin中，前往 **行銷** > SEO與搜尋> **[!DNL Live Search]**.
+1. 若為多個商店，請設定 **範圍** 至 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 適用於同義字設定的位置。
+1. 按一下 **同義字** 標籤。
+1. 按一下 **新增同義字** 按鈕。
 
-## 步驟2:按類型定義同義詞
+## 步驟2：依型別定義同義字
 
-按照 [同義詞類型](synonyms-type.md) 建立。
+請依照 [同義字型別](synonyms-type.md) 要建立的物件。
 
-### 雙向同義詞
+### 雙向同義字
 
-1. 接受預設值 **雙向** 的雙曲餘切值。
+1. 接受預設值 **雙向** 選項。
 
-   ![添加雙向同義詞](assets/synonym-add-two-way.png)
+   ![新增雙向同義字](assets/synonym-add-two-way.png)
 
 
-1. 輸入 **關鍵字** 要匹配的術語或短語。
-1. 輸入 **擴展** 要添加為關鍵字同義詞的術語。 用逗號分隔多個術語。
-在本例中，匹配的關鍵字是「褲子」，而擴展字集是「長褲、褲子、寬鬆褲」。
+1. 輸入 **關鍵字** 要比對的字詞或片語。
+1. 輸入 **擴充** 您想要新增為關鍵字的同義字的字詞。 請使用逗號分隔多個詞語。
+在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「long pants， trousers， slacks」。
 
-   ![雙向同義詞示例](assets/synonym-add-two-way-example.png)
+   ![雙向同義字範例](assets/synonym-add-two-way-example.png)
 
-1. 完成後，按一下 **保存**。
-該同義詞集顯示在清單中，每個詞之間有一個雙向箭頭，表示詞是可互換的。
+1. 完成後，按一下 **儲存**.
+同義字集出現在清單中，每個字詞之間有一個雙向箭頭，表示這些字詞可以互換。
 
-   ![雙向同義詞](assets/synonym-two-way.png)
+   ![雙向同義字](assets/synonym-two-way.png)
 
-### 單向同義詞
+### 單向同義字
 
-1. 按一下 **單向** 同義詞類型。
+1. 按一下 **單向** 同義字型別。
 
-   ![添加單向同義詞](assets/synonym-add-one-way.png)
+   ![新增單向同義字](assets/synonym-add-one-way.png)
 
-1. 輸入 **關鍵字** 和 **擴展** 。 用逗號分隔多個術語。
+1. 輸入 **關鍵字** 和 **擴充** 辭彙。 請使用逗號分隔多個詞語。
 
-   ![單向同義詞示例](assets/synonym-add-one-way-example.png)
+   ![單向同義字範例](assets/synonym-add-one-way-example.png)
 
-   在本例中，關鍵字是&quot;pants&quot;，單向擴展詞&quot;capris, calf-length pants, peddle-pushers&quot;是&quot;pants&quot;的子集，但具有特定含義。
+   在此範例中，關鍵字是「pants」，而單向擴充術語「capris， calf-length pants， peddle-pushers」都是「pants」的子集，但具有特定含義。
 
-1. 完成後，按一下 **保存**。
-該同義詞集顯示在清單中，並帶有從擴展術語指向關鍵字的單向箭頭，以指示術語是關鍵字的子集。 每個擴展項之間有加號。
+1. 完成後，按一下 **儲存**.
+同義字集合出現在清單中，有一個從展開字詞指向關鍵字的單向箭頭，指示字詞是關鍵字的子集。 每個擴充詞以加號分隔。
 
-   ![單向同義詞](assets/synonym-one-way.png)
+   ![單向同義字](assets/synonym-one-way.png)
 
-## 第3步：發佈更改
+## 步驟3：發佈變更
 
-1. 完成同義詞後，按一下 **發佈更改**。
-1. 在店面等待最多兩小時，以便更新可用。
+1. 當您的同義字完成時，按一下 **發佈變更**.
+1. 等候最多2小時，讓您的更新在店面中可用。
 
 ## 欄位說明
 
 | 欄位 | 說明 |
 |--- |--- |
-| [類型](synonyms.md) | 確定同義詞是否與關鍵字具有相同的含義，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同含義並返回相同搜索結果的術語<br />單向 — 關鍵字子集的術語。 單向同義詞返回一個更窄的特定產品清單。 |
-| 關鍵字 | 通常與目錄中所選產品關聯的詞。 |
-| 擴展 | 與關鍵字具有相同或相似含義的附加術語。 |
+| [型別](synonyms.md) | 判斷同義字與關鍵字的意義相同，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同涵義的辭彙，並傳回相同的搜尋結果<br />單向 — 關鍵字的子集詞語。 單向同義字會傳回較窄的特定產品清單。 |
+| 關鍵字 | 通常與目錄中的產品選擇相關聯的字詞。 |
+| 擴充 | 與關鍵字具有相同或類似含義的其他詞語。 |

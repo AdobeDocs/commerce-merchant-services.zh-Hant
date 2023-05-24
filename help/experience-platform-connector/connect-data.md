@@ -1,6 +1,6 @@
 ---
-title: 將Commerce資料連接到Adobe Experience Platform
-description: 瞭解如何將您的Commerce資料連接到Adobe Experience Platform。
+title: 將Commerce資料連線至Adobe Experience Platform
+description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
@@ -9,86 +9,86 @@ ht-degree: 0%
 
 ---
 
-# 將Commerce資料連接到Adobe Experience Platform
+# 將Commerce資料連線至Adobe Experience Platform
 
-安裝Experience Platform連接器時，在 **系統** 菜單 **服務** 中 _管理_。
+安裝Experience Platform聯結器時，兩個新設定頁面會出現在 **系統** 下的選單 **服務** 在商務中 _管理員_.
 
-- Commerce Services連接器
-- Experience Platform連接器
+- 商務服務聯結器
+- Experience Platform聯結器
 
-要將Adobe Commerce實例連接到Adobe Experience Platform，必須配置兩個連接器，從Commerce Services連接器開始，然後使用Experience Platform連接器完成。
+若要將您的Adobe Commerce執行個體連線到Adobe Experience Platform，您必須設定兩個聯結器，從Commerce Services聯結器開始，然後使用Experience Platform聯結器完成。
 
-## 更新Commerce Services連接器
+## 更新Commerce服務聯結器
 
-如果您以前安裝過Adobe Commerce服務，則可能已配置了Commerce Services連接器。 否則，必須在 [Commerce Services連接器](../landing/saas.md) 頁：
+如果您先前已安裝Adobe Commerce服務，則您可能已設定Commerce Services聯結器。 如果沒有，您必須在 [Commerce服務聯結器](../landing/saas.md) 頁面：
 
-1. 登錄到您的Commerce帳戶 [檢索您的生產和沙盒API密鑰](../landing/saas.md#credentials)。
-1. 選擇 [SaaS資料空間](../landing/saas.md#saas-configuration)。
-1. 登錄到Adobe帳戶 [檢索組織ID](../landing/saas.md#ims-organization-optional)。
+1. 登入您的Commerce帳戶至 [擷取您的生產和沙箱API金鑰](../landing/saas.md#credentials).
+1. 選取 [SaaS資料空間](../landing/saas.md#saas-configuration).
+1. 登入您的Adobe帳戶至 [擷取您的組織ID](../landing/saas.md#ims-organization-optional).
 
-配置Commerce Services連接器後，配置Experience Platform連接器。
+設定Commerce Services聯結器後，再設定Experience Platform聯結器。
 
-## 更新Experience Platform連接器
+## 更新Experience Platform聯結器
 
-在本節中，您使用組織ID將Adobe Commerce實例連接到Adobe Experience Platform。 然後，可以指定要發送到Experience Platform邊緣的資料類型（儲存前端或後端辦公室）。
+在本節中，您會使用組織ID將Adobe Commerce執行個體連結至Adobe Experience Platform。 然後，您可以指定要傳送至Experience Platform邊緣的資料型別（店面或後台）。
 
-![Experience Platform連接器配置](assets/epc-config-dc.png)
+![Experience Platform聯結器設定](assets/epc-config-dc.png)
 
-## 常規
+## 一般
 
-1. 登錄到您的Adobe帳戶 [Commerce Services連接器](../landing/saas.md#organizationid) 並選擇您的組織ID。
-
-   >[!NOTE]
-   >
-   >如果您以前配置了Commerce Services連接器，則可以跳過此步驟，因為您的組織ID已被選擇。
-
-1. 在管理員中，轉到 **系統** >服務> **Experience Platform連接器**。
-
-1. 在 **範圍** 下拉清單，將上下文設定為 **網站**。
-
-1. 在 **組織ID** 欄位中，驗證與您的Adobe Experience Platform帳戶關聯的ID(如 [Commerce Services連接器](../landing/saas.md#organizationid)。 組織ID為全局。 每個Adobe Commerce實例只能關聯一個組織ID。
-
-1. （可選）如果您已 [AEP Web SDK（合金）](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 部署到您的站點，啟用複選框並添加AEP Web SDK的名稱。 否則，將這些欄位留空，Experience Platform連接器將為您部署一個欄位。
+1. 在登入您的Adobe帳戶 [商務服務聯結器](../landing/saas.md#organizationid) 並選取您的組織ID。
 
    >[!NOTE]
    >
-   >如果指定您自己的AEP Web SDK，則Experience Platform連接器將使用與該SDK關聯的資料流ID，而不是此頁上指定的資料流ID（如果有）。
+   >如果您先前已設定Commerce Services聯結器，則可以跳過此步驟，因為已選取您的組織ID。
 
-## 資料收集
+1. 在Admin中，前往 **系統** >服務> **Experience Platform聯結器**.
 
-在本節中，您指定要發送到Experience Platform邊的資料類型。 有兩種類型的資料：客戶端和伺服器端。
+1. 在 **範圍** 下拉式清單，將內容設定為 **網站**.
 
-客戶端資料是在儲存端捕獲的資料。 這包括購物者之間的互動，例如 `View Page`。 `View Product`。 `Add to Cart`, [申請表](events.md#b2b-events) 資訊（針對B2B商戶）。 伺服器端資料或後台辦公室資料是在Commerce伺服器中捕獲的資料。 這包括有關訂單狀態的資訊，例如訂單是否已下達、取消、退還、發運或完成。
+1. 在 **組織ID** 欄位中，驗證與您的Adobe Experience Platform帳戶相關聯的ID (如 [商務服務聯結器](../landing/saas.md#organizationid). 組織ID為全域。 每個Adobe Commerce執行個體只能關聯一個組織ID。
 
-在 **資料收集** 的子菜單。 要確保您的Adobe Commerce實例可以開始資料收集，請查看 [先決條件](overview.md#prerequisites)。
+1. （選用）如果您已有 [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 部署至您的網站，啟用核取方塊並新增AEP Web SDK的名稱。 否則，請將這些欄位留空，Experience Platform聯結器會為您部署一個欄位。
 
-查看事件主題以瞭解有關 [店面](events.md#storefront-events) 和 [後台辦公室](events.md#back-office-events) 事件。
+   >[!NOTE]
+   >
+   >如果您指定自己的AEP Web SDK，Experience Platform聯結器會使用與該SDK相關聯的資料流ID，而不是此頁面上指定的資料流ID （如果有的話）。
+
+## 資料彙集
+
+您可以在此段落中指定您要傳送至Experience Platform邊緣的資料型別。 有兩種型別的資料：使用者端和伺服器端。
+
+使用者端資料是在店面擷取的資料。 這包括購物者互動，例如 `View Page`， `View Product`， `Add to Cart`、和 [請購單清單](events.md#b2b-events) 資訊（適用於B2B商家）。 伺服器端資料（或後端辦公室資料）是擷取到Commerce伺服器的資料。 這包括訂單狀態的相關資訊，例如，訂單是否已下達、取消、退款、已出貨或完成。
+
+在 **資料彙集** 區段，選取您要傳送至Experience Platform邊緣的資料型別。 為確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱 [必備條件](overview.md#prerequisites).
+
+請參閱事件主題以深入瞭解 [店面](events.md#storefront-events) 和 [後台](events.md#back-office-events) 事件。
 
 >[!NOTE]
 >
->中的所有欄位 **資料收集** 文本 **網站** 範圍或更高。
+>所有欄位 **資料彙集** 區段套用至 **網站** 範圍或更高。
 
-1. 選擇 **店面事件** 的子菜單。
-
-   >[!NOTE]
-   >
-   >的 **店面事件** 如果AEP Web SDK和組織ID有效，則會自動啟用複選框。
-
-1. 選擇 **後台辦公室事件** 如果要發送訂單狀態資訊，例如訂單已下達、取消、退貨或已發運。
+1. 選取 **店面活動** 如果您想要傳送店面行為資料。
 
    >[!NOTE]
    >
-   >如果選擇 **後台辦公室事件**，所有後台辦公室資料都發送到Experience Platform邊緣。 如果購物者選擇不收集資料，則必須在Experience Platform中明確設定購物者的隱私偏好。 這不同於收購者已根據購物者偏好處理同意的店面事件。 [瞭解更多資訊](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) 在Experience Platform中設定購物者的隱私偏好。
+   >此 **店面活動** 如果AEP Web SDK和組織ID有效，則會自動啟用核取方塊。
 
-1. 確保後台辦公室事件資料根據 [克隆](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) 工作，你必須改變 `Sales Orders Feed` 索引 `Update by Schedule`。
+1. 選取 **後台活動** 如果您要傳送訂單狀態資訊，例如訂單是否已下達、取消、退款或出貨。
 
-   1. 在 _管理_ 邊欄，轉到 **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**。
+   >[!NOTE]
+   >
+   >如果您選取 **後台活動**，所有後台資料都會傳送至Experience Platform邊緣。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 [瞭解更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) 關於在Experience Platform中設定購物者的隱私權偏好設定。
 
-   1. 選中 `Sales Orders Feed` 索引器。
+1. 確保後台事件資料會根據排程更新 [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) 工作，您必須變更 `Sales Orders Feed` 索引至 `Update by Schedule`.
 
-   1. 設定 **[!UICONTROL Actions]** 至 `Update by Schedule`。
+   1. 於 _管理員_ 側欄，前往 **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
 
-   1. 如果首次啟用後台辦公室資料，請運行以下命令重新編製索引並觸發重新同步。 只要 [克隆](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) 作業設定正確。
+   1. 選取的核取方塊 `Sales Orders Feed` 索引器。
+
+   1. 設定 **[!UICONTROL Actions]** 至 `Update by Schedule`.
+
+   1. 如果您是第一次啟用後台資料，請執行以下命令來重新索引並觸發重新同步。 後續的重新同步只要符合下列條件就會自動進行： [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) 工作已正確設定。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -98,35 +98,35 @@ ht-degree: 0%
       bin/magento saas:resync --feed orders
       ```
 
-1. （如果您正在使用自己的AEP Web SDK，請跳過此步驟。） [建立](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) Adobe Experience Platform中的資料流，或選擇要用於收集的現有資料流。
+1. （如果您使用自己的AEP Web SDK，請略過此步驟。） [建立](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) Adobe Experience Platform中的資料流，或選取您要用於收集的現有資料流。
 
-1. （如果您正在使用自己的AEP Web SDK，請跳過此步驟。） 在 **資料流ID** 欄位，貼上該新資料流或現有資料流的ID。
+1. （如果您使用自己的AEP Web SDK，請略過此步驟。） 在 **資料串流ID** 欄位，貼上新資料流或現有資料流的ID。
 
 ## 欄位說明
 
 | 欄位 | 說明 |
 |--- |--- |
-| 範圍 | 要應用配置設定的特定網站。 |
-| 組織ID（全局） | 屬於購買AdobeDX產品的組織的ID。 此ID將你的Adobe Commerce實例連結到Adobe Experience Platform。 |
-| AEP Web SDK是否已部署到您的站點 | 如果已將自己的AEP Web SDK部署到您的站點，請選中此複選框 |
-| AEP Web SDK名稱（全局） | 如果已將Experience PlatformWeb SDK部署到您的站點，請在此欄位中指定該SDK的名稱。 這允許Storefront事件收集器和Storefront事件SDK使用您的Experience PlatformWeb SDK，而不是Experience Platform連接器部署的版本。 如果您沒有將Experience PlatformWeb SDK部署到您的站點，請將此欄位留空，Experience Platform連接器將為您部署一個。 |
-| 店面事件 | 如果組織ID和資料流ID有效，則預設選中。 店面事件在顧客瀏覽你的網站時收集匿名行為資料。 |
-| 後台辦公室事件 | 如果選中，則事件負載包含匿名訂單狀態資訊，例如，訂單是否被放置、取消、退還或發運。 |
-| 資料流ID（網站） | 允許資料從Adobe Experience Platform流到其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce實例中的特定網站關聯。 如果指定您自己的Experience PlatformWeb SDK，請不要在此欄位中指定資料流ID。 Experience Platform連接器使用與該SDK關聯的資料流ID，並忽略此欄位中指定的任何資料流ID（如果有）。 |
+| 範圍 | 您要套用組態設定的特定網站。 |
+| 組織ID （全域） | 屬於購買AdobeDX產品的組織的ID。 此ID會將您的Adobe Commerce執行個體連結至Adobe Experience Platform。 |
+| AEP Web SDK是否已部署至您的網站 | 如果您已將自己的AEP Web SDK部署到網站，請選取此核取方塊 |
+| AEP Web SDK名稱（全域） | 如果您已將Experience PlatformWeb SDK部署至網站，請在此欄位中指定該SDK的名稱。 這可讓店面事件收集器和店面事件SDK使用您的Experience PlatformWeb SDK，而不是Experience Platform聯結器部署的版本。 如果您未將Experience PlatformWeb SDK部署到網站，請將此欄位留空，Experience Platform聯結器會為您部署一個。 |
+| 店面活動 | 只要組織ID和資料流ID有效，就會預設勾選。 店面活動會在購物者瀏覽您的網站時，從他們那裡收集匿名的行為資料。 |
+| 後台活動 | 若勾選，事件有效負載會包含匿名處理的訂單狀態資訊，例如訂單是否已下達、取消、退款或出貨。 |
+| 資料串流ID （網站） | 可讓資料從Adobe Experience Platform流向其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce執行個體中的特定網站相關聯。 如果您指定自己的Experience PlatformWeb SDK，請勿在此欄位中指定資料串流ID。 Experience Platform聯結器會使用與該SDK相關聯的資料流ID，並忽略此欄位中指定的任何資料流ID （如果有的話）。 |
 
 >[!NOTE]
 >
->登錄後，儲存的資料開始流向Experience Platform邊緣。 後台辦公室資料在邊緣顯示大約需要5分鐘。 隨後的更新基於cron計畫在邊上可見。
+>上線後，店面資料開始流入Experience Platform邊緣。 後端辦公室資料大約需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
 
 ## 確認已收集事件資料
 
-要確認正在從您的Commerce儲存中收集資料，請使用 [Adobe Experience Platform調試器](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 查看您的商業網站。 在確認正在收集資料後，您可以通過運行一個查詢來驗證儲存前端和後台辦公室事件資料是否出現在邊緣 [建立的資料集](overview.md#prerequisites)。
+若要確認系統正在從Commerce商店收集資料，請使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 檢查您的Commerce網站。 確認資料正在收集後，您可以透過執行查詢，從傳回資料，確認店面和後台事件資料出現在邊緣 [您建立的資料集](overview.md#prerequisites).
 
-1. 選擇 **查詢** 在Experience Platform的左側導航中，按一下 [!UICONTROL Create Query]。
+1. 選取 **查詢** 在Experience Platform的左側導覽列中，然後按一下 [!UICONTROL Create Query].
 
    ![查詢編輯器](assets/query-editor.png)
 
-1. 開啟查詢編輯器時，輸入從資料集中選擇資料的查詢。
+1. 當查詢編輯器開啟時，輸入從資料集中選取資料的查詢。
 
    ![建立查詢](assets/create-query.png)
 
@@ -136,10 +136,10 @@ ht-degree: 0%
    SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
    ```
 
-1. 運行查詢後，結果將顯示在 **結果** 頁籤 **控制台** 頁籤。 此視圖顯示查詢的表格輸出。
+1. 查詢執行後，結果會顯示在 **結果** 標籤，在 **主控台** 標籤。 此檢視顯示查詢的表格輸出。
 
    ![查詢編輯器](assets/query-results.png)
 
-在此示例中，您將看到 [`commerce.productListAdds`](events.md#addtocart)。 [`commerce.productViews`](events.md#productpageview)。 [`web.webpagedetails.pageViews`](events.md#pageview)等等。 此視圖允許您驗證您的Commerce資料是否到達邊緣。
+在此範例中，您會看到以下專案中的事件資料： [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)、等等。 此檢視可讓您驗證您的Commerce資料是否到達邊緣。
 
-如果結果不是您期望的結果，請開啟資料集並查找所有失敗的批處理導入。 瞭解有關 [疑難解答批處理導入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)。
+如果結果與預期不符，請開啟資料集並尋找任何失敗的批次匯入。 進一步瞭解 [疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).

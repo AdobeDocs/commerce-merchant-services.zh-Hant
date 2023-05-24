@@ -1,6 +1,6 @@
 ---
-title: 支付報告
-description: 使用「支付」報告可以完全透明地記錄支付金額、已處理數量以及財務對帳的交易級別詳細報告。
+title: 支付報表
+description: 使用「付款」報表，可完全透明地顯示付款金額、已處理數量及財務調節之交易層次的詳細報表。
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
@@ -11,192 +11,192 @@ ht-degree: 0%
 
 ---
 
-# 支付報告
+# 支付報表
 
-[!DNL Payment Services] 為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的報告，以便您能夠清楚地查看您商店的訂單和付款。
+[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報告，讓您清楚瞭解商店的訂購與付款。
 
-![財務報告視圖](assets/reports-justpayouts.png)
+![財務報告檢視](assets/reports-justpayouts.png)
 
-有兩種可用的支付報告視圖，使您能夠查看有關所有支付的詳細資訊：
+有兩個可用的「付款」報告檢視表，可讓您檢視所有付款的深入資訊：
 
-* **[支付資料可視化視圖](#payouts-data-visualization-view)** — 支付服務首頁上提供的圖表，該圖表是從支付報告視圖中直觀顯示的每日合計金額
-* **[支付報表視圖](#payouts-report-view)** — 支付中提供的報告，其中顯示所有交易的詳細支付資訊
+* **[支付資料視覺效果檢視](#payouts-data-visualization-view)** — 可在「付款服務首頁」上使用的圖表，以視覺化方式呈現付款報表檢視中的每日彙總金額
+* **[支付報表檢視](#payouts-report-view)** — 可顯示在「付款」中的報表，其中顯示所有交易的詳細付款資訊
 
-「支付」視圖一覽顯示全面的支付資訊，使您對支付金額、處理量和財務調節的交易級別的詳細報告具有完全透明性。
+「付款」檢視表一目瞭然地顯示完整的付款資訊，可讓您完全透明地顯示付款金額、處理數量及財務調節之交易層次的詳細報表。
 
 >[!NOTE]
 >
->付款報表僅顯示已捕獲的訂單(付款活動設定為 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — 或 [標籤為 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html)。
+>付款報表只會顯示已抓取的訂單(付款作業設為 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — 或 [標示為 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
-## 支付資料可視化視圖
+## 支付資料視覺效果檢視
 
-支付服務首頁提供支付資料可視化視圖。 它是詳細表格每天匯總金額的直觀表示 [支付報表視圖](#payouts-report-view)。
+付款服務首頁提供「付款」資料視覺效果檢視。 這是詳細表格中每日彙總金額的視覺化表示法 [支付報表檢視](#payouts-report-view).
 
-在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 查看貸項與借項及隨時間移動的平均值的資料可視化圖表。
+於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 檢視信用與借項的資料視覺化圖表，以及一段時間內的移動平均。
 
-![在管理員中顯示支付資料](assets/payouts-report.png)
+![管理員中的支付資料視覺效果](assets/payouts-report.png)
 
-按一下 **[!UICONTROL View Report]** 導航到詳細表格 [支付報表視圖](#payouts-report-view)。
+按一下 **[!UICONTROL View Report]** 導覽至詳細的表格 [支付報表檢視](#payouts-report-view).
 
-### 自定義交易時間範圍
+### 自訂交易時間範圍
 
-預設情況下，顯示30天的交易記錄。
+依預設，會顯示30天的交易。
 
-從支付資料可視化視圖中，您可以通過選擇日期範圍來自定義要查看的支付交易記錄的時間範圍：
+從「付款資料」視覺效果檢視中，您可以選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。 彩金資料可視化視圖在彩金部分可見。
+1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 「付款」資料視覺效果檢視會顯示在「付款」區段中。
 1. 按一下 **[!UICONTROL Range]** 選擇器篩選器。
-1. 選擇適用的日期範圍 — 30天、 15天或7天。
-1. 查看指定日期的交易記錄資訊。
+1. 選擇適用的日期範圍 — 30天、15天或7天。
+1. 檢視指定日期的交易資訊。
 
-### 交易記錄資訊
+### 交易資訊
 
-所選日期範圍的交易金額顯示在支付資料可視化視圖的左側。 所選日期範圍的日期顯示在視圖底部。 如果某個日期沒有支付，該日期將不出現。
+所選日期範圍的交易金額會顯示在「付款」資料視覺效果檢視的左側。 所選日期範圍的日期會顯示在檢視底部。 如果特定日期沒有付款，該日期將不會顯示。
 
-支付資料可視化視圖包括以下資訊。
+「付款」資料視覺效果檢視包含下列資訊。
 
 | 資料 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Transaction amount] | 指定時間範圍內的事務處理的金額範圍；Y軸上的資料（左） |
-| 日期範圍 | 指定時段的日期範圍；X軸上的資料（底部） |
-| 貸項 | 指定時間範圍的付款 |
-| 借方 | 指定時段的借項（退款） |
-| 移動平均 | 指定時間範圍內每個日期的平均支出表示 |
-| 淨值範圍 | 指定時間範圍（範圍）的淨支付額 |
+| [!UICONTROL Transaction amount] | 指定時間範圍內交易的金額範圍；Y軸上的資料（左） |
+| 日期範圍 | 指定時間範圍的日期範圍；X軸（底部）的資料 |
+| 信用 | 指定時間範圍的付款 |
+| 借方 | 指定時間範圍內的借方（退款） |
+| 移動平均 | 表示指定時間範圍內每個日期的平均派息 |
+| 範圍的淨值 | 指定時間範圍（範圍）的淨支付金額 |
 
-## 支付報表視圖
+## 支付報表檢視
 
-支付服務的支付視圖中提供支付報告視圖。 它包括有關您商店的付款的所有可用資訊。 的 [支付資料可視化視圖](#payouts-data-visualization-view) 在「付款服務首頁」中，您可以在此更詳細的報表視圖中直觀地表示每天的合計金額。
+「付款服務」的「付款」檢視表中會提供「付款」報表檢視表。 它包含有關您商店付款的所有可用資訊。 此 [支付資料視覺效果檢視](#payouts-data-visualization-view) 在「付款服務首頁」中，可在此更詳細的報表檢視中，以視覺化方式呈現每日彙總金額。
 
-在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 查看詳細的支付表格報告視圖。
+於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 若要檢視詳細的表格化付款報表檢視，請執行下列步驟：
 
-![管理員中的支付事務](assets/payouts-report-new.png)
+![管理員中的支付交易](assets/payouts-report-new.png)
 
-您可以根據本主題中的各節配置此視圖，以最好地顯示您希望查看的資料。
+您可以依據本主題中的章節，設定此檢視，以最佳方式呈現您想要檢視的資料。
 
-請參閱管理員的「支付」報表中的連結商業訂單和交易ID、交易金額、每筆交易的付款方法等。
+請參閱連結的商務訂單與交易ID、交易金額、每筆交易的付款方式等，這些全都在「管理員」的「付款」報表中。
 
-您可以以.csv檔案格式下載支付交易記錄，以用於現有會計或訂單管理軟體。
+您可以下載.csv檔案格式的支付交易，以用於現有的會計或訂單管理軟體。
 
 >[!NOTE]
 >
->此表中顯示的資料按降序排序(`DESC`) `TRANS DATE`。 的 `TRANS DATE` 是事務處理的啟動日期和時間。
+>此表格中顯示的資料會依遞減順序排序(`DESC`)預設情況下，使用 `TRANS DATE`. 此 `TRANS DATE` 是啟動交易的日期和時間。
 
-### 選擇資料源
+### 選取資料來源
 
-在「支付」報表視圖中，您可以選擇資料源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其報告結果。
+在「付款」報表檢視中，您可以選取資料來源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您想要檢視其報告結果。
 
-![資料源選擇](assets/datasource.png)
+![資料來源選擇](assets/datasource.png)
 
-如果 _[!UICONTROL Live]_是選定的資料源，您可以查看即時商店的報告資訊。 如果 [!UICONTROL Sandbox]_是選定的資料源，您可以查看沙盒環境的報告資訊。
+若 _[!UICONTROL Live]_是選取的資料來源，您可以檢視即時存放區的報表資訊。 若 [!UICONTROL Sandbox]_是選取的資料來源，您可以看到沙箱環境的報告資訊。
 
-資料源選擇的工作方式如下：
+資料來源選取專案的工作方式如下：
 
-* 如果沒有處於「即時」模式的儲存，則資料源選擇的預設值為 _[!UICONTROL Sandbox]_。
-* 如果在「即時」模式下有任何儲存（一個或多個），則資料源選擇的預設值為 _[!UICONTROL Live]_。
-* 報告導出始終遵循資料源選擇。
+* 如果您沒有任何處於即時模式的存放區，資料來源選取範圍會預設為 _[!UICONTROL Sandbox]_.
+* 如果您在「即時」模式中有任何存放區（一或多個），資料來源選項預設為 _[!UICONTROL Live]_.
+* 報表匯出一律遵循資料來源選擇。
 
-要為「訂單付款狀態」報表選擇資料源，請執行以下操作：
+若要選取「訂單付款狀態」報表的資料來源，請執行下列步驟：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**。
-1. 按一下 **[!UICONTROL Data source]** 選擇 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_。
+1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. 按一下 **[!UICONTROL Data source]** 並選取 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_.
 
-   根據所選資料源重新生成報告結果。
+   報表結果會根據選取的資料來源重新產生。
 
-### 查看交易記錄
+### 檢視交易
 
-預設情況下，顯示30天的交易記錄。
+依預設，會顯示30天的交易。
 
-在搜索中返回或在預設的30天交易中顯示的行數顯示在「支付」視圖網格的上方，並與「交易日期」日曆選擇器篩選器一起顯示。
+搜尋中傳回或顯示在預設30天交易中的列數，會與「交易日期」行事曆選取器篩選器一起顯示在「付款」檢視網格上方。
 
-向左和向右滾動以查看 [每個支付交易記錄的資訊](#column-descriptions) 日報表中，包括交易記錄日期、參考ID、發票編號和付款方法詳細資訊。
+向左向右捲動以檢視 [每個支付交易的資訊](#column-descriptions) 在每日報表中，包含交易日期、參考識別碼、商業發票號碼及付款方式明細。
 
-#### 自定義交易時間範圍
+#### 自訂交易時間範圍
 
-在「支付」報表視圖中，您可以通過輸入特定日期或從日期選取器選擇日期範圍來自定義要查看的支付事務處理的時間範圍：
+在「付款報表」檢視中，您可以輸入特定日期或從日期選擇器選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**。
-1. 按一下「事務處理日期日曆」選擇器篩選器。
+1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. 按一下「交易日期」行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
-1. 在網格中查看指定日期的支付狀態。
+1. 檢視指定日期之網格中的付款狀態。
 
-### 顯示和隱藏列
+### 顯示和隱藏欄
 
-預設情況下，「支付」報表視圖顯示大多數可用資訊列。 但是，您可以自定義在報告中看到的列。
+依預設，「付款」報表檢視會顯示大部分可用的資訊欄。 不過，您可以自訂您在報表中看到的欄。
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**。
-1. 按一下 _列設定_ 表徵圖。![列設定表徵圖](assets/column-settings.png))。
-1. 要自定義您在報表中看到的列，請選中或取消選中清單中的列。
+1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png))。
+1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
-   「支付」報告視圖將立即顯示您在「列設定」菜單中所做的任何更改。 列首選項將被保存，並且如果您從報表視圖中導航，將保持有效。
+   「付款」報表檢視會立即顯示您在「欄設定」功能表中所做的任何變更。 欄偏好設定將會儲存，而且如果您離開報表檢視，偏好設定將保持有效。
 
-### 下載交易記錄
+### 下載交易
 
-您可以下載一個.csv檔案，其中包含「支付」視圖網格中可見的所有交易。
+您可以下載包含「付款」檢視格線中所有可見交易的.csv檔案。
 
-1. 在 _管理_ 邊欄，轉到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**。
-1. [自定義交易記錄的日期範圍時間範圍](#customize-transactions-timeframe)。
-1. 按一下 _下載_ (![](assets/icon-download.png))。
+1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. [自訂交易的日期範圍時間範圍](#customize-transactions-timeframe).
+1. 按一下 _下載_ (![](assets/icon-download.png))圖示。
 
-您的支付交易以.csv格式下載。
+您的付款交易會以.csv格式下載。
 
-### 列說明
+### 欄說明
 
-付款報表包括以下資訊。
+支付報表包含下列資訊。
 
-| 列 | 說明 |
+| 欄 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Provider] | 付款提供方 |
-| [!UICONTROL Provider trans] | 事務ID |
-| [!UICONTROL Trans date] | 啟動交易記錄的日期和時間 |
-| [!UICONTROL Type] | 事務類型 — *[!UICONTROL PAYMENT]*。 *[!UICONTROL BONUS]*。 *[!UICONTROL CHARGEBACK]*。 *[!UICONTROL CORRECTION]*。 *[!UICONTROL CURRENCY_CONVERSATION]*。 *[!UICONTROL DEPOSIT]*。 *[!UICONTROL DISBURSEMENT]*。 *[!UICONTROL DISPUTE]*。 *[!UICONTROL FEES]*。 *[!UICONTROL HOLD]*。 *[!UICONTROL HOLD_RELEASE]*。 *[!UICONTROL INCENTIVES]*。 *[!UICONTROL OTHERS]*。 *[!UICONTROL RECOUP]*。 *[!UICONTROL REFUND]*。 *[!UICONTROL REVERSAL]*。 *[!UICONTROL WITHDRAWAL]* <br> <br>請參閱 [交易記錄類型](#transaction-types) 的子菜單。 |
-| [!UICONTROL Status] | 交易記錄的當前狀態 — *[!UICONTROL SUCCESS]*。 *[!UICONTROL DENIED]*。 *[!UICONTROL PENDING]* |
-| [!UICONTROL Code] | 指示貸項(*CR*)或借方(*DR*) |
-| [!UICONTROL Reference ID] | 此事件相關的原始事務ID |
-| [!UICONTROL Invoice] | 交易記錄的發票ID（每張訂單一張） |
-| [!UICONTROL Commerce order] | 商業訂單ID <br> <br>查看相關 [訂單資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
-| [!UICONTROL Commerce trans] | 商務交易記錄ID <br> <br>查看相關 [事務資訊](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}，按一下ID。 |
-| [!UICONTROL Pay method] | 信用卡類型 — *[!UICONTROL BANK]*。 *[!UICONTROL PAYPAL]*。 *[!UICONTROL APPLE_PAY]*。 *[!UICONTROL CREDIT_CARD]* — 和關聯的卡提供商(例如 *維薩* 或 *萬事達*) |
-| [!UICONTROL Trans amt] | 交易記錄的金額 |
-| [!UICONTROL Cur] | 交易記錄金額的幣種單位 |
+| [!UICONTROL Provider] | 付款提供者 |
+| [!UICONTROL Provider trans] | 交易ID |
+| [!UICONTROL Trans date] | 啟動交易的日期和時間 |
+| [!UICONTROL Type] | 交易型別 — *[!UICONTROL PAYMENT]*， *[!UICONTROL BONUS]*， *[!UICONTROL CHARGEBACK]*， *[!UICONTROL CORRECTION]*， *[!UICONTROL CURRENCY_CONVERSATION]*， *[!UICONTROL DEPOSIT]*， *[!UICONTROL DISBURSEMENT]*， *[!UICONTROL DISPUTE]*， *[!UICONTROL FEES]*， *[!UICONTROL HOLD]*， *[!UICONTROL HOLD_RELEASE]*， *[!UICONTROL INCENTIVES]*， *[!UICONTROL OTHERS]*， *[!UICONTROL RECOUP]*， *[!UICONTROL REFUND]*， *[!UICONTROL REVERSAL]*， *[!UICONTROL WITHDRAWAL]* <br> <br>另請參閱 [交易型別](#transaction-types) 以取得詳細資訊。 |
+| [!UICONTROL Status] | 交易的目前狀態 — *[!UICONTROL SUCCESS]*， *[!UICONTROL DENIED]*， *[!UICONTROL PENDING]* |
+| [!UICONTROL Code] | 表示貸方(*CR*)或借方(*DR*) |
+| [!UICONTROL Reference ID] | 與此事件相關的原始交易ID |
+| [!UICONTROL Invoice] | 交易的商業發票ID （每筆訂單一個） |
+| [!UICONTROL Commerce order] | 商務訂單ID <br> <br>若要檢視相關專案，請執行下列動作 [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
+| [!UICONTROL Commerce trans] | 商務交易ID <br> <br>若要檢視相關專案，請執行下列動作 [交易資訊](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}，按一下ID。 |
+| [!UICONTROL Pay method] | 信用卡型別 — *[!UICONTROL BANK]*， *[!UICONTROL PAYPAL]*， *[!UICONTROL APPLE_PAY]*， *[!UICONTROL CREDIT_CARD]* — 和相關聯的卡片提供者(例如 *Visa* 或 *主卡*) |
+| [!UICONTROL Trans amt] | 交易金額 |
+| [!UICONTROL Cur] | 交易金額的幣別單位 |
 | [!UICONTROL Pending] | 尚未支付的金額 |
-| [!UICONTROL Cur] | 待定金額的幣種單位 |
-| [!UICONTROL Seller amt] | 轉入或轉出客戶的資金金額 <br> <br>從賣方帳戶移出的資金顯示破折號(-)前置詞。 |
-| [!UICONTROL Cur] | 賣方金額的幣種單位 |
-| [!UICONTROL Partner fee] | 與交易關聯的合作夥伴費用 <br> <br>從合作夥伴費用帳戶中移出的資金顯示一個破折號(-)前置詞。 |
-| [!UICONTROL Cur] | 合作夥伴費用的幣種單位 |
-| [!UICONTROL Prov fees] | 與交易關聯的費用 <br> <br>從提供商的費用帳戶中移出的資金顯示破折號(-)前置詞。 |
-| [!UICONTROL Cur] | 供應商費用的幣種單位 |
-| [!UICONTROL Fee %] | 作為費用收取的交易金額的百分比 |
-| [!UICONTROL Fixed fee] | 固定提供商費用金額 |
-| [!UICONTROL Chbk fee] | 與交易關聯的拖欠款項費用 <br> <br>破折號(-)前置詞表示已衝銷按儲存容量使用計費費用。 |
-| [!UICONTROL Cur] | 按儲存容量使用計費費用的幣種單位 |
-| [!UICONTROL Hold amt] | 暫掛或從暫掛中釋放的金額 <br> <br>短划線(-)前置詞表示正在釋放暫掛資金。 |
-| [!UICONTROL Cur] | 暫掛金額的幣種單位 |
-| [!UICONTROL Recoup amt] | 從收回帳戶中回收的金額 <br> <br>從收回帳戶中移出的資金顯示一個破折號(-)前置詞。 |
-| [!UICONTROL Cur] | 收回金額的幣種單位 |
+| [!UICONTROL Cur] | 暫緩金額的幣別單位 |
+| [!UICONTROL Seller amt] | 轉帳至客戶或從客戶轉帳的資金金額 <br> <br>資金移出賣家帳戶會顯示破折號(-)首碼。 |
+| [!UICONTROL Cur] | 賣家金額的貨幣單位 |
+| [!UICONTROL Partner fee] | 與交易相關的合作夥伴費用 <br> <br>從合作夥伴費用帳戶移出的基金會顯示破折號(-)首碼。 |
+| [!UICONTROL Cur] | 合作夥伴費用的貨幣單位 |
+| [!UICONTROL Prov fees] | 與交易相關的費用 <br> <br>資金移出提供者的費用帳戶時，會顯示破折號(-)前置詞。 |
+| [!UICONTROL Cur] | 提供者費用的貨幣單位 |
+| [!UICONTROL Fee %] | 收取費用的交易金額百分比 |
+| [!UICONTROL Fixed fee] | 固定提供者費用金額 |
+| [!UICONTROL Chbk fee] | 與交易相關的借項衝回費用 <br> <br>破折號(-)首碼表示已反轉借項衝回費用。 |
+| [!UICONTROL Cur] | 借項衝回費用的貨幣單位 |
+| [!UICONTROL Hold amt] | 保留或解除保留的金額 <br> <br>破折號(-)首碼表示正在核發保留資金。 |
+| [!UICONTROL Cur] | 保留金額的幣別單位 |
+| [!UICONTROL Recoup amt] | 從回收帳戶中回收的金額 <br> <br>從回收帳戶移出的資金會顯示破折號(-)首碼。 |
+| [!UICONTROL Cur] | 扣除金額的貨幣單位 |
 
-### 交易記錄類型
+### 交易型別
 
-這些交易類型可以在支付交易中記錄。
+這些交易型態可在支付交易中註明。
 
 | 報告 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL PAYMENT] | 在訂單的買方和賣方之間轉移的錢 |
-| [!UICONTROL AUTH] | 授權和授權撤消交易 |
+| [!UICONTROL PAYMENT] | 訂單的金額在買家和賣家之間移動 |
+| [!UICONTROL AUTH] | 授權與授權作廢交易 |
 | [!UICONTROL BONUS] | -- |
-| [!UICONTROL CHARGEBACK] | 按儲存容量使用計費費用和按儲存容量使用計費費用衝銷交易記錄 |
+| [!UICONTROL CHARGEBACK] | 借項衝回費用與借項衝回費用迴轉交易 |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |
 | [!UICONTROL DEPOSIT] | -- |
 | [!UICONTROL DISBURSEMENT] | -- |
 | [!UICONTROL DISPUTE] | -- |
-| [!UICONTROL FEES] | 合作夥伴費用、付款費用和費用衝銷交易記錄 |
+| [!UICONTROL FEES] | 合作夥伴費用、付款費用和費用迴轉交易 |
 | [!UICONTROL HOLD] | -- |
 | [!UICONTROL HOLD_RELEASE] | -- |
 | [!UICONTROL INCENTIVES] | -- |
 | [!UICONTROL OTHERS] | -- |
-| [!UICONTROL RECOUP] | 從銀行或虧損帳戶中收回 |
+| [!UICONTROL RECOUP] | 從銀行或損失帳戶中收回 |
 | [!UICONTROL REFUND] | -- |
 | [!UICONTROL REVERSAL] | -- |
 | [!UICONTROL WITHDRAWAL] | -- |

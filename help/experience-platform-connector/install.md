@@ -1,6 +1,6 @@
 ---
-title: 從Adobe Commerce安裝和配置Adobe Experience Platform連接器
-description: 瞭解如何從Adobe Commerce安裝、配置、更新和卸載Adobe Experience Platform連接器。
+title: 從Adobe Commerce安裝及設定Adobe Experience Platform聯結器
+description: 瞭解如何從Adobe Commerce安裝、設定、更新及解除安裝Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
@@ -9,63 +9,63 @@ ht-degree: 0%
 
 ---
 
-# 安裝和配置Experience Platform連接器
+# 安裝及設定Experience Platform聯結器
 
-在安裝擴展之前， [查看先決條件](overview.md#prereqs)。
+安裝擴充功能之前， [檢閱先決條件](overview.md#prereqs).
 
-## 安裝擴展
+## 安裝擴充功能
 
-Experience Platform連接器擴展可從 [Adobe市場](https://marketplace.magento.com/magento-experience-platform-connector.html)。 從伺服器的命令行安裝此擴展時，它將作為 [服務](../landing/saas.md)。 完成後， **Experience Platform連接器** 和 **Commerce Services連接器** 在 **系統** 菜單 **服務** 中 _管理_。
+Experience Platform聯結器擴充功能可從 [Adobe市集](https://marketplace.magento.com/magento-experience-platform-connector.html). 當您從伺服器的命令列安裝此擴充功能時，會以身分連線至您的Adobe Commerce安裝 [服務](../landing/saas.md). 程式完成時， **Experience Platform聯結器** 和 **商務服務聯結器** 出現在 **系統** 下的選單 **服務** 在商務中 _管理員_.
 
 >[!NOTE]
 >
->![Adobe CommerceB2B](../assets/b2b.svg) 對於B2B商家，必須安裝單獨的擴展。 此擴展增加了對B2B特定事件的支援。 [瞭解更多資訊](#install-the-b2b-extension)。
+>![Adobe Commerce的B2B](../assets/b2b.svg) 對於B2B商家，您必須安裝個別擴充功能。 此擴充功能新增對B2B特定事件的支援。 [瞭解更多](#install-the-b2b-extension).
 
 
-1. 下載 `experience-platform-connector` 軟體包，從命令行運行以下命令：
+1. 若要下載 `experience-platform-connector` 封裝，從命令列執行以下命令：
 
    ```bash
    composer require magento/experience-platform-connector
    ```
 
-   此元包包含以下模組和擴展：
+   此中繼包含下列模組和擴充功能：
 
-   * `module-experience-connector-admin`  — 更新管理員UI，以便您可以為特定的Adobe Commerce實例選擇資料流ID
-   * `module-experience-connector`  — 設定 `Organization ID` 和 `datastreamId` 在Storefront事件SDK中
-   * `data-services`  — 為店面事件提供屬性上下文。 例如，當發生簽出事件時，將包括有關購物車中有多少物料的資訊以及這些物料的產品屬性資料。
-   * `services-id`  — 將您的Adobe Commerce實例連接到 [Adobe CommerceSaaS](../landing/saas.md) 使用沙盒和生產API密鑰，並將密鑰發送到Adobe Experience Platform以檢索IMS組織ID
+   * `module-experience-connector-admin`  — 更新管理員UI，讓您能夠選取特定Adobe Commerce執行個體的資料流ID
+   * `module-experience-connector`  — 設定 `Organization ID` 和 `datastreamId` 在店面事件SDK中
+   * `data-services`  — 提供店面事件的屬性內容。 例如，發生結帳事件時，包含有關購物車中有多少商品的資訊以及這些商品的產品屬性資料。
+   * `services-id`  — 將您的Adobe Commerce執行個體連線至 [Adobe Commerce SaaS](../landing/saas.md) 使用沙箱和生產API金鑰並前往Adobe Experience Platform以擷取IMS組織ID
 
-1. （可選）要包括 [!DNL Live Search] 資料，包括搜索事件，安裝 [[!DNL Live Search]](../live-search/install.md) 擴展。
+1. （選用）若要包含 [!DNL Live Search] data （包含搜尋事件）安裝 [[!DNL Live Search]](../live-search/install.md) 副檔名。
 
-### 安裝B2B擴展
+### 安裝B2B擴充功能
 
-對於B2B商家，請安裝以下擴展以包括 [申請表](events.md#b2b-events) 事件資料。
+針對B2B商家，安裝下列擴充功能以包含 [請購單清單](events.md#b2b-events) 事件資料。
 
-下載 `magento/experience-platform-connector-b2b` 擴展，從命令行運行以下命令：
+下載 `magento/experience-platform-connector-b2b` 擴充功能，從命令列執行下列動作：
 
 ```bash
 composer require magento/experience-platform-connector-b2b
 ```
 
-## 更新Experience Platform連接器 {#update}
+## 更新Experience Platform聯結器 {#update}
 
-要更新Experience Platform連接器，請從命令行運行以下命令：
+若要更新Experience Platform聯結器，請從命令列執行下列動作：
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
 ```
 
-或者，對於B2B商戶：
+或者，對於B2B商家：
 
 ```bash
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-要更新到主版本，如從1.0.0到2.0.0，請編輯項目的根 [!DNL Composer] `.json` 檔案，如下所示：
+若要更新至主要版本（例如從1.0.0到2.0.0），請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
 
-1. 開啟根 `composer.json` 檔案和搜索 `magento/platform-connector`。
+1. 開啟根目錄 `composer.json` 檔案和搜尋 `magento/platform-connector`.
 
-1. 在 `require` 部分，按如下方式更新版本號：
+1. 在 `require` 區段，更新版本號碼，如下所示：
 
    ```json
    "require": {
@@ -75,18 +75,18 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
     }
    ```
 
-1. **保存** `composer.json`。 然後，從命令行運行以下命令：
+1. **儲存** `composer.json`. 然後，從命令列執行下列動作：
 
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-   或者，對於B2B商戶：
+   或者，對於B2B商家：
 
    ```bash
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-## 卸載Experience Platform連接器 {#uninstall}
+## 解除安裝Experience Platform聯結器 {#uninstall}
 
-要卸載Experience Platform連接器，請參閱 [卸載模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。
+若要解除安裝Experience Platform聯結器，請參閱 [解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

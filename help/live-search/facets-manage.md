@@ -1,6 +1,6 @@
 ---
-title: "管理Facets"
-description: 「瞭解如何管理現有 [!DNL Live Search] facets」
+title: 「管理Facet」
+description: 「瞭解如何管理現有 [!DNL Live Search] 多面向。」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
@@ -11,78 +11,78 @@ ht-degree: 0%
 
 # 管理Facet
 
-請按照以下說明更新現有小平面的屬性或更改其在店面中的顯示方式。
+請依照這些指示更新現有Facet的屬性，或變更其在店面中的呈現方式。
 
-## 配置價格方面分組
+## 設定價格方面群組
 
-請參閱 [設定](settings.md) 以配置價格分隔間隔和分組。
+請參閱 [設定](settings.md) 若要設定價格多面向間隔與群組，請執行下列步驟：
 
-## 編輯小平面
+## 編輯facet
 
-1. 查找要編輯的方面。
-1. 如果清單中有許多方面，請設定 *篩選依據* 到以下項之一：
+1. 尋找您要編輯的Facet。
+1. 如果清單中有許多面向，請設定 *篩選依據* 變更為下列其中一項：
 
-   * 已固定
+   * 已釘選
    * 動態
 
-   要瞭解詳細資訊，請轉到 [多面類型](facets-type.md)。
+   若要深入瞭解，請前往 [Facet型別](facets-type.md).
 
-   ![過濾小平面](assets/facets-filter-by-cropped.png)
+   ![篩選Facet](assets/facets-filter-by-cropped.png)
 
-1. 要編輯多面屬性，請按一下 **更多** (..)選項。
+1. 若要編輯多面屬性，請按一下 **更多** (...)選項。
 1. 按一下 **編輯**
 
    ![編輯選項](assets/facet-edit-menu.png)
 
-1. 要編輯小平面標籤，請執行以下操作之一：
+1. 若要編輯Facet標籤，請執行下列任一項動作：
 
-   * 對於 [!DNL Commerce] storefront，編輯 [屬性標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)。
-   * 對於無頭實現，請按一下第一列中的值，然後根據需要編輯文本。
+   * 對於 [!DNL Commerce] 店面，編輯 [屬性標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * 針對Headless實作，請按一下第一欄中的值，然後視需要編輯文字。
 
    ![編輯標籤](assets/facet-edit-label.png)
 
-1. （僅限無頭）要更改用於對小平面值排序的方法，請按一下 *排序類型* 列，然後選擇以下選項之一：
+1. （僅限Headless）若要變更用於排序Facet值的方法，請按一下 *排序型別* 欄並選擇下列其中一項：
 
-   * 按字母順序排列
+   * 按字母順序
    * 計數
 
    ![編輯計數](assets/facets-edit-count.png)
 
-1. 在 **最大值** 列中，設定要在storefront中顯示的facet篩選器值的最大數（從0到10）。
-1. 完成後，按一下 **保存**。
-您的更改在發佈後才會顯示在店面中。
+1. 在 **最大值** 欄，設定在店面中顯示的多面篩選值數目上限（從0到10）。
+1. 完成後，按一下 **儲存**.
+您的變更要等到發佈後才顯示在店面上。
 
-## 針/取消針小平面
+## 釘選/取消釘選面向
 
-當按一下時，銷將更改顏色，並用於將小平面移到 *固定小平面* 或 *動態小平面* 的子菜單。
+圖釘在按一下時會改變顏色，並可用來將多面移動到 *釘選Facet* 或 *動態Facet* 區段。
 
-1. 將小平面固定到 *篩選器* 清單，在 *動態小平面* 列出並按一下灰色銷(![銷釘選擇器](assets/btn-pin-gray.png))。
-銷變藍，小平面移動到 *固定小平面* 的子菜單。
-1. 要取消固定小平面，請在 *固定小平面* 列出並按一下藍色針(![銷釘選擇器](assets/btn-pin-blue.png))。
-銷將變灰，小面移到 *動態小平面* 的子菜單。
+1. 將多面釘選到頂端 *篩選器* 清單中，尋找 *動態Facet* 清單並按一下灰色圖釘(![圖釘選擇器](assets/btn-pin-gray.png))。
+圖釘會變成藍色，而多面會移至 *釘選Facet* 區段。
+1. 若要取消釘選多面，請在 *釘選Facet* 清單並按一下藍色圖釘(![圖釘選擇器](assets/btn-pin-blue.png))。
+圖釘會變成灰色，而多面會移至 *動態Facet* 區段。
 
-   ![固定和動態小平面](assets/facets-pinned-unpinned.png)
+   ![釘選和動態Facet](assets/facets-pinned-unpinned.png)
 
-## 移動固定小平面
+## 移動釘選面向
 
 >[!NOTE]
 >
->僅在無頭實現中支援固定小平面的排序。 如果需要有序的小平面，請使用 [!DNL Live Search] PLP小部件。
+>釘選Facet的排序僅在Headless實作中受支援。 如果需要排序的Facet，請使用 [!DNL Live Search] PLP Widget.
 
-通過將行移動到不同的位置，可以改變被固定小平面的順序。 被固定的小平面具有 *移動* 表徵圖。![移動選擇器](assets/btn-move.png))。 與固定小平面不同，不能移動動態小平面。
+將列移動到不同位置可以變更釘選多面的順序。 釘選Facet具有 *移動* 圖示(![移動選擇器](assets/btn-move.png))開頭的「 」。 與釘選Facet不同，動態Facet無法移動。
 
-1. 在 *固定小平面* 的子菜單。
-1. 使用 **移動** (![移動選擇器](assets/btn-move.png))表徵圖，將行拖到 *固定小平面* 的子菜單。
-在發佈更改後，重新排序的小平面將出現在店面中 *篩選器* 清單框。
+1. 在中尋找面向 *釘選Facet* 區段。
+1. 使用 **移動** (![移動選擇器](assets/btn-move.png))圖示以將列拖曳至中的新位置 *釘選Facet* 區段。
+發佈變更後，重新排序的Facet會出現在店面 *篩選器* 清單。
 
-## 刪除方面
+## 刪除面向
 
-1. 在清單中查找小平面，然後按一下 **更多** (..)選項。
-1. 按一下 **刪除**。
-1. 提示確認時，按一下 **刪除方面**。
-在發佈更改後，會從店面刪除小平面。
+1. 在清單中尋找Facet並按一下 **更多** (...)選項。
+1. 按一下 **刪除**.
+1. 提示確認時，按一下 **刪除面向**.
+變更發佈後，Facet會從店面中移除。
 
-## 發佈更改
+## 發佈變更
 
-1. 要用更改更新店面，請按一下 **發佈更改**。
-1. 請等待大約15分鐘，更新才能顯示在您的商店中。
+1. 若要使用您的變更更新店面，請按一下 **發佈變更**.
+1. 請等候約15分鐘，讓更新出現在您的商店中。
