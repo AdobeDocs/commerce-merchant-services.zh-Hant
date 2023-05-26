@@ -2,7 +2,7 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 3d7a38fc81265897615896812d49a164a21d1d84
+source-git-commit: 742af84407943e7df47f986717b6dc31dc067863
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Catalog Service擴充功能可安裝在Adobe Commerce雲端基礎結構和內部
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.1.0"
+  "magento/catalog-service": "^2.2.0"
 }
 ```
 
@@ -91,7 +91,7 @@ composer update
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.1.0"
+    "magento/catalog-service": "^2.2.0"
 }
 ```
 
