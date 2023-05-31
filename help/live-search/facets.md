@@ -2,7 +2,7 @@
 title: "Facet"
 description: '"[!DNL Live Search] Facet使用屬性值的多個維度作為搜尋條件。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
+source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [!DNL Live Search] 支援最多：
 
-* 200個屬性已設定為Facet
+* 100個屬性已設定為Facet
 * 50個可排序的屬性
 * 200個可篩選屬性
 * 200個可搜尋屬性
