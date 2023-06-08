@@ -2,9 +2,9 @@
 title: 商務服務聯結器
 description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce或Magento Open Source執行個體整合到服務。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ ht-degree: 0%
 
 ## 目錄同步
 
-當您的 [!DNL Commerce] 執行個體已成功連線到 [!DNL Commerce Services]時，目錄同步程式會從您的伺服器匯出產品資料， [!DNL Commerce] 伺服器至 [!DNL Commerce Services]. [瞭解更多](catalog-sync.md) 關於目錄同步程式。
+當您的 [!DNL Commerce] 執行個體已成功連線到 [!DNL Commerce Services]時，目錄同步程式會從您的伺服器匯出產品資料， [!DNL Commerce] 伺服器至 [!DNL Commerce Services]. 目前，只有產品Recommendations使用目錄同步服務。 [瞭解更多](catalog-sync.md) 關於目錄同步程式。
