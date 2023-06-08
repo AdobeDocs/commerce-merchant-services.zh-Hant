@@ -4,9 +4,9 @@ description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ adobe-commerce/catalog-adapter
 
 根據產品型別、價格複雜性和目錄大小等因素，SaaS價格指數可能是您商店的正確解決方案。 請閱讀下列限制，並判斷此解決方案是否適合您的網站。
 
-目前，SaaS價格索引支援簡單、分組、虛擬、可設定和捆綁式動態產品型別。
+目前，SaaS價格索引支援簡單、分組、虛擬、可設定和 [組合動態](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) 產品型別。
 即將支援可下載、禮品卡和套裝固定產品型別。
 
 新的摘要應手動與 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否則，資料會在標準同步程式中重新整理。 取得更多關於 [目錄同步](../landing/catalog-sync.md) 程式。
