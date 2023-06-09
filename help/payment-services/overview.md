@@ -4,9 +4,9 @@ description: 瞭解如何安裝及使用 [!DNL Payment Services] 作為立即可
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: c074b6dffea913e92dfa29159a79d0c389b810fa
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,19 @@ ht-degree: 0%
 
 [!DNL Payment Services] 可用於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 此 [!DNL Payment Services] 擴充功能現在相容於 [!DNL Adobe Commerce] 2.4.x版。
 
+目前， [!DNL Payment Services] 適用於下列國家/地區：
+
+* 美國（美國）
+* 加拿大（加州）
+* 澳洲（澳洲）
+* 法國(FR)
+* 英國（英國）
+
 另請參閱 [生命週期原則](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 和 [[!DNL Payment Services] 發行說明](release-notes.md) 頁面以取得更多發行版本和版本特定資訊。
 
-## 接受的信用卡與幣別
+### 接受的信用卡與幣別
 
-目前， [!DNL Payment Services] 僅適用於：
-
-* 美國(US)並接受美元(USD)貨幣。
-* 加拿大(CA)並接受加幣(CAD)貨幣。
+[!DNL Payment Services] 接受國家/地區的貨幣 [可用位置](#availability).
 
 請參閱 [PayPal貨幣可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 說明檔案以取得詳細資訊。
 

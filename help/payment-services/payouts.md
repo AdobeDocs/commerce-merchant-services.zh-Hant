@@ -4,9 +4,9 @@ description: 使用「付款」報表，可完全透明地顯示付款金額、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # 支付報表
 
 [!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報告，讓您清楚瞭解商店的訂購與付款。
-
-![財務報告檢視](assets/reports-justpayouts.png)
 
 有兩個可用的「付款」報告檢視表，可讓您檢視所有付款的深入資訊：
 
@@ -34,7 +32,7 @@ ht-degree: 0%
 
 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 檢視信用與借項的資料視覺化圖表，以及一段時間內的移動平均。
 
-![管理員中的支付資料視覺效果](assets/payouts-report.png)
+![管理員中的支付資料視覺效果](assets/payouts-report.png){zoomable=yes}
 
 按一下 **[!UICONTROL View Report]** 導覽至詳細的表格 [支付報表檢視](#payouts-report-view).
 
@@ -70,13 +68,13 @@ ht-degree: 0%
 
 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 若要檢視詳細的表格化付款報表檢視，請執行下列步驟：
 
-![管理員中的支付交易](assets/payouts-report-new.png)
+![管理員中的支付交易](assets/payouts-report-new.png){zoomable=yes}
 
 您可以依據本主題中的章節，設定此檢視，以最佳方式呈現您想要檢視的資料。
 
 請參閱連結的商務訂單與交易ID、交易金額、每筆交易的付款方式等，這些全都在「管理員」的「付款」報表中。
 
-您可以下載.csv檔案格式的支付交易，以用於現有的會計或訂單管理軟體。
+您可以 [下載支付交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ ht-degree: 0%
 
 在「付款」報表檢視中，您可以選取資料來源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您想要檢視其報告結果。
 
-![資料來源選擇](assets/datasource.png)
+![資料來源選擇](assets/datasource.png){width=400px}
 
-若 _[!UICONTROL Live]_是選取的資料來源，您可以檢視即時存放區的報表資訊。 若 [!UICONTROL Sandbox]_是選取的資料來源，您可以看到沙箱環境的報告資訊。
+若 _[!UICONTROL Live]_是選取的資料來源，您可以檢視生產模式中存放區的報表資訊。 若_[!UICONTROL Sandbox]_ 是選取的資料來源，您會看到報表資訊以沙箱模式儲存。
 
 資料來源選取專案的工作方式如下：
 
@@ -154,27 +152,27 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示貸方(*CR*)或借方(*DR*) |
 | [!UICONTROL Reference ID] | 與此事件相關的原始交易ID |
 | [!UICONTROL Invoice] | 交易的商業發票ID （每筆訂單一個） |
-| [!UICONTROL Commerce order] | 商務訂單ID <br> <br>若要檢視相關專案，請執行下列動作 [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
-| [!UICONTROL Commerce trans] | 商務交易ID <br> <br>若要檢視相關專案，請執行下列動作 [交易資訊](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}，按一下ID。 |
-| [!UICONTROL Pay method] | 信用卡型別 — *[!UICONTROL BANK]*， *[!UICONTROL PAYPAL]*， *[!UICONTROL APPLE_PAY]*， *[!UICONTROL CREDIT_CARD]* — 和相關聯的卡片提供者(例如 *Visa* 或 *主卡*) |
-| [!UICONTROL Trans amt] | 交易金額 |
-| [!UICONTROL Cur] | 交易金額的幣別單位 |
-| [!UICONTROL Pending] | 尚未支付的金額 |
-| [!UICONTROL Cur] | 暫緩金額的幣別單位 |
-| [!UICONTROL Seller amt] | 轉帳至客戶或從客戶轉帳的資金金額 <br> <br>資金移出賣家帳戶會顯示破折號(-)首碼。 |
-| [!UICONTROL Cur] | 賣家金額的貨幣單位 |
-| [!UICONTROL Partner fee] | 與交易相關的合作夥伴費用 <br> <br>從合作夥伴費用帳戶移出的基金會顯示破折號(-)首碼。 |
-| [!UICONTROL Cur] | 合作夥伴費用的貨幣單位 |
-| [!UICONTROL Prov fees] | 與交易相關的費用 <br> <br>資金移出提供者的費用帳戶時，會顯示破折號(-)前置詞。 |
-| [!UICONTROL Cur] | 提供者費用的貨幣單位 |
-| [!UICONTROL Fee %] | 收取費用的交易金額百分比 |
-| [!UICONTROL Fixed fee] | 固定提供者費用金額 |
-| [!UICONTROL Chbk fee] | 與交易相關的借項衝回費用 <br> <br>破折號(-)首碼表示已反轉借項衝回費用。 |
-| [!UICONTROL Cur] | 借項衝回費用的貨幣單位 |
-| [!UICONTROL Hold amt] | 保留或解除保留的金額 <br> <br>破折號(-)首碼表示正在核發保留資金。 |
-| [!UICONTROL Cur] | 保留金額的幣別單位 |
-| [!UICONTROL Recoup amt] | 從回收帳戶中回收的金額 <br> <br>從回收帳戶移出的資金會顯示破折號(-)首碼。 |
-| [!UICONTROL Cur] | 扣除金額的貨幣單位 |
+| [!UICONTROL Commerce order] | 商務訂單ID <br> <br>若要檢視相關專案，請執行下列動作 [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html)，按一下ID。 |
+| [!UICONTROL Commerce trans] | 商務交易ID |
+| [!UICONTROL Pay method] | 信用卡型別 — *[!UICONTROL BANK]*， *[!UICONTROL PAYPAL]*， *[!UICONTROL CREDIT_CARD]* — 和相關聯的卡片提供者(例如 *Visa* 或 *主卡*) |
+| [!UICONTROL TRANS AMT] | 交易金額 |
+| [!UICONTROL CUR] | 交易金額的幣別單位 |
+| [!UICONTROL PENDING] | 尚未支付的金額 |
+| [!UICONTROL CUR] | 暫緩金額的幣別單位 |
+| [!UICONTROL SELLER AMT] | 轉帳至客戶或從客戶轉帳的資金金額 <br> <br>資金移出賣家帳戶會顯示破折號(-)首碼。 |
+| [!UICONTROL CUR] | 賣家金額的貨幣單位 |
+| [!UICONTROL PARTNER FEE] | 與交易相關的合作夥伴費用 <br> <br>從合作夥伴費用帳戶移出的基金會顯示破折號(-)首碼。 |
+| [!UICONTROL CUR] | 合作夥伴費用的貨幣單位 |
+| [!UICONTROL PROV FEES] | 與交易相關的費用 <br> <br>資金移出提供者的費用帳戶時，會顯示破折號(-)前置詞。 |
+| [!UICONTROL CUR] | 提供者費用的貨幣單位 |
+| [!UICONTROL FEE %] | 收取費用的交易金額百分比 |
+| [!UICONTROL FIXED FEE] | 固定提供者費用金額 |
+| [!UICONTROL CHBK FEE] | 與交易相關的借項衝回費用 <br> <br>破折號(-)首碼表示已反轉借項衝回費用。 |
+| [!UICONTROL CUR] | 借項衝回費用的貨幣單位 |
+| [!UICONTROL HOLD AMT] | 保留或解除保留的金額 <br> <br>破折號(-)首碼表示正在核發保留資金。 |
+| [!UICONTROL CUR] | 保留金額的幣別單位 |
+| [!UICONTROL RECOUP AMT] | 從回收帳戶中回收的金額 <br> <br>從回收帳戶移出的資金會顯示破折號(-)首碼。 |
+| [!UICONTROL CUR] | 扣除金額的貨幣單位 |
 
 ### 交易型別
 

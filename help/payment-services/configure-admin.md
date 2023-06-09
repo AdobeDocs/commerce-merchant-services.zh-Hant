@@ -4,9 +4,9 @@ description: 安裝後，您可以設定 [!DNL Payment Services] （在商店設
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,13 @@ ht-degree: 0%
 1. 在 _[!UICONTROL Payment Services]_區段，展開_[!UICONTROL PayPal Smart Buttons]_ 區段。
 1. 若要變更結帳時顯示的付款方式名稱，請編輯 _[!UICONTROL Title]_欄位。
 1. 至 [設定付款作業](production.md#set-payment-services-as-payment-method)，選取 **[!UICONTROL Authorize]** 或 **[!UICONTROL Authorize and Capture]**.
-1. 若要停用 [先付款後傳訊](payments-options.md#pay-later-button) （如有需要），選取 `No` 的 **[!UICONTROL Display Pay Later Message]**.
+1. 若要啟用/停用 [先付款後傳訊](payments-options.md#pay-later-button)，選取 `Yes`/`No` 的 **[!UICONTROL Display Pay Later Message]**.
+1. 若要在結帳頁面上顯示PayPal智慧按鈕，請選取 `Yes` 的 **[!UICONTROL Show buttons on checkout page]**.
+1. 若要在迷你購物車預覽中顯示PayPal智慧型按鈕，請選取 `Yes` 的 **[!UICONTROL Show buttons in mini cart preview]**.
+1. 若要啟用Venmo作為付款選項，請選取 `Yes` 的 **[!UICONTROL Venmo Enabled]**.
+1. 若要啟用Apple Pay付款選項，請選取 `Yes` 的 **[!UICONTROL Apple Pay Enabled]**.
+1. 若要啟用PayPal信用卡和借記卡作為付款選項（PayPal智慧按鈕），請選取 `Yes` 的 **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
+1. 若要啟用/停用 [PayPal稍後付款](payments-options.md#pay-later-button) 付款選項，選取 `Yes`/`No` 的 **[!UICONTROL PayPal Pay Later Enabled]**.
 1. 若要啟用偵錯模式，請選取 `Yes` 的 **[!UICONTROL Debug Mode]** (`No` 停用它)。
 1. 若要儲存變更，請按一下 **[!UICONTROL Save Config]** .
 1. 導覽至 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下 **[!UICONTROL Flush Cache]** 以重新整理所有無效的快取。
@@ -109,13 +115,14 @@ ht-degree: 0%
 | [!UICONTROL Title] | 存放區檢視 | 結帳期間，在「付款方式」檢視中，新增要顯示為此付款選項標題的文字。 選項：文字欄位 |
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | 網站 | 在購物車、產品頁面、迷你購物車和結帳流程中啟用或停用「稍後付款」訊息。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的Venmo付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的Apple Pay付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的稍後付款選項外觀。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on checkout page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在結帳頁面上。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在產品詳細資料頁面上。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini-cart preview] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在迷你購物車預覽中。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在購物車頁面上。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的Venmo付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的Apple Pay付款選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Credit and Debit Card Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的PayPal信用卡和借記卡選項。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的PayPal Pay Later付款選項外觀。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] 樣式選項
 
@@ -132,4 +139,3 @@ ht-degree: 0%
 ## 清除快取
 
 如果您變更設定， [手動排清快取](/help/payment-services/settings.md#flush-the-cache) 讓您的商店顯示最新的組態設定。
-

@@ -2,9 +2,9 @@
 title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]，會使用PayPal完成購買、儲存購物者的運送地址、帳單地址及付款詳細資料，以供日後使用。 購物者可以使用PayPal先前儲存或提供的任何付款方式。
 
-![[!DNL PayPal Smart Buttons] 選項](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] 選項](assets/payment-buttons.png){width="500"}
 
 您可以設定 [!UICONTROL PayPal Smart Buttons] 在商店設定或支付服務首頁中。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
 
@@ -67,6 +67,14 @@ ht-degree: 0%
 >
 > 使用 [!DNL Apple Pay] 針對您的商店，完成 [自行註冊 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_註冊您的即時網域_ 章節)和 [為中的商店設定 [!DNL Payment Services]](settings.md#payment-buttons).
 
+### PayPal借方或信用卡按鈕
+
+客戶可以使用「PayPal扣款」或「信用卡」按鈕結帳。
+
+「PayPal扣款」或「信用卡」按鈕會從結帳頁面顯示。
+
+當您沒有其他信用卡提供者時，此選項可用來向購物者顯示PayPal扣款或信用卡付款選項。
+
 ### [!DNL Pay Later] 按鈕
 
 為您的客戶提供短期、免息的付款和其他融資選項，以便他們現在購買後使用 [!DNL Pay Later] 按鈕。
@@ -76,9 +84,9 @@ ht-degree: 0%
 * **當客戶選擇介於$30和$600之間的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可為客戶提供更多關於 [!DNL Pay in 4] 付款選項。 客戶可以點選 **瞭解更多** 以瞭解&quot;[!DNL Pay in 4]」選項 _或_ 按一下快顯視窗中的「或檢視6個月特殊融資」文字，瞭解並申請PayPal信用選項。
 * **當客戶選取超過$98.99的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可提供客戶有關PayPal信用支付選項的更多資訊。 客戶可以點選 **瞭解更多** 若要瞭解並申請PayPal信用額度選項， _或_ 按一下快顯視窗中的「或按4付款」文字，瞭解 [!DNL Pay in 4] 選項。
 
-   >[!NOTE]
-   >
-   >以上所列金額可能會有變動。
+  >[!NOTE]
+  >
+  >以上所列金額可能會有變動。
 
 另請參閱 [設定](settings.md#payment-buttons) 以瞭解如何停用/啟用 [!DNL Pay Later] 傳送訊息。
 
@@ -93,6 +101,29 @@ ht-degree: 0%
 
 如果最終訂單金額還不清楚（例如您還沒有送貨地址資訊），而客戶正在從產品頁面、迷你購物車或購物車結帳時，則會收到 _繼續_ 按鈕可供使用。 客戶點按時 _繼續_，在確認其付款方式後，系統會將他們導向至訂單稽核頁面，以在完成結帳前收集所需的詳細資料。
 
+## 僅使用PayPal付款按鈕
+
+若要快速將您的商店帶入生產模式，您可以設定 _僅限_ PayPal付款按鈕（Venmo、PayPal等） — 不要再使用PayPal信用卡付款選項。
+
+這可讓您：
+
+* 為您的客戶提供各種付款選項，無需透過PayPal申請信用卡核准。
+* 使用您現有的信用卡提供者進行信用卡付款，同時利用PayPal的其他付款選項。
+* 在PayPal不支援信用卡作為付款選項的地區，使用PayPal的付款按鈕。
+
+至 **擷取付款方式 _僅限_ PayPal付款按鈕(_not_ paypal信用卡付款選項)**：
+
+1. 確認您的存放區為 [在生產模式中](settings.md#enable-payment-services).
+1. [設定所需的PayPal付款按鈕](settings.md#payment-buttons) （在設定中）。
+1. 翻轉 _關閉_ 此 **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** 中的選項 _[!UICONTROL Payment buttons]_區段。
+
+至 **向現有的信用卡提供者擷取付款 _和_ PayPal付款按鈕**：
+
+1. 確認您的存放區為 [在生產模式中](settings.md#enable-payment-services).
+1. [設定所需的PayPal付款按鈕](settings.md#payment-buttons).
+1. 翻轉 _關閉_ 此 **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** 中的選項 _[!UICONTROL Payment buttons]_區段。
+1. 翻轉 _關閉_ 此 **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** 中的選項 _[!UICONTROL Credit card fields]_區段並使用您的 [現有的信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## 訂單重新計算
 
 當客戶從迷你購物車、購物車或產品頁面進入結帳流程時，會被導向至訂單稽核頁面，他們可在PayPal快顯視窗中看到選取的送貨地址。 客戶選取出貨方式後，會適當地重新計算訂單金額，而客戶可以看到出貨成本與稅捐。
@@ -100,14 +131,6 @@ ht-degree: 0%
 當客戶從結帳頁面進入結帳流程時，系統已知道送貨地址及最終計算金額，且總計已適當呈現。
 
 免稅期、運費和銷售稅可能因地點而異。 晚於 [!DNL Payment Services] 會收到送貨地址與運費，然後快速重新計算所有適用成本，並在結帳的最後階段適當地加以顯示。
-
-## 從產品頁面結帳
-
-客戶使用PayPal或 [!DNL Pay Later] 按鈕，則只會購買目前產品頁面中表示的專案。 已存在於客戶購物車中的專案不會新增至結帳流程，也不會購買。
-
-如果客戶取消訂單，目前產品頁面中的專案會新增到客戶的購物車，加入購物車中存在的任何其他專案。 此功能可讓客戶快速購買目前檢視的專案，同時保留先前瀏覽產品時新增至購物車的任何其他專案。
-
-當客戶從產品頁面進入結帳流程時，結帳頁面會簡化，此檢視只會顯示訂單相關資料和選項。
 
 ## 信用卡保險存放
 

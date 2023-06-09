@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 如需瞭解所有資訊，請參閱發行說明 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ ht-degree: 0%
 這些發行說明說明說明所發生的功能變更和修正，且這些變更和修正是在託管服務的定期版本化功能發行之外發行的。
 
 +++託管服務更新
+
+_2023年6月9日_
+
+![新增](../assets/new.svg)<!-- Issue PAY-4288 --> 現在，商家可以 [設定 _僅限_ PayPal付款按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — 和 _not_ 使用PayPal信用卡付款選項 — 提供多種付款選項，不需申請PayPal信用卡核准。
+
+![新增](../assets/new.svg)<!-- Issue PAY-4050 --> 已新增 [資料視覺效果檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)，此頁面會顯示在「訂單付款狀態」報表的「付款服務首頁」上。
+
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4486--> 之前，PayPal PayLater按鈕未出現在英國商家的結帳中。 該問題已解決。
+
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4485--> 當付款服務停用時，報表資料視覺效果檢視現在會顯示在付款服務首頁。
 
 _2023年1月25日_
 
@@ -56,6 +66,22 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂以下專案中所顯示的資料： [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄」設定控制項來顯示或隱藏欄。
 
 +++
+
+## v2.1.0
+
+_2023年6月9日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg)<!-- Issue xxx --> 新增對Adobe Commerce 2.4.7-beta1的支援。
+
+![新增](../assets/new.svg)<!-- Issue xxx --> 已新增 [下列國家/地區和相關貨幣的可用性](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability)：澳洲、法國、英國。
+
+![新增](../assets/new.svg)<!-- Issue PAY-4296 --> 已新增 [管理員角色的擴充資源](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 以確保管理員使用者可以建立和管理客戶的訂單，並可以在「銷售」功能表中檢視「付款服務」。
+
+![新增](../assets/new.svg)<!-- Issue PAY-4236 --> 已新增 [結帳期間發生錯誤的訂單自動作廢](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![新增](../assets/new.svg)<!-- Issue PAY-4183 --> 已建立的功能 [顯示信用卡/借記卡付款選項按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) 在結帳頁面上。
 
 ## v2.0.0
 
