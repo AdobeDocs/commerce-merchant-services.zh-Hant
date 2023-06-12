@@ -2,9 +2,9 @@
 title: 事件
 description: 瞭解每個事件會擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 店面活動
 
-店面活動會收集購物者瀏覽您網站時的匿名行為資料。 這些事件收集到的資料可用來建立針對特定購物者的促銷活動和行銷活動。
+店面活動會收集購物者瀏覽您網站時的匿名行為資料。 您可以使用這些事件收集到的資料，建立以特定購物者集為目標的促銷活動和行銷活動。 店面事件資料僅包含簡單且可設定的產品。
 
 >[!NOTE]
 >
