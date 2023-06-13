@@ -2,9 +2,9 @@
 title: 「入門概述」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ Live Search客戶可使用新的 [SaaS價格索引器](../price-index/index.md)�
 
 ### PWA支援
 
-即時搜尋支援被視為測試版，因為並非所有PWA都經過測試 [!DNL Live Search]. 在Venia中，搜尋和產品清單頁面等基本功能可以運作，但Graphql的某些排列可能無法正常運作。
+[!DNL Live Search] 可與PWA Studio搭配使用，但使用者與其他Commerce實施之間可能會有細微差異。 在Venia中，搜尋和產品清單頁面等基本功能可以運作，但Graphql的某些排列可能無法正常運作。 此外，也可能會有效能差異。
 
-* 目前的Beta版PWA實施 [!DNL Live Search] 傳回搜尋結果所需的處理時間比 [!DNL Live Search] 搭配原生Commerce店面。
-* [!DNL Live Search] PWA中不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 目前的PWA實作 [!DNL Live Search] 傳回搜尋結果所需的處理時間比 [!DNL Live Search] 搭配原生Commerce店面。
+* [!DNL Live Search] PWA中不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，智慧型銷售無法運作。
 * 直接篩選 `description`， `name`， `short_description` 不支援GraphQL搭配使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但會以較一般的篩選條件傳回。
+
+使用 [!DNL Live Search] 透過PWA Studio，整合經銷商還必須：
+
+1. 安裝 [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. 設定 `environmentId` 在 `storeDetails` 物件。
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### 目前不支援
 

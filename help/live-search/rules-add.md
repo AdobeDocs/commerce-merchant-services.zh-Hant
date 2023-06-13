@@ -2,9 +2,9 @@
 title: 新增規則
 description: 「瞭解如何建立 [!DNL Live Search] 規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ ht-degree: 0%
 * 無：產品會依相關性排序
 
 1. 選取規則的策略型別。 「測試規則」視窗會顯示預期的結果。
+
+>[!NOTE]
+>
+>查詢中的撇號和引號可能會導致某些語言中的排名和相關性出現一些小問題。
 
 ## 新增事件
 
