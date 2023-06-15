@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 發行說明」'
 description: 如需瞭解所有資訊，請參閱發行說明 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 _2023年6月9日_
 
-![新增](../assets/new.svg)<!-- Issue PAY-4288 --> 現在，商家可以 [設定 _僅限_ PayPal付款按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — 和 _not_ 使用PayPal信用卡付款選項 — 提供多種付款選項，不需申請PayPal信用卡核准。
+![新增](../assets/new.svg)<!-- Issue PAY-4288 --> 現在，商家可以 [設定 _僅限_ PayPal付款按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — 和 _not_ 使用PayPal信用卡付款選項。 這可讓商戶提供各種付款選項，包括Venmo和PayPal付款按鈕，並使用現有的信用卡提供者，而非PayPal信用卡付款選項。
 
 ![新增](../assets/new.svg)<!-- Issue PAY-4050 --> 已新增 [資料視覺效果檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)，此頁面會顯示在「訂單付款狀態」報表的「付款服務首頁」上。
 
