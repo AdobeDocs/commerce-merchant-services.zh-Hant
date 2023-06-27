@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 發行說明'
 description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
-_2023年4月25日_
+### V1.10版本
 
-![新增](../assets/new.svg) 目錄服務客戶現在可以利用新的 [SaaS價格索引器](../price-index/index.md).
-
-### V1.7版本
-
-_2023年4月12日_
+_2023年6月27日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新增](../assets/new.svg) 目錄服務現在會清除已刪除的產品變體。
-![修正](../assets/fix.svg) 基礎建設擴充性與效能的改善。
+![新增](../assets/new.svg) 目錄服務現在可以在產品詳細資料頁面Widget中顯示相關產品。
 
 #### 已知限制
 
@@ -48,6 +43,15 @@ _2023年4月12日_
 * 最低廣告價格
 * [層級定價](mesh.md)
 * 可下載的產品和禮品卡
+
+### V1.7版本
+
+_2023年4月12日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 目錄服務現在會清除已刪除的產品變體。
+![修正](../assets/fix.svg) 基礎建設擴充性與效能的改善。
 
 ### V1.6版本
 
