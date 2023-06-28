@@ -2,9 +2,9 @@
 title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
+source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ## 同步目錄資料 {#synchronize-catalog-data}
 
-[!DNL Live Search] 搜尋操作需要同步的產品資料，而且需要同步屬性資料才能設定Facet。 產品目錄與目錄服務之間的初始同步始於 [!DNL Live Search] 是第一個連線。 視目錄的安裝方法和大小而定，匯出資料並編制索引最多可能需要8小時的時間。 [!DNL Live Search]. 在結構描述中可以找到與目錄服務同步和共用的資料清單，其定義如下：
+[!DNL Live Search] 搜尋操作需要同步的產品資料，而且需要同步屬性資料才能設定Facet。 產品目錄與目錄服務之間的初始同步始於 [!DNL Live Search] 是第一個連線。 視目錄的安裝方法和大小而定，匯出資料並編制索引最多可能需要30分鐘。 [!DNL Live Search]. 在結構描述中可以找到與目錄服務同步和共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
