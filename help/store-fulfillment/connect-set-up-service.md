@@ -4,9 +4,9 @@ description: 透過建立和授權Adobe Commerce整合，並將Adobe Commerce履
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ ht-degree: 0%
    - 輸入您的電子郵件地址
    - 輸入您的管理員帳戶密碼
 
-1. 設定 [!UICONTROL API Resource Access permissions] 針對整合 — 選取 `[!UICONTROL All]`
+1. 設定API資源存取許可權，以便與下列專案整合：
+
+   - 銷售> BOPIS訂單更新
+   - 系統>商店履行應用程式許可權
 
 1. 儲存並啟用整合，產生用於驗證的存取權杖。
 

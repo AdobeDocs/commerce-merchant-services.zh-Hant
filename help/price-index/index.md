@@ -4,7 +4,7 @@ description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ adobe-commerce/catalog-adapter
 
 ### 沒有擴充功能相依性的Luma
 
-* 已安裝必要服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Abode Commerce核心GraphQL商家
+* 已安裝必要服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Adobe Commerce Core GraphQL商家
 * 沒有依賴PHP核心價格索引器的協力廠商擴充功能
 * 銷售簡單、可設定、分組、虛擬和套裝的動態產品
 
 1. 啟用新摘要。
 1. 安裝目錄介面卡。
 
-### 具有PHP核心價格索引器相依性的Luma和Abode Commerce核心GraphQl
+### Luma和Adobe Commerce核心GraphQl搭配PHP核心價格索引器相依性
 
-* 已安裝受支援服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Abode Commerce核心GraphQL商家
+* 已安裝支援服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Adobe Commerce Core GraphQL商家
 * 透過依賴PHP核心價格索引器的第三方擴充功能
 * 銷售簡單、可設定、分組、虛擬和套裝的動態產品
 
