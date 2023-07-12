@@ -2,7 +2,7 @@
 title: 事件
 description: 瞭解每個事件會擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->已安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
+>已安裝B2B擴充功能的Adobe Commerce Enterprise Edition不支援搜尋事件。
 
 #### 從searchRequestSent收集的資料
 
@@ -355,7 +355,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->已安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
+>已安裝B2B擴充功能的Adobe Commerce Enterprise Edition不支援搜尋事件。
 
 #### 從searchResponseReceived收集的資料
 

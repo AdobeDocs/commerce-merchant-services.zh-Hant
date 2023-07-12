@@ -2,9 +2,9 @@
 title: 發行說明
 description: Adobe CommerceAdobe Experience Platform聯結器的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _2023年6月10日_
 
 _2023年3月30日_
 
-* ![新增](../assets/new.svg)  — 新增名為的新擴充功能 `data-services-b2b` 包括 [請購單清單事件](events.md#b2b-events) 適用於B2B商家
+* ![新增](../assets/new.svg)  — 新增名為的新擴充功能 `data-services-b2b` 包括 [請購單清單事件](events.md#b2b-events) 適用於B2B商家。
 * ![新增](../assets/new.svg)  — 新增 `uniqueIdentifier` 欄位至 [搜尋](events.md#search-events) 事件。 此新欄位可讓商家交叉參考與哪些搜尋回應相對應的搜尋請求。
 
 _2022年10月12日_
 
-* ![新增](../assets/new.svg)  — 新增兩個 [店面活動](events.md)： `openCart` 和 `removeFromCart` 前往Adobe Commerce店面事件SDK和收集器
-* ![新增](../assets/new.svg)  — 新增對 [AEM店面](overview.md#aem-support)
+* ![新增](../assets/new.svg)  — 新增兩個 [店面活動](events.md)： `openCart` 和 `removeFromCart` 前往Adobe Commerce店面事件SDK和收集器。
+* ![新增](../assets/new.svg)  — 新增對 [AEM店面](overview.md#aem-support).
 
 +++
 
-## 3.0.0 — 測試版1
+## 2.3.0
+
+_2023年6月27日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+* ![新增](../assets/new.svg)  — 新增 [關閉傳送店面活動](connect-data.md#data-collection) 到Experience Platform。
+* ![修正](../assets/fix.svg)  — 更新內容安全性原則設定。
+* ![修正](../assets/fix.svg)  — 修正Commerce 2.4.7版本對後台事件的支援。
+* ![新增](../assets/new.svg)  — 新增在儲存對Experience Platform聯結器表單的變更時快取失效的通知訊息。
+
+
+## 3.0.0-beta1 （僅限內部）
 
 _2023年6月13日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新增](../assets/new.svg) - (Beta)新增 [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。
+* ![新增](../assets/new.svg) - (Beta)新增 [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。 此功能僅適用於Beta版使用者。 您可以傳送電子郵件至下列地址以加入Beta版： [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _2023年2月28日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新增](../assets/new.svg)  — 新增所有Experience Platform聯結器模組的PHP 8.2支援
+* ![新增](../assets/new.svg)  — 新增對所有Experience Platform聯結器延伸模組的PHP 8.2支援。
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _2022年10月12日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新增](../assets/new.svg)  — 新增在下列情況下指定您自己的AEP Web SDK的功能 [正在連線](connect-data.md) 將您的Adobe Commerce執行個體傳送至Experience Platform
-* ![修正](../assets/fix.svg)  — 更新資料串流範圍要求，以便資料串流ID的範圍必須限定於網站而非儲存檢閱
+* ![新增](../assets/new.svg)  — 新增在下列情況下指定您自己的AEP Web SDK的功能 [正在連線](connect-data.md) 將您的Adobe Commerce例項轉移至Experience Platform。
+* ![修正](../assets/fix.svg)  — 更新資料串流範圍要求，以便資料串流ID的範圍必須限定於網站而非儲存檢閱。
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _2022年8月9日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新增](../assets/new.svg)  — 正式發行
+* ![新增](../assets/new.svg)  — 正式發行。
