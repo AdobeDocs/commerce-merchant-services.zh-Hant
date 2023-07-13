@@ -2,7 +2,8 @@
 title: 收集資料
 description: 瞭解事件如何收集產品建議的資料。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+feature: Services, Recommendations, Eventing
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

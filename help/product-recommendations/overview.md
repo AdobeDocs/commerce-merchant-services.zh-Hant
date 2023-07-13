@@ -2,7 +2,8 @@
 title: 簡介 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] 是強大的行銷工具，可用來增加轉換率、增加收入，並刺激購物者參與。」'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
