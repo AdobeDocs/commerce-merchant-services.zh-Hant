@@ -2,9 +2,9 @@
 title: 事件
 description: 瞭解每個事件會擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
+source-git-commit: e8818893d90f91df5b281905eb6bc30df34723ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4779'
 ht-degree: 0%
 
 ---
@@ -477,6 +477,11 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 | `quantity` | 購物車中的產品單位數 |
 | `priceTotal` | 產品明細專案的總價 |
 | `discountAmount` | 表示已套用的折扣金額 |
+| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `environmentID` | 環境ID。 32位數的英數字元ID，以連字型大小分隔。 |
+| `storeCode` | 唯一存放區代碼。 每個網站可以有許多商店。 |
+| `storeViewCode` | 唯一存放區檢視代碼。 每個商店可以有許多商店檢視。 |
+| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 | `order` | 包含訂單的相關資訊 |
 | `purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的 |
 | `priceTotal` | 此訂單套用所有折扣和稅金後的總價 |
@@ -517,7 +522,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 #### 從orderItemsShipped收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|用於訂單總額的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的貨幣代碼| |`paymentAmount`|付款值| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一或多個產品的送貨詳細資料| |`shippingMethod`|客戶選擇的送貨方式，例如標準配送、加速配送、到店取貨等| |`trackingNumber`|出貨承運人為訂單料號出貨提供的追蹤編號| |`trackingURL`|追蹤訂單專案運送狀態的URL| |`shipDate`|訂單中一或多個專案出貨的日期| |`address`|實際運送地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費金額。| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`commerceScope`|指出發生事件的位置（商店檢視、商店、網站等）。| |`environmentID`|環境ID。 32位數的英數字元ID，以連字型大小分隔。| |`storeCode`|唯一商店代碼。 每個網站可以有許多商店。| |`storeViewCode`|唯一存放區檢視代碼。 每個商店可以有許多商店檢視。| |`websiteCode`|不重複網站代碼。 一個環境中可以有許多網站。| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|用於訂單總額的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的貨幣代碼| |`paymentAmount`|付款值| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一或多個產品的送貨詳細資料| |`shippingMethod`|客戶選擇的送貨方式，例如標準配送、加速配送、到店取貨等| |`trackingNumber`|出貨承運人為訂單料號出貨提供的追蹤編號| |`trackingURL`|追蹤訂單專案運送狀態的URL| |`shipDate`|訂單中一或多個專案出貨的日期| |`address`|實際運送地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費金額。| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
 ### orderCanceled
 
@@ -528,7 +533,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 #### 從orderCanceled收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`commerceScope`|指出發生事件的位置（商店檢視、商店、網站等）。| |`environmentID`|環境ID。 32位數的英數字元ID，以連字型大小分隔。| |`storeCode`|唯一商店代碼。 每個網站可以有許多商店。| |`storeViewCode`|唯一存放區檢視代碼。 每個商店可以有許多商店檢視。| |`websiteCode`|不重複網站代碼。 一個環境中可以有許多網站。| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
 ### creditMemoIssued
 
