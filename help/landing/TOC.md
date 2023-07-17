@@ -2,7 +2,10 @@
 user-guide-title: 適用於Adobe Commerce的服務
 user-guide-description: 為Adobe Commerce和Magento Open Source提供延伸功能之託管服務的檔案和資源。
 title: 適用於Adobe Commerce的服務
-source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
+role: Admin, Leader, User
+feature: Personalization, Integration
+recommendations: noDisplay
+source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
