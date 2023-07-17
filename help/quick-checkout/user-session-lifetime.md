@@ -2,7 +2,8 @@
 title: 使用者工作階段期限
 description: 管理員可針對以下專案設定Adobe Commerce使用者的Cookie存留期： [!DNL Quick Checkout] 副檔名。
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%

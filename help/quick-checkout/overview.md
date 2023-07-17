@@ -2,7 +2,8 @@
 title: '"[!DNL Quick Checkout] 適用於Adobe Commerce」'
 description: 「瞭解如何 [!DNL Quick Checkout] 可能會讓您的Adobe Commerce執行個體受益，並瞭解如何成功入門和設定擴充功能。」
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%

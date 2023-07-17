@@ -2,7 +2,8 @@
 title: 「Adobe Commerce使用者的結帳流程」
 description: 「概述 [!DNL Quick Checkout] Adobe Commerce使用者的流量。」
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ ht-degree: 0%
 - 檢閱付款方式
 - 要註冊的選項 [!DNL Bolt] 在下訂單前快速結帳的選項會出現。 購物者可以同意建立其購物網站的相關條款與條件 [!DNL Bolt] 帳戶。
 
-   ![記住 [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![記住 [!DNL Bolt]](assets/checkbox-remember-bolt.png)
