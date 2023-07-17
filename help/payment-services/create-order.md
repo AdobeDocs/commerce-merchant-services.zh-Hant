@@ -2,7 +2,8 @@
 title: 建立訂單，使用 [!DNL Payment Services]
 description: 管理員能透過以下方式履行訂單： [!DNL Payment Services] 商戶直接向管理員尋求協助，以提供給需要協助的客戶。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

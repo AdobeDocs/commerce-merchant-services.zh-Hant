@@ -4,7 +4,8 @@ description: 安裝後，您可以設定 [!DNL Payment Services] 在首頁中。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
+feature: Payments, Checkout, Configuration
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 0%

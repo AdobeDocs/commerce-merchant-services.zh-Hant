@@ -3,7 +3,10 @@ user-guide-title: '"[!DNL Payment Services] 指南」'
 user-guide-description: 本指南提供有關安裝和設定的詳細資訊 [!DNL Payment Services] 您的 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 商店。」
 breadcrumb-title: '"[!DNL Payment Services] 指南」'
 index: true
-source-git-commit: c4e14f79e5aae996aff2f4e7fc9f8a82ae6ad93c
+role: Admin, Leader, User
+feature: Payments, Checkout
+recommendations: noDisplay
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
