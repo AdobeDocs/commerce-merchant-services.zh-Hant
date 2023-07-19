@@ -2,7 +2,9 @@
 title: 從Adobe Commerce安裝及設定Adobe Experience Platform聯結器
 description: 瞭解如何從Adobe Commerce安裝、設定、更新及解除安裝Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 052b9fe32797e62d5802241c7b3420decf593fc1
+role: Admin, Developer
+feature: Install
+source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

@@ -2,7 +2,10 @@
 user-guide-title: Adobe Commerce的Adobe Experience Platform Connector
 user-guide-description: 本指南提供使用Adobe Commerce適用的Adobe Experience Platform聯結器的詳細指示。
 breadcrumb-title: Adobe Commerce的Adobe Experience Platform Connector
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+role: Admin
+feature: Personalization, Integration
+recommendations: noDisplay
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%

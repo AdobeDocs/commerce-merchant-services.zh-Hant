@@ -2,7 +2,9 @@
 title: 使用Adobe Experience Platform標籤收集Commerce資料
 description: 瞭解如何使用Adobe Experience Platform標籤收集Commerce資料。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ _使用標籤的Experience Platform聯結器資料流程_
 
 - 安裝 [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). 如需PHP店面，請參閱 [安裝](install.md) 主題。 如需PWA Studio店面，請參閱 [PWA Studio指南](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > 執行 **not** [設定](connect-data.md) 組織ID和資料串流ID。
+  >[!NOTE]
+  >
+  > 執行 **not** [設定](connect-data.md) 組織ID和資料串流ID。
 
 ## 將Commerce店面資料對應至Adobe Experience Platform
 
@@ -843,13 +845,13 @@ _使用標籤的Experience Platform聯結器資料流程_
    - **副檔名**： `Adobe Client Data Layer`
    - **資料元素型別**： `Data Layer Computed State`
    - **[可選] 路徑**： `productContext.mainImageUrl`
+
    1. 購物車：
+
    - **名稱**： `cart`
    - **副檔名**： `Adobe Client Data Layer`
    - **資料元素型別**： `Data Layer Computed State`
    - **[可選] 路徑**： `shoppingCartContext`
-
-
 
 1. 購物車ID：
 

@@ -2,7 +2,8 @@
 title: 發行說明
 description: Adobe CommerceAdobe Experience Platform聯結器的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
+feature: Personalization, Integration, Release Notes
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
