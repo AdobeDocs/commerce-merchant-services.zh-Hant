@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新和解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,8 @@ ht-degree: 0%
 如果一切正常運作，恭喜您！ [!DNL Live Search] 已安裝、連線且隨時可使用。
 
 如果您在店面遇到問題，請檢查 `var/log/system.log` API通訊失敗或服務端錯誤的檔案。
+
+若要允許即時搜尋通過防火牆，請新增 `commerce.adobe.io` 至允許清單。
 
 ## 檢查安裝的版本
 

@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] 索引」'
 description: 「瞭解如何 [!DNL Live Search] 索引產品屬性屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 使用者端搜尋
 
-此 [!DNL Live Search] API可讓使用者端透過設定 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用於產品清單中的排序* 至 `Yes`. 根據主題，此設定會導致屬性包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目錄頁面上的分頁控制項。 索引最多可包含300個產品屬性 [!DNL Live Search]，搭配 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜尋和可篩選的區段。
+此 [!DNL Live Search] API可讓使用者端透過設定 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用於產品清單中的排序* 至 `Yes`. 根據主題，此設定會導致屬性包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目錄頁面上的分頁控制項。 索引最多可包含200個產品屬性 [!DNL Live Search]，搭配 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜尋和可篩選的區段。
 索引中繼資料儲存在索引管道中，可供搜尋服務存取。
 
 ![[!DNL Live Search] 索引中繼資料API圖表](assets/index-metadata-api.svg)

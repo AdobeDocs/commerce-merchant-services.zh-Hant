@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: '"此 [!DNL Live Search storefront popover] 會以動態方式傳回建議的產品和縮圖。」'
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ ht-degree: 0%
 1. 設定 **自動完成限制** 至您要在 [!DNL popover].
 1. 完成後，按一下 **儲存設定**.
 
+## 目錄服務
+
+此 [Adobe Commerce的目錄服務](../catalog-service/overview.md) 擴充功能提供豐富的檢視模型目錄資料，以快速完整地呈現與產品相關的店面體驗。 目錄服務可與Live Search搭配使用，以提供目前原生擴充功能不支援的功能：
+
+* 色票
+* 延伸屬性
+* 其他產品資訊可以匯入
+
+商戶可使用目錄服務自訂和擴充Widget或店面元素，但這不屬於Adobe支援團隊的範圍。
+
 ## 限制
 
-* 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *Luma* 主題，或根據以下主題的自訂主題： *Luma*.
+* 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *Luma* 主題，或根據以下主題的自訂主題： *Luma*. 搜尋結果頁面上的階層連結不包含 *流明* 樣式。
 * 此 [!DNL popover] 不支援 *空白* 主題。 另請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 以深入瞭解。
 * 此 [!DNL popover] 不支援快速訂購表單。
-* 商家可以自訂和延伸Widget或店面元素（例如：將色票整合到即時搜尋結果中），方法是使用 [目錄服務](../catalog-service/overview.md) 店面API，但這不在Adobe支援團隊的範圍內。
+* 不支援願望清單和產品比較。
+* 僅支援基本貨幣。
