@@ -1,10 +1,11 @@
 ---
 title: 銷售電子郵件範本
 description: 設定異動電子郵件範本，以便在「商店取貨」訂單的履行程式期間與客戶和商店管理員通訊。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Store Fulfillment提供一組擴充的交易式電子郵件範本，以支援訂
 <tbody><tr>
 <td><strong>Order具有Ship To Store Products電子郵件寄件者</strong></td>
 <td>傳送給指定商家人員的電子郵件，作為所有未結訂單的彙總報表，這些訂單在商家商店存貨可用之前無法領料。 </br></br> 商戶可以使用此報表來初始化及管理儲存至儲存庫的存貨移轉或補貨。 </br></br>此通知僅適用於 [!DNL Ship-to-Store] 功能已啟用。
-</br></br>此標籤不會影響選取的送貨業者或其可用的送貨方式標籤。</br></br></td>
+</br></br>此標籤不會影響選取的送貨業者或其可用的送貨方式標籤。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>

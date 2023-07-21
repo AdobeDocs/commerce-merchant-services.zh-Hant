@@ -1,10 +1,11 @@
 ---
 title: Inventory management來源轉移
 description: 「設定庫存 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management。 設定新的存貨，並將存貨移出預設存貨，以便您可以將其指定給設定為啟用「商店履行」解決方案所需的「商店提貨」功能的來源。」
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 1. [大量指派來源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 以新增所有產品的新來源。
 
-1. [完成產品屬性的大量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 新增 `Allow Store Pickup` 和 `Allow Home Delivery` 屬性至現有產品。 安裝解決方案時，屬性具有最佳化 *預設* 值。 不過，在您完成大量更新程式之前，這些屬性不會套用至現有產品。
+1. [完成產品屬性的大量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 新增 `Allow Store Pickup` 和 `Allow Home Delivery` 屬性至現有產品。 安裝解決方案時，屬性具有最佳化 *預設* 值。 不過，在您完成大量更新內容程式之前，這些屬性不會套用至現有產品。
 
 庫存會從選取的來源（零售商店地點或電子商務倉儲）中扣除。 用作電子商務倉儲的來源必須指派給與商店取貨地點相同的存貨，並在零售地點之前排定優先順序。 如需詳細資訊，請參閱 [排定庫存來源的優先順序](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

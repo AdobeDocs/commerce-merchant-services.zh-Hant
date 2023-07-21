@@ -1,9 +1,10 @@
 ---
 title: 系統設定概述
 description: 瞭解Store Fulfillment解決方案可用的管理員設定類別以及其設定方式。
-role: User, Admin
+role: Admin
+feature: Shipping/Delivery, System, Configuration
 level: Intermediate
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%

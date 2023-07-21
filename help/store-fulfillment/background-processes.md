@@ -1,12 +1,12 @@
 ---
 title: 背景程式設定
 description: 「設定排程 [!DNL Store Fulfillment] 與履行服務同步資料所使用的背景程式。」
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ Store Fulfillment整合使用背景程式和訊息佇列，以獲得最佳效能
 
 從管理員，前往 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-複查「商店履行」服務的預設設定。 根據您的訂單處理量及資源可用性，您可能需要調整這些設定。
+複查「商店履行」服務的預設設定。 您可以根據訂單處理量及可用資源來自訂這些設定。

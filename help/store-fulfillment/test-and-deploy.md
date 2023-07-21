@@ -3,8 +3,9 @@ title: 測試並部署商店履行
 description: 測試計畫，以驗證「商店履行」功能。 測試包含「存貨同步API」、已取消訂單的端對端履行工作流程、「商店履行」應用程式使用者管理，以及「客戶簽到」體驗。
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ ht-degree: 0%
 <td>即時同步作業會在5分鐘內將詳細資料傳送至WalmartGIF</td>
 </tr>
 <tr>
-<td><strong>取貨庫存來源</br><code>Is Synced</code> 狀態</br><code>Is Synced</code></strong></td>
+<td><strong>取貨庫存來源</br><code>Is Synced</code> 狀態</strong></td>
 <td>將更新儲存至現有的取貨庫存來源。</td>
 <td>成功操作後， <code>Is Synced</code> 「管理來源」頁面更新的資料欄 <code>No</code> 至 <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ ht-degree: 0%
 </ul>
 </td>
 </tr>
-<td><strong>準備取車</br></br>完全取消</br>（所有產品都設定為0數量挑庫）</br></strong></td>
+<td><strong>準備取車</br></br>完全取消</br>（所有產品都設定為0數量挑庫）</strong></td>
 <td>
 <ol>
 <li>下訂單。</li>
@@ -250,7 +251,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>分配（分配期間）</br></br>部分取消</br>（部分產品已分發，部分已拒絕。）</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>下訂單。</li>
@@ -469,7 +470,7 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 </tr>
 <tr>
 <td><strong>替代取車連絡人</br>
-簽入</br><strong>
+簽入<strong>
 </td>
 <td>
 客戶提交具有「店內取貨」選項的訂單。</td>

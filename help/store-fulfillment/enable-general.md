@@ -1,19 +1,19 @@
 ---
 title: 一般設定
 description: 設定一般設定以啟用 [!DNL Store Fulfillment] ，為您的商店提供。 設定全域擴充功能設定、記錄、資料同步和安全性的系統設定。 提供重要資料，以啟用Adobe Commerce與Store Fulfillment服務之間的整合。
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # 商店服務與銷售組態
 
-設定 [!DNL Store Fulfillment] 從 [!DNL Commerce] 管理員可啟用擴充功能、指定擴充功能設定、設定「商店協助」應用程式使用者的安全性設定，以及設定傳送方法的選項。
+啟用 [!DNL Store Fulfillment] 擴充功能來自 [!DNL Commerce] 透過設定擴充功能設定、Store Assist應用程式使用者的安全性設定和傳送方法選項進行管理。
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 - 啟用擴充功能、設定全域設定，並選取「 」，指定「商店協助」應用程式使用者連線和帳戶的安全性選項 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Store Fulfillment的Admin Store服務設定](assets/store-services-admin-sf-config.png)
+  ![Store Fulfillment的Admin Store服務設定](assets/store-services-admin-sf-config.png)
 
 - 透過選取「 」來設定傳送方法 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Store Fulfillment的管理商店銷售設定](assets/store-sales-admin-sf-deliver-config.png)
+  ![Store Fulfillment的管理商店銷售設定](assets/store-sales-admin-sf-deliver-config.png)
 
 ## 基本設定
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>Walmart商店履行API端點的URL。 這必須是上線流程期間提供的完整URL。 Store Fulfillment客戶會同時收到沙箱和生產URL。 新增值時，請務必複製並貼上完整URL，包括結尾斜線"/"。</td>
+<td>Walmart商店履行API端點的URL。 該值必須是上線流程期間提供的完全合格URL。 Store Fulfillment客戶會同時收到沙箱和生產URL。 新增值時，請務必複製並貼上完整URL，包括結尾斜線"/"。</td>
 <td>全域</td>
 <td>是</td>
 </tr>
@@ -190,7 +190,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>指定發生嚴重錯誤後，記錄同步化作業的重試次數。<br></br>只要整合無法從履行服務取得正面回應，就會發生嚴重錯誤。 當服務停用或傳送的訂單資料發生錯誤時，就可能發生這種情況。<br></br>當達到重試臨界值時，專案會保留在佇列中，但不會再次處理。 檢視所有發生錯誤的專案，從 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Admin管理。 若要疑難排解持續失敗的專案，請聯絡您的客戶經理。</td>
+<td>指定發生嚴重錯誤後，記錄同步化作業的重試次數。<br></br>只要整合無法從履行服務取得正面回應，就會發生嚴重錯誤。 當服務停止或傳送的訂單資料發生錯誤時，就會發生這些問題。<br></br>當達到重試臨界值時，專案會保留在佇列中，但不會再次處理。 檢視所有發生錯誤的專案，從 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Admin管理。 若要疑難排解持續失敗的專案，請聯絡您的客戶經理。</td>
 <td>全域</td>
 <td>否</td>
 </tr>
@@ -228,7 +228,7 @@ ht-degree: 0%
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>目錄屬性，儲存商戶地點中對應料號的可掃描程式碼。<br></br>如果您只有一個現有的商家地點，您可能會使用UPC代碼，而您的電子商務管道會依SKU識別產品。 如果這是您的案例，請選取包含UPC程式碼的目錄屬性。<br></br>此設定可確保傳送至您商店的訂單清單料號具有正確的識別碼，以便商店關聯者可以在撿料處理期間準確地掃描料號。<br></br>如果您不確定，請洽詢「出貨與撿料」部門中的履行聯營公司，以決定應該傳送哪個屬性。 如果屬性目前未包含在資料庫中，您可能需要將適當的屬性新增至Adobe Commerce產品屬性集。</td>
+<td>目錄屬性，儲存商戶地點中對應料號的可掃描程式碼。<br></br>如果您只有一個現有的商家地點，您可能會使用UPC代碼，而您的電子商務管道會依SKU識別產品。 在此案例中，選取包含UPC程式碼的目錄屬性。<br></br>此設定可確保傳送至您商店的訂單清單料號具有正確的識別碼，以便商店關聯者可以在撿料處理期間準確地掃描料號。<br></br>如果您不確定，請洽詢「出貨與撿料」部門中的履行聯營公司，以決定應該傳送哪個屬性。 如果屬性目前未包含在資料庫中，您可以將屬性新增至Adobe Commerce產品屬性集。</td>
 <td>網站</td>
 <td>是</td>
 </tr>
@@ -240,7 +240,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>一次要從商店履行佇列傳送的專案數上限。<br></br>BOPIS訂單會定期批次傳送至履行服務。 此設定可讓您控制批次的大小。<br></br>預設值為100個專案。 根據您的訂單數量與容量，您可能需要調整此值。</td>
+<td>一次要從商店履行佇列傳送的專案數上限。<br></br>BOPIS訂單會定期批次傳送至履行服務。 此設定可讓您控制批次的大小。<br></br>預設值為100個專案。 根據您的訂單數量與容量，您可以向上或向下調整最大值。</td>
 <td>全域</td>
 <td>否</td>
 </tr>
@@ -265,7 +265,7 @@ ht-degree: 0%
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>「送貨至商店」設定是以您現有的送貨至商店功能為基礎。 如果您使用Inventory management，或您可以透過庫存轉存存來接受並履行無存貨之商家地點的訂單，請將此選項設為「是」。<br></br>如果您不支援送貨至商店選項，或不想提供此選項，請設為「否」。 停用時，目錄中的商戶商店存貨為零的料號，或位於該地點以下的料號 [!DNL Out of Stock Threshold]，不提供店內見面交收選項。<br></br>此為全域設定，可根據商家位置進行調整。</td>
+<td>「送貨至商店」設定是以您現有的送貨至商店功能為基礎。 如果您使用Inventory management，或您可以透過庫存轉存存來接受並履行無存貨之商家地點的訂單，請將此選項設為「是」。<br></br>如果您不支援送貨至商店選項，或不想提供此選項，請設為「否」。 停用時，目錄中的商戶商店存貨為零的料號或以下料號 [!DNL Out of Stock Threshold] 對於該地點，不提供店內取貨選項。<br></br>您可以根據商家位置調整此設定的值。</td>
 <td>全域</td>
 <td>否</td>
 </tr>
@@ -286,7 +286,7 @@ ht-degree: 0%
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>啟用或停用商戶商店中的「首頁傳送」選項。 啟用後，您的商家商店位置會與您網站相關庫存中的其他指派來源一起列入彙總考量。<br></br>在標準Inventory management服務中， [!DNL Ship from Store] 是固有選項，無法停用。 使用Store Fulfillment解決方案，您可以開啟或關閉它。<br></br>這是全域設定。 您也可以根據商家位置和產品調整此設定。</td>
+<td>啟用或停用商戶商店中的「首頁傳送」選項。 啟用後，您的商家商店位置會與您網站相關庫存中的其他指派來源一起列入彙總考量。<br></br>在標準Inventory management服務中， [!DNL Ship from Store] 是固有選項，無法停用。 使用Store Fulfillment解決方案，您可以開啟或關閉它。<br></br>您可以根據商家位置和產品調整此設定。</td>
 <td>全域</td>
 <td>否</td>
 </tr>
@@ -347,7 +347,7 @@ ht-degree: 0%
 
 Store Fulfillment的運作方式是擴充原生Adobe Commerce [!DNL In-Store Delivery] 功能。 安裝擴充功能後，您可以使用新增至管理員的下列擴充設定，來設定店內傳送方法。
 
-- **店內取貨** — 結帳過程中店內交貨的選件選項這是BOPIS訂單最常見的交貨案例。
+- **店內取貨** — 結帳過程中店內交貨的選件選項這些設定會設定BOPIS訂單最常見的交貨案例。
 
 - **[!UICONTROL Curbside pick up]** — 提供選項，讓客戶將訂單暫留在商店位置，並由商店關聯人傳送給他們。
 
@@ -436,25 +436,25 @@ Store Fulfillment的運作方式是擴充原生Adobe Commerce [!DNL In-Store Del
 </tr>
 <tr>
 <td><strong>店內取貨指示</strong></td>
-<td>當訂單已準備好到您的零售商店取貨時，客戶會收到電子郵件通知。 如果客戶已選取 [!DNL In-Store Pickup] 結帳期間，您可以在這裡自訂取車指示。 </br></br>此為全域設定，適用於所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
+<td>當訂單已準備好到您的零售商店取貨時，客戶會收到電子郵件通知。 如果客戶已選取 [!DNL In-Store Pickup] 結帳期間，您可以在這裡自訂取車指示。 </br></br>這些指示會全域設定，並套用至所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>路邊取車指示</strong></td>
-<td>指定自訂的訂單取貨指示，以包含在路邊取貨訂單的客戶電子郵件通知中。 </br></br>此為全域設定，適用於所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
+<td>指定自訂的訂單取貨指示，以包含在路邊取貨訂單的客戶電子郵件通知中。 </br></br>這些指示會全域設定，並套用至所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>預估取貨前置時間</strong></td>
-<td>訂單已接收、完成及準備提取之前所需的分鐘數。 選擇商店取貨遞送選項的零售商店地點時，此資訊會顯示給客戶。 此為全域設定，適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</td>
+<td>訂單已接收、完成及準備提取之前所需的分鐘數。 選擇商店取貨遞送選項的零售商店地點時，此資訊會顯示給客戶。 此設定適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>預估取車時間標籤</strong></td>
-<td>顯示訂單可供客戶取貨之前的估計時間。 當客戶為選取零售商店位置時，此資訊就會顯示給客戶。 [!DNL In-Store Pickup] 傳送選項。 </br></br>自訂此標籤時，您可以使用程式碼 <code>%1</code> 插入您的 <strong>預估取貨前置時間</strong>. 例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>此為全域設定，適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>顯示訂單可供客戶取貨之前的估計時間。 當客戶為選取零售商店位置時，此資訊就會顯示給客戶。 [!DNL In-Store Pickup] 傳送選項。 </br></br>自訂此標籤時，您可以使用程式碼 <code>%1</code> 插入您的 <strong>預估取貨前置時間</strong>. 例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>此設定適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</td>
 <td>存放區檢視</td>
 <td>否</td>
 <tr>
@@ -480,7 +480,7 @@ Store Fulfillment的運作方式是擴充原生Adobe Commerce [!DNL In-Store Del
 </thead>
 <tbody><tr>
 <td><strong>有貨</strong></td>
-<td>當客戶使用零售商店儲位時，會顯示每個地點的目前料號庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL in-stock]</em> 此處為狀態標籤。</br></br></td>
+<td>當客戶使用零售商店儲位時，會顯示每個地點的目前料號庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL in-stock]</em> 此處為狀態標籤。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>
@@ -492,7 +492,7 @@ Store Fulfillment的運作方式是擴充原生Adobe Commerce [!DNL In-Store Del
 </tr>
 <tr>
 <td><strong>部分有貨</strong></td>
-<td>當客戶使用零售商店儲位時，會針對每個地點顯示任何目前料號的庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL partially in-stock]</em> 此處為狀態標籤。</br></br></td>
+<td>當客戶使用零售商店儲位時，會針對每個地點顯示任何目前料號的庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL partially in-stock]</em> 此處為狀態標籤。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>

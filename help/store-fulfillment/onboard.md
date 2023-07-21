@@ -1,10 +1,11 @@
 ---
 title: Store Fulfillment Services入門概述
 description: '''[!DNL Live Search] 上線流程、系統需求、界限和限制。'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 - **Store Fulfillment擴充功能** — 在您的Adobe Commerce執行個體上安裝並設定此協力廠商擴充功能。 安裝後，您可以從管理員設定和管理Store Fulfillment解決方案以支援 [!DNL buys online, pickup in store] (BOPIS)情境在商務店面。
 
-   ![[!DNL Store Fulfillment Service] 在「管理員」檢視中進行設定](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] 在「管理員」檢視中進行設定](assets/store-fulfillment-admin-home.png)
 
 - **存放區履行帳戶** — 在啟用過程中，客戶經理會建立您的Store Fulfillment帳戶，並提供您帳戶資訊和認證。 需要這些憑證才能啟用Adobe Commerce與Store Fulfillment解決方案之間的連線。
 
 - **商店協助應用程式** — 提供商店關聯與端對端商店履行工作流程，以管理來自行動裝置的BOPIS訂單。 Store Associates可以下載及安裝沃爾瑪的 [!DNL Store Assist] 適用於iOS和Android™裝置。 應用程式上線程式由Walmart Commerce Technologies客戶中心作為獨立程式管理。 不過， [部分應用程式組態設定](user-setup.md) 是從Adobe Commerce管理員完成。
 
-   | 商店協助應用程式 — 開始使用檢視 | 商店協助應用程式 — 模組檢視 |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] 在行動裝置上檢視](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在行動裝置上](assets/store-assist-orders-small.png) |
+  | 商店協助應用程式 — 開始使用檢視 | 商店協助應用程式 — 模組檢視 |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] 在行動裝置上檢視](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在行動裝置上](assets/store-assist-orders-small.png) |
 
 ## 布建步驟
 

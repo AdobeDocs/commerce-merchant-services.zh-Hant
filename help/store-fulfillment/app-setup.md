@@ -1,12 +1,13 @@
 ---
 title: 應用程式設定
 description: 設定 [!DNL Store Assist] 應用程式可管理線上購物的端對端商店履行工作流程與流程、在商店訂單中提貨。
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Store Assist應用程式會接收所有訂單和客戶資訊（從訂單詳細�
 
 >[!NOTE]
 >
->另請參閱 [商店協助履行工作流程](store-assist-modules.md) 以進一步瞭解「商店協助」應用程式。
+>進一步瞭解Store Assist應用程式，請檢閱 [商店協助履行工作流程](store-assist-modules.md) 主題。
 
 ## 設定商店協助應用程式
 
@@ -42,9 +43,9 @@ Store Assist應用程式需要兩種設定：
 
    - **非使用狀態時間** — 指定應用程式在登出前必須處於非使用中狀態的時間長度。
 
-   - **從商店取消** — 指定是否可從商店取消訂單，以及哪些角色具有取消許可權
+   - **從商店取消** — 指定是否可以從商店取消訂單，以及哪些角色具有取消許可權
 
-   - **訂單清理視窗** — 指定經過多長時間 [預估取貨前置時間](enable-general.md#delivery-method-title-configuration) 撿料訂單在重新存貨之前仍保留在暫存中，例如，3天。 預設值為7天。 如果開啟此設定，則當此時間到期時，會自動取消訂單。 系統會重新儲存料號，而商家會收到取消電子郵件。
+   - **訂單清理視窗** — 指定經過多長時間 [預估取貨前置時間](enable-general.md#delivery-method-title-configuration) 撿料訂單在重新存貨之前仍保留在暫存中，例如，3天。 預設值為7天。 如果已開啟此設定，則當此時間到期時，會自動取消訂單。 系統會重新儲存料號，而商家會收到取消電子郵件。
 
    - 自訂所有應用程式內指示（挑選、預備、移交）。
 
@@ -55,7 +56,8 @@ Store Assist應用程式需要兩種設定：
    - **移交程式** — 當「商店關聯」將訂單交付給客戶時，啟用選擇性程式，例如，需要客戶簽名或提示關聯檢查客戶ID。
 
    - **切換時啟用專案拒絕** — 允許客戶在訂單移交期間退回或取消訂單專案。
-   與Walmart Commerce Technologies Client Services團隊合作，完成Store Assist應用程式的前端設定。
+
+  與Walmart Commerce Technologies Client Services團隊合作，完成Store Assist應用程式的前端設定。
 
 ## 應用程式下載和安裝
 
@@ -70,4 +72,5 @@ Store Assist應用程式需要兩種設定：
    - **[!UICONTROL Company name]** 與Store Assist帳戶相關聯
 
    - **儲存協助帳戶認證** — 其帳戶的使用者名稱和密碼認證。
-   Adobe Commerce管理員可以建立和管理 [!DNL Store Assist app] 擁有以下條件的所有商店位置的使用者帳戶： [店內取貨](merchant-store-configuration.md#pickup-location-configuration) 已在「管理商店」設定中啟用。
+
+  Adobe Commerce管理員可以建立和管理 [!DNL Store Assist app] 擁有以下條件的所有商店位置的使用者帳戶： [店內取貨](merchant-store-configuration.md#pickup-location-configuration) 已在「管理商店」設定中啟用。
