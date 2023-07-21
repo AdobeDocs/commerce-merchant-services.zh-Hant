@@ -2,9 +2,9 @@
 title: 設定
 description: 瞭解如何變更的來源 [!DNL Product Recommendations] 資料以及如何啟用視覺化建議。
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 當您 [設定SaaS資料空間](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 對於Recommendations，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe Sensei](https://www.adobe.com/sensei.html) 會分析該資料，並計算用於提供產品Recommendations的產品關聯。
 
 測試或測試的非生產環境通常沒有店面行為資料的數量或品質，無法提供逼真的產品建議。 實際購物者行為規模只能在生產環境中擷取。 為解決此問題，Adobe Commerce可讓您將生產環境中的產品推薦與其他非生產SaaS資料空間搭配使用。 在非生產環境中使用實際的店面資料可讓您預覽購物者看到的建議，並實驗不同的建議型別和放置位置。 購物者可以預覽不同SaaS資料空間的Recommendations，但無法點選。
+
+>[!NOTE]
+>
+>透過REST使用產品Recommendations時， `alternateEnvironmentId` 引數可用來指定其他資料空間。 透過GraphQL使用產品Recommendations時，此引數無法使用。
 
 ## 選擇建議來源
 
