@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,15 @@ ht-degree: 0%
 * 法國(FR)
 * 英國（英國）
 
-另請參閱 [生命週期原則](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 和 [[!DNL Payment Services] 發行說明](release-notes.md) 頁面以取得更多發行版本和版本特定資訊。
+另請參閱 [生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) 和 [[!DNL Payment Services] 發行說明](release-notes.md) 頁面以取得更多發行版本和版本特定資訊。
 
 ### 接受的信用卡與幣別
 
 [!DNL Payment Services] 接受國家/地區的貨幣 [可用位置](#availability).
 
-請參閱 [PayPal貨幣可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 說明檔案以取得詳細資訊。
+若要檢視PayPal支援的貨幣，請參閱 [支援的貨幣檔案](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+若要檢視PayPal支援的付款方式，請參閱其 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## 開始使用
 

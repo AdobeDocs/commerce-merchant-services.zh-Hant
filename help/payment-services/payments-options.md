@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 
 您可以設定 [!UICONTROL PayPal Smart Buttons] 在商店設定或支付服務首頁中。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
 
+請參閱PayPal的 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/) 瞭解目前每種付款方式在哪些國家/地區可用。
+
 ### [!DNL PayPal] 按鈕
 
 客戶可以使用PayPal按鈕輕鬆自信地結帳離開。
@@ -80,21 +82,11 @@ ht-degree: 0%
 
 為您的客戶提供短期、免息的付款和其他融資選項，以便他們現在購買後使用 [!DNL Pay Later] 按鈕。
 
-此 [!DNL Pay Later] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見：
+此 [!DNL Pay Later] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
 
-* **當客戶選擇介於$30和$600之間的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可為客戶提供更多關於 [!DNL Pay in 4] 付款選項。 客戶可以點選 **瞭解更多** 以瞭解&quot;[!DNL Pay in 4]」選項 _或_ 按一下快顯視窗中的「或檢視6個月特殊融資」文字，瞭解並申請PayPal信用選項。
-* **當客戶選取超過$98.99的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可提供客戶有關PayPal信用支付選項的更多資訊。 客戶可以點選 **瞭解更多** 若要瞭解並申請PayPal信用額度選項， _或_ 按一下快顯視窗中的「或按4付款」文字，瞭解 [!DNL Pay in 4] 選項。
-
-  >[!NOTE]
-  >
-  >以上所列金額可能會有變動。
+請參閱下列連結中有關「稍後付款」優惠方案的資訊： [PayPal的Pay Later優惠檔案](https://developer.paypal.com/docs/checkout/pay-later/us/). 使用 **國家或地區** 下拉式清單以選取感興趣的區域。
 
 另請參閱 [設定](settings.md#payment-buttons) 以瞭解如何停用/啟用 [!DNL Pay Later] 傳送訊息。
-
-有兩種付款選項 [!DNL Pay Later] 按鈕：
-
-* **以4付款** — 客戶在初次支付首期付款後，可以透過四筆免息付款（每兩週）來支付訂單餘額。 請參閱 [以4份檔案付費](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) 以取得詳細資訊。
-* **PayPal信用** — 客戶可在6個月內全額支付訂單餘額，且免息。 請參閱 [PayPal信用檔案](https://www.paypal.com/us/webapps/mpp/paypal-credit) 以取得詳細資訊。
 
 ### [!DNL Pay Now] 按鈕
 
