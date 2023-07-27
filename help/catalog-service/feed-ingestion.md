@@ -1,7 +1,7 @@
 ---
 title: 摘要擷取服務
 description: 瞭解Adobe Commerce的摘要擷取服務
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ ht-degree: 0%
 * 擁有大型複雜目錄的客戶
 * 客戶未使用Adobe Commerce管理員管理目錄資料，而是使用ERP或協力廠商系統管理目錄資料
 
-如果您有興趣加入Beta版計畫，請透過XXXXX@adobe.com聯絡團隊。
+如果您有興趣加入Beta版計畫，請透過sagonzal@adobe.com聯絡團隊。
