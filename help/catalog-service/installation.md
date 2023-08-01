@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 必要條件
 
-入門流程 [!DNL Catalog Service] 需要存取伺服器的命令列。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
+的入門流程 [!DNL Catalog Service] 需要存取伺服器的命令列。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
 
 ### 軟體需求
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 - PHP 8.1、8.2
 - Composer： 2.x
 
-### 支援的平台
+### 支援平台
 
 - 雲端基礎結構上的Adobe Commerce： 2.4.4+
 - Adobe Commerce內部部署： 2.4.4+
@@ -43,7 +43,9 @@ ht-degree: 0%
 - 沙箱(https://catalog-service-sandbox.adobe.io/graphql) — 用於上線前的測試和驗證
 - 生產(https://catalog-service.adobe.io/graphql)-用於Commerce商家和網站的即時流量
 
-## 安裝及設定
+負載測試只應在沙箱環境中執行。 建議使用 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在負載測試時開啟，以便服務團隊可以預期額外的伺服器流量。
+
+## 安裝和設定
 
 若要開始使用Adobe Commerce的目錄服務，必須執行下列步驟：
 
@@ -55,11 +57,11 @@ ht-degree: 0%
 
 目錄服務的上線流程需要存取伺服器的命令列。
 
-Catalog Service擴充功能可安裝在Adobe Commerce雲端基礎結構和內部部署執行個體上。
+目錄服務擴充功能可安裝在Adobe Commerce雲端基礎結構和內部部署執行個體上。
 
 目錄服務會使用連結至Commerce帳戶的撰寫器金鑰安裝 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 Composer會在Adobe Commerce的初始安裝期間，或先前未將Composer金鑰儲存至外部時，使用這些金鑰 `auth.json` 檔案。
 
-另請參閱 [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以取得有關取得撰寫器金鑰的詳細資訊。
+另請參閱 [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以取得有關取得撰寫器索引鍵的詳細資訊。
 
 #### 雲端基礎結構上的Adobe Commerce
 
@@ -81,7 +83,7 @@ composer update
 
 指令會更新所有相依性。
 
-1. 認可並推送您的變更 `composer.json` 和 `composer.lock`.
+1. 提交並推送您的變更 `composer.json` 和 `composer.lock`.
 
 #### 內部部署
 
@@ -117,23 +119,23 @@ bin/magento cache:clean
 
 ### 設定服務與資料匯出
 
-安裝目錄服務後，您必須設定 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 指定API金鑰並選取SaaS資料空間。
+安裝目錄服務後，您必須設定 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 指定API金鑰並選取SaaS資料空間。
 
 SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
 
-若要確保目錄匯出正確執行：
+若要確保目錄匯出可正確執行：
 
 - 確認cron工作正在執行。
 - 驗證索引器是否正在執行。
 - 確保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器設為「依排程更新」。
 
-視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 初始同步後，「目錄」會持續將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務為最新。
+視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 初始同步之後，目錄會持續將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務為最新。
 
 ### 存取服務
 
-透過HTTPS使用POST命令可存取目錄服務API。
+目錄服務API可透過HTTPS使用POST命令來存取。
 
-若要取得API金鑰，請前往Admin中的Commerce Service聯結器區域並複製公開API金鑰。
+若要取得API金鑰，請前往「管理員」的「商務服務聯結器」區域，並複製公開API金鑰。
 
 閱讀 [GraphQL檔案](https://developer.adobe.com/commerce/webapi/graphql/) 以瞭解如何查詢及傳送產生API請求所需的標頭。
 
