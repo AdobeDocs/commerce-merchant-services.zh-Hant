@@ -3,9 +3,9 @@ title: 『[!DNL Live Search] 版本注意事項
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ ht-degree: 0%
 ![修正](../assets/fix.svg) 修正和改良
 ![錯誤](../assets/bug.svg) 已知問題
 
+## 託管服務更新
+
+這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+
++++託管服務更新
 
 _2023年6月13日_
 
-![新增](../assets/new.svg) Live Search現在支援另外5個 [設定值](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![修正](../assets/fix.svg) 修正引號或撇號等字元造成排名問題的問題。 重新索引將解決這些問題。
 
 _2023年4月25日_
 
 ![新增](../assets/new.svg) Live Search客戶現在可以利用新的 [SaaS價格索引子](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_2023年8月7日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+### 新功能
+
+下列值已新增至 `storeDetails` 物件：
+
+* &quot;允許每頁所有產品&quot;
+* 匯率
+* 「網格上每頁產品允許值」
+* 「網格上每頁產品預設值」
+* 存放區語言
+
+### 更新
+
+* 已將目錄服務模組新增到中繼資料以支援進階資料擷取。
+
+商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.2以存取這些功能。
+
+建議先升級並測試，再推送至生產環境。 確認測試環境結果後，請考慮在非尖峰時段升級生產環境。
+
+## 舊版
+
++++3.0.1和舊版
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _2023年3月14日_
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.1以存取這些功能。
 
 建議先升級並測試，再推送至生產環境。 確認測試環境結果後，請考慮在非尖峰時段升級生產環境。
-
-## 舊版
-
-+++2.0.5和舊版
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
