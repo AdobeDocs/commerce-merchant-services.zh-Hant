@@ -3,9 +3,9 @@ title: 『[!DNL Live Search] 版本注意事項
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ _2023年8月7日_
 ### 更新
 
 * 已將目錄服務模組新增到中繼資料以支援進階資料擷取。
+
+### 修正
+
+* 此 **我的帳戶** 使用產品清單頁面Widget時，頁面導覽不再消失。
 
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.2以存取這些功能。
 
