@@ -1,12 +1,12 @@
 ---
-title: '"[!DNL Payment Services] 發行說明」'
+title: "[!DNL Payment Services] 發行說明"
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
 source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

@@ -1,27 +1,27 @@
 ---
-title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
-description: 瞭解的設定選項 [!DNL Quick Checkout] 以及如何成功上線及設定擴充功能。
+title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce的擴充功能
+description: 瞭解的設定選項 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] 設定
 
-[!DNL Quick Checkout] 適用於Adobe Commerce和Magento Open Source的設定檢視提供設定擴充功能所需的所有資訊。
+[!DNL Quick Checkout] 適用於Adobe Commerce和Magento Open Source的設定檢視可提供設定擴充功能所需的所有資訊。
 
 若要存取這些組態設定：
 
-1. 於 _管理員_ 側欄，前往 **商店** > _設定_ > **設定**.
+1. 在 _管理員_ 側欄，前往 **商店** > _設定_ > **設定**.
 1. 在左側面板中，展開 **銷售** 並選取 **簽出**.
 
    ![快速簽出](assets/config-new-logo-view.png)
 
-請參閱 [入門](../quick-checkout/onboarding.md) 主題以取得如何設定 [!DNL Quick Checkout] 適用於Adobe Commerce。
+請參閱 [入門](../quick-checkout/onboarding.md) 主題，以取得如何設定 [!DNL Quick Checkout] 適用於Adobe Commerce。
 
 ## 啟用擴充功能
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
-| [!UICONTROL Enable] | 網站 | 啟用或停用 [!DNL Quick Checkout] （適用於您的網站）。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Method] | 網站 | 為設定方法或環境 [!DNL Quick Checkout]. 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Enable] | 網站 | 啟用或停用 [!DNL Quick Checkout] 您的網站。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Method] | 網站 | 為您的設定方法或環境 [!DNL Quick Checkout]. 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
 {style="table-layout:auto"}
 

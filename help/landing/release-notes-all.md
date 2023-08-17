@@ -1,6 +1,6 @@
 ---
 title: Commerce Services發行說明
-description: 所有Commerce服務的發行說明集合
+description: 所有Commerce服務發行說明的集合
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
@@ -33,14 +33,14 @@ ht-degree: 0%
           </ul>
         </td>
       <td><strong>Integration services</strong>
-        <p>瞭解整合服務的最新改善，這些改善可讓我們的Commerce Services連結其他服務和Adobe擴充功能及產品。</p>
+        <p>瞭解整合服務的最新改善，這些改善可讓我們的商務服務連結其他服務和Adobe擴充功能及產品。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform聯結器</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">服務聯結器</a></li>
           </ul>
       </td>
       <td><strong>資料服務</strong>
-        <p>瞭解資料服務的最新改善，這些改善可讓我們的Commerce Services管理產品資料。</p>
+        <p>瞭解資料服務的最新改善，這些改善可讓我們的商務服務管理產品資料。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">目錄同步</a></li>
           </ul>

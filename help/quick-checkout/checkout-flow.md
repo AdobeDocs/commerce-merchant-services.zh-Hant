@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 流量
 
-本節提供使用的一般簽出體驗的概觀。 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。
+本節提供一般簽出體驗的概觀，使用 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。
 
 成功 [!DNL Quick Checkout] 流程包含下列步驟：
 
@@ -30,18 +30,18 @@ ht-degree: 0%
 
 ![OTP快顯視窗](assets/new-logo-otp-email.png)
 
-1. 使用登入後 [!DNL Bolt] 帳戶，簽出詳細資料會自動填入：
+1. 使用登入後 [!DNL Bolt] 帳戶，簽出詳細資料會自動填寫：
 
    - 送貨資訊
    - 付款方式
 
    >[!NOTE]
    >
-   > 即使您的結帳詳細資料已自動填寫，您也可以使用現有的錢包資訊（地址或信用卡資訊）。
+   > 您可以使用現有的公事包資訊（地址或信用卡資訊），即使您的結帳詳細資訊已自動填入。
 
-1. 下訂單。
+1. 下單。
 
-此 [!DNL Quick Checkout] 與標準其他Adobe Commerce簽出選項相容，例如 [禮品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣代碼](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+此 [!DNL Quick Checkout] 與標準的其他Adobe Commerce簽出選項相容，例如 [禮品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣代碼](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
 ## [!DNL Quick Checkout] 使用案例
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 ## 取得協助
 
-請聯絡Adobe Commerce支援，透過 [Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 以取得任何協助。
+聯絡Adobe Commerce支援，透過 [Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 以取得任何協助。

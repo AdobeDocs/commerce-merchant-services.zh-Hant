@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # 驗證事件集合
 
-在您之後 [安裝與設定](install-configure.md) 此 `magento/product-recommendations` 模組，即可驗證行為資料是否正傳送至Adobe Commerce。 您可以使用Chrome提供的開發人員工具，或安裝Snowplow Chrome擴充功能。 如果您需要其他協助，請參閱 [疑難排解 [!DNL Product Recommendations] 模組](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 位於支援知識庫中。
+在您之後 [安裝與設定](install-configure.md) 此 `magento/product-recommendations` 模組，您即可驗證行為資料是否已傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplow Chrome擴充功能。 如果您需要其他說明，請參閱 [疑難排解 [!DNL Product Recommendations] 模組](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 位於支援知識庫中。
 
 ## 使用Chrome中的開發人員工具進行驗證
 
 若要確保事件收集器JS檔案正在所有網站頁面上載入：
 
 1. 在Chrome中，選擇 **自訂和控制Google Chrome** 然後選取 **更多工具** > **開發人員工具**.
-1. 選擇 **網路** 索引標籤然後選取 **JS** 型別。
+1. 選擇 **網路** 索引標籤，然後選取 **JS** 型別。
 1. 篩選對象 `ds.`
 1. 重新載入頁面。
 1. 您應該會看到 `ds.js` 或 `ds.min.js` 在 **名稱** 欄。
@@ -26,11 +26,11 @@ ht-degree: 0%
 ![事件收集器JS](assets/filter-ds.png)
 _事件收集器JS_
 
-若要確保事件會在您網站的各個頁面（首頁、產品、結帳等）上觸發：
+若要確保您的網站上的頁面（首頁、產品、結帳等）都會觸發事件：
 
 1. 請務必停用瀏覽器上的任何廣告封鎖程式，並接受網站上的Cookie。
 1. 在Chrome中，選擇 **自訂和控制Google Chrome** （瀏覽器右上角的三個垂直點），然後選取 **更多工具** > **開發人員工具**.
-1. 選擇 **網路** 標籤和篩選 `tp2`.
+1. 選擇 **網路** 標籤並篩選 `tp2`.
 1. 重新載入頁面。
 1. 您應該會在下方看到呼叫 `tp2` 在 **名稱** 欄。
 
@@ -49,7 +49,7 @@ _確認事件正在引發_
 
 1. 在 **事件** 欄，選取 **結構化事件**.
 
-1. 向下捲動直到您看到 **內容資料 _n_**. 在中尋找店面執行個體&#x200B;**結構描述**.
+1. 向下捲動，直到您看到 **內容資料 _n_**. 尋找中的店面例項&#x200B;**結構描述**.
 
 1. 確認 [SaaS資料空間ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 已正確設定。
 
@@ -66,4 +66,4 @@ _雪鏟濾鏡_
 
 >[!NOTE]
 >
-> 若 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 啟用，Adobe Commerce在購物者同意前不會收集行為資料。 如果「Cookie限制模式」已停用，系統會依預設收集行為資料。
+> 如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 已啟用，在購物者同意前，Adobe Commerce不會收集行為資料。 如果「Cookie限制模式」已停用，系統會依預設收集行為資料。

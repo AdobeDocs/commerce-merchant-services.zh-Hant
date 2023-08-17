@@ -1,5 +1,5 @@
 ---
-title: 『[!DNL Product Recommendations] 版本注意事項
+title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
@@ -82,7 +82,7 @@ _2023年4月25日_
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新增](../assets/new.svg) 新增PHP 8.1支援
-![新增](../assets/new.svg) 改善影像大小調整，讓參照顯示範本中的影像大小調整方式更趨一致
+![新增](../assets/new.svg) 改善影像調整大小，讓影像大小調整在參考顯示範本中可以更一致地處理
 
 ### 3.3.6的magento/product-recommendations
 
@@ -253,5 +253,5 @@ _2023年4月25日_
 
 若要深入瞭解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 開發：
 
-* [使用手冊](overview.md)
+* [使用者指南](overview.md)
 * [開發人員檔案](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

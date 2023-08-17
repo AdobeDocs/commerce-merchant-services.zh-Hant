@@ -21,7 +21,7 @@ Experience Platform聯結器擴充功能可從 [Adobe市集](https://commercemar
 
 >[!NOTE]
 >
->![適用於Adobe Commerce的B2B](../assets/b2b.svg) 針對B2B商家，您必須安裝個別擴充功能。 此擴充功能新增了對B2B特定事件的支援。 [瞭解更多](#install-the-b2b-extension).
+>![適用於Adobe Commerce的B2B](../assets/b2b.svg) 針對B2B商家，您必須安裝個別擴充功能。 此擴充功能新增了對B2B特定事件的支援。 [深入了解](#install-the-b2b-extension).
 
 
 1. 若要下載 `experience-platform-connector` 封裝，從命令列執行下列動作：

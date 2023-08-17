@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Adobe Commerce Services指南
 
-Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其業務的重要元件。
+Adobe提供Commerce、整合和資料服務的集合，協助商家支援其業務的重要元件。
 
->[!BEGINSHADEBOX 「版本資訊」]
+>[!BEGINSHADEBOX 「發行資訊」]
 
-另請參閱 [說明檔案新增功能](whats-new.md) 或 [發行說明](release-notes-all.md) 每個Commerce服務。
+另請參閱 [說明檔案新增功能](whats-new.md) 或 [發行說明](release-notes-all.md) 適用於每個Commerce服務。
 
 >[!ENDSHADEBOX]
 
@@ -38,21 +38,21 @@ Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其�
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>根據購物者行為、熱門趨勢、產品相似性等新增以AI為根據的建議。</div>
+    <div>根據購物者行為、熱門趨勢、產品相似度等，新增AI支援的建議。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="目錄服務" src="assets/catalog-service.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>目錄服務</strong></a> <br>
-    <div>為客戶提供最佳化的產品體驗，同時提升效能、改善擴充能力及提高轉換率。</div>
+    <div>提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力及提高轉換率。</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="付款服務" src="assets/payment-services.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>付款服務</strong></a>  <br><em>(可供Magento Open Source)</em>
-    <div>提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，輕鬆提升客戶滿意度。</div>
+    <div>提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，提升客戶滿意度。</div>
   </td>
     </tr>
 <tr>
@@ -66,21 +66,21 @@ Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其�
     <td valign="top" width="200px">
        <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>商店履行</strong></a></br>
-    <div>提供優異的線上購買、到店取貨(BOPIS)客戶體驗，並透過行動裝置提供完整的履行工作流程，讓員工發揮最大生產力。</div>
+    <div>透過行動裝置提供全面的履行工作流程，提供卓越的線上購買功能、到店取貨(BOPIS)客戶體驗，以及最高的員工生產力。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>與全球最大的全球線上購物目的地整合，以透過單一儀表板啟用Amazon銷售、提供資料自動化和同步化、管理Amazon清單等等。</div>
+    <div>與全球最大的全球線上購物目的地整合，以啟用Amazon銷售功能、提供資料自動化和同步化、管理Amazon清單，以及透過單一儀表板執行更多作業。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>頻道管理員</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>與沃爾瑪市集整合，增加銷售量、吸引新客戶、簡化營運並節省時間。 讓員工能夠順暢地管理沃爾瑪市集銷售、庫存和定價 — 所有這一切都在Commerce中進行。</div>
+    <div>與沃爾瑪市集整合，增加銷售量、接觸新客戶、簡化營運並節省時間。 讓員工能夠順暢地管理Walmart Marketplace的銷售、存貨和定價 — 所有這一切都在Commerce中進行。</div>
   </td>
    </tr>
 </table>
@@ -112,7 +112,7 @@ Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其�
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>目錄同步會從Commerce伺服器將產品資料匯出至Commerce服務，以保持服務在最新狀態。 由產品價格或存貨層次變更等事件觸發的索引器，會編譯目錄資料。 您可以透過*Catalog Sync*儀表板或命令列介面來觀察和管理此程式。</div>
+    <div>目錄同步會將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務在最新狀態。 由產品價格或存貨層次變更等事件觸發的索引器，會編譯目錄資料。 您可以透過*Catalog Sync*儀表板或命令列介面來觀察和管理此程式。</div>
   </td>
 </tr>
 </table>

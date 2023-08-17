@@ -1,6 +1,6 @@
 ---
-title: 空位
-description: 「作廢」可讓您從信用卡或借記卡帳戶中釋放資金，這些帳戶已遭封鎖或因授權而保留以支付購買金額。
+title: 空隙
+description: 「作廢」可讓您從信用卡或借記卡帳戶中釋放資金，這些帳戶因授權而被封鎖或保留，以支付購買金額。
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
 feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# 空位
+# 空隙
 
-替換為 [!DNL Payment Services]，您可以使用現有的Commerce功能來作廢交易。 「作廢」可讓您從信用卡或借記卡帳戶中釋放資金，這些帳戶已遭封鎖或因授權而保留以支付購買金額。
+替換為 [!DNL Payment Services]，您可以使用現有的Commerce功能來作廢交易。 「作廢」可讓您從信用卡或借記卡帳戶中釋放資金，這些帳戶因授權而被封鎖或保留，以支付購買金額。
 
 >[!NOTE]
 >
@@ -28,4 +28,4 @@ ht-degree: 0%
 
 若要進一步瞭解訂單所經過的基本步驟，請參閱 [訂單工作流程](https://docs.magento.com/user-guide/sales/order-workflow.html){target="_blank"} 核心使用手冊中的主題。
 
-若要瞭解作廢功能以及如何作廢訂單異動，請參閱 [處理訂單](https://docs.magento.com/user-guide/sales/order-processing.html){target="_blank"} 在核心使用手冊中。
+若要瞭解作廢功能以及如何作廢訂單異動，請參閱 [處理訂單](https://docs.magento.com/user-guide/sales/order-processing.html){target="_blank"} （在核心使用手冊中）。

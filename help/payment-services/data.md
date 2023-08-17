@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # 可用資料
 
-您可以取得一些訂單和付款資料，以便協調跨外部系統的Adobe Commerce Financial Reporting。
+您可以使用一些訂單和付款資料，以便協調跨外部系統的Adobe Commerce Financial Reporting。
 
 ## 與ERP系統調解
 
-您可以使用與特定訂單相關聯的遞增ID，調節Adobe Commerce Financial Reporting與非AdobeEnterprise Resource Planning (ERP)系統。
+您可以使用與特定訂單相關的增量ID，來調節Adobe Commerce Financial Reporting與非Adobe的「企業資源規劃(ERP)」系統。
 
-當Payment Services將商務訂單傳送至PayPal時，增量ID將包含為 `custom_id` _和_ 在 `invoice_id` (也包含隨機字串，位於 `increment_id`)。
+當支付服務將商務訂單傳送至PayPal時，增量ID包含為 `custom_id` _和_ 在 `invoice_id` (也包含隨機字串，位於 `increment_id`)。
 
-ID可輕鬆地在付款的商家活動詳細資訊和PayPal webhook中存取。
+ID可輕易地從付款的商家活動詳細資料和PayPal webhook中存取。
 
-此 `invoice_id` 和 `custom_id` 會顯示在支付之商家活動詳細資訊的底部附近：
+此 `invoice_id` 和 `custom_id` 會顯示在付款的商家活動詳細資訊的底部附近：
 
 ![`custom_id` 在商家活動詳細資訊中](assets/merchant-activity-ids.png)
 

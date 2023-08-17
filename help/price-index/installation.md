@@ -25,9 +25,9 @@ ht-degree: 0%
    * [即時搜尋](../live-search/guide-overview.md)
    * [產品Recommendations](../product-recommendations/guide-overview.md)
 
-## 安裝必要的模組
+## 安裝必要模組
 
-視您的設定而定，安裝程式可能會稍有不同。
+根據您的設定，安裝程式可能會稍微不同。
 有些擴充功能會新增摘要和支援程式碼，有些擴充功能會移除預設價格摘要。
 
 1. 將下列模組新增至 `composer.json` 檔案：
@@ -66,18 +66,18 @@ ht-degree: 0%
    bin/magento saas:resync --feed=prices
    ```
 
-視需要手動執行上述索引器。 否則，資料會在標準同步程式中重新整理。 深入瞭解 [目錄同步](../landing/catalog-sync.md) 服務。
+視需要手動執行上述索引子。 否則，資料會在標準同步程式中重新整理。 深入瞭解 [目錄同步](../landing/catalog-sync.md) 服務。
 
-Luma和Adobe Commerce Core GraphQL使用者可以安裝 `catalog-adapter` 提供Luma和核心GraphQl相容性並停用PHP核心價格索引器的模組。
+Luma和Adobe Commerce Core GraphQL使用者可安裝 `catalog-adapter` 此模組提供Luma與Core GraphQl相容性，並停用PHP核心價格索引器。
 若要使用 `catalog-adapter` 模組， [!DNL Live Search] 和 [!DNL Catalog Service] 必須先安裝及設定。 請遵循 [安裝 [!DNL Live Search]](../live-search/install.md) 和 [目錄服務安裝](../catalog-service/installation.md) 指示後再繼續。
 
-若要設定「即時搜尋和目錄轉接器」，請依照 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 指示。
+若要設定「即時搜尋和目錄配接器」，請依照 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 指示。
 
 ```bash
 composer require adobe-commerce/catalog-adapter
 ```
 
-如有需要，可以使用以下指令重新啟用PHP核心價格索引器：
+如果需要，可以使用以下指令重新啟用PHP核心價格索引器：
 
 ```bash
 bin/magento module:disable Magento_PriceIndexerDisabler

@@ -8,15 +8,15 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 簡介 [!DNL Payment Services] 首頁
 
-[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供「首頁」檢視，其中包含開始設定和使用擴充功能所需的所有資訊。
+[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供「首頁」檢視，其中包含開始設定和使用擴充功能所需的所有必要資訊。
 
-1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**：
+1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**：
 
    ![首頁檢視](assets/home-view.png)
 
@@ -27,13 +27,13 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | [!UICONTROL Orders] | 這些報表可讓您快速檢視訂單的付款狀態，並識別任何潛在問題。 |
-| [!UICONTROL Payouts] | 「付款」報表一目瞭然地顯示完整的付款資訊，可讓您完全透明地顯示付款金額、處理數量及財務調節之交易層次的詳細報表。 |
+| [!UICONTROL Payouts] | 「付款」報表會顯示完整的付款資訊，讓您對付款金額、已處理數量及財務調節之交易層次的詳細報表具有完全的透明度。 |
 
 ## 瞭解
 
 | 欄位 | 說明 |
 |---|---|
-| [!UICONTROL Read documentation] | 請參閱最新的使用者和開發人員檔案，以瞭解 [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | 請參閱最新的使用者和開發人員檔案，瞭解 [!DNL Payment Services]. |
 | [!UICONTROL How to onboard] | 尋找安裝程式所需的一切，並開始使用 [!DNL Payment Services] 功能。 |
 | [!UICONTROL Understand financial reports] | 現金流量管理報表的深入說明 [!DNL Payment Services]. |
 
@@ -41,8 +41,8 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| [!UICONTROL Visit help center] | 此 [!DNL Adobe Commerce] 說明中心提供知識庫文章，內容關於 [!DNL Payment Services]. |
-| [!UICONTROL Get support] | 造訪 [!DNL Adobe Commerce] 支援入口網站，以取得以下專案的協助： [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | 此 [!DNL Adobe Commerce] 說明中心有知識庫文章關於 [!DNL Payment Services]. |
+| [!UICONTROL Get support] | 造訪 [!DNL Adobe Commerce] 支援入口網站，以取得協助 [!DNL Payment Services.] |
 
 ## 設定
 

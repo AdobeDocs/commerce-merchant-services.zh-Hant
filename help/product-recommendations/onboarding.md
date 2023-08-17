@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 入門
 
-入門流程 [!DNL Product Recommendations] 需要存取伺服器的命令列，並包含下列步驟。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
+的入門流程 [!DNL Product Recommendations] 需要存取伺服器的命令列，且包含下列步驟。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
 
 - [實作工作流程](implementation-workflow.md)
 - [安裝與設定](install-configure.md)
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1、8.2
-- 撰寫器2
+- Composer 2
 
-### 支援的平台
+### 支援平台
 
 - Adobe Commerce內部部署(EE) ：2.4.4+
-- 雲端上的Adobe Commerce (ECE) ：2.4.4+
+- 雲端上的Adobe Commerce (ECE) ： 2.4.4+
 
 ### 頁面產生器支援
 
-[!DNL Product Recommendations] 可新增至頁面作為Page Builder內容型別。 若要將頁面產生器支援新增至產品Recommendations，請參閱 [安裝與設定](install-configure.md).
+[!DNL Product Recommendations] 可新增至頁面作為頁面產生器內容型別。 若要在產品Recommendations中新增頁面產生器支援，請參閱 [安裝與設定](install-configure.md).
 
-另請參閱 [[!DNL Page Builder] 整合](page-builder.md) 以取得如何新增的說明 [!DNL Product Recommendations] 到 [!DNL Page Builder] 內容。
+另請參閱 [[!DNL Page Builder] 整合](page-builder.md) 以取得如何新增的指示 [!DNL Product Recommendations] 到 [!DNL Page Builder] 內容。
 
 ### SaaS價格索引
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations] now [支援](release-notes.md) 此功能的執行方式： [類別許可權](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)， [共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、和 [客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您已隱藏零售客戶區段中的某些類別，則該區段中的購物者不會看到這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看見他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations] now [支援](release-notes.md) 此功能藉由接受 [類別許可權](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)， [共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、和 [客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會看到這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
 
 >[!NOTE]
 >

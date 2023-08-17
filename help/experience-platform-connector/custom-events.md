@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 建立自訂事件
 
-您可以擴充 [事件平台](events.md) 建立自己的店面活動，收集業界獨有的資料。 當您建立和設定自訂事件時，它會傳送至 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+您可以擴充 [事件平台](events.md) 建立您自己的店面活動，收集業界獨一無二的資料。 當您建立和設定自訂事件時，會傳送至 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## 處理自訂事件
 
-只有Adobe Experience Platform支援自訂事件。 自訂資料不會轉送至Adobe Commerce儀表板和量度追蹤器。
+僅支援Adobe Experience Platform的自訂事件。 自訂資料不會轉送到Adobe Commerce儀表板和量度追蹤器。
 
-針對任何 `custom` 事件，收集器會新增 `personId` (`ecid`)至 `customContext` 並換行 `xdm` 物件，再轉送至Edge。
+針對任何 `custom` 事件，收集器會新增 `personId` (`ecid`)至 `customContext` 並包裝 `xdm` 物件，再轉送至Edge。
 
 範例：
 
@@ -51,11 +51,11 @@ mse.publish.custom({
 
 只有Experience Platform支援標準事件的屬性覆寫。 自訂資料不會轉送到Commerce儀表板和量度追蹤器。
 
-對於具有集的任何事件 `customContext`，收集器會覆寫 `personId` 和Adobe Analytics計數器，並轉送中設定的所有其他屬性 `customContext`.
+對於具有集合的任何事件 `customContext`，收集器會覆寫 `personId` 和Adobe Analytics計數器，並轉送中設定的所有其他屬性 `customContext`.
 
 範例：
 
-透過Adobe Commerce Events SDK發佈的具有覆寫的產品檢視：
+透過Adobe Commerce Events SDK發佈的具覆寫功能的產品檢視：
 
 ```javascript
 mse.publish.productPageView({
@@ -80,7 +80,7 @@ mse.publish.productPageView({
 }
 ```
 
-透過Adobe Commerce Events SDK發佈的具有Adobe Commerce的產品檢視：
+透過Adobe Commerce Events SDK發佈的具有Adobe Commerce覆寫功能的產品檢視：
 
 ```javascript
 mse.publish.productPageView({

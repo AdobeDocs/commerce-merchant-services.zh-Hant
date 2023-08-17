@@ -1,6 +1,6 @@
 ---
 title: 「付款方法」
-description: 「與的相容支付方法概述 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。」
+description: 「與相容的付款方法概述 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。」
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039

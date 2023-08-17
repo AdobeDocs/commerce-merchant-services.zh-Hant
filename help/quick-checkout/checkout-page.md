@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce中的結帳頁面
 
-客戶可在結帳頁面輸入下單所需的資訊。
+客戶可在結帳頁面輸入所需資訊下訂單。
 
 結帳頁面的範例：
 
@@ -27,6 +27,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 完成第一個步驟後，「結帳」會顯示結帳總計和對應的側邊欄資訊。
+> 第一個步驟完成後，「結帳」會顯示結帳總計和對應的側邊列資訊。
 
-請參閱 [結帳流程](../quick-checkout/checkout-flow.md) 主題以取得更多關於 [!DNL Quick Checkout] 流量。
+請參閱 [結帳流程](../quick-checkout/checkout-flow.md) 主題，以取得有關 [!DNL Quick Checkout] 流量。

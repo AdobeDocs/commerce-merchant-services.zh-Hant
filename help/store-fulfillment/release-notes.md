@@ -1,19 +1,19 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] 發行說明'
-description: 「檢閱發行說明以瞭解全部資訊 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本」。
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 發行說明'
+description: 「檢閱發行說明，瞭解所有資訊 [!DNL Store Fulfillment by Walmart Commerce Technologies] 發行版本。」
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # 發行說明
 
-以下版本說明說明的首次發行 [!DNL Store Fulfillment Services by Walmart Commerce Technologies] 並包含：
+以下版本說明說明的初始版本 [!DNL Store Fulfillment Services by Walmart Commerce Technologies] 並包含：
 
 ![新增](../assets/new.svg) 新功能
 ![已修正的問題](../assets/fix.svg) 修正和改良
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 穩定性：一般可用性
 
-![新增](../assets/fix.svg)<!-- WMTP-731 --> 簡化 [簽入體驗設定](check-in-experience-setup.md) 針對「商店協助」應用程式，新增預設汽車造型和模型選項。 在舊版中，商家必須手動設定汽車廠牌和模型選擇。
+![新增](../assets/fix.svg)<!-- WMTP-731 --> 簡化 [簽入體驗設定](check-in-experience-setup.md) 針對「商店協助」應用程式，新增預設汽車造型和模型選項。 在舊版中，商家必須手動設定汽車廠牌和模型選項。
 
 ## v1.0.0
 
@@ -69,4 +69,4 @@ ht-degree: 2%
 
 ## 商店協助應用程式
 
-如需Store Assist應用程式最新發行版本的相關資訊，請參閱 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+如需Store Assist應用程式最新版本的相關資訊，請參閱 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.

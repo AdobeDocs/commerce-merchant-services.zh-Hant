@@ -1,12 +1,12 @@
 ---
-title: 『[!DNL Live Search] 版本注意事項
+title: '[!DNL Live Search] 發行說明'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

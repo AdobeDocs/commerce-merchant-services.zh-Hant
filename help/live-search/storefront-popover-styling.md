@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 樣式 [!DNL Popover] 元素
 
-此 [[!DNL storefront popover]](storefront-popover.md) 一律顯示產品 `name` 和 `price`，且無法設定欄位的選取範圍。 不過， [!DNL popover] 可以使用CSS類別來設定元素的樣式。 例如，下列宣告會變更 [!DNL popover] 容器和頁尾。
+此 [[!DNL storefront popover]](storefront-popover.md) 一律顯示產品 `name` 和 `price`，且無法設定欄位選項。 不過， [!DNL popover] 可以使用CSS類別來設定元素的樣式。 例如，下列宣告會變更 [!DNL popover] 容器和頁尾。
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 容器可見性
 
-的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`.  此 `.active` class表示容器的可見性。 此 `.active` 類別是有條件新增的，當 [!DNL popover] 「 」已開啟。
+的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`.  此 `.active` 類別指示容器的可見性。 此 `.active` 類別是有條件地新增當 [!DNL popover] 是開啟的。
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 容器類別選取器
 
-#### .livesearch.popover-container
+#### .livesearch.pover-container
 
 ![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 使用修改的主題 {#working-with-modified-theme}
 
-此 [!DNL storefront popover] 可與自訂的 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 會繼承以下專案的必要檔案： *Luma*. 此 `top.search` 中的區塊 `header-wrapper` 的 `Magento_Search` 模組不可修改。
+此 [!DNL storefront popover] 可與自訂的 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 會繼承下列專案的必要檔案： *Luma*. 此 `top.search` 中的區塊 `header-wrapper` 的 `Magento_Search` 模組不可修改。
 
 ```html
 <referenceContainer name="header-wrapper">

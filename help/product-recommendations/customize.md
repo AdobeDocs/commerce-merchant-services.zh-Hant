@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # 自訂
 
-安裝產品Recommendations模組時，Adobe Commerce會建立 `ProductRecommendationsLayout` 目錄。 此目錄包含您可以自訂的範本檔案，以變更建議在店面上的顯示方式。 具體來說，您可以修改或覆寫下列範本：
+安裝產品Recommendations模組時，Adobe Commerce會建立 `ProductRecommendationsLayout` 目錄。 此目錄包含範本檔案，您可以自訂這些檔案，以變更建議在店面中的顯示方式。 具體來說，您可以修改或覆寫下列範本：
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-有關修改範本檔案的詳細資訊，請參閱 [範本自訂](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) 在前端開發人員指南中。
+有關修改範本檔案的詳細資訊，請參閱 [範本自訂](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) 位於前端開發人員指南中。
 
 如果您修改 `recommendations.html` 檔案中，您必須在檔案中保留下列標籤，以確保Adobe Commerce可以從您的店面收集建議量度：
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 | 目錄 | 用途 |
 |---|---|
 | `layout` | 包含 `*.xml` 每種頁面型別的檔案 |
-| `templates` | 包含呼叫擷取和轉譯指令碼的檔案 |
+| `templates` | 包含呼叫擷取和轉譯器指令碼的檔案 |
 | `web/js` | 包含為您的存放區擷取及轉譯建議的JavaScript檔案 |
 | `web/template` | 包含的範本 `magento/product-recommendations` 模組 |
 
 ## 推薦單位定位
 
-當您 [建立](create.md) 建議時，您需指定 [位置](placement.md) 顯示在頁面上的位置。 建議單位可放置在主要內容容器的頂端或底部。 不過，您可以自訂此位置。 如果您建立「頁面產生器」建議內容型別，請使用「頁面產生器」工具在頁面上放置建議單位。 對於所有其他頁面型別，請編輯 `*.xml` 建立建議時產生的檔案。
+當您 [建立](create.md) 建議時，您可以指定 [位置](placement.md) 顯示在頁面上的位置。 建議單位可放置在主要內容容器的頂端或底部。 不過，您可以自訂此位置。 如果您建立「頁面產生器」建議內容型別，請使用「頁面產生器」工具，將建議單位放置在頁面上。 對於所有其他頁面型別，請編輯 `*.xml` 建立建議時產生的檔案。
 
 1. 變更為 `layout` 目錄：
 
@@ -77,7 +77,7 @@ ht-degree: 0%
    </page>
    ```
 
-   在上述程式碼片段中， `main.content` reference block會指出建議單位會放置在相對於該元素的某個位置。 其 `block` 元素包含 `after="-"` 屬性，指定建議單位將顯示在主要內容區塊之後的頁面上。
+   在上述程式碼片段中， `main.content` reference block會指出建議單位會放置在相對於該元素的位置。 其 `block` 元素包含 `after="-"` 屬性，指定在主要內容區塊之後的頁面上顯示建議單位。
 
 1. 讓我們指定不同的內容區塊，以修改此檔案。
 
@@ -101,21 +101,21 @@ ht-degree: 0%
    </page>
    ```
 
-   此變更導致您的建議單位出現在產品詳細資料頁面上的產品影像之後。 如果您希望推薦單位顯示在頁面之前 `product.info.media`，變更 `after="-"` 屬性至 `before="-"`. 此 `pagePlacement` 引數是不應修改的內部引數。
+   此變更會導致您的建議單位出現在產品詳細資料頁面上的產品影像之後。 如果您希望建議單位顯示在頁面之前 `product.info.media`，變更 `after="-"` 歸因至 `before="-"`. 此 `pagePlacement` 引數是不應修改的內部引數。
 
-請參閱 [版面總覽](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) 以取得頁面上區塊型別的詳細資訊。
+請參閱 [版面概觀](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) 以取得頁面上區塊型別的詳細資訊。
 
 ## 自訂產品屬性
 
-開發人員通常需要存取店面推薦單位中的自訂產品屬性值，以便他們可以根據這些屬性對產品新增視覺化處理。
+開發人員通常需要存取店面建議單位中的自訂產品屬性值，以便他們可以根據這些屬性為產品新增視覺化處理。
 
-例如，如果您的商店銷售一些有機產品，這些產品上可能會有自訂屬性，將其指定為 `Organic = Yes`. 您可能需要存取店面上的這個屬性值，以便在這些產品出現在Recommendations中時提供特殊的視覺化處理。 同樣地，存取這些自訂產品屬性值可讓您在網站的表示層中標籤產品或驅動自訂邏輯。
+例如，如果您的商店銷售一些有機產品，這些產品上可能有自訂屬性，將其指定為 `Organic = Yes`. 您可能需要存取店面上的這個屬性值，以便在這些產品出現在Recommendations中時為其提供特殊的視覺化處理。 同樣地，存取這些自訂產品屬性值可讓您在網站的展示層中為產品加上徽章或驅動自訂邏輯。
 
 ![新增徽章](assets/unit-custom.png)
 
-若要確定在頁面上轉譯建議單位時可以使用自訂產品屬性，請設定 `Used in Product Listing` 屬性至 `Yes` 在 [產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) 頁面。
+若要確保在頁面上呈現推薦單位時可以使用自訂產品屬性，請設定 `Used in Product Listing` 屬性至 `Yes` 在 [產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) 頁面。
 
-設定此屬性後，JSON裝載會包含 `attributes` 包含屬性程式碼和值陣列的物件。 然後，您可以根據這些屬性值套用自訂店面樣式，例如新增特殊視覺處理或徽章（如先前所述）。
+設定此屬性時，JSON裝載包含 `attributes` 包含屬性程式碼和值陣列的物件。 然後，您可以根據這些屬性值套用自訂店面樣式，例如新增特殊視覺處理或徽章，如之前所述。
 
 >[!NOTE]
 >

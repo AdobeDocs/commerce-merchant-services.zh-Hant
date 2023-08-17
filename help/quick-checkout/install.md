@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 安裝 [!DNL Quick Checkout]
 
-此 [!DNL Quick Checkout] Adobe Commerce和擴充功能 [!DNL Magento Open Source] 可安裝有 [!DNL Composer keys]，連結至Commerce帳戶 [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} 在註冊程式中提供。 Composer在Adobe Commerce的初始安裝期間或以下情況下使用這些金鑰： [!DNL Composer keys] 之前未儲存至 `auth.json` 檔案。
+此 [!DNL Quick Checkout] Adobe Commerce的擴充功能和 [!DNL Magento Open Source] 可安裝 [!DNL Composer keys]，連結至Commerce帳戶 [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} 在註冊過程中提供。 Composer在Adobe Commerce的初始安裝期間或以下情況下使用這些金鑰： [!DNL Composer keys] 之前未儲存至 `auth.json` 檔案。
 
 另請參閱 [取得您的驗證金鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} 主題，以取得相關資訊 [!DNL Composer keys].
 
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## 更新最低穩定性設定
 
-在安裝擴充功能之前，請確定 `minimum-stability` 中的欄位 `composer.json` 檔案已設定為 `"stable"`：
+在安裝擴充功能之前，請確定 `minimum-stability` 中的欄位 `composer.json` 檔案已設為 `"stable"`：
 
 `"minimum-stability": "stable"`
 
 ## 安裝擴充功能
 
-您可以安裝 [!DNL Quick Checkout] 適用於雲端基礎結構及內部部署例項上Adobe Commerce的擴充功能。
+您可以安裝 [!DNL Quick Checkout] 適用於雲端基礎結構及內部部署執行個體上的Adobe Commerce的擴充功能。
 
 ### 雲端基礎結構上的Adobe Commerce
 
@@ -46,7 +46,7 @@ ht-degree: 0%
    composer update
    ```
 
-   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用此命令： `composer update magento/quick-checkout`.
+   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
 
 1. 提交並推送您的變更。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 此方法用於安裝 [!DNL Quick Checkout] 內部部署執行個體的擴充功能。
 
-1. 將「快速簽出」模組新增至 `require` 部分 `composer.json` 檔案：
+1. 將「快速簽出」模組新增至 `require` 的區段 `composer.json` 檔案：
 
    ```bash
    composer require magento/quick-checkout --no-update
@@ -66,7 +66,7 @@ ht-degree: 0%
    composer update
    ```
 
-   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用此命令： `composer update magento/quick-checkout`.
+   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
 
 1. 升級Adobe Commerce：
 
@@ -80,12 +80,12 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-1. 認可變更。
-1. 更新您的內部部署執行個體，以確保已提交的程式碼已部署。
+1. 提交變更。
+1. 更新您的內部部署執行個體，以確保已部署認可的程式碼。
 
 ## 升級擴充功能
 
-當我們發行新版的 [!DNL Quick Checkout]，即可輕鬆升級擴充功能。
+當我們發行新版的 [!DNL Quick Checkout]，您可輕鬆升級擴充功能。
 
 1. 若要取得最新版本的套件：
 
@@ -93,15 +93,15 @@ ht-degree: 0%
    composer update
    ```
 
-   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用此命令： `composer update magento/quick-checkout`.
+   此 `composer update` 命令會更新所有相依性。 如果您不想同時更新所有相依性，請改用以下命令： `composer update magento/quick-checkout`.
 
 1. 提交並推送您的變更。
 
-## 疑難排除
+## 疑難排解
 
 嘗試安裝時，您可能會看到錯誤 [!DNL Quick Checkout] 副檔名。
 
-如果您在期間遇到任何問題 [!DNL Quick Checkout] 安裝程式，請參閱 [疑難排解Quick Checkout問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) (位於Adobe Commerce說明中心)。
+如果您在期間遇到任何問題 [!DNL Quick Checkout] 安裝程式，請參閱 [疑難排解Quick Checkout問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 在Adobe Commerce說明中心。
 
 ## 必要條件
 

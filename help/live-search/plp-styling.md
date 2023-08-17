@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 產品清單頁面Widget
 
-此 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台，提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用及設定PLP Widget的樣式。
+此 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台，提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用和設定PLP Widget的樣式。
 
 ## 啟用PLP Widget
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 樣式範例
 
-您可以自訂PLP Widget的外觀與操作方式，以符合您的網站 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+您可以自訂PLP Widget的外觀與風格，以符合您的網站 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ![分頁](assets/plp-css-example.png)
 
-新增規則以大寫形式自訂產品名稱。
+新增規則以大寫方式自訂產品名稱。
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 * `.ds-widgets`：外部div
 * `.ds-widgets__actions`：左側內div
-* `.ds-widgets__results`：右側內部div
+* `.ds-widgets__results`：右側內div
 
 ![Widget結果](assets/plp-css-widgets.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 * `.ds-sdk-sort-dropdown__button`
 
-![下拉式按鈕](assets/plp-css-dropdown-button.png)
+![下拉式清單按鈕](assets/plp-css-dropdown-button.png)
 
 * `.ds-sdk-sort-dropdown__items`
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 * `.ds-sdk-sort-dropdown__items--item-selected`
 
-![下拉式清單中選取的專案](assets/plp-css-dropdown-selected.png)
+![下拉式清單選取專案](assets/plp-css-dropdown-selected.png)
 
 * `.ds-sdk-sort-dropdown__items--item-active`
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 * `.ds-sdk-pill__label`
 * `.ds-sdk-pill__cta`
 
-![Facet標籤](assets/plp-css-pill-label-cta.png){width="350"}
+![多面向標籤](assets/plp-css-pill-label-cta.png){width="350"}
 
 * `.ds-plp-facets__list`
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 * `.ds-sdk-labelled-input`
 
-![已標籤的輸入](assets/plp-css-labelled-input.png)
+![標籤的輸入](assets/plp-css-labelled-input.png)
 
 * `.ds-sdk-labelled-input__input`
 * `.ds-sdk-labelled-input__label`

@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Quick Checkout] 必要條件」'
+title: '"[!DNL Quick Checkout] 必備條件」'
 description: 「確認您的系統符合使用 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。」
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 feature: Checkout, Services
@@ -31,4 +31,4 @@ ht-degree: 1%
 | ISPU | [!DNL In-Store Pickup] 不支援(ISPU)功能 |
 | 多送貨 | 不支援多重送貨 |
 
-請參閱 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) 主題以取得相容性限制的詳細資訊 [!DNL Bolt] 和 [!DNL Quick Checkout] 副檔名。
+請參閱 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) 主題，以取得相容性限制的詳細資訊 [!DNL Bolt] 和 [!DNL Quick Checkout] 副檔名。

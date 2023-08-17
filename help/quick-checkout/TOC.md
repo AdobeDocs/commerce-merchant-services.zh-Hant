@@ -7,7 +7,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
       - [使用者設定](user-roles-setup.md)
    - [!DNL Quick Checkout] 報告 {#quick-checkout-reporting}
       - [報表](reports.md)
-- 測試與驗證 {#test-validate}
+- 測試及驗證 {#test-validate}
    - [測試](testing.md)
    - [開發人員資訊](developer.md)
 - 簽出 {#manage-checkout}
@@ -34,7 +34,7 @@ ht-degree: 0%
    - 簽出選項 {#checkout-options}
       - [結帳流程](checkout-flow.md)
       - [Bolt使用者簽出](checkout-bolt.md)
-      - [Adobe Commerce使用者結帳](checkout-adobe-commerce.md)
+      - [Adobe Commerce使用者簽出](checkout-adobe-commerce.md)
    - [付款方法](payment-methods.md)
-- [使用者工作階段期限](user-session-lifetime.md)
+- [使用者工作階段存留期](user-session-lifetime.md)
 - [在管理員中建立訂單](create-order-admin.md)

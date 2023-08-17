@@ -1,5 +1,5 @@
 ---
-title: 『[!DNL Quick Checkout] 版本注意事項
+title: '[!DNL Quick Checkout] 發行說明'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Quick Checkout] 發行版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 開發人員資訊
 
-本主題包含與Adobe Commerce緊密合作的開發人員適用的資訊，以及 [!DNL Magento Open Source] 程式碼並想要瞭解有關的詳細資訊 [!DNL Quick Checkout] 副檔名。
+本主題包含與Adobe Commerce密切合作的開發人員適用的資訊，以及 [!DNL Magento Open Source] 程式碼並想要瞭解有關 [!DNL Quick Checkout] 副檔名。
 
 ## 延伸點
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ## 送貨詳細資料步驟
 
-擴充點可用於在登入後自訂自動步驟導覽 [!DNL Bolt].
+擴充點可用來在登入後自訂自動步驟導覽 [!DNL Bolt].
 
-一旦購物者登入 [!DNL Bolt]，系統會預先填寫所有有效資訊，並重新導向至付款詳細資料步驟來下訂單。 請參閱 [結帳流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主題以取得詳細資訊。
+一旦購物者登入 [!DNL Bolt]，系統會預先填寫所有有效資訊，並重新導向至付款詳細資料步驟以下訂單。 請參閱 [結帳流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主題以取得詳細資訊。
 
-此擴充點可防止導覽至付款步驟，而且當有擴充功能需要購物者對出貨步驟執行其他動作時，此擴充功能會很有用。 請參閱以下範例，瞭解如何搭配mixin使用擴充點：
+此擴充點可防止導覽至付款步驟，且當有擴充功能需要購物者對出貨步驟執行其他動作時，此擴充功能會相當實用。 請參閱以下範例，瞭解如何搭配mixin使用擴充點：
 
 1. 在中註冊新的mixin `require-config.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/`.
 
@@ -43,7 +43,7 @@ ht-degree: 0%
    };
    ```
 
-1. 在中延伸模型 `can-navigate-to-payment.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. 在中擴充模型 `can-navigate-to-payment.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
 
    ```js
    define([
@@ -64,4 +64,4 @@ ht-degree: 0%
 >
 > 這是德國購物者(DE)希望停留在「運送詳細資料」步驟的範例。
 
-Check [[!DNL Bolt] 開發人員說明](https://help.bolt.com/developers/) 有關下列專案的詳細資訊： [!DNL Bolt] 適用於開發人員。
+檢查 [[!DNL Bolt] 開發人員說明](https://help.bolt.com/developers/) 如需詳細資訊，請參閱 [!DNL Bolt] 適用於開發人員。

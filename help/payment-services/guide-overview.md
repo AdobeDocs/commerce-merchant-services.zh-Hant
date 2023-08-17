@@ -1,6 +1,6 @@
 ---
 title: '"[!DNL Payment Services] 指南概述」'
-description: 以下各項的完整資訊： [!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 管理員，包括安裝和上線
+description: 以下專案的完整資訊： [!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 管理員，包括安裝和上線
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 有兩個管理員區域：
 
-* 管理員：使用此區域可存取設定UI和報告。
+* 管理員：使用此區域來存取設定UI和報表。
 * 命令列介面（或CLI）：使用此工具來執行安裝和後端組態工作。
 
 本指南涵蓋：
@@ -38,7 +38,7 @@ ht-degree: 0%
 | 指南 | 說明 |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | 兩者以商家為中心的檔案 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂的以開發人員為中心的檔案 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建立和自訂的以開發人員為中心的檔案 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] |
 
 ## 支援
 

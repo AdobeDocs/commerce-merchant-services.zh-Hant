@@ -8,13 +8,13 @@ recommendations: noDisplay
 source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 # Adobe Commerce的Adobe Experience Platform Connector {#experience-platform-connector}
 
-- [指南概述](overview.md)
+- [指南概觀](overview.md)
 - [發行說明](release-notes.md)
 - 基礎知識 {#fundamentals}
    - [安裝Experience Platform聯結器](install.md)

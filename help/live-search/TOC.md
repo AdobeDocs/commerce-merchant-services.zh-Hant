@@ -1,23 +1,23 @@
 ---
-user-guide-title: '"[!DNL Live Search] 指南」'
+user-guide-title: 「[!DNL Live Search] 指南」
 user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Search] 來自Adobe Commerce。」
-breadcrumb-title: '"[!DNL Live Search] 指南」'
+breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 # [!DNL Live Search] 適用於商務 {#live-search}
 
-- [指南概述](guide-overview.md)
+- [指南概觀](guide-overview.md)
 - [簡介 [!DNL Live Search]](overview.md)
 - [發行說明](release-notes.md)
 - 上線即時搜尋 {#onboard}
-   - [入門概述](onboarding-overview.md)
+   - [入門概觀](onboarding-overview.md)
    - [安裝 [!DNL Live Search]](install.md)
 - [!DNL Live Search] 店面 {#live-search-storefront}
    - [產品清單頁面Widget](plp-styling.md)
@@ -25,12 +25,12 @@ ht-degree: 0%
    - [店面 [!DNL Popover]](storefront-popover.md)
    - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - [!DNL Live Search] 管理員{#live-search-admin}
-   - [Workspace](workspace.md)
+   - [工作區](workspace.md)
    - [效能](performance.md)
    - Facet {#facets}
       - [概觀](facets.md)
       - [多面向工作區](faceting-workspace.md)
-      - [Facet型別](facets-type.md)
+      - [多面向型別](facets-type.md)
       - [新增Facet](facets-add.md)
       - [管理Facet](facets-manage.md)
       - [技術說明](facet-technical-notes.md)

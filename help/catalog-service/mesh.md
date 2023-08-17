@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] for Adobe Commerce可讓您透過通用的GraphQL端點整合多個資料來源。」'
+description: 『[!DNL API Mesh] for Adobe Commerce可讓您透過共同的GraphQL端點整合多個資料來源。
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 ![目錄架構圖](assets/catalog-service-architecture-mesh.png)
 
-搭配「目錄服務」使用API網狀架構的第一步，是將API網狀架構連線到您的執行個體。 請參閱以下連結的詳細說明： [建立網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+搭配目錄服務使用API網狀架構的第一步，是將API網狀架構連線到您的執行個體。 請參閱以下詳細指示： [建立網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-若要完成設定，請安裝 [Adobe Developer CLI套件](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+若要完成安裝，請安裝 [Adobe Developer CLI套件](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-在Adobe I/O Runtime上設定Mesh後，請執行以下命令，新增 `CommerceCatalogServiceGraph` 網格的來源。
+在Adobe I/O Runtime上設定Mesh後，請執行以下命令以新增 `CommerceCatalogServiceGraph` 網格的來源。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-位置 `variables.json` 是一個獨立檔案，用於儲存Adobe I/O Runtime的常用值。
-例如，API金鑰可以儲存在檔案中：
+位置 `variables.json` 是儲存Adobe I/O Runtime常用值的獨立檔案。
+例如，API金鑰可儲存在檔案中：
 
 ```json
 {
@@ -36,11 +36,11 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-執行此命令後， Catalog Service應透過API Mesh執行。 您可以執行 `aio api-mesh:get` 命令來檢視更新後的網格的設定。
+執行此命令後，目錄服務應透過API Mesh執行。 您可以執行 `aio api-mesh:get` 命令以檢視更新網格的組態。
 
-## API網格範例
+## API Mesh範例
 
-API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce執行個體。 它也可以用來設定現有的Commerce資料以啟用新功能。
+API Mesh可讓使用者使用外部資料來源，以強化您的Adobe Commerce執行個體。 它也可用來設定現有的Commerce資料以啟用新功能。
 
 ### 啟用層級價格
 
@@ -129,7 +129,7 @@ API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce�
 }
 ```
 
-設定後，請查詢Mesh以取得階層式定價：
+設定之後，請查詢Mesh以取得階層式定價：
 
 ```graphql
 query {
@@ -160,7 +160,7 @@ query {
 
 ### 取得實體ID
 
-此網格會附加 `entityId` 至ProductView介面。 取代 `name `， `endpoint`、和 `x-api-key` 值。
+此網格會附加 `entityId` 到ProductView介面。 取代 `name `， `endpoint`、和 `x-api-key` 值。
 
 ```json
 {
