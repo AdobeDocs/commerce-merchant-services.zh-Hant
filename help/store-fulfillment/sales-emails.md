@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 </thead>
 <tbody><tr>
 <td><strong>非同步傳送</strong></td>
-<td>停用此功能。 不支援非同步傳送電子郵件。 為求快速通訊及商店代答的回應時間，請立即傳送電子郵件，而非批次處理。 </td>
+<td>判斷是否以非同步方式傳送銷售電子郵件。 選項： <br/>**'Disable'** （預設）事件觸發時會傳送銷售電子郵件。 若要以最快的速度進行「商店見面交收」的通訊和回應，請使用預設設定。 <br/>**'啟用'** — 啟用此選項會將處理結帳和訂單處理電子郵件通知的程式移至背景，以預先決定的定期間隔傳送。</td>
 <td>存放區檢視</td>
 <td>否</td>
 </tr>

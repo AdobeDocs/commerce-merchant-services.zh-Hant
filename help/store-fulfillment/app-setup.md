@@ -5,7 +5,7 @@ level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Store Assist應用程式需要兩種設定型別：
 
    - **從商店取消** — 指定是否可以從商店取消訂單，以及哪些角色具有取消許可權
 
-   - **訂單清理視窗** — 指定經過 [預估取車前置時間](enable-general.md#delivery-method-title-configuration) 撿料訂單在重新存貨之前會保留在暫存中，例如3天。 預設值為七天。 如果開啟此設定，則在此時間到期時自動取消訂單。 商品已補充庫存，商家會收到取消電子郵件。
+   - **訂單清理視窗** — 指定經過 [預估取車前置時間](enable-general.md#delivery-method-title-configuration) 撿料訂單在重新存貨之前會保留在暫存中，例如3天。 預設值為七天。 如果開啟此設定，則當此時間到期時，會自動取消訂單。 商品已補充庫存，商家會收到取消電子郵件。
 
    - 自訂所有應用程式內指示（挑選、分段、交出）。
 

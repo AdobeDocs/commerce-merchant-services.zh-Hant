@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Store Assist應用程式為Store Associates提供四個模組，用於管理線�
 
 - **[選取](#pick-module)** — 全面掌握所有訂購料號與工具，確保挑選正確的料號與數量。 店舖關聯人員可同時挑選一或多個訂單，以提升效率。
 
-- **[階段](#stage-module)** — 輸入客戶旅行至商店時下訂單的位置，讓Store Associates可以輕鬆找到訂單的移交。
+- **[階段](#stage-module)** — 輸入客戶旅行到商店時下訂單的位置，讓Store Associates可以更快找到並移交訂單。
 
 - **[交出](#hand-off-module)** — 客戶進店後，即可即時收到通知，將等待時間及訂單移交作業順暢地縮到最短。
 
