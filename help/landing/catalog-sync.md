@@ -2,8 +2,8 @@
 title: 目錄同步
 description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services] 持續提供服務，隨時保持最新狀態。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-feature: Catalogs, Data Import/Export, Catalog Service
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+feature: Catalog Management, Data Import/Export, Catalog Service
+source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
