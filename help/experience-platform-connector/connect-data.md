@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此功能僅供測試版使用者使用。 您可以傳送電子郵件至下列地址，以加入Beta版： [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>此功能僅供測試版使用者使用。 您可以傳送電子郵件至下列地址，以加入Beta版： `dataconnection@adobe.com`.
 
 Adobe Commerce最多會收集五年的歷史訂單資料和狀態。 您可以使用Experience Platform聯結器將該歷史資料傳送至Experience Platform，以根據這些過去訂單擴充您的客戶設定檔。 資料儲存在Experience Platform內的資料集中。
 

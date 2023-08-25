@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe CommerceAdobe Experience Platform聯結器的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ _2023年6月13日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新增](../assets/new.svg) - （測試版）新增以下功能： [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。 此功能僅供測試版使用者使用。 您可以傳送電子郵件至下列地址，以加入Beta版： [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+* ![新增](../assets/new.svg) - （測試版）新增以下功能： [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。 此功能僅供測試版使用者使用。 您可以傳送電子郵件至下列地址，以加入Beta版： `dataconnection@adobe.com`.
 
 ## 2.2.0
 

@@ -4,9 +4,9 @@ description: 瞭解如何建立自訂事件，將您的Adobe Commerce資料連�
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 659dd2d1b298ec2a98bb4365a46b09d7468daaad
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,11 @@ ht-degree: 0%
 
 僅支援Adobe Experience Platform的自訂事件。 自訂資料不會轉送到Adobe Commerce儀表板和量度追蹤器。
 
-針對任何 `custom` 事件，收集器會新增 `personId` (`ecid`)至 `customContext` 並包裝 `xdm` 物件，再轉送至Edge。
+針對任何 `custom` 事件，收集器：
+
+- 新增 `identityMap` 替換為 `ECID` 作為主要身分
+- 包含 `email` 在 `identityMap` 作為次要身分 _如果_ `personalEmail.address` 在事件中設定
+- 將完整事件包裝在 `xdm` 物件，再轉送至Edge
 
 範例：
 
@@ -27,7 +31,11 @@ ht-degree: 0%
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -35,11 +43,27 @@ mse.publish.custom({
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -51,7 +75,11 @@ mse.publish.custom({
 
 只有Experience Platform支援標準事件的屬性覆寫。 自訂資料不會轉送到Commerce儀表板和量度追蹤器。
 
-對於具有集合的任何事件 `customContext`，收集器會覆寫 `personId` 和Adobe Analytics計數器，並轉送中設定的所有其他屬性 `customContext`.
+對於任何事件，具有 `customContext`，收集器會以中的欄位覆寫在相關內容中設定的聯結欄位 `customContext`. 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
+
+>[!NOTE]
+>
+>覆寫自訂事件時，應針對該事件型別關閉事件轉送至Experience Platform，以避免重複計算。
 
 範例：
 
@@ -59,7 +87,17 @@ mse.publish.custom({
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -67,41 +105,31 @@ mse.publish.productPageView({
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-透過Adobe Commerce Events SDK發佈的具有Adobe Commerce覆寫功能的產品檢視：
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-在Experience Platform邊緣：
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 
