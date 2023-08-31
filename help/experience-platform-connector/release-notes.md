@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe CommerceAdobe Experience Platform聯結器的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 4b192fad63ce046bd8f77c513483bf095e249528
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 另請參閱 [即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 以瞭解發行排程和支援。
 
-請參閱開發人員檔案以 [瞭解產品相容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+請參閱開發人員檔案以 [瞭解哪些Commerce版本支援此單元](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 支援的服務更新
 
@@ -51,7 +51,7 @@ _2022年10月12日_
 
 _2023年6月27日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 新增以下功能： [關閉傳送店面活動](connect-data.md#data-collection) 到Experience Platform。
 * ![修正](../assets/fix.svg)  — 更新內容安全性原則設定。
@@ -63,7 +63,7 @@ _2023年6月27日_
 
 _2023年6月13日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg) - （測試版）新增以下功能： [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。 此功能僅供測試版使用者使用。 您可以傳送電子郵件至下列地址，以加入Beta版： `dataconnection@adobe.com`.
 
@@ -71,7 +71,7 @@ _2023年6月13日_
 
 _2023年3月30日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 套件式 `commerce-data-export` 和 `saas-export` 的相依性 `experience-platform-connector` 副檔名。 之前，您必須分別安裝這些相依性。 這些相依性及商家設定可讓伺服器端處理 [後台活動](events.md#back-office-events).
 * ![新增](../assets/new.svg)  — 已新增名為的新後台事件 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
@@ -80,7 +80,7 @@ _2023年3月30日_
 
 _2023年2月28日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 新增所有Experience Platform聯結器延伸模組對PHP 8.2的支援。
 
@@ -88,7 +88,7 @@ _2023年2月28日_
 
 _2023年1月17日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 已更新 [Experience Platform聯結器管理員](connect-data.md) 以便您指定自己的AEP Web SDK (alloy)。
 * ![修正](../assets/fix.svg) 變更為使用 `identityMap` 而非 `personID` 為推送至邊緣的任何資料設定主要身分時。
@@ -97,7 +97,7 @@ _2023年1月17日_
 
 _2022年11月10日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![已修正的問題](../assets/fix.svg)  — 現在Adobe Experience Platform內容僅在Storefront事件收集器和店面事件SDK成功載入後設定。
 
@@ -105,7 +105,7 @@ _2022年11月10日_
 
 _2022年10月12日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 新增在下列情況下指定您自己的AEP Web SDK的功能 [正在連線](connect-data.md) 將您的Adobe Commerce例項轉移至Experience Platform。
 * ![修正](../assets/fix.svg)  — 更新資料流範圍要求，以便資料流ID的範圍必須限制在網站而非儲存檢閱。
@@ -114,6 +114,6 @@ _2022年10月12日_
 
 _2022年8月9日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 * ![新增](../assets/new.svg)  — 正式發行版本。
