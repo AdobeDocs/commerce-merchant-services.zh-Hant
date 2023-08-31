@@ -3,10 +3,10 @@ title: "[!DNL Payment Services] 發行說明"
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 1%
+source-wordcount: '2200'
+ht-degree: 0%
 
 ---
 
@@ -22,13 +22,17 @@ ht-degree: 1%
 
 另請參閱 [即將發行的版本](https://devdocs.magento.com/release/) 以瞭解發行排程和支援。
 
-另請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 開發人員檔案中，以瞭解產品相容性。
+另請參閱 [產品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) 以瞭解哪些Adobe Commerce版本支援此擴充功能。
 
 ## 託管服務更新
 
 這些發行說明說明說明所發生的功能變更和修正，這些變更和修正是在託管服務的定期版本化功能發行之外發行的。
 
 +++託管服務更新
+
+_2023年7月12日_
+
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4587 --> Payment Services 2.1.0版本中引進的問題，即先前的擴充功能版本無法讓授權失效，目前已解決。 使用任何版本Payment Services的商戶都可作廢授權。
 
 _2023年6月9日_
 
@@ -68,11 +72,27 @@ _2021年6月28日_
 
 +++
 
+## v2.2.0
+
+_2023年8月30日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-4638 --> 已新增 [與Signifyd整合](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html)，提供自動的詐騙防護服務。
+
+![新增](../assets/new.svg)<!-- PAY-3981 --> [將Apple Pay升級為個別付款選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button)，位於PayPal付款按鈕之外，可增加購物者對付款選項的可見度，並允許商家控制Apple Pay的位置和樣式。
+
+![新增](../assets/new.svg)<!-- PAY-4002 --> 改善信用卡欄位結帳的使用者體驗，包括樣式增強功能，例如新增付款圖示，以降低購物者的認知負載並提高轉換率。
+
+![新增](../assets/new.svg)<!-- PAY-4002 --> 新增功能以允許商家 [排序其付款選項的順序](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 以排定特定付款選項的優先順序。 此功能可提高結帳對話率。
+
+![新增](../assets/new.svg)<!-- PAY-4035 --> 已新增 [交易報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 前往付款服務的「管理員」首頁，提供交易授權率及負數交易趨勢的可見度，讓商戶能有效監控其商店的健康狀況，並識別任何交易問題。
+
 ## v2.1.0
 
 _2023年6月9日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue xxx --> 新增對Adobe Commerce 2.4.7-beta1的支援。
 
@@ -88,7 +108,7 @@ _2023年6月9日_
 
 _2023年3月10日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-4152 --> 新增對PHP 8.2和Adobe Commerce 2.4.6的支援。與PHP 7.x不相容。
 
@@ -96,7 +116,7 @@ _2023年3月10日_
 
 _2023年3月10日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-4226 --> 修正新Payment Services商家無法在管理員中使用結帳的問題。 Payment Services先前使用Commerce客戶ID，新客戶沒有此ID。
 
@@ -108,7 +128,7 @@ _2023年3月10日_
 
 _2023年2月17日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3540 --> 已新增 [PCI 3DS法規遵循功能，適用於在歐盟(EU)及英國進行交易的商家](security.md#3ds). 此額外的安全性層級要求購買者必須向其信用卡簽發者進行驗證，有助於防止線上詐騙，並且是歐盟(EU)法規要求的一部分。
 
@@ -118,7 +138,7 @@ _2023年2月17日_
 
 _2023年1月29日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 修正買家無法使用產品頁面、迷你購物車和購物車上的智慧按鈕下訂單的問題。 買家現在可以成功完成訂單。
 
@@ -126,7 +146,7 @@ _2023年1月29日_
 
 _2023年1月25日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 已發行修正回溯不相容的已知問題。 此發行版本將服務ID擴充功能版本鎖定至最新穩定版本，這會重新啟用新的付款服務安裝以設定Commerce Services。
 
@@ -134,7 +154,7 @@ _2023年1月25日_
 
 _2022年12月22日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改善當付款方式遭拒絕時，Payment Services中的開立發票。
 
@@ -144,7 +164,7 @@ _2022年12月22日_
 
 _2022年11月23日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services現在包含使用者代理標題中的版本號碼，以便能夠追蹤、篩選或淘汰未使用的端點。
 
@@ -154,7 +174,7 @@ _2022年11月23日_
 
 _2022年11月18日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3880 --> 購物者現在可以 [在結帳時儲存其信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 用於相同或相同商家帳戶內其他商店的後續購買。
 
@@ -164,7 +184,7 @@ _2022年11月18日_
 
 _2022年10月14日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-3766 --> 當客戶的付款方式遭到拒絕時，顯示的錯誤訊息更具描述性。 它會建議客戶重新輸入付款資訊，然後再試一次、嘗試其他付款方式，或就拒絕的交易聯絡其銀行。
 
@@ -172,7 +192,7 @@ _2022年10月14日_
 
 _2022年9月30日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services現在包含設定商家帳戶的功能，以 [使用多個PayPal企業帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 這可讓商家使用不同的貨幣在多個國家經營您的商店，或是將Adobe Commerce用於您的一部分業務。
 
@@ -186,7 +206,7 @@ _2022年9月30日_
 
 _2022年9月6日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3663 --> 現在，當商戶的商店擷取以非全域貨幣授權的訂單時，擷取處理作業會完成，且不會顯示錯誤。
 
@@ -194,9 +214,9 @@ _2022年9月6日_
 
 _2022年8月9日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)<!-- Issue PAY-XX --> 正式發行版本 — [!DNL Payment Services] 為現在 [相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![新增](../assets/new.svg)<!-- Issue PAY-XX --> 正式發行版本 — [!DNL Payment Services] 為現在 [支援者 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay現在相容於行動裝置和桌上型電腦上的Safari瀏覽器v15.5。
 
@@ -204,7 +224,7 @@ _2022年8月9日_
 
 _2022年6月29日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay與行動裝置和桌上型電腦上的Safari瀏覽器v15.5不相容。 使用Safari 15.5版時，您無法透過Apple Pay完成結帳。
 
@@ -222,9 +242,9 @@ _2022年6月29日_
 
 _2022年3月31日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [!DNL Payment Services] 為現在 [相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [!DNL Payment Services] 為現在 [支援者 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
 ![新增](../assets/new.svg)<!-- Issue PAY-2682 --> 此 [!DNL Payment Services] 延伸模組 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 現在加拿大商戶可使用。 商戶可在下列位置檢視付款設定： [法文](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 或 [英文](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
@@ -250,9 +270,9 @@ _2022年3月31日_
 
 _2021年11月29日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) 現在相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.3-p1。
+![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) 現已支援 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.3-p1。
 
 ![新增](../assets/new.svg)<!-- Issue PAY-124 --> 此 [!DNL Payment Services] 延伸模組 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以安裝為 [[!DNL Adobe Commerce] 在雲端基礎結構上](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部部署](install.md#on-premises) 執行個體。 這些方法需要使用指令行介面。
 
