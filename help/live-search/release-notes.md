@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 發行說明'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
+source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ _2023年4月25日_
 
 _2023年8月7日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ### 新功能
 
@@ -72,7 +72,7 @@ _2023年8月7日_
 
 _2023年3月14日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ### 新功能
 
@@ -114,7 +114,7 @@ _2023年3月14日_
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 * ![修正](../assets/fix.svg)  — 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤已修正。
 
@@ -124,7 +124,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![新增](../assets/new.svg) 即時搜尋現在支援以管理員中的「顯示無庫存產品」設定進行篩選。 如果「顯示無庫存產品」設為false， `inStock = true` 會新增至篩選器。
 ![修正](../assets/fix.svg) 為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 如果您想要取代功能，資料仍會透過GraphQL傳遞。
@@ -138,7 +138,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![新增](../assets/new.svg) Live Search現在藉由接受類別許可權、共用類別目錄和客戶群組特定定價，來支援B2B功能。
 
@@ -148,7 +148,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 現有 [!DNL Live Search] 安裝必須升級至 [!DNL Live Search] 2.0.0以善用下列新功能、修正和改良：
 
@@ -163,7 +163,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 設定為時不再傳回錯誤 [Facet]({%連結live-search/facets-add.md %})。
 ![修正](../assets/fix.svg) 修正無時會發生錯誤的問題 [貨幣符號](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可供使用。
@@ -171,7 +171,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![新增](../assets/new.svg) [效能](performance.md) 報表儀表板可讓您深入分析購物者使用的搜尋辭彙。
 ![新增](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 可讓您存取具有事件發佈和訂閱服務以及量度的通用資料層。
@@ -182,7 +182,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![新增](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) 當購物者在「搜尋」方塊中輸入查詢時，顯示排名在前的搜尋結果的建議產品和縮圖影像。
 ![新增](../assets/new.svg) 商務 *管理員* 在長時間鍵盤不活動期間，工作階段會保持開啟狀態
@@ -195,7 +195,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type="資訊性" tooltip="相容性"}
 
 ![錯誤](../assets/bug.svg) 此 [!DNL Live Search] 服務僅支援 [基本貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce安裝的資訊。
 ![錯誤](../assets/bug.svg) 新增Facet時，產品屬性摘要若設為，將無法正確更新 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
