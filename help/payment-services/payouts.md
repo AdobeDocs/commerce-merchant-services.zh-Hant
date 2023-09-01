@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # 支付報表
 
-[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報告，讓您清楚瞭解商店的訂單與付款。
+[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報表，讓您清楚瞭解商店的交易、訂單及付款。
 
 有兩個可用的「付款」報表檢視表，可讓您檢視所有付款的深入資訊：
 
@@ -22,6 +22,8 @@ ht-degree: 0%
 * **[支付報表檢視](#payouts-report-view)** — 支付中可顯示所有交易之詳細支付資訊的報表
 
 「付款」檢視表一目瞭然地顯示完整的付款資訊，可讓您完全透明地顯示付款金額、已處理的數量，以及財務調節之交易層次的詳細報表。
+
+您可以 [下載支付交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ ht-degree: 0%
 
 ## 支付報表檢視
 
-「付款服務」的「付款」檢視表中提供「付款」報表檢視表。 其中包含有關您商店付款的所有可用資訊。 此 [支付資料視覺效果檢視](#payouts-data-visualization-view) 在「付款服務首頁」中，可在此更詳細的報表檢視中，以視覺化方式呈現每日彙總金額。
+「付款服務」的「付款」檢視表中提供「付款」報表檢視表。 其中包含有關您商店付款的所有可用資訊。
 
-在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 以檢視詳細的表格「付款」報表檢視。
+在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**以檢視詳細的表格「付款」報表檢視。
 
 ![管理員中的支付交易](assets/payouts-report-new.png){zoomable=yes}
 
 您可以根據本主題中的章節設定此檢視，以最理想的方式呈現您想要檢視的資料。
 
-請參閱連結的商務訂單與交易ID、交易金額、每筆交易的付款方式等，這些全都在「管理員」的「付款」報表中。
+請參閱此報表中的連結商務訂單與交易ID、交易金額、每筆交易的付款方式及其他。
 
 您可以 [下載支付交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
 
@@ -83,7 +85,7 @@ ht-degree: 0%
 
 ### 選取資料來源
 
-在「付款」報表檢視中，您可以選取資料來源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您想要檢視其報告結果。
+在「付款」報表檢視中，您可以選取資料來源 — **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]** — 您想要檢視其報告結果。
 
 ![資料來源選擇](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ ht-degree: 0%
 
 若要選取「訂單付款狀態」報表的資料來源，請執行下列步驟：
 
-1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. 按一下 **[!UICONTROL Data source]** 並選取 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_.
+1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. 按一下 **[!UICONTROL Data source]** 並選取 **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]**.
 
    報表結果會根據選取的資料來源重新產生。
 
@@ -114,8 +116,8 @@ ht-degree: 0%
 
 在「付款報表」檢視中，您可以輸入特定日期或從日期選擇器選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
-1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. 按一下「交易日期」行事曆選擇器篩選器。
+1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. 按一下 _[!UICONTROL Transaction dates]_行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的付款狀態。
 
@@ -123,7 +125,7 @@ ht-degree: 0%
 
 依預設，「付款」報表檢視會顯示大部分可用的資訊欄。 不過，您可以自訂您在報表中看到的欄。
 
-1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png))。
 1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
@@ -133,7 +135,7 @@ ht-degree: 0%
 
 您可以下載一個.csv檔案，其中包含「付款」檢視格線中顯示的所有交易。
 
-1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [自訂交易的日期範圍時間範圍](#customize-transactions-timeframe).
 1. 按一下 _下載_ (![](assets/icon-download.png))圖示。
 

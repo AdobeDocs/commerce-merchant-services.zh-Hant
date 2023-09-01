@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 2%
 - [測試及驗證](test-validate.md)
 - [建立訂單](create-order.md)
 - Financial reporting {#reporting}
+   - [交易報表](transactions.md)
    - [訂單付款狀態報表](order-payment-status.md)
    - [付款報表](payouts.md)
    - [可用資料](data.md)
 - 管理付款 {#manage}
    - [退款](refunds.md)
    - [空隙](voids.md)
-- [安全性與合規性](security.md)
+- 安全性 {#security-compliance}
+   - [安全性與合規性](security.md)
+   - [有效保護詐騙](fraud-protection.md)
