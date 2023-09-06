@@ -2,7 +2,7 @@
 title: 簽出
 description: 根據客戶需求自訂結帳。
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 購物者的結帳頁面上會顯示錯誤訊息。 訊息可能會有所不同。
 
-![檢查時發生錯誤](assets/user-checkout-error.png "取出時發生錯誤")
+![檢查時發生錯誤](assets/user-checkout-error.png "取出時發生錯誤"){width="600" zoomable="yes"}
 
 有關已取消訂單的註解也會顯示在特定的「管理員」中 [訂購](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![已取消訂單管理員中的訂單評論](assets/admin-checkout-error.png "已取消訂單管理員中的訂單評論")
+![已取消訂單管理員中的訂單評論](assets/admin-checkout-error.png "已取消訂單管理員中的訂單評論"){width="600" zoomable="yes"}
 
 如果購物者取得訂單授權，但並未建立訂單並轉換為 `Capture`，訂單會自動失效。 此程式可確保購物者的信用卡上不會預留任何信用額度，並避免在標準29天期間結束時授權失效時產生的付款提供者費用。
 

@@ -3,7 +3,7 @@ title: 『[!DNL Quick Checkout] 報告
 description: 『[!DNL Quick Checkout] 提供完整的報表資訊。'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] 適用於Adobe Commerce和Magento Open Source，提供您全方位的報告，好讓您取得商店結帳體驗統計資料的詳細資訊。
 
-![報表檢視](assets/reports-view-big-checkout.png)
+![報表檢視](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 「概述」區段中的圖表顯示關於存放區結帳效能的詳細資訊，包括平均結帳時間、結帳期間建立的新帳戶或結帳放棄期間。
 
-![報表概觀](assets/overview-report-checkout.png)
+![報表概觀](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | 圖表 | 說明 |
 |---|---|
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 Trends區段中的圖表會顯示依帳戶型別篩選的結帳體驗趨勢，或在結帳期間建立的新帳戶。
 
-![報表趨勢](assets/trends-report-checkout.png)
+![報表趨勢](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | 圖表 | 說明 |
 |---|---|
@@ -50,7 +50,7 @@ Trends區段中的圖表會顯示依帳戶型別篩選的結帳體驗趨勢，�
 
 您可以依日期或現有預設集篩選顯示的結果，例如 **過去30天**.
 
-![篩選器檢視](assets/filter-view.png)
+![篩選器檢視](assets/filter-view.png){width="300" zoomable="yes"}
 
 | 欄位 | 說明 |
 |---|---|

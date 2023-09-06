@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 若要檢視點數與借項的資料視覺化圖表，以及一段時間內的移動平均值。
 
-![管理員中的支付資料視覺效果](assets/payouts-report.png){zoomable=yes}
+![管理員中的支付資料視覺效果](assets/payouts-report.png){width="800" zoomable="yes"}
 
 按一下 **[!UICONTROL View Report]** 瀏覽至詳細表格 [支付報表檢視](#payouts-report-view).
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**以檢視詳細的表格「付款」報表檢視。
 
-![管理員中的支付交易](assets/payouts-report-new.png){zoomable=yes}
+![管理員中的支付交易](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 您可以根據本主題中的章節設定此檢視，以最理想的方式呈現您想要檢視的資料。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 在「付款」報表檢視中，您可以選取資料來源 — **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]** — 您想要檢視其報告結果。
 
-![資料來源選擇](assets/datasource.png){width=400px}
+![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
 如果 _[!UICONTROL Live]_是選取的資料來源，您可以檢視生產模式中存放區的報表資訊。 如果_[!UICONTROL Sandbox]_ 是選取的資料來源，您會看到以沙箱模式儲存的報表資訊。
 
@@ -126,7 +126,7 @@ ht-degree: 0%
 依預設，「付款」報表檢視會顯示大部分可用的資訊欄。 不過，您可以自訂您在報表中看到的欄。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png))。
+1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
    「付款」報表檢視會立即顯示您在「欄設定」功能表中所做的任何變更。 欄偏好設定將會儲存，而且如果您離開報表檢視，偏好設定將維持有效。
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [自訂交易的日期範圍時間範圍](#customize-transactions-timeframe).
-1. 按一下 _下載_ (![](assets/icon-download.png))圖示。
+1. 按一下 _下載_ (![](assets/icon-download.png){width="20" zoomable="yes"})圖示。
 
 您的付款交易會以.csv格式下載。
 

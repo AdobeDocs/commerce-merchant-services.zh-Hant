@@ -3,7 +3,7 @@ title: 「Adobe Commerce中的結帳流程」
 description: 「概述 [!DNL Quick Checkout] Adobe Commerce中的流量。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 1. 開啟您的店面，並在購物車中新增商品。
 1. 繼續結帳。
 
-![簽出](assets/proceed-checkout.png)
+![簽出](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. 出現提示時，輸入與關聯的電子郵件地址 [!DNL Bolt] 帳戶。
 1. 輸入傳送至該的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或電話號碼。
 
-![OTP快顯視窗](assets/new-logo-otp-email.png)
+![OTP快顯視窗](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. 使用登入後 [!DNL Bolt] 帳戶，簽出詳細資料會自動填寫：
 

@@ -3,7 +3,7 @@ title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶來使用 [!DNL Payment Services] 在測試模式中。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ PayPal沙箱帳戶可讓您使用 [!DNL Payment Services] 在測試模式中。 
    1. 在 _[!UICONTROL Sandbox Accounts]_區段，按一下_[!UICONTROL Manage accounts]_ 欄中識別您所建立的沙箱帳戶。
    1. 按一下 **[!UICONTROL View/edit account]**.
 
-      ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. 複製並儲存電子郵件ID和系統產生的密碼以供將來使用。
 
@@ -48,7 +48,7 @@ PayPal沙箱帳戶可讓您使用 [!DNL Payment Services] 在測試模式中。 
 1. 輸入您在步驟3產生的PayPal沙箱帳戶的電子郵件和密碼（不是您的PayPal企業帳戶資訊）以及您所在的國家/地區。
 1. 按一下 **[!UICONTROL Next]**.
 
-   ![PayPal — 連線PayPal帳戶以進行付款](assets/paypal-connectacct.png)
+   ![PayPal — 連線PayPal帳戶以進行付款](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. 使用您先前儲存的沙箱帳戶認證，繼續遵循PayPal流程。
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

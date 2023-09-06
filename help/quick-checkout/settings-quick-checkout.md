@@ -3,7 +3,7 @@ title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce的擴充功能
 description: 瞭解的設定選項 [!DNL Quick Checkout] 以及如何成功上線並設定擴充功能。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 1. 在 _管理員_ 側欄，前往 **商店** > _設定_ > **設定**.
 1. 在左側面板中，展開 **銷售** 並選取 **簽出**.
 
-   ![快速簽出](assets/config-new-logo-view.png)
+   ![快速簽出](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 請參閱 [入門](../quick-checkout/onboarding.md) 主題，以取得如何設定 [!DNL Quick Checkout] 適用於Adobe Commerce。
 
 ## 啟用擴充功能
 
-![快速簽出](assets/enable-method.png)
+![快速簽出](assets/enable-method.png){width="500" zoomable="yes"}
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 帳戶認證
 
-![快速簽出](assets/account-creds.png)
+![快速簽出](assets/account-creds.png){width="500" zoomable="yes"}
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## 服務設定
 
-![快速簽出](assets/service-settings.png)
+![快速簽出](assets/service-settings.png){width="500" zoomable="yes"}
 
 | 欄位 | 範圍 | 說明 |
 |---|---|---|

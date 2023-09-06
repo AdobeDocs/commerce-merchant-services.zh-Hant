@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ID可輕易地從付款的商家活動詳細資料和PayPal webhook中存取。
 
 此 `invoice_id` 和 `custom_id` 會顯示在付款的商家活動詳細資訊的底部附近：
 
-![`custom_id` 在商家活動詳細資訊中](assets/merchant-activity-ids.png)
+![`custom_id` 在商家活動詳細資訊中](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` 和 `invoice_id` 詳情請見PayPal的webhook：
 

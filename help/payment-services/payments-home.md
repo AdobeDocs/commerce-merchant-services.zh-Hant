@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**：
 
-   ![首頁檢視](assets/home-view.png)
+   ![首頁檢視](assets/home-view.png){width="700" zoomable="yes"}
 
 1. 在此首頁檢視中，您可以存取 _首頁_ 檢視， _瞭解_ 關於 [!DNL Payment Services]，設定擴充功能 _設定_，或取得 _說明_.
 

@@ -4,7 +4,7 @@ description: 安裝Payments Services擴充功能。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 下載和安裝 [!DNL Payment Services] 延伸模組 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使用的必要步驟 [!DNL Payment Services].
 
-![[!DNL Payment Services] 擴充功能管理員檢視](assets/admin-view.png)
+![[!DNL Payment Services] 擴充功能管理員檢視](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## 下載擴充功能
 

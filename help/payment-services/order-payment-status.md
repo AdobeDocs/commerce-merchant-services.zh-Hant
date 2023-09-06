@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 在 _管理員_ 側欄，前往 **銷售** > **付款服務** > _訂購_ 若要檢視資料視覺效果 [付款狀態表](#statuses-information).
 
-![管理員中的支付資料視覺效果](assets/orderpayment-dataviz.png){zoomable=yes}
+![管理員中的支付資料視覺效果](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 按一下 **[!UICONTROL View Report]** 瀏覽至詳細表格 [訂單付款狀態報表檢視](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**若要檢視詳細的表格「訂單付款狀態」報表檢視，請執行下列步驟：
 
-![管理員中的訂單付款狀態交易](assets/orders-report-data.png)
+![管理員中的訂單付款狀態交易](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 您可以根據本主題中的章節設定此檢視，以最理想的方式呈現您想要檢視的資料。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 在「訂單付款狀態」報表檢視中，您可以選取資料來源 — **[!UICONTROL Live]** _或 **[!UICONTROL Sandbox]** — 您想要檢視其報告結果。
 
-![資料來源選擇](assets/datasource.png){width=400px}
+![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
 如果 _[!UICONTROL Live]_是選取的資料來源，您可以檢視使用的存放區報表資訊 [!DNL Payment Services] 在生產模式中。 如果_[!UICONTROL Sandbox]_ 是選取的資料來源，您可以看到沙箱模式的報表資訊。
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 「訂單付款狀態」報表依預設會顯示所有可用的資訊欄位。 不過，您可以自訂您在報表中看到的欄。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png))。
+1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
    「訂單付款狀態」報表會立即顯示您在「欄位設定」功能表中所做的任何變更。 欄偏好設定將會儲存，而且如果您離開報表檢視，偏好設定將維持有效。
@@ -186,7 +186,7 @@ ht-degree: 0%
 您也可以手動強制重新整理「訂單付款狀態」報表資料，以檢視最新的報表資訊。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 按一下 _重新整理_ 圖示(![重新整理圖示](assets/refresh-button-med.png))。
+1. 按一下 _重新整理_ 圖示(![重新整理圖示](assets/refresh-button-med.png){width="20" zoomable="yes"})。
 
    訂單付款狀態報表資料已重新整理， *[!UICONTROL Update complete]* 確認功能會出現，而格線中會顯示最新的資訊。
 
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 如果您想檢視過去30天以外時間範圍的狀態， [自訂狀態的日期範圍時間範圍](#customize-dates-timeframe).
-1. 按一下 _下載_ (![下載圖示](assets/icon-download.png))圖示。
+1. 按一下 _下載_ (![下載圖示](assets/icon-download.png){width="20" zoomable="yes"})圖示。
 
 您的訂單付款狀態會以.csv格式下載。
 

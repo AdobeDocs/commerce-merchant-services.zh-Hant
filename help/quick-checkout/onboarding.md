@@ -3,7 +3,7 @@ title: 「加入 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」
 description: 「瞭解如何 [!DNL Quick Checkout] 可讓您的Adobe Commerce執行個體受益，並瞭解如何成功入門和設定擴充功能。」
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 若要開始使用 [!DNL Quick Checkout] 針對Adobe Commerce擴充功能，您必須完成一些上線步驟，將您的執行個體與我們的簽出功能連線。
 
-![快速簽出](assets/overview-admin-panel.png)
+![快速簽出](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [取得擴充功能](#get-extension).
 1. [建立生產或沙箱商家帳戶，使用 [!DNL Bolt]](#create-account-with-bolt). 提供驗證身分的所有必要資訊。
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** >進階：
 
-   ![快速簽出](assets/gainsight-admin.png)
+   ![快速簽出](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 如果Gainsight未啟用，請繼續進行入門步驟。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 - [!DNL Publishable key]：前端用來與互動的金鑰 [!DNL Bolt] API。
 - [!DNL Signing secret]：用於對從收到的請求進行簽名驗證 [!DNL Bolt].
 
-  ![快速簽出](assets/account-credentials.png)
+  ![快速簽出](assets/account-credentials.png){width="500" zoomable="yes"}
 
 請參閱 [[!DNL Bolt] 環境詳細資訊](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 要瞭解金鑰和簽署密碼的頁面，請參閱 [!DNL Bolt] 針對 [!DNL Quick Checkout] 副檔名。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 1. 在左側面板中，展開 **銷售** 並選取 **簽出**.
 1. 在 [!DNL Quick Checkout] 檢視，設定 **啟用** 至 `Yes`.
 
-![快速簽出](assets/quick-checkout-view-no-enable.png)
+![快速簽出](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 1. 提供您獨特的API並驗證憑證後 [!DNL Publishable keys].
 
-![快速簽出](assets/quick-checkout-main-view.png)
+![快速簽出](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 請參閱 [設定](../quick-checkout/settings-quick-checkout.md) 主題，以取得下列專案的組態選項詳細資訊： [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ## 設定服務設定
 
-![快速簽出](assets/service-settings.png)
+![快速簽出](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. 設定 **啟用簽出追蹤** 至 `Yes`.
 

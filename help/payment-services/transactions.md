@@ -3,7 +3,7 @@ title: 交易報表
 description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報表，讓您清楚瞭解商店的交易、訂單及付款。
 
-![交易報表](assets/transactions-report.png){width="600" zoomable="yes"}
+![交易報表](assets/transactions-report.png){width="700" zoomable="yes"}
 
 「交易」報表可顯示交易授權率及負面的交易趨勢，因此您可以有效監控商店的健康狀況，並預先識別及解決任何交易問題。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 依預設，「交易」報表會顯示所有可用的資訊欄。 不過，您可以自訂您在報表中看到的欄。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 按一下 **[!UICONTROL Column settings]** 圖示 ![欄設定圖示](assets/column-settings.png){width="25"}.
+1. 按一下 **[!UICONTROL Column settings]** 圖示 ![欄設定圖示](assets/column-settings.png){width="20" zoomable="yes"}.
 1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
    「交易」報表會立即顯示您在「欄設定」功能表中所做的任何變更。 欄偏好設定會儲存，如果您離開報表檢視，偏好設定仍會維持有效。
@@ -103,7 +103,7 @@ ht-degree: 0%
 您也可以手動強制重新整理報表資料，以檢視最新的報表資訊。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 按一下 _重新整理_ 圖示(![重新整理圖示](assets/refresh-button-med.png))。
+1. 按一下 _重新整理_ 圖示(![重新整理圖示](assets/refresh-button-med.png){width="20" zoomable="yes"})。
 
    交易報表資料會重新整理， *[!UICONTROL Update complete]* 確認功能會出現，而格線中會顯示最新的資訊。
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. 如果您想檢視過去30天以外時間範圍的交易， [自訂狀態的日期範圍時間範圍](#customize-dates-timeframe).
-1. 按一下 _下載_ ![下載圖示](assets/icon-download.png){width="25"} 圖示。
+1. 按一下 _下載_ ![下載圖示](assets/icon-download.png){width="20" zoomable="yes"} 圖示。
 
 您的交易會以.csv格式下載。
 
