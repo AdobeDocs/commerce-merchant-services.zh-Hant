@@ -4,10 +4,10 @@ description: 「檢閱發行說明，瞭解所有資訊 [!DNL Store Fulfillment 
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ ht-degree: 2%
 ![已修正的問題](../assets/fix.svg) 修正和改良
 ![已知問題](../assets/bug.svg) 已知問題
 
+另請參閱 [即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 以瞭解發行排程和支援。
+
+另請參閱 [產品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) 以瞭解哪些Adobe Commerce版本支援此擴充功能。
+
 ## v1.5.0
 
 *2023年8月3日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}[Adobe Commerce 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全性修補程式發行版本。
+[!BADGE 支援]{type=Informative tooltip="支援"}[Adobe Commerce 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全性修補程式發行版本
 
 此版本包含下列更新：
 
@@ -63,7 +67,7 @@ ht-degree: 2%
 
 *2023年4月13日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/fix.svg) [!DNL Store Fulfillment] 為現在 [相容於 [!DNL Adobe Commerce] 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ ht-degree: 2%
 
 *2023年2月27日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 此版本包含下列更新：
 
@@ -82,7 +86,7 @@ ht-degree: 2%
 
 *2022年9月27日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 此版本包含下列更新：
 
@@ -93,7 +97,7 @@ ht-degree: 2%
 
 *2022年7月15日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 穩定性：一般可用性
 
@@ -103,7 +107,7 @@ ht-degree: 2%
 
 *2022年3月4日*
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 支援]{type=Informative tooltip="支援"}
 
 穩定性：一般可用性
 
