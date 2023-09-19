@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 發行說明'
 description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
-### V1.11版本
+### V1.12版本
 
-_2023年7月18日_
+_2023年9月19日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 目錄服務現在支援 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) 產品Recommendations的GraphQL查詢。
+![新增](../assets/new.svg) 目錄服務現在使用 [SaaS價格索引](../price-index/index.md).
+![修正](../assets/fix.svg) 此版本包含服務端的錯誤修正和改善。
 
 #### 已知限制
 
@@ -45,13 +46,25 @@ _2023年7月18日_
 * [層級定價](mesh.md)
 * 可下載的產品與禮品卡
 
+## 舊版
+
++++ 舊版
+
+### V1.11版本
+
+_2023年7月18日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 目錄服務現在支援 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) 產品Recommendations的GraphQL查詢。
+
 ### V1.10版本
 
 _2023年6月27日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 目錄服務現在可以在產品詳細資料頁面Widget中顯示相關產品。
+![新增](../assets/new.svg) 目錄服務API現在支援「相關產品」。
 
 ### V1.7版本
 
@@ -118,10 +131,6 @@ _2022年10月4日_
 ![新增](../assets/new.svg) 現在支援套件和分組的產品。
 ![新增](../assets/new.svg) 新增B2B可見性覆寫。 產品現在可供搜尋，並可新增至特定客戶群組的購物車。
 ![修正](../assets/fix.svg) 服務現在更穩定，效能也有所改善。
-
-## 舊版
-
-+++Beta版
 
 ### 0.3版 — Beta+
 

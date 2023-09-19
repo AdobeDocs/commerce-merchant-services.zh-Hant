@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ ht-degree: 0%
 - 雲端基礎結構上的Adobe Commerce： 2.4.4+
 - Adobe Commerce內部部署： 2.4.4+
 
-## 環境
+## 端點
 
-目錄服務有兩個環境可供上線使用：
+目錄服務有兩個端點可供上線使用：
 
 - 沙箱(https://catalog-service-sandbox.adobe.io/graphql) — 用於上線前的測試和驗證
 - 生產(https://catalog-service.adobe.io/graphql)-用於Commerce商家和網站的即時流量
 
-負載測試只應在沙箱環境中執行。 建議使用 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在負載測試時開啟，以便服務團隊可以預期額外的伺服器流量。
+Commerce的所有測試執行個體都應使用Sanbox端點。
+
+只應對沙箱端點執行負載測試。 建議使用 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在負載測試時開啟，以便服務團隊可以預期額外的伺服器流量。
 
 ## 安裝和設定
 

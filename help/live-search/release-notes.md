@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 發行說明'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ _2023年8月7日_
 * 此 **我的帳戶** 使用產品清單頁面Widget時，頁面導覽不再消失。
 
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.2以存取這些功能。
+
+建議先升級並測試，再推送至生產環境。 確認測試環境結果後，請考慮在非尖峰時段升級生產環境。
+
+### 限制
+
+使用即時搜尋產品清單頁面Widget會導致Google Tag Manager失敗。 若需要Google Tag Manager，請使用預設的「搜尋轉接器」。
+
+## 舊版
+
++++3.0.1和舊版
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

@@ -3,9 +3,9 @@ title: 目錄同步
 description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services] 持續提供服務，隨時保持最新狀態。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 
 摘要名稱可以是下列其中一項：
 
-- `products` — 目錄中的產品
 - `categories` — 目錄中的類別
-- `variants` — 可設定產品的產品變體，例如顏色和大小
+- `categoryPermissions`  — 每個類別的許可權
+- `products` — 目錄中的產品
 - `productattributes` — 產品屬性，例如 `activity`， `gender`， `tops`， `bottoms`、等等
 - `productoverrides` — 客戶特定的定價和目錄可見性規則，例如以類別許可權為基礎的規則
+- `variants` — 可設定產品的產品變體，例如顏色和大小
 
 當您從命令列觸發資料重新同步時，最多可能需要一小時的時間才會更新資料。
+
+### 同步SaaS價格索引
 
 如果您使用 [SaaS價格索引](../price-index/index.md) 而且需要重新同步，請執行以下命令：
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### 正在同步目錄服務
+
+若要重新同步目錄服務，請務必依下列順序執行命令：
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### 範例
