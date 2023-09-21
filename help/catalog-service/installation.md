@@ -2,7 +2,7 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 - 沙箱(https://catalog-service-sandbox.adobe.io/graphql) — 用於上線前的測試和驗證
 - 生產(https://catalog-service.adobe.io/graphql)-用於Commerce商家和網站的即時流量
 
-Commerce的所有測試執行個體都應使用Sanbox端點。
+Commerce的所有測試例項都應使用沙箱端點。
 
 只應對沙箱端點執行負載測試。 建議使用 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在負載測試時開啟，以便服務團隊可以預期額外的伺服器流量。
 

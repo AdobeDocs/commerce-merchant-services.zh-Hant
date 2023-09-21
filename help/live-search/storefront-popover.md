@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: 「此 [!DNL Live Search storefront popover] 會以動態方式傳回建議的產品和縮圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 限制
 
-* 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *Luma* 佈景主題，或根據此佈景主題的自訂佈景主題 *Luma*. 搜尋結果頁面上的階層連結不會 *光暈* 樣式。
+* 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *Luma* 佈景主題，或根據此佈景主題的自訂佈景主題 *Luma*. 搜尋結果頁面上的階層連結不會 *Luma* 樣式。
 * 此 [!DNL popover] 不支援 *空白* 主題。 另請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 以進一步瞭解。
 * 此 [!DNL popover] 不支援快速訂購表單。
 * 不支援願望清單和產品比較。

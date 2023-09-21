@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 發行說明'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _2023年9月15日_
 
 ### 新功能
 
-* 已新增「類別銷售」索引標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
-* 使用者可使用智慧型或手動排名新增單一類別規則
-* 使用者現在可以將智慧型排名規則新增到子類別
-* 使用智慧型排名刪除子類別時，會提供詳細資訊
-* 新增刪除繼承排名策略規則的功能
-* 新增刪除單一類別之規則的功能
-* 新增規則時，使用者現在可以依類別名稱搜尋
-* 使用類別樹狀檢視，使用者現在可以檢視哪個類別已套用規則。
-* 類別預覽只會顯示選取的類別。
+![新增](../assets/new.svg) 已新增「類別銷售」索引標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
+![新增](../assets/new.svg) 使用者可使用智慧型或手動排名新增單一類別規則
+![新增](../assets/new.svg) 使用者現在可以將智慧型排名規則新增到子類別
+![新增](../assets/new.svg) 使用智慧型排名刪除子類別時，會提供詳細資訊
+![新增](../assets/new.svg) 新增刪除繼承排名策略規則的功能
+![新增](../assets/new.svg) 新增刪除單一類別之規則的功能
+![新增](../assets/new.svg) 新增規則時，使用者現在可以依類別名稱搜尋
+![新增](../assets/new.svg) 使用類別樹狀檢視，使用者現在可以檢視哪個類別已套用規則。
+![新增](../assets/new.svg) 類別預覽只會顯示選取的類別。
 
 ### 更新
 
-* 「規則」標籤重新命名為「搜尋規則」
-* 依「趨勢」排名時，您現在可以在以下兩者之間選擇：
-   * 3天（預設）
-   * 14天
-   * 30天
-* 「活動」（提升/釘選/隱藏/隱藏）已重新命名為「手動排名」
-* 「排名型別」已重新命名為「智慧型排名」
-
-### 修正
-
-* 微幅錯誤修正
+![修正](../assets/fix.svg) 「規則」標籤重新命名為「搜尋規則」
+![修正](../assets/fix.svg) 依「趨勢」排名時，您現在可以選擇以下選項： * 3天（預設） * 14天* 30天
+![修正](../assets/fix.svg) 「活動」（提升/釘選/隱藏/隱藏）已重新命名為「手動排名」
+![修正](../assets/fix.svg) 「排名型別」已重新命名為「智慧型排名」
+![修正](../assets/fix.svg) 微幅錯誤修正
 
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.1.1以存取這些功能。
 
@@ -90,7 +84,7 @@ _2023年9月1日_
 
 ### 更新
 
-* 產品清單Widget已更新，可使用 [目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![修正](../assets/fix.svg) 產品清單Widget已更新，可使用 [目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _2023年8月7日_
 
 ### 新功能
 
-下列值已新增至 `storeDetails` 物件：
+![新增](../assets/new.svg) 下列值已新增至 `storeDetails` 物件：
 
 * &quot;允許每頁所有產品&quot;
 * 匯率
@@ -110,11 +104,8 @@ _2023年8月7日_
 
 ### 更新
 
-* 已將目錄服務模組新增到中繼資料以支援進階資料擷取。
-
-### 修正
-
-* 此 **我的帳戶** 使用產品清單頁面Widget時，頁面導覽不再消失。
+![修正](../assets/fix.svg) 已將目錄服務模組新增到中繼資料以支援進階資料擷取。
+![修正](../assets/fix.svg) 此 **我的帳戶** 使用產品清單頁面Widget時，頁面導覽不再消失。
 
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.2以存取這些功能。
 
@@ -122,11 +113,7 @@ _2023年8月7日_
 
 ### 限制
 
-使用即時搜尋產品清單頁面Widget會導致Google Tag Manager失敗。 若需要Google Tag Manager，請使用預設的「搜尋轉接器」。
-
-## 舊版
-
-+++3.0.1和舊版
+使用即時搜尋產品清單頁面Widget會導致Google Tag Manager失敗。 如果需要Google Tag Manager，請使用預設的「搜尋轉接器」。
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -136,37 +123,33 @@ _2023年3月14日_
 
 ### 新功能
 
-* 規則預覽中的產品專案卡
-* [產品清單頁面Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* 新增拖放以建立釘選事件的功能
-* 新釘選動作：
-   * 釘選到地點 — 按一下即可建立釘選事件的釘選按鈕
-   * 釘選到頂端 — 將產品放在第一個位置
-   * 釘選到底部 — 將產品放置在結果的底部
-   * 按一下即可取消釘選事件
-* [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![新增](../assets/new.svg) 規則預覽中的產品專案卡
+![新增](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![新增](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
+![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
+![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### 更新
 
-* 設定規則現在會自動以唯一方式排序職位
-* 刪除現有事件現在會更新預覽
-* 無法儲存沒有事件的規則
-* 移除多面向「選取型別」選取器
-* 新增未儲存規則的新「編輯」狀態
+![修正](../assets/fix.svg) 設定規則現在會自動以唯一方式排序職位
+![修正](../assets/fix.svg) 刪除現有事件現在會更新預覽
+![修正](../assets/fix.svg) 無法儲存沒有事件的規則
+![修正](../assets/fix.svg) 移除多面向「選取型別」選取器
+![修正](../assets/fix.svg) 新增未儲存規則的新「編輯」狀態
 
 ### 修正
 
-* 修正儲存期間發生未完成事件時的伺服器錯誤
-* 修正當有多個事件時正確刪除特定事件的問題
-* 修正當新增新事件時現有規則事件未更新的問題
-* 已修正來自詳細資料的第二個「編輯」點按， [!DNL Live Search] 需要重新載入的頁面
-* 同義字：修正使用者按一下退出輸入時，無法將焦點傳回欄位的問題
-* 其他微幅錯誤修正與效能更新
+![修正](../assets/fix.svg) 修正儲存期間發生未完成事件時的伺服器錯誤
+![修正](../assets/fix.svg) 修正當有多個事件時正確刪除特定事件的問題
+![修正](../assets/fix.svg) 修正當新增新事件時現有規則事件未更新的問題
+![修正](../assets/fix.svg) 已修正來自詳細資料的第二個「編輯」點按， [!DNL Live Search] 需要重新載入的頁面
+![修正](../assets/fix.svg) 同義字：修正使用者按一下退出輸入時，無法將焦點傳回欄位的問題
+![修正](../assets/fix.svg) 其他微幅錯誤修正與效能更新
 
 
-* ![錯誤](../assets/bug.svg)  — 僅在「即時搜尋」Widget中支援「為您推薦」的排名。 預設的Luma和PWA搜尋功能不支援此功能。
-* ![錯誤](../assets/bug.svg)  — 自訂價格屬性Facet無法在Luma中正確轉譯，但API會正確篩選它們。
+![錯誤](../assets/bug.svg)  — 僅在「即時搜尋」Widget中支援「為您推薦」的排名。 預設的Luma和PWA搜尋功能不支援此功能。
+![錯誤](../assets/bug.svg)  — 自訂價格屬性Facet無法在Luma中正確轉譯，但API會正確篩選它們。
 
 商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.0.1以存取這些功能。
 
@@ -176,7 +159,7 @@ _2023年3月14日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-* ![修正](../assets/fix.svg)  — 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤已修正。
+![修正](../assets/fix.svg)  — 當SDK資源因網路問題而無法使用時，即時搜尋會擲回錯誤。 此錯誤已修正。
 
 商家必須升級Live Search擴充功能>= 2.0.5版才能存取這些功能。
 
