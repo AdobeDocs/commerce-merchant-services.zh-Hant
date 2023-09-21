@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: 「此 [!DNL Live Search storefront popover] 會以動態方式傳回建議的產品和縮圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -49,10 +49,13 @@ ht-degree: 0%
 
 商戶可使用目錄服務自訂和擴充Widget或店面元素，但這不屬於Adobe支援團隊的範圍。
 
+## Headless實施
+
+對於具有Headless實施的使用者，可以使用安裝即時搜尋彈出視窗 [npm套件](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## 限制
 
 * 此 [!DNL Live Search] [!DNL storefront popover] 僅適用於使用 *Luma* 佈景主題，或根據此佈景主題的自訂佈景主題 *Luma*. 搜尋結果頁面上的階層連結不會 *光暈* 樣式。
 * 此 [!DNL popover] 不支援 *空白* 主題。 另請參閱 [樣式 [!DNL Popover] 元素](storefront-popover-styling.md) 以進一步瞭解。
 * 此 [!DNL popover] 不支援快速訂購表單。
 * 不支援願望清單和產品比較。
-* 僅支援基本貨幣。

@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ ht-degree: 0%
    * 產品摘要
    * 產品變體摘要
    * 目錄屬性摘要
+   * 產品價格摘要
+   * 範圍網站資料摘要
+   * 範圍客戶群組資料摘要
 
 1. 設定您的 [API金鑰](#configure-api-keys) 並確認您的目錄資料為 [已同步](#synchronize-catalog-data) 替換為 [!DNL Live Search] 服務。
 
@@ -121,6 +124,9 @@ ht-degree: 0%
    * 產品摘要
    * 產品變體摘要
    * 目錄屬性摘要
+   * 產品價格摘要
+   * 範圍網站資料摘要
+   * 範圍客戶群組資料摘要
 
 1. 設定您的 [API金鑰](#configure-api-keys) 並確認您的目錄資料為 [已同步](#synchronize-catalog-data) 替換為 [!DNL Live Search] 服務。
 
@@ -211,7 +217,7 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-若要更新至主要版本，例如從2.0.0到3.0.1，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
+若要更新至主要版本，例如從2.0.0到3.1.1，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
 
 1. 若您目前已安裝 `magento/live-search` 版本為 `2.0.3` 或更低版本，而您正升級至版本 `3.0.0` 或更高版本，請在升級之前執行以下命令：
 

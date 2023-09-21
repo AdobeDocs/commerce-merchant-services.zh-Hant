@@ -3,10 +3,10 @@ title: '[!DNL Live Search] 發行說明'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _2023年4月25日_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_2023年9月15日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+### 新功能
+
+* 已新增「類別銷售」索引標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
+* 使用者可使用智慧型或手動排名新增單一類別規則
+* 使用者現在可以將智慧型排名規則新增到子類別
+* 使用智慧型排名刪除子類別時，會提供詳細資訊
+* 新增刪除繼承排名策略規則的功能
+* 新增刪除單一類別之規則的功能
+* 新增規則時，使用者現在可以依類別名稱搜尋
+* 使用類別樹狀檢視，使用者現在可以檢視哪個類別已套用規則。
+* 類別預覽只會顯示選取的類別。
+
+### 更新
+
+* 「規則」標籤重新命名為「搜尋規則」
+* 依「趨勢」排名時，您現在可以在以下兩者之間選擇：
+   * 3天（預設）
+   * 14天
+   * 30天
+* 「活動」（提升/釘選/隱藏/隱藏）已重新命名為「手動排名」
+* 「排名型別」已重新命名為「智慧型排名」
+
+### 修正
+
+* 微幅錯誤修正
+
+商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.1.1以存取這些功能。
+
+安裝3.1.1版之後，必須啟用以下新索引子：
+
+* 產品價格摘要
+* 範圍網站資料摘要
+* 範圍客戶群組資料摘要
+
+建議在將變更推送至生產環境之前，先在QA或測試環境中升級和測試。
+
+## 舊版
+
++++3.1.0和舊版
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _2023年9月1日_
@@ -45,10 +91,6 @@ _2023年9月1日_
 ### 更新
 
 * 產品清單Widget已更新，可使用 [目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## 舊版
-
-+++3.0.2和舊版
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

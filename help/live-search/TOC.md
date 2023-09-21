@@ -4,9 +4,9 @@ user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Searc
 breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 9%
    - [店面 [!DNL Popover]](storefront-popover.md)
    - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - [!DNL Live Search] 管理員{#live-search-admin}
-   - [工作區](workspace.md)
-   - [效能](performance.md)
+   - [類別銷售](category-merch.md)
+   - [Commerce組態設定](configuration.md)
    - Facet {#facets}
       - [概觀](facets.md)
       - [多面向工作區](faceting-workspace.md)
@@ -34,19 +34,20 @@ ht-degree: 9%
       - [新增Facet](facets-add.md)
       - [管理Facet](facets-manage.md)
       - [技術說明](facet-technical-notes.md)
-   - 同義字 {#synonyms}
-      - [概觀](synonyms.md)
-      - [同義字的型別](synonyms-type.md)
-      - [新增同義字](synonyms-add.md)
-      - [管理同義字](synonyms-manage.md)
+   - [索引](indexing.md)
+   - [效能](performance.md)
    - 規則 {#rules}
       - [概觀](rules.md)
       - [規則工作區](rules-workspace.md)
       - [新增規則](rules-add.md)
       - [管理規則](rules-manage.md)
-   - [Commerce組態設定](configuration.md)
    - [設定](settings.md)
-   - [索引](indexing.md)
+   - 同義字 {#synonyms}
+      - [概觀](synonyms.md)
+      - [同義字的型別](synonyms-type.md)
+      - [新增同義字](synonyms-add.md)
+      - [管理同義字](synonyms-manage.md)
+   - [工作區](workspace.md)
 - GraphQL查詢 {#graphql}
    - [attributedata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

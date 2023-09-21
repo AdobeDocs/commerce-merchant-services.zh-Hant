@@ -2,9 +2,9 @@
 title: "新增規則"
 description: 「瞭解如何建立 [!DNL Live Search] 規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 在Admin中，前往 **行銷** > SEO與搜尋> **[!DNL Live Search]**.
 1. 設定 **範圍** 以識別 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 規則的套用位置。
-1. 按一下 **規則** 標籤。
+1. 按一下 **搜尋規則** 標籤。
 1. 按一下 **新增規則** 以啟動規則編輯器。
 
 ## 條件
@@ -70,9 +70,9 @@ ht-degree: 0%
 
 1. 若要新增其他條件，請按一下 **新增條件** 並重複此程式。
 
-## 排名型別
+## 智慧型排名
 
-排名會結合使用者行為和網站統計資料，以判斷產品排名。
+智慧型排名結合使用者行為和網站統計資料，以判斷產品排名。
 商店擁有者可設定下列型別的排名策略：
 
 ![規則 — 相符](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ ht-degree: 0%
 >
 >查詢中的撇號和引號可能會導致某些語言中的排名和相關性出現一些小問題。
 
-## 新增事件
+## 手動排名
 
-事件是在符合定義的條件時修改搜尋結果的動作。 單一規則最多可包含25個事件。
+手動排名（以前稱為事件）是在符合定義的條件時修改搜尋結果的動作。 單一規則最多可包含25個事件。
 
 * 提升 — 將產品在搜尋結果中移到較高的位置。
 * Bury — 將SKU在搜尋結果中下移。
@@ -166,7 +166,7 @@ ht-degree: 0%
 | 任何 | 將規則中的所有邏輯運運算元變更為 `OR` 和會傳回一組相符的產品。 |
 | 全部 | 將規則中的所有邏輯運運算元變更為 `AND` 和會傳回一組相符的產品。 |
 
-### 活動
+### 手動排名
 
 | Event | 說明 |
 |--- |--- |

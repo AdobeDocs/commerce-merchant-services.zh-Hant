@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _2023年4月25日_
 
 ## 目前的主要版本
 
-### 5.0.0的magento/product-recommendations
+### 5.0.1的magento/product-recommendations
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 更新產品Recommendations以支援Adobe Commerce 2.4.6。
-![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 您的專案的檔案。
+![新增](../assets/new.svg) 已新增模組以支援 [Saas價格索引器](../price-index/index.md).
+![新增](../assets/new.svg) 新增新的資料匯出模組，以支援匯出更多產品型別，包括套件產品和禮品卡。
 
 #### 已知限制
 
@@ -58,7 +58,14 @@ _2023年4月25日_
 
 ### 舊版
 
-+++4.0.1和舊版
++++5.0.0和舊版
+
+### 5.0.0的magento/product-recommendations
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg) 更新產品Recommendations以支援Adobe Commerce 2.4.6。
+![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 您的專案的檔案。
 
 ### 4.0.1的magento/product-recommendations
 
