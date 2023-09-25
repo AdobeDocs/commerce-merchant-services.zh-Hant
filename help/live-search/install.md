@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
    >
    > 當資料已編制索引並同步時，店面中無法使用搜尋和類別瀏覽操作。 根據目錄的大小，程式可能需要至少一個小時的時間 `cron` 執行以將您的資料同步到 [!DNL Live Search] 服務。
 
-1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為 `Update by Schedule`：
+1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為「依排程更新」：
 
    * 產品摘要
    * 產品變體摘要
@@ -119,7 +119,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] 持續管理店面的搜尋請求，同時 [!DNL Live Search] 服務會在背景同步目錄資料和索引產品。
 
-1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為 `Update by Schedule`：
+1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為「依排程更新」：
 
    * 產品摘要
    * 產品變體摘要
@@ -263,10 +263,21 @@ composer update magento/live-search --with-dependencies
 
 ## [!DNL Live Search] 相依性 {#dependencies}
 
-下列專案 [!DNL Live Search] 相依性擷取自 [!DNL Composer]：
+下列專案 [!DNL Live Search] 相依性擷取自 [!DNL Composer].
 
-| 相依性 | 說明 |
-|--- |--- |
-| 匯出模組 | 下列模組會收集並同步目錄資料：<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | 需要設定您與Commerce Services的連線。 |
-| `services-id` | 需要設定您與Commerce Services的連線。 |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
