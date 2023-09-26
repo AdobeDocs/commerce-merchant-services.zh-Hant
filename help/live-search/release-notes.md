@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] 發行說明'
+title: "[!DNL Live Search] 發行說明"
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
 ![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
 ![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援多來源清查(MSI)。 若要使用MSI，您必須 [安裝](install.md#update) 此 `commerce-data-export` 102.2.0+模組。 使用下列命令檢查您的版本： `composer update magento/live-search --with-dependencies`.
 
 ### 更新
 

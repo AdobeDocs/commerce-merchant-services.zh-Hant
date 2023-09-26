@@ -3,9 +3,9 @@ title: 「入門概觀」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 0%
 
 * 每個存放區檢視最多300個產品屬性的索引。
 * 僅索引Adobe Commerce資料庫中的產品。
-* 產品必須位於預設共用目錄中。
 * CMS頁面未編制索引。
 
 ### 查詢
@@ -74,7 +73,7 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
 [!DNL Live Search] 可與PWA Studio搭配使用，但使用者可能會看到與其他Commerce實施相較的細微差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 此外，也可能會出現效能差異。
 
 * 目前的PWA實作 [!DNL Live Search] 傳回搜尋結果所需的處理時間比 [!DNL Live Search] 搭配原生Commerce店面。
-* [!DNL Live Search] PWA不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此智慧型銷售將無法運作。
+* [!DNL Live Search] PWA不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，智慧型銷售將無法運作。
 * 直接篩選 `description`， `name`， `short_description` 不支援GraphQL搭配使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但會以較一般的篩選器傳回。
 
 使用 [!DNL Live Search] 透過PWA Studio，整合經銷商也必須：
@@ -100,7 +99,6 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
 ### 目前不支援
 
 * 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
-* 使用的多個存貨地點 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) 或其他OMS擴充功能
 * 產品價格不包括 [增值稅](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
 * [層級價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 「即時搜尋」彈出視窗和產品清單頁面Widget中不支援。
 
