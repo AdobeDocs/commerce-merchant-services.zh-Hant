@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ _2023年4月25日_
 
 ![新增](../assets/new.svg) 已新增 [整備程度指標](create.md) 協助您視覺化每個建議型別的培訓進度。
 ![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 您的專案的檔案。 此版本也要求您在安裝和設定Product Recommendations時提供兩個API金鑰： [生產金鑰和沙箱金鑰](../landing/saas.md).
+![新增](../assets/new.svg) [!DNL Product Recommendations] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install-configure.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 #### 已知限制
 

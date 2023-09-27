@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 發行說明"
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
 ![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
 ![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![新增](../assets/new.svg) [!DNL Live Search] 現在支援多來源清查(MSI)。 若要使用MSI，您必須 [安裝](install.md#update) 此 `commerce-data-export` 102.2.0+模組。 使用下列命令檢查您的版本： `composer update magento/live-search --with-dependencies`.
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 ### 更新
 
