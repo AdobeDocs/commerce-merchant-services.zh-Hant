@@ -1,20 +1,21 @@
 ---
-title: SaaS價格索引安裝
-description: 安裝SaaS價格索引
+title: SaaS Price Indexing手動安裝
+description: 安裝舊版的SaaS價格索引
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# SaaS價格索引安裝
+# SaaS Price Indexing手動安裝
 
-設定SaaS價格索引需要安裝新模組並執行CLI命令。 管理員需要命令列存取權才能完成此安裝。
+SaaS價格索引現成可供支援 [最新版本](index.md#Requirements) Commerce Services的。
+如果您沒有最新版本，並且想要為您的Adobe Commerce執行個體啟用SaaS價格索引，請使用這個迷你指南。
 
 ## 必要條件
 
@@ -33,10 +34,10 @@ ht-degree: 0%
 1. 將下列模組新增至 `composer.json` 檔案：
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. 執行升級命令：
@@ -68,17 +69,12 @@ ht-degree: 0%
 
 視需要手動執行上述索引子。 否則，資料會在標準同步程式中重新整理。 深入瞭解 [目錄同步](../landing/catalog-sync.md) 服務。
 
-Luma和Adobe Commerce Core GraphQL使用者可安裝 `catalog-adapter` 此模組提供Luma與Core GraphQl相容性，並停用PHP核心價格索引器。
-若要使用 `catalog-adapter` 模組， [!DNL Live Search] 和 [!DNL Catalog Service] 必須先安裝及設定。 請遵循 [安裝 [!DNL Live Search]](../live-search/install.md) 和 [目錄服務安裝](../catalog-service/installation.md) 指示後再繼續。
 
-若要設定「即時搜尋和目錄配接器」，請依照 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 指示。
+Luma和Adobe Commerce Core GraphQL使用者可安裝 [`Catalog Adapter`](catalog-adapter.md) 此擴充功能提供Luma和核心GraphQl相容性，並停用Adobe Commerce產品價格索引器。
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## 警告
 
-如果需要，可以使用以下指令重新啟用PHP核心價格索引器：
+早於 `103.0.0` 版本、SaaS價格索引支援簡單、分組、虛擬、可設定和套裝動態產品型別。
+可下載專案、禮品卡和套裝固定產品型別的支援開始於 `magento/module-saas-price:103.0.0` 版本並可立即用於支援的Commerce服務。
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+新的摘要應手動與同步 `resync` [CLI命令](../landing/catalog-sync.md#resynccmdline). 否則，資料會在標準同步程式中重新整理。 取得更多關於 [目錄同步](../landing/catalog-sync.md) 程式。
