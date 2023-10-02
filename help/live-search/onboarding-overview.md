@@ -3,9 +3,9 @@ title: 「入門概觀」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ ht-degree: 0%
 
 * [!DNL Live Search] 每個商店檢視最多可管理200個同義字。
 
+## 類別銷售
+
+類別銷售可讓您設定 [!DNL Live Search] 以處理產品類別層級。
+
+這段影片將介紹類別銷售。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## 價格索引器
 
 Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
 
-### PWA支援
+## PWA支援
 
 [!DNL Live Search] 可與PWA Studio搭配使用，但使用者可能會看到與其他Commerce實施相較的細微差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 此外，也可能會出現效能差異。
 
@@ -96,7 +104,7 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
        };
    ```
 
-### 目前不支援
+## 目前不支援
 
 * 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
 * 產品價格不包括 [增值稅](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
