@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: ee5749025860a31ac1b4433d0b497f27342f803d
+source-git-commit: 8a290ae260e50b19bab517280b78ee95c9e7668b
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 
 | 服務 | 變更 | 型別 |
 | -- | -- | -- |
-| [**Experience Platform聯結器**](../experience-platform-connector/overview.md) | 已新增如何操作的內容 [整合](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/mobile-sdk-epc.html) Adobe Experience Platform Mobile SDK和您的Commerce應用程式。 | 新主題 |
-| [**付款服務**](../payment-services/guide-overview.md) | 已新增有關新的主題 [有效保護詐騙](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html#security-compliance) 功能。 | 新主題 |
-| [**付款服務**](../payment-services/guide-overview.md) | 已更新 [舊版](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure) 和 [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=en#apple-pay) 反映Apple Pay與PayPal Smart按鈕分割的主題。 | 重大更新 |
+| [**即時搜尋**](../live-search/guide-overview.md) | 已新增即時搜尋 [類別銷售](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/category-merch.html) 主題。 | 新主題 |
 
 此表格會在每月的第一個星期一更新。
