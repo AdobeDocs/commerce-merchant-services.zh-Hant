@@ -5,9 +5,9 @@ seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ SaaS價格索引現成可供支援 [最新版本](index.md#Requirements) Commerc
 ## 必要條件
 
 * Adobe Commerce 2.4.4+
-* 至少已安裝下列其中一個SaaS服務：
+* 至少已安裝下列SaaS服務之一：
 
    * [目錄服務](../catalog-service/overview.md)
    * [即時搜尋](../live-search/guide-overview.md)
@@ -29,15 +29,15 @@ SaaS價格索引現成可供支援 [最新版本](index.md#Requirements) Commerc
 ## 安裝必要模組
 
 根據您的設定，安裝程式可能會稍微不同。
-有些擴充功能會新增摘要和支援程式碼，有些擴充功能會移除預設價格摘要。
+有些擴充功能會新增新的摘要和支援的程式碼。
 
 1. 將下列模組新增至 `composer.json` 檔案：
 
    ```json
-   "magento/module-saas-price": "^102.2.0",
-   "magento/module-saas-scopes": ^"102.2.0",
-   "magento/module-product-override-price-remover": "^102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+   "magento/module-saas-price": "^103.0",
+   "magento/module-saas-scopes": "^103.0",
+   "magento/module-bundle-product-override-data-exporter": "^103.0",
+   "magento/module-gift-card-product-data-exporter": "^103.0",
    ```
 
 1. 執行升級命令：
@@ -70,7 +70,7 @@ SaaS價格索引現成可供支援 [最新版本](index.md#Requirements) Commerc
 視需要手動執行上述索引子。 否則，資料會在標準同步程式中重新整理。 深入瞭解 [目錄同步](../landing/catalog-sync.md) 服務。
 
 
-Luma和Adobe Commerce Core GraphQL使用者可安裝 [`Catalog Adapter`](catalog-adapter.md) 此擴充功能提供Luma和核心GraphQl相容性，並停用Adobe Commerce產品價格索引器。
+若要設定「即時搜尋和目錄轉接器」，請遵循 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 指示。
 
 ## 警告
 

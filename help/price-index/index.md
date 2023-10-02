@@ -4,9 +4,9 @@ description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: af57acec1208204128feec6c523e3745a9948d51
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,13 @@ Luma和Adobe Commerce Core GraphQL使用者可安裝 [`catalog-adapter`](catalog
 
 升級具有SaaS價格索引支援的Adobe Commerce執行個體後，請同步新摘要：
 
-```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+```
+magento/module-saas-price
+magento/module-saas-scopes
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 ## 自訂產品型別的價格
@@ -63,33 +66,109 @@ bin/magento saas:resync --feed=prices
 
 如果您的自訂產品型別使用特定公式來計算最終價格，您可以擴充產品價格摘要的行為。
 
+## 使用狀況
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+    </type>
+</config>
+```
+
+新的摘要應手動與同步 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否則，資料會在標準同步程式中重新整理。 取得更多關於 [目錄同步](../landing/catalog-sync.md) 程式。
+
+## 使用案例
+
+### Luma沒有擴充功能相依性
+
+* 已安裝必要服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Adobe Commerce Core GraphQL商家
+* 沒有依賴PHP核心價格索引器的第三方擴充功能
+* 銷售簡單、可設定、群組、虛擬和套裝的動態產品
+
+1. 啟用新摘要。
+1. 安裝目錄介面卡。
+
+### Luma和Adobe Commerce核心GraphQl搭配PHP核心價格索引器相依性
+
+* 已安裝支援服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Adobe Commerce Core GraphQL商家
+* 透過依賴PHP核心價格索引器的協力廠商擴充功能
+* 銷售簡單、可設定、群組、虛擬和套裝的動態產品
+
+1. 啟用新的摘要
+1. 安裝目錄介面卡。
+1. 重新啟用PHP核心價格索引器。
+1. 在中使用新的摘要和Luma相容性代碼 `catalog-adapter` 模組。
+
+### Headless商家
+
+* 已安裝支援服務(即時搜尋、產品Recommendations、目錄服務)的Headless商人
+* 不依賴PHP核心價格索引器
+* 銷售簡單、可設定、群組、虛擬和套裝的動態產品
+
+1. 啟用新摘要
+1. 安裝目錄轉接器，這會停用PHP核心價格索引器。
+
+## 自訂價格
+
+SaaS價格索引器支援Adobe Commerce中提供的自訂產品型別價格功能，例如特殊價格、群組價格和目錄規則價格。
+
+例如：有自訂產品型別  `custom_type` 以及具有SKU「自訂型別產品」的產品。
+
+依預設，Commerce Data Export擴充功能會將下列價格摘要傳送至價格索引器：
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+如果「自訂產品型別」使用唯一公式來計算產品價格，則系統整合經銷商可擴充Commerce Data Export擴充功能，以覆寫價格和折扣欄位。
+
 1. 在上建立外掛程式 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` 類別。
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-       </type>
-   </config>
-   ```
+`di.xml` 檔案：
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
 
 1. 使用自訂公式建立方法：
 
-   ```php
-   class UpdatePriceFromFeed
-   {
-       /**
-       * @param ProductPrice $subject
-       * @param array $result
-       * @param array $values
-       *
-       * @return array
-       */
-       public function afterGet(ProductPrice $subject, array $result, array $values) : array
-       {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
-           return $result;
-       }
-   }
-   ```
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```
