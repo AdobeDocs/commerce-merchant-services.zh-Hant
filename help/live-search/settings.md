@@ -2,20 +2,18 @@
 title: '"[!DNL Live Search] 設定」'
 description: 「設定 [!DNL Live Search] 服務。」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # 設定
 
-使用 *設定* 索引標籤，以設定價格Facet範圍和間隔，以及索引的預設語言。
+使用 *設定* 索引標籤來設定價格面向範圍和間隔。
 
 價格多面向會指定價格範圍群組的數目，以及價格值在群組之間的分配方式。
-
-語言設定告知 [!DNL Live Search] 寫入索引時預期的語言服務。
 
 ![設定](assets/settings.png)
 
