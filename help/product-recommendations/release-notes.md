@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
+source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,8 @@ _2023年4月25日_
 
 ### 5.0.1的magento/product-recommendations
 
+_2023年9月15日_
+
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg) 已新增模組以支援 [Saas價格索引器](../price-index/index.md).
@@ -61,6 +63,8 @@ _2023年4月25日_
 +++5.0.0和舊版
 
 ### 5.0.0的magento/product-recommendations
+
+_2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
