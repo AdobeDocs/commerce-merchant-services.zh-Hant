@@ -3,9 +3,10 @@ title: 交易報表
 description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 請參閱此報表中的連結商務訂單與提供者交易ID、交易金額、每筆交易的付款方式及其他。
 
-並非所有支付方法都提供相同的資訊粒度。 例如，信用卡交易會在「交易」報表中提供回應、AVS和CCV代碼；PayPal智慧型按鈕則否。
+並非所有支付方法都提供相同的資訊粒度。 例如，信用卡交易會提供回應、AVS和CCV代碼，以及「交易」報表中卡片的最後四位數；而PayPal智慧型按鈕則否。
 
 您可以 [下載交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
 
@@ -84,6 +85,7 @@ ht-degree: 0%
 1. 切換 _[!UICONTROL Payment Method]_選項，僅針對選取的付款方式檢視報表結果。
 1. 輸入 _最小訂單金額_ 或 _最大訂單金額_ 以在該訂單金額範圍內檢視報表結果。
 1. 輸入 _[!UICONTROL Order ID]_以搜尋特定交易。
+1. 輸入 _[!UICONTROL Card Last Four Digits]_以搜尋特定的信用卡或扣帳卡。
 1. 按一下 **[!UICONTROL Hide filters]** 以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -126,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Order ID] | 商務訂單ID （僅包含成功交易的值，且對於已拒絕的交易為空白）<br> <br>若要檢視相關專案，請執行下列動作： [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
 | [!UICONTROL Provider Transaction ID] | 付款提供者提供的交易ID；僅包含成功交易的值，並包含拒絕交易的破折號。 |
 | [!UICONTROL Transaction Date] | 交易日期時間戳記 |
-| [!UICONTROL Payment Method] | 交易的付款方法；適用於Payment Services 1.6.0或更新版本 |
+| [!UICONTROL Payment Method] | 具有品牌和卡片型別詳細資訊的交易支付方式。 另請參閱 [卡片型別](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 如需詳細資訊；適用於Payment Services 1.6.0和更新版本 |
+| [!UICONTROL Card Last Four Digits] | 用於交易的信用卡或借記卡的最後4位數 |
 | [!UICONTROL Result] | 交易的結果 — *[!UICONTROL OK]* （成功的交易）， *[!UICONTROL Rejected by Payment Provider]* （被PayPal拒絕）， *[!UICONTROL Rejected by Bank]* （已遭發卡銀行拒絕） |
 | [!UICONTROL Response Code] | 提供付款提供者或銀行拒絕原因的錯誤代碼；請參閱可能的回應代碼清單與說明 [`Rejected by Bank` 狀態](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 和 [`Rejected by Payment Provider` 狀態](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | 地址驗證服務代碼；付款請求的處理器回應資訊。 另請參閱 [可能的程式碼和說明清單](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 以取得詳細資訊。 |
@@ -147,4 +150,3 @@ ht-degree: 0%
 * `5650` — 關聯銀行拒絕交易，因為銀行需要強大的客戶驗證([3DS](security.md#3ds))。
 
 2023年6月1日以後交易的失敗交易有詳細的錯誤回應代碼。 2023年6月1日之前發生的交易會顯示部分報表資料。
-
