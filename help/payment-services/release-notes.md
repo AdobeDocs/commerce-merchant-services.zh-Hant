@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 發行說明"
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 這些發行說明說明說明所發生的功能變更和修正，這些變更和修正是在託管服務的定期版本化功能發行之外發行的。
 
 +++託管服務更新
+
+_2023年10月10日_
+
+![新問題](../assets/fix.svg)<!-- Issue PAY-4888 --> 現在，商家可以篩選信用卡與借記卡交易，篩選條件為 [交易報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _2023年7月12日_
 
