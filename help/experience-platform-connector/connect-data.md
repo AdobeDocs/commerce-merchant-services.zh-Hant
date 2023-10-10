@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ ht-degree: 0%
 
 ## 傳送歷史訂單資料
 
-Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events.md#back-office-events). 您可以使用Experience Platform聯結器將該歷史資料傳送至Experience Platform，以根據這些過去訂單擴充您的客戶設定檔。 資料儲存在Experience Platform內的資料集中。
+Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events.md#back-office-events). 您可以使用Experience Platform聯結器將該歷史資料傳送至Experience Platform，讓您的客戶設定檔更為豐富，並根據這些過去的訂單來個人化客戶體驗。 資料儲存在Experience Platform內的資料集中。
 
 雖然Commerce已收集歷史訂單資料，但您必須完成數個步驟才能將該資料傳送至Experience Platform。
+
+觀看此影片以進一步瞭解歷史訂單，然後完成下列步驟以實施歷史訂單收集和設定。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### 步驟1：安裝歷史訂單資料收集
 
@@ -248,12 +252,6 @@ Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events.md#back
 | 從 | 您要開始收集訂單歷史記錄資料的日期。 |
 | 至 | 您要結束收集訂單歷史記錄資料的開始日期。 |
 | 開始同步 | 開始將訂單歷史記錄資料同步至Experience Platform邊緣的程式。 如果 **[!UICONTROL Dataset ID]** 欄位空白或資料集ID無效。 |
-
-### 歷史訂單示範
-
-觀看此影片以進一步瞭解歷史訂單：
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## 確認已收集事件資料
 
