@@ -4,9 +4,9 @@ description: 瞭解如何從Adobe Commerce安裝、設定、更新及解除安�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Experience Platform聯結器擴充功能可從 [Adobe市集](https://commercemar
 >
 >![適用於Adobe Commerce的B2B](../assets/b2b.svg) 針對B2B商家，您必須安裝個別擴充功能。 此擴充功能新增了對B2B特定事件的支援。 [深入了解](#install-the-b2b-extension).
 
-
 1. 若要下載 `experience-platform-connector` 封裝，從命令列執行下列動作：
 
    ```bash
@@ -32,12 +31,45 @@ Experience Platform聯結器擴充功能可從 [Adobe市集](https://commercemar
 
    此中繼資料包含以下模組和擴充功能：
 
-   * `module-experience-connector-admin`  — 更新管理員UI，讓您能夠為特定Adobe Commerce執行個體選取資料流ID
-   * `module-experience-connector`  — 設定 `Organization ID` 和 `datastreamId` 在店面事件SDK中
+   * `module-experience-connector-admin`  — 更新Admin UI，讓您能夠選取特定Adobe Commerce執行個體的資料流ID。
+   * `module-experience-connector`  — 設定 `Organization ID` 和 `datastreamId` （在Storefront Events SDK中）。
    * `data-services`  — 提供店面事件的屬性內容。 例如，發生結帳事件時，包含有關購物車中有多少商品的資訊以及這些商品的產品屬性資料。
-   * `services-id`  — 將您的Adobe Commerce執行個體連線至 [Adobe Commerce SaaS](../landing/saas.md) 使用沙箱和生產API金鑰並前往Adobe Experience Platform以擷取IMS組織ID
+   * `services-id`  — 將您的Adobe Commerce執行個體連線至 [Adobe Commerce SaaS](../landing/saas.md) 使用沙箱和生產API金鑰並前往Adobe Experience Platform以擷取IMS組織ID。
+   * `orders-connector`  — 將訂單狀態服務連線到您的Adobe Commerce執行個體。
 
-1. （選用）若要包含 [!DNL Live Search] 資料（包含搜尋事件）安裝 [[!DNL Live Search]](../live-search/install.md) 副檔名。
+1. （選用）若要包含 [!DNL Live Search] 資料，包含 [搜尋事件](events.md#search-events)，安裝 [[!DNL Live Search]](../live-search/install.md) 副檔名。
+
+### 設定訂單聯結器
+
+安裝之後 `experience-platform-connector`，您必須完成安裝 `orders-connector` 模組根據部署型別：內部部署或雲端基礎結構上的Adobe Commerce 。
+
+#### 內部部署
+
+在內部部署環境中，您需要手動啟用程式碼產生和Adobe Commerce事件：
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### 在雲端基礎結構上
+
+在雲端基礎結構上的Adobe Commerce中，啟用 `ENABLE_EVENTING` 中的全域變數 `.magento.env.yaml`. [深入了解](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+提交更新檔案並將其推播到雲端環境。 部署完成後，使用以下命令啟用傳送事件：
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### 安裝B2B擴充功能
 

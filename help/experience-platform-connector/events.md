@@ -4,9 +4,9 @@ description: 瞭解每個事件擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '6126'
+source-wordcount: '6906'
 ht-degree: 0%
 
 ---
@@ -37,24 +37,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `productListAdds` | 表示是否已將產品新增至購物車。 值 `1` 表示已新增產品。 |
-| `productListItems` | 加入購物車的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 加入購物車的產品件數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `cartID` | 識別客戶購物車的唯一ID |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.productListAdds` | 表示是否已將產品新增至購物車。 值 `1` 表示已新增產品。 |
+| `commerce.cart.cartID` | 識別客戶購物車的唯一ID。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### openCart
 
@@ -68,24 +68,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `productListOpens` | 指出是否已建立購物車。 值 `1` 表示已建立購物車。 |
-| `productListItems` | 加入購物車的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 加入購物車的產品件數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `cartID` | 識別客戶購物車的唯一ID |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.productListOpens` | 指出是否已建立購物車。 值 `1` 表示已建立購物車。 |
+| `commerce.cart.cartID` | 識別客戶購物車的唯一ID。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### removeFromCart
 
@@ -99,24 +99,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `productListRemovals` | 表示產品是否已從購物車移除。 值 `1` 表示產品已從購物車移除。 |
-| `productListItems` | 從購物車移除的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 從購物車移除的產品單位數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `cartID` | 識別客戶購物車的唯一ID |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.productListRemovals` | 表示產品是否已從購物車移除。 值 `1` 表示產品已從購物車移除。 |
+| `commerce.cart.cartID` | 識別客戶購物車的唯一ID。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### shoppingCartView
 
@@ -130,24 +130,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `productListViews` | 顯示是否檢視過產品清單 |
-| `productListItems` | 購物車中的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 購物車中的產品件數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `cartID` | 識別客戶購物車的唯一ID |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.productListViews` | 表示是否已檢視產品清單。 |
+| `commerce.cart.cartID` | 識別客戶購物車的唯一ID。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### pageView
 
@@ -161,12 +161,15 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `pageViews` | 指出是否已載入頁面。 A `value` 之 `1` 表示頁面已載入。 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `web.webPageDetails.pageViews` | 指出是否已載入頁面。 A `value` 之 `1` 表示頁面已載入。 |
+| `web.webPageDetails.URL` | 網頁的規範或一般URL。 這可以是用來存取頁面的實際URL，將使用進行記錄 `Web Link`. |
+| `web.webPageDetails.name` | 網頁的規範名稱。 此名稱不一定是頁面標題或直接與頁面內容相關聯，但用於整理網站頁面以進行分類。 |
+| `web.webReferrer.URL` | 購物者在點按您網站的連結前所造訪的網頁的URL。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### productPageView
 
@@ -180,22 +183,23 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `productViews` | 顯示是否檢視過產品 |
-| `productListItems` | 購物車中的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.productViews` | 表示是否已檢視產品。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### startCheckout
 
@@ -209,24 +213,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `checkouts` | 表示在結帳過程中是否發生動作 |
-| `productListItems` | 購物車中的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 購物車中的產品件數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `cartID` | 識別客戶購物車的唯一ID |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.checkouts` | 表示在結帳過程中是否發生動作。 |
+| `commerce.cart.cartID` | 識別客戶購物車的唯一ID。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### completeCheckout
 
@@ -240,38 +244,38 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `purchases` | 顯示是否已接受訂單 |
-| `order` | 包含一或多個產品已下訂單的相關資訊 |
-| `purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
-| `orderType` | 表示所下訂單的型別，例如「結帳」或「立即購買」 |
-| `payments` | 此訂單的付款清單 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `paymentAmount` | 付款的值 |
-| `paymentType` | 此訂單的付款方式。 選項包括： `cash`， `credit_card`， `debit_card`， `gift_card`， `check`， `paypal`， `wire_transfer`， `credit_card_reference`， `other` |
-| `transactionID` | 此付款專案的唯一交易識別碼 |
-| `shipping` | 一或多個產品的運送詳細資料。 |
-| `shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等 |
-| `shippingAmount` | 購物車中專案的總運送成本 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `promotionID` | 促銷的唯一識別碼（如有） |
-| `personalEmail` | 指定個人電子郵件地址 |
-| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `productListItems` | 購物車中的一系列產品 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `priceTotal` | 產品明細專案的總價 |
-| `quantity` | 購物車中的產品件數 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.purchases` | 表示是否已接受訂單。 |
+| `commerce.order` | 包含一或多個產品已下訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.payments` | 此訂單的付款清單。 |
+| `commerce.order.payments.paymentTransactionID` | 此付款交易的唯一識別碼。 |
+| `commerce.order.payments.paymentAmount` | 付款的值。 |
+| `commerce.order.payments.paymentType` | 此訂單的付款方式。 選項包括： `cash`， `credit_card`， `debit_card`， `gift_card`， `check`， `paypal`， `wire_transfer`， `credit_card_reference`， `other`. |
+| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.taxAmount` | 買方支付作為最終付款一部分的稅捐金額。 |
+| `commerce.order.discountAmount` | 表示套用至整張訂單的折扣金額。 |
+| `commerce.order.createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等。 |
+| `commerce.shipping.shippingAmount` | 客戶必須為運費支付的金額。 |  | `shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ## 設定檔事件
 
@@ -293,19 +297,19 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `person` | 個別執行者、連絡人或擁有者 |
-| `accountID` | 擷取使用者帳戶ID |
-| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
-| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
-| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定 |
-| `login` | 顯示訪客是否嘗試登入 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `person` | 個別執行者、聯絡人或擁有者。 |
+| `person.accountID` | 擷取使用者帳戶ID。 |
+| `person.accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用。 |
+| `person.personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `personalEmail` | 擷取聯絡詳細資料 — 電子郵件和相關資訊。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定。 |
+| `userAccount.login` | 表示訪客是否嘗試登入。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### 登出
 
@@ -323,13 +327,13 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定 |
-| `logout` | 顯示訪客是否嘗試登出 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定。 |
+| `userAccount.logout` | 表示訪客是否嘗試登出。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### createAccount
 
@@ -347,19 +351,19 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `person` | 個別執行者、連絡人或擁有者 |
-| `accountID` | 擷取使用者帳戶ID |
-| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
-| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
-| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定 |
-| `createProfile` | 顯示使用者是否已建立帳戶設定檔 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `person` | 個別執行者、聯絡人或擁有者。 |
+| `person.accountID` | 擷取使用者帳戶ID。 |
+| `person.accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用。 |
+| `person.personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `personalEmail` | 擷取聯絡詳細資料 — 電子郵件和相關資訊。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定。 |
+| `userAccount.updateProfile` | 指出使用者是否已更新其帳戶設定檔。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### editAccount
 
@@ -377,25 +381,25 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `person` | 個別執行者、連絡人或擁有者 |
-| `accountID` | 擷取使用者帳戶ID |
-| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
-| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
-| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定 |
-| `updateProfile` | 顯示使用者是否已更新其帳戶設定檔 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `person` | 個別執行者、聯絡人或擁有者。 |
+| `person.accountID` | 擷取使用者帳戶ID。 |
+| `person.accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用。 |
+| `person.personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `personalEmail` | 擷取聯絡詳細資料 — 電子郵件和相關資訊。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定。 |
+| `userAccount.updateProfile` | 指出使用者是否已更新其帳戶設定檔。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ## 搜尋事件
 
 搜尋事件會提供與購物者意圖相關的資料。 深入瞭解購物者的意圖，有助於商戶瞭解購物者如何搜尋商品、點選內容，以及最終購買或放棄。 此資料如何使用的範例是，如果您想要鎖定搜尋您最熱門產品但從未購買產品的現有購物者。
 
-使用 `uniqueIdentifier` 欄位中找到了 `searchRequestSent` 和 `searchResponseReceived` 將搜尋要求交叉參照至對應搜尋回應的事件。
+使用 `searchRequest.id` 和 `searchResponse.id` 在「 」和「 」 `searchRequestSent` 和 `searchResponseReceived` 將搜尋要求交叉參照至對應搜尋回應的事件。
 
 ### searchRequestSent
 
@@ -413,21 +417,23 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `searchRequest` | 顯示是否已傳送搜尋要求 |
-| `id` | 此特定搜尋請求的唯一ID |
-| `filter` | 顯示是否套用任何篩選器以限制搜尋結果 |
-| `attribute` （篩選） | 用於確定是否將其納入搜尋結果的專案面向 |
-| `value` | 用於確定搜尋結果中包含哪些專案的屬性值 |
-| `isRange` | 為true時，值表示可接受值範圍的端點 |
-| `sort` | 指出搜尋結果的排序方式 |
-| `attribute` （排序） | 用於對搜尋結果中的專案進行排序的屬性 |
-| `order` | 傳回搜尋結果的順序 |
-| `query` | 搜尋的字詞 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `searchRequest` | 表示是否已傳送搜尋要求。 |
+| `searchRequest.id` | 此特定搜尋要求的唯一ID。 |
+| `searchRequest.value` | 請求的可量化值。 |
+| `siteSearch` | 包含搜尋的相關資訊。 |
+| `siteSearch.filter` | 顯示是否套用任何篩選器以限制搜尋結果。 |
+| `siteSearch.filter.attribute` （篩選） | 用於確定是否將其納入搜尋結果的專案面向。 |
+| `siteSearch.filter.isRange` | 為true時，值表示可接受值範圍的端點。 |
+| `siteSearch.filter.value` | 用於確定搜尋結果中包含哪些專案的屬性值。 |
+| `siteSearch.sort` | 指出搜尋結果的排序方式。 |
+| `siteSearch.sort.attribute` （排序） | 用於對搜尋結果中的專案進行排序的屬性。 |
+| `siteSearch.sort.order` | 傳回搜尋結果的順序。 |
+| `siteSearch.query` | 搜尋的字詞。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### searchResponseReceived
 
@@ -445,19 +451,20 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `searchResponse` | 顯示是否已收到搜尋回應 |
-| `id` | 此特定搜尋回應的唯一ID |
-| `suggestions` | 字串陣列，其中包含存在於目錄中且與搜尋查詢類似的產品和類別名稱 |
-| `numberOfResults` | 傳回的產品數 |
-| `productListItems` | 購物車中的一系列產品。 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `productImageUrl` | 產品的主要影像URL |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `searchResponse` | 表示是否已收到搜尋回應。 |
+| `searchResponse.id` | 此特定搜尋回應的唯一ID。 |
+| `searchResponse.value` | 回應的可量化值。 |
+| `siteSearch.numberOfResults` | 傳回的產品數。 |
+| `siteSearch.suggestions` | 字串陣列，其中包含存在於目錄中且與搜尋查詢類似的產品和類別名稱。 |
+| `productListItems` | 加入購物車的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ## B2B事件
 
@@ -477,15 +484,16 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客戶建立的請購單清單屬性 |
-| `ID` | 請購單清單的唯一識別碼 |
-| `name` | 客戶指定的請購單清單名稱 |
-| `description` | 客戶指定的請購單清單摘要 |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.requisitionListOpens` | 指示初始化新的請購單清單。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
+| `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
+| `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ### addToRequisitionList
 
@@ -493,35 +501,32 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 |---|---|
 | 購物者將產品新增至現有請購單清單或建立新清單時觸發。 | `commerce.requisitionListAdds` |
 
->[!NOTE]
->
->`addToRequisitionList` 類別檢視頁面或可設定的產品不支援。 產品檢視頁面和簡單產品都支援此功能。
-
 #### 從addToRequisitionList收集的資料
 
 下表說明為此事件收集的資料。
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客戶建立的請購單清單屬性 |
-| `ID` | 請購單清單的唯一識別碼 |
-| `name` | 客戶指定的請購單清單名稱 |
-| `description` | 客戶指定的請購單清單摘要 |
-| `productListItems` | 已新增至請購單清單的產品陣列 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `quantity` | 新增的產品單位數 |
-| `priceTotal` | 產品明細專案的總價 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.requisitionListAdds` | 指示新增一或多個產品至請購單清單。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
+| `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
+| `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 已新增至請購單清單的產品陣列。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ### removeFromRequisitionList
 
@@ -535,25 +540,26 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 
 | 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客戶建立的請購單清單屬性 |
-| `ID` | 請購單清單的唯一識別碼 |
-| `name` | 客戶指定的請購單清單名稱 |
-| `description` | 客戶指定的請購單清單摘要 |
-| `productListItems` | 已新增至請購單清單的產品陣列 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `quantity` | 新增的產品單位數 |
-| `priceTotal` | 產品明細專案的總價 |
-| `discountAmount` | 表示套用的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.requsitionListRemovals` | 表示從請購單清單移除一或多個產品。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
+| `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
+| `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `productListItems` | 已新增至請購單清單的產品陣列。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
 ## 後台活動
 
@@ -575,56 +581,94 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 
 | 欄位 | 說明 |
 |---|---|
-| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
-| `productListItems` | 訂單中的一系列產品 |
-| `id` | 此產品條目的明細專案識別碼。 產品本身可透過 `product` 欄位。 |
-| `name` | 產品的顯示名稱或人類看得懂的名稱 |
-| `SKU` | 庫存單位。 產品的唯一識別碼。 |
-| `quantity` | 購物車中的產品件數 |
-| `priceTotal` | 產品明細專案的總價 |
-| `discountAmount` | 表示套用至料號的折扣金額 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `productImageUrl` | 產品的主要影像URL |
-| `selectedOptions` | 用於可設定產品的欄位。 |
-| `attribute` | 識別可設定產品的屬性，例如 `size` 或 `color` |
-| `value` | 識別屬性值，例如 `small` 或 `black`. |
-| `commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
-| `environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
-| `storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
-| `storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
-| `websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
-| `order` | 包含訂單的相關資訊 |
-| `purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 不保證ID為唯一 |
-| `priceTotal` | 此訂單套用所有折扣和稅金後的總價 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼 |
-| `payments` | 此訂單的付款清單 |
-| `paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `paymentAmount` | 付款的值 |
-| `taxAmount` | 買方作為最終付款的一部分所支付的稅捐金額 |
-| `discountAmount` | 表示套用至整張訂單的折扣金額 |
-| `createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00` |
-| `shipping` | 一或多個產品的運送詳細資料 |
-| `shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等 |
-| `shippingAmount` | 客戶必須為運費支付的金額。 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR` |
-| `address` | 實際送貨地址 |
-| `street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
-| `street2` | 街道層級資訊的其他欄位 |
-| `city` | 城市名稱 |
-| `state` | 狀態的名稱。 此為自由格式的欄位。 |
-| `postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
-| `country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
-| `billingAddress` | 帳單郵寄地址 |
-| `street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
-| `street2` | 街道層級資訊的其他欄位 |
-| `city` | 城市名稱 |
-| `state` | 狀態的名稱。 此為自由格式的欄位。 |
-| `postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
-| `country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
-| `personalEmail` | 個人電子郵件地址 |
-| `address` | 技術地址，例如，RFC2822和後續標準中通常定義的「name@domain.com」 |
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.payments` | 此訂單的付款清單。 |
+| `commerce.order.payments.paymentTransactionID` | 此付款交易的唯一識別碼。 |
+| `commerce.order.payments.paymentAmount` | 付款的值。 |
+| `commerce.order.payments.paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.taxAmount` | 買方支付作為最終付款一部分的稅捐金額。 |
+| `commerce.order.discountAmount` | 表示套用至整張訂單的折扣金額。 |
+| `commerce.order.createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.currencyCode` | 用於訂單總額的ISO 4217貨幣代碼。 |
+| `commerce.shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等。 |
+| `commerce.shipping.shippingAmount` | 客戶必須為運費支付的金額。 |
+| `commerce.shipping.currencyCode` | 用於配送總額的ISO 4217貨幣代碼。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.billing.address` | 帳單郵寄地址。 |
+| `commerce.billing.address.street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
+| `commerce.billing.address.street2` | 街道層級資訊的其他欄位。 |
+| `commerce.billing.address.city` | 城市的名稱。 |
+| `commerce.billing.address.state` | 狀態的名稱。 此為自由格式的欄位。 |
+| `commerce.billing.address.postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
+| `commerce.billing.address.country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.id` | 此產品條目的明細專案識別碼。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
+| `productListItems.productImageUrl` | 產品的主要影像URL。 |
+
+### orderInvoiced
+
+| 說明 | XDM事件名稱 |
+|---|---|
+| 當商家提交商業發票以請求付款時觸發。 | `commerce.backofficeOrderInvoiced` |
+
+#### 從orderInvoiced收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.priceTotal` | 此訂單套用所有折扣和稅金後的總價。 |
+| `commerce.order.currencyCode` | 用於訂單總額的ISO 4217貨幣代碼。 |
+| `commerce.order.purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼。 |
+| `commerce.order.payments` | 此訂單的付款清單。 |
+| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.payments.paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `commerce.order.payments.paymentAmount` | 付款的值。 |
+| `commerce.shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等。 |
+| `commerce.shipping.shippingAmount` | 客戶必須為運費支付的金額。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.id` | 此產品條目的明細專案識別碼。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
 
 ### orderItemsShipped
 
@@ -635,7 +679,62 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 #### 從orderItemsShipped收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的條列專案識別碼。 產品本身可透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品條列專案的總價| |`discountAmount`|表示套用的折扣金額| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`productImageUrl`|產品的主要影像URL| |`selectedOptions`|用於可設定產品的欄位。| |`attribute`|識別可設定產品的屬性，例如 `size` 或 `color`| |`value`|識別屬性值，例如 `small` 或 `black`.| |`commerceScope`|指出發生事件的位置（商店檢視、商店、網站等）。| |`environmentID`|環境ID。 32位數的英數字元ID，以連字型大小分隔。| |`storeCode`|唯一的商店代碼。 每個網站可以有許多商店。| |`storeViewCode`|唯一的商店檢視代碼。 每個商店可以有多個商店檢視。| |`websiteCode`|唯一的網站代碼。 一個環境中可以有許多網站。| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 不保證此ID為唯一| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`purchaseOrderNumber`|購買者為此購買或合約所指派的唯一識別碼| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`paymentAmount`|付款金額| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一或多個產品的運送詳細資料| |`shippingMethod`|客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`trackingNumber`|出貨承運商針對訂單料號出貨提供的追蹤編號| |`trackingURL`|追蹤訂單專案出貨狀態的URL| |`shipDate`|訂單中一或多個料號出貨的日期| |`address`|實際送貨地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。| |`country`|政府管理的領土名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。| |`country`|政府管理的領土名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.payments` | 此訂單的付款清單。 |
+| `commerce.order.payments.paymentTransactionID` | 此付款交易的唯一識別碼。 |
+| `commerce.order.payments.paymentAmount` | 付款的值。 |
+| `commerce.order.payments.paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.priceTotal` | 此訂單套用所有折扣和稅金後的總價。 |
+| `commerce.order.purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼。 |
+| `commerce.order.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.lastUpdatedDate` | 商業系統中特定訂單記錄的上次更新時間。 |
+| `commerce.shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等。 |
+| `commerce.shipping.shippingAmount` | 客戶必須為運費支付的金額。 |
+| `commerce.shipping.address` | 實際送貨地址。 |
+| `commerce.shipping.address.street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱。 |
+| `commerce.shipping.address.street2` | 選用的街道資訊第二行。 |
+| `commerce.shipping.address.city` | 城市的名稱。 |
+| `commerce.shipping.address.state` | 州名。 此為自由格式的欄位。 |
+| `commerce.shipping.address.postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
+| `commerce.shipping.address.country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
+| `commerce.shipping.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.shipping.trackingNumber` | 出貨承運商為訂單料號出貨提供的追蹤編號。 |
+| `commerce.shipping.trackingURL` | 追蹤訂單專案出貨狀態的URL。 |
+| `commerce.shipping.shipDate` | 訂單中一或多個料號出貨的日期。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.billing.address` | 帳單郵寄地址。 |
+| `commerce.billing.address.street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
+| `commerce.billing.address.street2` | 街道層級資訊的其他欄位。 |
+| `commerce.billing.address.city` | 城市的名稱。 |
+| `commerce.billing.address.state` | 狀態的名稱。 此為自由格式的欄位。 |
+| `commerce.billing.address.postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
+| `commerce.billing.address.country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
 
 ### orderCanceled
 
@@ -646,26 +745,201 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 #### 從orderCanceled收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的條列專案識別碼。 產品本身可透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品條列專案的總價| |`discountAmount`|表示套用的折扣金額| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`productImageUrl`|產品的主要影像URL| |`selectedOptions`|用於可設定產品的欄位。| |`attribute`|識別可設定產品的屬性，例如 `size` 或 `color`| |`value`|識別屬性值，例如 `small` 或 `black`.| |`commerceScope`|指出發生事件的位置（商店檢視、商店、網站等）。| |`environmentID`|環境ID。 32位數的英數字元ID，以連字型大小分隔。| |`storeCode`|唯一的商店代碼。 每個網站可以有許多商店。| |`storeViewCode`|唯一的商店檢視代碼。 每個商店可以有多個商店檢視。| |`websiteCode`|唯一的網站代碼。 一個環境中可以有許多網站。| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 不保證此ID為唯一| |`purchaseOrderNumber`|購買者為此購買或合約所指派的唯一識別碼| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
-### creditMemoIssued
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼。 |
+| `commerce.order.cancelDate` | 購物者取消訂單的日期和時間。 |
+| `commerce.order.lastUpdatedDate` | 商業系統中特定訂單記錄的上次更新時間。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+
+### orderLineItemRefreaded
 
 | 說明 | XDM事件名稱 |
 |---|---|
-| 當購物者傳回訂單中的專案時觸發。 | `commerce.backofficeCreditMemoIssued` |
+| 當購物者針對退回的料號退款時觸發。 | `commerce.backofficeCreditMemoIssued` |
 
-#### 從已核發銷退折讓單收集的資料
+#### 從orderLineItemRefreaded收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的條列專案識別碼。 產品本身可透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品條列專案的總價| |`discountAmount`|表示套用的折扣金額| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`productImageUrl`|產品的主要影像URL| |`selectedOptions`|用於可設定產品的欄位。| |`attribute`|識別可設定產品的屬性，例如 `size` 或 `color`| |`value`|識別屬性值，例如 `small` 或 `black`.| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 不保證此ID為唯一| |`purchaseOrderNumber`|購買者為此購買或合約所指派的唯一識別碼| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`priceTotal`|產品條列專案的總價| |`discountAmount`|表示套用的折扣金額| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`taxAmount`|購買者支付作為最終付款一部分的稅捐金額。| |`refunds`|此訂單的退款清單| |`refundPaymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`refundAmount`|退款金額。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`personalEmail`|個人電子郵件地址| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義|
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.lastUpdatedDate` | 商業系統中特定訂單記錄的上次更新時間。 |
+| `commerce.order.purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼。 |
+| `commerce.refunds` | 此訂單的退款清單。 |
+| `commerce.refunds.transactionID` | 此退款的唯一識別碼。 |
+| `commerce.refunds.refundAmount` | 退款的值。 |
+| `commerce.refunds.refundPaymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `commerce.refunds.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
+
+### orderItemsReturnInitiated
+
+| 說明 | XDM事件名稱 |
+|---|---|
+| 購物者要求傳回專案時觸發。 | `commerce.backofficeOrderItemsReturnInitiated` |
+
+#### 從orderItemsReturnInitiated收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.returns` | 此訂單的RMA （退貨授權）資訊。 |
+| `commerce.order.returns.returnID` | 此RMA （退貨授權）的唯一識別碼。 |
+| `commerce.order.returns.returnStatus` | RMA （退貨授權）的目前狀態，例如「擱置中」、「已關閉」等。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
+| `productListItems.returnItem` | 此料號的RMA （退貨授權）資訊。 |
+| `productListItems.returnItem.returnStatus` | 傳回專案的狀態，例如「擱置中」、「已核准」等。 |
+| `productListItems.returnItem.returnReason` | 要求此專案退貨的原因。 |
+| `productListItems.returnItem.returnItemCondition` | 要求傳回的專案的條件。 |
+| `productListItems.returnItem.returnResolution` | 要退回之專案的要求解決方式，例如「退款」、「兌換」等。 |
+| `productListItems.returnItem.returnQuantityRequested` | 購物者要求傳回的此專案數。 |
+| `productListItems.returnItem.returnQuantityAuthorized` | 已授權可傳回的此專案數。 |
+| `productListItems.returnItem.eturnQuantityReceived` | 收到的傳回專案數。 |
+| `productListItems.returnItem.returnQuantityApproved` | 此專案與傳回完全完成且已核准的編號。 |
+
+### orderItemReturnCompleted
+
+| 說明 | XDM事件名稱 |
+|---|---|
+| 購物者要求退貨的專案完成時觸發。 | `commerce.backofficeOrderItemsReturnCompleted` |
+
+#### 從orderItemReturnCompleted收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.returns` | 此訂單的RMA （退貨授權）資訊。 |
+| `commerce.order.returns.returnID` | 此RMA （退貨授權）的唯一識別碼。 |
+| `commerce.order.returns.returnStatus` | RMA （退貨授權）的目前狀態，例如「擱置中」、「已關閉」等。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
+| `productListItems.returnItem` | 此料號的RMA （退貨授權）資訊。 |
+| `productListItems.returnItem.returnStatus` | 傳回專案的狀態，例如「擱置中」、「已核准」等。 |
+| `productListItems.returnItem.returnReason` | 要求此專案退貨的原因。 |
+| `productListItems.returnItem.returnItemCondition` | 要求傳回的專案的條件。 |
+| `productListItems.returnItem.returnResolution` | 要退回之專案的要求解決方式，例如「退款」、「兌換」等。 |
+| `productListItems.returnItem.returnQuantityRequested` | 購物者要求傳回的此專案數。 |
+| `productListItems.returnItem.returnQuantityAuthorized` | 已授權可傳回的此專案數。 |
+| `productListItems.returnItem.eturnQuantityReceived` | 收到的傳回專案數。 |
+| `productListItems.returnItem.returnQuantityApproved` | 此專案與傳回完全完成且已核准的編號。 |
 
 ### orderShipmentCompleted
 
 | 說明 | XDM事件名稱 |
 |---|---|
-| 當購物者傳回訂單中的專案時觸發。 | `commerce.backofficeOrderShipmentCompleted` |
+| 在出貨完成時觸發。 | `commerce.backofficeOrderShipmentCompleted` |
 
 #### 從orderShipmentCompleted收集的資料
 
 下表說明為此事件收集的資料。
-|欄位|說明| |—|—| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的條列專案識別碼。 產品本身可透過 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品條列專案的總價| |`discountAmount`|表示套用的折扣金額| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`productImageUrl`|產品的主要影像URL| |`selectedOptions`|用於可設定產品的欄位。| |`attribute`|識別可設定產品的屬性，例如 `size` 或 `color`| |`value`|識別屬性值，例如 `small` 或 `black`.| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 不保證此ID為唯一| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`purchaseOrderNumber`|購買者為此購買或合約所指派的唯一識別碼| |`taxAmount`|購買者支付作為最終付款一部分的稅捐金額。| |`createdDate`|在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`paymentAmount`|付款金額| |`shipping`|一或多個產品的運送詳細資料| |`shippingMethod`|客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等| |`address`|實際送貨地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。| |`country`|政府管理的領土名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`| |`address`|技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，此資料僅包含郵遞區號的一部分。| |`country`|政府管理的領土名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.order` | 包含訂單的相關資訊。 |
+| `commerce.order.purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `commerce.order.payments` | 此訂單的付款清單。 |
+| `commerce.order.payments.paymentTransactionID` | 此付款交易的唯一識別碼。 |
+| `commerce.order.payments.paymentAmount` | 付款的值。 |
+| `commerce.order.payments.paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `commerce.order.taxAmount` | 買方支付作為最終付款一部分的稅捐金額。 |
+| `commerce.order.createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | 一或多個產品的運送詳細資料。 |
+| `commerce.shipping.shippingMethod` | 客戶選擇的配送方式，例如標準配送、加速配送、到店取貨等。 |
+| `commerce.shipping.shippingAmount` | 客戶必須為運費支付的金額。 |
+| `commerce.shipping.shipDate` | 訂單中一或多個料號出貨的日期。 |
+| `commerce.shipping.address` | 實際送貨地址。 |
+| `commerce.shipping.address.street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱。 |
+| `commerce.shipping.address.street2` | 選用的街道資訊第二行。 |
+| `commerce.shipping.address.city` | 城市的名稱。 |
+| `commerce.shipping.address.state` | 州名。 此為自由格式的欄位。 |
+| `commerce.shipping.address.postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
+| `commerce.shipping.address.country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
+| `commerce.billing.address` | 帳單郵寄地址。 |
+| `commerce.billing.address.street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
+| `commerce.billing.address.street2` | 街道層級資訊的其他欄位。 |
+| `commerce.billing.address.city` | 城市的名稱。 |
+| `commerce.billing.address.state` | 狀態的名稱。 此為自由格式的欄位。 |
+| `commerce.billing.address.postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含郵遞區號的一部分。 |
+| `commerce.billing.address.country` | 政府管理的領土的名稱。 除了 `xdm:countryCode`，此為自由格式的欄位，可能有任何語言的國家/地區名稱。 |
+| `personalEmail` | 個人電子郵件地址。 |
+| `personalEmail.address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義。 |
+| `productListItems` | 訂單中的一系列產品。 |
+| `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |
+| `productListItems.priceTotal` | 產品明細專案的總價。 |
+| `productListItems.quantity` | 購物車中的產品件數。 |
+| `productListItems.discountAmount` | 表示套用的折扣金額。 |
+| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的貨幣代碼，例如 `USD` 或 `EUR`. |
+| `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
+| `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
+| `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+| `productListItems.categories` | 包含有關產品類別的資訊。 |
+| `productListItems.categories.id` | 類別的唯一識別碼。 |
+| `productListItems.categories.name` | 類別的名稱。 |
+| `productListItems.categories.path` | 類別的路徑。 |
