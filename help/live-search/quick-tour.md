@@ -2,9 +2,9 @@
 title: 「快速導覽」
 description: 「快速瀏覽一下 [!DNL Live Search] 從店面。」
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ ht-degree: 0%
 ## 銷售規則
 
 銷售 [規則](rules.md) 使用可新增邏輯和事件以搜尋的if-then陳述式來塑造購物體驗。 您可以輕鬆提升或隱藏促銷活動、季節或其他時段之產品。
+
+## 搜尋詞支援
+
+[!DNL Live Search] 支援商務 [搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入「運費」頁面。

@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] 多面向使用屬性值的多個維度作為搜尋條件。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Facet
 
 多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面向搜尋類似，但比標準要「聰明」得多 [分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 可用篩選器的清單由 [可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 搜尋結果中傳回的產品數量。
+
+[!DNL Live Search] 使用 `productSearch` 查詢，會傳回多面向及其他特定資料 [!DNL Live Search]. 請參閱 [`productSearch` 查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 在開發人員檔案中取得程式碼範例。
 
 ![篩選的搜尋結果](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ ht-degree: 0%
 | [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 錨點 —  `Yes` |
 | [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目錄輸入型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`， `Dropdown`， `Multiple Select`， `Price`， `Visual swatch` （僅限Widget）， `Text swatch` （僅限Widget） |
 | 屬性店面屬性 | 用於搜尋結果階層導覽 —  `Yes` |
+
+## Facet彙總
+
+多面向聚總的執行方式如下：如果店面有三個Facet （類別、顏色和價格），且購物者會篩選所有三個(顏色=藍色，價格為$10.00-50.00，類別= `promotions`)。
+
+* `categories` 彙總 — 彙總 `categories`，然後套用 `color` 和 `price` 篩選器，但不適用於 `categories` 篩選。
+* `color` 彙總 — 彙總 `color`，然後套用`price` 和 `categories` 篩選器，但不適用於 `color` 篩選。
+* `price` 彙總 — 彙總 `price`，然後套用 `color` 和 `categories` 篩選器，但不適用於 `price` 篩選。
 
 ## 預設屬性值
 

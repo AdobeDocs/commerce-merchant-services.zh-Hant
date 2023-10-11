@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 發行說明'
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _2023年9月15日_
 
 ![新增](../assets/new.svg) 已新增模組以支援 [Saas價格索引器](../price-index/index.md).
 ![新增](../assets/new.svg) 新增新的資料匯出模組，以支援匯出更多產品型別，包括套件產品和禮品卡。
+![修正](../assets/fix.svg) 產品和價格摘要的表格大小已大幅縮減。 表格 `catalog_data_exporter_products` 和 `catalog_data_exporter_product_prices` 應該會大幅縮減規模。
 
 #### 已知限制
 

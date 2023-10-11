@@ -3,9 +3,9 @@ title: 「入門概觀」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # 入門概觀
 
 若要開始使用 [!DNL Live Search] 針對Adobe Commerce，請完成入門流程以安裝擴充功能、設定API金鑰，並同步化您的目錄。
-
-## 上線流程
-
-![[!DNL Live Search] 入門圖表](assets/onboarding-flow.svg)
 
 ## 需求 {#requirements}
 
@@ -72,6 +68,12 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] 支援 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+
+[!DNL Live Search] 傳回布林值，指出產品是否可在Inventory management中使用，但不包含有關哪個來源有庫存的資訊。
+
 ## 價格索引器
 
 Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
@@ -107,7 +109,6 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
 ## 目前不支援
 
 * 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
-* 產品價格不包括 [增值稅](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)。
 * [層級價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 「即時搜尋」彈出視窗和產品清單頁面Widget中不支援。
 
 ## Cookie

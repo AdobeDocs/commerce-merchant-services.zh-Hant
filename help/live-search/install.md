@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,6 @@ ht-degree: 0%
 
 此情境中，店面作業在下列情況下會中斷： [!DNL Live Search] 服務會為目錄中的所有產品編制索引。 在安裝期間， [!DNL Live Search] 模組已啟用且 [!DNL Elasticsearch] 模組已停用。
 
->[!NOTE]
->
->截至2023年3月，即時搜尋僅支援2.4.4版及更新版本。
-
 1. 安裝Adobe Commerce 2.4.4+ （不含） [!DNL Live Search].
 
 1. 若要下載 `live-search` 封裝，從命令列執行下列動作：
@@ -51,8 +47,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   如需詳細資訊，請參閱 [!DNL Live Search] [相依性](#dependencies) 擷取者： [!DNL Composer].
 
 1. 執行以下命令以停用 [!DNL Elasticsearch] 和相關模組，以及安裝 [!DNL Live Search]：
 
@@ -104,8 +98,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   如需詳細資訊，請參閱 [!DNL Live Search] [相依性](#live-search-dependencies) 擷取者： [!DNL Composer].
 
 1. 執行以下命令以暫時停用 [!DNL Live Search] 提供店面搜尋結果的模組。
 
