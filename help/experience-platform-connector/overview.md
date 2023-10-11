@@ -3,16 +3,16 @@ title: 指南概觀
 description: 瞭解如何使用Experience Platform聯結器將Adobe Commerce資料與Adobe Experience Platform整合。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Experience Platform聯結器總覽
 
-Experience Platform聯結器擴充功能可讓Adobe Commerce商家傳送 [店面](events.md#storefront-events) 和 [後台](events.md#back-office-events) 資料傳送至Adobe Experience Platform Edge，以便其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)能夠使用該Commerce資料。 透過將您的Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行工作，例如分析您網站上的使用者行為、執行AB測試和建立個人化行銷活動。
+Experience Platform聯結器擴充功能可讓Adobe Commerce商家傳送 [店面](events.md#storefront-events) 和 [後台](events.md#back-office-events) 資料傳送至Adobe Experience Platform Edge，以便其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Journey Optimizer)能夠使用該Commerce資料。 透過將您的Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行工作，例如分析您網站上的使用者行為、執行AB測試和建立個人化行銷活動。
 
 [店面活動](events.md#storefront-events) 擷取購物者互動，例如 `View Page`， `View Product`， `Add to Cart`、和 [請購單清單](events.md#b2b-events) 資訊（適用於B2B商家）。 [後台](events.md#back-office-events) 事件會擷取訂單狀態的相關資訊，例如，訂單是否已下單、已取消、已退款、已出貨或已完成。 擷取的資料不包括個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [深入了解](https://www.adobe.com/privacy/experience-cloud.html).
 

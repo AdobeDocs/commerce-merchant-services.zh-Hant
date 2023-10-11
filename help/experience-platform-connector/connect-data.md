@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events.md#back
 在此範例中，您會看到以下專案中的事件資料： [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)、等等。 此檢視可讓您驗證您的Commerce資料是否到達邊緣。
 
 如果結果不符合您的預期，請開啟您的資料集並尋找任何失敗的批次匯入。 進一步瞭解 [疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## 後續步驟
+
+將Commerce資料傳送至Experience Platform邊緣時，其他Adobe Experience Cloud產品(例如Adobe Journey Optimizer)可以使用該資料。 例如，您可以設定Journey Optimizer監聽特定事件，並根據該事件資料觸發初次使用者的電子郵件或是否有捨棄的購物車。 瞭解如何透過以下方式擴充您的Commerce平台 [建立客戶歷程](using-ajo.md) 在Journey Optimizer中。
