@@ -3,9 +3,9 @@ title: 使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件
 description: 瞭解如何使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ ht-degree: 0%
 
    尋找 `commerce.checkouts` 事件並檢查事件裝載：
 
-       ```json
-       &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
-       &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
-       &quot;_id&quot;： &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;，
-       &quot;commerce&quot;： {
-       &quot;cart&quot;： {}，
-       「結帳」： {
-       &quot;value&quot;： 1
-       }
-       ```
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    如您所見，完整的事件裝載包含豐富的事件資料。 在下一節中，您將設定Journey Optimizer中的事件以監聽和回應 `commerce.checkouts` 從您的Commerce店面產生的事件。
 
 ## 步驟3：在Journey Optimizer中設定事件
