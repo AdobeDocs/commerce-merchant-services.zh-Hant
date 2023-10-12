@@ -58,7 +58,7 @@ ht-degree: 0%
 
    尋找 `commerce.checkouts` 事件並檢查事件裝載：
 
-       &quot;&#39;json
+       ```json
        &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
        &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
        &quot;_id&quot;： &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;，
