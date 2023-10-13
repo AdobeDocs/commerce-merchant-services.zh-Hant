@@ -1,17 +1,17 @@
 ---
-title: 從Adobe Commerce安裝和設定Adobe Experience Platform聯結器
-description: 瞭解如何從Adobe Commerce安裝、設定、更新及解除安裝Adobe Experience Platform Connector。
+title: 安裝Adobe Experience Platform聯結器
+description: 瞭解如何從Adobe Commerce安裝、更新及解除安裝Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# 安裝及設定Experience Platform聯結器
+# 安裝Adobe Experience Platform聯結器
 
 安裝擴充功能之前， [檢閱先決條件](overview.md#prereqs).
 
@@ -95,7 +95,7 @@ composer update magento/experience-platform-connector --with-dependencies
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-若要更新至主要版本，例如從1.0.0到2.0.0，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
+若要更新至主要版本，例如從2.0.0到3.0.0，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
 
 1. 開啟根 `composer.json` 檔案和搜尋 `magento/experience-platform-connector`.
 
@@ -104,7 +104,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^3.0",
       ...
     }
    ```

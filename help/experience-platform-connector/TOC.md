@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Commerce的Adobe Experience Platform Connector
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '92'
 ht-degree: 4%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 4%
 - [指南概觀](overview.md)
 - [發行說明](release-notes.md)
 - 基礎知識 {#fundamentals}
-   - [安裝Experience Platform聯結器](install.md)
-   - [設定Experience Platform聯結器](connect-data.md)
+   - [安裝Adobe Experience Platform聯結器擴充功能](install.md)
+   - [將Commerce資料連線至Adobe Experience Platform](connect-data.md)
    - [新增欄位群組至XDM結構描述](update-xdm.md)
    - [將Adobe Experience Platform Mobile SDK與Commerce整合](mobile-sdk-epc.md)
 - 擷取資料 {#event-forwarding}
