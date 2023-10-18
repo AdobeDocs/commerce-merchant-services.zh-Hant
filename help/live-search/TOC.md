@@ -4,9 +4,9 @@ user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Searc
 breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 9%
    - [店面 [!DNL Popover]](storefront-popover.md)
    - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - [!DNL Live Search] 管理員{#live-search-admin}
-   - [類別銷售](category-merch.md)
    - [Commerce組態設定](configuration.md)
    - Facet {#facets}
       - [概觀](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 9%
       - [管理Facet](facets-manage.md)
    - [索引](indexing.md)
    - [效能](performance.md)
-   - 規則 {#rules}
+   - [類別銷售](category-merch.md)
+   - 搜尋銷售 {#rules}
       - [概觀](rules.md)
-      - [規則工作區](rules-workspace.md)
+      - [搜尋銷售工作區](rules-workspace.md)
       - [新增規則](rules-add.md)
       - [管理規則](rules-manage.md)
    - [設定](settings.md)

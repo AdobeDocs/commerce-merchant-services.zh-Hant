@@ -1,17 +1,17 @@
 ---
-title: 「搜尋規則」
-description: '"[!DNL Live Search] 規則結合邏輯與動作，塑造購物體驗。」'
+title: 「搜尋銷售」
+description: '"[!DNL Live Search] 銷售規則結合邏輯與動作，塑造購物體驗。」'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# 搜尋規則
+# 搜尋銷售
 
-[!DNL Live Search] 規則結合邏輯與動作，以便影響購物者在您商店中的搜尋體驗。 您可以使用規則來提升、隱藏、釘選或隱藏產品，以即時校正搜尋結果，支援您的業務目標。
+「搜尋銷售」是指一組規則，這些規則結合邏輯與動作，可影響購物者在您商店中的搜尋體驗。 您可以使用銷售規則來提升、隱藏、釘選或隱藏產品，以即時校正搜尋結果，支援您的業務目標。
 
 每個規則有三個主要元件：
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 * 如果正在預覽的規則沒有 `query is` 條件，以及後續作用中、符合的規則 `query is` 找到條件， `query is` 規則已套用。
 * 如果正在預覽的規則沒有 `query is` 條件，且沒有其他規則具有 `query is` 找到條件後，則會套用正在預覽的規則。
 
-## 類別規則和類別產品指派
+## 類別銷售與類別產品指派
 
-[!DNL Live Search] 可讓您依類別篩選。
+[!DNL Live Search] 可讓您依類別篩選。 另請參閱 [類別銷售](category-merch.md) 以取得詳細資訊。
 不過，在Adobe Commerce中，您可以使用建立虛擬類別 [類別產品指派](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此類別是在執行階段建立的，不存在於類別資料庫中。 因此， [!DNL Live Search] 無法讀取或使用此類別型別。

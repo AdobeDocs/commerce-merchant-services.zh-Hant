@@ -1,10 +1,10 @@
 ---
 title: "新增規則"
-description: 「瞭解如何建立 [!DNL Live Search] 規則。」
+description: 「瞭解如何建立Search Merchandising規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 在Admin中，前往 **行銷** > SEO與搜尋> **[!DNL Live Search]**.
 1. 設定 **範圍** 以識別 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 規則的套用位置。
-1. 按一下 **搜尋規則** 標籤。
+1. 按一下 **搜尋銷售** 標籤。
 1. 按一下 **新增規則** 以啟動規則編輯器。
 
 ## 條件
