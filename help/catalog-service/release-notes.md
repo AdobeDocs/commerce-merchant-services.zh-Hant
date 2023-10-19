@@ -3,10 +3,10 @@ title: '[!DNL Catalog Service] 發行說明'
 description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,15 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
-### V1.12版本
+### V1.13版本
 
-_2023年9月19日_
+_2023年10月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 目錄服務現在使用 [SaaS價格索引](../price-index/index.md).
-![修正](../assets/fix.svg) 此版本包含服務端的錯誤修正和改善。
+![新增](../assets/new.svg) 目錄服務支援 `inStock` 產品變體的標幟。
+![新增](../assets/new.svg) `urlKey` 和 `externalId` 已新增至GraphQL結構描述。
+![新增](../assets/new.svg) 目錄服務現在與清理API相容。
 
 #### 已知限制
 
@@ -49,6 +50,15 @@ _2023年9月19日_
 ## 舊版
 
 +++ 舊版
+
+### V1.12版本
+
+_2023年9月19日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg) 目錄服務現在使用 [SaaS價格索引](../price-index/index.md).
+![修正](../assets/fix.svg) 此版本包含服務端的錯誤修正和改善。
 
 ### V1.11版本
 
