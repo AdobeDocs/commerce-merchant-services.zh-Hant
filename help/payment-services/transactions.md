@@ -4,9 +4,9 @@ description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 0%
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. 按一下 **[!UICONTROL Filter]** 選擇器。
 1. 切換 _[!UICONTROL Transaction Result]_選項以僅檢視所選訂單異動的報告結果。
+1. 選取 _[!UICONTROL Card Type]_以檢視所選卡片型別的報告結果。 當付款處理器無法識別卡片型別時，會顯示包含更多資訊的工具提示。
+1. 選取 _[!UICONTROL Card Brand]_以檢視所選卡片品牌的報告結果。 當付款處理器無法識別卡片品牌時，會顯示包含更多資訊的工具提示。
 1. 切換 _[!UICONTROL Payment Method]_選項，僅針對選取的付款方式檢視報表結果。
 1. 輸入 _最小訂單金額_ 或 _最大訂單金額_ 以在該訂單金額範圍內檢視報表結果。
 1. 輸入 _[!UICONTROL Order ID]_以搜尋特定交易。

@@ -4,13 +4,13 @@ description: 啟用自動的詐騙保護 [!DNL Payment Services] 含已簽署。
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # 有效保護詐騙
 
@@ -18,15 +18,9 @@ ht-degree: 0%
 
 Adobe Commerce支援Signifyd 5.4.0和更新版本。 [!DNL Payment Services] 支援預先驗證和後期驗證標籤流程。
 
+表示/[!DNL Payment Services] 整合提供信用卡、借記卡、保管卡、透過管理員結帳，以及PayPal和Apple Pay付款方式的涵蓋範圍。 雖然部分交易的細節並未在支付服務和Signifyd之間分享，但Signifyd為所有支付方式提供全面的風險保障，確保最大限度的保護。
+
 另請參閱 [重要檔案](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) 以瞭解如何安裝和設定擴充功能。
-
-## 整合限制
-
-目前，下列限制適用於Signifyd與之間的整合 [!DNL Payment Services]：
-
-* 表示/[!DNL Payment Services] 整合僅支援 [信用卡欄位](../payment-services/payments-options.md#credit-card-fields) (不是PayPal付款按鈕或Apple Pay)。 [!DNL Payment Services] 將透過PayPal付款按鈕和Apple Pay收到的訂單資料傳送至Signifyd，但整合僅提供透過信用卡欄位下訂單的詳細資料。
-* 表示不支援商家為購物者在Admin中下的訂單。
-* 表示不支援以下專案下的訂單： [存放的信用卡](../payment-services/vaulting.md).
 
 ## 入門
 
