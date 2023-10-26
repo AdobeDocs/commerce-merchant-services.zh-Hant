@@ -3,9 +3,9 @@ title: SaaS Price Indexing手動安裝
 description: 安裝舊版的SaaS價格索引
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
 role: Admin, Developer
-source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
+source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -34,10 +34,10 @@ SaaS價格索引現成可供支援 [最新版本](index.md#Requirements) Commerc
 1. 將下列模組新增至 `composer.json` 檔案：
 
    ```json
-   "magento/module-saas-price": "^103.0",
-   "magento/module-saas-scopes": "^103.0",
-   "magento/module-bundle-product-override-data-exporter": "^103.0",
-   "magento/module-gift-card-product-data-exporter": "^103.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. 執行升級命令：

@@ -3,9 +3,9 @@ title: 簡介 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerce提供超快、超相關和直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * [!DNL Live Search] [彈出視窗](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
 * [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
-* AEM [CIF元件](https://github.com/adobe/aem-cif-guides-venia/pull/319) 可讓AEM網站充分運用 [!DNL Live Search].
+* AEM CIF元件： [彈出視窗Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) 和 [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) 允許AEM網站利用 [!DNL Live Search].
 * [[!DNL Live Search] 管理員](workspace.md) 是設定規則、多面向和同義字的位置。
 * Search Adapter為的預設實作 [!DNL Live Search].
 

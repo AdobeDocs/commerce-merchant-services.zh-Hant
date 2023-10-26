@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 發行說明"
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _2023年9月15日_
 ![新增](../assets/new.svg) 新增規則時，使用者現在可以依類別名稱搜尋
 ![新增](../assets/new.svg) 使用類別樹狀檢視，使用者現在可以檢視哪個類別已套用規則。
 ![新增](../assets/new.svg) 類別預覽只會顯示選取的類別。
+![新增](../assets/new.svg) AEM CIF [彈出視窗Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) 和 [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) 元件可讓AEM網站充分利用 [!DNL Live Search].
 
 ### 更新
 
