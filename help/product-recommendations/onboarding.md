@@ -2,9 +2,9 @@
 title: 入門
 description: 瞭解中的需求與支援平台 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 
 - Adobe Commerce內部部署(EE) ：2.4.4+
 - 雲端上的Adobe Commerce (ECE) ： 2.4.4+
+
+## 端點
+
+[!DNL Product Recommendations] 透過位於的端點通訊 `https://catalog-service.adobe.io/graphql`.
 
 ### 頁面產生器支援
 

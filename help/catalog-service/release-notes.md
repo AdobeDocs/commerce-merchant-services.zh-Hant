@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 發行說明'
 description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _2023年7月18日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 目錄服務現在支援 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) 產品Recommendations的GraphQL查詢。
+![新增](../assets/new.svg) 目錄服務現在支援 [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) 產品Recommendations的GraphQL查詢。
 
 ### V1.10版本
 
@@ -90,7 +90,7 @@ _2023年3月28日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 將色票新增至 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查詢。
+![新增](../assets/new.svg) 將色票新增至 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 查詢。
 ![新增](../assets/new.svg) 新增以下功能： `entityId` 使用 [API網格](mesh.md).
 
 ### V1.5版本
@@ -99,7 +99,7 @@ _2023年3月6日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 已新增 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
+![新增](../assets/new.svg) 已新增 [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL功能。
 ![修正](../assets/fix.svg) 改善效能和API擴充性。
 
 ### V1.4版本

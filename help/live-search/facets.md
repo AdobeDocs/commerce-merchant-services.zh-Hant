@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] 多面向使用屬性值的多個維度作為搜尋條件。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面向搜尋類似，但比標準要「聰明」得多 [分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 可用篩選器的清單由 [可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 搜尋結果中傳回的產品數量。
 
-[!DNL Live Search] 使用 `productSearch` 查詢，會傳回多面向及其他特定資料 [!DNL Live Search]. 請參閱 [`productSearch` 查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 在開發人員檔案中取得程式碼範例。
+[!DNL Live Search] 使用 `productSearch` 查詢，會傳回多面向及其他特定資料 [!DNL Live Search]. 請參閱 [`productSearch` 查詢](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 在開發人員檔案中取得程式碼範例。
 
 ![篩選的搜尋結果](assets/storefront-search-results-run.png)
 

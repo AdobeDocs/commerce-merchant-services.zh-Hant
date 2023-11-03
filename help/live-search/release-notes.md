@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 發行說明"
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ _2023年9月1日_
 
 ### 更新
 
-![修正](../assets/fix.svg) 產品清單Widget已更新，可使用 [目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![修正](../assets/fix.svg) 產品清單Widget已更新，可使用 [目錄服務API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -132,7 +132,7 @@ _2023年3月14日_
 
 ![新增](../assets/new.svg) 規則預覽中的產品專案卡
 ![新增](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-![新增](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![新增](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
 ![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
 ![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
@@ -179,7 +179,7 @@ _2023年3月14日_
 
 ![新增](../assets/new.svg) 即時搜尋現在支援以管理員中的「顯示無庫存產品」設定進行篩選。 如果「顯示無庫存產品」設為false， `inStock = true` 會新增至篩選器。
 ![修正](../assets/fix.svg) 為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 如果您想要取代功能，資料仍會透過GraphQL傳遞。
-![修正](../assets/fix.svg) `categories` 和 `categoryPath` 已取代 `categoryIds` 用於類別篩選。 請閱讀以下內容： [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 主題。
+![修正](../assets/fix.svg) `categories` 和 `categoryPath` 已取代 `categoryIds` 用於類別篩選。 請閱讀以下內容： [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 主題。
 ![修正](../assets/fix.svg) 先前，繫結至B2B公司的使用者在執行搜尋時會收到錯誤的客戶群組代碼。 即時搜尋現在會傳回正確的值。
 ![修正](../assets/fix.svg) 先前，當搜尋不存在的辭彙時，即時搜尋會傳回錯誤。 此錯誤現已修正。
 
@@ -209,7 +209,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 測試版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 支援 [!DNL Live Search].
 ![新增](../assets/new.svg) 此 [!DNL Live Search] 安裝程式會更新為進階程式變更。
 ![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 從店面頁尾移除的連結。
-![錯誤](../assets/bug.svg) 下列產品屬性不受支援 [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) 使用與PWA的Beta版相關時： `description`， `name`， `short_description`
+![錯誤](../assets/bug.svg) 下列產品屬性不受支援 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 使用與PWA的Beta版相關時： `description`， `name`， `short_description`
 ![錯誤](../assets/bug.svg) 適用於的PWA測試版 [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

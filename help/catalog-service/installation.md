@@ -2,7 +2,7 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -139,7 +139,7 @@ SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同�
 
 若要取得API金鑰，請前往「管理員」的「商務服務聯結器」區域，並複製公開API金鑰。
 
-閱讀 [GraphQL檔案](https://developer.adobe.com/commerce/webapi/graphql/) 以瞭解如何查詢及傳送產生API請求所需的標頭。
+閱讀 [GraphQL檔案](https://developer.adobe.com/commerce/services/graphql/) 以瞭解如何查詢及傳送產生API請求所需的標頭。
 
 允許 [!DNL Catalog Service] 透過防火牆，新增 `commerce.adobe.io` 加入允許清單。
 
