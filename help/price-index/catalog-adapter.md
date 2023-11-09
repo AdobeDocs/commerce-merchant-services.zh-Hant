@@ -3,9 +3,9 @@ title: 目錄配接器擴充功能
 description: 使用目錄配接器從Commerce Services轉譯價格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce產品價格索引器已停用，且在安裝這些擴充功能模
 ## 需求
 
 * Adobe Commerce 2.4.4+
-* 已安裝下列其中一個Commerce Services：
+* 已安裝下列兩個Commerce服務：
 
    * [目錄服務](../catalog-service/overview.md)
    * [即時搜尋](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Adobe Commerce產品價格索引器已停用，且在安裝這些擴充功能模
 composer require adobe-commerce/catalog-adapter
 ```
 
-## 可重新啟用Adobe Commerce產品價格索引器
+## 重新啟用Adobe Commerce產品價格索引器
 
 如果您有協力廠商應用程式依賴預設的Adobe Commerce產品價格索引器，則可使用下列命令將其重新啟用：
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ composer require magento/module-price-indexer-disabler
 * 具有已安裝所需服務(即時搜尋、產品Recommendations、目錄服務)的Headless Commerce執行個體的商家
 * 不依賴預設的Adobe Commerce產品價格索引器
 
-1. 從目錄介面卡套件安裝「價格停用程式」
+1. 安裝 `magento/module-price-indexer-disabler` 類別目錄配接器封裝中的模組。

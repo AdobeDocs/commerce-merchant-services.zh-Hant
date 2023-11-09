@@ -3,9 +3,9 @@ title: 目錄同步
 description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Adobe Commerce使用索引器將目錄資料編譯到表格中。 程式自動�
 - 檢視同步處理狀態(**進行中**， **成功**， **已失敗**)
 - 檢視同步的產品總數
 - 搜尋同步的產品以檢視其目前狀態
-- 依名稱、SKU等搜尋商店目錄
+- 依名稱、SKU等搜尋商店目錄。
 - 檢視JSON中的同步產品詳細資料，以協助診斷同步差異
-- 重新起始同步處理作業
+- 重新啟動同步處理作業
 
 ### 上次同步
 
@@ -67,7 +67,6 @@ Adobe Commerce使用索引器將目錄資料編譯到表格中。 程式自動�
 1. 在 _重新同步資料_ 區段，按一下 [!UICONTROL Resync].
 
    [!DNL Commerce] 在下一個排定的同步期間同步您的目錄。 視目錄大小而定，這項作業可能需要很長的時間。
-
 
 ## 同步的目錄產品
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 如果您在中看不到預期的資料 [!DNL Commerce Service]，檢查同步處理期間是否發生問題 [!DNL Adobe Commerce] 執行個體至 [!DNL Commerce Service] 平台。
 
-中存在2個記錄檔 `var/log/` 目錄：
+中有兩個記錄檔 `var/log/` 目錄：
 
 - `commerce-data-export-errors.log`  — 若期間發生錯誤 _收集_ 階段
 - `saas-export-errors.log`  — 若期間發生錯誤 _傳輸_ 階段
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### 設定檔分析
 
-如果特定摘要的重新索引程式花費了不合理的時間量，請執行效能評測器以收集可能對支援團隊有用的其他資料。 若要這麼做，請傳遞 `EXPORTER_PROFILER=1`環境變數：
+如果特定摘要的重新索引程式耗時過長，請執行效能評測器以收集可能對支援團隊有用的其他資料。 若要這麼做，請傳遞 `EXPORTER_PROFILER=1`環境變數：
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
@@ -205,4 +204,4 @@ EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 
 #### 提交支援要求
 
-如果您看到與設定或第三方擴充功能無關的錯誤，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 儘可能多的資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 儘可能多的資訊。
