@@ -4,9 +4,9 @@ description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: d9a9137faac12cc1c42c1b41afbd9794dcb29189
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ SaaS價格指數會縮短反映價格變動所需的時間 [Commerce服務](../l
 
    * [目錄服務](../catalog-service/overview.md)
    * [即時搜尋](../live-search/guide-overview.md)
+   * [產品Recommendations](../product-recommendations/guide-overview.md)
 
 Luma和Adobe Commerce Core GraphQL使用者可安裝 [`catalog-adapter`](catalog-adapter.md) 此擴充功能提供Luma和核心GraphQl相容性，並停用Adobe Commerce產品價格索引器。
 
