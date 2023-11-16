@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 541655aa268223959bb43e741bbd4b2615acddb1
+source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce和Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
-| [Experience Platform聯結器](/help/experience-platform-connector/overview.md) | Adobe Commerce |
+| [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
 ## 架構
 
