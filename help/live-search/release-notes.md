@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 發行說明"
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _2023年4月25日_
 
 ![新增](../assets/new.svg) [!DNL Live Search] 客戶現在可以利用新的 [SaaS價格索引子](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_2023年11月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+### 新功能
+
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援PLP Widget中的色票。
+![新增](../assets/new.svg) [!DNL Live Search] 現在會顯示類別名稱，而非類別ID。
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援PLP Widget中的刪除線價格。
+![新增](../assets/new.svg) 推出「隱藏篩選器」按鈕以隱藏篩選器面板。
+
+
+### 更新
+
+![修正](../assets/fix.svg) 此 [!DNL Live Search] 新安裝現在預設啟用PLP Widget。
+![修正](../assets/fix.svg) 已重新設定CSS樣式，以便更妥善區隔Widget類別。
+![修正](../assets/fix.svg) 微幅錯誤修正
+
+商家必須升級 [!DNL Live Search] 版次>= 4.0.0的擴充功能以存取這些功能。
+
+安裝3.1.1版或更新版本後，啟用新的索引子：
+
+* 產品價格摘要
+* 範圍網站資料摘要
+* 範圍客戶群組資料摘要
+
+升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
+
+## 舊版
+
++++3.1.1和舊版
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _2023年9月15日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-### 新功能
+
 
 ![新增](../assets/new.svg) 已新增「類別銷售」索引標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
 ![新增](../assets/new.svg) 使用者可使用智慧型或手動排名新增單一類別規則
@@ -68,20 +102,6 @@ _2023年9月15日_
 ![修正](../assets/fix.svg) 「活動」（提升/釘選/隱藏/隱藏）已重新命名為「手動排名」
 ![修正](../assets/fix.svg) 「排名型別」已重新命名為「智慧型排名」
 ![修正](../assets/fix.svg) 微幅錯誤修正
-
-商家必須升級 [!DNL Live Search] 擴充功能版本>= 3.1.1以存取這些功能。
-
-安裝3.1.1版之後，必須啟用以下新索引子：
-
-* 產品價格摘要
-* 範圍網站資料摘要
-* 範圍客戶群組資料摘要
-
-建議在將變更推送至生產環境之前，先在QA或測試環境中升級和測試。
-
-## 舊版
-
-+++3.1.0和舊版
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

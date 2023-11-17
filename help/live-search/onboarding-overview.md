@@ -3,9 +3,9 @@ title: 「入門概觀」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ ht-degree: 0%
 ### 同義字
 
 * [!DNL Live Search] 每個商店檢視最多可管理200個同義字。
+
+## 語言支援
+
+[!DNL Live Search] Widget支援下列語言：
+
+* en_US （預設）
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+如果Widget偵測到Commerce管理語言設定(_商店_ >設定> _設定_ > _一般_ >國家/地區選項)符合支援的語言，預設為該語言。 否則，Widget會預設為英文。
 
 ## 類別銷售
 

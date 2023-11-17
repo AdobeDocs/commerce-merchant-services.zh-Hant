@@ -3,7 +3,7 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ ht-degree: 0%
 
 1. 選擇符合您需求的入門方法，然後依照指示操作。
 
-   * [方法1](#method-1)：不執行安裝 [!DNL Elasticsearch]
-   * [方法2](#method-2)：安裝方式 [!DNL Elasticsearch] （無停機時間）
+   * [方法1](#method-1)：不執行安裝 [!DNL OpenSearch]
+   * [方法2](#method-2)：安裝方式 [!DNL OpenSearch] （無停機時間）
 
-## 方法1：不使用Elasticsearch安裝 {#method-1}
+>[!IMPORTANT]
+>
+>由於Elasticsearch7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱 [移轉至OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 在 _升級指南_.
+
+## 方法1：不使用OpenSearch安裝 {#method-1}
 
 安裝時，建議使用此上線方法 [!DNL Live Search] 至：
 
 * 新增 [!DNL Commerce] 安裝
 * 中繼環境
 
-此情境中，店面作業在下列情況下會中斷： [!DNL Live Search] 服務會為目錄中的所有產品編制索引。 在安裝期間， [!DNL Live Search] 模組已啟用且 [!DNL Elasticsearch] 模組已停用。
+此情境中，店面作業在下列情況下會中斷： [!DNL Live Search] 服務會為目錄中的所有產品編制索引。 在安裝期間， [!DNL Live Search] 模組已啟用且 [!DNL OpenSearch] 模組已停用。
 
 1. 安裝Adobe Commerce 2.4.4+ （不含） [!DNL Live Search].
 
@@ -48,7 +52,7 @@ ht-degree: 0%
    composer require magento/live-search
    ```
 
-1. 執行以下命令以停用 [!DNL Elasticsearch] 和相關模組，以及安裝 [!DNL Live Search]：
+1. 執行以下命令以停用 [!DNL OpenSearch] 和相關模組，以及安裝 [!DNL Live Search]：
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ ht-degree: 0%
 
 1. [測試](#test-the-connection) 店面的連線。
 
-## 方法2：使用Elasticsearch安裝 {#method-2}
-
->[!IMPORTANT]
->
->由於Elasticsearch7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱 [移轉至OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 在 _升級指南_.
+## 方法2：使用OpenSearch安裝 {#method-2}
 
 安裝時，建議使用此上線方法 [!DNL Live Search] 至：
 
 * 現有的生產環境 [!DNL Commerce] 安裝
 
-在此案例中， [!DNL Elasticsearch] 暫時管理店面的搜尋請求，而 [!DNL Live Search] 服務會在背景編制所有產品的索引，不會中斷一般店面的作業。 [!DNL Elasticsearch] 已停用，並且 [!DNL Live Search] 在所有目錄資料編制索引並同步之後啟用。
+在此案例中， [!DNL OpenSearch] 暫時管理店面的搜尋請求，而 [!DNL Live Search] 服務會在背景編制所有產品的索引，不會中斷一般店面的作業。 [!DNL OpenSearch] 已停用，並且 [!DNL Live Search] 在所有目錄資料編制索引並同步之後啟用。
 
 1. 若要下載 `live-search` 封裝，從命令列執行下列動作：
 
@@ -131,7 +131,7 @@ ht-degree: 0%
    * 傳回的產品計數接近您對商店檢視的預期。
    * 已傳回Facet。
 
-1. 執行以下命令以啟用 [!DNL Live Search] 模組，停用 [!DNL Elasticsearch]，並執行 `setup`.
+1. 執行以下命令以啟用 [!DNL Live Search] 模組，停用 [!DNL OpenSearch]，並執行 `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-若要更新至主要版本，例如從2.0.0到3.1.1，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
+若要更新至主要版本，例如從3.1.1到4.0.0，請編輯專案的根目錄 [!DNL Composer] `.json` 檔案如下所示：
 
-1. 若您目前已安裝 `magento/live-search` 版本為 `2.0.3` 或更低版本，而您正升級至版本 `3.0.0` 或更高版本，請在升級之前執行以下命令：
+1. 若您目前已安裝 `magento/live-search` 版本為 `3.1.1` 或更低版本，而您正升級至版本 `4.0.0` 或更高版本，請在升級之前執行以下命令：
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```

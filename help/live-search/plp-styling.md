@@ -2,9 +2,9 @@
 title: 產品清單頁面Widget
 description: 啟用並設定樣式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ ht-degree: 0%
 ## 啟用PLP Widget
 
 當 [!DNL Live Search] 服務已安裝，預設搜尋功能已轉換為 [!DNL Live Search] 自動。
-必須在管理員中啟用PLP Widget。
 
-1. 前往 **商店** >設定> **設定** > **[!DNL Live Search]** > **店面特色** 並設定 **啟用產品清單Widget** 設為「是」。
+此 [!DNL Live Search] 新安裝預設啟用PLP Widget。 如果您正在升級 [!DNL Live Search] 而且PLP Widget已關閉，仍會維持關閉。
+
+若要停用PLP Widget：
+
+1. 前往 **商店** >設定> **設定** > **[!DNL Live Search]** > **店面特色** 並設定 **啟用產品清單Widget** 設為「否」。
 1. 選取 **儲存設定** 以儲存設定。
 
 ## 樣式範例
@@ -28,7 +31,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce主題中自訂類別的元素不會繼承。 這些元素必須以其特定類別為目標，以符合自訂類別；主要動作類別在Widget按鈕上無法運作。
->CSS內的一般目標元素將會被繼承； `button` 將套用至Widget按鈕。
+>會繼承CSS內的一般目標元素； `button` 套用至Widget按鈕。
 
 反白顯示的div包含目標類別 `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ ht-degree: 0%
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![輸入](assets/plp-css-sdk-input.png)

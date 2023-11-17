@@ -4,9 +4,9 @@ user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Searc
 breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '96'
 ht-degree: 10%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 10%
       - [管理Facet](facets-manage.md)
    - [索引](indexing.md)
    - [效能](performance.md)
+   - [GraphQL](graphql.md)
    - [類別銷售](category-merch.md)
    - 搜尋銷售 {#rules}
       - [概觀](rules.md)
@@ -47,6 +48,7 @@ ht-degree: 10%
       - [新增同義字](synonyms-add.md)
       - [管理同義字](synonyms-manage.md)
    - [工作區](workspace.md)
+- [活動](events.md)
 - GraphQL查詢 {#graphql}
    - [attributedata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
