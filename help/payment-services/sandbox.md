@@ -3,9 +3,9 @@ title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶來使用 [!DNL Payment Services] 在測試模式中。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ PayPal沙箱帳戶可讓您使用 [!DNL Payment Services] 在測試模式中。 
 
 ## 啟用聯絡電話號碼
 
-聯絡電話號碼可讓您取得PayPal向客戶收集的聯絡電話號碼。 PayPal一律會向PayPal帳戶持有人收集連絡電話號碼，以協助確認其身分並連絡他們以解決其帳戶上的問題，或完成其履行流程。 不過，PayPal不鼓勵直接使用商家的連絡電話號碼，因為這可能對銷售造成負面影響。 請參閱 [PayPal取得連絡電話號碼](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) 檔案以取得詳細資訊。
+聯絡電話號碼可讓您取得PayPal向客戶收集的聯絡電話號碼。 PayPal一律會向PayPal帳戶持有人收集連絡電話號碼，以協助確認其身分並連絡他們以解決其帳戶上的問題，或完成其履行流程。 不過，PayPal不鼓勵直接使用商家的連絡電話號碼，因為這可能對銷售造成負面影響。 請參閱 [PayPal取得連絡電話號碼](https://www.sandbox.paypal.com/businessmanage/preferences/website) 檔案以取得詳細資訊。
 
 此功能為 `off` 依預設。 啟用後，當客戶在結帳頁面外部完成品牌結帳流程時，商店管理員可以看到電話號碼。
 
