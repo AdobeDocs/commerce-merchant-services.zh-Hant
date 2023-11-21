@@ -3,9 +3,9 @@ title: 「入門概觀」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ ht-degree: 0%
 這段影片將介紹類別銷售。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Widget程式碼存放庫
+
+產品清單頁面Widget和「搜尋彈出視窗」Widget都可從其Github存放庫下載。
+
+如此一來，開發人員就能完全自訂功能與樣式。 這些使用者自行託管程式碼，同時仍利用 [!DNL Live Search] 服務。
+
+* [PLP Widget](https://github.com/adobe/storefront-product-listing-page)
+* [搜尋列](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

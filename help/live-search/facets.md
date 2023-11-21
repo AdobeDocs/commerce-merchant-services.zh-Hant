@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] 多面向使用屬性值的多個維度作為搜尋條件。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ ht-degree: 0%
 * 50個可排序屬性
 * 200個可篩選屬性
 * 200個可搜尋屬性
+
+>[!NOTE]
+>
+> 如果定義的可篩選屬性超過200個，則無法確定哪個200個會實際編列索引。
+
+如果要與許多屬性競爭，請考慮將屬性合併為單一「meta-attribute」。 例如，鞋子通常有數字大小，而襯衫通常是「S/M/L/XL」大小。 這兩種大小型別可合併為單一可搜尋屬性。
 
 | 設定 | 說明 |
 |--- |--- |
