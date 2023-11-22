@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ### 接受的信用卡與貨幣
 
-[!DNL Payment Services] 接受國家/地區的貨幣 [可用位置](#availability).
+[!DNL Payment Services] 接受國家/地區的貨幣 [可用位置](#availability). 另請參閱 [貨幣設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) 以取得詳細資訊。
 
 若要檢視PayPal支援的貨幣，請參閱 [支援的貨幣檔案](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

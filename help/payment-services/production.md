@@ -3,9 +3,9 @@ title: 啟用 [!DNL Payment Services] 用於生產
 description: 啟用以完成入門流程 [!DNL Payment Services] 用於生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 0%
    |---|---|
    | `Authorize` | 核准購買並保留資金。 此金額必須等到商家「擷取」後才會提取。 |
    | `Authorize and Capture` | 核准購買且商家「擷取」資金。 |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] 支援部分擷取。 商家可以部份擷取訂單的（商業發票）部分。 例如，您可以分別擷取每個專案，或現在擷取一個專案，稍後擷取其餘的專案。
 
 1. 按一下 **[!UICONTROL Save]**.
 1. 按一下 **[!UICONTROL Go to Payment Services]** 將重新導向至 [!DNL Payment Services] 首頁。

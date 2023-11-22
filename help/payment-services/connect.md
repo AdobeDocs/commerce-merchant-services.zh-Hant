@@ -3,9 +3,9 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ ht-degree: 0%
 若要瞭解如何為沙箱或生產環境產生API金鑰，請參閱 [認證](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >建議您不要重新產生API金鑰組 *和* 變更作用中生產執行個體上的SaaS識別碼和/或資料空間。 如果修改執行個體的資料，您將會遺失這些資料。
 
 ## 設定Commerce服務
 
 執行個體間可以使用相同的API金鑰，但每個執行個體都必須有自己的 [SaaS資料空間](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>商家必須使用針對MageID產生的相同金鑰來取得其付款權益。
 
 現在您已取得認證，您可以設定SaaS專案和Saas資料空間。
 

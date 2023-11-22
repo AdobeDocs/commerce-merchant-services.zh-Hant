@@ -3,9 +3,9 @@ title: 信用卡存放
 description: 購物者可以儲存信用卡詳細資料，以便日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 他們也可以輕鬆地從刪除其存放的信用卡 [儲存的付款方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) 在我帳戶中。
 
 ![我的帳戶中儲存的付款方法](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal目前最多可儲存五張儲存的卡片。
 
 ## 啟用存放區
 
