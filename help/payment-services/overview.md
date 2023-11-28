@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 可用於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 此 [!DNL Payment Services] 擴充功能現在與相容 [!DNL Adobe Commerce] 2.4.x版。
 
-目前， [!DNL Payment Services] 適用於下列國家/地區：
+目前， [!DNL Payment Services] 適用於下列國家/地區的商家：
 
 * 美國（美國）
 * 加拿大（加州）
