@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 * [**付款選項**](payments-options.md) — 設定付款選項，以自訂商店（或多商店）客戶可用的方式。
 * **現金流量管理財務報告** — 同步 [付款詳細資料](order-payment-status.md) 訂單以完全透明化處理量、付款餘額、 [付款](payouts.md)，和詳細資訊 [交易層級報告](transactions.md) 進行財務對賬，並充分掌握交易的可見度。
 * **透明的定價** — 價格明確、預先明確；您所見即所得。
-* **高效的結帳體驗** — 透過以下功能，移除任何阻礙快速輕鬆結帳的障礙，並建立忠實客戶： [卡片存放](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 和 [立即購買](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce預設為啟用)功能。
+* **高效的結帳體驗** — 透過以下功能，移除任何阻礙快速輕鬆結帳的障礙，並建立忠實客戶： [卡片存放](vaulting.md) 和 [立即購買](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce預設為啟用)功能。
 
 ## 可用性
 

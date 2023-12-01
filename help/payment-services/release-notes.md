@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 發行說明"
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '2279'
+source-wordcount: '2316'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄」設定控制項來顯示或隱藏欄。
 
 +++
+
+## v2.3.0
+
+_2023年12月1日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-4381 --> [Payment Services現在支援GraphQL整合](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). 透過GraphQL對PayPal支付按鈕、託管欄位和Apple Pay的支援，支付服務現在可支援Headless Commerce設定。
 
 ## v2.2.1
 
