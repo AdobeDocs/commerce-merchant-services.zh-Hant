@@ -1,20 +1,20 @@
 ---
-title: 「類別銷售」
-description: '"使用 [!DNL Live Search] 類別銷售，提升購物體驗。」'
+title: 類別銷售
+description: 使用 [!DNL Live Search] 類別銷售，提升購物體驗。
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # 類別銷售
 
 類別銷售可讓商店擁有者套用 [!DNL Live Search] 智慧型排名 [規則](rules.md) 至產品類別和子類別。
 
-您可以在管理員中存取此功能： **行銷** > SEO與搜尋> **[!DNL Live Search]** > **類別銷售**.
+您可以在管理員存取此功能： **行銷** > SEO與搜尋> **[!DNL Live Search]** > **類別銷售**.
 
 >[!NOTE]
 >
