@@ -3,7 +3,7 @@ title: 簡介 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerce提供超快、超相關和直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
 * [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
-* AEM CIF元件： [彈出視窗Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) 和 [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) 允許AEM網站利用 [!DNL Live Search].
+* AEM CIF元件： [彈出視窗Widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) 和 [PLP Widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) 允許AEM網站利用 [!DNL Live Search].
 * [[!DNL Live Search] 管理員](workspace.md) 是設定規則、多面向和同義字的位置。
 
 ## 工作流程概觀

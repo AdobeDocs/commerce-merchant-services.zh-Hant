@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ ht-degree: 0%
 
    之後您應該能夠新增Facet `cron` 執行屬性摘要和匯出屬性中繼資料。
 
-1. 之後至少等待一小時 `cron` 執行以同步資料。 然後 [驗證](#verify-export) 已匯出資料。
+1. 請依此順序執行下列命令：
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [驗證](#verify-export) 已匯出資料。
 
 1. [測試](#test-the-connection) 店面的連線。
 
@@ -126,7 +140,21 @@ ht-degree: 0%
 
    之後您應該能夠新增Facet `cron` 執行產品和屬性摘要，並將屬性中繼資料匯出至 [!DNL Live Search] 服務。
 
-1. 至少等候一小時，讓資料建立索引並同步。 然後，使用 [GraphQL遊樂場](https://developer.adobe.com/commerce/services/graphql/live-search/) 預設查詢，以驗證以下內容：
+1. 請依此順序執行下列命令：
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. 同步完成後，請使用 [GraphQL遊樂場](https://developer.adobe.com/commerce/services/graphql/live-search/) 預設查詢，以驗證以下內容：
 
    * 傳回的產品計數接近您對商店檢視的預期。
    * 已傳回Facet。
