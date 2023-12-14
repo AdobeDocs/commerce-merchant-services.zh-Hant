@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Commerce的所有測試例項都應使用沙箱端點。
 
 使用此方法來安裝 [!DNL Catalog Service] Commerce Cloud例項的擴充功能。
 
-1. 開啟 `<Commerce_root>/composer.json` 檔案並更新必要區段，如下所示：
+1. 使用Composer將目錄服務模組新增至您的專案：
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. 在本機測試新設定並更新相依性：
+1. 執行以下動作以更新相依性：
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ composer update
 
 使用此方法來安裝 [!DNL Catalog Service] 內部部署執行個體的擴充功能。
 
-1. 開啟 `<Commerce_root>/composer.json` 檔案並更新必要區段，如下所示：
+1. 使用Composer將目錄服務模組新增至您的專案：
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. 更新相依性並安裝擴充功能：
