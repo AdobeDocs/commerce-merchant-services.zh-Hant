@@ -3,9 +3,9 @@ title: 「技術概覽」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ ht-degree: 0%
 
 [!DNL Live Search] 透過位於的端點通訊 `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->作為 [!DNL Live Search] 沒有完整產品資料庫的存取權， [!DNL Live Search] GraphQL與Commerce核心GraphQL不會有完整的同位檢查。
+作為 [!DNL Live Search] 沒有完整產品資料庫的存取權， [!DNL Live Search] GraphQL與Commerce核心GraphQL不會有完整的同位檢查。
+
+建議您直接呼叫SaaS API的 — 尤其是目錄服務端點。
+
+* 略過Commerce資料庫/Graphql程式，獲得效能並降低處理器負載
+* 充分運用 [!DNL Catalog Service] 要呼叫的同盟 [!DNL Live Search]， [!DNL Catalog Service]、和 [!DNL Product Recommendations] 來自單一端點。
+
+對於某些使用案例，呼叫 [!DNL Catalog Service] 以取得產品詳細資料和類似案例。 另請參閱 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 以取得詳細資訊。
+
+如果您有自訂Headless實施，請檢視 [!DNL Live Search] 參考實作：
+
+* [PLP Widget](https://github.com/adobe/storefront-product-listing-page)
+* [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
+
+如果您未使用預設元件(例如Luma上的搜尋配接器或Widget或AEM CIF Widget)，請注意，事件(為Adobe Sensei提供智慧型銷售和效能量度摘要的點按資料流資料)將無法立即運作，且需要自訂開發才能實作Headless事件。
+最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service] 以及安裝 [!DNL Catalog Service] 模組。
 
 ## 邊界和臨界值
 
@@ -69,15 +82,42 @@ ht-degree: 0%
 
 [!DNL Live Search] Widget支援下列語言：
 
-* en_US （預設）
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| 語言 | 地區 | 語言代碼 | Magento地區設定 |
+| 保加利亞文 | 保加利亞 | bg_BG | bg_BG |
+| 加泰隆尼亞文 | 西班牙 | ca_ES | ca_ES |
+| 捷克文 | 捷克共和國 | cs_CZ | cs_CZ |
+| 丹麥文 | 丹麥 | da_DK | da_DK |
+| 德文 | 德國 | de_DE | de_DE |
+| 希臘文 | 希臘 | el_GR | el_GR |
+| 英文 | 英國 | en_GB | en_GB |
+| 英文 | 美國 | en_US | en_US |
+| 西班牙文 | 西班牙 | es_ES | es_ES |
+| 愛沙尼亞文 | 愛沙尼亞 | et_EE | et_EE |
+| 巴斯克語 | 西班牙 | eu_ES | eu_ES |
+| 波斯文 | 伊朗 | fa_IR | fa_IR |
+| 芬蘭文 | 芬蘭 | fi_FI | fi_FI |
+| 法文 | 法國 | fr_FR | fr_FR |
+| 加利西亞語 | 西班牙 | gl_ES | gl_ES |
+| 北印度文 | 印度 | hi_IN | hi_IN |
+| 匈牙利文 | 匈牙利 | hu_HU | hu_HU |
+| 印尼文 | 印尼 | id_ID | id_ID |
+| 義大利文 | 義大利 | it_IT | it_IT |
+| 韓文 | 南韓 | ko_KR | ko_KR |
+| 立陶宛文 | 立陶宛 | lt_LT | lt_LT |
+| 拉脫維亞文 | 拉脫維亞 | lv_LV | lv_LV |
+| 挪威文 | 挪威巴克摩 | nb_NO | nb_NO |
+| 荷蘭文 | 荷蘭 | nl_NL | nl_NL |
+| 葡萄牙文 | 巴西 | pt_BR | pt_BR |
+| 葡萄牙文 | 葡萄牙 | pt_PT | pt_PT |
+| 羅馬尼亞文 | 羅馬尼亞 | ro_RO | ro_RO |
+| 俄文 | 俄羅斯 | ru_RU | ru_RU |
+| 瑞典文 | 瑞典 | sv_SE | sv_SE |
+| 泰文 | 泰國 | th_TH | th_TH |
+| 土耳其文 | 土耳其 | tr_TR | tr_TR |
+| 中文 | 中國 | zh_CN | zh_Hans_CN |
+| 中文 | 台灣 | zh_TW | zh_Hant_TW |
 
 如果Widget偵測到Commerce管理語言設定(_商店_ >設定> _設定_ > _一般_ >國家/地區選項)符合支援的語言，預設為該語言。 否則，Widget會預設為英文。
 
@@ -109,6 +149,17 @@ ht-degree: 0%
 ## 價格索引器
 
 Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
+
+## 價格支援
+
+即時搜尋Widget支援大多數（但不是全部）Adobe Commerce支援的價格型別。
+
+目前支援基本價格。 不支援的進階價格為：
+
+* 成本
+* 最低廣告價格
+
+檢視 [API網格](../catalog-service/mesh.md) 適用於較複雜的價格計算。
 
 ## PWA支援
 

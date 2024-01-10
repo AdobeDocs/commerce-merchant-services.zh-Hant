@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] 多面向使用屬性值的多個維度作為搜尋條件。」'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 多面向需求
 
-多面的類別和產品屬性需求類似於用於分層導覽的可篩選屬性。 每個屬性的店面屬性都必須設為 `filterable (with results)`.
+多面的類別和產品屬性需求類似於用於分層導覽的可篩選屬性。 屬性的每個店面屬性都必須將「用於搜尋結果的分層導覽」值設定為「是」。
 
 [!DNL Live Search] 最多支援：
 
