@@ -3,10 +3,10 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 1%
 以下發行說明說明說明使用的擴充功能相關功能變更和修正 [!DNL Data Connection] 副檔名。
 
 +++支援的服務更新
+
+_2024年1月24日_
+
+![新增](../assets/new.svg)  — 已更新 `data-services-b2b` 擴充功能，以包含名為的新請購單事件 [deleteRequisitionList](events.md#deleterequisitionlist) 適用於B2B商家。
 
 _2023年11月16日_
 

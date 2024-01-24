@@ -4,9 +4,9 @@ description: 瞭解如何安裝、更新及解除安裝 [!DNL Data Connection] �
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ ht-degree: 0%
 
 1. （選用）加入B2B資料，包括 [請購單事件](events.md#b2b-events)，安裝 [B2B擴充功能](#install-the-b2b-extension).
 
-### 設定訂單聯結器
+### 安裝Adobe I/O事件
 
-安裝之後 `experience-platform-connector` 擴充功能上，您必須完成安裝 `orders-connector` 模組根據部署型別：內部部署或雲端基礎結構上的Adobe Commerce 。
+安裝之後 `experience-platform-connector` 擴充功能上，您必須安裝Adobe Commerce的Adobe I/O事件。
+
+下列步驟適用於雲端基礎結構上的Adobe Commerce和內部部署安裝。
+
+1. 如果您執行Commerce 2.4.4或2.4.5，請使用以下命令載入事件模組：
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6及更新版本會自動載入這些模組。
+
+1. 更新專案相依性。
+
+   ```bash
+   composer update
+   ```
+
+1. 啟用新模組：
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+根據部署型別完成安裝：內部部署或雲端基礎結構上的Adobe Commerce 。
 
 #### 內部部署
 
@@ -59,7 +83,7 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 #### 在雲端基礎結構上
 
-在雲端基礎結構上的Adobe Commerce中，啟用 `ENABLE_EVENTING` 中的全域變數 `.magento.env.yaml`. [深入了解](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+在雲端基礎結構上的Adobe Commerce中，啟用 `ENABLE_EVENTING` 中的全域變數 `.magento.env.yaml`. [瞭解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:

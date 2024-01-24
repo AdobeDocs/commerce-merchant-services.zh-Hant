@@ -4,9 +4,9 @@ description: 瞭解每個事件擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 | 說明 | XDM事件名稱 |
 |---|---|
-| 購物者下訂單時觸發。 | `commerce.order` |
+| 購物者下訂單時觸發。 | `commerce.purchases` |
 
 #### 從completeCheckout收集的資料
 
@@ -485,7 +485,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 | 欄位 | 說明 |
 |---|---|
 | `commerce.requisitionListOpens` | 指示初始化新的請購單清單。 |
-| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單的屬性。 |
 | `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
 | `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
 | `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
@@ -508,7 +508,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 | 欄位 | 說明 |
 |---|---|
 | `commerce.requisitionListAdds` | 指示新增一或多個產品至請購單清單。 |
-| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單的屬性。 |
 | `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
 | `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
 | `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
@@ -541,7 +541,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 | 欄位 | 說明 |
 |---|---|
 | `commerce.requsitionListRemovals` | 表示從請購單清單移除一或多個產品。 |
-| `commerce.requisitionList` | 客戶建立的請購單清單屬性。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單的屬性。 |
 | `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
 | `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
 | `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
@@ -560,6 +560,29 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 | `productListItems.selectedOptions` | 用於可設定產品的欄位。 |
 | `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
 | `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
+
+### deleteRequisitionList
+
+| 說明 | XDM事件名稱 |
+|---|---|
+| 購物者刪除請購單清單時觸發。 | `commerce.requisitionListDeletes` |
+
+#### 從deleteRequisitionList收集的資料
+
+下表說明為此事件收集的資料。
+
+| 欄位 | 說明 |
+|---|---|
+| `commerce.requisitionListDeletes` | 指出已刪除請購單清單。 |
+| `commerce.requisitionList` | 客戶建立的請購單清單的屬性。 |
+| `commerce.requisitionList.ID` | 請購單清單的唯一識別碼。 |
+| `commerce.requisitionList.name` | 客戶指定的請購單清單名稱。 |
+| `commerce.requisitionList.description` | 客戶指定的請購單清單摘要。 |
+| `commerce.commerceScope` | 表示事件發生位置（商店檢視、商店、網站等）。 |
+| `commerce.commerceScope.environmentID` | 環境識別碼。 32位數的英數字元ID，以連字型大小分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
+| `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
 
 ## 後台活動
 
