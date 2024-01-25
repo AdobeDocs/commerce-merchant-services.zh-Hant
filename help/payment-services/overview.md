@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,15 @@ ht-degree: 0%
 
 [!DNL Payment Services] 可用於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 此 [!DNL Payment Services] 擴充功能現在與相容 [!DNL Adobe Commerce] 2.4.x版。
 
-目前， [!DNL Payment Services] 適用於下列國家/地區的商家：
+目前， [!DNL Payment Services] 提供完整支援(透過 [進階上線](../payment-services/production.md#advanced-onboarding))適用於這些國家/地區的所有付款選項：
 
 * 美國（美國）
 * 加拿大（加州）
 * 澳洲(AUS)
 * 法國(FR)
 * 英國（英國）
+
+支付服務提供 [快速簽出功能](../payment-services/payments-options.md) （付款選項的子集） [上線期間的可用國家/地區](../payment-services/production.md#complete-merchant-onboarding).
 
 另請參閱 [生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) 和 [[!DNL Payment Services] 發行說明](release-notes.md) 頁面以取得更多發行版本和版本特定資訊。
 

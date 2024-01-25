@@ -3,30 +3,38 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # 付款選項
 
-替換為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多個可用的付款選項。 您可以透過以下方式設定這些付款選項：
+替換為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多個可用的付款選項。
 
-* [住家設定](payments-home.md)
-* [存放區設定](configure-admin.md) （建議使用舊版付款選項或多重商店設定）
+您可以在下列位置設定這些付款選項 [住家設定](payments-home.md) 或 [存放區設定](configure-admin.md) （建議使用舊版付款選項或多商店設定）。
 
 根據您在結帳過程中的位置，每種付款方式都有不同的行為：
 
 * 產品頁面 — 專案的產品頁面
-* 迷你購物車 — 當產品加入購物車後，按一下購物車圖示即可使用
+* 迷你購物車 — 當產品已新增至購物車時，按一下購物車圖示即可使用
 * 購物車 — 按一下即可使用 _檢視和編輯購物車_ 從迷你購物車
 * 出庫檢視 — 可在按一下 _繼續結帳_ 從迷你購物車或購物車
 
 >[!IMPORTANT]
 >
->必須先完成付款服務上線，才能處理付款。
+>[!DNL Payment Services] 必須先完成上線，然後才能處理付款。
+
+## 標準與進階付款體驗
+
+[!DNL Payment Services] 提供 **進階** （完整支援）和 **標準** （快速結帳）付款選項和上線流程，視您營運的國家/地區而定。
+
+* **進階**  — 全部可用 [付款選項](../payment-services/payments-options.md) 目前可用 [完全支援的國家/地區](../payment-services/overview.md#availability). 在上線以啟用即時付款時，選取 [進階上線選項](../payment-services/production.md#advanced-onboarding).
+* **標準**  — 付款選項（快速結帳） （PayPal信用卡和借記卡）的子集適用於其他支援的國家/地區。 [信用卡欄位](#credit-card-fields) 和 [Apple Pay](#apple-pay-button) 不適用於此上線選項。 在上線以啟用即時付款時，選取 [標准入門選項](../payment-services/production.md#standard-onboarding).
+
+另請參閱 [啟用 [!DNL Payment Services] 用於生產](../payment-services/production.md#complete-merchant-onboarding) 以取得關於完成進階和標準上線的資訊。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ ht-degree: 0%
 
 啟用 [信用卡保險庫](#vaulting) 讓您的商店允許購物者儲存信用卡資訊，以便稍後快速結帳。
 
-您可以設定 [!UICONTROL Credit Card Fields] 在商店設定或支付服務首頁中。 另請參閱 [設定](settings.md#credit-card-fields) 以取得詳細資訊。
+您可以設定 [!UICONTROL Credit Card Fields] 在存放區設定或 [!DNL Payment Services] 首頁。 另請參閱 [設定](settings.md#credit-card-fields) 以取得詳細資訊。
 
 您也可以變更信用卡欄位的版面、寬度、高度及外部樣式。 另請參閱 [PayPal檔案](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 以取得詳細資訊。
 
@@ -62,7 +70,7 @@ ht-degree: 0%
 
 ![PayPal按鈕](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以設定 [!UICONTROL PayPal Smart Buttons] 在商店設定或支付服務首頁中。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
+您可以設定 [!UICONTROL PayPal Smart Buttons] 在存放區設定或 [!DNL Payment Services] 首頁。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
 
 請參閱PayPal的 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/) 瞭解目前每種付款方式在哪些國家/地區可用。
 
