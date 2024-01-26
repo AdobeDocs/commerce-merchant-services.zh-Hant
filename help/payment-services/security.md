@@ -4,9 +4,9 @@ description: 檢閱您網站的安全與法規遵循需求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 
 另請參閱 [信用卡保險存放](vaulting.md) 以取得詳細資訊。
 
-### PayPal智慧型按鈕
+### PayPal付款按鈕
 
-使用PayPal智慧型按鈕，您的服務不會傳遞PCI管制的資料。 您不必儲存或維護這些資料，這大大降低了PCI法規遵循問題。
+使用PayPal付款按鈕，您的服務不會傳遞PCI管制的資料。 您不必儲存或維護這些資料，這大大降低了PCI法規遵循問題。
 
 基於安全考量，PayPal在結帳時不會傳送帳單地址 — 國家/地區、電子郵件和名稱是唯一使用的帳單資訊。 您可以選擇啟用網站的PayPal結帳，連絡PayPal並完成審查程式，以傳回完整的帳單地址。
 

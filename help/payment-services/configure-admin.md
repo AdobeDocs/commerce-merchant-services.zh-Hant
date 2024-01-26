@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -116,28 +116,28 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on cart page] | 存放區檢視 | 啟用或停用 [!DNL Apple Pay] 在購物車頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-此 [!DNL PayPal Smart Buttons] 付款選項可為您的客戶提供簡單、快速且安全的結帳程式。
+此 [!DNL PayPal payment buttons] 付款選項可為您的客戶提供簡單、快速且安全的結帳程式。
 
 另請參閱 [付款選項](payments-options.md#paypal-smart-buttons) 以取得詳細資訊。
 
-設定 [!DNL PayPal Smart Buttons]
+設定 [!DNL PayPal payment buttons]
 
-您可以在管理員內啟用並設定PayPal智慧按鈕付款選項：
+您可以在「管理員」中啟用並設定PayPal付款按鈕付款選項：
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左側面板中，展開 **[!UICONTROL Sales]** 並選擇 **[!UICONTROL Payment Methods]**.
 1. 展開 _[!UICONTROL Recommended Solutions]_區段。
-1. 在 _[!UICONTROL Payment Services]_區段，展開_[!UICONTROL PayPal Smart Buttons]_ 區段。
+1. 在 _[!UICONTROL Payment Services]_區段，展開_[!UICONTROL PayPal payment buttons]_ 區段。
 1. 若要變更結帳時顯示的付款方式名稱，請編輯 _[!UICONTROL Title]_欄位。
 1. 至 [設定付款作業](production.md#set-payment-services-as-payment-method)，選取 **[!UICONTROL Authorize]** 或 **[!UICONTROL Authorize and Capture]**.
 1. 若要在結帳頁面上排定付款方式的優先順序，請提供 `Numeric Only` 中的值 **[!UICONTROL Sort order]** 欄位。
 1. 若要啟用/停用 [先付款後傳送訊息](payments-options.md#pay-later-button)，選取 `Yes`/`No` 的 **[!UICONTROL Display Pay Later Message]**.
-1. 若要在結帳頁面上顯示PayPal智慧型按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on checkout page]**.
-1. 若要在產品詳細資料頁面上顯示PayPal智慧型按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on product detail page]**.
-1. 若要在迷你購物車預覽中顯示PayPal智慧型按鈕，請選取 `Yes` 的 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 若要在購物車頁面上顯示PayPal智慧型按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on cart page]**.
+1. 若要在結帳頁面上顯示PayPal付款按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on checkout page]**.
+1. 若要在產品詳細資料頁面上顯示PayPal付款按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on product detail page]**.
+1. 若要在迷你購物車預覽中顯示PayPal付款按鈕，請選取 `Yes` 的 **[!UICONTROL Show buttons in mini cart preview]**.
+1. 若要在購物車頁面上顯示PayPal付款按鈕，請選取 `Yes` 針對 **[!UICONTROL Show buttons on cart page]**.
 1. 若要啟用Venmo作為付款選項，請選取 `Yes` 的 **[!UICONTROL Venmo Enabled]**.
 1. 若要啟用信用卡和借記卡作為付款選項（PayPal智慧按鈕），請選取 `Yes` 的 **[!UICONTROL Credit and Debit Card Enabled]**.
 1. 若要啟用/停用 [PayPal稍後付款](payments-options.md#pay-later-button) 付款選項，選取 `Yes`/`No` 的 **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -152,10 +152,10 @@ ht-degree: 0%
 | [!UICONTROL Title] | 存放區檢視 | 在結帳期間，在「付款方式」檢視中，新增要顯示為此付款選項標題的文字。 選項：文字欄位 |
 | [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | 網站 | 在購物車、產品頁面、迷你購物車和結帳流程中啟用或停用「稍後付款」訊息。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在結帳頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在產品詳細資料頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在迷你購物車預覽中。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | 存放區檢視 | 啟用或停用 [!DNL PayPal Smart Buttons] 在購物車頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | 存放區檢視 | 啟用或停用 [!DNL PayPal payment buttons] 在結帳頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | 存放區檢視 | 啟用或停用 [!DNL PayPal payment buttons] 在產品詳細資料頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | 存放區檢視 | 啟用或停用 [!DNL PayPal payment buttons] 在迷你購物車預覽中。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | 存放區檢視 | 啟用或停用 [!DNL PayPal payment buttons] 在購物車頁面上。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的Venmo付款選項。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的「信用卡」與「借記卡」選項。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | 存放區檢視 | 啟用或停用顯示付款按鈕的PayPal Pay Later付款選項外觀。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -184,12 +184,12 @@ ht-degree: 0%
 
 | 欄位 | 範圍 | 說明 |
 |--- |--- |--- |
-| [!UICONTROL Layout] | 存放區檢視 | 定義Paypal智慧型按鈕的版面配置樣式。 選項： `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
-| [!UICONTROL Color] | 存放區檢視 | 定義Paypal智慧型按鈕的色彩。 選項： [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
-| [!UICONTROL Shape] | 存放區檢視 | 定義Paypal智慧型按鈕的形狀。 選項： `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
-| [!UICONTROL Use Default Height] | 存放區檢視 | 定義PayPal智慧型按鈕是否使用預設高度。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Height] | 存放區檢視 | 定義PayPal智慧型按鈕的高度。 預設值：無 |
-| [!UICONTROL Label] | 存放區檢視 | 定義出現在PayPal智慧型按鈕中的標籤。 選項： `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
+| [!UICONTROL Layout] | 存放區檢視 | 定義Paypal付款按鈕的版面樣式。 選項： `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
+| [!UICONTROL Color] | 存放區檢視 | 定義Paypal付款按鈕的色彩。 選項： [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
+| [!UICONTROL Shape] | 存放區檢視 | 定義Paypal付款按鈕的形狀。 選項： `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
+| [!UICONTROL Use Default Height] | 存放區檢視 | 定義PayPal付款按鈕是否使用預設高度。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Height] | 存放區檢視 | 定義PayPal付款按鈕的高度。 預設值：無 |
+| [!UICONTROL Label] | 存放區檢視 | 定義出現在PayPal付款按鈕中的標籤。 選項： `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
 | [!UICONTROL Tagline] | 存放區檢視 | 啟用標語。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## 排清快取

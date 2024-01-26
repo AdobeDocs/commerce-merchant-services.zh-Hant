@@ -3,7 +3,7 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ ht-degree: 0%
 
 您可以設定 [!UICONTROL Apple Pay] 在商店設定或支付服務首頁中。 另請參閱 [設定](settings.md#apple-pay) 以取得詳細資訊。
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons]，會使用PayPal完成購買、儲存購物者的運送地址、帳單地址和付款詳細資料，以供日後使用。 購物者可以使用PayPal先前儲存或提供的任何付款方式。
+[!DNL PayPal payment buttons]，會使用PayPal完成購買、儲存購物者的運送地址、帳單地址和付款詳細資料，以供日後使用。 購物者可以使用PayPal先前儲存或提供的任何付款方式。
 
 ![PayPal按鈕](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以設定 [!UICONTROL PayPal Smart Buttons] 在存放區設定或 [!DNL Payment Services] 首頁。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
+您可以設定 [!UICONTROL PayPal payment buttons] 在存放區設定或 [!DNL Payment Services] 首頁。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
 
 請參閱PayPal的 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/) 瞭解目前每種付款方式在哪些國家/地區可用。
 

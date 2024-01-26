@@ -4,9 +4,9 @@ description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 請參閱此報表中的連結商務訂單與提供者交易ID、交易金額、每筆交易的付款方式及其他。
 
-並非所有支付方法都提供相同的資訊粒度。 例如，信用卡交易會提供回應、AVS和CCV代碼，以及「交易」報表中卡片的最後四位數；而PayPal智慧型按鈕則否。
+並非所有支付方法都提供相同的資訊粒度。 例如，信用卡交易會提供回應、AVS和CCV代碼，以及「交易」報表中卡片的最後四位數；PayPal付款按鈕則否。
 
 您可以 [下載交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
 

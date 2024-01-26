@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] 發行說明」'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _2023年1月29日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 修正買家無法使用產品頁面、迷你購物車和購物車上的智慧按鈕下訂單的問題。 買家現在可以成功完成訂單。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 修正買家無法使用產品頁面、迷你購物車及購物車上的付款按鈕下單的問題。 買家現在可以成功完成訂單。
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _2022年12月22日_
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改善當付款方式遭拒絕時，Payment Services中的開立發票。
 
-![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在能正確顯示商戶使用的PayPal智慧型按鈕 [引發籤出](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 結帳頁面的自訂範本。 之前，迷你圖會斷斷續續地顯示按鈕。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示商戶使用的PayPal付款按鈕 [引發籤出](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 結帳頁面的自訂範本。 之前，迷你圖會斷斷續續地顯示按鈕。
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _2022年11月23日_
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services現在包含使用者代理標題中的版本號碼，以便能夠追蹤、篩選或淘汰未使用的端點。
 
-![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 現在，當使用智慧按鈕從產品頁面下訂單時，Payment Services可正確顯示訂單資料。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 現在，當使用付款按鈕從產品頁面下訂單時，Payment Services可正確顯示訂單資料。
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _2022年9月30日_
 
 ![新增](../assets/new.svg)<!-- Issue PAY-3231 --> 商戶可以 [新增 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 至客戶交易銀行對帳單上顯示的網站或個別商店檢視設定，以描述品牌、商店或產品線。
 
-![新增](../assets/new.svg)<!-- Issue PAY-3707 --> [啟用或停用信用卡欄位和PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 以在「付款服務」設定中結帳。
+![新增](../assets/new.svg)<!-- Issue PAY-3707 --> [啟用或停用信用卡欄位和PayPal付款按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 以在「付款服務」設定中結帳。
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3546 --> 客戶點按時 **[!UICONTROL Edit cart]**，頁面會重新導向至購物車頁面，並顯示更新後的專案，而非顯示空白購物車。
 
@@ -258,7 +258,7 @@ _2022年6月29日_
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 先前，當登入使用者為其帳戶選取了預設地址以外的其他帳單/運送地址時，結帳失敗。 我們已修正此問題，現在會傳送選取的帳單/運送地址（而不是預設的儲存地址），並成功完成結帳。
 
-![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果您停用PayPal智慧型結帳按鈕，則不會顯示錯誤。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果您停用結帳的PayPal付款按鈕，則不會顯示錯誤。
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3330 --> 當訪客使用者輸入包含破折號的電話號碼時，結帳期間付款不再失敗。
 
@@ -288,7 +288,7 @@ _2022年3月31日_
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2742 --> 您現在可以在商店檢視層級啟用或停用可用的付款方法，例如Venmo。 之前，您只能為每個網站設定付款方法。
 
-![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 您現在可以選擇 [啟用或停用個別PayPal智慧型按鈕](settings.md#payment-buttons).
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 您現在可以選擇 [啟用或停用個別PayPal付款按鈕](settings.md#payment-buttons).
 
 ![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 先前移除的產品不會出現在的購物車中 _檢閱訂單_ 頁面。
 
@@ -314,7 +314,7 @@ _2021年11月29日_
 
 ![新增](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 根據總處理量，支援彈性的階層式定價，適用於任何商家。
 
-![新增](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以 [自訂外觀](payments-options.md) 的PayPal智慧按鈕和信用卡欄位 [!DNL Payment Services] 副檔名。
+![新增](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以 [自訂外觀](payments-options.md) 的PayPal付款按鈕和信用卡欄位 [!DNL Payment Services] 副檔名。
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [不正確的撰寫器索引鍵](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安裝擴充功能期間，防止使用者 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 具有正確的 `MAGEID`.
 
