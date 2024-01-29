@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 客戶可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，會使用儲存在iOS或macOS裝置上的信用卡和扣帳卡付款憑證來進行購買。
 
-[!DNL Apple Pay] 僅適用於Safari瀏覽器。
+[!DNL Apple Pay] 僅適用於Safari瀏覽器。 商家每個商家帳戶最多可新增99個網域。
 
 ![迷你卡中的Apple付款按鈕](assets/apple-pay-button.png){width="500" zoomable="yes"}
 

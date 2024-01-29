@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Apple Pay]
 
-此 [!UICONTROL Apple Pay] 付款選項可讓商家為其購物者提供可透過Safari瀏覽器在裝置上使用Touch ID進行購買的Apple Pay。
+此 [!UICONTROL Apple Pay] 付款選項可讓商家為其購物者提供可透過Safari瀏覽器在裝置上使用Touch ID進行購買的Apple Pay。 商家每個商家帳戶最多可新增99個網域。
 
 另請參閱 [付款選項](payments-options.md#apple-pay-button) 以取得詳細資訊。
 
