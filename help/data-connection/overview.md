@@ -3,9 +3,9 @@ title: 指南概觀
 description: 瞭解如何使用整合Adobe Commerce資料與Adobe Experience Platform [!DNL Data Connection] 副檔名。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7d93b556881b3af5f6c8bceb5c9bb6af9ec0bc1c
+source-git-commit: b2ef02d6d1efbd1d2bc1d386517f050f56d5d864
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Adobe Experience Platform提供了一套技術，可在與您Commerce商店的�
 | [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hant) | 設定檔管理和細分服務 | **購買記錄細分**：商家可以根據特定時段（每月、每季、每年等）識別購買專案的客戶。 商家可以接著為這些客戶建立區段，並鎖定這些客戶作為促銷活動、促銷活動和 _漏斗頂端_ 適用於訂閱服務潛在客戶的資料。<br> **類別型細分**：商家可以檢視購買的產品類別。<br> **優惠方案型細分**：商戶可識別持續傳回產品的客戶。 提供給他們的優惠和折扣現在可能更具智慧。 例如，對於一直退貨的客戶，可移除免運費。<br> **相似對象目標定位**：A _相似對象_ 是商家為了促銷活動而採用的方法，以便觸及可能會對其業務感興趣的新人，因為他們與現有客戶具有類似的特性。 可以根據行為和異動資料建立相似區段。<br> **客戶傾向**：可從交易資料建立更深入的客戶設定檔，藉此可識別客戶行為變更。 由於有更多資料流入計算（例如產品退貨和產品組態），傾向分數會有較高的信賴度。<br> **交叉銷售**：商家可以從Commerce中擷取的精細資訊找出強大的交叉銷售和向上銷售機會。 |
 | [客戶 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 對整個Commerce歷程的深入分析 | **季節性趨勢**：商家可以識別季節性趨勢，這有助於他們為特定產品的週期性需求變化做好準備。 此外，商家可以識別任何產品在不同年份的整體人氣變化。<br> **轉換分析**：瞭解產品購買時間，搭配存取店面印象事件，商戶便能產生豐富的客戶個人檔案，以執行轉換分析。 |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 深入分析客戶行為與行銷活動績效 | **訂單退貨**：商戶可識別有回訪產品模式的客戶和大型客戶區段。 這有助於商家改善他們的商業策略，因為他們瞭解他們的客戶基礎行為是什麼樣子。<br> **訂單地址**：根據送貨地址，商家可以瞭解訂單是由客戶自行下達，還是由其他個人或實體下達。<br> **季節性趨勢**：商家可以識別季節性趨勢，這有助於他們為特定產品的週期性需求變化做好準備。 此外，商家可以識別任何產品在不同年份的整體人氣變化。<br> **轉換分析**：瞭解產品購買時間，搭配存取店面印象事件，商戶便能產生豐富的客戶個人檔案，以執行轉換分析。 **注意** Adobe Analytics僅支援行為（店面）事件資料。 Adobe Analytics不支援異動(Backoffice)事件資料。 |
-| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨管道的行銷活動協調 | **行為型歷程**：兩年前購買行動電話的客戶現在可能正在尋找新的行動電話，因此可能會成為購買新行動電話的目標。 此外，個人化行銷活動和促銷活動可用於鎖定這類客戶。 [!DNL Journey Optimizer] 可使用其電子郵件和簡訊功能來聯絡這些客戶。 歷史訂單資料與行為資料可用於識別趨勢。 如果客戶過去曾購買特定組態的專案，而現在又希望購買相同的產品，可以讓他們輕鬆檢視/存取相同的產品組態，藉此增強購買歷程。<br> **個人化**：存取客戶設定檔資訊時， [!DNL Journey Optimizer] 可解鎖高度個人化的歷程，讓商家透過多個不同管道聯絡客戶。<br> **已建立新的設定檔**：歡迎電子郵件和促銷活動可鼓勵並影響新客戶的購物歷程。<br> **設定檔已刪除**：商家可選擇停止傳送促銷電子郵件給已關閉帳戶的客戶。 或者，商家也可以建立行銷活動，以贏回失去的客戶。 |
+| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨管道的行銷活動協調 | **行為型歷程**：商戶可建議購買新機型，藉此鎖定兩年前購買行動電話的客戶。 商戶可為這些客戶建立個人化的行銷活動和促銷活動，並使用電子郵件和簡訊功能來聯絡。 此外，商家可以使用歷史順序和行為資料來識別趨勢。 例如，如果客戶過去曾購買具有特定設定的專案，而現在又考慮購買相同的產品，則可讓他們看見並存取相同的產品設定，藉此增強其購買歷程。<br> **個人化**：存取客戶設定檔資訊時， [!DNL Journey Optimizer] 可解鎖高度個人化的歷程，讓商家透過多個不同管道聯絡客戶。<br> **已建立新的設定檔**：歡迎電子郵件和促銷活動可鼓勵並影響新客戶的購物歷程。<br> **設定檔已刪除**：商家可選擇停止傳送促銷電子郵件給已關閉帳戶的客戶。 或者，商家也可以建立行銷活動，以贏回失去的客戶。 |
 
 ## 將Experience Platform資料提取回Commerce
 
