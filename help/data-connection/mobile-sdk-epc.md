@@ -4,9 +4,9 @@ description: 瞭解如何搭配無周邊或自訂Commerce店面使用Adobe Exper
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,4 @@ ht-degree: 0%
 
    您現在已將Adobe Experience Platform Mobile SDK與Commerce行動應用程式整合。 事件資料會從您的應用程式傳輸至Experience Platform邊緣。
 
-若要瞭解如何從您的行動Commerce應用程式擷取Real-Time CDP對象，以告知購物車價格規則和動態區塊，請參閱 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+若要瞭解如何從您的行動Commerce應用程式擷取Real-Time CDP對象，以告知購物車價格規則和動態區塊，請參閱 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

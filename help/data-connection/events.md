@@ -4,7 +4,7 @@ description: 瞭解每個事件擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commer
 
 ## 後台活動
 
-後台事件包含有關訂單狀態的資訊，例如訂單是否已下達、取消、退款、已出貨或完成。 這些伺服器端事件收集的資料會顯示購物者訂單的360度檢視。 此檢視可協助商家在開發行銷活動時，更妥善地鎖定目標或分析整個訂單狀態。 例如，您可以找出某些產品類別中在一年中不同時間表現良好的趨勢。 例如，在較冷的月份銷售較佳的冬季服飾，或購物者多年來感興趣的特定產品顏色。 此外，訂單狀態資料可協助您瞭解購物者根據先前訂單轉換的傾向，進而計算期限客戶值。
+後台事件包含訂單狀態的相關資訊，例如訂單是否為 [已下單](#orderplaced)， [已取消](#ordercancelled)， [已退款](#orderitemreturncompleted)， [已送出](#ordershipmentcompleted)，或 [已完成](#ordershipmentcompleted). 這些伺服器端事件收集的資料會顯示購物者訂單的360度檢視。 此檢視可協助商家在開發行銷活動時，更妥善地鎖定目標或分析整個訂單狀態。 例如，您可以找出某些產品類別中在一年中不同時間表現良好的趨勢。 例如，在較冷的月份銷售較佳的冬季服飾，或購物者多年來感興趣的特定產品顏色。 此外，訂單狀態資料可協助您瞭解購物者根據先前訂單轉換的傾向，進而計算期限客戶值。
 
 >[!NOTE]
 >

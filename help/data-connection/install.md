@@ -4,9 +4,9 @@ description: 瞭解如何安裝、更新及解除安裝 [!DNL Data Connection] �
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 ## 安裝擴充功能
 
 此 [!DNL Data Connection] 擴充功能可從以下網址取得： [Adobe市集](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). 當您從伺服器的命令列安裝此擴充功能時，會連結至您的Adobe Commerce安裝，做為 [服務](../landing/saas.md). 當程式完成時， **[!DNL Data Connection]** 和 **Commerce服務聯結器** 出現在 **系統** 下的選單 **服務** 在商務中 _管理員_.
+
+![[!DNL Data Connection] 擴充功能管理員檢視](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
