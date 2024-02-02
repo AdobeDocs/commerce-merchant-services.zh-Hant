@@ -2,9 +2,10 @@
 title: 『[!DNL Live Search] 活動
 description: 瞭解事件如何收集資料 [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,21 +36,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->為了以下目的而收集資料 [!DNL Live Search] 不包括個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [深入了解](https://www.adobe.com/privacy/experience-cloud.html).
+>為了以下目的而收集資料 [!DNL Live Search] 不包括個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [瞭解更多](https://www.adobe.com/privacy/experience-cloud.html).
 
 ## 必要的儀表板事件
 
-有些事件需要填入 [即時搜尋儀表板](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+有些事件需要填入 [即時搜尋儀表板](performance.md)
 
-| 儀表板區域 | 活動 |
-| ----- | ---- | 
-| 不重複搜尋 | `search-request-sent`,`search-response-received` |
-| 零結果搜尋 | `search-request-sent`,`search-response-received` |
-| 零結果率 | `search-request-sent`,`search-response-received` |
-| 熱門搜尋 | `search-request-sent`,`search-response-received` |
-| 平均 按一下位置 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| 點進率 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| 轉換率 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| 儀表板區域 | 活動 | 加入欄位 |
+| ------------------- | ------------- | ---------- |
+| 不重複搜尋 | `page-view`， `search-request-sent`， | searchRequestId |
+| 零結果搜尋 | `page-view`， `search-request-sent`， | searchRequestId |
+| 零結果率 | `page-view`， `search-request-sent`， | searchRequestId |
+| 熱門搜尋 | `page-view`， `search-request-sent`， | searchRequestId |
+| 平均 按一下位置 | `page-view`， `search-request-sent`， `search-response-received`， `search-results-view`， `search-product-click` | searchRequestId |
+| 點進率 | `page-view`， `search-request-sent`， `search-response-received`， `search-results-view`， `search-product-click` | searchRequestId， sku |
+| 轉換率 | `page-view`， `search-request-sent`， `search-response-received`， `search-results-view`， `search-product-click`， `product-view`， `add-to-cart`， `place-order` | searchRequestId， sku |
 
 ### 必要內容
 
