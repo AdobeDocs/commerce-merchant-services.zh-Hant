@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] 發行說明"
+title: '"[!DNL Live Search] 發行說明」'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,38 @@ _2023年4月25日_
 
 ![新增](../assets/new.svg) [!DNL Live Search] 客戶現在可以利用新的 [SaaS價格索引子](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_2024年2月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+### 新功能
+
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援設定預設規則 [搜尋銷售](rules.md).
+![新增](../assets/new.svg) 已新增多項新功能至 [PLP Widget](plp-styling.md)：
+
+* 清單/格線檢視切換
+* 「加入購物車」按鈕
+* 色票支援
+* 每個產品有多個影像
+* 價格滑桿
+* 語言支援
+
+商家必須升級 [!DNL Live Search] 版次>= 4.1.0的擴充功能以存取這些功能。
+
+安裝3.1.1版或更新版本後，啟用新的索引子：
+
+* 產品價格摘要
+* 範圍網站資料摘要
+* 範圍客戶群組資料摘要
+
+升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
+
+## 舊版
+
++++4.0.0和舊版
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _2023年11月13日_
@@ -61,27 +93,11 @@ _2023年11月13日_
 ![修正](../assets/fix.svg) 已重新設定CSS樣式，以便更妥善區隔Widget類別。
 ![修正](../assets/fix.svg) 微幅錯誤修正
 
-商家必須升級 [!DNL Live Search] 版次>= 4.0.0的擴充功能以存取這些功能。
-
-安裝3.1.1版或更新版本後，啟用新的索引子：
-
-* 產品價格摘要
-* 範圍網站資料摘要
-* 範圍客戶群組資料摘要
-
-升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
-
-## 舊版
-
-+++3.1.1和舊版
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _2023年9月15日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
-
-
 
 ![新增](../assets/new.svg) 已新增「類別銷售」索引標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
 ![新增](../assets/new.svg) 使用者可使用智慧型或手動排名新增單一類別規則

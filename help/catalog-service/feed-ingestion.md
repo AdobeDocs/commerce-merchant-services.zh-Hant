@@ -1,23 +1,19 @@
 ---
 title: 摘要擷取服務
 description: 瞭解Adobe Commerce的摘要擷取服務
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # 摘要擷取服務
-
->[!NOTE]
->
->摘要擷取服務目前處於私人測試階段。 尚未開放一般使用。
 
 摘要擷取服務可讓擁有大型和/或複雜目錄的客戶直接將資料傳送至Adobe Commerce服務。
 
-摘要擷取服務會略過Adobe Commerce執行個體，並將目錄資料從協力廠商企業資源規劃(ERP)直接移動至Adobe Commerce服務，減少處理產品變更（價格更新、新增屬性）所需的時間。
+摘要擷取服務會略過Adobe Commerce執行個體，並將目錄資料從協力廠商企業資源規劃(ERP)直接移動至Adobe Commerce服務，以減少處理產品變更（價格更新、新增屬性）所需的時間。
 
 此服務適用於在核心Adobe Commerce應用程式外部系統中儲存和管理其產品目錄的客戶。 它作為API提供，因此客戶可以將其整合到其現有系統中，為其部署提供更大的靈活性。
 
@@ -36,12 +32,6 @@ ht-degree: 0%
 
 略過核心Commerce應用程式並直接將資料移至Commerce服務，產品更新就會更快反映在商店中。 核心目錄資料（例如SKU）會傳送至核心商務應用程式，以供個別處理。
 
-## 加入Beta
+## API
 
-摘要擷取服務是專為下列用途而設計：
-
-* 擁有Headless實作的中型企業客戶
-* 擁有大型複雜目錄的客戶
-* 客戶未使用Adobe Commerce管理員管理目錄資料，而是使用ERP或協力廠商系統管理目錄資料
-
-如果您有興趣加入Beta版計畫，請透過sagonzal@adobe.com聯絡團隊。
+此 [摘要擷取服務API檔案](https://developer.adobe.com/commerce/services/feed-ingestion) 提供如何實作服務的詳細資訊。

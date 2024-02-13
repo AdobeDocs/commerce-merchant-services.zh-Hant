@@ -3,9 +3,9 @@ title: 簡介 [!DNL Product Recommendations]
 description: 『[!DNL Product Recommendations] 是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。」
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 ## 隱私權
 
-為產品推薦目的而收集的資料不含任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱 [Adobe隱私權原則](https://www.adobe.com/privacy/policy.html).
+為了以下目的而收集資料 [!DNL Product Recommendations] 不包括任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱 [Adobe隱私權原則](https://www.adobe.com/privacy/policy.html).
+
+[!DNL Product Recommendations] 使用者可以參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 以取得資料同步的詳細資訊。
 
 ## 產品建議與產品關係
 

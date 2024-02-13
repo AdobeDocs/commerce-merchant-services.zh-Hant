@@ -1,15 +1,15 @@
 ---
-title: 「效能」
+title: 「效能儀表板」
 description: 「此 [!DNL Live Search] 績效儀表板可讓您深入瞭解購物者使用的搜尋辭彙。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# 效能
+# 效能儀表板
 
 此 [!DNL Live Search] 績效儀表板可讓您深入分析購物者使用的搜尋辭彙。 此資訊可用於識別趨勢、增加點進和提高轉換率。 「效能」儀表板提供特定日期範圍的搜尋測量結果快照，並包括下列報表：
 
@@ -18,6 +18,8 @@ ht-degree: 0%
 * 常見結果
 
 ![效能](assets/performance-unique-searches.png)
+
+您也可以參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 以取得資料同步的詳細資訊。
 
 ## 檢視報告
 
@@ -29,7 +31,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >效能儀表板每12小時更新一次。
-
 
 ## 欄位說明
 

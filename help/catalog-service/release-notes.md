@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] 發行說明'
+title: 『[!DNL Catalog Service] 版本注意事項
 description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ ht-degree: 1%
 
 ## 目前的主要版本
 
-### V1.13版本
+### V1.16版本
 
-_2023年10月12日_
+_2023年2月13日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) 目錄服務支援 `inStock` 產品變體的標幟。
-![新增](../assets/new.svg) `urlKey` 和 `externalId` 已新增至GraphQL結構描述。
-![新增](../assets/new.svg) 現已支援可下載的產品和禮品卡。
+![新增](../assets/new.svg) 目錄服務API現在支援產品影片。
+![修正](../assets/fix.svg) 現在支援固定價格的套件組合產品。
+![修正](../assets/fix.svg) 無庫存選項現在顯示在PDP Widget中。
 
 #### 已知限制
 
 尚未支援這些功能：
 
-* 捆綁固定價格的產品
 * 動態屬性承載的大小上限為9 MB。
 * 群組產品價格。 可使用簡單產品價格計算。
 * 在影像陣列中，只有第一個影像包含角色。
@@ -49,6 +48,16 @@ _2023年10月12日_
 ## 舊版
 
 +++ 舊版
+
+### V1.13版本
+
+_2023年10月12日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg) 目錄服務支援 `inStock` 產品變體的標幟。
+![新增](../assets/new.svg) `urlKey` 和 `externalId` 已新增至GraphQL結構描述。
+![新增](../assets/new.svg) 現已支援可下載的產品和禮品卡。
 
 ### V1.12版本
 

@@ -3,9 +3,9 @@ title: 「技術概覽」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## Widget程式碼存放庫
 
-產品清單頁面Widget和「搜尋彈出視窗」Widget都可從其Github存放庫下載。
+產品清單頁面Widget和「即時搜尋」欄位Widget都可從其Github存放庫下載。
 
 如此一來，開發人員就能完全自訂功能與樣式。 這些使用者自行託管程式碼，同時仍利用 [!DNL Live Search] 服務。
 
@@ -160,6 +160,8 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
 * 最低廣告價格
 
 檢視 [API網格](../catalog-service/mesh.md) 適用於較複雜的價格計算。
+
+價格格式支援Commerce例項中的地區設定組態設定： *商店* >設定> *設定* >一般> *一般* >本機選項>地區設定。
 
 ## PWA支援
 
@@ -192,7 +194,7 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/index.md)�
 ## 目前不支援
 
 * 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
-* [層級定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支援 [!DNL Live Search] 彈出視窗和產品清單頁面Widget。
+* [層級定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支援 [!DNL Live Search] 欄位與產品清單頁面Widget。
 
 ## Cookie
 

@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Catalog Service]'
+title: 『[!DNL Catalog Service]『
 description: 『[!DNL Catalog Service] 適用於Adobe Commerce的提供一種方法，讓您以比原生Adobe Commerce GraphQL查詢快得多的速度，擷取產品顯示頁面和產品清單頁面的內容。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Commerce擁有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查詢（讀取操作）和變動（寫入操作），讓購物者可以與多種型別的頁面互動，包括產品、客戶帳戶、購物車、結帳等。 但是，傳回產品資訊的查詢沒有針對速度進行最佳化。 GraphQL系統只能對產品和相關資訊執行查詢。 這些查詢比類似的核心查詢效能更高。
 
-目錄服務客戶可以使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
+[!DNL Catalog Service] 客戶可以使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
 
 ## 架構
 
@@ -62,13 +62,13 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 ### 價格
 
-簡單產品代表有價格的基本銷售單位。 「型錄服務」會計算折扣前的一般價格，以及折扣後的最終價格。 定價計算可包含固定產品稅捐。 他們會排除個人化促銷活動。
+簡單產品代表有價格的基本銷售單位。 [!DNL Catalog Service] 計算折扣前的一般價格，以及折扣後的最終價格。 定價計算可包含固定產品稅捐。 他們會排除個人化促銷活動。
 
 複雜的產品沒有設定價格。 相反地，目錄服務會傳回連結的簡單專案的價格。 例如，商家一開始可以為可設定產品的所有變體指定相同的價格。 如果某些尺寸或顏色不受歡迎，商家可以降低這些系列產品的價格。 因此，複雜（可設定）產品的價格一開始會顯示價格範圍，反映標準及不受歡迎的變體的價格。 購物者為所有可用選項選取值後，店面會顯示單一價格。
 
 >[!NOTE]
 >
-> 商務客戶具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格變更更新和同步化時間： [SaaS價格索引子](../price-index/index.md).
+> 商務客戶具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/index.md).
 
 ## 實施
 

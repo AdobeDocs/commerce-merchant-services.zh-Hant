@@ -2,9 +2,9 @@
 title: 產品清單頁面Widget
 description: 啟用並設定樣式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ ht-degree: 0%
 
 1. 前往 **商店** >設定> **設定** > **[!DNL Live Search]** > **店面特色** 並設定 **啟用產品清單Widget** 設為「否」。
 1. 選取 **儲存設定** 以儲存設定。
+
+## Widget功能
+
+PLP Widget提供可搜尋產品頁面中所需的一系列功能。 這些功能包括：
+
+* 依屬性篩選。
+* 支援色票
+* 加入購物車功能
+* 多語言支援
+* 價格滑桿
 
 ## 樣式範例
 
