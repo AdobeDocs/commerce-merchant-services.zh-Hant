@@ -5,9 +5,9 @@ breadcrumb-title: 「[!DNL Catalog Service] 指南」
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: a2f933151481cbdd39d66a0dfbd36e6c339ede62
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '53'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 - [上線和安裝](installation.md)
 - [目錄服務和API網格](mesh.md)
 - [使用API網格顯示稅價](taxes.md)
-- [摘要擷取服務(Beta)](feed-ingestion.md)
+- [資料擷取服務](data-ingestion.md)
 - GraphQL查詢 {#graphql}
    - [類別查詢](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
    - [產品查詢](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
