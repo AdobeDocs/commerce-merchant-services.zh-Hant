@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 發行說明」'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 0%
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
 
+_2024年2月13日_
+
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援設定預設規則 [搜尋銷售](rules.md).
+
 _2023年10月27日_
 
 ![新增](../assets/new.svg) 此 [!DNL Live Search] PLP Widget現在支援色票。
@@ -41,37 +45,26 @@ _2023年4月25日_
 
 ![新增](../assets/new.svg) [!DNL Live Search] 客戶現在可以利用新的 [SaaS價格索引子](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_2024年2月13日_
+_Feb 13, 2024_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### 新功能
+### New Features
 
-![新增](../assets/new.svg) [!DNL Live Search] 現在支援設定預設規則 [搜尋銷售](rules.md).
-![新增](../assets/new.svg) 已新增多項新功能至 [PLP Widget](plp-styling.md)：
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* 清單/格線檢視切換
-* 「加入購物車」按鈕
-* 色票支援
-* 每個產品有多個影像
-* 價格滑桿
-* 語言支援
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-商家必須升級 [!DNL Live Search] 版次>= 4.1.0的擴充功能以存取這些功能。
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-安裝3.1.1版或更新版本後，啟用新的索引子：
-
-* 產品價格摘要
-* 範圍網站資料摘要
-* 範圍客戶群組資料摘要
-
-升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
-
-## 舊版
-
-+++4.0.0和舊版
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -92,6 +85,18 @@ _2023年11月13日_
 ![修正](../assets/fix.svg) 此 [!DNL Live Search] 新安裝現在預設啟用PLP Widget。
 ![修正](../assets/fix.svg) 已重新設定CSS樣式，以便更妥善區隔Widget類別。
 ![修正](../assets/fix.svg) 微幅錯誤修正
+
+安裝3.1.1版或更新版本後，啟用新的索引子：
+
+* 產品價格摘要
+* 範圍網站資料摘要
+* 範圍客戶群組資料摘要
+
+升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
+
+## 舊版
+
++++3.1.1和舊版
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
