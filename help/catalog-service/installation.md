@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 「瞭解如何安裝 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,3 @@ SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同�
 此 [Adobe Developer App Builder的API網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 可讓開發人員使用AdobeIO將私人或第三方API和其他介面與Adobe產品整合。
 
 請參閱  [[!DNL Catalog Service] 和API Mesh](mesh.md) 有關安裝和設定詳細資訊的主題。
-
-## 資料管理控制面板
-
-使用者可以參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 如需更多相關資料，請參閱 [!DNL Catalog Service] 資料同步。
