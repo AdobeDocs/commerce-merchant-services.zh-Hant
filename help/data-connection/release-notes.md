@@ -3,9 +3,9 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _2023年11月16日_
 
 _2023年10月10日_
 
-![新增](../assets/new.svg)  — 新增訂單狀態事件： [已開立商業發票的訂單](events.md#orderinvoiced)， [已起始訂單料號退貨](events.md#orderitemsreturninitiated)、和 [訂單專案退貨已完成](events.md#orderitemreturncompleted).
+![新增](../assets/new.svg)  — 新增訂單狀態事件： [已開立商業發票的訂單](events-backoffice.md#orderinvoiced)， [已起始訂單料號退貨](events.md#orderitemsreturninitiated)、和 [訂單專案退貨已完成](events.md#orderitemreturncompleted).
 ![修正](../assets/fix.svg)  — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
 ![修正](../assets/fix.svg)  — 修正啟用非同步下單時未顯示訂單確認訊息的錯誤。
 ![新增](../assets/new.svg)  — 新增資料至 [addToRequisitionList](events.md#addtorequisitionlist) 類別檢視頁面上的簡單產品事件。
@@ -71,6 +71,16 @@ _2022年10月12日_
 ![新增](../assets/new.svg)  — 新增 [AEM店面](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_2024年2月16日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg)  — 如果您正在參與Beta版測試，請確定您的 `composer.json` 檔案的根層級如下： ` "minimum-stability": "beta"`.
+![新增](../assets/new.svg)  — 新增以下功能： [新增自訂屬性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![新增](../assets/new.svg)  — 新增以下功能： [收集和傳送設定檔記錄](connect-data.md#send-customer-profile-data) 和資料進行Experience Platform。
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _2023年3月30日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 套件式 `commerce-data-export` 和 `saas-export` 的相依性 `experience-platform-connector` 副檔名。 之前，您必須分別安裝這些相依性。 這些相依性及商家設定可讓伺服器端處理 [後台活動](events.md#back-office-events).
-![新增](../assets/new.svg)  — 已新增名為的新後台事件 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![新增](../assets/new.svg)  — 套件式 `commerce-data-export` 和 `saas-export` 的相依性 `experience-platform-connector` 副檔名。 之前，您必須分別安裝這些相依性。 這些相依性及商家設定可讓伺服器端處理 [後台活動](events-backoffice.md).
+![新增](../assets/new.svg)  — 已新增名為的新後台事件 [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 
