@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 發行說明」'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
+source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄」設定控制項來顯示或隱藏欄。
 
 +++
+
+## v2.3.3
+
+_2024年2月14日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-5048 --> 新增對PHP 8.3的支援
+
+![修正](../assets/fix.svg)<!-- PAY-5048 --> 修正的錯誤 `is_deleted` 標幟。 現在，訂單不會因為 `Rejected` 從擴充功能傳送的狀態。
 
 ## v2.3.2
 
