@@ -3,7 +3,7 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _2023年11月16日_
 
 _2023年10月10日_
 
-![新增](../assets/new.svg)  — 新增訂單狀態事件： [已開立商業發票的訂單](events-backoffice.md#orderinvoiced)， [已起始訂單料號退貨](events.md#orderitemsreturninitiated)、和 [訂單專案退貨已完成](events.md#orderitemreturncompleted).
+![新增](../assets/new.svg)  — 新增訂單狀態事件： [已開立商業發票的訂單](events-backoffice.md#orderinvoiced)， [已起始訂單料號退貨](events-backoffice.md#orderitemsreturninitiated)、和 [訂單專案退貨已完成](events-backoffice.md#orderitemreturncompleted).
 ![修正](../assets/fix.svg)  — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
 ![修正](../assets/fix.svg)  — 修正啟用非同步下單時未顯示訂單確認訊息的錯誤。
 ![新增](../assets/new.svg)  — 新增資料至 [addToRequisitionList](events.md#addtorequisitionlist) 類別檢視頁面上的簡單產品事件。

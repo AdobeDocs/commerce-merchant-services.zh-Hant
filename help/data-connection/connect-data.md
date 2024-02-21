@@ -3,7 +3,7 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 為確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱 [必備條件](overview.md#prerequisites).
 
-請參閱活動主題以深入瞭解 [店面](events.md#storefront-events)， [後台](events.md#back-office-events)、和 [設定檔](events.md#customer-profile-events-server-side) 事件。
+請參閱活動主題以深入瞭解 [店面](events.md#storefront-events)， [後台](events-backoffice.md)、和 [設定檔](events-backoffice.md#customer-profile-events-server-side) 事件。
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 您可傳送兩種型別的設定檔資料至Experience Platform：設定檔記錄和時間序列設定檔事件。
 
-個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構和資料集為 [已正確設定](profile-data.md)，則會將設定檔記錄傳送至Experience Platform，並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構和資料集為 [已正確設定](profile-data.md)，則會將設定檔記錄傳送至Experience Platform，並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hant).
 
 時間序列設定檔事件包含購物者設定檔資訊的相關資料，例如是否他們在您的網站上建立、編輯或刪除帳戶。 將設定檔事件資料傳送至Experience Platform時，該資料會位於資料集中，以供其他DX產品使用。
 
@@ -193,7 +193,7 @@ ht-degree: 0%
 
 ### 傳送歷史訂單資料
 
-Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events.md#back-office-events). 您可以使用 [!DNL Data Connection] 擴充功能可將歷史資料傳送至Experience Platform，讓您的客戶設定檔更為豐富，並根據這些過去的訂單個人化客戶體驗。 資料儲存在Experience Platform內的資料集中。
+Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events-backoffice.md#back-office-events). 您可以使用 [!DNL Data Connection] 擴充功能可將歷史資料傳送至Experience Platform，讓您的客戶設定檔更為豐富，並根據這些過去的訂單個人化客戶體驗。 資料儲存在Experience Platform內的資料集中。
 
 雖然Commerce已收集歷史訂單資料，但您必須完成數個步驟才能將該資料傳送至Experience Platform。
 
