@@ -2,7 +2,7 @@
 title: 產品清單頁面Widget
 description: 啟用並設定樣式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 PLP Widget提供可搜尋產品頁面中所需的一系列功能。 這些功能包括：
 
-* 依屬性篩選。
+* 依屬性篩選
 * 支援色票
 * 加入購物車功能
 * 多語言支援

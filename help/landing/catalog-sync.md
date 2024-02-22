@@ -3,9 +3,9 @@ title: 目錄同步
 description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # 目錄同步
 
+>[!NOTE]
+>
+> 「目錄同步」控制面板現在是「資料管理」控制面板。 這個改版後的儀表板現在支援 [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service]. 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 如需詳細資訊，請參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 檔案。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
+
 Adobe Commerce使用索引器將目錄資料編譯到表格中。 程式自動觸發自 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如產品價格或存貨層次變更。
 
 目錄同步服務會將產品資料從 [!DNL Adobe Commerce] 執行個體至 [!DNL Commerce Services] 平台，持續保持資料在最新狀態。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要目前的目錄資訊，才能以正確的名稱、價格和可用性準確傳回建議。 使用 _目錄同步_ 儀表板來觀察和管理同步程式或 [命令列介面](#resynccmdline) 觸發目錄同步並重新索引產品資料以供以下人員使用： [!DNL Commerce Services].
 
->[!NOTE]
->
-> 若要使用 _目錄同步_ 圖示板或命令列介面，您必須有 [API金鑰和已設定的SaaS資料空間](saas.md).
-
 ## 存取目錄同步控制面板
-
->[!NOTE]
->
-> 此 _目錄同步_ 控制面板僅適用於 _產品Recommendations_ 模組已安裝，且僅會反映與該功能相關的資料投影。 支援其他商務服務，例如 _即時搜尋_ 和 _目錄服務_ 已規劃為未來使用。
 
 若要存取「目錄同步」儀表板，請選取 **系統** > _資料傳輸_ > **目錄同步**.
 
