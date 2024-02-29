@@ -3,7 +3,7 @@ title: 簡介 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerce提供快速、相關且直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## [!DNL Live Search] 工作區
 
-此 [!DNL Live Search] [工作區](workspace.md) 是管理員中您設定的 [!DNL Live Search] 同義字、多面向和類別銷售等功能。
+此 [!DNL Live Search] [工作區](workspace.md) 是管理員中您設定的區域 [!DNL Live Search] 同義字、多面向和類別銷售等功能。
 
 ## 活動
 

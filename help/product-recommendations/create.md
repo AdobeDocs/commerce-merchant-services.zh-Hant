@@ -2,9 +2,9 @@
 title: 建立新建議
 description: 瞭解如何建立產品推薦單位。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ _推薦單位_
 1. 在 _為您的建議命名_ 區段，輸入內部參考的描述性名稱，例如 `Home page most popular`.
 
 1. 在 _選取頁面型別_ 區段，從下列選項中選取您要顯示建議的頁面：
+
+   >[!NOTE]
+   >
+   > 當您的商店設定為時，購物車頁面不支援產品Recommendations [將產品新增到購物車後立即顯示購物車頁面](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * 首頁
    * 類別
