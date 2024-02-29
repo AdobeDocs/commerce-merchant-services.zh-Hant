@@ -3,18 +3,14 @@ title: 更新Commerce資料擷取的設定檔記錄結構
 description: 瞭解如何建立結構、資料集和資料串流，以收集並傳送Commerce設定檔記錄資料給Experience Platform。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # 更新Commerce資料擷取的設定檔記錄結構
-
->[!NOTE]
->
->此功能為測試版。 如果您想要加入Beta版計畫，請傳送要求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 當您的購物者在您的Commerce網站中建立設定檔時，會建立設定檔記錄並擷取資料。 您必須先建立該設定檔記錄專屬的結構描述和資料集，才能將該設定檔資料串流至Experience Platform。
 

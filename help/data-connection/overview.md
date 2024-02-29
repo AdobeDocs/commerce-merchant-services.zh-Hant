@@ -3,9 +3,9 @@ title: 指南概觀
 description: 瞭解如何使用整合Adobe Commerce資料與Adobe Experience Platform [!DNL Data Connection] 副檔名。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Platform提供了一套技術，可在與您Commerce商店的�
 
 ## 將Experience Platform資料提取回Commerce
 
-使用將您的Commerce資料傳送到Experience Platform [!DNL Data Connection] 擴充功能是Commerce資料共用功能的一部分。 另一端（選用的擴充功能）稱為 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 此擴充功能可讓您在Real-Time CDP中建立受眾，並將這些受眾部署至您的Commerce商店，以告知購物車價格規則、相關產品規則（測試版）和動態區塊。
+使用將您的Commerce資料傳送到Experience Platform [!DNL Data Connection] 擴充功能是Commerce資料共用功能的一部分。 另一端（選用的擴充功能）稱為 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 此擴充功能可讓您在Real-Time CDP中建立受眾，並將這些受眾部署至您的Commerce商店，以告知購物車價格規則、相關產品規則和動態區塊。
 
 從高層面來看，從Commerce商店到Experience Platform並透過Audience Activation擴充功能返回的資料流程如下所示：
 

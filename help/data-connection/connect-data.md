@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ### 新增服務帳戶和認證詳細資料
 
-如果您計畫收集並傳送 [歷史訂單資料](#send-historical-order-data) 或 [(Beta)客戶設定檔資料](#send-customer-profile-data)，您必須新增服務帳戶和認證詳細資料。 此外，如果您要設定 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 擴充功能上，您必須完成這些步驟。
+如果您計畫收集並傳送 [歷史訂單資料](#send-historical-order-data) 或 [客戶設定檔資料](#send-customer-profile-data)，您必須新增服務帳戶和認證詳細資料。 此外，如果您要設定 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 擴充功能上，您必須完成這些步驟。
 
 如果您只收集及傳送店面或後台資料，可跳至 [一般](#general) 區段。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 - **後台** （伺服器端資料）是在Commerce伺服器中擷取的資料。 這包括訂單狀態的相關資訊，例如，訂單是否已下達、取消、退款、出貨或完成。 其中也包含 [歷史訂單資料](#send-historical-order-data).
 
-- (**測試版**) **個人資料** 是與購物者的設定檔資訊相關的資料。 瞭解 [更多](#send-customer-profile-data).
+- **個人資料** 是與購物者的設定檔資訊相關的資料。 瞭解 [更多](#send-customer-profile-data).
 
 為確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱 [必備條件](overview.md#prerequisites).
 
@@ -157,10 +157,6 @@ ht-degree: 0%
 上線後，店面資料開始流入Experience Platform邊緣。 後端辦公室資料大約需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
 
 ### 傳送客戶設定檔資料
-
->[!IMPORTANT]
->
->此功能為測試版。 如果您想要加入Beta版計畫，請傳送要求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 您可傳送兩種型別的設定檔資料至Experience Platform：設定檔記錄和時間序列設定檔事件。
 

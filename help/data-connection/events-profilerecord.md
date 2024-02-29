@@ -3,18 +3,14 @@ title: 設定檔記錄
 description: 瞭解設定檔記錄擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 設定檔記錄(Beta)
-
->[!NOTE]
->
->此功能為測試版。 如果您想要加入Beta版計畫，請傳送要求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] 設定檔記錄
 
 以下說明安裝時可用的Commerce設定檔記錄資料 [!DNL Data Connection] 副檔名。 設定檔記錄中的資料會傳送至Adobe Experience Platform。
 

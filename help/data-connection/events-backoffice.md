@@ -3,9 +3,9 @@ title: 後台活動
 description: 瞭解每個後台事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 類別的路徑。 |
 
 ## 客戶設定檔事件（後台）
-
->[!NOTE]
->
->**測試版** 從伺服器端產生的設定檔事件可供Beta版參與者使用。 如果您想要加入Beta版計畫，請傳送要求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 從伺服器端擷取的設定檔事件包含帳戶資訊，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [店面](#customer-profile-events-storefront).
 

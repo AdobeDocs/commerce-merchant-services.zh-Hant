@@ -4,9 +4,9 @@ description: 瞭解如何建立結構、資料集和資料串流，以收集和�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ ht-degree: 0%
 若要包含購物者的設定檔資訊，請參閱下一節。
 
 ## 時間序列設定檔事件資料
-
->[!NOTE]
->
->此功能為測試版。 如果您想要加入Beta版計畫，請傳送要求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 時間序列設定檔事件資料產生自下列事件：
 
