@@ -3,7 +3,7 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -72,9 +72,9 @@ _2022年10月12日_
 
 +++
 
-## 3.2.0-beta1
+## 3.2.0-beta2
 
-_2024年2月16日_
+_2024年3月4日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
