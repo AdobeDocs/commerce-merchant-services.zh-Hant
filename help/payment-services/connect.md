@@ -3,9 +3,9 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * 如果您有 *已連線您的執行個體*，透過取得及使用您的API憑證並設定Commerce Services，您可以繼續前往 [設定您的測試沙箱](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * 如果您仍然 *需要連線您的執行個體*，請參閱本主題中關於以下內容的資訊： [取得API認證](#obtain-api-credentials) 和 [設定Commerce服務](#configure-commerce-services).
 * 如果您是 *不確定您的執行個體是否已連線*，導覽至 **系統** >服務> **Commerce服務聯結器** 並檢視中的公開和私人API金鑰值 [!UICONTROL Sandbox Keys] 和 [!UICONTROL Production Keys] 區段，以及 *專案* 和 *資料空間* 中的欄位 [!UICONTROL SaaS Identifier] 區段。 如果這些值存在，表示您的執行個體已連線。
+
+>[!NOTE]
+>
+>所有有權使用支付服務的商戶都可以使用一個生產資料空間和兩個測試資料空間。
 
 ## 取得API認證
 
