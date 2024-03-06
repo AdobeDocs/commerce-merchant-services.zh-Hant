@@ -3,7 +3,7 @@ title: 『[!DNL Catalog Service]『
 description: 『[!DNL Catalog Service] 適用於Adobe Commerce的提供一種方法，讓您以比原生Adobe Commerce GraphQL查詢快得多的速度，擷取產品顯示頁面和產品清單頁面的內容。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Commerce擁有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查詢（讀取操作）和變動（寫入操作），讓購物者可以與多種型別的頁面互動，包括產品、客戶帳戶、購物車、結帳等。 但是，傳回產品資訊的查詢沒有針對速度進行最佳化。 GraphQL系統只能對產品和相關資訊執行查詢。 這些查詢比類似的核心查詢效能更高。
 
-[!DNL Catalog Service] 客戶可以使用新的 [SaaS價格索引子](../price-index/index.md)，提供更快的價格變更更新和同步處理時間。
+[!DNL Catalog Service] 客戶可以使用新的 [SaaS價格索引子](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
 
 ## 架構
 
@@ -68,7 +68,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 >[!NOTE]
 >
-> 商務客戶具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/index.md).
+> 商務客戶具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/price-indexing.md).
 
 ## 實施
 
