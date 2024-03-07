@@ -2,9 +2,9 @@
 title: 產品Recommendations管理員開發
 description: 產品Recommendations架構和開發功能的概觀。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 - **目錄**  — 產品中繼資料，例如名稱、價格、可用性等。
 
 當您安裝 `magento/product-recommendations` 模組，Adobe Sensei會彙總行為和目錄資料，針對每種建議型別建立產品Recommendations。 然後，產品Recommendations服務會將這些建議部署至您的店面。
+
+>[!NOTE]
+>
+>對於可設定的產品，「產品Recommendations」會使用建議單位中上層產品的影像。 如果可設定的產品未指定影像，則該特定產品的建議單位將為空白。
 
 ## 後續步驟
 

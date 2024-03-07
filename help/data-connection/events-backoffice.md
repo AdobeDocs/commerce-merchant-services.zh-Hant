@@ -3,9 +3,10 @@ title: 後台活動
 description: 瞭解每個後台事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 除了下列事件收集的資料外，您也會收到 [其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
 
-後台事件包含伺服器端資料。 此資料包含 [訂單狀態](#order-status) 例如，訂單是否已下單、已取消、已退款、已出貨或完工。 伺服器端資料也包含 [客戶設定檔事件](#customer-profile-events-back-office) 資訊，例如帳戶是否已建立、更新或刪除。
+後台事件包含伺服器端資料。 此資料包含 [訂單狀態](#order-status) 例如，訂單是否已下單、已取消、已退款、已出貨或完工。 伺服器端資料也包含 [客戶設定檔事件](#customer-profile-events) 資訊，例如帳戶是否已建立、更新或刪除。
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ ht-degree: 0%
 | `productListItems.categories.name` | 類別的名稱。 |
 | `productListItems.categories.path` | 類別的路徑。 |
 
-## 客戶設定檔事件（後台）
+## 客戶設定檔事件
 
-從伺服器端擷取的設定檔事件包含帳戶資訊，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [店面](#customer-profile-events-storefront).
+從伺服器端擷取的設定檔事件包含帳戶資訊，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [店面](events.md#customer-profile-events).
 
 ### accountCreated
 

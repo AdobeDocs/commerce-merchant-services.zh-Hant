@@ -4,9 +4,9 @@ description: 瞭解每個行為事件擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ ht-degree: 0%
 | `productListItems.selectedOptions.attribute` | 識別可設定產品的屬性，例如 `size` 或 `color`. |
 | `productListItems.selectedOptions.value` | 識別屬性值，例如 `small` 或 `black`. |
 
-## 客戶設定檔事件（行為）
+## 客戶設定檔事件
 
-從店面擷取的設定檔事件包含帳戶資訊，例如 `signIn`， `signOut`， `createAccount`、和 `editAccount`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [伺服器端](events-backoffice.md#customer-profile-events-back-office).
+從店面擷取的設定檔事件包含帳戶資訊，例如 `signIn`， `signOut`， `createAccount`、和 `editAccount`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [伺服器端](events-backoffice.md#customer-profile-events).
 
 ### 登入
 
