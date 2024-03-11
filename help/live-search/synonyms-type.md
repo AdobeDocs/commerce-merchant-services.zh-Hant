@@ -2,9 +2,9 @@
 title: 「同義字型別」
 description: 「單向與雙向 [!DNL Live Search] 同義字會擴展關鍵字的定義。」
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 ### 一致性
 
 與目錄中術語的使用方式一致。 請記住，使用方式上可能有所地區差異，有時會產業內部有所差異。
-
-### 關鍵字對應
-
-此技巧使用可搜尋的產品屬性（而非同義字）來建立產品之間的關鍵字型關聯。 因此，對應的產品可能會出現在其他產品的搜尋結果中。 若要深入瞭解，請參閱 [搜尋結果](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
