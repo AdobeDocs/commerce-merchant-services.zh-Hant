@@ -3,9 +3,9 @@ title: 「安裝 [!DNL Live Search]"
 description: 「瞭解如何安裝、更新及解除安裝 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 執行下列動作：
 
-1. 確認 [cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 和 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 執行中。
+1. 確認 [cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) 和 [索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 執行中。
 
 1. 選擇符合您需求的入門方法，然後依照指示操作。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->由於Elasticsearch7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱 [移轉至OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 在 _升級指南_.
+>由於Elasticsearch7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱 [移轉至OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) 在 _升級指南_.
 
 ## 方法1：不使用OpenSearch安裝 {#method-1}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    >
    > 當資料已編制索引並同步時，店面中無法使用搜尋和類別瀏覽操作。 根據目錄的大小，程式可能需要至少一個小時的時間 `cron` 執行以將您的資料同步到 [!DNL Live Search] 服務。
 
-1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為「依排程更新」：
+1. 確認下列事項 [索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 設為「依排程更新」：
 
    * 產品摘要
    * 產品變體摘要
@@ -74,6 +74,8 @@ ht-degree: 0%
    * 產品價格摘要
    * 範圍網站資料摘要
    * 範圍客戶群組資料摘要
+   * 類別摘要
+   * 類別許可權摘要
 
 1. 設定您的 [API金鑰](#configure-api-keys) 並確認您的目錄資料為 [已同步](#synchronize-catalog-data) 替換為 [!DNL Live Search] 服務。
 
@@ -125,7 +127,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] 持續管理店面的搜尋請求，同時 [!DNL Live Search] 服務會在背景同步目錄資料和索引產品。
 
-1. 確認下列事項 [索引子](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 設為「依排程更新」：
+1. 確認下列事項 [索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 設為「依排程更新」：
 
    * 產品摘要
    * 產品變體摘要
@@ -201,7 +203,7 @@ ht-degree: 0%
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-如需其他說明，請參閱 [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) 位於支援知識庫中。
+如需其他說明，請參閱 [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) 位於支援知識庫中。
 
 ### 未來的產品更新
 
@@ -223,7 +225,7 @@ ht-degree: 0%
 
 ## 正在檢查安裝的版本
 
-在更新Live Search之前，請從命令列執行下列操作以檢查目前安裝的Live Search版本：
+在更新Live Search之前，請從命令列執行下列操作以檢查已安裝的Live Search版本：
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -271,14 +273,14 @@ composer update magento/live-search --with-dependencies
 
 ## 解除安裝 [!DNL Live Search] {#uninstall}
 
-若要解除安裝 [!DNL Live Search]，請參閱 [解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+若要解除安裝 [!DNL Live Search]，請參閱 [解除安裝模組](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] 套件 {#packages}
 
 | 封裝 | 說明 |
 |--- |--- |
 | `module-live-search` | 可讓商家針對多面向、同義字、查詢規則等設定其搜尋設定，並提供對唯讀GraphQL遊樂場的存取權，以測試來自 *管理員*. |
-| `module-live-search-adapter` | 將搜尋要求從店面路由至 [!DNL Live Search] 服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 路由店面的請求 [上層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) 至搜尋服務。<br /> — 全域搜尋 — 路由來自下列專案的請求： [快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 方塊位於店面右上角的 [!DNL Live Search] 服務。 |
+| `module-live-search-adapter` | 將搜尋要求從店面路由至 [!DNL Live Search] 服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 路由店面的請求 [上層導覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) 至搜尋服務。<br /> — 全域搜尋 — 路由來自下列專案的請求： [快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 方塊位於店面右上角的 [!DNL Live Search] 服務。 |
 | `module-live-search-storefront-popover` | 「依輸入方式搜尋」彈出視窗會取代標準快速搜尋，並傳回熱門搜尋結果的資料和縮圖。 |
 
 ## [!DNL Live Search] 相依性 {#dependencies}

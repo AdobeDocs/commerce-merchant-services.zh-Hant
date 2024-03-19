@@ -4,9 +4,9 @@ description: 瞭解每個行為事件擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ ht-degree: 0%
 | `commerce.commerceScope.storeCode` | 唯一商店代碼。 每個網站可以有許多商店。 |
 | `commerce.commerceScope.storeViewCode` | 唯一的存放區檢視代碼。 每個商店可以有多個商店檢視。 |
 | `commerce.commerceScope.websiteCode` | 不重複網站代碼。 一個環境中可以有許多網站。 |
+| `commerce.order` | 包含一或多個產品的擱置訂單相關資訊。 |
+| `commerce.order.discountAmount` | 表示套用至整張訂單的折扣金額。 |
 | `productListItems` | 加入購物車的一系列產品。 |
 | `productListItems.SKU` | 庫存單位。 產品的唯一識別碼。 |
 | `productListItems.name` | 產品的顯示名稱或人類看得懂的名稱。 |

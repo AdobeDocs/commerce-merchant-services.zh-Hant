@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 發行說明」'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,22 @@ _2023年10月12日_
 
 _2023年6月13日_
 
-![修正](../assets/fix.svg) 修正引號或撇號等字元造成排名問題的問題。 重新索引將解決這些問題。
+![修正](../assets/fix.svg) 修正引號或撇號等字元造成排名問題的問題。 重新索引可解決這些問題。
 
 _2023年4月25日_
 
 ![新增](../assets/new.svg) [!DNL Live Search] 客戶現在可以利用新的 [SaaS價格索引子](../price-index/price-indexing.md).
+
+## [!DNL Live Search] 4.1.1 {#411}
+
+_2024年3月19日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+### 新功能
+
+![新增](../assets/new.svg) 新增的語言支援 [波蘭文](technical-overview.md#language-support).
+![新增](../assets/new.svg) [!DNL Live Search] 對於執行Adobe Commerce 2.4.4的安裝現在支援PHP 8.3。
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -53,7 +64,7 @@ _2024年2月22日_
 
 ### 新功能
 
-![新增](../assets/new.svg) 此 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 現已推出。 此改版後的儀表板提供資料串流的深入分析 [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service].
+![新增](../assets/new.svg) 此 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) 現已推出。 此改版後的儀表板提供資料串流的深入分析 [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service].
 ![新增](../assets/new.svg) 已新增多項新功能至 [PLP Widget](plp-styling.md)：
 
 * 清單/格線檢視切換
@@ -177,12 +188,12 @@ _2023年3月14日_
 ### 新功能
 
 ![新增](../assets/new.svg) 規則預覽中的產品專案卡
-![新增](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![新增](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![新增](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
 ![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
-![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![新增](../assets/new.svg) [!DNL Live Search] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 ### 更新
 
@@ -254,7 +265,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 中可用的行數 [[!DNL storefront popover]](quick-tour.md) 您可從以下位置設定： *管理員*.
 ![新增](../assets/new.svg) 測試版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 支援 [!DNL Live Search].
 ![新增](../assets/new.svg) 此 [!DNL Live Search] 安裝程式會更新為進階程式變更。
-![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 從店面頁尾移除的連結。
+![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 從店面頁尾移除的連結。
 ![錯誤](../assets/bug.svg) 下列產品屬性不受支援 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 使用與PWA的Beta版相關時： `description`， `name`， `short_description`
 ![錯誤](../assets/bug.svg) 適用於的PWA測試版 [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
@@ -262,9 +273,9 @@ _2023年3月14日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 設定為時不再傳回錯誤 [Facet]({%連結live-search/facets-add.md %})。
-![修正](../assets/fix.svg) 修正無時會發生錯誤的問題 [貨幣符號](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可供使用。
-![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 現在顯示 [特殊價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) （最低最終價格）。
+![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) 設定為時不再傳回錯誤 [Facet]({%連結live-search/facets-add.md %})。
+![修正](../assets/fix.svg) 修正無時會發生錯誤的問題 [貨幣符號](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`)可供使用。
+![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 現在顯示 [特殊價格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) （最低最終價格）。
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
@@ -273,9 +284,9 @@ _2023年3月14日_
 ![新增](../assets/new.svg) [效能](performance.md) 報表儀表板可讓您深入分析購物者使用的搜尋辭彙。
 ![新增](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 可讓您存取具有事件發佈和訂閱服務以及量度的通用資料層。
 ![修正](../assets/fix.svg) 此 [[!DNL Storefront popover]](storefront-popover.md) 有新的 `active` 的類別 `.search-autocomplete` 控制可見性的容器。
-![修正](../assets/fix.svg) 在店面， [搜尋字詞](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#popular-search-terms) 已移除頁尾連結，且已停用其快取 [!DNL Live Search] 安裝。
+![修正](../assets/fix.svg) 在店面， [搜尋字詞](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) 已移除頁尾連結，且已停用其快取 [!DNL Live Search] 安裝。
 ![錯誤](../assets/bug.svg) Search配接卡的修補程式可處理重複的產品。
-![錯誤](../assets/bug.svg) [!DNL Live Search] 支援 [單一來源](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) （實體）清查地點有多個（虛擬） [庫存](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). 目前不支援多個清查來源。
+![錯誤](../assets/bug.svg) [!DNL Live Search] 支援 [單一來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) （實體）清查地點有多個（虛擬） [庫存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). 目前不支援多個清查來源。
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
@@ -294,8 +305,8 @@ _2023年3月14日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-![錯誤](../assets/bug.svg) 此 [!DNL Live Search] 服務僅支援 [基本貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce安裝的資訊。
-![錯誤](../assets/bug.svg) 新增Facet時，產品屬性摘要若設為，將無法正確更新 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 並將產品屬性摘要設為 `Update by Schedule`.
+![錯誤](../assets/bug.svg) 此 [!DNL Live Search] 服務僅支援 [基本貨幣](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) Adobe Commerce安裝的資訊。
+![錯誤](../assets/bug.svg) 新增Facet時，產品屬性摘要若設為，將無法正確更新 `Update on Save`. 若要避免此問題，請前往 [索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 並將產品屬性摘要設為 `Update by Schedule`.
 ![錯誤](../assets/bug.svg) [!DNL Live Search] 同義字是按商店檢視定義，但目前是按網站儲存，並以以下組合識別： `environmentId` 和 `storeViewCode`. 因此，Adobe Commerce安裝中的所有網站和商店檢視會共用同義字。 存放區檢視最近建立的同義字集優先。
 ![錯誤](../assets/bug.svg) 如果同義字詞包含多個字詞，每個字詞都會被視為個別的同義字。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會被視為監視的同義字。
 
@@ -306,5 +317,5 @@ _2023年3月14日_
 若要深入瞭解：
 
 * [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce.html)
+* [Adobe Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce)
 * [[!DNL Live Search] 在市集上](https://commercemarketplace.adobe.com/magento-live-search.html)

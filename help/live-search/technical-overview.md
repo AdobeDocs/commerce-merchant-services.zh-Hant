@@ -3,9 +3,9 @@ title: 「技術概覽」
 description: '"[!DNL Live Search] 上線流程、系統需求、界限和限制」'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 作為 [!DNL Live Search] 沒有完整產品資料庫的存取權， [!DNL Live Search] GraphQL與Commerce核心GraphQL不會有完整的同位檢查。
 
-建議您直接呼叫SaaS API的 — 尤其是目錄服務端點。
+建議直接呼叫SaaS API — 尤其是目錄服務端點。
 
 * 略過Commerce資料庫/Graphql程式，獲得效能並降低處理器負載
 * 充分運用 [!DNL Catalog Service] 要呼叫的同盟 [!DNL Live Search]， [!DNL Catalog Service]、和 [!DNL Product Recommendations] 來自單一端點。
@@ -43,8 +43,8 @@ ht-degree: 0%
 * [PLP Widget](https://github.com/adobe/storefront-product-listing-page)
 * [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
 
-如果您未使用預設元件(例如Luma上的搜尋配接器或Widget或AEM CIF Widget)，請注意，事件(為Adobe Sensei提供智慧型銷售和效能量度摘要的點按資料流資料)將無法立即運作，且需要自訂開發才能實作Headless事件。
-最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service] 以及安裝 [!DNL Catalog Service] 模組。
+如果您未使用預設元件(例如Luma上的搜尋配接器或Widget或AEM CIF Widget)，事件(為Adobe Sensei提供智慧型銷售和效能量度摘要的點按資料流資料)將無法立即運作，且需要自訂開發來實施Headless事件。
+最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service].
 
 ## 邊界和臨界值
 
@@ -109,6 +109,7 @@ ht-degree: 0%
 | 拉脫維亞文 | 拉脫維亞 | lv_LV | lv_LV |
 | 挪威文 | 挪威巴克摩 | nb_NO | nb_NO |
 | 荷蘭文 | 荷蘭 | nl_NL | nl_NL |
+| 波蘭文 | 波蘭 | pl_PL | pl_PL |
 | 葡萄牙文 | 巴西 | pt_BR | pt_BR |
 | 葡萄牙文 | 葡萄牙 | pt_PT | pt_PT |
 | 羅馬尼亞文 | 羅馬尼亞 | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ ht-degree: 0%
 
 ## Inventory management
 
-[!DNL Live Search] 支援 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+[!DNL Live Search] 支援 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 [!DNL Live Search] 傳回布林值，指出產品是否可在Inventory management中使用，但不包含有關哪個來源有庫存的資訊。
 
@@ -152,7 +153,7 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/price-inde
 
 ## 價格支援
 
-即時搜尋Widget支援大多數（但不是全部）Adobe Commerce支援的價格型別。
+即時搜尋Widget支援大多數（但不是所有）Adobe Commerce支援的價格型別。
 
 目前支援基本價格。 不支援的進階價格為：
 
@@ -193,9 +194,9 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/price-inde
 
 ## 目前不支援
 
-* 此 [進階搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
-* [層級定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支援 [!DNL Live Search] 欄位與產品清單頁面Widget。
+* 此 [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
+* [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 和 [特殊定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 不支援 [!DNL Live Search] 欄位與產品清單頁面Widget。
 
 ## Cookie
 
-[!DNL Live Search] 會收集使用者互動資料，作為其基本功能的一部分，而Cookie可用來儲存此資料。 收集任何使用者資訊時，使用者必須同意儲存Cookie。 [!DNL Live Search] 和 [!DNL Product Recommendations] 共用資料串流，因此使用相同的Cookie機制。 如需詳細資訊，請參閱 [處理Cookie限制](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] 會收集使用者互動資料，作為其基本功能的一部分，而Cookie可用來儲存此資料。 收集任何使用者資訊時，使用者必須同意儲存Cookie。 [!DNL Live Search] 和 [!DNL Product Recommendations] 共用資料串流，因此使用相同的Cookie機制。 如需詳細資訊，請參閱 [處理Cookie限制](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).
