@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] 發行說明」'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
 workflow-type: tm+mt
 source-wordcount: '2379'
 ht-degree: 0%
@@ -80,7 +80,7 @@ _2021年6月28日_
 
 ## v2.4.0
 
-_2024年3月14日_
+_2024年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
