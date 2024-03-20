@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] 為信用卡或扣帳卡付款方式提供簡單安全的結帳。 當購物者使用信用卡欄位結帳時，他們會輸入自己的姓名、帳單地址以及信用卡或扣帳卡資訊，以便下訂單。 客戶資訊在購買作業期間會安全地使用，以順暢地引導他們完成結帳流程。
+[!UICONTROL Credit Card Fields] 為信用卡或扣帳卡付款方式提供簡單安全的結帳。 當購物者使用信用卡欄位結帳時，他們會輸入自己的姓名、帳單地址以及信用卡或扣帳卡資訊來下訂單。 客戶資訊在購買作業期間會安全地使用，以順暢地引導他們完成結帳流程。
 
 ![結帳中的信用卡欄位](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
@@ -64,15 +64,31 @@ ht-degree: 0%
 
 您可以設定 [!UICONTROL Apple Pay] 在商店設定或支付服務首頁中。 另請參閱 [設定](settings.md#apple-pay) 以取得詳細資訊。
 
+## [!DNL Google Pay] 按鈕
+
+客戶可以使用 [[!DNL Google Pay]](https://pay.google.com/about/) 將付款詳細資料新增至其Google帳戶，安全地儲存這些資料，提供順暢的結帳體驗。
+
+[!DNL Google Pay] 僅適用於特定國家或地區以及特定裝置。 另請參閱 [[!DNL Google Pay] 檔案](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) 以取得詳細資訊。
+
+![結帳中的「Google付款」按鈕](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+此 [!DNL Google Pay] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
+
+您可以設定 [!UICONTROL Google Pay] 在商店設定或支付服務首頁中。 另請參閱 [設定](settings.md) 以取得詳細資訊。
+
+>[!NOTE]
+>
+> 此 [!DNL Google Pay] API只能在安全的內容中使用在網站上。 另請參閱 [疑難排除](https://developers.google.com/pay/api/web/support/troubleshooting) 檔案以取得詳細資訊。
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons]，會使用PayPal完成購買、儲存購物者的運送地址、帳單地址和付款詳細資料，以供日後使用。 購物者可以使用PayPal先前儲存或提供的任何付款方式。
 
 ![PayPal按鈕](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以設定 [!UICONTROL PayPal payment buttons] 在存放區設定或 [!DNL Payment Services] 首頁。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
+您可以設定 [!UICONTROL PayPal payment buttons] 在存放區設定或 [!DNL Payment Services] 首頁。 另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
 
-請參閱PayPal的 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/) 瞭解目前每種付款方式在哪些國家/地區可用。
+瞭解PayPal中依國家/地區提供的付款方法 [付款方式檔案](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] 按鈕
 
@@ -102,17 +118,17 @@ ht-degree: 0%
 
 請參閱以下連結中有關「稍後付款」優惠方案的資訊： [PayPal的稍後付款優惠檔案](https://developer.paypal.com/docs/checkout/pay-later/us/). 使用 **國家或地區** 下拉式清單以選取感興趣的區域。
 
-另請參閱 [設定](settings.md#payment-buttons) 以瞭解如何停用/啟用 [!DNL Pay Later] 傳送訊息。
+瞭解如何停用或啟用 [!DNL Pay Later] 透過更新 [設定](settings.md#payment-buttons) 設定。
 
 ## 僅使用PayPal付款按鈕
 
-若要快速將您的商店帶入生產模式，您可以設定 _僅限_ PayPal付款按鈕（Venmo、PayPal等） — 不要再使用PayPal信用卡付款選項。
+若要快速將您的存放區帶入生產模式，您可以設定 _僅限_ PayPal付款按鈕（Venmo、PayPal等） — 不要再使用PayPal信用卡付款選項。
 
 這可讓您：
 
 * 為您的客戶提供各種付款選項，包括Venmo和PayPal付款按鈕，可選擇關閉PayPal代管卡欄位，並使用現有的信用卡提供者。
-* 使用您現有的信用卡提供者進行信用卡付款，同時利用PayPal的其他付款選項。
-* 在PayPal不支援信用卡作為付款選項的區域使用PayPal的付款按鈕。
+* 使用您現有的信用卡提供者進行信用卡付款，同時使用PayPal的其他付款選項。
+* 在PayPal不支援信用卡付款選項的地區，使用PayPal的付款按鈕。
 
 至 **擷取付款方式 _僅限_ PayPal付款按鈕(_非_ paypal信用卡付款選項)**：
 

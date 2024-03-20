@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ ht-degree: 0%
 >
 >此表格中顯示的資料會依遞減順序排序(`DESC`)預設會使用 `TRANS DATE`. 此 `TRANS DATE` 是交易的起始日期和時間。
 
+### 付款狀態更新
+
+某些付款方法需要一段時間才能擷取付款。 [!DNL Payment Services] 現在會依下列方式偵測訂單中付款交易的暫緩狀態：
+
+* 同步偵測 `pending capture` 交易
+* 非同步監視 `pending capture` 交易
+
+>[!NOTE]
+>
+>偵測訂單中付款交易的暫緩狀態，可防止在尚未收到付款時意外出貨訂單。 電子支票和PayPal交易可能會發生這種情況。
+
+#### 同步偵測擱置中的擷取交易
+
+自動偵測中的擷取交易 `Pending` 狀態並防止訂單輸入 `Processing` 偵測到這類交易時的狀態。
+
+在客戶結帳期間或管理員為先前授權的付款建立發票時， [!DNL Payment Services] 自動偵測中的擷取交易 `Pending` 狀態並將對應的訂單移入 `Payment Review` 狀態。
+
+#### 非同步監視擱置中的擷取交易
+
+偵測暫止的擷取交易何時進入 `Completed` 狀態，讓商家可以繼續處理受影響的訂單。
+
+為確保此程式可如預期運作，商家必須設定新的cron工作。 一旦工作設定為自動執行，商家就不需要進行其他干預。
+
+另請參閱 [設定cron作業](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). 設定之後，新工作每30分鐘執行一次，以擷取以下訂單的更新： `Payment Review` 狀態。
+
+商戶可以透過「訂單付款狀態」報表檢視來檢查更新的付款狀態。
+
 ### 報告中使用的資料
 
-此 [!DNL Payment Services] 模組使用訂單資料，並將其與其他來源（包括PayPal）的彙總付款資料結合，以提供有意義且高度有用的報表。
+[!DNL Payment Services] 會使用訂單資料，並將其與其他來源（包括PayPal）的彙總付款資料結合，以提供有意義且高度實用的報表。
 
 訂單資料會匯出並保留在付款服務中。 當您 [變更或新增訂單狀態](https://docs.magento.com/user-guide/sales/order-status-custom.html) 或 [編輯商店檢視](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html)， [儲存](https://docs.magento.com/user-guide/stores/store-information.html)或網站名稱)中，該資料會與付款資料結合，而「訂單付款狀態」報表會填入結合的資訊。
 
@@ -132,9 +159,9 @@ ht-degree: 0%
 
    報表結果會根據選取的資料來源重新產生。
 
-### 自訂日期時間範圍
+### 自訂訂單日期時間範圍
 
-從「訂單付款狀態」報表檢視中，您可以選取特定日期，以自訂您要檢視之狀態的時間範圍。 依預設，30天的訂單付款狀態會顯示在網格中。
+從「訂單付款狀態」報表檢視中，您可以選取特定日期，以自訂您要檢視之狀態結果的時間範圍。 依預設，30天的訂單付款狀態會顯示在網格中。
 
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 按一下 _[!UICONTROL Order dates]_行事曆選擇器篩選器。
@@ -148,7 +175,7 @@ ht-degree: 0%
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 按一下 **[!UICONTROL Filter]** 選擇器。
 1. 切換 _付款狀態_ 選項，僅針對選取的訂單付款狀態檢視報表結果。
-1. 輸入 _最小訂單金額_ 或 _最大訂單金額_ 以在該訂單金額範圍內檢視報表結果。
+1. 輸入「 」以檢視訂單金額範圍內的報表結果 _[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_].
 1. 按一下 **[!UICONTROL Hide filters]** 以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -159,7 +186,7 @@ ht-degree: 0%
 1. 按一下 _欄設定_ 圖示(![欄設定圖示](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 若要自訂您在報表中看到的欄，請核取或取消核取清單中的欄。
 
-   「訂單付款狀態」報表會立即顯示您在「欄位設定」功能表中所做的任何變更。 欄偏好設定將會儲存，而且如果您離開報表檢視，偏好設定將維持有效。
+   「訂單付款狀態」報表會立即顯示您在「欄位設定」功能表中所做的任何變更。 欄偏好設定會儲存，如果您離開報表檢視，偏好設定仍會維持有效。
 
 ### 檢視狀態
 
@@ -197,10 +224,10 @@ ht-degree: 0%
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 導覽至 **[!UICONTROL Disputes column]**.
 1. 檢視特定訂單的任何爭議，並請參閱 [爭議狀態](#order-payment-status-information).
-1. 按一下爭議ID連結(開頭為 _PP-D-_)前往 [PayPal解析中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 從檢視爭議詳細資料 [PayPal解析中心](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) 按一下開頭為的爭議ID連結 _PP-D-_.
 1. 視需要對爭議採取適當行動。
 
-   若要依狀態排序訂單爭議，請按一下「爭議」欄位標題。
+   若要依狀態排序訂單爭議，請按一下 [!UICONTROL Disputes] 欄標題。
 
 ### 下載訂單付款狀態
 
