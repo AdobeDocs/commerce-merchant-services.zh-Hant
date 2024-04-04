@@ -3,9 +3,9 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
+source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _2022年10月12日_
 ![新增](../assets/new.svg)  — 新增 [AEM店面](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+_2024年4月4日_
+
+![新增](../assets/new.svg)  — 新增對所有PHP 8.3的支援 [!DNL Data Connection] 擴充功能。
+![新增](../assets/new.svg)  — 新增如何操作的文章 [整合](mobile-sdk-epc.md) 具Commerce的Adobe Experience Platform Mobile SDK。
 
 ## 3.2.0-beta2
 

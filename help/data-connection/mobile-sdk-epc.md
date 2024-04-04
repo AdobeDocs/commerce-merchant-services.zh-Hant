@@ -4,9 +4,9 @@ description: 瞭解如何搭配無周邊或自訂Commerce店面使用Adobe Exper
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ ht-degree: 0%
 
    您現在已將Adobe Experience Platform Mobile SDK與Commerce行動應用程式整合。 事件資料會從您的應用程式傳輸至Experience Platform邊緣。
 
-若要瞭解如何從您的行動Commerce應用程式擷取Real-Time CDP對象，以告知購物車價格規則和動態區塊，請參閱 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## 如何區分從行動應用程式產生的Commerce事件
+
+全部 [事件](events.md) 包含欄位，名為 `channel`. 此 `channel` 欄位包含 `channel._id` 和 `channel._type` 其中的Luma店面名稱空間值為 `"https://ns.adobe.com/xdm/channels/web"` 和 `"https://ns.adobe.com/xdm/channel-types/web"` （分別）。 然而，對於行動店面，名稱空間值為 `"https://ns.adobe.com/xdm/channels/mobile-app"` 和 `"https://ns.adobe.com/xdm/channel-types/mobile"` （分別）。
+
+## 後續步驟
+
+若要瞭解如何從您的行動Commerce應用程式擷取Real-Time CDP對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
