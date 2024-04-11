@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 「瞭解如何安裝 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 - 沙箱(`https://catalog-service-sandbox.adobe.io/graphql`) — 用於在上線前進行測試和驗證
 - 生產(`https://catalog-service.adobe.io/graphql`) — 用於Commerce商家和網站的即時流量
 
-Commerce的所有測試例項都應使用沙箱端點。
+Commerce的所有測試執行個體都應使用沙箱端點。
 
 只應對沙箱端點執行負載測試。 建議使用 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在負載測試時開啟，以便服務團隊可以預期額外的伺服器流量。
 
@@ -120,7 +120,7 @@ Commerce的所有測試例項都應使用沙箱端點。
 
 安裝之後 [!DNL Catalog Service]，您必須設定 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 指定API金鑰並選取SaaS資料空間。
 
-SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
+SaaS設定完成後，請使用 [資料管理控制面板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 您可以使用此儀表板來監視從Commerce資料庫傳輸到Commerce SaaS服務的產品資料的同步處理狀態。
 
 若要確保目錄匯出可正確執行：
 
@@ -128,13 +128,13 @@ SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同�
 - 驗證索引器是否正在執行。
 - 確保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器設為「依排程更新」。
 
-視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 初始同步之後，目錄會持續將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務為最新。 若要監視同步狀態，請參閱 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 初始同步之後，目錄會持續將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務在最新狀態。 若要監視同步狀態，請參閱 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### 存取服務
 
 此 [!DNL Catalog Service] 可透過HTTPS使用POST命令存取API。
 
-若要取得API金鑰，請前往「管理員」的「商務服務聯結器」區域，並複製公開API金鑰。
+若要取得API金鑰，請前往「管理員」的「Commerce服務聯結器」區域，並複製公開API金鑰。
 
 閱讀 [GraphQL檔案](https://developer.adobe.com/commerce/services/graphql/) 以瞭解如何查詢及傳送產生API請求所需的標頭。
 
