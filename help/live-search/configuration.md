@@ -1,18 +1,18 @@
 ---
-title: 「Commerce組態設定和 [!DNL Live Search] 『
+title: '''Commerce組態設定和 [!DNL Live Search] 『'
 description: 說明Adobe Commerce組態設定， [!DNL Live Search] 可以閱讀。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] 和Adobe Commerce組態設定
 
-有一些Commerce組態設定 [!DNL Live Search] 支援。 本主題列出這些組態值。
+有Commerce組態設定 [!DNL Live Search] 支援。 本主題列出這些組態值。
 
 ## 支援的設定值
 
@@ -41,3 +41,4 @@ ht-degree: 0%
 | 商店>設定>目錄>店面>清單模式 | 正確轉譯，但部分頁面互動不會傳送事件 |
 | 儲存>組態>目錄>目錄>目錄搜尋>查詢長度上限 | 未實作；搜尋服務接受最多255個字元 |
 | 組態>銷售>稅捐>價格顯示設定>在目錄中顯示產品價格 |  |
+| 商店>設定>目錄>店面>產品清單排序依據 | 不適用於 [!DNL Live Search] [產品清單頁面Widget](plp-styling.md) |
