@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 發行說明」'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
+source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂顯示在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄」設定控制項來顯示或隱藏欄。
 
 +++
+
+## v2.4.3
+
+_2024年4月16日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg)<!-- Issue PAY-5106 --> 修正在PayPal和Adobe Commerce之間結帳時錯誤填入訂單金額總計的問題。 現在，商家可以在下訂單時確保訂單金額總計正確無誤。
 
 ## v2.4.2
 
