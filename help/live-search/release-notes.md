@@ -3,7 +3,7 @@ title: '"[!DNL Live Search] 發行說明」'
 description: 「的最新版本資訊 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -54,7 +54,7 @@ _2024年3月19日_
 ### 新功能
 
 ![新增](../assets/new.svg) 新增的語言支援 [波蘭文](technical-overview.md#language-support).
-![新增](../assets/new.svg) [!DNL Live Search] 對於執行Adobe Commerce 2.4.4的安裝現在支援PHP 8.3。
+![新增](../assets/new.svg) [!DNL Live Search] 對於執行Adobe Commerce 2.4.7的安裝，現在支援PHP 8.3。
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 新增拖放以建立釘選事件的功能
 ![新增](../assets/new.svg) 新釘選動作： *釘選至點 — 按一下釘選按鈕以建立釘選事件*釘選至頂端 — 將產品置於第一個位置*釘選至底部 — 將產品置於結果底部*按一下即可取消釘選事件
 ![新增](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![新增](../assets/new.svg) [!DNL Live Search] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+![新增](../assets/new.svg) [!DNL Live Search] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，簡稱MSI)。 若要啟用完整支援，您必須 [更新](install.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 ### 更新
 
@@ -266,7 +266,7 @@ _2023年3月14日_
 ![新增](../assets/new.svg) 測試版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 支援 [!DNL Live Search].
 ![新增](../assets/new.svg) 此 [!DNL Live Search] 安裝程式會更新為進階程式變更。
 ![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 從店面頁尾移除的連結。
-![錯誤](../assets/bug.svg) 下列產品屬性不受支援 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 使用與PWA的Beta版相關時： `description`， `name`， `short_description`
+![錯誤](../assets/bug.svg) 下列產品屬性不受支援 [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 使用與PWA的Beta版相關時： `description`， `name`， `short_description`
 ![錯誤](../assets/bug.svg) 適用於的PWA測試版 [!DNL Live Search] 不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

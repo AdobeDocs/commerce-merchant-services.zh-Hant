@@ -2,22 +2,28 @@
 title: 產品清單頁面Widget
 description: 啟用並設定樣式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # 產品清單頁面Widget
 
-此 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台，提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用和設定PLP Widget的樣式。
+此 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce服務平台，提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用和設定PLP Widget的樣式。
 
 ## 啟用PLP Widget
 
 當 [!DNL Live Search] 服務已安裝，預設搜尋功能已轉換為 [!DNL Live Search] 自動。
 
 此 [!DNL Live Search] 新安裝預設啟用PLP Widget。 如果您正在升級 [!DNL Live Search] 而且PLP Widget已關閉，仍會維持關閉。
+
+>[!IMPORTANT]
+>
+>當 [!DNL Live Search Product Listing Page Widget] 已啟用，則無法變更產品清單頁面上的排序順序方向。
+
+## 停用PLP Widget
 
 若要停用PLP Widget：
 
