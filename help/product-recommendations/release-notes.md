@@ -3,7 +3,7 @@ title: 『[!DNL Product Recommendations] 版本注意事項
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _2023年3月20日_
 
 ![新增](../assets/new.svg) 已更新 [!DNL Product Recommendations] 以支援Adobe Commerce 2.4.6。
 ![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 您的專案的檔案。
-![新增](../assets/new.svg) [!DNL Product Recommendations] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，或MSI)。 若要啟用完整支援，您必須 [更新](install-configure.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+![新增](../assets/new.svg) [!DNL Product Recommendations] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，簡稱MSI)。 若要啟用完整支援，您必須 [更新](install-configure.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 ### 4.0.1的magento/product-recommendations
 
@@ -125,7 +125,7 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg) 已新增 [B2B支援](onboarding.md#b2bsupport) 在 [!DNL Product Recommendations]
-![新增](../assets/new.svg) 已新增摘要至 [同步目錄資料](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 至商務服務（透過命令列）
+![新增](../assets/new.svg) 已新增摘要至 [同步目錄資料](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 透過命令列移至Commerce服務
 
 ### 3.3.3的magento/product-recommendations
 
