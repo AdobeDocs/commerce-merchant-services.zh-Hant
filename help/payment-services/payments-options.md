@@ -3,7 +3,7 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 [!DNL Apple Pay] 僅適用於Safari瀏覽器。 商家每個商家帳戶最多可新增99個網域。
 
-![迷你卡中的Apple付款按鈕](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![迷你卡中的Apple付款按鈕](assets/applepay-button.png){width="500" zoomable="yes"}
 
 此 [!DNL Apple Pay] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
 
