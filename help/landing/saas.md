@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 從高層面來看， [!DNL Commerce Services Connector] 由下列核心元素組成：
 
-![Commerce Services聯結器架構](assets/saas-config-sync-workflow.png)
+![Commerce服務聯結器架構](assets/saas-config-sync-workflow.png)
 
 以下各節會更詳細地討論這些元素。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 對每個環境（生產和沙箱）重複上述步驟。
 
-   此 **API金鑰** 區段現在會顯示您的API金鑰。 當您進行以下作業時，需要同時使用生產金鑰和沙箱金鑰： [選取或建立SaaS專案](#createsaasenv).
+   此 **API金鑰** 區段現在會顯示您的API （公開）金鑰。 當您進行以下作業時，需要同時使用生產金鑰和沙箱金鑰（公用+私用） [選取或建立SaaS專案](#createsaasenv).
 
 ## SaaS設定 {#saasenv}
 
