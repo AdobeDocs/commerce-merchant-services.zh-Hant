@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ ht-degree: 0%
 
 ### 選取或建立SaaS專案 {#createsaasenv}
 
->[!NOTE]
->
-> 如果您沒有看到 **[!UICONTROL Commerce Services Connector]** 中的區段 [!DNL Commerce] 設定，您必須安裝 [!DNL Commerce] 符合您需求的模組 [[!DNL Commerce] 服務](#availableservices).
-
 若要選取或建立SaaS專案，請要求 [!DNL Commerce] 來自的API金鑰 [!DNL Commerce] 您商店的授權持有者。
 
 1. 在 _管理員_ 側欄，前往 **系統** >服務> **Commerce服務聯結器**.
+
+   如果您沒有看到 **[!UICONTROL Commerce Services Connector]** 中的區段 [!DNL Commerce] 設定，安裝 [!DNL Commerce] 符合您需求的模組 [[!DNL Commerce] 服務](#availableservices). 此外，請確定 `magento/module-services-id` 已安裝套件。
 
 1. 在 _沙箱API金鑰_ 和 _生產API金鑰_ 區段，貼上您的金鑰值。
 
