@@ -3,9 +3,9 @@ title: 什麼是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供快速、相關且直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ ht-degree: 0%
 
 ## 快速導覽
 
-注重速度、關聯性和易用性， [!DNL Live Search] 對購物者和商家來說都是一個遊戲規則的改變者。 請跟隨並快速導覽 [!DNL Live Search] 從店面。
+注重速度、關聯性和易用性， [!DNL Live Search] 對購物者和商家來說都是一個遊戲規則的改變者。 請觀看以下影片，然後快速導覽 [!DNL Live Search] 從店面。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+如需有關如何使用和設定「即時搜尋」的更深入影片，請參閱 [完整示範： [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 主題。
 
 ### 依輸入內容搜尋
 
@@ -80,11 +84,3 @@ ht-degree: 0%
 ## 活動
 
 [!DNL Live Search] 使用 [事件](events.md) 以計算 [智慧型銷售](category-merch.md) 和 [績效](performance.md) 控制面板。 事件會隨預設實施提供。 Headless店面事件應手動啟用。
-
-## [!DNL Live Search] 示範
-
-觀看此影片以瞭解 [!DNL Live Search]：
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-如需有關如何使用和設定「即時搜尋」的更深入影片，請參閱 [完整示範： [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 主題。
