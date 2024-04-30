@@ -4,16 +4,16 @@ description: 瞭解每個後台事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] 後台活動
 
-下表列出您在安裝時可用的Commerce後台事件 [!DNL Data Connection] 副檔名。 這些事件收集的資料會傳送至Adobe Experience Platform。 您也可以建立 [自訂事件](custom-events.md) 以立即收集未提供的其他資料。
+以下列出您在安裝時可用的Commerce後台事件 [!DNL Data Connection] 副檔名。 這些事件收集的資料會傳送至Adobe Experience Platform。 您也可以建立 [自訂事件](custom-events.md) 以立即收集未提供的其他資料。
 
 除了下列事件收集的資料外，您也會收到 [其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
 
@@ -404,7 +404,15 @@ ht-degree: 0%
 
 ## 客戶設定檔事件
 
+>[!IMPORTANT]
+>
+>此功能為測試版。
+
 從伺服器端擷取的設定檔事件包含帳戶資訊，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 有從擷取的類似設定檔事件 [店面](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>每個客戶設定檔事件也包含 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 欄位，包含系統產生的Commerce客戶ID作為設定檔的主要識別碼，以及用作次要識別碼的電子郵件ID。
 
 ### accountCreated
 

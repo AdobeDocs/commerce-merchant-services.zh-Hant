@@ -1,33 +1,33 @@
 ---
 title: 將Commerce資料連線至Adobe Experience Platform
-description: 瞭解如何將您的Commerce資料連結至Adobe Experience Platform。
+description: 瞭解如何將Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
 
 # 將Commerce資料連線至Adobe Experience Platform
 
-當您安裝 [!DNL Data Connection] 擴充功能上，兩個新設定頁面會出現在 **系統** 下的選單 **服務** 在商務中 _管理員_.
+當您安裝 [!DNL Data Connection] 擴充功能上，兩個新設定頁面會出現在 **系統** 下的選單 **服務** 在Commerce中 _管理員_.
 
 - Commerce服務聯結器
 - [!DNL Data Connection]
 
-若要將您的Adobe Commerce執行個體連線到Adobe Experience Platform，您必須設定兩個聯結器，從商務服務聯結器開始，然後使用 [!DNL Data Connection] 副檔名。
+若要將Adobe Commerce執行個體連線至Adobe Experience Platform，您必須設定兩個聯結器，從Commerce服務聯結器開始，然後使用 [!DNL Data Connection] 副檔名。
 
 ## 設定Commerce服務聯結器
 
-如果您先前已安裝Adobe Commerce服務，您可能已設定Commerce Services聯結器。 如果沒有，則您必須在 [Commerce服務聯結器](../landing/saas.md) 頁面：
+如果您先前已安裝Adobe Commerce服務，表示您可能已設定Commerce服務聯結器。 如果沒有，則您必須在 [Commerce服務聯結器](../landing/saas.md) 頁面：
 
 1. 登入您的Commerce帳戶至 [擷取您的生產和沙箱API金鑰](../landing/saas.md#credentials).
 1. 選取 [SaaS資料空間](../landing/saas.md#saas-configuration).
 1. 登入您的Adobe帳戶至 [擷取您的組織ID](../landing/saas.md#ims-organization-optional).
 
-設定Commerce Services聯結器後，再設定 [!DNL Data Connection] 副檔名。
+設定Commerce服務聯結器後，接著請設定 [!DNL Data Connection] 副檔名。
 
 ## 設定 [!DNL Data Connection] 副檔名
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 #### 步驟1：在Adobe Developer Console中建立專案
 
-在Adobe Developer Console中建立可驗證Commerce的專案，以便進行Experience PlatformAPI呼叫。
+在Adobe Developer Console中建立驗證Commerce的專案，以便進行Experience Platform API呼叫。
 
 若要建立專案，請遵循以下概述的步驟： [驗證及存取Experience PlatformAPI](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) 教學課程。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 下載 [工作區組態檔](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). 將此檔案的內容複製並貼到 **服務帳戶/認證詳細資料** 商務管理員頁面。
 
-1. 在商務管理員中，瀏覽至 **商店** >設定> **設定** > **服務** > **[!DNL Data Connection]**.
+1. 在Commerce管理員中，導覽至 **商店** >設定> **設定** > **服務** > **[!DNL Data Connection]**.
 
 1. 選取您從伺服器對伺服器執行的授權方法 **Adobe Developer授權型別** 功能表。 Adobe建議使用OAuth。 已棄用JWT。 [瞭解更多](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 - **後台** （伺服器端資料）是在Commerce伺服器中擷取的資料。 這包括訂單狀態的相關資訊，例如，訂單是否已下達、取消、退款、出貨或完成。 其中也包含 [歷史訂單資料](#send-historical-order-data).
 
-- **個人資料** 是與購物者的設定檔資訊相關的資料。 瞭解 [更多](#send-customer-profile-data).
+- **設定檔(Beta)** 是與購物者的設定檔資訊相關的資料。 瞭解 [更多](#send-customer-profile-data).
 
 為確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱 [必備條件](overview.md#prerequisites).
 
@@ -152,11 +152,15 @@ ht-degree: 0%
 | 店面活動 | 只要組織ID和資料流ID有效，就會預設勾選。 店面活動會在購物者瀏覽您的網站時，從他們那裡收集匿名的行為資料。 |
 | 後台活動 | 若勾選，事件裝載會包含匿名處理的訂單狀態資訊，例如訂單是否已下達、取消、退款或出貨。 |
 | 資料串流ID （網站） | 可讓資料從Adobe Experience Platform流向其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce執行個體中的特定網站相關聯。 如果您指定自己的Experience PlatformWeb SDK，請勿在此欄位中指定資料串流ID。 此 [!DNL Data Connection] 擴充功能會使用與該SDK相關聯的資料流ID，並忽略此欄位中指定的任何資料流ID （如果有的話）。 |
-| 資料集ID （網站） | 包含您的Commerce資料之資料集的ID。 除非您已取消選取 **店面活動** 或 **後台活動** 核取方塊。 此外，如果您使用自己的Experience PlatformWeb SDK，並因此未指定資料流ID，您仍須新增與資料流相關聯的資料集ID。 否則，您無法儲存此表單。 |
+| 資料集ID （網站） | 包含您Commerce資料的資料集ID。 除非您已取消選取 **店面活動** 或 **後台活動** 核取方塊。 此外，如果您使用自己的Experience PlatformWeb SDK，並因此未指定資料流ID，您仍須新增與資料流相關聯的資料集ID。 否則，您無法儲存此表單。 |
 
 上線後，店面資料開始流入Experience Platform邊緣。 後端辦公室資料大約需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
 
 ### 傳送客戶設定檔資料
+
+>[!IMPORTANT]
+>
+>此功能為測試版。
 
 您可傳送兩種型別的設定檔資料至Experience Platform：設定檔記錄和時間序列設定檔事件。
 
@@ -191,7 +195,7 @@ ht-degree: 0%
 
 Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events-backoffice.md#back-office-events). 您可以使用 [!DNL Data Connection] 擴充功能可將歷史資料傳送至Experience Platform，讓您的客戶設定檔更為豐富，並根據這些過去的訂單個人化客戶體驗。 資料儲存在Experience Platform內的資料集中。
 
-雖然Commerce已收集歷史訂單資料，但您必須完成數個步驟才能將該資料傳送至Experience Platform。
+雖然Commerce已收集歷史訂單資料，但您必須完成數個步驟，才能將該資料傳送至Experience Platform。
 
 觀看此影片以進一步瞭解歷史訂單，然後完成下列步驟以實施歷史訂單收集。
 
@@ -243,14 +247,14 @@ Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events-backoff
 | 欄位 | 說明 |
 |--- |--- |
 | 從設定複製資料集ID | 複製您在上輸入的資料集ID **設定** 標籤。 |
-| 資料集ID （網站） | 包含您的Commerce資料之資料集的ID。 除非您已取消選取 **店面活動** 或 **後台活動** 核取方塊。 此外，如果您使用自己的Experience PlatformWeb SDK，並因此未指定資料流ID，您仍須新增與資料流相關聯的資料集ID。 否則，您無法儲存此表單。 |
+| 資料集ID （網站） | 包含您Commerce資料的資料集ID。 除非您已取消選取 **店面活動** 或 **後台活動** 核取方塊。 此外，如果您使用自己的Experience PlatformWeb SDK，並因此未指定資料流ID，您仍須新增與資料流相關聯的資料集ID。 否則，您無法儲存此表單。 |
 | 從 | 您要開始收集訂單歷史記錄資料的日期。 |
 | 至 | 您要結束收集訂單歷史記錄資料的開始日期。 |
 | 開始同步 | 開始將訂單歷史記錄資料同步至Experience Platform邊緣的程式。 如果 **[!UICONTROL Dataset ID]** 欄位空白或資料集ID無效。 |
 
 ## 確認已收集事件資料
 
-若要確認資料是從Commerce商店收集，請使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 以檢查您的Commerce網站。 確認資料正在收集後，您可以透過執行查詢來確認店面和後台事件資料是否顯示在邊緣，該查詢會從以下來源傳回資料： [您建立的資料集](overview.md#prerequisites).
+若要確認系統確實從Commerce商店收集資料，請使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 檢查您的Commerce網站。 確認資料正在收集後，您可以透過執行查詢來確認店面和後台事件資料是否顯示在邊緣，該查詢會從以下來源傳回資料： [您建立的資料集](overview.md#prerequisites).
 
 1. 選取 **查詢** 在Experience Platform的左側導覽列中，按一下 [!UICONTROL Create Query].
 
@@ -270,10 +274,10 @@ Adobe Commerce最多收集五年的 [歷史訂單資料與狀態](events-backoff
 
    ![查詢編輯器](assets/query-results.png)
 
-在此範例中，您會看到以下專案中的事件資料： [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)、等等。 此檢視可讓您驗證您的Commerce資料是否到達邊緣。
+在此範例中，您會看到以下專案中的事件資料： [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)、等等。 此檢視可讓您驗證Commerce資料是否到達邊緣。
 
 如果結果不符合您的預期，請開啟您的資料集並尋找任何失敗的批次匯入。 進一步瞭解 [疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
 ## 後續步驟
 
-將Commerce資料傳送至Experience Platform邊緣時，其他Adobe Experience Cloud產品(例如Adobe Journey Optimizer)可以使用該資料。 例如，您可以設定Journey Optimizer監聽特定事件，並根據該事件資料為首次使用者或如果有捨棄的購物車時，觸發電子郵件。 瞭解如何透過以下方式擴充您的Commerce平台 [建立客戶歷程](using-ajo.md) 在Journey Optimizer中。
+將Commerce資料傳送至Experience Platform邊緣時，其他Adobe Experience Cloud產品(例如Adobe Journey Optimizer)可以使用該資料。 例如，您可以設定Journey Optimizer監聽特定事件，並根據該事件資料為首次使用者或如果有捨棄的購物車時，觸發電子郵件。 瞭解如何透過以下方式擴充Commerce平台 [建立客戶歷程](using-ajo.md) 在Journey Optimizer中。
