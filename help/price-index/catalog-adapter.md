@@ -1,15 +1,15 @@
 ---
 title: 目錄配接器擴充功能
-description: 使用目錄配接器從Commerce Services轉譯價格
+description: 使用目錄配接器從Commerce Services呈現價格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # 目錄配接器
 
@@ -19,10 +19,10 @@ Adobe Commerce產品價格索引器已停用，且在安裝這些擴充功能模
 ## 需求
 
 * Adobe Commerce 2.4.4+
-* 已安裝下列兩個Commerce服務：
+* 已安裝下列Commerce服務：
 
    * [目錄服務](../catalog-service/overview.md)
-   * [即時搜尋](../live-search/guide-overview.md)
+   * [即時搜尋](../live-search/overview.md)
 
 ## 安裝
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## 停用Headless店面案例的產品價格索引器
 
-如果您有Headless Commerce執行個體，您可能需要停用Adobe Commerce產品價格索引子，以減少Adobe Commerce執行個體的負載。
+如果您有Headless Commerce執行個體，您可能需要停用Adobe Commerce產品價格索引器，以減少Adobe Commerce執行個體的負載。
 這是透過安裝 `magento/module-price-indexer-disabler` 模組：
 
 ```bash
@@ -73,9 +73,9 @@ composer require magento/module-price-indexer-disabler
 1. 安裝目錄介面卡。
 1. 重新啟用預設的Adobe Commerce產品價格索引器。
 
-### Headless Commerce例項
+### Headless Commerce執行個體
 
-* 具有已安裝所需服務(即時搜尋、產品Recommendations、目錄服務)的Headless Commerce執行個體的商家
+* 具有Headless Commerce執行個體並安裝所需服務(即時搜尋、產品Recommendations、目錄服務)的商家
 * 不依賴預設的Adobe Commerce產品價格索引器
 
 1. 安裝 `magento/module-price-indexer-disabler` 類別目錄配接器封裝中的模組。

@@ -1,59 +1,77 @@
 ---
-title: 簡介 [!DNL Live Search]
+title: 什麼是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供快速、相關且直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# 簡介 [!DNL Live Search]
+# 什麼是 [!DNL Live Search]？
 
-[!DNL Live Search] 是一項適用於Adobe Commerce的服務，可取代標準搜尋功能。 此 [!DNL Live Search] 模組已與Composer一起安裝，並連線 [!DNL Commerce] 安裝至 [!DNL Live Search] [服務](../landing/saas.md). 設定後，預設搜尋文字欄位會取代為 [!DNL Live Search] 文字欄位。 [!DNL Live Search] 也會安裝產品清單頁面(PLP) Widget，在瀏覽搜尋結果時提供強大的篩選功能。
+[!DNL Live Search] 是取代Adobe Commerce中標準搜尋功能的擴充功能。 此 [!DNL Live Search] 擴充功能會隨Composer一起安裝，並連線至 [!DNL Commerce] 安裝至 [!DNL Live Search] [服務](../landing/saas.md). 設定後，預設搜尋文字欄位會取代為 [!DNL Live Search] 文字欄位。 [!DNL Live Search] 也會安裝產品清單頁面(PLP) Widget，在瀏覽搜尋結果時提供強大的篩選功能。
 
-[!DNL Live Search] 顯示在 *行銷* 下的選單 *SEO與搜尋* 在 [!DNL Commerce] *管理員*.
+替換為 [!DNL Live Search]，您可以：
+
+- 建立有意義的搜尋體驗，協助購物者和買家儘可能輕鬆地找到他們想要的。
+- 利用AI支援的動態多面向和重新排名搜尋結果，以回應工作階段中的購物者行為。
+- 使用輕量型的SaaS服務，提供輕鬆的更新並包含在您的授權中，以降低總擁有成本。
+- 啟用graphQL API、Headless彈性、API沙箱環境和超快速SaaS，以獲得技術優勢。
+
+>[!IMPORTANT]
+>
+>在網站搜尋方面，Adobe Commerce會提供您選項。 請務必閱讀 [邊界和限制](boundaries-limits.md) 實施前，為了確保 [!DNL Live Search] 適合您的業務需求。
+
+## 架構
 
 架構的Adobe Commerce端包含託管搜尋 *管理員*，同步目錄資料，以及執行查詢服務。 晚於 [!DNL Live Search] 安裝與設定完成時，Adobe Commerce會開始與SaaS服務共用搜尋和目錄資料。 此時，管理員使用者可以設定、自訂及管理搜尋 [Facet](facets.md)， [同義字](synonyms.md)、和 [銷售規則](category-merch.md).
 
+![即時搜尋資料流程](assets/ls-cs-data-flow.png)
+
+## 快速導覽
+
+注重速度、關聯性和易用性， [!DNL Live Search] 對購物者和商家來說都是一個遊戲規則的改變者。 請跟隨並快速導覽 [!DNL Live Search] 從店面。
+
+### 依輸入內容搜尋
+
+[!DNL Live Search] 在中，以建議的產品和排名最前的搜尋結果的縮圖影像回應 [彈出視窗](storefront-popover.md) 當購物者輸入查詢至 [搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 方塊。 此 [產品詳細資料](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 當購物者按一下建議或精選產品時，頁面就會顯示。 A _檢視全部_ 彈出視窗頁尾中的連結會顯示搜尋結果頁面。
+
+[!DNL Live Search] 針對兩個或多個字元的查詢，傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包括`name`， `sku`、和 `category_ids` 欄位。
+
+![店面範例 — 鍵入時一併搜尋](assets/storefront-search-as-you-type.png)
+
+### 檢視所有搜尋結果
+
+若要列出「鍵入時搜尋」查詢傳回的所有產品，請按一下 _檢視全部_ 在彈出視窗的頁尾中。
+
+![店面範例 — 價格Facet](assets/storefront-view-all-search-results.png)
+
+### 使用Facet篩選的搜尋
+
+篩選搜尋會使用多個屬性值的維度，或 [Facet](facets.md)，以作為搜尋條件。 篩選器的選取專案由商家定義，並會根據傳回的產品而變更，而最常使用的多面向會釘選至清單頂端。
+
+使用Facet做為URL引數：`http://yourwebsite.com?color=red`和「即時搜尋」會根據這些屬性值篩選結果。
+
+### 同義字
+
+[同義字](synonyms.md) 透過包含購物者可能使用的與目錄不同的字詞，來擴大觸及面並強化查詢的焦點。 您可以微調同義字字典，讓購物者持續參與並前往購買路徑。
+
+### 銷售規則
+
+銷售 [規則](rules.md) 使用可新增邏輯和事件以搜尋的if-then陳述式來塑造購物體驗。 您可以輕鬆提升或隱藏促銷活動、季節或其他時段之產品。
+
+### 搜尋詞支援
+
+[!DNL Live Search] 支援Commerce [搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入運費頁面。
+
 ## Live Search元件
 
-* [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
-* [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
-* AEM CIF元件： [彈出視窗Widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) 和 [PLP Widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) 允許AEM網站利用 [!DNL Live Search].
-* [[!DNL Live Search] 管理員](workspace.md) 是設定規則、多面向和同義字的位置。
-
-## 工作流程概觀
-
-[!DNL Live Search] 的運作方式是將目錄資料移至Adobe Commerce SaaS基礎結構，並建立索引，以便根據使用者型別快速提供搜尋結果。
-
-### 1.安裝
-
-[!DNL Live Search] 是 [已安裝](install.md) 至您的Adobe Commerce執行個體，透過 [作曲者](https://getcomposer.org/). 這會安裝連線至服務的必要模組，並設定Commerce執行個體以覆寫預設搜尋欄位。 此外也會安裝設定服務的Commerce管理選項。
-
-### 2.同步資料
-
-[!DNL Live Search] 將目錄資料移至Adobe的SaaS基礎結構。 資料會編制索引，而搜尋結果會從此索引直接傳送到店面。 根據大小和複雜性，索引可能需要30分鐘到數小時的時間。
-
-### 3.設定資料
-
-正確設定您的產品資料可確保為您的客戶帶來良好的搜尋結果。 需要執行數個設定步驟：指派類別和設定屬性。
-
-#### 指派類別
-
-產品傳回 [!DNL Live Search] 必須指派給 [類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這可提供更精細的篩選粒度。
-
-#### 可搜尋和可篩選的欄位
-
-已指派產品 [屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可用於搜尋和篩選的規則。 屬性包括「顏色」、「尺寸」、「材質型別」等。 透過這些屬性，使用者可以尋找「綠色頂端」。 每個產品可能有許多在Commerce管理員中定義的屬性。
-
-每一個屬性都可以定義為 [&quot;searchable&quot;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html) 在管理員中。 當設為「可搜尋」時，這些屬性便可供搜尋 [!DNL Live Search].
-
-[Facet](facets.md) 是在中定義的產品屬性 [!DNL Live Search] 可篩選。 任何可篩選的屬性都可以設定為Facet於 [!DNL Live Search] 但一次可以搜尋的面向數量存在限制。
-
-[同義字](synonyms.md) 是您可以定義的術語，以協助引導使用者使用正確的產品。 尋找褲子的使用者可能會輸入「trousers」或「slacks」。 您可以設定同義字，讓這些搜尋詞將使用者帶到「褲子」結果。
+- [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
+- [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
+- [[!DNL Live Search] 管理員](workspace.md) 是設定規則、多面向和同義字的位置。
 
 ## [!DNL Live Search] 工作區
 
@@ -62,20 +80,6 @@ ht-degree: 0%
 ## 活動
 
 [!DNL Live Search] 使用 [事件](events.md) 以計算 [智慧型銷售](category-merch.md) 和 [績效](performance.md) 控制面板。 事件會隨預設實施提供。 Headless店面事件應手動啟用。
-
-## 自訂Widget
-
-大部分的店舖擁有者會想要確保 [!DNL Live Search] Widget符合其商店外觀和風格。
-
-您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 另請參閱 [樣式彈出視窗元素](storefront-popover-styling.md) 和 [產品清單頁面Widget](plp-styling.md).
-
-如果您想要擴充Widget的功能，每個元件的原始碼都可在公用存放庫中取得。
-在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。 此自訂指令碼會與 [!DNL Live Search] 並傳回正常結果，讓您控制Widget的功能。
-
-* [PLP Widget存放庫](https://github.com/adobe/storefront-product-listing-page)
-* [搜尋列存放庫](https://github.com/adobe/storefront-search-as-you-type)
-
-取得更多關於以下內容的詳細資訊： [!DNL Live Search] 在 [技術概覽](technical-overview.md).
 
 ## [!DNL Live Search] 示範
 

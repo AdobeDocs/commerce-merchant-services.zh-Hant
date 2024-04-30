@@ -3,7 +3,7 @@ title: 目錄同步
 description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: d95c11a35c78d72da8126affb0753d86aa695827
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 「目錄同步」控制面板現在是「資料管理」控制面板。 這個改版後的儀表板現在支援 [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md)， [[!DNL Live Search]](../live-search/guide-overview.md)、和 [[!DNL Catalog Service]](../catalog-service/overview.md). 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 如需詳細資訊，請參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 檔案。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
+> 「目錄同步」控制面板現在是「資料管理」控制面板。 這個改版後的儀表板現在支援 [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md)， [[!DNL Live Search]](../live-search/overview.md)、和 [[!DNL Catalog Service]](../catalog-service/overview.md). 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 如需詳細資訊，請參閱 [資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 檔案。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
 
 Adobe Commerce使用索引器將目錄資料編譯到表格中。 程式自動觸發自 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如產品價格或存貨層次變更。
 
