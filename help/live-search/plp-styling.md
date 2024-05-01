@@ -2,9 +2,9 @@
 title: 產品清單頁面Widget
 description: 啟用並設定樣式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ PLP Widget提供可搜尋產品頁面中所需的一系列功能。 這些功能
 * 加入購物車功能
 * 多語言支援
 * 價格滑桿
+
+如需有關如何自訂PLP Widget以處理上述功能的資訊，請參閱 `storefront-product-listing-page` 讀我檔案（在下列專案中） [存放庫](https://github.com/adobe/storefront-product-listing-page/).
 
 ## 樣式範例
 

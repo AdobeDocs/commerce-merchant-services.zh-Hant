@@ -3,16 +3,16 @@ title: 「開始使用 [!DNL Live Search]"
 description: 「瞭解的系統需求與安裝步驟 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
+source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
 
-# 設定以取得成功 [!DNL Live Search] 和 [!DNL Catalog Service]
+# 設定以取得成功 [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] 和 [!DNL Catalog Service] 共同合作，提供效能、相關且直覺式的搜尋解決方案，讓客戶快速找到所需的專案。 具體來說， [!DNL Catalog Service] 顯示您的SaaS服務目錄資料，例如 [!DNL Live Search] 以使用。
+Adobe Commerce [!DNL Live Search] 和 [[!DNL Catalog Service]](../catalog-service/guide-overview.md) 共同合作，提供效能、相關且直覺式的搜尋解決方案，讓客戶快速找到所需的專案。 具體來說， [!DNL Catalog Service] 顯示您的SaaS服務目錄資料，例如 [!DNL Live Search] 以使用。
 
 本文提供實作的逐步指示 [!DNL Live Search] 替換為 [!DNL Catalog Service].
 
