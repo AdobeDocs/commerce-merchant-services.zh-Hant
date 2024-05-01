@@ -3,9 +3,9 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ _2022年10月12日_
 _2024年4月4日_
 
 ![新增](../assets/new.svg)  — 新增對所有PHP 8.3的支援 [!DNL Data Connection] 擴充功能。
-![新增](../assets/new.svg)  — 新增如何操作的文章 [整合](mobile-sdk-epc.md) 具Commerce的Adobe Experience Platform Mobile SDK。
+![新增](../assets/new.svg)  — 新增如何操作的文章 [整合](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce。
 
 ## 3.2.0-beta2
 
@@ -87,7 +87,7 @@ _2024年3月4日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新增](../assets/new.svg)  — 如果您正在參與Beta版測試，請確定您的 `composer.json` 檔案的根層級如下： ` "minimum-stability": "beta"`.
+![新增](../assets/new.svg)  — 如果您正在參與Beta版測試，請確定您的 `composer.json` 檔案的根層級如下： ` "minimum-stability": "beta"`. 此外，新增 `composer require "magento/customers-connector: ^1.2.0"` 將客戶設定檔從您的Commerce執行個體傳送至SaaS。
 ![新增](../assets/new.svg)  — 新增以下功能： [新增自訂屬性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![新增](../assets/new.svg)  — 新增以下功能： [收集和傳送設定檔記錄](connect-data.md#send-customer-profile-data) 和資料進行Experience Platform。
 
