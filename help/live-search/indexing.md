@@ -1,8 +1,8 @@
 ---
-title: '"[!DNL Live Search] 索引」'
+title: "索引"
 description: 「瞭解如何 [!DNL Live Search] 索引產品屬性屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 商務客戶具有 [!DNL Live Search] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/price-indexing.md).
+> Commerce客戶，具有 [!DNL Live Search] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/price-indexing.md).
 
 ## 索引管道
 

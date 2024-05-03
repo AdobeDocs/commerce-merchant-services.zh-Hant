@@ -1,18 +1,18 @@
 ---
-title: '''Commerce組態設定和 [!DNL Live Search] 『'
-description: 說明Adobe Commerce組態設定， [!DNL Live Search] 可以閱讀。
+title: 'Commerce組態設定'
+description: 說明Commerce組態設定， [!DNL Live Search] 可以閱讀。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] 和Adobe Commerce組態設定
+# Commerce組態設定
 
-有Commerce組態設定 [!DNL Live Search] 支援。 本主題列出這些組態值。
+有Commerce組態設定 [!DNL Live Search] 支援。 本文列出這些設定值。
 
 ## 支援的設定值
 

@@ -3,16 +3,16 @@ title: 什麼是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供快速、相關且直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 什麼是 [!DNL Live Search]？
 
-[!DNL Live Search] 是取代Adobe Commerce中標準搜尋功能的擴充功能。 此 [!DNL Live Search] 擴充功能會隨Composer一起安裝，並連線至 [!DNL Commerce] 安裝至 [!DNL Live Search] [服務](../landing/saas.md). 設定後，預設搜尋文字欄位會取代為 [!DNL Live Search] 文字欄位。 [!DNL Live Search] 也會安裝產品清單頁面(PLP) Widget，在瀏覽搜尋結果時提供強大的篩選功能。
+[!DNL Live Search] 是一項功能，可取代Adobe Commerce中的標準搜尋功能。 此 [!DNL Live Search] 功能隨Composer一起安裝，並連線您的 [!DNL Commerce] 儲存至 [Commerce服務聯結器](../landing/saas.md). 設定後，預設搜尋文字欄位會取代為 [!DNL Live Search] 文字欄位。 [!DNL Live Search] 也會安裝產品清單頁面(PLP) Widget，在瀏覽搜尋結果時提供強大的篩選功能。
 
 替換為 [!DNL Live Search]，您可以：
 
@@ -75,7 +75,6 @@ ht-degree: 0%
 
 - [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
 - [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
-- [[!DNL Live Search] 管理員](workspace.md) 是設定規則、多面向和同義字的位置。
 
 ## [!DNL Live Search] 工作區
 

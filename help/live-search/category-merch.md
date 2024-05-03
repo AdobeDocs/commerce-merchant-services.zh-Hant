@@ -3,7 +3,7 @@ title: 類別銷售
 description: 使用 [!DNL Live Search] 類別銷售，提升購物體驗。
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->類別銷售可用於 [!DNL Live Search] [3.0.0或更新版本](release-notes.md). 如果您看見「類別銷售」標籤，但此標籤未填入資料，請更新 [!DNL Live Search] 模組。
+>類別銷售可用於 [!DNL Live Search] [3.0.0或更新版本](release-notes.md). 如果您看到類別銷售工作區，但其中未填入資料，請更新 [!DNL Live Search] 模組。
 
 ![類別銷售](assets/category_workspace.png)
 

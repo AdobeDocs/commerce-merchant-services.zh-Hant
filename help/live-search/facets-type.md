@@ -2,9 +2,9 @@
 title: 「多面向型別」
 description: '"[!DNL Live Search] 多面是動態的，並在相關時出現在篩選器清單中。」'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * 釘選Facet — 最常用的Facet可以釘選到清單頂端。 其餘的多面會列在 *排序型別* 釘選多面之後的順序。
 * 動態Facet — 產品屬性 [Adobe Sensei](https://www.adobe.com/sensei.html) 尋找與產品集和查詢最相關的專案。 計算會考量整個目錄的屬性中繼資料，並在查詢時決定與查詢最相關的Facet。
 * 熱門面向 — 最常出現在搜尋結果中的產品屬性。
-* 價格Facet — 依價格範圍傳回產品。 您可以指定選項數目與價格範圍間隔，在 [*設定*](settings.md) 標籤。
+* 價格Facet — 依價格範圍傳回產品。 您可以指定選項數目與價格範圍間隔，在 [*設定*](settings.md) 工作區。
 
 在查詢時， [!DNL Live Search] 會在動態和人氣Facet群組中產生搜尋結果。
 

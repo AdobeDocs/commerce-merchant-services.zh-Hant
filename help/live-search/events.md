@@ -3,9 +3,9 @@ title: 『[!DNL Live Search] 活動
 description: 瞭解事件如何收集資料 [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] 會使用事件來支援搜尋演演算法，例如「檢視次數最多」和「已檢視這個專案，已檢視那個專案」。 雖然LUMA使用者可立即使用事件，但Headless和其他自訂實作仍必須根據自己的需求實作事件。
 
 從 [!DNL Live Search] 和 [!DNL Product Recommendations] 使用相同的後端演演算法，兩個服務會共用某些事件。 有些產品Recommendations事件需要填入Recommendations控制面板。
-
-## 活動
 
 此表格說明使用的事件 [!DNL Live Search] 策略。
 

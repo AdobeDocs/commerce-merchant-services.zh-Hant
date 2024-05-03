@@ -2,7 +2,7 @@
 title: "新增規則"
 description: 「瞭解如何建立Search Merchandising規則。」
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 在Admin中，前往 **行銷** > SEO與搜尋> **[!DNL Live Search]**.
 1. 設定 **範圍** 以識別 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 規則的套用位置。
-1. 按一下 **搜尋銷售** 標籤。
+1. 按一下 **搜尋銷售** 工作區。
 1. 按一下 **新增規則** 以啟動規則編輯器。
 
 ## 規則型別
@@ -142,7 +142,7 @@ ht-degree: 0%
 1. 如果規則有多個查詢，請測試每個可能受規則影響的查詢。
 1. 完成後，按一下 **儲存並發佈**.
 
-   規則會新增至規則工作區的清單中。
+   規則會新增至 *規則* 工作區。
 
 1. 雖然使用中的規則會立即生效，但您可能需要等候最多15分鐘，才能重新整理店面中的快取查詢結果。
 

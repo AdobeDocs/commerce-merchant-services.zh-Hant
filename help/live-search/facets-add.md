@@ -2,9 +2,9 @@
 title: "新增Facet"
 description: 「瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] 多面向。」
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 任何可篩選的產品屬性都可以當作Facet使用。 此 *新增多面向* 面板會列出目前的多面，並可讓您輕鬆將其他產品屬性指派為Facet。 在這三個步驟的流程中，選擇屬性作為多面，視需要編輯屬性，並將變更發佈到店面。
 
-![多面向工作區](assets/facets-add.png)
+![新增Facet](assets/facets-add.png)
 
 ## 步驟1：新增多面向
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 完成後，按一下 **儲存**.
 
-   ![多面向工作區](assets/facet-edit.png)
+   ![編輯Facet](assets/facet-edit.png)
 
 1. 若要將多面釘選至頂端 *篩選器* 清單，按一下灰色圖釘(![圖釘選擇器](assets/btn-pin-gray.png))。
 1. 若要變更釘選多面的順序，請按一下 **移動** (![移動選擇器](assets/btn-move.png))圖示並將列拖曳到 *釘選多面向* 區段。

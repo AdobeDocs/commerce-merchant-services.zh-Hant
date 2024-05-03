@@ -3,9 +3,9 @@ title: 「開始使用 [!DNL Live Search]"
 description: 「瞭解的系統需求與安裝步驟 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Adobe Commerce [!DNL Live Search] 和 [[!DNL Catalog Service]](../catalog-servic
 ## 工作流程概觀
 
 概略說明，入門 [!DNL Live Search] 需要您：
-
-- 安裝擴充功能
-- 設定API金鑰
-- 同步您的目錄資料
-- 驗證是否已匯出資料
-- 設定您的資料
-- 測試連線
-- 為您的店面自訂
 
 ![即時搜尋工作流程](assets/livesearch-workflow.png)
 

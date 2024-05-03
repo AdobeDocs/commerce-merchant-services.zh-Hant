@@ -1,17 +1,17 @@
 ---
-title: 「效能儀表板」
-description: 「此 [!DNL Live Search] 績效儀表板可讓您深入瞭解購物者使用的搜尋辭彙。」
+title: 「效能」
+description: 「此 [!DNL Live Search] 效能工作區可讓您深入瞭解購物者使用的搜尋辭彙。」
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# 效能儀表板
+# 效能
 
-此 [!DNL Live Search] 績效儀表板可讓您深入分析購物者使用的搜尋辭彙。 此資訊可用於識別趨勢、增加點進和提高轉換率。 「效能」儀表板提供特定日期範圍的搜尋測量結果快照，並包括下列報表：
+此 *效能* 工作區可讓您深入瞭解購物者使用的搜尋辭彙。 此資訊可用於識別趨勢、增加點進和提高轉換率。 效能工作區可提供特定日期範圍的搜尋測量結果快照，並包括下列報表：
 
 * 不重複搜尋
 * 零個結果
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->效能儀表板每12小時更新一次。
+>效能工作區每12小時更新一次。
 
 ## 欄位說明
 
