@@ -3,9 +3,9 @@ title: 『[!DNL Product Recommendations] 版本注意事項
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
+source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,16 @@ _2023年4月25日_
 
 ## 目前的主要版本
 
+### 6.0.2的magento/product-recommendations
+
+_2024年5月9日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg) 修正按一下 **[!DNL Add to Cart]** 產品Recommendations單位內簡單產品上的按鈕將購物者重新導向首頁，而非停留在目前頁面。
+
+### 舊版
+
 ### 6.0.1的magento/product-recommendations
 
 _2024年3月19日_
@@ -52,8 +62,6 @@ _2024年3月19日_
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg) 新增PHP 8.3支援。
-
-### 舊版
 
 ### 6.0.0的magento/product-recommendations
 
