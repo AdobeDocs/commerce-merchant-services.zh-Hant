@@ -3,9 +3,9 @@ title: 「開始使用 [!DNL Live Search]"
 description: 「瞭解的系統需求與安裝步驟 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -419,9 +419,23 @@ Live Search客戶可使用新的 [SaaS價格索引子](../price-index/price-inde
 
 價格格式支援Commerce例項中的地區設定組態設定： *商店* >設定> *設定* >一般> *一般* >本機選項>地區設定。
 
+### Headless店面支援
+
+或者，您可能需要安裝 `module-data-services-graphql` 此模組可擴充應用程式的現有GraphQL涵蓋範圍，以包含店面行為資料收集所需的欄位。
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+此模組會將其他內容新增至GraphQL查詢：
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
+
 ### PWA支援
 
-[!DNL Live Search] 可與PWA Studio搭配使用，但使用者與其他Commerce實施之間可能會有細微差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 此外，也可能會出現效能差異。
+[!DNL Live Search] 可與PWA Studio搭配使用，但使用者與其他Commerce實施之間可能會有細微差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 可能也會有效能差異。
 
 - 目前的PWA實作 [!DNL Live Search] 傳回搜尋結果所需的處理時間比 [!DNL Live Search] 搭配原生Commerce店面。
 - [!DNL Live Search] PWA不支援 [事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，搜尋報表和智慧型銷售都將可正常運作。
