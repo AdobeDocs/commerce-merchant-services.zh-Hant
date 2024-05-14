@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 
 - 此 [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 模組停用時機 [!DNL Live Search] 已安裝，且店面頁尾中的進階搜尋連結已移除。
 - [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 和 [特殊定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 不支援 [!DNL Live Search] 欄位與產品清單頁面Widget。
-- [!DNL Live Search] 無法從多個來源彙總詳細目錄資料。
 - 產品價格不含增值稅(VAT)。
 - 不支援內容搜尋。
 - 可分頁的產品上限為10,000件。
