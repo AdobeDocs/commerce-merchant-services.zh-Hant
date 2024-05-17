@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
 - 產品價格不含增值稅(VAT)。
 - 不支援內容搜尋。
 - 可分頁的產品上限為10,000件。
+- 搜尋配接卡不支援使用自訂來源模型建立並當作Facet使用的產品屬性。 若要支援此功能，您必須使用 [產品清單頁面Widget](plp-styling.md).
 
 ## 索引
 

@@ -3,9 +3,9 @@ title: 什麼是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供快速、相關且直覺式的搜尋體驗。」'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->在網站搜尋方面，Adobe Commerce會提供您選項。 請務必閱讀 [邊界和限制](boundaries-limits.md) 實施前，為了確保 [!DNL Live Search] 適合您的業務需求。
+>在網站搜尋方面，Adobe Commerce會提供您選項。 實施前，請檢閱 [邊界和限制](boundaries-limits.md) 資訊以確保 [!DNL Live Search] 適合您的業務需求。
 
 ## 架構
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-如需有關如何使用和設定「即時搜尋」的更深入影片，請參閱 [完整示範： [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 主題。
+如需有關使用和設定「即時搜尋」的更深入影片，請參閱 [完整示範： [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) 主題。
 
 ### 依輸入內容搜尋
 
-[!DNL Live Search] 在中，以建議的產品和排名最前的搜尋結果的縮圖影像回應 [彈出視窗](storefront-popover.md) 當購物者輸入查詢至 [搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 方塊。 此 [產品詳細資料](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 當購物者按一下建議或精選產品時，頁面就會顯示。 A _檢視全部_ 彈出視窗頁尾中的連結會顯示搜尋結果頁面。
+[!DNL Live Search] 在中，以建議的產品和排名最前的搜尋結果的縮圖影像回應 [彈出視窗](storefront-popover.md) 當購物者輸入查詢至 [搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 方塊。 此 [產品詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 當購物者按一下建議或精選產品時顯示頁面。 A _檢視全部_ 彈出視窗頁尾中的連結會顯示搜尋結果頁面。
 
 [!DNL Live Search] 針對兩個或多個字元的查詢，傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包括`name`， `sku`、和 `category_ids` 欄位。
 
@@ -69,12 +69,13 @@ ht-degree: 0%
 
 ### 搜尋詞支援
 
-[!DNL Live Search] 支援Commerce [搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入運費頁面。
+[!DNL Live Search] 支援Commerce [搜尋字詞重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入運費頁面。
 
 ## Live Search元件
 
 - [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
-- [產品清單頁面Widget](plp-styling.md) 提供可搜尋的產品清單頁面，支援多面向和同義字。
+- [產品清單頁面Widget](plp-styling.md) (PLP)提供可搜尋的產品清單頁面，支援多面向和同義字。 Widget已安裝並在Live Search 4.0.0+中啟用。
+- (**已棄用**)搜尋配接器是PLP Widget的前身，並隨Live Search &lt; 4.0.0安裝。如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。
 
 ## [!DNL Live Search] 工作區
 
