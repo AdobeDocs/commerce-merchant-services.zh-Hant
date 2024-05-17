@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 簡介 [!DNL Payment Services]
 
-[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是您的全包自助服務解決方案，包括沙箱測試和簡單的設定，可為您的Commerce網站提供穩定且安全的付款處理。
+[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是您的turnkey自助式解決方案，包括沙箱測試和簡單的設定，可為您的Commerce網站提供穩定且安全的付款處理。
 
 ![[!DNL Payment Services] 擴充功能管理員檢視](assets/admin-view.png){width="300" zoomable="yes"}
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 上線和設定 [!DNL Payment Services] 只需幾個步驟即可完成：
 
 1. 取得 [[!DNL Payment Services] 副檔名](install.md).
-1. 將您的Commerce執行個體連線到Commerce Services。
+1. 將您的Commerce執行個體連線至Commerce Services。
 1. 上線並設定沙箱服務。
 1. 啟用 [!DNL Payment Services] 作為您的付款方式，並開始處理測試付款。
 1. 完成商家上線以啟用您網站的即時付款。
