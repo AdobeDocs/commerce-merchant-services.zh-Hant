@@ -2,39 +2,35 @@
 title: 上線和安裝
 description: 「瞭解如何安裝 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 上線和安裝
 
-安裝目錄服務，使用向Commerce執行個體要求及接收產品資料 [目錄服務GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+安裝目錄服務，使用向Commerce執行個體要求及接收產品資料 [目錄服務GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). 目錄服務是以repo.magento.com存放庫中Composer中繼資料的形式提供。
 
 >[!NOTE]
 >
 >如果您的Commerce執行個體使用即時搜尋或產品Recommendations，當您啟動或升級這些服務時，目錄服務會自動安裝或更新。 如需詳細資訊，請參閱 [即時搜尋](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) 和 [產品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## 必要條件
 
-的入門流程 [!DNL Catalog Service] 需要存取伺服器的命令列。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
+## 系統需求
 
 **軟體需求**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1、8.2
+- PHP 8.1、8.2、8.3
 - Composer： 2.x
 
 **支援平台**
 
 - 雲端基礎結構上的Adobe Commerce： 2.4.4+
 - Adobe Commerce內部部署： 2.4.4+
-
->[!ENDSHADEBOX]
 
 ## 端點
 
@@ -51,19 +47,23 @@ ht-degree: 0%
 
 開始使用 [!DNL Catalog Service] 若為Adobe Commerce，需要下列步驟：
 
-- 安裝資料匯出擴充功能
+- 安裝目錄服務擴充功能(`magento/catalog-service`)
 - 設定服務與資料匯出
 - 存取服務
 
-### 安裝資料匯出擴充功能
+### 安裝目錄服務擴充功能
 
-您必須能存取伺服器的命令列，才能完成 [!DNL Catalog Service] 上線流程。
+>[!BEGINSHADEBOX]
 
-此 [!DNL Catalog Service] 隨連結至Commerce帳戶的撰寫器金鑰安裝 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在註冊過程中提供。 Composer會在Adobe Commerce的初始安裝期間，或先前未將Composer金鑰儲存至外部時，使用這些金鑰 `auth.json` 檔案。
+**先決條件**
 
-另請參閱 [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以取得有關取得撰寫器索引鍵的詳細資訊。
+- 存取 [repo.magento.com](https://repo.magento.com) 以安裝擴充功能。 如需金鑰產生與取得必要許可權的相關資訊，請參閱 [取得您的驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). 如需雲端安裝的相關資訊，請參閱 [雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-此 [!DNL Catalog Service] 擴充功能可安裝在Adobe Commerce雲端基礎結構和內部部署執行個體上。
+- 存取Adobe Commerce應用程式伺服器的命令列。
+
+>[!ENDSHADEBOX]
+
+安裝最新版本的目錄服務擴充功能(`magento/catalog-service`)在執行Adobe Commerce 2.4.4版或更新版本的Adobe Commerce執行個體上執行。 目錄服務是以Composer中繼資料的形式提供，來自 [repo.magento.com](https://repo.magento.com) 存放庫。
 
 >[!BEGINTABS]
 
