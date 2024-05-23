@@ -3,9 +3,9 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ ht-degree: 0%
    >[!INFO]
    >
    > 請參閱我們的 [[!DNL Adobe Commerce] 服務聯結器](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) 視訊以取得其他資訊。
+
+## 端點
+
+[!DNL Payment Services] 使用 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 以連線至Commerce服務並部署為SaaS。 這個 [!DNL Commerce Services Connector] 透過下列位置的端點通訊：
+
+* `commerce-beta.adobe.io` 用於沙箱環境。
+* `commerce.adobe.io for` 適用於即時環境。

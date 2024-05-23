@@ -4,7 +4,7 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-部分Adobe Commerce和Magento Open Source功能由提供技術支援 [!DNL Commerce Services]  並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須連線 [!DNL Commerce] 使用生產和沙箱API金鑰的例項，並在 [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需要設定一次。
+部分Adobe Commerce和Magento Open Source功能由提供技術支援 [!DNL Commerce Services] 並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須連線 [!DNL Commerce] 使用生產和沙箱API金鑰的例項，並在 [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需要設定一次。
 
 ## 可用的服務 {#availableservices}
 
