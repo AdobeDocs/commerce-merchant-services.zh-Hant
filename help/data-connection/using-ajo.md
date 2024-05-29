@@ -4,36 +4,85 @@ description: 瞭解如何使用Adobe Journey Optimizer傳送捨棄的購物車�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件
 
+瞭解如何在購物車或瀏覽器工作階段已放棄時傳遞個人化重新參與電子郵件或通知。 在本文中，您會使用客戶產生的資料，這些客戶已檢視許多產品和類別、參與產品或花費在頁面上。
+
+## 我應考慮使用哪些資料？
+
+使用店面和後台事件的資料，建立捨棄的購物車、瀏覽電子郵件或通知。
+
+| 資料型別 | 店面資料（行為事件） | 後台資料（伺服器端事件） |
+|---|---|---|
+| **定義** | 客戶在您網站上採取的點按或動作。 | 生命週期相關資訊和每個訂單（過去和目前）的詳細資訊。 |
+| **Adobe Commerce擷取的事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
+
+### 我可以只使用Adobe Commerce做什麼？
+
+使用Adobe [!DNL Commerce] 以設定規則型電子郵件提醒，可作為購物車或瀏覽放棄電子郵件。 在此處瞭解詳情。
+
+### Adobe可以做什麼 [!DNL Commerce] 和Experience Cloud？
+
+- **Adobe [!DNL Commerce] 使用Adobe Journey Optimizer**  — 使用Adobe [!DNL Commerce] 透過Adobe Journey Optimizer，您可使用 [!DNL Commerce] 作為全頻道放棄歷程觸發器的資料。 您可以根據客戶屬性、他們放棄的專案、其他購物行為和過去的購買行為，來個人化該歷程。
+
+- **Adobe Commerce、Adobe Journey Optimizer和Adobe Real-Time CDP**  — 新增Real-Time CDP可讓您根據統一的客戶設定檔和集中管理的規則型或AI支援的受眾，進一步調整放棄促銷活動。 例如，您可以建立：
+
+   - 放棄率低的「轉換率強」對象
+   - 重複造訪特定類別多次的「高考量」對象
+   - 「高潛在」受眾，具有高支出和忠誠度，但最近放棄
+
+### 其他客戶都取得了哪些成就？
+
+Adobe [!DNL Commerce] 客戶透過Adobe來實施個人化的放棄行銷活動，已獲得顯著的業務影響 [!DNL Commerce]，Adobe [!DNL Journey Optimizer]，和Adobe [!DNL Real-Time CDP].
+
+一家全球多品牌服裝零售商達成：
+
+- 來自新行銷活動的1.9倍點選轉換
+- 來自全頻道放棄歷程的收入增加57%
+- 重新參與行銷活動的轉換率增加41%
+- 每週有1000多名新購物者參與
+
+一家全球飲料公司達成：
+
+- 36%重新參與電子郵件開啟率
+- 點進率提升21%
+- 轉換率提升8.5%
+- 89%的重新參與放棄者轉換
+
+## 讓我們開始吧
+
+此特定使用案例著重於使用來自的資料建立放棄的購物車電子郵件 [!DNL Commerce] 執行個體並傳送給Adobe [!DNL Journey Optimizer].
+
+### 什麼是Adobe Journey Optimizer？
+
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) 協助您為購物者打造個人化的商務體驗。 例如，您可以使用Journey Optimizer建立並傳送排程行銷活動（例如零售商店的每週促銷活動），或如果客戶將產品加入購物車但未完成結帳程式，則產生放棄的購物車電子郵件。
 
-按照以下步驟操作，您可以瞭解如何聆聽 `checkout` 從您的Commerce執行個體產生的事件並在Journey Optimizer中回應該事件，以建立捨棄的購物車電子郵件。
+在此主題中，您將瞭解如何透過聆聽 `checkout` 事件產生自 [!DNL Commerce] 執行個體和回應該Journey Optimizer事件。
 
 >[!IMPORTANT]
 >
->為了示範，請務必使用您的Commerce沙箱環境。 這可確保您傳送至Experience Platform的店面和後台事件資料不會稀釋您的生產事件資料。
+>為了示範，請使用 [!DNL Commerce] 沙箱環境，這樣您就不會用傳送給Experience Platform的店面和後台事件資料稀釋生產事件資料。
 
-## 必要條件
+### 必要條件
 
 開始這些步驟之前，請確定：
 
-- 您已布建為可使用Adobe Journey Optimizer
-- 您 [已設定](connect-data.md) 此 [!DNL Data Connection] 副檔名
-- 您 [已確認](connect-data.md#confirm-that-event-data-is-collected) 您的Commerce事件資料已送達Experience Platform邊緣
+- 您已布建為可使用Adobe [!DNL Journey Optimizer]. 如果您不確定，請洽詢您的系統整合商或管理專案和環境的開發團隊。
+- 您 [已安裝](install.md) 和 [已設定](connect-data.md) 此 [!DNL Data Connection] 中的擴充功能 [!DNL Commerce].
+- 您 [已確認](connect-data.md#confirm-that-event-data-is-collected) 您的 [!DNL Commerce] 事件資料已送達Experience Platform邊緣。
 
-## 步驟1：在您的Commerce沙箱環境中建立使用者
+## 步驟1：在中建立使用者 [!DNL Commerce] 沙箱環境
 
 在您的沙箱環境中建立使用者，並確認該使用者帳戶資訊會顯示在Experience Platform中。 請確認您指定的電子郵件有效，如同稍後在本節中用來傳送捨棄的購物車電子郵件一樣。
 
-1. 在您的Commerce沙箱環境中登入或建立帳戶。
+1. 在您的中登入或建立帳戶 [!DNL Commerce] 沙箱環境。
 
    ![登入您的測試帳戶](assets/sign-in-account.png){width="700" zoomable="yes"}
 
@@ -47,7 +96,7 @@ ht-degree: 0%
 
 ## 步驟2：在Journey Optimizer中檢視事件
 
-在您的Commerce沙箱環境中，檢視產品頁面、將專案新增到購物車，以及購物者將執行的各種其他活動。 這些活動會在您的店面觸發事件。 您現在可以確認這些事件正流入Journey Optimizer。
+在您的 [!DNL Commerce] 沙箱環境，檢視產品頁面、將專案新增至購物車並完成購物者將執行的各種其他活動來觸發店面上的事件。 然後，確認這些事件正在流入Journey Optimizer。
 
 1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 1. 選取 **[!UICONTROL Profiles]**.
@@ -59,18 +108,18 @@ ht-degree: 0%
 
    尋找 `commerce.checkouts` 事件並檢查事件裝載：
 
-   ```json
-   "personID": "84281643067178465783746543501073369488", 
-   "eventType": "commerce.checkouts", 
-   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-   "commerce": { 
-       "cart": {}, 
-       "checkouts": { 
-           "value": 1 
-       } 
-   ```
-
-   如您所見，完整的事件裝載包含豐富的事件資料。 在下一節中，您將設定Journey Optimizer中的事件以監聽和回應 `commerce.checkouts` 從您的Commerce店面產生的事件。
+       &quot;&#39;json
+       &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
+       &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
+       &quot;_id&quot;： &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;，
+       &quot;commerce&quot;： {
+       &quot;cart&quot;： {}，
+       「結帳」： {
+       &quot;value&quot;： 1
+       }
+       ```
+   
+   如您所見，完整的事件裝載包含豐富的事件資料。 在下一節中，您將設定Journey Optimizer中的事件以監聽和回應 `commerce.checkouts` 事件產生自 [!DNL Commerce] 店面。
 
 ## 步驟3：在Journey Optimizer中設定事件
 
@@ -93,10 +142,10 @@ ht-degree: 0%
    1. 設定 **[!UICONTROL Name]** 至： `firstname_lastname_checkout`.
    1. 設定 **[!UICONTROL Type]** 至 **[!UICONTROL Unitary]**.
    1. 設定 **[!UICONTROL Event id typ]è** 至 **[!UICONTROL Rule based]**.
-   1. 設定 **[!UICONTROL Schema]** 至您的商務 [綱要](update-xdm.md).
-   1. 選取 **[!UICONTROL Fields]** 和 **[!UICONTROL Fields]** 在出現的頁面中，選取對此事件有用的欄位。 例如，選取「 」下 **[!UICONTROL Product list items]**， **[!UICONTROL Commerce]**， **[!UICONTROL eventType]**、和 **[!UICONTROL Web]**.
+   1. 設定 **[!UICONTROL Schema]** 至您的 [!DNL Commerce] [綱要](update-xdm.md).
+   1. 選取 **[!UICONTROL Fields]** 以開啟 **[!UICONTROL Fields]** 頁面。 然後，選取對此事件有用的欄位。 例如，選取「 」下 **[!UICONTROL Product list items]**， **[!UICONTROL Commerce]**， **[!UICONTROL eventType]**、和 **[!UICONTROL Web]**.
    1. 按一下 **[!UICONTROL OK]** 以儲存選取的欄位。
-   1. 按一下 **[!UICONTROL Event id condition]** 欄位並建立條件 `eventType` 等於 `commerce.checkouts` 和 `personalEmail.address` 等於您在上一節建立設定檔時使用的電子郵件地址。
+   1. 按一下 **[!UICONTROL Event id condition]** 欄位。 然後，建立條件： `eventType` 等於 `commerce.checkouts` 和 `personalEmail.address` 等於您在上一節建立設定檔時使用的電子郵件地址。
 
       ![Journey Optimizer設定條件](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
@@ -111,8 +160,8 @@ ht-degree: 0%
 
    1. 設定 **[!UICONTROL Name]** 至： `firstname_lastname_timeout`.
    1. 設定 **[!UICONTROL Type]** 至 **[!UICONTROL Unitary]**.
-   1. 設定 **[!UICONTROL Event id typ]è** 至 **[!UICONTROL Rule based]**.
-   1. 設定 **[!UICONTROL Schema]** 至您的商務 [綱要](update-xdm.md).
+   1. 設定 **[!UICONTROL Event id type]** 至 **[!UICONTROL Rule based]**.
+   1. 設定 **[!UICONTROL Schema]** 至您的 [!DNL Commerce] [綱要](update-xdm.md).
    1. 設定 **[!UICONTROL Schema]**， **[!UICONTROL Fields]**、和 **[!UICONTROL Event id condition]** 與上述相同。
    1. 按一下 **[!UICONTROL Save]** 以儲存您的事件。
 
@@ -153,7 +202,7 @@ ht-degree: 0%
 
 1. 請遵循 [步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) 在Journey Optimizer指南中，建立捨棄的購物車電子郵件。
 
-您現在在Journey Optimizer中有一個聆聽 `commerce.checkouts` Commerce商店中的事件，以及一段時間後傳送的捨棄購物車電子郵件。 在下一節中，您將測試歷程。
+您現在在Journey Optimizer中有一個聆聽 `commerce.checkouts` 來自您的的事件 [!DNL Commerce] 商店和一段時間後傳送的捨棄購物車電子郵件。 下一節將說明如何測試歷程。
 
 ## 步驟5：即時觸發結帳事件
 
@@ -163,7 +212,7 @@ ht-degree: 0%
 
    ![啟用測試模式](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. 若要即時測試此歷程，請開啟另一個瀏覽器索引標籤，並前往您的沙箱Commerce網站。
+1. 若要即時測試此歷程，請開啟另一個瀏覽器索引標籤，並前往 [!DNL Commerce] 網站的問題。
 
    1. 新增產品至購物車。
    1. 前往結帳頁面。
