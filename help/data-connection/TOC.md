@@ -5,10 +5,10 @@ breadcrumb-title: '"[!DNL Data Connection] Adobe Commerce的擴充功能」'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: ae9a87d3a1dd2b20acc534defd51556a9edc31c2
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 3%
 
 ---
 
@@ -31,3 +31,4 @@ ht-degree: 4%
    - [使用Adobe Experience Platform標籤](using-tags.md)
 - 使用案例 {#use-cases}
    - [使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件](using-ajo.md)
+   - [使用Commerce事件資料在Real-Time CDP中建立對象](create-audience.md)
