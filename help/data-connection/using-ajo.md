@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Journey Optimizer傳送捨棄的購物車�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ ht-degree: 0%
 |---|---|---|
 | **定義** | 客戶在您網站上採取的點按或動作。 | 生命週期相關資訊和每個訂單（過去和目前）的詳細資訊。 |
 | **Adobe Commerce擷取的事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### 我可以只使用Adobe Commerce做什麼？
-
-使用Adobe [!DNL Commerce] 以設定規則型電子郵件提醒，可作為購物車或瀏覽放棄電子郵件。 在此處瞭解詳情。
-
-### Adobe可以做什麼 [!DNL Commerce] 和Experience Cloud？
-
-- **Adobe [!DNL Commerce] 使用Adobe Journey Optimizer**  — 使用Adobe [!DNL Commerce] 透過Adobe Journey Optimizer，您可使用 [!DNL Commerce] 作為全頻道放棄歷程觸發器的資料。 您可以根據客戶屬性、他們放棄的專案、其他購物行為和過去的購買行為，來個人化該歷程。
-
-- **Adobe Commerce、Adobe Journey Optimizer和Adobe Real-Time CDP**  — 新增Real-Time CDP可讓您根據統一的客戶設定檔和集中管理的規則型或AI支援的受眾，進一步調整放棄促銷活動。 例如，您可以建立：
-
-   - 放棄率低的「轉換率強」對象
-   - 重複造訪特定類別多次的「高考量」對象
-   - 「高潛在」受眾，具有高支出和忠誠度，但最近放棄
 
 ### 其他客戶都取得了哪些成就？
 
