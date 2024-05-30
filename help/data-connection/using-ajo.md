@@ -108,17 +108,17 @@ Adobe [!DNL Commerce] 客戶透過Adobe來實施個人化的放棄行銷活動�
 
    尋找 `commerce.checkouts` 事件並檢查事件裝載：
 
-       &quot;&#39;json
-       &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
-       &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
-       &quot;_id&quot;： &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;，
-       &quot;commerce&quot;： {
-       &quot;cart&quot;： {}，
-       「結帳」： {
-       &quot;value&quot;： 1
-       }
-       ```
-   
+    ```json
+    "personID": "84281643067178465783746543501073369488", 
+    "eventType": "commerce.checkouts", 
+    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+    "commerce": { 
+        "cart": {}, 
+        "checkouts": { 
+            "value": 1 
+        } 
+    ```
+
    如您所見，完整的事件裝載包含豐富的事件資料。 在下一節中，您將設定Journey Optimizer中的事件以監聽和回應 `commerce.checkouts` 事件產生自 [!DNL Commerce] 店面。
 
 ## 步驟3：在Journey Optimizer中設定事件
