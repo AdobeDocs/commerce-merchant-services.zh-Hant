@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Journey Optimizer傳送捨棄的購物車�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,16 +108,16 @@ Adobe [!DNL Commerce] 客戶透過Adobe來實施個人化的放棄行銷活動�
 
    尋找 `commerce.checkouts` 事件並檢查事件裝載：
 
-    ```json
-    "personID": "84281643067178465783746543501073369488", 
-    "eventType": "commerce.checkouts", 
-    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-    "commerce": { 
-        "cart": {}, 
-        "checkouts": { 
-            "value": 1 
-        } 
-    ```
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
 
    如您所見，完整的事件裝載包含豐富的事件資料。 在下一節中，您將設定Journey Optimizer中的事件以監聽和回應 `commerce.checkouts` 事件產生自 [!DNL Commerce] 店面。
 
