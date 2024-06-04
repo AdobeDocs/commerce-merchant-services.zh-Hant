@@ -3,9 +3,9 @@ title: 啟用 [!DNL Payment Services] 用於生產
 description: 啟用以完成入門流程 [!DNL Payment Services] 用於生產。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,8 @@ ht-degree: 0%
 1. 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 在「首頁」檢視中，按一下 **[!UICONTROL Settings]**. 另請參閱 [首頁](payments-home.md) 以取得詳細資訊。
 1. 選取所需的 _商家ID_ 然後提交給您的銷售代表，銷售代表會設定正確的定價層級。
+
+另請參閱 [第2級和第3級處理](levels-card-payment-transactions.md) 以取得付款交易的詳細資訊。
 
 ## 啟用即時付款
 
