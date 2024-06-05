@@ -4,9 +4,9 @@ description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 0%
 # SaaS價格索引
 
 SaaS價格指數會縮短反映價格變動所需的時間 [Commerce服務](../landing/saas.md) 在它們提交之後。 如此一來，擁有大型複雜目錄、或擁有多個網站或客戶群組的商家，就能持續處理價格變更。
-如果您有Headless店面或使用 [catalog-adapter](./catalog-adapter.md) 擴充功能上，客戶可以停用Adobe Commerce核心價格索引器。
+
+如果您有Headless店面或使用 [catalog-adapter](./catalog-adapter.md) 擴充功能，客戶能停用Adobe Commerce核心價格索引器，以使用SaaS Price Indexer。
 
 運算密集程式（例如指數化和價格計算）已從Commerce核心移至Adobe的雲端基礎結構。 這可讓商家快速擴充資源，以縮短價格指數化時間，並更快速地反映這些變更。
 

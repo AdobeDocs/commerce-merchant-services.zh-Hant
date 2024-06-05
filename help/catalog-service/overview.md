@@ -3,9 +3,9 @@ title: 『[!DNL Catalog Service]『
 description: 『[!DNL Catalog Service] 適用於Adobe Commerce的提供一種方法，讓您以比原生Adobe Commerce GraphQL查詢快得多的速度，擷取產品顯示頁面和產品清單頁面的內容。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Adobe Commerce擁有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查
 
 ![目錄架構圖](assets/catalog-service-architecture.png)
 
-在核心GraphQL系統中，PWA會傳送要求至商務應用程式，而商務應用程式會接收每個要求、處理要求（可能透過多個子系統傳送要求），然後傳回回應至店面。 此往返可能會導致頁面載入時間緩慢，進而降低轉換率。
+在核心GraphQL系統中，PWA會傳送要求至Commerce應用程式，而應用程式會接收每個要求、處理要求（可能透過多個子系統傳送要求），然後傳回回應至店面。 此往返可能會導致頁面載入時間緩慢，進而降低轉換率。
 
 [!DNL Catalog Service] 是Storefront服務閘道。 此服務會存取個別的資料庫，其中包含產品詳細資料和相關資訊，例如產品屬性、系列品種、價格和類別。 此服務會透過索引來保持資料庫與Adobe Commerce同步。
 由於服務會略過與應用程式的直接通訊，因此能夠減少要求的延遲和回應週期。
@@ -48,7 +48,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 ### 綱要管理
 
-由於目錄服務是以服務的形式運作，整合經銷商不需擔心商務的基本版本。 所有版本的查詢語法都相同。 此外，結構對所有商家都是一致的。 這種一致性可讓您更輕鬆地建立最佳實務，並大幅增加店面Widget的重複使用率。
+由於目錄服務是以服務的形式運作，整合經銷商不需擔心基礎版本的Commerce。 所有版本的查詢語法都相同。 此外，結構對所有商家都是一致的。 這種一致性可讓您更輕鬆地建立最佳實務，並大幅增加店面Widget的重複使用率。
 
 ### 簡化產品型別
 
@@ -66,9 +66,11 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 複雜的產品沒有設定價格。 相反地，目錄服務會傳回連結的簡單專案的價格。 例如，商家一開始可以為可設定產品的所有變體指定相同的價格。 如果某些尺寸或顏色不受歡迎，商家可以降低這些系列產品的價格。 因此，複雜（可設定）產品的價格一開始會顯示價格範圍，反映標準及不受歡迎的變體的價格。 購物者為所有可用選項選取值後，店面會顯示單一價格。
 
+目錄服務支援大值（最多16位數）和高小數精確度（最多4位小數）的價格，確保價格更新與計算準確無誤。
+
 >[!NOTE]
 >
-> 商務客戶具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/price-indexing.md).
+> Commerce客戶，具有 [!DNL Catalog Service] 可透過以下優勢，利用網站更快速的價格更新及同步處理時間： [SaaS價格索引子](../price-index/price-indexing.md).
 
 ## 實施
 
