@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ ht-degree: 0%
 - 在一個Facet中，最多可傳回30個值區。 如果需要傳回30個以上的貯體， [建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 因此，Adobe可以分析效能影響，並判斷為您的環境提高此限制是否可行。
 - 動態Facet可能會在大型索引和高序數的索引中造成效能問題。 如果您已建立動態Facet，且發現任何效能降低或頁面未載入時發生逾時錯誤，請嘗試將您的Facet變更為Pined ，以判斷這是否會解決您的效能問題。
 - 庫存狀態(`quantity_and_stock_status`)不支援當作Facet。 您可以使用 `inStock: 'true'` 以篩選出無庫存的產品。 這在中可立即使用 `LiveSearchAdapter` 模組（當「顯示無庫存產品」設定為「True」） [!DNL Commerce] 管理員。
+- 日期型別屬性不支援為Facet。
 
 ## 查詢
 
 - [!DNL Live Search] 無法存取類別樹狀結構的完整分類法，導致某些階層導覽搜尋案例無法存取。
 - [!DNL Live Search] 使用唯一 [GraphQL端點](https://developer.adobe.com/commerce/services/graphql/live-search/) 用於支援「動態Faceting」和「依型別搜尋」等功能的查詢。 雖然與 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)存在一些差異，並且某些欄位可能不完全相容。
 - 搜尋查詢中可傳回的結果數量上限為10,000。
+- 無法使用日期型別屬性來篩選結果。
 
 ## 規則
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 ## 同義字
 
 - [!DNL Live Search] 最多可管理200個 [同義字](synonyms.md) 每個商店檢視。
-- 不支援多字同義字。
+- 每個商店檢視的多字同義字限製為20個。
 
 ## 類別銷售
 

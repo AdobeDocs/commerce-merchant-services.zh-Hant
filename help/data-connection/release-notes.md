@@ -3,9 +3,9 @@ title: 發行說明
 description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ _2023年10月10日_
 
 _2023年6月10日_
 
-![修正](../assets/fix.svg)  — 修正以下問題： `orderId` 由於商務訂單識別碼中的前置詞，內容中未傳遞。
+![修正](../assets/fix.svg)  — 修正以下問題： `orderId` 由於Commerce訂單識別碼中的前置詞，並未在內容中傳遞。
 ![修正](../assets/fix.svg)  — 更新內容安全性原則設定。
 
 _2023年3月30日_
@@ -71,6 +71,15 @@ _2022年10月12日_
 ![新增](../assets/new.svg)  — 新增 [AEM店面](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+_2024年6月5日_
+
+![修正](../assets/new.svg)  — 修正起始日期格式錯誤的問題 [歷史同步](connect-data.md#specify-order-history-date-range).
+![修正](../assets/new.svg)  — 修正 [startCheckout](events.md#startcheckout) 事件未在Adobe Commerce 2.4.7上傳送。
 
 ## 3.1.1
 
