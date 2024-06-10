@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-生產和沙箱API金鑰產生自 [!DNL Commerce] 的帳戶 [授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) 以唯一識別 [!DNL Commerce] ID (MageID)。 若要傳遞服務的軟體權利檔案驗證，例如 [!DNL Product Recommendations] 或 [!DNL Live Search]，只要帳戶處於良好狀態，商家組織的授權擁有者就可產生API金鑰集。 您可在「需知」基礎上與系統整合商或開發團隊共用金鑰，該團隊代表授權持有人管理專案和環境。 此外，解決方案整合經銷商也有權使用 [!DNL Commerce Services]. 如果您是解決方案整合商， [!DNL Commerce] 合作夥伴合約應產生API金鑰。
+生產和沙箱API金鑰產生自 [!DNL Commerce] 的帳戶 [授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) 以唯一識別 [!DNL Commerce] ID (MageID)。 若要傳遞服務的軟體權利檔案驗證，例如 [!DNL Product Recommendations] 或 [!DNL Live Search]，只要帳戶處於良好狀態，商家組織的授權擁有者就可產生API金鑰集。
+
+這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已授與的開發人員 [!DNL Shared Access] 授權擁有者無法代表他們產生金鑰，即使商家組織出現在 [!DNL Switch Accounts] 下拉式清單。
+
+此外，解決方案整合經銷商也有權使用 [!DNL Commerce Services]. 如果您是解決方案整合商， [!DNL Commerce] 合作夥伴合約應產生API金鑰。
 
 >[!NOTE]
 >
