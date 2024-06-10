@@ -5,7 +5,7 @@ title: Adobe Commerce 服務
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 7ca2f7ae3e44c95899d21e50988e9dc18b8d397d
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 45%
@@ -29,6 +29,7 @@ ht-degree: 45%
 - Integration services {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [服務聯結器](/help/landing/saas.md)
-- 資料服務 {#data-services}
-   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/price-indexing.html)
+- 資料工具 {#data-services}
+   - [SaaS價格索引](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
    - [目錄同步](/help/landing/catalog-sync.md)
+
