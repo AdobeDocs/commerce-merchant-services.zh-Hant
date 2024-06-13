@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 0%
 
 ## 查詢
 
-- [!DNL Live Search] 無法存取類別樹狀結構的完整分類法，導致某些階層導覽搜尋案例無法存取。
 - [!DNL Live Search] 使用唯一 [GraphQL端點](https://developer.adobe.com/commerce/services/graphql/live-search/) 用於支援「動態Faceting」和「依型別搜尋」等功能的查詢。 雖然與 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)存在一些差異，並且某些欄位可能不完全相容。
 - 搜尋查詢中可傳回的結果數量上限為10,000。
 - 無法使用日期型別屬性來篩選結果。
@@ -74,3 +73,4 @@ ht-degree: 0%
    - 必須向「未登入」客戶群組提供「允許」瀏覽許可權。
    - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個客戶群組設定許可權。
 - 目前不支援使用「即時搜尋」PWA Studio的B2B。
+- 中的類別Facet [!DNL Live Search] 可能會顯示無法顯示給特定客戶群組的類別。

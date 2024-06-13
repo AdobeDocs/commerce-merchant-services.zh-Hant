@@ -3,9 +3,9 @@ title: 「開始使用 [!DNL Live Search]"
 description: 「瞭解的系統需求與安裝步驟 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 5.設定資料
 
-正確設定您的產品資料可確保為您的客戶帶來良好的搜尋結果。 在此區段中，您會啟用產品清單Widget並指派類別和屬性。
+正確設定您的產品資料可確保為您的客戶帶來良好的搜尋結果。 您可以在此區段中啟用產品清單Widget並指派類別。
 
 ### 啟用產品清單Widget
 
@@ -197,16 +197,6 @@ bin/magento saas:resync --feed categoryPermissions
 ### 指派類別
 
 產品傳回 [!DNL Live Search] 必須指派給 [類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這可提供更精細的篩選粒度。
-
-### 可搜尋和可篩選的欄位
-
-已指派產品 [屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) 可用於搜尋和篩選的規則。 屬性包括「顏色」、「尺寸」、「材質型別」等。 透過這些屬性，使用者可以尋找「綠色頂端」。 每個產品可能都有許多已定義的屬性， [!DNL Commerce] 管理員。
-
-每一個屬性都可以定義為 [&quot;searchable&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 在Admin中。 當設為「可搜尋」時，這些屬性便可供搜尋 [!DNL Live Search].
-
-[Facet](facets.md) 是在中定義的產品屬性 [!DNL Live Search] 可篩選。 任何可篩選的屬性都可以設定為Facet於 [!DNL Live Search] 但一次可以搜尋的面向數量存在限制。
-
-[同義字](synonyms.md) 是您可以定義的術語，以協助引導使用者使用正確的產品。 尋找褲子的使用者可能會輸入「trousers」或「slacks」。 您可以設定同義字，讓這些搜尋詞將使用者帶到「褲子」結果。
 
 ## 6.測試連線 {#test-connection}
 
@@ -432,6 +422,10 @@ composer require magento/module-data-services-graphql
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### B2B支援
+
+[!DNL Live Search] 支援 [B2B功能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) 及其他 [限制](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWA支援
 
