@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
    - 必須將產品指派給根類別。
    - 必須向「未登入」客戶群組提供「允許」瀏覽許可權。
    - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個客戶群組設定許可權。
-- 目前不支援使用「即時搜尋」PWA Studio的B2B。
+- 目前不支援對PWA Studio上具有PLP Widget的B2B提供現成支援。 不過，您可以 [使用API](install.md#pwa-support) 以實施此功能。
 - 中的類別Facet [!DNL Live Search] 可能會顯示無法顯示給特定客戶群組的類別。
 
 ## [!DNL Storefront popover]
