@@ -4,10 +4,10 @@ user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Searc
 breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 11%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 11%
 
 - [什麼是 [!DNL Live Search]？](overview.md)
 - [安裝](install.md)
+- [設定即時搜尋](workspace.md)
 - [邊界和限制](boundaries-limits.md)
 - [發行說明](release-notes.md)
 - 店面 {#live-search-storefront}
-   - [產品清單頁面Widget](plp-styling.md)
+   - [店面Widget](storefront-widgets.md)
+   - [產品清單頁面](plp-styling.md)
    - [店面 [!DNL Popover]](storefront-popover.md)
-   - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - 管理員 {#live-search-admin}
-   - [工作區](workspace.md)
    - [效能](performance.md)
    - Facet {#facets}
       - [概觀](facets.md)

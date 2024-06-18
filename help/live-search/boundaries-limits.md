@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解的界限和限制 [!DNL Live Search] 以確保符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,10 @@ ht-degree: 0%
    - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個客戶群組設定許可權。
 - 目前不支援使用「即時搜尋」PWA Studio的B2B。
 - 中的類別Facet [!DNL Live Search] 可能會顯示無法顯示給特定客戶群組的類別。
+
+## [!DNL Storefront popover]
+
+- 此 [[!DNL popover]](storefront-popover.md) 僅適用於使用 *Luma* 佈景主題，或根據此佈景主題的自訂佈景主題 *Luma*. 搜尋結果頁面上的階層連結不會 *Luma* 樣式。
+- 此 [!DNL popover] 不支援 *空白* 主題。
+- 此 [!DNL popover] 不支援快速訂購表單。
+- 不支援願望清單和產品比較。

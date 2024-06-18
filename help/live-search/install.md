@@ -3,7 +3,7 @@ title: 「開始使用 [!DNL Live Search]"
 description: 「瞭解的系統需求與安裝步驟 [!DNL Live Search] 來自Adobe Commerce。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 您已安裝 [!DNL Live Search] 擴充功能，已同步、驗證和設定您的資料。 現在，您需要確保 [!DNL Live Search] Widget符合商店的外觀和風格。
 
-您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 另請參閱 [樣式彈出視窗元素](storefront-popover-styling.md) 和 [產品清單頁面Widget](plp-styling.md).
+您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 另請參閱 [樣式彈出視窗元素](storefront-popover.md#styling-popover-example) 和 [產品清單頁面Widget](plp-styling.md#styling-example).
 
 如果您想要擴充Widget的功能，每個元件的原始碼都可在公用存放庫中取得。
 在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。 此自訂指令碼會與 [!DNL Live Search] 並傳回正常結果，讓您控制Widget的功能。
