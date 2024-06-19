@@ -2,9 +2,9 @@
 title: 上線和安裝
 description: 「瞭解如何安裝 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB 雲端基礎結構]
 
-使用此方法來安裝 [!DNL Catalog Service] Commerce Cloud例項的擴充功能。
+使用此方法來安裝 [!DNL Catalog Adapter] 適用於Commerce Cloud執行個體。
 
 1. 在本機工作站上，變更至雲端基礎結構專案上Adobe Commerce的專案目錄。
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 新增目錄服務模組。
+1. 新增目錄配接器模組。
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 更新套件相依性。
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. 提交和推送程式碼變更 `composer.json` 和 `composer.lock` 檔案。
@@ -105,22 +105,22 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   推送更新會啟動 [Commerce雲端部署程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 以套用變更。 從檢視部署狀態 [部署記錄](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   將更新推播到雲端環境會啟動 [Commerce雲端部署程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 以套用變更。 從檢視部署狀態 [部署記錄](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB 內部部署]
 
-使用此方法來安裝 [!DNL Catalog Service] 內部部署執行個體的擴充功能。
+使用此方法來安裝 [!DNL Catalog Adapter] 用於內部部署執行個體。
 
 1. 使用Composer將目錄服務模組新增至您的專案：
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 更新相依性並安裝擴充功能：
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. 升級Adobe Commerce：
