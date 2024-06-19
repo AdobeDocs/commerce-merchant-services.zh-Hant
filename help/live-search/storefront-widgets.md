@@ -1,14 +1,15 @@
 ---
-title: Widget的型別
+title: 店面Widget
 description: 瞭解店面彈出視窗和產品清單頁面Widget。
-source-git-commit: 39f742f6db725f69ee86446e54891bed43bac9ce
+exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
+source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# Widget的型別
+# 店面Widget
 
 當您安裝時 [!DNL Live Search] 您的店面配備了兩個新的Widget：
 
