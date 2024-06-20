@@ -1,15 +1,15 @@
 ---
 title: 檢閱記錄檔並進行疑難排解
-description: 「瞭解如何疑難排解 [!DNL data export] 使用資料匯出和saas-export記錄檔時發生錯誤。」
+description: 瞭解如何疑難排解 [!DNL data export] 使用資料匯出和saas-export記錄檔時發生錯誤。
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # 檢閱記錄檔並進行疑難排解
 
@@ -26,9 +26,7 @@ ht-degree: 0%
 | SaaS匯出記錄 | `saas-export.log` | 提供關於傳送至Commerce SaaS服務的資料資訊。 |
 | SaaS匯出錯誤記錄 | `saas-export-errors.log` | 提供將資料傳送至Commerce SaaS服務時發生錯誤的相關資訊。 |
 
-如果您沒有看到Adobe Commerce服務的預期資料，請使用資料匯出擴充功能的錯誤記錄檔，以判斷發生問題的位置。
-
-您可以使用其他資料來擴充記錄檔，以進行追蹤和疑難排解。 另請參閱 [延伸記錄](#extended-logging).
+如果您沒有看到Adobe Commerce服務的預期資料，請使用資料匯出擴充功能的錯誤記錄檔，以判斷發生問題的位置。 此外，您也可以使用其他資料來擴充記錄檔，以進行追蹤和疑難排解。 另請參閱 [延伸記錄](#extended-logging).
 
 ### 記錄格式
 
@@ -85,7 +83,7 @@ ht-degree: 0%
    - **`"synced" < "processed"`** 這表示相較於先前的同步版本，摘要表格未偵測到專案中的任何變更。 同步作業期間會忽略此類專案。
    - **`"synced" > "processed"`** 相同實體id (例如， `Product ID`)在不同的範圍中可以有多個值。 例如，一個產品可指派至五個網站。 在此情況下，您可能會有「1個已處理」專案和「5個已同步」專案。
 
-+++ 範例：價格摘要的完整重新同步記錄
++++ **範例：價格摘要的完整重新同步記錄**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ Price feed full resync:
 
 **範例查詢字串**—`feed.feed:"products" and feed.status:"Complete"`
 
+## 疑難排解
+
+如果Commerce Services中的資料遺失或不正確，請檢查記錄檔，以檢視從Adobe Commerce執行個體同步至Commerce Service平台期間是否發生問題。 如有需要，請使用擴充記錄功能，在記錄檔中新增其他資訊以進行疑難排解。
+
+- commerce-data-export-errors.log — 如果在收集階段發生錯誤
+- saas-export-errors.log — 如果在傳輸階段發生錯誤
+
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 儘可能多的資訊。
+
+### 解決目錄同步問題 {#resolvesync}
+
+觸發資料重新同步時，最多可能需要一小時的時間才會更新資料，並反映在UI元件（例如即時搜尋和建議單位）中。 如果您仍然看到目錄與Commerce店面上的資料不一致，或目錄同步失敗，請參閱以下內容：
+
+#### 資料差異
+
+1. 在搜尋結果中顯示相關產品的詳細檢視。
+1. 複製JSON輸出，並確認內容符合您在 [!DNL Commerce] 目錄。
+1. 如果內容不符，請對目錄中的產品進行微幅變更，例如新增空格或句點。
+1. 等待重新同步或 [觸發手動重新同步](#resync).
+
+#### 同步處理未執行
+
+如果同步未依排程執行或未同步任何專案，請參閱此 [知識庫](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 文章。
+
+#### 同步失敗
+
+如果目錄同步處理的狀態為 **已失敗**，提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## 延伸記錄
+
+如需其他記錄資訊，您可以使用環境變數，透過其他資料擴充記錄檔以進行追蹤和疑難排解。
+
+中有兩個記錄檔 `var/log/` 目錄：
+
+- commerce-data-export-errors.log — 如果在收集階段發生錯誤
+- saas-export-errors.log — 如果在傳輸階段發生錯誤
 
 您可以使用環境變數，透過其他資料擴充記錄檔以進行追蹤和疑難排解。
 
@@ -164,7 +197,3 @@ EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

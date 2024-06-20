@@ -1,10 +1,11 @@
 ---
 title: SaaS資料匯出命令列介面
-description: 「瞭解如何使用命令列介面命令來管理的摘要和程式 [!DNL data export extension] 用於Adobe Commerce SaaS服務。」
+description: 瞭解如何使用命令列介面命令來管理的摘要和程式 [!DNL data export extension] 用於Adobe Commerce SaaS服務。
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobe不建議使用 `saas:resync` 定期執行指令。 使用指令的典型�
 
 ## 初始同步
 
+>[!NOTE]
+>如果您使用Live Search或Product Recommendations，就不需要執行初始同步。 此程式會在您將服務連線至您的Commerce執行個體後自動啟動。
+
 當您觸發 `saas:resync` 從命令列（視目錄大小而定）更新資料可能需要幾分鐘到幾小時的時間。
 
->[!NOTE]
->如果您使用Live Search或Product Recommendations，則不需要起始同步。 此程式會在您將服務連線至您的Commerce執行個體後自動啟動。
+對於初始同步，Adobe建議以下列順序執行命令：
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## 命令範例
 

@@ -1,18 +1,23 @@
 ---
 title: 同步資料與SaaS資料匯出
-description: 「瞭解如何 [!DNL SaaS Data Export] 收集資料並在Adobe Commerce執行個體和連線的SaaS服務之間同步。」
+description: 瞭解如何 [!DNL SaaS Data Export] 在Adobe Commerce執行個體和連線的SaaS服務之間收集並同步資料。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # 與SaaS資料匯出同步資料
 
-當您安裝需要資料匯出的Commerce服務(例如「目錄服務」、「即時搜尋」或「產品Recommendations」)時，會安裝Saas資料匯出模組的集合以管理資料收集和同步程式。 下圖顯示SaaS資料匯出流程。
+當您安裝需要資料匯出的Commerce服務(例如「目錄服務」、「即時搜尋」或「產品Recommendations」)時，會安裝Saas資料匯出模組的集合以管理資料收集和同步程式。
+
+SaaS資料匯出會持續將產品資料從Adobe Commerce執行個體移至Commerce Services平台，以保持資料在最新狀態。 例如，產品Recommendations需要最新的目錄資訊，才能正確地傳回具有正確名稱、定價和可用性的建議。 使用 [資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 以觀察及管理同步程式，或利用命令列介面觸發同步，並重新索引產品資料以供Commerce服務使用。
+
+下圖顯示SaaS資料匯出流程。
 
 ![Adobe Commerce的SaaS資料匯出收集和同步流程](assets/data-export-flow.png){width="900" zoomable="yes"}
 
