@@ -2,9 +2,9 @@
 title: '設定即時搜尋'
 description: 此 [!DNL Live Search] 工作區可用來設定、管理和監控搜尋效能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 工作區是您設定、管理和監控效能的地方 [!DNL Live Search]. 頂端的功能表可讓您存取每個功能區域中的工具。 可用的功能會反映目前的選單選取範圍。
 
-![工作區](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## 資料彙集
+
+為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
+
+1. Luma — 現成提供資料收集功能。
+1. Headless — 視店面實作而定，必須手動設定資料收集。
+
+如果您使用的是Headless店面，請參閱以下檔案以取得有關您需要新增的所需事件的詳細資訊：
+
+- [必要事件](events.md) 用於「即時搜尋」儀表板。
+- [店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 需要新增為先決條件。
+- [範例](https://github.com/adobe/commerce-events/tree/main/examples) 事件結構的URL。
 
 ## 設定範圍
 
@@ -41,15 +54,15 @@ ht-degree: 0%
 1. 選取您要搜尋的屬性，例如 `color`.
 1. 選取 **店面屬性** 並設定 **用於搜尋** 至 `yes`.
 
-   ![工作區](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] 也會遵守 [權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) 產品屬性的ID (如Adobe Commerce中所設定)。 權重較高的屬性會顯示在搜尋結果中較高的位置。
 
 下列屬性一律可供搜尋：
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facet](facets.md) 是在中定義的產品屬性 [!DNL Live Search] 可篩選。 您可以將任何可篩選的屬性設定為Facet於 [!DNL Live Search]，但有 [限制](boundaries-limits.md) 一次可以搜尋多少個Facet。
 
