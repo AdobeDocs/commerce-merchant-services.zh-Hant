@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ ht-degree: 0%
 
 若要將您的Adobe Commerce執行個體連結至Adobe Experience Platform，請使用您的Adobe ID登入您的Adobe帳戶。 登入後，與您的Adobe帳戶相關聯的IMS組織會顯示在此區段中。
 
-## 目錄同步
+## SaaS資料匯出
 
-當 [!DNL Commerce] 執行個體已成功連線到 [!DNL Commerce Services]，目錄同步程式會從您的伺服器匯出產品資料。 [!DNL Commerce] 伺服器至 [!DNL Commerce Services]. 目前，只有Recommendations產品使用目錄同步服務。 [瞭解更多](catalog-sync.md) 關於目錄同步程式。
+當 [!DNL Commerce] 執行個體已成功連線到 [!DNL Commerce Services]的，SaaS資料匯出程式會將Commerce資料從您的 [!DNL Commerce] 伺服器至 [!DNL Commerce SaaS Services] 以便同步至連線的Commerce服務。 在Admin中，您可以使用 [資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 如需詳細資訊，請參閱 [SaaS資料匯出指南](../data-export/overview.md).
