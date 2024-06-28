@@ -3,9 +3,9 @@ title: 『[!DNL Product Recommendations] 版本注意事項
 description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ ht-degree: 0%
 
 ## 託管服務更新
 
-這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+這些附註說明在版本化版本發行之外發佈或發現的更新或已知問題，或對託管服務的改進。
 
-+++託管服務更新
+_2024年6月28日_
+
+![錯誤](../assets/bug.svg) 從新增至購物車的產品 [!DNL Product Recommendations] 當購物車頁面重新載入時，購物車頁面上的單位並未從建議產品清單中移除。
+![錯誤](../assets/bug.svg) 從購物車中移除的產品會繼續留在 `cartSkus` 陣列，直到購物車頁面重新載入為止。
 
 _2023年7月18日_
 
@@ -40,8 +43,6 @@ _2023年7月18日_
 _2023年4月25日_
 
 ![新增](../assets/new.svg) [!DNL Product Recommendations] 客戶現在可以利用 [SaaS價格索引](../price-index/price-indexing.md).
-
-+++
 
 ## 目前的主要版本
 
@@ -97,7 +98,7 @@ _2023年3月20日_
 
 ![新增](../assets/new.svg) 已更新 [!DNL Product Recommendations] 以支援Adobe Commerce 2.4.6。
 ![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 您的專案的檔案。
-![新增](../assets/new.svg) [!DNL Product Recommendations] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能(先前稱為多來源詳細目錄(Multi-Source Inventory)，簡稱MSI)。 若要啟用完整支援，您必須 [更新](install-configure.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
+![新增](../assets/new.svg) [!DNL Product Recommendations] 現在支援完整 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce (先前稱為多Source詳細目錄，或MSI)中的功能。 若要啟用完整支援，您必須 [更新](install-configure.md#update) 相依性模組 `commerce-data-export` 至102.2.0+版。
 
 ### 4.0.1的magento/product-recommendations
 
