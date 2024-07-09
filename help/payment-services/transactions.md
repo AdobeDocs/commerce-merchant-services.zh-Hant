@@ -4,9 +4,9 @@ description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ ht-degree: 0%
 
 在 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**以檢視詳細的表格「交易」報表檢視。
 
-![交易報表檢視](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![交易報表檢視](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 您可以根據本主題中的章節設定此檢視，以最理想的方式呈現您想要檢視的資料。
 
-請參閱此報表中的連結商務訂單與提供者交易ID、交易金額、每筆交易的付款方式及其他。
+請參閱此報表中的連結Commerce訂單與提供者交易ID、交易金額、每筆交易的付款方式等。
 
 並非所有支付方法都提供相同的資訊粒度。 例如，信用卡交易會提供回應、AVS和CCV代碼，以及「交易」報表中卡片的最後四位數；PayPal付款按鈕則否。
 
 您可以 [下載交易](#download-transactions) .csv檔案格式，用於現有的會計或訂單管理軟體。
+
+>[!WARNING]
+>
+> 交易報表不會包含任何在外部進行的擷取 [!DNL Payment Services].
 
 ### 選取資料來源
 
@@ -127,8 +131,9 @@ ht-degree: 0%
 
 | 欄 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | 商務訂單ID （僅包含成功交易的值，且對於已拒絕的交易為空白）<br> <br>若要檢視相關專案，請執行下列動作： [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
+| [!UICONTROL Order ID] | Commerce訂單ID （僅包含成功交易的值，且對於已拒絕的交易為空白）<br> <br>若要檢視相關專案，請執行下列動作： [訂購資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，按一下ID。 |
 | [!UICONTROL Provider Transaction ID] | 付款提供者提供的交易ID；僅包含成功交易的值，並包含拒絕交易的破折號。 |
+| [!UICONTROL Customer ID] | 訂單的Commerce客戶ID<br> <br>另請參閱 [客戶資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} 主題以取得詳細資訊。 |
 | [!UICONTROL Transaction Date] | 交易日期時間戳記 |
 | [!UICONTROL Payment Method] | 具有品牌和卡片型別詳細資訊的交易支付方式。 另請參閱 [卡片型別](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 如需詳細資訊；適用於Payment Services 1.6.0和更新版本 |
 | [!UICONTROL Card Last Four Digits] | 用於交易的信用卡或借記卡的最後4位數 |

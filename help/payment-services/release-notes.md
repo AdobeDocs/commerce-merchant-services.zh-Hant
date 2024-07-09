@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 發行說明」'
 description: 檢閱發行說明以瞭解全部資訊 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 這些發行說明說明說明所發生的功能變更和修正，這些變更和修正是在託管服務的定期功能發行之外發行的。
 
 +++託管服務更新
+
+_2024年7月9日_
+
+![新問題](../assets/new.svg)<!-- Issue PAY-5488 --> 現在，商家可以檢視Commerce客戶ID作為 [交易報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 協助識別特定客戶已進行的交易。 此外，商戶可依據此Commerce客戶ID來篩選關聯訂單的交易報表。
 
 _2024年3月5日_
 
@@ -171,6 +175,7 @@ _2023年12月7日_
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![新增](../assets/new.svg)<!-- PAY-5047 --> 現在可從下列位置取得信用/扣帳卡品牌或付款方式型別：
+
 - 店面的客戶訂單頁面
 - 訂單確認電子郵件已傳送給購物者
 - 從 [訂單詳細資料檢視](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) (在Commerce管理員中)。
