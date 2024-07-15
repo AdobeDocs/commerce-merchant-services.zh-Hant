@@ -1,6 +1,6 @@
 ---
 title: 發行說明
-description: 的最新版本資訊 [!DNL Data Connection] 來自Adobe Commerce的擴充功能。
+description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
@@ -14,61 +14,61 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Experience Platform聯結器已重新命名為 [!DNL Data Connection].
+>Experience Platform聯結器已重新命名為[!DNL Data Connection]。
 
-本發行說明包含 [!DNL Data Connection] 擴充功能並包含：
+下列發行說明包含[!DNL Data Connection]擴充功能的更新，並包含：
 
-![新增](../assets/new.svg)  — 新功能
-![修正](../assets/fix.svg)  — 修正和改良
-![錯誤](../assets/bug.svg)  — 已知問題
+![新增](../assets/new.svg) — 新功能
+![修正](../assets/fix.svg) — 修正和改良
+![錯誤](../assets/bug.svg) — 已知問題
 
-有關使用的擴充功能的功能變更和修正， [!DNL Data Connection] 擴充功能，請參閱 **支援的服務更新**.
+有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-另請參閱 [即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 以瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以 [瞭解哪些Commerce版本支援此單元](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)。
 
 ## 支援的服務更新
 
-以下發行說明說明說明使用的擴充功能相關功能變更和修正 [!DNL Data Connection] 副檔名。
+以下發行說明說明說明與[!DNL Data Connection]擴充功能所使用的擴充功能相關的功能變更和修正。
 
 +++支援的服務更新
 
 _2024年1月24日_
 
-![新增](../assets/new.svg)  — 已更新 `data-services-b2b` 擴充功能，以包含名為的新請購單事件 [deleteRequisitionList](events.md#deleterequisitionlist) 適用於B2B商家。
+![新](../assets/new.svg) — 已更新`data-services-b2b`延伸模組，針對B2B商家包含名為[deleteRequisitionList](events.md#deleterequisitionlist)的新請購單事件。
 
 _2023年11月16日_
 
-![修正](../assets/fix.svg)  — 修正您下有多重送貨地址的訂單時，錯誤訊息不正確顯示的問題。
-![修正](../assets/fix.svg)  — 修正 [productPageView](events.md#productpageview) 事件，其中 `productListItems.priceTotal` 在商店檢視上切換貨幣後，事件欄位未轉換價格。
-![修正](../assets/fix.svg)  — 修正 `productListItems` 商戶切換商店檢視時，貨幣代碼未更新的事件欄位。
+![修正](../assets/fix.svg) — 修正您下具有多個送貨地址的訂單時，錯誤訊息顯示不正確的問題。
+![修正](../assets/fix.svg) — 修正[productPageView](events.md#productpageview)事件中，`productListItems.priceTotal`事件欄位在切換商店檢視上的貨幣後未轉換價格的問題。
+![修正](../assets/fix.svg) — 修正當商家切換商店檢視時，`productListItems`事件欄位中貨幣代碼未更新的問題。
 
 _2023年10月10日_
 
-![新增](../assets/new.svg)  — 新增訂單狀態事件： [已開立商業發票的訂單](events-backoffice.md#orderinvoiced)， [已起始訂單料號退貨](events-backoffice.md#orderitemsreturninitiated)、和 [訂單專案退貨已完成](events-backoffice.md#orderitemreturncompleted).
-![修正](../assets/fix.svg)  — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
-![修正](../assets/fix.svg)  — 修正啟用非同步下單時未顯示訂單確認訊息的錯誤。
-![新增](../assets/new.svg)  — 新增資料至 [addToRequisitionList](events.md#addtorequisitionlist) 類別檢視頁面上的簡單產品事件。
-![修正](../assets/fix.svg)  — 修正 `selectedOptions` 中的資料 [addToRequisitionList](events.md#addtorequisitionlist) 從訂購確認頁面新增產品時的事件。
-![新增](../assets/new.svg)  — 已將產品資料新增至 [addToRequisitionList](events.md#addtorequisitionlist) 從「類別」檢視頁面將產品新增至請購單清單時的事件。
-![新增](../assets/new.svg)  — 已新增 [addToRequisitionList](events.md#addtorequisitionlist) 從「產品檢視」頁面將可設定產品新增至請購單清單時的事件。
-![新增](../assets/new.svg)  — 已新增 [addToRequisitionList](events.md#addtorequisitionlist) 和 [removeFromRequisitionList](events.md#removefromrequisitionlist) 當產品數量從請購單清單增加及/或減少時的事件。
+![新增](../assets/new.svg) — 已新增訂單狀態事件：[已開立商業發票](events-backoffice.md#orderinvoiced)、[已起始訂單專案退貨](events-backoffice.md#orderitemsreturninitiated)，以及[已完成訂單專案退貨](events-backoffice.md#orderitemreturncompleted)。
+![修正](../assets/fix.svg) — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
+![修正](../assets/fix.svg) — 修正啟用非同步下單時，未顯示訂單確認訊息的錯誤。
+![New](../assets/new.svg) — 已新增資料至「類別」檢視頁面上簡單產品的[addToRequisitionList](events.md#addtorequisitionlist)事件。
+![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，[addToRequisitionList](events.md#addtorequisitionlist)事件中`selectedOptions`資料的問題。
+![新](../assets/new.svg) — 當產品從類別檢視頁面新增至請購單清單時，已將產品資料新增至[addToRequisitionList](events.md#addtorequisitionlist)事件。
+從產品檢視頁面將可設定的產品新增至請購單清單時，已新增![New](../assets/new.svg) — 已新增[addToRequisitionList](events.md#addtorequisitionlist)事件。
+![新](../assets/new.svg) — 當產品數量增加和/或從請購單清單中減少時，新增[addToRequisitionList](events.md#addtorequisitionlist)和[removeFromRequisitionList](events.md#removefromrequisitionlist)事件。
 
 _2023年6月10日_
 
-![修正](../assets/fix.svg)  — 修正以下問題： `orderId` 由於Commerce訂單識別碼中的前置詞，並未在內容中傳遞。
-![修正](../assets/fix.svg)  — 更新內容安全性原則設定。
+![修正](../assets/fix.svg) — 修正`orderId`由於Commerce訂單識別碼中的首碼而未傳入內容的問題。
+![修正](../assets/fix.svg) — 已更新內容安全性原則設定。
 
 _2023年3月30日_
 
-![新增](../assets/new.svg)  — 新增擴充功能，稱為 `data-services-b2b` 其中包括 [請購單清單事件](events.md#b2b-events) 適用於B2B商家。
-![新增](../assets/new.svg)  — 新增 `uniqueIdentifier` 欄位至 [搜尋](events.md#search-events) 事件。 此新欄位可讓商家交叉參考搜尋要求與搜尋回應。
+![New](../assets/new.svg) — 新增名為`data-services-b2b`的延伸模組，包含B2B商家的[請購單清單事件](events.md#b2b-events)。
+![新](../assets/new.svg) — 已將`uniqueIdentifier`欄位新增至[搜尋](events.md#search-events)事件。 此新欄位可讓商家交叉參考搜尋要求與搜尋回應。
 
 _2022年10月12日_
 
-![新增](../assets/new.svg)  — 新增兩個 [店面活動](events.md)， `openCart` 和 `removeFromCart`，前往Adobe Commerce店面事件SDK和收集器。
-![新增](../assets/new.svg)  — 新增 [AEM店面](overview.md#aem-support).
+![新增](../assets/new.svg) — 新增兩個[店面事件](events.md)、`openCart`和`removeFromCart`至Adobe Commerce店面事件SDK和收集器。
+![新](../assets/new.svg) — 已新增對[AEM店面](overview.md#aem-support)的支援。
 
 +++
 
@@ -78,8 +78,8 @@ _2022年10月12日_
 
 _2024年6月5日_
 
-![修正](../assets/new.svg)  — 修正起始日期格式錯誤的問題 [歷史同步](connect-data.md#specify-order-history-date-range).
-![修正](../assets/new.svg)  — 修正 [startCheckout](events.md#startcheckout) 事件未在Adobe Commerce 2.4.7上傳送。
+![修正](../assets/new.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
+![修正](../assets/new.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
 
 ## 3.1.1
 
@@ -87,8 +87,8 @@ _2024年6月5日_
 
 _2024年4月4日_
 
-![新增](../assets/new.svg)  — 新增對所有PHP 8.3的支援 [!DNL Data Connection] 擴充功能。
-![新增](../assets/new.svg)  — 新增如何操作的文章 [整合](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce。
+![新](../assets/new.svg) — 已新增所有[!DNL Data Connection]擴充功能對PHP 8.3的支援。
+![新](../assets/new.svg) — 新增如何[整合](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce的文章。
 
 ## 3.2.0-beta2
 
@@ -96,9 +96,9 @@ _2024年3月4日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新增](../assets/new.svg)  — 如果您正在參與Beta版測試，請確定您的 `composer.json` 檔案的根層級如下： ` "minimum-stability": "beta"`. 此外，新增 `composer require "magento/customers-connector: ^1.2.0"` 將客戶設定檔從您的Commerce執行個體傳送至SaaS。
-![新增](../assets/new.svg)  — 新增以下功能： [新增自訂屬性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
-![新增](../assets/new.svg)  — 新增以下功能： [收集和傳送設定檔記錄](connect-data.md#send-customer-profile-data) 和資料進行Experience Platform。
+![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
+![新](../assets/new.svg) — 已新增[新增自訂屬性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data)的功能。
+![新](../assets/new.svg) — 已新增[收集並傳送設定檔記錄](connect-data.md#send-customer-profile-data)和資料給Experience Platform的功能。
 
 ## 3.1.0
 
@@ -106,9 +106,9 @@ _2023年11月16日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新增](../assets/new.svg) -Experience Platform聯結器已重新命名為 [!DNL Data Connection].
-![修正](../assets/new.svg)  — 新增在Adobe IMS無法產生存取權杖時記錄錯誤回應的功能。
-![修正](../assets/new.svg)  — 如果您嘗試同步處理歷史訂單，但尚未指定帳戶認證，則新增通知訊息。
+![新](../assets/new.svg) -Experience Platform聯結器已重新命名為[!DNL Data Connection]。
+![修正](../assets/new.svg) — 新增在Adobe IMS無法產生存取權杖時記錄錯誤回應的功能。
+![修正](../assets/new.svg) — 如果您嘗試同步處理歷史訂單，但尚未指定帳戶認證，則已新增通知訊息。
 
 ## 3.0.0
 
@@ -116,11 +116,11 @@ _2023年10月10日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-此為主要版本發行版本。 [編輯](install.md#update-the-data-connection) 您專案的根composer.json檔案。
+此為主要版本發行版本。 [編輯](install.md#update-the-data-connection)您專案的根composer.json檔案。
 
-![新增](../assets/new.svg)  — 正式發行 [傳送歷史訂單](connect-data.md#send-historical-order-data) Experience Platform的資料和狀態。
-![新增](../assets/new.svg)  — 新增當您使用OAuth 2.0時 [設定](connect-data.md#connect-commerce-data-to-adobe-experience-platform) 此 [!DNL Data Connection] 副檔名。
-![新增](../assets/new.svg)  — 終止支援Adobe Commerce 2.4.3。
+![新](../assets/new.svg) - [傳送歷史訂單](connect-data.md#send-historical-order-data)資料與狀態的一般可用性給Experience Platform。
+![新增](../assets/new.svg) — 當您[設定](connect-data.md#connect-commerce-data-to-adobe-experience-platform) [!DNL Data Connection]擴充功能時，已新增對OAuth 2.0的支援。
+![新增](../assets/new.svg) — 已終止支援Adobe Commerce 2.4.3。
 
 ## 2.3.0
 
@@ -128,10 +128,10 @@ _2023年6月27日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 新增以下功能： [關閉傳送店面活動](connect-data.md#data-collection) 到Experience Platform。
-![修正](../assets/fix.svg)  — 更新內容安全性原則設定。
-![修正](../assets/fix.svg)  — 修正Commerce 2.4.7版本對後端辦公室事件的支援。
-![新增](../assets/new.svg)  — 新增將變更儲存至時快取失效的通知訊息 [!DNL Data Connection] 擴充功能表單。
+![新增](../assets/new.svg) — 已新增[關閉傳送店面活動](connect-data.md#data-collection)給Experience Platform的功能。
+![修正](../assets/fix.svg) — 已更新內容安全性原則設定。
+![修正](../assets/fix.svg) — 修正Commerce 2.4.7版本對後台事件的支援。
+![新](../assets/new.svg) — 新增當您儲存變更至[!DNL Data Connection]擴充功能表單時，有關快取失效的通知訊息。
 
 
 ## 3.0.0-beta1 （僅限內部）
@@ -140,7 +140,7 @@ _2023年6月13日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg) - （測試版）新增以下功能： [傳送歷史訂單](connect-data.md#beta-send-historical-order-data) Experience Platform的資料和狀態。
+![新](../assets/new.svg) - (Beta)已新增[傳送歷史訂單](connect-data.md#beta-send-historical-order-data)資料和狀態給Experience Platform的功能。
 
 ## 2.2.0
 
@@ -148,8 +148,8 @@ _2023年3月30日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 套件式 `commerce-data-export` 和 `saas-export` 的相依性 `experience-platform-connector` 副檔名。 之前，您必須分別安裝這些相依性。 這些相依性及商家設定可讓伺服器端處理 [後台活動](events-backoffice.md).
-![新增](../assets/new.svg)  — 已新增名為的新後台事件 [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
+![新](../assets/new.svg) — 已搭配`commerce-data-export`和`saas-export`相依性與`experience-platform-connector`副檔名。 之前，您必須分別安裝這些相依性。 這些相依性加上商家設定，可啟用伺服器端處理[後台事件](events-backoffice.md)。
+![新增](../assets/new.svg) — 已新增名為[`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted)的後台事件。
 
 ## 2.1.1
 
@@ -157,7 +157,7 @@ _2023年2月28日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 新增對所有PHP 8.2的支援 [!DNL Data Connection] 擴充功能。
+![新](../assets/new.svg) — 已新增所有[!DNL Data Connection]擴充功能對PHP 8.2的支援。
 
 ## 2.1.0
 
@@ -165,8 +165,8 @@ _2023年1月17日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 已更新 [[!DNL Data Connection] 擴充功能管理員](connect-data.md) 以便您指定自己的AEP Web SDK (alloy)。
-![修正](../assets/fix.svg) 變更為使用 `identityMap` 而非 `personID` 為推送至邊緣的任何資料設定主要身分時。
+![新](../assets/new.svg) — 已更新[[!DNL Data Connection] 擴充功能管理員](connect-data.md)，以便您可以指定自己的AEP Web SDK (alloy)。
+![Fix](../assets/fix.svg)設定推送至邊緣之任何資料的主要身分時，已變更為使用`identityMap`而非`personID`。
 
 ## 2.0.1
 
@@ -174,7 +174,7 @@ _2022年11月10日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![修正](../assets/fix.svg)  — 現在Adobe Experience Platform內容僅在Storefront事件收集器和店面事件SDK成功載入後設定。
+![修正](../assets/fix.svg) — 現在，只有在Storefront事件收集器和店面事件SDK成功載入後，才會設定Adobe Experience Platform內容。
 
 ## 2.0.0
 
@@ -182,8 +182,8 @@ _2022年10月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 新增在下列情況下指定您自己的AEP Web SDK的功能 [正在連線](connect-data.md) 將您的Adobe Commerce例項轉移至Experience Platform。
-![修正](../assets/fix.svg)  — 更新資料流範圍要求，以便資料流ID的範圍必須限制在網站而非儲存檢閱。
+![新](../assets/new.svg) — 已新增在[連線](connect-data.md)您的Adobe Commerce執行個體到Experience Platform時，指定您自己的AEP Web SDK的功能。
+![修正](../assets/fix.svg) — 更新資料流範圍需求，因此資料流ID的範圍必須設定為網站而非儲存檢閱。
 
 ## 1.0.0
 
@@ -191,4 +191,4 @@ _2022年8月9日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)  — 正式發行版本。
+![新](../assets/new.svg) — 一般可用性版本。

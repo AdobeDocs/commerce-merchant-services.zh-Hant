@@ -1,6 +1,6 @@
 ---
 title: 「同義字型別」
-description: 「單向與雙向 [!DNL Live Search] 同義字會擴展關鍵字的定義。」
+description: 「單向和雙向 [!DNL Live Search] 同義字會擴展關鍵字的定義。」
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,23 +17,23 @@ ht-degree: 0%
 
 雙向同義字具有相同涵義，並傳回相同的搜尋結果。 在下列範例中，以粗體顯示的第一個字是目錄中所使用的關鍵字，後面跟著與原始關鍵字具有相同含義的字詞。 您可以為相同關鍵字建立一對簡單的雙向同義字，或是多個雙向同義字的鏈結。
 
-**夾克** ![雙向選擇器](assets/btn-two-way.png) 外套
-**褲子** ![雙向選擇器](assets/btn-two-way.png) 鬆弛 ![雙向選擇器](assets/btn-two-way.png) 褲子
+**夾克** ![雙向選擇器](assets/btn-two-way.png)外套
+**褲子** ![雙向選擇器](assets/btn-two-way.png)短褲![雙向選擇器](assets/btn-two-way.png)褲子
 
 ## 單向
 
 單向同義字是關鍵字的子集，但具有更明確的含義。 例如，羊毛衫和短褲都是短褲，但並非所有短褲都是羊毛衫或短褲。 搜尋短褲包括卡布衫和短褲。 不過，搜尋短褲不會傳回Capris。
 
-**運動衫** ![單向選擇器](assets/btn-one-way.png) 連帽衫
-**褲子** ![單向選擇器](assets/btn-one-way.png) 卡普里斯 ![多個單向選擇器](assets/btn-multiple-one-way.png) 牛仔褲 ![多個單向選擇器](assets/btn-multiple-one-way.png) 兜售推杆
+**運動衫** ![單向選擇器](assets/btn-one-way.png)連帽衫
+**褲子** ![單向選擇器](assets/btn-one-way.png)卡普里斯![多個單向選擇器](assets/btn-multiple-one-way.png)小腿長褲![多個單向選擇器](assets/btn-multiple-one-way.png)兜售推手
 
 ## 最佳實務
 
-請牢記以下最佳實務，以充分運用 [!DNL Live Search] 同義字。
+請牢記以下最佳實務，以充份運用[!DNL Live Search]同義字。
 
 ### 避免「停用詞」
 
-[!DNL Live Search] 從同義字中篩選掉常見英文「停用詞」，例如：
+[!DNL Live Search]會從同義字中篩選出常用英文「停用詞」，例如：
 
 a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、no、not、of、on、or、such、that、the、their、then、there、these、they、this、to、was、will、with
 

@@ -15,19 +15,19 @@ ht-degree: 0%
 
 SaaS定價索引將繁重的運算程式（例如索引和價格計算）從Commerce應用程式移至Adobe的雲端基礎結構，藉此改善網站效能。 此方法可讓商戶快速擴充資源，以加快價格指數化時間，將資料傳送至店面及連線的Commerce服務時，能更快速地反映價格變化。
 
-下圖顯示當Commerce使用 [價格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) Commerce應用程式中包含的程式：
+下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
 
 ![預設資料流程](assets/old_way.png)
 
-啟用SaaS價格索引後，資料流程會變更。 使用下列專案執行價格索引： [Commerce SaaS資料匯出](../data-export/data-synchronization.md).
+啟用SaaS價格索引後，資料流程會變更。 使用[Commerce SaaS資料匯出](../data-export/data-synchronization.md)執行價格索引。
 
-![SaaS價格指數資料流程](assets/new_way.png)
+![SaaS價格索引資料流程](assets/new_way.png)
 
 所有商戶都可以從使用SaaS價格索引中受益，但擁有以下特性專案的商戶可獲得最大的收益：
 
-* **不變價格變更** — 需要重複變更價格以符合策略性目標的商家，例如頻繁促銷活動、季節性折扣或存貨減價。
-* **多個網站和/或客戶群組** — 在多個網站（網域/品牌）及/或客戶群組間共用產品目錄的商家。
-* **各網站或客戶群組的許多不重複價格** — 具有廣泛共用產品目錄的商家，這些目錄包含跨網站或客戶群組的獨特價格。 例如B2B商傢俱有預先議價的價格，或品牌具有不同的定價策略。
+* **價格持續變動**&#x200B;需要重複變更價格以符合策略性目標的商家，例如頻繁促銷活動、季節性折扣或存貨減價。
+* **多個網站和/或客戶群組** — 跨多個網站（網域/品牌）和/或客戶群組共用產品目錄的商家。
+* **多個網站或客戶群組的許多不重複價格** — 具有廣泛共用產品目錄的商家，其中包含多個網站或客戶群組的不重複價格。 例如B2B商傢俱有預先議價的價格，或品牌具有不同的定價策略。
 
 ## 使用SaaS價格索引
 
@@ -48,7 +48,7 @@ SaaS定價索引將繁重的運算程式（例如索引和價格計算）從Comm
 
 >[!NOTE]
 >
->如有需要，可以使用停用Commerce應用程式中的預設價格索引子。 [目錄配接器](catalog-adapter.md).
+>如有需要，可以使用[目錄配接器](catalog-adapter.md)停用Commerce應用程式中的預設價格索引器。
 
 ## 將價格與SaaS價格索引同步
 
@@ -66,7 +66,7 @@ bin/magento saas:resync --feed=prices
 
 如果您的自訂產品型別使用特定公式來計算最終價格，您可以擴充產品價格摘要的行為。
 
-1. 在上建立外掛程式 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` 類別。
+1. 在`Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`類別上建立外掛程式。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

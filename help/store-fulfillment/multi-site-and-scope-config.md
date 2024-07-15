@@ -7,18 +7,18 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
 # 多個網站和範圍設定
 
-您可以設定 [範圍](https://docs.magento.com/user-guide/configuration/scope.html) 對於可容納多個網站、商店和商店檢視的幾個元素：
+您可以為幾個元素設定[範圍](https://docs.magento.com/user-guide/configuration/scope.html)，以容納多個網站、商店和商店檢視：
 
-- [管理庫存](https://docs.magento.com/user-guide/catalog/inventory-stock.html) 每個範圍
+- [管理每個範圍的庫存](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
 
-- 管理 [!DNL Delivery Methods] 每個範圍
+- 管理每個領域的[!DNL Delivery Methods]
 
 您可以將庫存指派給網站或商店範圍。 然後，更新商店來源以設定可用的傳送方法（首頁交貨、商店取貨）。
 
@@ -26,16 +26,16 @@ ht-degree: 0%
 
 ## 管理店內見面交收設定
 
-啟用或停用 [!UICONTROL In-Store Pickup] 每個網站或商店範圍的選項 [傳遞方法設定](enable-general.md#delivery-methods) 在Admin中。
+啟用或停用Admin中[傳遞方法設定](enable-general.md#delivery-methods)中每個網站或存放區範圍的[!UICONTROL In-Store Pickup]選項。
 
-1. 瀏覽至 **[!UICONTROL Stores > Configuration]**.
+1. 瀏覽至&#x200B;**[!UICONTROL Stores > Configuration]**。
 
 1. 選取要設定的範圍（商店網站）。
 
-1. 選取範圍後，導覽至 **[!UICONTROL Sales > Delivery Methods]**.
+1. 選取範圍後，導覽至&#x200B;**[!UICONTROL Sales > Delivery Methods]**。
 
-1. 停用或啟用 **[!UICONTROL In-Store Pickup]** 傳遞方法。
+1. 停用或啟用&#x200B;**[!UICONTROL In-Store Pickup]**&#x200B;傳遞方法。
 
 您也可以在此章節中管理是否全域提供路邊或店內見面交收。
 
-管理 [!UICONTROL In-Store Pickup] 和 [!UICONTROL Delivery Method] 每個庫存來源的設定。 您有許多其他設定，在實施上擁有完整的彈性。
+管理每個庫存來源的[!UICONTROL In-Store Pickup]和[!UICONTROL Delivery Method]設定。 您有許多其他設定，在實施上擁有完整的彈性。

@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # 建立自訂事件
 
-您可以擴充 [事件平台](events.md) 建立您自己的店面活動，收集業界獨一無二的資料。 當您建立和設定自訂事件時，會傳送至 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+您可以建立自己的店面活動來收集產業獨有的資料，以擴充[事件平台](events.md)。 當您建立和設定自訂事件時，會傳送到[Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector)。
 
 ## 處理自訂事件
 
 僅支援Adobe Experience Platform的自訂事件。 自訂資料不會轉送到Adobe Commerce儀表板和量度追蹤器。
 
-針對任何 `custom` 事件，收集器：
+對於任何`custom`事件，收集器：
 
-- 新增 `identityMap` 替換為 `ECID` 作為主要身分
-- 包含 `email` 在 `identityMap` 作為次要身分 _如果_ `personalEmail.address` 在事件中設定
-- 將完整事件包裝在 `xdm` 物件，再轉送至Edge
+- 將具有`ECID`的`identityMap`新增為主要身分
+- 在`identityMap`中包含`email`以作為次要身分&#x200B;_如果_ `personalEmail.address`已設定在事件中
+- 在轉送至Edge之前，先包裝`xdm`物件內的完整事件
 
 範例：
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-在Experience Platform邊緣：
+在Experience PlatformEdge中：
 
 ```javascript
 {
@@ -75,13 +75,13 @@ mse.publish.custom({
 
 只有Experience Platform支援標準事件的屬性覆寫。 自訂資料不會轉送到Commerce儀表板和量度追蹤器。
 
-對於任何事件，具有 `customContext`，收集器會以中的欄位覆寫在相關內容中設定的聯結欄位 `customContext`. 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
+對於具有`customContext`的任何事件，收集器會覆寫在相關內容中設定的聯結欄位（欄位在`customContext`中）。 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
 
 >[!NOTE]
 >
 >覆寫自訂事件時，應針對該事件型別關閉事件轉送至Experience Platform，以避免重複計算。
 
-範例:
+範例：
 
 透過Adobe Commerce Events SDK發佈的具覆寫功能的產品檢視：
 
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-在Experience Platform邊緣：
+在Experience PlatformEdge中：
 
 ```javascript
 {

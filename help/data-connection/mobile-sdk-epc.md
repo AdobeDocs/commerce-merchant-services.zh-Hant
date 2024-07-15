@@ -1,6 +1,6 @@
 ---
 title: 將Adobe Experience Platform Mobile SDK與Commerce整合
-description: 瞭解如何搭配無周邊或自訂Commerce店面使用Adobe Experience Platform Mobile SDK。
+description: 瞭解如何將Adobe Experience Platform Mobile SDK與Headless或自訂Commerce店面搭配使用。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
@@ -17,31 +17,31 @@ ht-degree: 0%
 >
 >適用於iOS的Adobe Experience Platform Mobile SDK支援iOS 11或更新版本。
 
-整合 [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) 搭配Commerce行動應用程式，商戶可傳送Commerce  [事件資料](events.md) 到Experience Platform邊緣。
+將[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)與Commerce行動應用程式整合後，商戶可將Commerce [事件資料](events.md)傳送至Experience Platform邊緣。
 
-當Commerce事件資料可在邊緣取得時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立受眾，然後 [使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 個人化您的Commerce行動應用程式。
+當Commerce事件資料位於邊緣時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立對象，然後[使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)個人化您的Commerce行動應用程式。
 
 ## 設定
 
-若要開始搭配Commerce使用Adobe Experience Platform Mobile SDK，請在Experience Platform中安裝並設定SDK。 然後，在Commerce中完成設定。
+若要開始將Adobe Experience Platform Mobile SDK與Commerce搭配使用，請在Experience Platform中安裝和設定SDK。 接著，在Commerce中完成設定。
 
 ### Experience Platform
 
-1. 檢閱以下內容以瞭解行動應用程式功能 [行動應用程式中的Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
+1. 檢閱行動應用程式教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)中的[Adobe Experience Cloud，瞭解行動應用程式功能。
 
-1. [安裝與設定](https://developer.adobe.com/client-sdks/documentation/getting-started/) Experience Platform中的SDK。
+1. [安裝並設定](https://developer.adobe.com/client-sdks/documentation/getting-started/)Experience Platform的SDK。
 
    >[!NOTE]
    >
    >您在Experience Platform中建立和設定的結構描述，與您在Commerce行動應用程式中的應用程式程式碼中使用的結構描述相同。
 
-### 商務
+### Commerce
 
 完成Experience平台的SDK設定後，請將SDK設定新增至Commerce。
 
-1. 若要透過SDK傳送Commerce事件資料給Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合結構描述 [已設定](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) Experience Platform中的SDK專用。
+1. 若要透過SDK傳送Commerce事件資料至Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合Experience Platform中SDK的結構描述[已設定](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/)。
 
-   下列範例說明如何追蹤 `web.webpagedetails.pageViews` 事件並設定 `identityMap` 使用電子郵件欄位。
+   下列範例說明如何使用電子郵件欄位來追蹤`web.webpagedetails.pageViews`事件及設定`identityMap`。
 
    ```swift
    let stateName = "luma: content: ios: us: en: home"
@@ -71,20 +71,20 @@ ht-degree: 0%
 
 1. 連線至Commerce Cloud環境。
 
-   在您的專案組建設定中，新增URL至Commerce GraphQL端點。 例如：
+   在您的專案建置設定中，新增URL至Commerce GraphQL端點。 例如：
 
-   - 偵錯： http://_偵錯_.commercesite.cloud/graphql/
-   - 發行版本： http://_版本_.commercesite.cloud/graphql/
+   - 偵錯： http://_debug_.commercesite.cloud/graphql/
+   - 發行版本： http://_release_.commercesite.cloud/graphql/
 
-1. 若要從Commerce GraphQL端點擷取資料，請先使用在您的專案中產生必要的檔案和目錄 [Apollo程式碼產生器](https://www.apollographql.com/docs/ios/).
+1. 若要從Commerce GraphQL端點擷取資料，請先使用[Apollo Code Generator](https://www.apollographql.com/docs/ios/)在您的專案中產生必要的檔案和目錄。
 
-   1. 從您的專案目錄， [安裝](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) 阿波羅·iOS。
+   1. 從您的專案目錄，[安裝](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS。
 
    1. [初始化](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) Apollo Codegen CLI。
 
-      這會建立 `apollo-codegen-configuration.json` 檔案。
+      這會建立`apollo-codegen-configuration.json`檔案。
 
-   1. 取代專案中必要的GraphQL檔案和目錄 `apollo-codegen-configuration.json` 檔案包含下列專案：
+   1. 將`apollo-codegen-configuration.json`檔案的內容取代為下列內容，以在專案中產生必要的GraphQL檔案和目錄：
 
       ```json
       {
@@ -134,13 +134,13 @@ ht-degree: 0%
 
    1. [擷取](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) Commerce GraphQL結構描述。
 
-      確保路徑指向 `./apollo-codegen-config.json` 檔案，其中包含對Commerce GraphQL架構的參照。
+      確保路徑為`./apollo-codegen-config.json`檔案，其中包含對Commerce GraphQL結構描述的參考。
 
-   1. [產生](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) 原始碼。
+   1. [產生](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate)原始程式碼。
 
-      確保路徑指向 `./apollo-codegen-config.json` 檔案，其中包含用來產生必要檔案和目錄的組態資訊。
+      確定路徑為`./apollo-codegen-config.json`檔案，其中包含產生必要檔案和目錄的組態資訊。
 
-   1. 在新建立的內部 **GraphQLGerated** 資料夾，新增或編輯GraphQL型別。 例如，您可以新增 `DynamicBlocks.graphql` 輸入以下內容：
+   1. 在新建立的&#x200B;**GraphQLGenerated**&#x200B;資料夾中，新增或編輯GraphQL型別。 例如，您可以新增具有以下內容的`DynamicBlocks.graphql`型別：
 
       ```graphql
       query dynamicBlocks($input: DynamicBlocksFilterInput){
@@ -159,8 +159,8 @@ ht-degree: 0%
 
 ## 如何區分從行動應用程式產生的Commerce事件
 
-全部 [事件](events.md) 包含欄位，名為 `channel`. 此 `channel` 欄位包含 `channel._id` 和 `channel._type` 其中的Luma店面名稱空間值為 `"https://ns.adobe.com/xdm/channels/web"` 和 `"https://ns.adobe.com/xdm/channel-types/web"` （分別）。 然而，對於行動店面，名稱空間值為 `"https://ns.adobe.com/xdm/channels/mobile-app"` 和 `"https://ns.adobe.com/xdm/channel-types/mobile"` （分別）。
+所有[事件](events.md)都包含名為`channel`的欄位。 `channel`欄位包含`channel._id`和`channel._type`，Luma店面的名稱空間值分別為`"https://ns.adobe.com/xdm/channels/web"`和`"https://ns.adobe.com/xdm/channel-types/web"`。 但對於行動店面，名稱空間值分別為`"https://ns.adobe.com/xdm/channels/mobile-app"`和`"https://ns.adobe.com/xdm/channel-types/mobile"`。
 
 ## 後續步驟
 
-若要瞭解如何從您的行動Commerce應用程式擷取Real-Time CDP對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+若要瞭解如何從您的行動Real-Time CDP應用程式擷取Commerce對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

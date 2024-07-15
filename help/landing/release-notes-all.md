@@ -31,7 +31,7 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
-      <td><strong>Integration services</strong>
+      <td><strong>整合服務</strong>
         <p>瞭解整合服務的最新改善，這些改善可讓我們的Commerce服務連結其他服務和Adobe擴充功能及產品。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>

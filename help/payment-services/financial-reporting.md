@@ -1,6 +1,6 @@
 ---
 title: Financial reporting
-description: '"[!DNL Payment Services] 提供全面的報告，讓您清楚瞭解商店的訂單與付款。」'
+description: 「[!DNL Payment Services]提供完整的報告，讓您清楚瞭解商店的訂單和付款。」
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Financial reporting
 
-[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報告，讓您清楚瞭解商店的訂單與付款。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]為您提供完整的報告，以便您清楚瞭解商店的訂單和付款。
 
 ![財務報表檢視](assets/reports-view.png){width="600" zoomable="yes"}
 

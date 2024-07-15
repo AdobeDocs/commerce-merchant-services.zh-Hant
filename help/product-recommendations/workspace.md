@@ -1,28 +1,28 @@
 ---
-title: 『[!DNL Product Recommendations] 工作區
+title: '[!DNL Product Recommendations] Workspace'
 description: 瞭解如何設定、管理和監控產品推薦效能。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] 工作區
+# [!DNL Product Recommendations] Workspace
 
-此 [!DNL Product Recommendations] 工作區會顯示先前設定之建議的清單，以及可幫助您追蹤每個建議是否成功的量度。 清單可設定為計算最後一天、一週或當月的量度。 您可以使用量度，根據檢視或點按建議單位的頻率來建立可行的深入分析，或分析建議的執行成效。
+[!DNL Product Recommendations]工作區會顯示先前設定之建議的清單，以及可協助您追蹤每個建議是否成功的量度。 清單可設定為計算最後一天、一週或當月的量度。 您可以使用量度，根據檢視或點按建議單位的頻率來建立可行的深入分析，或分析建議的執行成效。
 
 ![Recommendations工作區](assets/workspace.png)
-_Recommendations工作區_
+_Recommendations Workspace_
 
 ## 設定範圍
 
-最初 [範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) ，則將所有建議設定設為 `Default Store View`. 如果您的Commerce安裝包含多個商店檢視，請設定 **範圍** 至 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 您的建議適用的位置。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 設定量度日期範圍
 
-1. 按一下 **行事曆** ![行事曆選擇器](assets/icon-calendar.png) 控制。
+1. 按一下&#x200B;**行事曆** ![行事曆選取器](assets/icon-calendar.png)控制項。
 
 1. 選擇下列其中一項：
 
@@ -34,7 +34,7 @@ _Recommendations工作區_
 
 ## 顯示/隱藏欄
 
-1. 在左上角，按一下 **顯示/隱藏** ![欄選擇器](assets/icon-show-hide-columns.png) 欄。
+1. 在左上角，按一下&#x200B;**顯示/隱藏** ![欄選擇器](assets/icon-show-hide-columns.png)欄。
 
    可見的欄有藍色勾號。
 
@@ -54,7 +54,7 @@ _Recommendations工作區_
 
 - 若要變更建議行為資料的來源位置，請選擇不同的SaaS資料空間。
 
-- 若要設定新的SaaS資料空間，請按一下 **編輯設定**. 若要深入瞭解，請參閱 [設定](settings.md).
+- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**** 若要深入瞭解，請參閱[設定](settings.md)。
 
 ![Recommendations設定](assets/settings.png)
 _Recommendations設定_
@@ -66,24 +66,24 @@ _Recommendations設定_
    ![Recommendations工作區](assets/recommendation-detail.png)
    _首頁轉換率詳細資料_
 
-1. 若要變更建議狀態，請按一下 **啟動** 或 **停用**.
+1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
 
 ## 編輯建議
 
-在建議詳細資訊頁面中，按一下 **編輯**. 若要進一步瞭解，請前往 [編輯Recommendations](edit.md).
+從建議詳細資訊頁面，按一下&#x200B;**編輯**。 若要深入瞭解，請前往[編輯Recommendations](edit.md)。
 
 ## 建立推薦
 
-在建議詳細資訊頁面中，按一下 **建立**. 若要進一步瞭解，請前往 [建立Recommendations](create.md).
+從建議詳細資訊頁面，按一下&#x200B;**建立**。 若要深入瞭解，請前往[建立Recommendations](create.md)。
 
-## 工作區控制項
+## Workspace控制項
 
 | 控制 | 說明 |
 |---|---|
 | ![行事曆選擇器](assets/icon-calendar.png) | 決定用於量度計算的時間範圍。 選項：24小時/ 7天/ 30天 |
-| ![欄選擇器](assets/icon-show-hide-columns.png) | 決定顯示在中的欄 [!DNL Product Recommendations] 表格。 |
+| ![資料行選擇器](assets/icon-show-hide-columns.png) | 決定出現在[!DNL Product Recommendations]資料表中的資料行。 |
 | 設定 | 決定擷取建議行為資料的SaaS資料空間，也會啟用視覺相似度建議型別。 |
-| 建立建議 | 開啟 [建立新建議](create.md) 頁面。 |
+| 建立建議 | 開啟[建立新建議](create.md)頁面。 |
 
 ## 欄說明
 
@@ -98,7 +98,7 @@ _Recommendations設定_
 | 曝光數 | 在頁面上載入及轉譯建議單位的次數。 位於瀏覽器檢視區摺疊下方的建議單位會呈現在頁面上，但購物者不會檢視。 在此情況下，演算後的單位會計算為曝光數，但只有在使用者捲動單位進入檢視時，才會計算檢視。 |
 | 曝光數 | （可檢視的曝光數）至少註冊一個檢視的建議單位數。 |
 | 檢視 | 顯示在購物者瀏覽器檢視區中的建議單位數量。 此事件可在頁面上多次觸發。 |
-| 點按次數 | 購物者點按建議單位中專案的次數總和，以及購物者點按 **加入購物車** 建議單位中的按鈕 |
+| 點按次數 | 購物者點按建議單位中專案的次數總和，以及購物者點按建議單位中&#x200B;**加入購物車**&#x200B;按鈕的次數 |
 | 收入 | 目前時間範圍之建議所驅動的收入。 |
 | Lt收入 | （期限收入）由建議驅動的期限收入。 |
 | 可檢視度 | 註冊檢視的建議單位百分比。 |

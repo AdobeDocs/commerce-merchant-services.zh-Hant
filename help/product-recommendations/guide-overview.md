@@ -1,30 +1,30 @@
 ---
-title: '[!DNL Product Recommendations] 指南概觀'
-description: 以下專案的完整資訊： [!DNL Product Recommendations] 適用於Adobe Commerce管理員，包括安裝和上線
+title: '[!DNL Product Recommendations]指南概述'
+description: 有關Adobe Commerce管理員 [!DNL Product Recommendations] 的完整資訊，包括安裝和上線
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] 指南概觀
+# [!DNL Product Recommendations]指南總覽
 
-本指南適用於Adobe Commerce的管理員。 其中包含有關安裝和上線的詳細資訊 [!DNL Product Recommendations]以及服務的設定和管理。 它假定您對核心有基本的瞭解 [!DNL Commerce] 組態和功能。
+本指南適用於Adobe Commerce的管理員。 它包含有關[!DNL Product Recommendations]的安裝和上線，以及服務的設定和管理的詳細資訊。 它假定您對核心[!DNL Commerce]組態和功能有基本的瞭解。
 
-[!DNL Product Recommendations] 有兩個管理員區域：
+[!DNL Product Recommendations]有兩個管理員區域：
 
 * 管理員：使用此區域來存取設定UI和報表。
 * 命令列介面：使用此工具來執行安裝和後端組態工作。
 
 本指南涵蓋：
 
-* 全部 [!DNL Product Recommendations] — 在Admin中完成的特定工作。
-* 全部 [!DNL Product Recommendations] — 使用完成的特定工作 [!DNL Commerce] 命令列
+* 在Admin中完成的所有[!DNL Product Recommendations]特定工作。
+* 使用[!DNL Commerce]命令列完成的所有[!DNL Product Recommendations]特定工作
 
 本指南不涵蓋Adobe Commerce和Magento Open Source的核心功能。
 
@@ -39,5 +39,5 @@ ht-degree: 2%
 
 如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 請參閱 [!DNL Product Recommendations] — 相關的疑難排解文章。
+* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 請參閱[!DNL Product Recommendations]相關的疑難排解文章。
 * [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票證以接收其他說明。

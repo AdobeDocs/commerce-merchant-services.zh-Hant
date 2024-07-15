@@ -1,11 +1,11 @@
 ---
 title: 在中繼環境中測試
-description: 瞭解如何使用 [!DNL Product Recommendations] 從您的生產環境取得，以用於測試用途。
+description: 瞭解如何在測試環境中使用生產環境中的 [!DNL Product Recommendations] 進行測試。
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 在將建議部署至生產環境之前，您應在非生產環境中測試，以確保一切都如預期般運作。
 
-[!DNL Product Recommendations] 退貨依據 [購物者行為資料](behavioral-data.md) 從您的店面收集。 不過，在非生產環境中，您可能沒有任何來自購物者的行為資料。 唯一可以在沒有行為資料的情況下測試的建議型別是 `More like this`. 此建議型別不需要任何輸入資料，因為它使用直接內容相似度比對。
+[!DNL Product Recommendations]根據從您的店面收集的[購物者行為資料](behavioral-data.md)傳回產品。 不過，在非生產環境中，您可能沒有任何來自購物者的行為資料。 唯一可以在沒有行為資料的情況下測試的建議型別是`More like this`。 此建議型別不需要任何輸入資料，因為它使用直接內容相似度比對。
 
 下列建議型別需要行為資料：
 
@@ -26,20 +26,20 @@ ht-degree: 0%
 
 ## 從生產環境擷取建議（建議）
 
-Adobe Commerce可讓您從生產環境中擷取建議，並透過以下方式在非生產環境中預覽 [切換](settings.md) SaaS資料空間。
+Adobe Commerce可讓您從生產環境中擷取建議，並透過[切換](settings.md) SaaS資料空間而在非生產環境中預覽。
 
 若要從生產環境擷取建議，您必須確定：
 
-- 店面資料收集為 [已設定並啟用](install-configure.md) 於生產環境。
+- Storefront資料彙集[已在生產環境中設定並啟用](install-configure.md)。
 - 您的非生產環境目錄與生產環境目錄大致相同。 使用類似的目錄可確保建議單位中傳回的產品與生產單位中的產品非常類似。
 
 ## 在非生產環境中產生行為資料
 
-1. 部署 `magento/product-recommendations` 模組到非生產環境，其中目錄資料與您的生產目錄類似。
+1. 將`magento/product-recommendations`模組部署至目錄資料與您的生產目錄相似的非生產環境。
 
-1. 將其中一個非生產資料空間ID用於 [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 在Admin中。
+1. 在Admin中為[設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)使用其中一個非生產資料空間ID。
 
-1. 在店面周圍按一下，自行產生資料，以模擬實際購物者的行為（或建立自動化指令碼）。 透過測試，您可在非生產環境中產生行為事件。 這些事件用於產生產品相關性，以支援建議。 測試時， [!DNL Commerce] 建議您與下列建議型別互動：
+1. 在店面周圍按一下，自行產生資料，以模擬實際購物者的行為（或建立自動化指令碼）。 透過測試，您可在非生產環境中產生行為事件。 這些事件用於產生產品相關性，以支援建議。 為了進行測試，[!DNL Commerce]建議您與下列建議型別互動：
 
    - 檢視次數最多 — 只需要最少的輸入資料。 使用者必須檢視產品。
    - 已檢視這個專案，已檢視那個專案 — 需要多個使用者檢視多個產品。

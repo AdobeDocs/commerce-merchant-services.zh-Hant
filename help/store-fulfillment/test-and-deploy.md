@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 在測試或同步任何資訊、儲存區或訂單之前，請先確認您已完成下列工作：
 
-- 已完成 [一般設定](enable-general.md) 用於Store Fulfillment服務。
+- 已完成Store Fulfillment服務的[一般設定](enable-general.md)。
 
 - [新增並驗證沙箱和生產環境的帳戶憑證和連線詳細資訊](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- 確認 [Adobe Commerce整合](connect-set-up-service.md#configure-store-fulfillment-account-credentials) 適用於Store Fulfillment解決方案，現可提供並獲授權。
+- 確認Store Fulfillment解決方案的[Adobe Commerce整合](connect-set-up-service.md#configure-store-fulfillment-account-credentials)可用且已獲得授權。
 
 ## 準備測試
 
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 1. 同步化存放區履行來源。
 
-   - 前往 **[!UICONTROL Stores > Sources]**.
+   - 移至&#x200B;**[!UICONTROL Stores > Sources]**。
 
-   - 選取 **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - 選取&#x200B;**[!UICONTROL Synchronize Store Fulfillment Sources]**。
 
-1. 從商店格線，確認商店已標示為 `Synced` 建立測試訂單之前。
+1. 在建立測試訂單之前，從商店網格確認商店已標示為`Synced`。
 
 ## 範例測試計畫
 
@@ -54,16 +54,16 @@ ht-degree: 0%
 | 端對端 | 訂單取消工作流程 | 客戶、管理員、商店關聯 |
 | 管理員 | 商店履行應用程式許可權 | 管理員 |
 | Adobe Commerce前端 | 產品型別 | 客戶、管理員 |
-| 前端結帳</br>簽到表單 | 簽到體驗 | 客戶、管理員 |
-| 商店協助應用程式 | 訂購</br>選取</br>階段</br>和移交 | 存放區關聯 |
+| 前端簽出</br>簽入表單 | 簽到體驗 | 客戶、管理員 |
+| 商店協助應用程式 | 訂單</br>挑選</br>階段</br>和移交 | 存放區關聯 |
 
 ### 庫存API同步
 
 測試計畫的這個區段涵蓋存貨與訂單同步化，以確認取貨來源與存貨的更新在Adobe Commerce與「商店履行」解決方案之間已正確同步。
 
-**功能區域**：存貨與訂單同步化</br>
-**角色：** 管理員</br>
-**測試型別：** 全部正面
+**功能區域**：庫存與訂單同步處理</br>
+**角色：**&#x200B;管理員</br>
+**測試型別：**&#x200B;全部為正數
 
 <table>
 <thead>
@@ -85,9 +85,9 @@ ht-degree: 0%
 <td>即時同步作業會在5分鐘內將詳細資料傳送至WalmartGIF</td>
 </tr>
 <tr>
-<td><strong>取貨庫存來源</br><code>Is Synced</code> 狀態</strong></td>
+<td><strong>取貨庫存來源</br><code>Is Synced</code>狀態</strong></td>
 <td>將更新儲存至現有的取車庫存來源。</td>
-<td>成功操作後， <code>Is Synced</code> 管理來源頁面更新來源欄 <code>No</code> 至 <code>Yes</code>.</td>
+<td>成功作業後，「管理Source」頁面的<code>Is Synced</code>欄會從<code>No</code>更新為<code>Yes</code>。</td>
 </tr>
 <tr>
 <td><strong>已修改的庫存預留程式</strong></td>
@@ -97,12 +97,12 @@ ht-degree: 0%
 <tr>
 <td><strong>新訂單推送、API同步 — 客戶訂單</strong></td>
 <td>客戶提交商店取貨訂單。</td>
-<td><ul><li>在「管理訂單」檢視中， <strong>Adobe Commerce管理員使用者</strong> 看到「訂單同步」狀態更新為 <code>Sent</code></li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>在「管理員訂單」檢視中，<strong>Adobe Commerce管理員使用者</strong>看到「訂單同步」狀態更新為 <code>Sent</code></li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新訂單推送、API同步 — 管理員提交訂單</strong></td>
-<td>一個Adobe Commerce <strong>管理員</strong> 提交取貨單。</td>
-<td><ul><li>在「管理訂單」檢視中，「訂單同步」狀態會更新為 <code>Sent</code>.</li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>Adobe Commerce <strong>管理員</strong>提交取車訂單。</td>
+<td><ul><li>在「管理訂單」檢視中，「訂單同步」狀態會更新為<code>Sent</code>。</li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新訂單推送，例外佇列<strong></td>
@@ -117,8 +117,8 @@ ht-degree: 0%
 測試計畫的這個區段包含案例，用於測試透過Adobe Commerce取消的訂單的端對端工作流程。
 
 **功能區域：** Adobe Commerce管理員</br>
-**角色：** 端對端（管理員、商店夥伴、客戶）</br>
-**測試結果型別：** 所有案例皆為正數
+**角色：**&#x200B;端對端（管理員、商店關聯、客戶）</br>
+**測試結果型別：**&#x200B;所有案例皆為正數
 
 <table style="table-layout:fixed">
 <tr>
@@ -137,12 +137,12 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<li>訂單歷史記錄已更新為 <code>We refunded $X online. Transaction ID: transactionID</code> 和 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>訂單狀態為 <code>Closed</code>. （我們已設定「立即付款稽核」。）</li>
+<li>已使用<code>We refunded $X online. Transaction ID: transactionID</code>和更新訂單歷史記錄 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>訂單狀態為<code>Closed</code>。 （我們已設定「立即付款稽核」。）</li>
 <li>在Adobe Commerce中建立的銷退折讓單。 （等到cron運作為止。）</li>
-<li>若已撿料所有料號，則準備好接收電子郵件 <code>DISPLAY COMMENT HISTORY</code> 顯示 <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> 旗標為 <code>true</code>.)</li>
+<li>如果選取所有專案，則準備接收電子郵件<code>DISPLAY COMMENT HISTORY</code>會顯示<code>Order is ready for pickup</code> （<code>CUSTOMER NOTIFIED</code>旗標為<code>true</code>）。</li>
 <li>如果未挑選所有專案，則會顯示取消電子郵件與顯示註解歷程記錄 <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> 旗標為 <code>true</code>.)</li>
+<li><code>CUSTOMER NOTIFIED</code> 標幟是<code>true</code>。)</li>
 </ul>
 </td>
 </tr>
@@ -160,26 +160,26 @@ ht-degree: 0%
 <li>訂單歷史記錄更新： <code>We refunded $X online. Transaction ID: transactionID</code></li>
 <li>訂單歷史記錄更新： <code>Order notified as partly canceled at: Date and Hour</code></li>
 <li>收到訂單退款電子郵件： <code>$x amount was refunded</code></li>
-<li>訂單狀態為 <code>Processing</code>.</li>
+<li>訂單狀態為<code>Processing</code>。</li>
 <li>在Adobe Commerce中建立的銷退折讓單（等待cron運作）。</li>
-<li>如果未撿料某些料號，請確認 [!UICONTROL Ready for Pickup] 顯示nil pick or refust區段的電子郵件。 <code>DISPLAY COMMENT HISTORY</code> 顯示 <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> 旗標為 <code>true</code>.</li>
+<li>如果未挑選某些專案，請確認已顯示包含nil挑選或退款區段的[!UICONTROL Ready for Pickup]電子郵件。 <code>DISPLAY COMMENT HISTORY</code>顯示<code>Order is ready for pickup, but some items not available.</code>。</li>
+<li><code>CUSTOMER NOTIFIED</code> 標幟是<code>true</code>。</li>
 </ul>
 </td>
 </tr>
-<td><strong>準備取車</br></br>完全取消</br>（所有產品都設定為0數量挑選）</strong></td>
+<td><strong>準備取貨</br></br>完全取消</br> （所有產品都設定為0數量取貨）</strong></td>
 <td>
 <ol>
 <li>下訂單。</li>
 <li>等候訂單同步處理。</li>
 <li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
-<li>前往Postman執行「準備好取貨」請求，並將所有產品設定為 <code>picked</code> 替換為 <code>0 qty</code>.</li>
+<li>移至Postman，並使用所有設定為<code>picked</code>且有<code>0 qty</code>的產品執行「準備好取貨」請求。</li>
 </ol>
 </td>
 <td>
 <ul>
 <li>已更新訂單歷史記錄： <code>We refunded $X offline</code></li>
-<li>訂單狀態為 <code>CLOSED</code>.
+<li>訂單狀態為<code>CLOSED</code>。
 <li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 <li>已收到退款電子郵件： <code>$x amount was refunded</code></li>
 <li>已傳送訂單取消電子郵件。</li>
@@ -187,7 +187,7 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>準備取貨 — 部分取消</strong></br></br><strong>(部分產品會撿料，部分則會使用撿料 <code>0 qty</code>)</strong>
+<td><strong>準備取貨 — 部分取消</strong></br></br><strong>（部分產品已取貨，部分產品已使用<code>0 qty</code>取貨）</strong>
 </td>
 <td>
 <ol>
@@ -199,7 +199,7 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> 替換為 [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
+<li><code>Your order is ready for pickup</code> [!UICONTROL Ready for Pickup Items]和[!UICONTROL Canceled Items]資料表。 </li>
 <li>訂單狀態為準備取貨。 </li>
 <li>已更新訂單歷史記錄： <code>We refunded $X offline.</code>
 <li>已更新訂單歷史記錄： <code>Order notified as partly canceled at: Date and hour</code>
@@ -209,7 +209,7 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>準備取貨 — 部分取消</br></br>部分產品已撿料，部分產品則使用撿料 <code>0 qty</code>)</strong>
+<td><strong>準備取貨 — 部分取消</br></br>部分產品已取貨，部分產品已使用<code>0 qty</code>取貨</strong>
 </td>
 <td><ol>
 <li>下訂單。</li>
@@ -219,7 +219,7 @@ ht-degree: 0%
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> 替換為 [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
+<li><code>Your order is ready for pickup</code> [!UICONTROL Ready for Pickup Items]和[!UICONTROL Canceled Items]資料表。 </li>
 <li>訂單狀態為準備取貨。 </li>
 <li>已更新訂單歷史記錄： <code>We refunded $X offline.</code>
 <li>已更新訂單歷史記錄： <code>Order notified as partly canceled at: Date and hour</code>
@@ -229,7 +229,7 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>分配（分配期間） </br></br>完全取消（所有產品都設定為已拒絕）</strong>
+<td><strong>已發放（在發放期間） </br></br>完全取消（所有產品都設定為已拒絕）</strong>
 </td>
 <td>
 <ol>
@@ -244,13 +244,13 @@ ht-degree: 0%
 <td><ul>
 <li>已更新訂單歷史記錄： <code>We refunded $X offline.</code></li>
 <li>已收到退款電子郵件： <code>$x amount was refunded</code></li>
-<li>狀態已設為 <code>CLOSED</code>.</li>
+<li>狀態已設定為<code>CLOSED</code>。</li>
 <li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>分配（分配期間）</br></br>部分取消</br>（部分產品已配發，部分則已拒絕。）</strong>
+<td><strong>已分配（分配期間）</br></br>部分取消</br>（已分配部分產品；已拒絕部分產品。）</strong>
 </td>
 <td>
 <ol>
@@ -258,7 +258,7 @@ ht-degree: 0%
 <li>等候訂單同步處理。</li>
 <li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
 <li>前往Postman，執行「準備好取貨」請求，並將所有產品設定為「已取貨」。</li>
-<li>開啟您的信箱。 找到「準備好取貨」電子郵件，然後選取 <code>Confirm Arrival</code>.</li>
+<li>開啟您的信箱。 尋找「準備好取貨」電子郵件，並選取<code>Confirm Arrival</code>。</li>
 <li>簽入。</li>
 <li>前往Postman，執行Dispensed請求，並將部分產品設定為dispensed，並將部分產品設定為rejected</li>
 </ol>
@@ -267,12 +267,12 @@ ht-degree: 0%
 <li>已更新訂單歷史記錄： <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
 <li>已收到退款電子郵件： <code>$x amount was refunded</code>
-<li>訂單狀態設為 <code>Ready for pickup Dispensed</code>
+<li>訂單狀態已設定為<code>Ready for pickup Dispensed</code>
 <li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </td>
 </tr>
 <tr>
-<td> <strong>回訪後的新RMA （完整）</strong>
+<td> 傳回後的<strong>新RMA （完整）</strong>
 </td>
 <td>
 <ol>
@@ -288,13 +288,13 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<li>已建立RMA，並顯示在 <strong>[!UICONTROL Returns]</b> 標籤進行修改。</li>
+<li>已建立RMA，並顯示在「訂單」檢視的<strong>[!UICONTROL Returns]</b>標籤下方。</li>
 <li>客戶已收到RMA確認電子郵件。</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>回訪後新增RMA — 部分</strong>
+<td>傳回後的<strong>新RMA — 部分</strong>
 </td>
 <td>
 <ol>
@@ -309,9 +309,9 @@ ht-degree: 0%
 </ol>
 <td>
 <ul>
-<li>RMA已建立並顯示在下列 <strong>[!UICONTROL Returns]</strong> 標籤進行修改。</li>
+<li>RMA已建立並顯示在訂單檢視的<strong>[!UICONTROL Returns]</strong>標籤下方。</li>
 <li>客戶已收到RMA確認電子郵件。</li>
-<li>建立RMA之後，取得RMA授權：從管理員，移至 <strong>[!UICONTROL Sales > Returns]</strong>. 選取您建立的RMA並加以授權。</li>
+<li>建立RMA之後，取得RMA授權：從管理員移至<strong>[!UICONTROL Sales > Returns]</strong>。 選取您建立的RMA並加以授權。</li>
 <li>確認客戶已收到RMA授權確認電子郵件。</li>
 <li>檢查退款是否已新增至交易與訂單歷史記錄。</li>
 </ul>
@@ -328,8 +328,8 @@ ht-degree: 0%
 - 確認已成功套用現有帳戶的更新。
 
 **功能區域：** Adobe Commerce管理員</br>
-**角色：** 管理員、商店關聯</br>
-**測試型別：** 全部正面
+**角色：**&#x200B;管理員，商店關聯</br>
+**測試型別：**&#x200B;全部為正數
 
 <table style="table-layout:auto">
 <tr>
@@ -342,15 +342,15 @@ ht-degree: 0%
 </td>
 <td>
 <ol>
-<li><strong>管理員</strong>  — 登入Adobe Commerce Admin</li>
-<li>前往 <strong>[!UICONTROL System] &gt;商店履行應用程式許可權&gt;所有商店履行應用程式使用者</strong></li>
+<li><strong>管理員</strong> — 登入Adobe Commerce管理員</li>
+<li>移至<strong>[!UICONTROL System] &gt; Store Fulfillment App Permissions &gt;所有Store Fulfillment App使用者</strong></li>
 <li><strong>新增使用者。</strong></li>
 </ol>
 <td>
 <ul>
 <li>已成功建立帳戶。</li>
-<li>新的使用者帳戶會顯示在 [!UICONTROL Store Fulfillment Users] 儀表板。</li>
-<li><strong>存放區關聯</strong> 使用新的使用者帳戶登入Store Assist應用程式。</li>
+<li>新的使用者帳戶會顯示在[!UICONTROL Store Fulfillment Users]儀表板上。</li>
+<li><strong>市集關聯</strong>使用新的使用者帳戶登入市集協助應用程式。</li>
 </ul>
 </td>
 </tr>
@@ -360,14 +360,14 @@ ht-degree: 0%
 <td>
 <ol>
 <li>使用管理員使用者帳戶登入Adobe Commerce管理員。</li>
-<li>前往 <strong>[!UICONTROL System] &gt;商店履行應用程式許可權&gt;所有商店履行應用程式使用者</strong>.</li>
-<li>在「使用者帳戶」清單中，選取以開啟現有的作用中使用者帳戶 <strong>[!UICONTROL Edit]</strong>.
-<li>變更以停用帳戶 <strong>[!UICONTROL Is Active]</strong> 至 <strong>否</strong>.</li>
+<li>移至<strong>[!UICONTROL System] &gt; Store Fulfillment App許可權&gt;所有Store Fulfillment App使用者</strong>。</li>
+<li>在使用者帳戶清單中，選取<strong>[!UICONTROL Edit]</strong>以開啟現有的使用中使用者帳戶。
+<li>將<strong>[!UICONTROL Is Active]</strong>變更為<strong>否</strong>以停用帳戶。</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>在 <strong>[!UICONTROL Store Fulfillment App Users]</strong> 儀表板，已更新帳戶的狀態已變更為 <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>在<strong>[!UICONTROL Store Fulfillment App Users]</strong>儀表板上，已更新帳戶的狀態變更為<strong>[!UICONTROL Inactive]</strong>。</li>
 <li>Store Associate無法使用非使用中的帳戶認證登入Store Assist應用程式。</li>
 </ul>
 </td>
@@ -381,11 +381,11 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] 在Adobe Commerce店面。
+- 在Adobe Commerce店面中的[!UICONTROL Bundle products]。
 
 **功能區域：** Adobe Commerce前端</br>
-**角色：** 商店協助應用程式使用者（商店關聯）</br>
-**測試型別：** 全部正面
+**角色：**&#x200B;商店協助應用程式使用者（商店關聯）</br>
+**測試型別：**&#x200B;全部為正數
 
 <table style="table-layout:auto">
 <tr>
@@ -412,10 +412,10 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 </td>
 <td>
 <ul>
-<li>確認傳遞方法與 [!UICONTROL Add to cart] 當所有子產品都具備以下條件時，按鈕將針對客戶停用
-<code>qty</code> 設為 <code>0</code>.</li>
-<li>確認至少有一個子產品具有下列條件時，客戶已啟用傳遞方法： <code>qty</code> 設為 <code>0.</code></li>
-<li>確認 [!UICONTROL Store Pickup Delivery] 方法僅對具備下列條件的產品可見且有效： [!UICONTROL Available for Store Pickup] 已啟用。 （檢查子產品。）</li>
+<li>確認當所有子產品都具備時，已針對客戶停用傳遞方法和[!UICONTROL Add to cart]按鈕
+<code>qty</code>已設定為<code>0</code>。</li>
+<li>確認至少有一個子產品將<code>qty</code>設定為時，客戶已啟用傳遞方法 <code>0.</code></li>
+<li>確認[!UICONTROL Store Pickup Delivery]方法僅對啟用[!UICONTROL Available for Store Pickup]的產品可見且有效。 （檢查子產品。）</li>
 </ul>
 </td>
 <td></td>
@@ -424,7 +424,7 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 <td><strong>虛擬產品</strong>
 </td>
 <td>
-確認虛擬產品不提供  [!UICONTROL In-store Pickup] 傳遞方法。
+確認虛擬產品未提供[!UICONTROL In-store Pickup]傳遞方法。
 <td></td>
 </td>
 </tr>
@@ -433,9 +433,10 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 </td>
 <td>
 <ul>
-<li>確認若至少有一個子產品具有 [!UICONTROL Available for Store Pickup] 已停用，客戶無法使用「商店見面交貨」選項。</li>
-<li>確認若至少有一個子產品具有 [!UICONTROL Available for Home Delivery] 已停用，客戶無法使用住家傳送選項。</li>
-<li>確認套件組合中是否有至少一個子產品無庫存，套件組合（父產品）也會顯示為 [!UICONTROL Out of stock].</li>
+<li>確認如果至少有一個子項產品停用[!UICONTROL Available for Store Pickup]，則客戶無法使用「商店見面交貨」選項。</li>
+<li>確認如果至少有一個子項產品停用[!UICONTROL Available for Home Delivery]，則客戶無法使用「首頁遞送」選項。</li>
+<li>驗證套件組合中是否有至少一個子產品無庫存，套件組合（父產品）也會顯示
+作為[!UICONTROL Out of stock]。</li>
 </ul>
 </td>
 <td></td>
@@ -447,20 +448,20 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 
 測試計畫的這個區段涵蓋下列功能的商店取貨訂單簽到體驗：
 
-- 替代取車連絡人 — 驗證新增 [!UICONTROL Alternate Pickup Contact] 並選取 [!UICONTROL Preferred Contact] 於商店取貨訂單上。
+- 備用取貨聯絡人 — 驗證新增[!UICONTROL Alternate Pickup Contact]及選取商店取貨訂單上[!UICONTROL Preferred Contact]的工作流程。
 
 - 簽到表單 — 驗證提交「商店取貨」訂單簽到請求的工作流程。
 
-**功能區域：** 購物車結帳、商店取貨訂單的簽到表單</br>
-**角色：** 管理員、客戶、商店關聯</br>
-**測試型別：** 全部正面
+**功能區域：**&#x200B;購物車結帳、商店取貨訂單的簽到表單</br>
+**角色：**&#x200B;管理員、客戶、商店關聯</br>
+**測試型別：**&#x200B;全部為正數
 
 ### 替代取車連絡人
 
 
-**功能區域：** 購物車結帳</br>
-**角色：** 客戶</br>
-**測試型別：** 全部正面
+**功能區域：**&#x200B;購物車結帳</br>
+**角色：**&#x200B;客戶</br>
+**測試型別：**&#x200B;全部為正數
 
 <table style="table-layout:auto">
 <tr>
@@ -469,43 +470,43 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 <th>預期結果</th>
 </tr>
 <tr>
-<td><strong>替代取車連絡人</br>
+<td><strong>備用代答連絡人</br>
 簽入<strong>
 </td>
 <td>
 客戶提交具有「店內取貨」選項的訂單。</td>
-<td>在結帳過程中，客戶看到 [!UICONTROL Alternate Pickup Contact] 「送貨」步驟上的選項。
+<td>在結帳過程中，客戶會在送貨步驟中看到[!UICONTROL Alternate Pickup Contact]選項。
 </td>
 </tr>
 <tr>
-<td><strong>備用取車偏好連絡人，簽到</strong>
+<td><strong>備用代答慣用連絡人，簽到</strong>
 <td>
-客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶新增 [!UICONTROL Alternate Pickup Contact].</td>
-<td>在結帳過程中，客戶看到 [!UICONTROL Preferred Contact] 選項時，才會執行送貨步驟。</td>
+客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶新增[!UICONTROL Alternate Pickup Contact]。</td>
+<td>在結帳過程中，客戶在送貨步驟中看到[!UICONTROL Preferred Contact]選項。</td>
 </td>
 </tr>
 <tr>
-<td><strong>備用取車聯絡人詳細資料，簽到</strong>
+<td><strong>備用接機聯絡詳細資料，簽到</strong>
 </td>
 <td>
-客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在出貨步驟中。
+客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶在送貨步驟中選取[!UICONTROL Alternate Pickup Contact]。
 </td>
-<td>客戶看到輸入選項以輸入聯絡人詳細資料： [!UICONTROL First name]， [!UICONTROL Last name]， [!UICONTROL Phone]、和 [!UICONTROL Email].</td>
+<td>客戶看到輸入選項以輸入連絡人詳細資料： [!UICONTROL First name]、[!UICONTROL Last name]、[!UICONTROL Phone]和[!UICONTROL Email]。</td>
 </tr>
 <tr>
-<td><strong>備用接送、簽到電子郵件</strong>
+<td><strong>備用接送，簽到電子郵件</strong>
 </td>
-<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在出貨步驟中，新增聯絡人詳細資料，並提交訂單。</td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶在送貨步驟中選擇[!UICONTROL Alternate Pickup Contact]、新增聯絡人詳細資料，然後提交訂單。</td>
 <td>客戶與替代連絡人都會收到訂單的「簽到電子郵件」。</td>
 </tr>
 <td><strong>替代取貨，訂單明細</strong></td>
-<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在出貨步驟中，新增聯絡人詳細資料，並提交訂單。</td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶在送貨步驟中選擇[!UICONTROL Alternate Pickup Contact]、新增聯絡人詳細資料，然後提交訂單。</td>
 <td>管理員會看到已儲存訂單的其他聯絡資訊。</td>
 </tr>
 <tr>
-<td><strong>替代取貨連絡人、商店相關訂單檢視表</strong>
+<td><strong>備用取車連絡人，商店相關訂單檢視</strong>
 </td>
-<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在出貨步驟中，新增聯絡人詳細資料，並提交訂單。</td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶在送貨步驟中選擇[!UICONTROL Alternate Pickup Contact]、新增聯絡人詳細資料，然後提交訂單。</td>
 <td>「商店關聯」可以在FaaS/ChaaS中檢視訂單的其他聯絡資訊。</td>
 </td>
 </tr>
@@ -515,9 +516,9 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 ### 簽到表單
 
 
-**功能區域：** 簽到表單</br>
-**角色：** 客戶</br>
-**測試型別：** 全部正面
+**功能區域：**&#x200B;簽入表單</br>
+**角色：**&#x200B;客戶</br>
+**測試型別：**&#x200B;全部為正數
 
 <table style="table-layout:auto">
 <tr>
@@ -544,7 +545,7 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 </tr>
 <tr>
 <td><strong>簽入動作 — 確認抵達</strong></td>
-<td>店內取貨訂單已標示為可在FaaS中取貨。 客戶會收到「準備好取貨」電子郵件，並選擇 [!UICONTROL Confirm Arrival].</td>
+<td>店內取貨訂單已標示為可在FaaS中取貨。 客戶收到「準備好取貨」電子郵件，並選取[!UICONTROL Confirm Arrival]。</td>
 <td>客戶看到訂單的「簽到」表單。</td>
 </tr>
 </tbody>
@@ -554,9 +555,9 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 
 測試計畫的這個區段涵蓋Store Assist應用程式中測試順序、挑選和移交工作流程的情況。
 
-**功能區域：** 商店協助應用程式</br>
-**角色：** 存放區關聯</br>
-**測試型別：** 全部正面
+**功能區域：**&#x200B;商店協助應用程式</br>
+**角色：**&#x200B;存放區關聯</br>
+**測試型別：**&#x200B;全部為正數
 
 <table style="table-layout:auto">
 <tr>
@@ -566,7 +567,7 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 </tr>
 <tr>
 <td>
-<strong>單一訂單撿料 — 快樂路徑、路邊撿料</strong></td>
+<strong>單一訂單撿料 — 快樂路徑，路邊撿料</strong></td>
 <td>挑選單一和多數量料號。 沒有零撿料，且路邊撿料（含預備）。
 </td>
 <td>
@@ -644,4 +645,4 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 
 >[!TIP]
 >
->如需雲端基礎結構專案中Adobe Commerce的部署准則、檢查清單和最佳實務，請參閱 [部署您的存放區](https://devdocs.magento.com/cloud/live/stage-prod-live.html) (位於Adobe Commerce開發人員檔案中)。
+>如需雲端基礎結構專案中Adobe Commerce的部署准則、檢查清單和最佳實務，請參閱Adobe Commerce開發人員檔案中的[部署您的存放區](https://devdocs.magento.com/cloud/live/stage-prod-live.html)。

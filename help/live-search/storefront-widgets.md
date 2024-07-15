@@ -11,20 +11,20 @@ ht-degree: 0%
 
 # 店面Widget
 
-當您安裝時 [!DNL Live Search] 您的店面配備了兩個新的Widget：
+安裝[!DNL Live Search]時，您的店面會有兩個新的Widget：
 
-- [!DNL Live Search] [彈出視窗Widget](storefront-popover.md) 是在包含搜尋結果的搜尋欄位下開啟的方塊。
-- [產品清單頁面Widget](plp-styling.md) (PLP)提供可搜尋的產品清單頁面，支援多面向和同義字。 Widget已安裝並在Live Search 4.0.0+中啟用。
+- [!DNL Live Search] [彈出視窗Widget](storefront-popover.md)是在包含搜尋結果的搜尋欄位下開啟的方塊。
+- [產品清單頁面Widget](plp-styling.md) (PLP)提供具有Facet和同義字支援的可搜尋產品清單頁面。 Widget已安裝並在Live Search 4.0.0+中啟用。
 
 您可以自訂這些Widget的外觀和風格，以最符合貴公司的風格和品牌指南。
 
 ## 即時搜尋彈出視窗Widget
 
-當您開始輸入Commerce店面搜尋方塊時， [!DNL Live Search] 提供建議產品和排名最前搜尋結果縮圖影像的回應， [彈出視窗Widget](storefront-popover.md).
+當您開始在Commerce店面搜尋方塊中輸入內容時，[!DNL Live Search]會以建議的產品回應，並在[彈出視窗Widget](storefront-popover.md)中顯示最上層搜尋結果的縮圖影像。
 
 ![彈出視窗Widget](assets/ls-search-popover.png)
 
-若要深入瞭解彈出視窗Widget以及如何自訂店面的Widget，請參閱 [[!DNL Storefront Popover]](storefront-popover.md).
+若要進一步瞭解彈出視窗Widget以及如何自訂店面的Widget，請參閱[[!DNL Storefront Popover]](storefront-popover.md)。
 
 ## 產品清單頁面Widget
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 ![產品清單頁面Widget](assets/ls-plp.png)
 
-若要深入瞭解產品清單頁面Widget以及如何自訂店面的Widget，請參閱 [產品清單頁面Widget](plp-styling.md).
+若要進一步瞭解產品清單頁面Widget以及如何自訂店面的Widget，請參閱[產品清單頁面Widget](plp-styling.md)。

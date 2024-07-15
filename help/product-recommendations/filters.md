@@ -4,7 +4,7 @@ description: 定義包含或排除不將產品用作建議的條件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。 如果您將多個建議單位部署至頁面，Adobe Commerce會篩選掉單位中重複的任何產品。 系統只會使用重複產品的第一次參考，以便給其他建議的產品騰出空間。 Adobe Commerce也會篩選掉任何先前購買過的產品和購物車中的產品。
 
-當您 [建立](create.md) 建議單位，您可以定義篩選器來控制哪些產品可顯示在建議中。 這些篩選器是根據您定義的一組包含或排除條件。 只有符合所有包含條件的產品才會出現在建議中。 不建議使用符合任何排除條件的產品。
+當您[建立](create.md)建議單位時，您可以定義篩選器來控制哪些產品可以顯示在建議中。 這些篩選器是根據您定義的一組包含或排除條件。 只有符合所有包含條件的產品才會出現在建議中。 不建議使用符合任何排除條件的產品。
 
 您可以設定多個篩選器，並只啟用您想要的篩選器，方法是選取每個篩選器頁面上的切換按鈕。 這可讓您建立篩選草稿以供日後使用。 每個標籤上會顯示已啟用的篩選器的數目。
 
@@ -27,14 +27,14 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 邏輯運運算元
 
-邏輯運運算元 `AND` 和 `OR` 用於聯結多個條件。 如果同時使用包含和排除篩選器，系統會先評估包含專案，以判斷所有可能的建議產品，然後從清單中移除符合任何排除篩選器的產品。
+邏輯運運算元`AND`和`OR`用於聯結多個條件。 如果同時使用包含和排除篩選器，系統會先評估包含專案，以判斷所有可能的建議產品，然後從清單中移除符合任何排除篩選器的產品。
 
-- `AND`  — 加入兩個包含篩選條件
-- `OR`  — 加入兩個排除篩選條件
+- `AND` — 加入兩個包含篩選條件
+- `OR` — 加入兩個排除篩選條件
 
 >[!NOTE]
 >
-> 包含和排除篩選器會取代3.2.2版及更新版本中的舊版類別排除專案 `magento/product-recommendations` 模組。 請參閱 [發行說明](release-notes.md) 以進一步瞭解Adobe Commerce版本。
+> 包含和排除篩選器會取代`magento/product-recommendations`模組3.2.2版及更新版本中的舊版類別排除。 請參閱[發行說明](release-notes.md)以進一步瞭解Adobe Commerce發行版本。
 
 ## 篩選器型別 {#filtertypes}
 
@@ -42,7 +42,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 類別
 
-根據產品類別的篩選器會使用直接類別指派及其子類別。 例如，啟用類別的排除條件 `Gear` 不包括指派到的產品 `Gear` 及其所有子類別，例如 `Gear/Bags` 或 `Gear/Fitness Equipment`. 對於B2B商家，類別篩選器會依循任何 [客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 您已設定。
+根據產品類別的篩選器會使用直接類別指派及其子類別。 例如，啟用類別`Gear`的排除條件會排除指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。 對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
 
 當您將建議部署至頁面型別時，Adobe Commerce建議您使用以下類別篩選設定：
 
@@ -60,19 +60,19 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 型別
 
-根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括 _簡單_， _可設定_， _虛擬_， _可下載_，或 _禮品卡_. _組合_ 和 _已分組_ 尚未支援產品。
+根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;或&#x200B;_禮卡_。 尚未支援&#x200B;_組合_&#x200B;和&#x200B;_群組_&#x200B;產品。
 
 ### 可見度
 
-根據可見度篩選產品，例如： _目錄_， _搜尋_，或兩者。
+根據可見度篩選產品，例如： _目錄_、_搜尋_&#x200B;或兩者。
 
 ### 價格
 
-根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可使用的任何折扣或特殊價格。 針對B2B商家，顯示的價格會反映 [客戶特定群組定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 您已設定。
+根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可使用的任何折扣或特殊價格。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。
 
 ### 庫存狀態
 
 下列排除篩選器可用於根據庫存狀態篩選產品：
 
 - 無庫存 — （僅限排除）排除無庫存的產品。
-- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是根據 _只有X個左臨界值_ 中的值 [詳細目錄設定](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。

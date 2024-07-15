@@ -18,7 +18,7 @@ ht-degree: 0%
 
 - **[設定 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** — 建立Store Fulfillment服務的Adobe Commerce整合，並產生存取權杖以驗證來自Store Fulfillment伺服器的傳入請求。
 
-- **[設定Store Fulfillment服務的帳戶認證](#configure-store-fulfillment-account-credentials)** — 新增您的認證，以將Adobe Commerce連線至您的Store Fulfillment帳戶。
+- **[設定Store Fulfillment Services的帳戶認證](#configure-store-fulfillment-account-credentials)** — 新增您的認證，將Adobe Commerce連線至您的Store Fulfillment帳戶。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 建立Adobe Commerce整合
 
-若要將Adobe Commerce與Store Fulfillment服務整合，您可以建立Commerce整合併產生存取權杖，其可用於驗證來自Store Fulfillment伺服器的請求。 您也必須更新Adobe Commerce [!UICONTROL Consumer Settings] 要防止的選項 `The consumer isn't authorized to access %resources.` 回應來自Adobe Commerce的請求至的錯誤 [!DNL Store Fulfillment] 服務。
+若要將Adobe Commerce與Store Fulfillment服務整合，您可建立Commerce整合併產生存取權杖，其可用於驗證Store Fulfillment伺服器的請求。 您也必須更新Adobe Commerce [!UICONTROL Consumer Settings]選項，以防止從Adobe Commerce到[!DNL Store Fulfillment]服務的請求出現`The consumer isn't authorized to access %resources.`回應錯誤。
 
 1. 從「管理員」建立「商店履行」的整合。
 
@@ -45,15 +45,15 @@ ht-degree: 0%
 
 1. 請與您的客戶經理合作，完成「商店履行」端的設定並授權整合。
 
-1. 啟用Adobe Commerce [!UICONTROL Consumer Settings] 選項至 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. 啟用[!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens]的Adobe Commerce [!UICONTROL Consumer Settings]選項。
 
-   - 從管理員，前往 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - 從管理員移至&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - 設定 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 選項至 **[!UICONTROL Yes]**.
+   - 將[!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens]選項設為&#x200B;**[!UICONTROL Yes]**。
 
 >[!IMPORTANT]
 >
-> 整合代號是特定於環境的。 如果您使用來自不同環境的來源資料來還原環境的資料庫（例如從中繼環境還原生產資料），請排除 `oauth_token` 資料表匯出，以便在還原作業期間不會覆寫整合權杖詳細資訊。
+> 整合代號是特定於環境的。 如果您使用來自不同環境的來源資料來還原環境的資料庫，例如從中繼環境還原生產資料，請從資料庫匯出中排除`oauth_token`表格，以便在還原作業期間不會覆寫整合權杖詳細資訊。
 
 
 ## 設定存放區履行帳戶認證
@@ -64,25 +64,25 @@ ht-degree: 0%
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
-- [!DNL Token Auth Server URL] （通常與上述設定相同）
+- [!DNL Token Auth Server URL] （通常與上述組態相同）
 
 設定和使用Store Fulfillment需要這些認證。
 
 >[!NOTE]
 >
->帳戶建立程式可能需要一些時間才能完成。 當您等待認證時， [檢閱並設定「商店履行」解決方案的其他設定](service-config-settings-overview.md).
+>帳戶建立程式可能需要一些時間才能完成。 當您等候認證時，[檢視並設定Store Fulfillment解決方案](service-config-settings-overview.md)的其他設定。
 
 ### 新增認證以連線至「商店履行」
 
-1. 設定 [帳戶認證](enable-general.md) 用於生產和沙箱環境。
+1. 為生產和沙箱環境設定[帳戶認證](enable-general.md)。
 
-1. 從管理員，前往 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. 從管理員，移至&#x200B;**[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
-1. 輸入為提供的帳戶認證 **[!UICONTROL Production environment]**. 所有欄位都是必填欄位。
+1. 輸入為&#x200B;**[!UICONTROL Production environment]**&#x200B;提供的帳戶認證。 所有欄位都是必填欄位。
 
-1. 選取 **[!UICONTROL Save Config]**.
+1. 選取&#x200B;**[!UICONTROL Save Config]**。
 
-1. 選取以測試連線 **[!UICONTROL Validate Credentials]**.
+1. 選取&#x200B;**[!UICONTROL Validate Credentials]**&#x200B;以測試連線。
 
 >[!NOTE]
 >

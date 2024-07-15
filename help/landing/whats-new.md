@@ -18,6 +18,6 @@ ht-degree: 0%
 
 | 服務 | 變更 | 型別 |
 | -- | -- | -- |
-| [**目錄服務**](../live-search/overview.md) | 已新增 [使用目錄服務和API網格顯示稅捐](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) 主題。 | 新主題 |
+| [**目錄服務**](../live-search/overview.md) | 新增[目錄服務與API Mesh的顯示稅捐](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html)主題。 | 新主題 |
 
 此表格會在每月的第一個星期一更新。

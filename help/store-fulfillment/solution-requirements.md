@@ -1,13 +1,13 @@
 ---
 title: 商店履行需求
-description: 布建和上線的需求 [!DNL Store Fulfillment solution].
+description: 布建和上線 [!DNL Store Fulfillment solution]的需求。
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 平台與軟體版本需求
 
-此 [!DNL Store Fulfillment] 解決方案適用於以下平台上的Adobe Commerce客戶。
+[!DNL Store Fulfillment]解決方案適用於下列平台上的Adobe Commerce客戶。
 
 - 雲端基礎結構上的Adobe Commerce (ECE)
 - Adobe Commerce內部部署(EE)
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 - [Store Fulfillment發行說明](release-notes.md)
 
-- [Adobe Commerce發行說明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) 在 *Adobe Commerce發行資訊*.
+- *Adobe Commerce發行資訊*&#x200B;中的[Adobe Commerce發行說明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)。
 
-- [Adobe Commerce系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安裝指南*.
+- *Adobe Commerce安裝指南*&#x200B;中的[Adobe Commerce系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
 
 
 ## 商店協助應用程式需求
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **最低作業系統需求**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **最低硬體需求**

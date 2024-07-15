@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Storefront Popover]"
-description: 「此 [!DNL Live Search storefront popover] 會以動態方式傳回建議的產品和縮圖。」
+description: 「此 [!DNL Live Search storefront popover] 會動態傳回建議的產品和縮圖。」
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-時間 [!DNL Live Search] 是 [已安裝](install.md)， a [!DNL popover] 出現在店面，當購物者輸入 [搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 方塊。 輸入每個字元後， [!DNL popover] 已更新為熱門搜尋結果的建議產品和縮圖影像。
+當[!DNL Live Search]已[安裝](install.md)時，當購物者在[搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)方塊中鍵入時，店面中會出現[!DNL popover]。 輸入每個字元後，[!DNL popover]會以建議的產品和排名最前的搜尋結果的縮圖影像更新。
 
-[!DNL Live Search] 傳回兩個或更多字元的查詢結果。 若為部分相符，則每個字的字元數上限為20。 「鍵入時搜尋」查詢中的字元數無法設定。
+[!DNL Live Search]傳回兩個或更多字元之查詢的結果。 若為部分相符，則每個字的字元數上限為20。 「鍵入時搜尋」查詢中的字元數無法設定。
 
-根據預設， [!DNL Live Search] 支援 [搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+依預設，[!DNL Live Search]支援[搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)。
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 >[!TIP]
 >
->瞭解如何將產品屬性設定為可在中搜尋 [設定即時搜尋](workspace.md) 文章。
+>瞭解如何在[設定即時搜尋](workspace.md)文章中將產品屬性設定為可搜尋。
 
-## [!DNL Popover] 頁面大小
+## [!DNL Popover]頁大小
 
-的頁面大小 [!DNL popover] 決定可以傳回多少行自動完成產品。 在Live Search安裝期間， `page_size` 值會變更為的目前值 [目錄搜尋](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定。
+[!DNL popover]的頁面大小決定可以傳回多少行的自動完成產品。 在Live Search安裝期間，`page_size`值變更為[目錄搜尋](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`設定的目前值。
 
-依預設，「目錄搜尋 — 自動完成限制」值會設定為八行（或數列）。 若要變更的頁面大小 [!DNL popover]，請執行下列動作：
+依預設，「目錄搜尋 — 自動完成限制」值會設定為八行（或數列）。 若要變更[!DNL popover]的頁面大小，請執行下列動作：
 
-1. 在 *管理員* 側欄，前往 **商店** >設定> **設定**.
-1. 在左側面板中，展開 **目錄** 並選擇 **目錄** 從設定清單中。
-1. 展開 *目錄搜尋* 區段。
-1. 設定 **自動完成限制** 至您要允許在 [!DNL popover].
-1. 完成後，按一下 **儲存設定**.
+1. 在&#x200B;*管理員*&#x200B;側邊欄上，移至&#x200B;**商店** >設定> **設定**。
+1. 在左側面板中，展開&#x200B;**目錄**，然後從設定清單中選擇&#x200B;**目錄**。
+1. 展開&#x200B;*目錄搜尋*&#x200B;區段。
+1. 將&#x200B;**自動完成限制**&#x200B;設定為您要在[!DNL popover]中允許的行數。
+1. 完成時，按一下&#x200B;**儲存設定**。
 
-## 樣式 [!DNL Popover] 範例
+## 樣式化[!DNL Popover]範例
 
-您可以自訂外觀與風格 [!DNL Popover] 符合貴公司風格與品牌指導方針的Widget。
+您可以自訂[!DNL Popover] Widget的外觀與風格，以符合貴公司的風格與品牌指南。
 
-此 [!DNL storefront popover] 一律顯示產品 `name` 和 `price`，且無法設定欄位選項。 不過， [!DNL popover] 可以使用為元素設定樣式 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) 類別。 例如，下列宣告會變更 [!DNL popover] 容器和頁尾。
+[!DNL storefront popover]一律顯示產品`name`和`price`，且無法設定欄位選項。 不過，可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)類別來設定[!DNL popover]元素的樣式。 例如，下列宣告會變更[!DNL popover]容器和頁尾的背景顏色。
 
 ```css
 .livesearch.popover-container {
@@ -53,18 +53,18 @@ ht-degree: 0%
 
 ## 容器可見性
 
-的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`.  此 `.active` 類別指示容器的可見性。 此 `.active` 類別是有條件地新增當 [!DNL popover] 是開啟的。
+`.livesearch.popover-container`的父元件為`.search-autocomplete`。  `.active`類別表示容器的可見性。 當[!DNL popover]開啟時，`.active`類別會有條件地新增。
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-如需有關樣式化店面元素的詳細資訊，請參閱 [階層式樣式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [前端開發人員指南](https://developer.adobe.com/commerce/frontend-core/guide/).
+如需有關樣式化店面元素的詳細資訊，請參閱[Frontend開發人員指南](https://developer.adobe.com/commerce/frontend-core/guide/)中的[階層式樣式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/)。
 
 ## 類別選取器
 
-您可以使用下列類別選取器，來設定容器和產品元素在 [!DNL popover].
+您可以使用下列類別選取器來設定[!DNL popover]中容器和產品元素的樣式。
 
 - `.livesearch.popover-container`
 - `.livesearch.view-all-footer`
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 #### .livesearch.pover-container
 
-![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
+![[!DNL Popover]容器](assets/livesearch-popover-container.png)
 
 #### .livesearch.view-all-footer
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ## 使用修改的主題 {#working-with-modified-theme}
 
-您可以使用 [!DNL storefront popover] 透過自訂 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 會繼承下列專案的必要檔案： *Luma*. 此 `top.search` 中的區塊 `header-wrapper` 的 `Magento_Search` 模組不可修改。
+您可以使用自訂[佈景主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/)的[!DNL storefront popover]，該佈景主題會繼承&#x200B;*Luma*&#x200B;的所需檔案。 不得修改`Magento_Search`模組之`header-wrapper`中的`top.search`區塊。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -119,9 +119,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## 停用 [!DNL popover]
+## 正在停用[!DNL popover]
 
-若要停用 [!DNL popover] 並還原標準 [快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能，輸入下列命令：
+若要停用[!DNL popover]並還原標準[快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)功能，請輸入下列命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
@@ -129,4 +129,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## Headless實施
 
-對於採用Headless實作的客戶，您可以安裝 [!DNL Live Search popover] 使用 [npm套件](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+對於具有Headless實作的使用者，您可以使用[npm套件](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)來安裝[!DNL Live Search popover]。

@@ -19,7 +19,7 @@ Adobe提供Commerce、整合和資料服務的集合，協助商家支援其業�
 
 >[!BEGINSHADEBOX 「發行資訊」]
 
-另請參閱 [說明檔案新增功能](whats-new.md) 或 [發行說明](release-notes-all.md) 每個Commerce服務。
+請參閱我們檔案的新增功能[或每個Commerce服務的[發行說明](release-notes-all.md)。](whats-new.md)
 
 >[!ENDSHADEBOX]
 
@@ -51,28 +51,28 @@ Adobe提供Commerce、整合和資料服務的集合，協助商家支援其業�
 <tr>
   <td valign="top" width="200px">
     <img alt="付款服務" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>付款服務</strong></a>  <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>付款服務</strong></a> <br><em> (可用於Magento Open Source)</em>
     <div>提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，提升客戶滿意度。</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>商店履行</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>存放區履行</strong></a></br>
     <div>透過行動裝置提供全面的履行工作流程，提供卓越的線上購買功能、到店取貨(BOPIS)客戶體驗，以及最高的員工生產力。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon sales channel</strong></a> <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon銷售管道</strong></a> <br><em> (可用於Magento Open Source)</em>
     <div>與全球最大的全球線上購物目的地整合，以啟用Amazon銷售功能、提供資料自動化和同步化、管理Amazon清單，以及透過單一儀表板執行更多作業。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>頻道管理員</strong></a> <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>頻道管理員</strong></a> <br><em> (可用於Magento Open Source)</em>
     <div>與沃爾瑪市集整合，增加銷售量、接觸新客戶、簡化營運並節省時間。 讓員工能夠順暢地管理Walmart Marketplace的銷售、存貨和定價 — 全部都在Commerce中。</div>
   </td>
    </tr>

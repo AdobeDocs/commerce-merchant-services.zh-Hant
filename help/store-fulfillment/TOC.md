@@ -9,32 +9,32 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-#  Commerce 的 Store Fulfillment {#store-fulfillment}
+# 適用於Commerce的商店履行 {#store-fulfillment}
 
 - [指南概述](guide-overview.md)
-- [簡介 [!DNL Store Fulfillment]](introduction.md)
+- [ [!DNL Store Fulfillment]簡介](introduction.md)
 - [存放區協助工作流程](store-assist-modules.md)
 - [需求](solution-requirements.md)
 - [發行說明](release-notes.md)
-- Onboard商店履行 {#onboarding}
+- Onboard Store Fulfillment {#onboarding}
    - [入門概觀](onboard.md)
    - [安裝擴充功能](install.md)
    - [連線商店履行](connect-set-up-service.md)
    - [測試和部署](test-and-deploy.md)
 - [設定概述](service-config-settings-overview.md)
-- 存放區設定 {#store-configuration}
+- 存放區組態{#store-configuration}
    - [一般設定](enable-general.md)
    - [銷售電子郵件範本](sales-emails.md)
    - [商家商店（來源）](merchant-store-configuration.md)
    - [產品庫存管理](product-stock.md)
    - [Inventory management來源傳輸](inventory-stock-transfer.md)
    - [多個網站/範圍](multi-site-and-scope-config.md)
-- 系統組態 {#system-configuration}
+- 系統組態{#system-configuration}
    - [背景處理程式](background-processes.md)
    - [存放區位置和對應設定](store-location-map-provider-setup.md)
    - [簽入體驗設定](check-in-experience-setup.md)
