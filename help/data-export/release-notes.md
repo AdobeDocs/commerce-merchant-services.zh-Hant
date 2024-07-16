@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品Recommendations」和「目錄服務」自動安裝的模組集合。 您可以使用撰寫器檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.3.7版
+
+![修正](../assets/fix.svg)從InventoryDataExporter模組移除不必要的相依性。
+![修正](../assets/fix.svg)已變更CatalogInventoryDataExporter模組中所含存貨模組的必要版本，以支援Adobe Commerce 2.4.4版。
+
+## 103.3.6版
+
+![修正](../assets/fix.svg)修正多執行緒模式中摘要重新索引期間發生的死結。 查詢現在分成插入和更新操作。
+![修正](../assets/fix.svg)已針對有許多網站的大型目錄最佳化價格查詢。
+![New](../assets/new.svg)已新增重試邏輯，以便在發生死結時重新執行失敗的交易。
 
 ## 103.3.5版
 
