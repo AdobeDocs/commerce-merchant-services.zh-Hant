@@ -4,7 +4,7 @@ description: 安裝Payments Services擴充功能。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 692a7e55d72b1e2f1a161d508be5e179c4d26bde
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Composer在初始安裝[!DNL Adobe Commerce]期間使用這些金鑰，或在先
 
 如果您看到下列錯誤，指出您的撰寫器索引鍵不正確：
 
-```terminal
+```
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
@@ -145,7 +145,7 @@ Could not find a matching version of package magento/payment-services. Check the
 
 如果看到以下錯誤，表示您沒有足夠的記憶體來使用PHP：
 
-```terminal
+```
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
