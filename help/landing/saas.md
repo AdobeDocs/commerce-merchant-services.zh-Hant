@@ -4,16 +4,16 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-部分Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支援，並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須使用生產及沙箱API金鑰連線您的[!DNL Commerce]執行個體，並在[設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定資料空間。 您只需要設定一次。
+部分Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支援，並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須使用生產及沙箱API金鑰連線您的[!DNL Commerce]執行個體，並在[設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定資料空間。 您只需要為每個Commerce執行個體設定一次連線。
 
 ## 可用的服務 {#availableservices}
 
@@ -24,7 +24,6 @@ ht-degree: 0%
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce和Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-從[授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰，該帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 若要通過[!DNL Product Recommendations]或[!DNL Live Search]等服務的權益驗證，只要帳戶正常運作，商家組織的授權擁有者即可產生API金鑰組。
+從[授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者可以為產品Recommendations或Live Search等服務產生API金鑰。
 
 這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已獲授權擁有者授予[!DNL Shared Access]的開發人員，無法代表其產生金鑰，即使商家組織出現在其帳戶的[!DNL Switch Accounts]下拉式清單中。
 
@@ -57,15 +56,13 @@ ht-degree: 0%
 
 1. 從&#x200B;_環境_&#x200B;功能表，選取&#x200B;**生產**&#x200B;或&#x200B;**沙箱**。
 
-1. 在&#x200B;_API金鑰_&#x200B;區段中輸入名稱，然後按一下&#x200B;**新增**。
-
-   這會開啟對話方塊供您下載新金鑰。
+1. 在&#x200B;_API金鑰_&#x200B;區段中輸入名稱，然後按一下&#x200B;**新增**&#x200B;以開啟對話方塊下載新金鑰。
 
    ![下載私密金鑰](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > 這是您必須複製或下載金鑰的唯一機會。
+   > 此對話方塊提供您複製或下載金鑰的唯一機會。
 
 1. 按一下&#x200B;**下載**，然後按一下&#x200B;**取消**。
 
@@ -106,7 +103,7 @@ ht-degree: 0%
 1. 如果沒有SaaS專案，請按一下&#x200B;**建立專案**。 然後在&#x200B;**專案**&#x200B;欄位中，輸入您的SaaS專案名稱。
 
    建立SaaS專案時，[!DNL Commerce]會根據您的[!DNL Commerce]授權產生一或多個SaaS資料空間：
-   - Adobe Commerce — 一個生產資料空間；僅限兩個測試資料空間。 在具有多個測試環境的Cloud Pro專案上，您可以透過[提交支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個測試環境請求額外的測試資料空間。
+   - Adobe Commerce — 一個生產資料空間；僅限兩個測試資料空間。 在具有多個中繼環境的Cloud Pro專案上，您可以透過[提交支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個中繼環境請求額外的測試資料空間。
    - Magento Open Source — 一個生產資料空間；無測試資料空間
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。

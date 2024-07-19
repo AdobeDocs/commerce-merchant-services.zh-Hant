@@ -5,7 +5,7 @@ breadcrumb-title: 「[!DNL Catalog Service] 指南」
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 10%
@@ -26,3 +26,4 @@ ht-degree: 10%
    - [refectProduct查詢](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [發行說明](release-notes.md)
 - [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
+
