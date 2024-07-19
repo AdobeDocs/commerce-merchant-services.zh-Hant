@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ bin/magento saas:resync --feed categoryPermissions
 您可以使用[資料管理控制面板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)檢視已同步處理和共用的資料。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向購物者顯示。
 
 ![資料管理儀表板](assets/data-management-dashboard.png)
+
+您也可以使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和資料匯出擴充功能記錄檔，執行同步處理命令並疑難排解同步處理程式。
 
 #### 未來的產品更新
 
@@ -386,6 +388,10 @@ composer update magento/live-search --with-dependencies
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列](https://github.com/adobe/storefront-search-as-you-type)
 
+### Data Export擴充功能
+
+啟用「即時搜尋」後，「資料匯出」擴充功能會將Commerce資料在Commerce應用程式和「即時搜尋」之間同步。 此程式可確保店面上有最新的Commerce資料。 在Admin中，您可以使用「資料管理」控制面板檢查同步狀態。 您可以使用Commerce CLI和記錄檔來管理和疑難排解資料匯出程式。 如需詳細資訊，請參閱[資料匯出指南](../data-export/overview.md)。
+
 ### Inventory management
 
 [!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(先前稱為多Source詳細目錄，或MSI)。 若要啟用完整支援，您必須[將](install.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
@@ -394,7 +400,7 @@ composer update magento/live-search --with-dependencies
 
 ### 價格索引器
 
-Live Search客戶可以使用新的[SaaS價格索引器](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
+Live Search客戶可以使用[SaaS價格索引器](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
 
 ### 價格支援
 

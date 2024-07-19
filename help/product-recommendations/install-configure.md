@@ -3,9 +3,9 @@ title: 安裝與設定
 description: 瞭解如何安裝、更新及解除安裝 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定[!DNL Product Recommendations] {#configure}
 
-安裝`magento/product-recommendations`模組後，您必須指定API金鑰並選取SaaS資料空間，以設定[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
+1. 安裝`magento/product-recommendations`模組後，請指定API金鑰並選取SaaS資料空間，以設定[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
 
-若要確保目錄匯出正在正確執行，請確認[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)工作和[索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+   設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
 
-當您透過API金鑰成功連結至Commerce服務並指定SaaS資料空間時，目錄同步就會開始。 然後，您可以[驗證](verify.md)行為資料正在傳送至您的店面。
+1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)工作和[索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+
+當您成功將Commerce應用程式連結至Commerce Services並指定SaaS資料空間後，目錄同步就會開始。 然後，您可以[驗證](verify.md)行為資料正在傳送至您的店面。
+
+## 監控資料同步並疑難排解
+
+透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
+
+然後，您可以[驗證](verify.md)行為資料正在傳送至您的店面。
 
 ## 更新您的[!DNL Product Recommendations]安裝 {#update}
 

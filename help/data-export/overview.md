@@ -4,7 +4,7 @@ description: 瞭解如何將 [!DNL data export] 擴充功能用於Adobe Commerce
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] 指南
 
-[!DNL SaaS data export]藉由最佳化Adobe Commerce執行個體與連線的Commerce服務之間的資料同步來改善前端效能。 當您將Live Search、產品Recommendations或目錄服務新增至Adobe Commerce安裝時，[!DNL Data export]擴充功能會自動安裝。
+[!DNL SaaS data export]會在Adobe Commerce執行個體和連線的Commerce Services之間同步資料。 當您將Live Search、產品Recommendations或目錄服務新增至Adobe Commerce安裝時，[!DNL Data export]擴充功能會自動安裝。
 
 SaaS資料匯出會收集並匯出各種型別的資料，稱為&#x200B;_摘要_，用於彙總特定型別的資訊。 視安裝的Commerce服務而定，SaaS資料匯出摘要包含：
 
@@ -22,7 +22,7 @@ SaaS資料匯出會收集並匯出各種型別的資料，稱為&#x200B;_摘要_
 - **銷售訂單摘要**&#x200B;會彙總訂單資料，包括其相關實體，例如商業發票、出貨、銷退折讓單等。
 - **多Source庫存摘要**&#x200B;會彙總有關庫存狀態專案的資料。
 
-資料匯出擴充功能支援數種方法，用以啟動及管理資料同步程式。
+SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來啟動及管理資料同步流程。
 
 - **從Admin或命令列手動同步處理**
 

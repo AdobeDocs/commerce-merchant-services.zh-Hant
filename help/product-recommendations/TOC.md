@@ -4,10 +4,10 @@ user-guide-description: 本指南提供使用Adobe Commerce中 [!DNL Product Rec
 breadcrumb-title: 「[!DNL Product Recommendations] 指南」
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 12%
+source-wordcount: '60'
+ht-degree: 11%
 
 ---
 
@@ -38,3 +38,4 @@ ht-degree: 12%
    - [收集資料](events.md)
    - [自訂](customize.md)
    - [處理Cookie限制](setting-cookie.md)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
