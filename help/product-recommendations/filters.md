@@ -2,9 +2,9 @@
 title: 篩選產品
 description: 定義包含或排除不將產品用作建議的條件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 ### 產品
 
 產品篩選器會指定哪些特定產品符合或不符合條件，以便顯示在建議中。 您無法選取已停用或無法個別顯示的產品，因為這些產品永遠無法出現在建議中。
+
+>[!NOTE]
+>
+>可設定產品的子產品不會顯示在建議單位中，因為這些子產品具有&#x200B;_不個別顯示_&#x200B;的可見性。
 
 ### 型別
 

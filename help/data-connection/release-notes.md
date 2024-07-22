@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _2022年10月12日_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_2024年7月22日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
+![修正](../assets/new.svg) — 已更新Experience Platform聯結器中繼套件，以移除未使用的資料匯出工具和索引子。
+
+## 3.1.2
+
 _2024年6月5日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![修正](../assets/new.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
 ![修正](../assets/new.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
 
 ## 3.1.1
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
-
 _2024年4月4日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新](../assets/new.svg) — 已新增所有[!DNL Data Connection]擴充功能對PHP 8.3的支援。
 ![新](../assets/new.svg) — 新增如何[整合](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce的文章。
@@ -132,7 +140,6 @@ _2023年6月27日_
 ![修正](../assets/fix.svg) — 已更新內容安全性原則設定。
 ![修正](../assets/fix.svg) — 修正Commerce 2.4.7版本對後台事件的支援。
 ![新](../assets/new.svg) — 新增當您儲存變更至[!DNL Data Connection]擴充功能表單時，有關快取失效的通知訊息。
-
 
 ## 3.0.0-beta1 （僅限內部）
 

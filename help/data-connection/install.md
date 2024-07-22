@@ -4,9 +4,9 @@ description: 瞭解如何從Adobe Commerce安裝、更新及解除安裝 [!DNL D
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,12 @@ ht-degree: 0%
 
    此中繼資料包含以下模組和擴充功能：
 
-   * `module-experience-connector-admin` — 更新Admin UI，讓您能夠選取特定Adobe Commerce執行個體的資料流ID。
-   * `module-experience-connector` — 設定Storefront事件SDK中的`Organization ID`和`datastreamId`。
-   * `data-services` — 提供店面事件的屬性內容。 例如，發生結帳事件時，包含有關購物車中有多少商品的資訊以及這些商品的產品屬性資料。
-   * `services-id` — 使用沙箱和生產API金鑰將您的Adobe Commerce執行個體連線到[Adobe Commerce SaaS](../landing/saas.md)，並連線到Adobe Experience Platform以擷取IMS組織ID。
-   * `orders-connector` — 將訂單狀態服務連線到您的Adobe Commerce執行個體。
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. （選擇性）若要包含[!DNL Live Search]資料（包含[搜尋事件](events.md#search-events)），請安裝[[!DNL Live Search]](../live-search/install.md)擴充功能。
 
