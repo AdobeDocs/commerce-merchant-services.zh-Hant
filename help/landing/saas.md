@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ ht-degree: 0%
 
 1. 如果沒有SaaS專案，請按一下&#x200B;**建立專案**。 然後在&#x200B;**專案**&#x200B;欄位中，輸入您的SaaS專案名稱。
 
-   建立SaaS專案時，[!DNL Commerce]會根據您的[!DNL Commerce]授權產生一或多個SaaS資料空間：
-   - Adobe Commerce — 一個生產資料空間；僅限兩個測試資料空間。 在具有多個中繼環境的Cloud Pro專案上，您可以透過[提交支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個中繼環境請求額外的測試資料空間。
-   - Magento Open Source — 一個生產資料空間；無測試資料空間
+   所有商戶都可以存取每個SaaS專案一個生產資料空間和兩個測試資料空間。 對於具有多個中繼環境的On Cloud Pro專案，您可以透過[提交支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/)，為每個中繼環境請求額外的測試資料空間。
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
