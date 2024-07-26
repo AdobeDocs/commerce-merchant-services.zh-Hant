@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    - 200個可篩選屬性
    - 200個可搜尋屬性
 - [!DNL Live Search]只會索引Adobe Commerce資料庫中的產品。
-- CMS頁面未編制索引。
+- CMS頁面不會編制索引。
 - SKU、名稱和類別屬性預設可搜尋，且無法從搜尋中排除。 如果您不打算將產品歸入這些類別，請務必從這些類別中取消指派產品。
 
 ## Facet
@@ -58,7 +58,7 @@ ht-degree: 0%
 ## 同義字
 
 - 每個存放區檢視最多可管理200個[同義字](synonyms.md)。[!DNL Live Search]
-- 每個商店檢視的多字同義字限製為20個。
+- 多字同義字可能無法總是如預期般運作。 請務必先在中繼環境中測試這些同義字，之後再用於生產環境，因為它們可能會對關聯性造成負面影響。
 
 ## 類別銷售
 
