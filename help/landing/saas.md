@@ -4,16 +4,16 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-部分Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支援，並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須使用生產及沙箱API金鑰連線您的[!DNL Commerce]執行個體，並在[設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定資料空間。 您只需要為每個Commerce執行個體設定一次連線。
+部分Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支援，並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須使用生產及沙箱API金鑰連線您的[!DNL Commerce]執行個體，並在[設定](#saas-configuration)中指定資料空間。 您只需要為每個Commerce執行個體設定一次連線。
 
 ## 可用的服務 {#availableservices}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 產生生產和沙箱API金鑰 {#genapikey}
 
-1. 在[https://account.magento.com](https://account.magento.com/){：target=&quot;_blank&quot;}登入您的[!DNL Commerce]帳戶。
+1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){：target=&quot;_blank&quot;}登入您的[!DNL Commerce]帳戶。
 
 1. 在&#x200B;**Magento**&#x200B;標籤下，選取側邊欄上的&#x200B;**API入口網站**。
 
@@ -80,6 +80,10 @@ ht-degree: 0%
 >
 > 請僅在生產[!DNL Commerce]安裝時使用您的生產SaaS資料空間，以避免資料衝突。 否則，您可能會使用測試資料汙染生產網站資料，進而導致部署延遲。 例如，中繼資料（例如中繼URL）可能會錯誤地覆寫您的生產產品資料。
 
+### SaaS資料空間布建
+
+所有商戶都可以存取每個SaaS專案一個生產資料空間和兩個測試資料空間。 對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，為每個中繼環境要求額外的測試資料空間。
+
 ### 選取或建立SaaS專案 {#createsaasenv}
 
 若要選取或建立SaaS專案，請向商店的[!DNL Commerce]授權擁有者要求[!DNL Commerce] API金鑰：
@@ -92,17 +96,15 @@ ht-degree: 0%
 
    如果您在[!DNL Commerce]設定中沒有看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;區段，請為所需的[[!DNL Commerce] 服務](#availableservices)安裝[!DNL Commerce]模組。 此外，請確定已安裝`magento/module-services-id`套件。
 
-1. 在&#x200B;_沙箱API金鑰_&#x200B;和&#x200B;_生產API金鑰_&#x200B;區段中，貼上您的金鑰值。
+1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
 
-   私密金鑰必須在金鑰開頭包含`----BEGIN PRIVATE KEY---`，並在私密金鑰結尾包含`----END PRIVATE KEY----`。
+   私密金鑰必須在金鑰開頭包含`----BEGIN PRIVATE KEY---`，並在金鑰結尾包含`----END PRIVATE KEY----`。
 
 1. 按一下&#x200B;**儲存**。
 
 任何與您的金鑰相關聯的SaaS專案都會顯示在&#x200B;**SaaS識別碼**&#x200B;區段的&#x200B;**專案**&#x200B;欄位中。
 
 1. 如果沒有SaaS專案，請按一下&#x200B;**建立專案**。 然後在&#x200B;**專案**&#x200B;欄位中，輸入您的SaaS專案名稱。
-
-   所有商戶都可以存取每個SaaS專案一個生產資料空間和兩個測試資料空間。 對於具有多個中繼環境的On Cloud Pro專案，您可以透過[提交支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/)，為每個中繼環境請求額外的測試資料空間。
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 

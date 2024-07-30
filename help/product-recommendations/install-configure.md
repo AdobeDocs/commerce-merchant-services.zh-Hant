@@ -3,16 +3,16 @@ title: 安裝與設定
 description: 瞭解如何安裝、更新及解除安裝 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # 安裝與設定
 
-將[!DNL Product Recommendations]部署至您的店面和管理員，需要您安裝模組並設定[Commerce Services Connector](../landing/saas.md)。 在發行更新時，您可以使用最新版本輕鬆更新安裝。
+將[!DNL Product Recommendations]部署至您的店面和管理員，需要您安裝模組並設定[Commerce Services Connector](../landing/saas.md)。 發佈更新時，您可以輕鬆將安裝更新為最新版本。
 
 - [安裝](#install)
 - [設定](#configure)
@@ -37,7 +37,7 @@ Page Builder的[!DNL Product Recommendations]為選用模組，需另行安裝�
 composer require magento/module-page-builder-product-recommendations
 ```
 
-透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
+透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
 
 如需進一步說明，請參閱[搭配頁面產生器內容](page-builder.md)使用 [!DNL Product Recommendations] 。
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## 設定[!DNL Product Recommendations] {#configure}
 
-1. 安裝`magento/product-recommendations`模組後，請指定API金鑰並選取SaaS資料空間，以設定[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
+1. 安裝`magento/product-recommendations`模組後，請指定API金鑰並選取SaaS資料空間，以設定[Commerce Services Connector](../landing/saas.md)。
 
    設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
 
-1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)工作和[索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
 
-當您成功將Commerce應用程式連結至Commerce Services並指定SaaS資料空間後，目錄同步就會開始。 然後，您可以[驗證](verify.md)行為資料正在傳送至您的店面。
+當您成功將Commerce應用程式連結至Commerce Services並指定[SaaS資料空間](../landing/saas.md#saas-configuration)後，目錄同步作業就會開始。 然後，您可以[驗證](verify.md)行為資料正在傳送至您的店面。
 
 ## 監控資料同步並疑難排解
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 在產品Recommendations 3.x.x版中，您只需要單一API金鑰。 在4.x.x版及更新版本中，您必須提供生產用公開和私人API金鑰，以及沙箱公開和私人API金鑰。 如果您未提供這兩組API金鑰，將無法在「管理員」中存取「產品Recommendations」功能。 不過，資料收集仍會繼續存在於您的店面，而現有的建議仍會繼續向您的購物者顯示。
+> 在產品Recommendations 3.x.x版中，您只需要單一API金鑰。 在4.x.x版和更新版本中，您必須提供適用於沙箱和生產環境的公開和私人API金鑰。 如果您未提供這兩組API金鑰，將無法在「管理員」中存取「產品Recommendations」功能。 不過，資料收集會在您的店面中持續進行，而現有的建議會持續向您的購物者顯示。
 
 ## 防火牆
 
@@ -115,4 +115,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 解除安裝[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[解除安裝](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)產品建議模組。
+如有必要，您可以[解除安裝](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
