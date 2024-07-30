@@ -4,9 +4,9 @@ description: 瞭解如何從Adobe Commerce安裝、更新及解除安裝 [!DNL D
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 0%
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ ht-degree: 0%
 
 1. （選擇性）若要包含[請購單事件](events.md#b2b-events)的B2B資料，請安裝[B2B擴充功能](#install-the-b2b-extension)。
 
-### 安裝Adobe I/O事件
+### 安裝Adobe I/O事件並設定客戶聯結器模組
 
-安裝`experience-platform-connector`擴充功能後，您必須安裝Adobe Commerce的Adobe I/O事件。
+安裝`experience-platform-connector`擴充功能後，您必須安裝Adobe Commerce的Adobe I/O事件並設定`customers-connector`模組。
 
 下列步驟適用於雲端基礎結構上的Adobe Commerce和內部部署安裝。
 
@@ -70,19 +71,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-根據部署型別完成安裝：內部部署或雲端基礎結構上的Adobe Commerce 。
-
-#### 內部部署
-
-在內部部署環境中，您必須手動啟用程式碼產生和Adobe Commerce事件：
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+根據部署型別完成安裝：雲端基礎結構或內部部署上的Adobe Commerce 。
 
 #### 在雲端基礎結構上
 
@@ -97,6 +86,18 @@ stage:
 提交更新檔案並將其推播到雲端環境。 部署完成後，使用以下命令啟用傳送事件：
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### 內部部署
+
+在內部部署環境中，您必須手動啟用程式碼產生和Adobe Commerce事件：
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 

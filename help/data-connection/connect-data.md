@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ ht-degree: 0%
 
 在Real-Time CDP中使用設定檔記錄大約需要10分鐘。 設定檔事件會立即開始串流。
 
+>[!TIP]
+>
+>如果您在Experience Platform中看不到設定檔資料，請參閱[Commerce知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以取得疑難排解建議。
+
 #### 欄位說明
 
 | 欄位 | 說明 |
@@ -277,6 +281,10 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 在此範例中，您會看到來自[`commerce.productListAdds`](events.md#addtocart)、[`commerce.productViews`](events.md#productpageview)、[`web.webpagedetails.pageViews`](events.md#pageview)等的事件資料。 此檢視可讓您驗證Commerce資料是否到達邊緣。
 
 如果結果不符合您的預期，請開啟您的資料集並尋找任何失敗的批次匯入。 深入瞭解[疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)。
+
+### 驗證設定檔資料是否出現在Experience Platform中
+
+如果您在Experience Platform中看不到設定檔資料，請參閱[Commerce知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以取得疑難排解建議。
 
 ## 後續步驟
 
