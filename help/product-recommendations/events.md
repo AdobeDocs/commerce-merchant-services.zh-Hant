@@ -3,7 +3,7 @@ title: 收集資料
 description: 瞭解事件如何收集產品建議的資料。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
+source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -34,15 +34,16 @@ ht-degree: 0%
 | `view` | 建議單位可在頁面上檢視，例如透過捲動至檢視中。 | 是 |
 
 若要正確填入控制面板，必須執行下列事件。
-| 儀表板欄 | 活動    | 加入欄位  |
+
+| 儀表板欄 | 活動 | 加入欄位 |
 | ---------------- | --------- | ----------- |
-| 曝光數      |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render` | unitId  |
-| 檢視            |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-unit-view` | unitId  |
-| 點按次數           |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`    | unitId  |
-| 收入          |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`， `place-order` | unitId， sku |
-| LT收入       |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`， `place-order` | unitId， sku |
-| CTR              |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-item-click`， `recs-add-to-cart-click`  | unitId， sku |
-| vCTR             |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-unit-view`， `recs-item-click`， `recs-add-to-cart-click` | unitId， sku |
+| 曝光數 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render` | unitId |
+| 檢視 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view` | unitId |
+| 點按次數 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click` | unitId |
+| 收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
+| LT收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
+| CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | unitId， sku |
+| vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | unitId， sku |
 
 如果您的店面是以PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自訂前端技術，例如React或Vue JS，請參閱使用手冊以瞭解如何在Headless](headless.md)環境中整合[產品Recommendations。
 
