@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: 「來自Adobe Commerce的 [!DNL Live Search] 的最新發行資訊。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _2023年10月27日_
 
 ![新](../assets/new.svg) [!DNL Live Search] PLP Widget現在支援色票。
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_2024年7月31日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg)修正某些指令碼未在結帳頁面上載入的問題。
+![修正](../assets/fix.svg)修正`composer.json`檔案中的相依性版本。
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
