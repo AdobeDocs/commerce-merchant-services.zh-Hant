@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ ht-degree: 0%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
 以下發行說明說明說明與[!DNL Data Connection]擴充功能所使用的擴充功能相關的功能變更和修正。
 
 +++支援的服務更新
+
+_2024年8月2日_
+
+![Fix](../assets/fix.svg) — 當訂單總計設定為包含稅捐時，固定付款總金額。
+![新](../assets/new.svg) — 已新增`taxAmount`欄位以訂購購買事件。
+![新](../assets/new.svg) — 已新增新增將自訂資料新增至事件的功能。 有關[範例](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md)，請參閱下列內容。
 
 _2024年1月24日_
 
@@ -78,7 +84,7 @@ _2024年7月22日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修正](../assets/new.svg) — 已更新Experience Platform聯結器中繼套件，以移除未使用的資料匯出工具和索引子。
+![修正](../assets/fix.svg) — 已更新Experience Platform聯結器中繼套件，以移除未使用的資料匯出工具和索引子。
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _2024年6月5日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修正](../assets/new.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
-![修正](../assets/new.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
+![修正](../assets/fix.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
+![修正](../assets/fix.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _2023年11月16日_
 [!BADGE 相容性]{type=Informative tooltip="相容性"}
 
 ![新](../assets/new.svg) -Experience Platform聯結器已重新命名為[!DNL Data Connection]。
-![修正](../assets/new.svg) — 新增在Adobe IMS無法產生存取權杖時記錄錯誤回應的功能。
-![修正](../assets/new.svg) — 如果您嘗試同步處理歷史訂單，但尚未指定帳戶認證，則已新增通知訊息。
+![修正](../assets/fix.svg) — 新增在Adobe IMS無法產生存取權杖時記錄錯誤回應的功能。
+![修正](../assets/fix.svg) — 如果您嘗試同步處理歷史訂單，但尚未指定帳戶認證，則已新增通知訊息。
 
 ## 3.0.0
 
