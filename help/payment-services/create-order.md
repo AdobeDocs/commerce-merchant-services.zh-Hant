@@ -3,7 +3,7 @@ title: 建立具有 [!DNL Payment Services]的訂單
 description: Admin提供讓商家向需要協助的客戶直接使用Admin的 [!DNL Payment Services] 完成訂單的功能。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 託管信用卡欄位
 
-在Admin中建立訂單時，[!DNL Payment Services]可作為付款方式使用：
+建立訂單時，管理員可使用[!DNL Payment Services]作為付款方式：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Orders]**。
 1. 按一下&#x200B;**[!UICONTROL Create New Order]**。

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,13 @@ ht-degree: 0%
 
 ## 上線流程
 
+此流程圖顯示上線[!DNL Payment Services]的一般程式。
+
 ![上線流程](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-此上線流程圖顯示上線[!DNL Payment Services]的一般程式。
+>[!NOTE]
+>
+> 若為Adobe Commerce 2.4.7或更新版本，您可以略過Marketplace擴充步驟，因為[!DNL Payment Services]已可立即使用。
 
 在您完成沙箱或即時付款上線後，即可從Admin的[!DNL Payment Services]存取Financial Reporting。
 
@@ -28,13 +32,15 @@ ht-degree: 0%
 
 ## 必要條件
 
-若要使用[!DNL Payment Services]，您的執行個體必須具備下列可用專案：
+若要使用[!DNL Payment Services]，您必須啟用所有相依模組，且您的執行個體可使用下列專案：
 
 * 服務聯結器模組
 * 服務識別碼模組
 * API金鑰
 
-服務聯結器與服務ID模組會在[安裝 [!DNL Payment Services]](install.md)期間自動安裝。 安裝完成後，展開&#x200B;**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**&#x200B;時，您可以在組態設定(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)中看到新區段。
+服務聯結器與服務ID模組會在[安裝 [!DNL Payment Services]](install.md)期間自動安裝。
+
+安裝完成時，如果您展開&#x200B;**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**，您可以在組態設定(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)中看到新區段。
 
 若要瞭解如何建立或存取您的API金鑰，請參閱[API認證](#obtain-api-credentials)。
 

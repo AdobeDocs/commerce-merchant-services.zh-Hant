@@ -3,9 +3,9 @@ title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶在測試模式中使用 [!DNL Payment Services] 。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 >此設定不適用於其他結帳流程。
 
 ## 在沙箱環境中測試
+
+強烈建議您先將測試資料空間用於整合和中繼環境，並使用真實的信用卡和銀行在生產環境中測試付款，然後再向購物者公開此功能。
 
 如需詳細資訊，請參閱[測試及驗證](test-validate.md)。
