@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-
-   ![方法檢視](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. 設定&#x200B;_[!UICONTROL Merchant Location]_中的_[!UICONTROL Merchant Country]_&#x200B;欄位。
+1. 設定&#x200B;_[!UICONTROL Merchant Location]_中的_[!UICONTROL Merchant Country]_&#x200B;欄位。 如果未指定&#x200B;_[!UICONTROL Merchant Country]_，則會使用一般設定的_[!UICONTROL Default Country]_。
 1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段以存取_[!UICONTROL [!DNL Payment Services]]_&#x200B;區段。
 1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_區段中，展開_[!UICONTROL General Configuration]_&#x200B;區段。
 1. 針對&#x200B;**啟用**，將其設定為`Yes`以啟用您商店的[!DNL Payment Services]。
 1. 若為&#x200B;**方法**，若您仍在測試存放區的[!DNL Payment Services]，請將其設為`Sandbox`，或若您已準備啟用即時付款，請設為`Production`。
+1. 一旦您設定[Commerce服務聯結器](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}並首次造訪[!DNL Payment Services]儀表板，系統就會自動填入您的&#x200B;**[!UICONTROL Payment Services Sandbox ID]**&#x200B;和&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;值。 執行此動作以完成您的沙箱和/或生產環境的上線。 這些值會將您的SaaS ID與[!DNL Payment Services]建立關聯。
 
    >[!WARNING]
    >
-   >當您完成沙箱和/或生產的入門時，您的&#x200B;_[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_&#x200B;會自動產生，並出現在他們適當的欄位中。 請勿移除或變更這些ID。
+   > 如果您需要在Commerce Services Connector中變更資料空間ID，需要重設您的[!DNL Payment Services] ID。 按一下&#x200B;**重設付款服務ID**&#x200B;以重設您的沙箱或生產ID。 如果您重設[!DNL Payment Services] ID，則必須重新上線。
 
-1. 對於&#x200B;**軟性描述項** （自訂值，顯示在客戶交易銀行對帳單上，以描述商店/品牌/目錄之間），請在文字欄位中新增自訂文字（最多22個字元），取代`Custom descriptor`或現有值。
+1. 對於&#x200B;**軟性描述項** （自訂值，顯示在客戶交易銀行對帳單上，以描述商店/品牌/目錄之間），請在文字欄位中新增自訂文字（最多22個字元），取代`Soft descriptor`或現有值。
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 1. 導覽至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以重新整理所有無效的快取。
 
@@ -49,8 +47,8 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable] | 網站 | 啟用或停用您網站的[!DNL Payment Services]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | 存放區檢視 | 設定商店的方法或環境。 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | 存放區檢視 | 您的沙箱商家ID，會在沙箱上線期間自動產生。 請勿變更或變更此ID。 |
-| [!UICONTROL Production Merchant ID] | 存放區檢視 | 您的生產商家識別碼，會在沙箱上線期間自動產生。 請勿變更或變更此ID。 |
+| [!UICONTROL Payment Services Sandbox ID] | 存放區檢視 | 您的沙箱商家ID，會在沙箱上線期間自動產生。 |
+| [!UICONTROL Payment Services Production ID] | 存放區檢視 | 您的生產商家識別碼，會在沙箱上線期間自動產生。 |
 | [!UICONTROL Soft Descriptor] | 網站或商店檢視 | 在您的網站和商店檢視中新增軟性描述項，以將資訊新增到客戶交易，其中會描述品牌、商店或產品線。 |
 
 ## [!UICONTROL Credit Card Fields]
