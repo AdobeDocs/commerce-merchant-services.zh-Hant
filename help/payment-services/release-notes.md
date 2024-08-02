@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _2021年6月28日_
 
 +++
 
+## v2.7.0
+
+_2024年8月2日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]現在支援訂單層級](line-items.md)的[條列專案資料。 此功能可讓商家檢視訂單中專案的詳細資訊，例如產品詳細資料、數量及價格（包括銷售稅、折扣及其他相關資訊）。
+
+![新增](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services]改善商家在Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration)體驗中的[設定，以更簡單且更直覺的方式上線流程。 此功能可讓商家重設其[!DNL Payment Services] ID。
+
+![新增](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services]包含[付款失敗通知](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails)。 此功能會近乎即時地通知商戶付款失敗，因此您可以聯絡購物者，並有可能改善問題解決方案，以儲存訂單。
+
+![修正](../assets/fix.svg)<!-- PAY-5469 -->修正Safari **封鎖** Google Pay快顯視窗的問題。 購物者現在可以在Safari上完成其Google Pay付款交易。
+
+![修正](../assets/fix.svg)<!-- PAY-5492 -->修正商家將自訂條款與條件新增至結帳頁面時的問題。 在[快速結帳](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience)期間，購物者現在可以接受這些條款與條件，順利完成結帳。
+
+![修正](../assets/fix.svg)<!-- PAY-5532 -->已改善店內接送(ISPU)功能，包含&#x200B;**InstantPurchase**。 當購物者以&#x200B;**InstantPurchase**&#x200B;下訂單時，**ISPU傳遞方法**&#x200B;不再顯示。
+
+![修正](../assets/fix.svg)<!-- PAY-5606 -->修正當商家的國家設定為&#x200B;**德國**&#x200B;時，**設定頁面**&#x200B;國家選擇器中發生的問題。
+
 ## v2.6.0
 
 _2024年6月4日_
@@ -137,7 +157,7 @@ _2024年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新的](../assets/new.svg)<!-- PAY-4868 -->商戶可以成功[在整個購買體驗中設定Google Pay](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)，類似於[!DNL Payment Services]中透過Admin的其他付款按鈕。
+![新的](../assets/new.svg)<!-- PAY-4868 -->商戶可透過管理員成功[設定Google Pay的整個購買體驗](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)，類似於[!DNL Payment Services]中的其他付款按鈕。
 
 ![新增](../assets/new.svg)<!-- PAY-4381 --> [Payment Services透過GraphQL支援Google Pay](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)，讓商戶可以使用Google Pay付款方式取得Headless Commerce體驗。
 
