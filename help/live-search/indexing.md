@@ -2,9 +2,9 @@
 title: "索引"
 description: 「瞭解 [!DNL Live Search] 如何索引產品屬性屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 屬性中繼資料的範圍是`website/store/store view`。
 
-[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`和`Visible in Advanced Search`。
+[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`。
 
 [!DNL Live Search]未索引已刪除的產品或設為`Not Visible Individually`的產品。
 

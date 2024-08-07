@@ -2,7 +2,7 @@
 title: "設定"
 description: 「設定 [!DNL Live Search] 服務的設定。」
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. 在Admin中，移至&#x200B;**行銷** > *SEO與搜尋* > **[!DNL Live Search]**。
 1. 在&#x200B;*價格面向*&#x200B;下的&#x200B;**設定**&#x200B;工作區上，執行下列動作：
    * 輸入可用的&#x200B;**選擇數目**&#x200B;或價格群組。 最多可定義50個價格群組。
-   * 輸入每個群組的&#x200B;**間隔值**&#x200B;或價格範圍。 最大值為10,000。
+   * 輸入每個群組的&#x200B;**間隔值**&#x200B;或價格範圍。 最大值為40,000,000。
 1. 按一下&#x200B;**儲存**。
 
    更新後的設定約需15分鐘才能在店面提供。
