@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 0%
 - 類別銷售在每個類別中可以有一個規則。
 - 每個規則的條件數上限為10。
 - 每個規則的事件數上限為25。
+- 為了避免分頁回應產生無法預測的結果，釘選產品的數量不應超過要求的頁面大小。
 
 ## 同義字
 
