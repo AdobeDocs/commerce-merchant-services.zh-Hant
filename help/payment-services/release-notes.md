@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2024年8月2日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新增](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]現在支援訂單層級](line-items.md)的[條列專案資料。 此功能可讓商家檢視訂單中專案的詳細資訊，例如產品詳細資料、數量及價格（包括銷售稅、折扣及其他相關資訊）。
+![新增](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]現在支援訂單層級](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items)的[條列專案資料。 此功能可讓商家檢視訂單中專案的詳細資訊，例如產品詳細資料、數量及價格（包括銷售稅、折扣及其他相關資訊）。
 
 ![新增](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services]改善商家在Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration)體驗中的[設定，以更簡單且更直覺的方式上線流程。 此功能可讓商家重設其[!DNL Payment Services] ID。
 
