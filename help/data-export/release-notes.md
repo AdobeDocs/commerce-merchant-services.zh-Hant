@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ ht-degree: 0%
 
 ![新](../assets/new.svg)已將立即匯出摘要cron-job重新命名為`*_feed_resend_failed_items`。
 
-![新](../assets/new.svg)已重新命名立即匯出摘要並變更記錄表。
+![新](../assets/new.svg)已重新命名立即匯出摘要、索引器檢視ID和變更記錄表。
+- 摘要表格（和索引子檢視ID）：
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- 變更記錄表名稱 — 遵循與摘要表相同的命名模式，但變更記錄表名稱會新增`_cl`尾碼。  例如`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+如果您的自訂程式碼會參考任何這些實體，請以新名稱更新參考，以確保您的程式碼繼續正常運作。
 
 ![修正](../assets/fix.svg)在摘要資料中設定`modified_at`欄位，但僅限於需要它的摘要。
 
