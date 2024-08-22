@@ -2,9 +2,9 @@
 title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 深入瞭解[彈出視窗](storefront-popover.md) Widget。
 
-### 同義字和拼字
+### 同義字和拼字錯誤
 
-納入同義字和常見拼字錯誤以確保完整的搜尋結果。 此外，您可以展開搜尋查詢，以納入購物者可能會使用的字詞，這些字詞與您目錄中指定的字詞不同。 您不想因為某人正在尋找「沙發」，而您的產品卻被列為「沙發」而失去銷售機會。 您可以輸入客戶可能會用來尋找您的產品的所有可能字詞，以擷取廣泛的搜尋字詞。 您可以[將同義字設定為單向或雙向](synonyms-add.md#step-2-define-the-synonym-by-type)以改善結果。
+即時搜尋預設會管理錯誤拼字。 您可以設定同義字，以納入購物者可能會使用的字詞，這些字詞與您目錄中指定的字詞不同。 您不想因為某人正在尋找「沙發」，而您的產品卻被列為「沙發」而失去銷售機會。 您可以輸入客戶可能會用來尋找您的產品的所有可能字詞，以擷取廣泛的搜尋字詞。 您可以[將同義字設定為單向或雙向](synonyms-add.md#step-2-define-the-synonym-by-type)以改善結果。
 
 #### 最佳化同義字的提示
 

@@ -3,7 +3,7 @@ title: 什麼是 [!DNL Live Search]？
 description: 「Adobe Commerce的[!DNL Live Search]提供快速、相關且直覺式的搜尋體驗。」
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 [!DNL Live Search]著重於速度、相關性和易用性，對購物者和商家來說都是一個遊戲規則的改變者。 觀看以下影片，然後從店面快速瀏覽[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
 如需有關使用和設定Live Search的更深入影片，請參閱[在 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)上的完整示範主題。
 
