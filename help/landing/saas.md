@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 產生生產和沙箱API金鑰 {#genapikey}
 
-1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){：target=&quot;_blank&quot;}登入您的[!DNL Commerce]帳戶。
+1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}登入您的[!DNL Commerce]帳戶。
 
 1. 在&#x200B;**Magento**&#x200B;標籤下，選取側邊欄上的&#x200B;**API入口網站**。
 
@@ -79,10 +79,17 @@ ht-degree: 0%
 >[!WARNING]
 >
 > 請僅在生產[!DNL Commerce]安裝時使用您的生產SaaS資料空間，以避免資料衝突。 否則，您可能會使用測試資料汙染生產網站資料，進而導致部署延遲。 例如，中繼資料（例如中繼URL）可能會錯誤地覆寫您的生產產品資料。
+> 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
 
 ### SaaS資料空間布建
 
-所有商戶都可以存取每個SaaS專案一個生產資料空間和兩個測試資料空間。 對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，為每個中繼環境要求額外的測試資料空間。
+所有Adobe Commerce商戶都可以存取每個SaaS專案一個生產資料空間和兩個測試資料空間。
+
+只要不同時在多個環境中使用相同的資料空間，您就可以在任何非生產環境中使用測試資料空間。 若要在不同的環境中使用測試資料空間，請先執行資料清理，然後再在該環境中選取和設定資料空間。
+
+對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，為每個中繼環境要求額外的測試資料空間。 不過，如果您只有一個測試環境，且需要額外的測試資料空間，您有以下選項：
+- 請聯絡客戶成功團隊或您指派的客戶成功案例經理，以要求額外的測試環境。 另外需要額外付費。
+- [提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以取得額外的測試資料空間，並說明額外資料空間的商業理由。 此請求有待核准。
 
 ### 選取或建立SaaS專案 {#createsaasenv}
 
