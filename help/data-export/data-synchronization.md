@@ -4,9 +4,9 @@ description: 瞭解 [!DNL SaaS Data Export] 如何在Adobe Commerce執行個體�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 - 請確認索引子是從[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
 
 - 確認下列摘要的索引子已設定為`Update by Schedule`：目錄屬性、產品、產品覆寫和產品變體。 您可以在Admin中或使用CLI (`bin/magento indexer:show-mode | grep -i feed`)從[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)檢查索引子。
+
+### 資料傳輸記錄的事件管理器通知
+
+在103.3.4版或更新版本中，從Commerce執行個體傳送資料給Adobe Commerce服務時，SaaS Data Export會傳送`data_sent_outside`事件。
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>如需關於事件以及如何訂閱事件的資訊，請參閱Adobe Commerce開發人員檔案中的[事件和觀察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers)。
