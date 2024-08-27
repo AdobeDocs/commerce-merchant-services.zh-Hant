@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
+source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _2022年10月12日_
 ![新](../assets/new.svg) — 已新增對[AEM店面](overview.md#aem-support)的支援。
 
 +++
+
+## 3.2.0-beta3
+
+_2024年8月27日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
+![新](../assets/new.svg) — 此版本包含3.1.1、3.1.2、3.1.3和3.1.4中發行的修補程式。
 
 ## 3.1.4
 
