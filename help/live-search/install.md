@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 >在網站搜尋方面，Adobe Commerce會提供您選項。 在實作之前，請務必閱讀[界限和限制](boundaries-limits.md)，以確保[!DNL Live Search]符合您的業務需求。
 
-## 對象
+## 客群
 
 本文適用於負責安裝和設定Adobe Commerce執行個體的開發人員或團隊中的系統整合商。
 
 ## 需求
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1 / 8.2 / 8.3
+- PHP 8.1、8.2或8.3版
 - [!DNL Composer]
 
 ## 支援平台
@@ -63,13 +63,13 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    composer require magento/live-search
    ```
 
-   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**新的** Adobe Commerce安裝，請執行以下動作以停用[!DNL OpenSearch]和相關模組，並安裝[!DNL Live Search]。 然後繼續步驟4。
+   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**新的** Adobe Commerce安裝，請執行以下命令以暫時停用[!DNL OpenSearch]和相關模組，並安裝[!DNL Live Search]。 然後，繼續步驟4。
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**現有** Adobe Commerce安裝，請執行以下動作以暫時停用提供店面搜尋結果的[!DNL Live Search]模組。 然後繼續步驟4：
+   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**現有** Adobe Commerce安裝，請執行以下動作以停用提供店面搜尋結果的[!DNL Live Search]模組。 然後，繼續步驟4：
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -151,16 +151,20 @@ bin/magento saas:resync --feed categoryPermissions
 
 #### 未來的產品更新
 
-初始同步後，增量產品更新最多可能需要15分鐘才能用於店面搜尋。 若要深入瞭解，請參閱[索引 — 串流產品更新](indexing.md)。
+初始同步後，增量產品更新最多可能需要15分鐘才能用於店面搜尋。 若要深入瞭解，請參閱索引檔案中的[串流產品更新](indexing.md)。
 
-## 4.驗證是否已匯出資料 {#verify-export}
+## 4.確認資料已匯出 {#verify-export}
 
-若要確認目錄資料是否已從您的Adobe Commerce執行個體匯出並針對[!DNL Live Search]進行同步，您有幾個選項：
+若要檢查您的目錄資料是否已從Adobe Commerce匯出並與[!DNL Live Search]同步，您有幾個選擇：
 
 - 在下清單格中尋找專案：
 
-   - `catalog_data_exporter_products`
-   - `catalog_data_exporter_product_attributes`
+   - `cde_products_feed`
+   - `cde_product_attributes_feed`
+
+  >[!NOTE]
+  >
+  >如果您收到`table does not exist`錯誤，請尋找`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表格中的專案。 這些資料表名稱用於4.2.1之前的[!DNL Live Search]版本。
 
 - 使用具有預設查詢的[GraphQL遊樂場](https://developer.adobe.com/commerce/services/graphql/live-search/)來驗證以下內容：
 
@@ -175,9 +179,9 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 啟用產品清單Widget
 
-安裝[!DNL Live Search] 4.0.0+時，產品清單Widget預設為啟用。 Widget啟用時，搜尋結果頁面和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)，如此可加快回應時間。
+安裝[!DNL Live Search] 4.0.0+時，預設會啟用產品清單Widget。 Widget啟用時，搜尋結果頁面和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)，如此可加快回應時間。
 
-如果您的[!DNL Live Search]版本早於4.0.0+，則需要手動啟用產品清單Widget。
+如果您的[!DNL Live Search]版本早於4.0.0+，則必須手動啟用產品清單Widget。
 
 1. 從&#x200B;*管理員*，前往&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在&#x200B;**[!UICONTROL Live Search]**&#x200B;下，選取&#x200B;**[!UICONTROL Storefront Features]**。
@@ -198,7 +202,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 指派類別
 
-在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這可提供更精細的篩選粒度。
+在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
 
 ## 6.測試連線 {#test-connection}
 
@@ -216,7 +220,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 7.根據您的店面量身打造
 
-您已安裝[!DNL Live Search]擴充功能、同步處理、驗證及設定您的資料。 現在，您將需要確保[!DNL Live Search] Widget符合您商店的外觀和風格。
+您已安裝[!DNL Live Search]擴充功能、同步處理、驗證及設定您的資料。 下一步是確保[!DNL Live Search] Widget符合您商店的外觀與風格。
 
 您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 請參閱[樣式彈出視窗元素](storefront-popover.md#styling-popover-example)和[產品清單頁面Widget](plp-styling.md#styling-example)。
 
@@ -288,7 +292,7 @@ composer update magento/live-search --with-dependencies
 
 ## [!DNL Live Search]相依性 {#dependencies}
 
-[!DNL Composer]已擷取下列[!DNL Live Search]個相依性。
+安裝[!DNL Live Search]擴充功能的[!DNL Composer]中繼套件包含下列模組相依性。
 
 - `magento/module-saas-catalog`
 - `magento/module-saas-category`
@@ -315,9 +319,9 @@ composer update magento/live-search --with-dependencies
 
 [!DNL Live Search]透過`https://catalog-service.adobe.io/graphql`的端點通訊。
 
-由於[!DNL Live Search]沒有完整產品資料庫的存取權，[!DNL Live Search] GraphQL與Commerce核心GraphQL不會有完整的同位檢查。
+由於[!DNL Live Search]沒有完整產品資料庫的存取權，[!DNL Live Search] GraphQL與Commerce核心GraphQL API沒有完整的同位檢查。
 
-建議直接呼叫SaaS API — 尤其是目錄服務端點。
+Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 - 略過Commerce資料庫/Graphql程式，獲得效能並降低處理器負載
 - 利用[!DNL Catalog Service]同盟從單一端點呼叫[!DNL Live Search]、[!DNL Catalog Service]和[!DNL Product Recommendations]。
@@ -329,7 +333,7 @@ composer update magento/live-search --with-dependencies
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
 - [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
 
-如果您未使用預設元件(例如Luma上的搜尋配接器或Widget或AEM CIF Widget)，事件(為Adobe Sensei提供智慧型銷售和效能量度摘要的點按資料流資料)將無法立即運作，且需要自訂開發來實施Headless事件。
+如果您未使用搜尋轉接器、Luma Widget或AEM CIF Widget等標準元件，依預設將無法自動收集使用者互動資料。 Adobe Sensei會將這些收集的資料用於智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
 
 [!DNL Live Search]的最新版本已使用[!DNL Catalog Service]。
 
@@ -375,15 +379,15 @@ composer update magento/live-search --with-dependencies
 | 中文 | 中國 | zh_CN | zh_Hans_CN |
 | 中文 | 台灣 | zh_TW | zh_Hant_TW |
 
-如果Widget偵測到Commerce管理語言設定（_儲存_ >設定> _設定_ > _一般_ >國家選項）符合支援的語言，則會預設為該語言。 否則，Widget會預設為英文。
+如果Widget偵測到Commerce管理語言設定符合支援的語言，則會預設為該語言。 否則，Widget會預設為英文。 在Admin中，語言設定是透過導覽至&#x200B;_[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options]來設定。
 
 管理員也可以設定[搜尋索引](settings.md#language)的語言，以協助確保更好的搜尋結果。
 
 ### Widget程式碼存放庫
 
-產品清單頁面Widget和「即時搜尋」欄位Widget都可從其Github存放庫下載。
+產品清單頁面Widget和「即時搜尋」欄位Widget的程式碼可從GitHub下載。
 
-如此一來，開發人員就能完全自訂功能與樣式。 這些使用者自行主控程式碼，同時仍利用[!DNL Live Search]服務。
+有權存取程式碼的開發人員可完全自訂其運作和外觀方式。 他們在自己的伺服器上代管程式碼，但仍使用[!DNL Live Search]服務。
 
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列](https://github.com/adobe/storefront-search-as-you-type)
@@ -438,8 +442,8 @@ composer require magento/module-data-services-graphql
 [!DNL Live Search]可與PWA Studio搭配使用，但使用者可能會看到與其他Commerce實作稍微有些差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 可能也會有效能差異。
 
 - 目前[!DNL Live Search]的PWA實作需要比[!DNL Live Search]更長的處理時間才能傳回搜尋結果(使用原生Commerce店面)。
-- PWA中的[!DNL Live Search]不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜尋報表和智慧型銷售都將可正常運作。
-- 與[PWA](https://developer.adobe.com/commerce/pwa-studio/)搭配使用時，GraphQL不支援直接篩選`description`、`name`、`short_description`，但是它們會以較一般的篩選傳回。
+- PWA中的[!DNL Live Search]不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜尋報告和智慧型銷售無法在PWA商店上運作。
+- 使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)時，GraphQL不支援直接篩選`description`、`name`、`short_description`，但這些欄位可透過較一般的篩選傳回。
 
 若要搭配PWA Studio使用[!DNL Live Search]，整合器也必須：
 
