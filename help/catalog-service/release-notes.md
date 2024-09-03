@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行資訊。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
+### V1.22版本
+
+_2024年8月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。 檢視[目錄服務API參考](https://developer.adobe.com/commerce/services/graphql/catalog-service/)。<!--DATA-6067-->
+
+
+## 舊版
+
++++ 舊版
+
 ### V1.19版本
 
 _2024年5月23日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
 
 ![修正](../assets/fix.svg) <!--DATA-5033-->選項值的`InStock`旗標現在會考量產品變體的領域`enabled`狀態。
 
@@ -45,10 +61,6 @@ _2024年5月23日_
 * 捆綁固定價格的產品
 
 如需詳細資訊和範例，請參閱[目錄服務和API Mesh](mesh.md)
-
-## 舊版
-
-+++ 舊版
 
 ### V1.18版本
 
