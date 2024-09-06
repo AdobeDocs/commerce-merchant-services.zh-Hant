@@ -2,9 +2,9 @@
 title: 建立新建議
 description: 瞭解如何建立產品推薦單位。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ _建議單位_
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**行銷** > _促銷活動_ > **產品Recommendations**&#x200B;以顯示&#x200B;_產品Recommendations_&#x200B;工作區。
 
-1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用Page Builder建立產品建議，請參閱[新增內容 — 產品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)。
+   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用Page Builder建立產品建議，請參閱[新增內容 — 產品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 按一下&#x200B;**建立建議**。
 
@@ -34,14 +34,14 @@ _建議單位_
 
    >[!NOTE]
    >
-   > 當您的商店設定為將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart)。
+   > 當您的商店設定為將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 首頁
    * 類別
    * 產品詳細資料
    * 購物車
    * 確認
-   * [頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [頁面產生器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以為每種頁面型別建立5個使用中的建議單位，並為頁面產生器建立25個使用中的建議單位。 當達到限制時，頁面型別會變灰。
 
@@ -81,37 +81,56 @@ _建議單位_
 
 ## 整備程度指標
 
-有些建議型別會使用購物者的行為資料來[訓練機器學習模型](behavioral-data.md)，以建置個人化建議。
+整備程度指標會根據可用的目錄和行為資料，顯示哪些建議型別的效能最佳。 您也可以使用整備程度指標來判斷您的事件是否有問題，或您是否有足夠的流量可填入建議型別。
 
-只需要目錄資料。 這些不需要行為資料：
+整備程度指標可歸類為[靜態型](#static-based)或[動態型](#dynamic-based)。 靜態式只會使用目錄資料，而動態式則會使用購物者的行為資料。 該行為資料用於[訓練機器學習模型](behavioral-data.md)，以建置個人化建議並計算其整備分數。
+
+整備程度指標的計算基礎為兩個因素：
+
+* 足夠的結果集大小：大多數案例中傳回的結果是否足夠避免使用[備份建議](behavioral-data.md#backuprecs)？
+
+* 足夠的結果集變化：傳回的產品是否代表目錄中的各種產品？ 此因素的目標是避免少數產品成為整個網站唯一建議的專案。
+
+系統會根據上述因素計算整備度值，並顯示如下：
+
+* 75%或以上表示為該建議型別建議的將高度相關。
+* 至少50%表示為該建議型別建議的建議將較不相關。
+* 少於50%表示為該建議型別建議的建議將沒有關聯。
+
+這些是一般准則，但每個個別案例可能會因收集資料的性質而有所不同，如上所述。 深入瞭解[如何計算整備程度指標](#understand-how-readiness-indicators-are-calculated)以及[整備程度指標可能偏低的原因](#what-to-do-if-the-readiness-indicator-percent-is-low)。
+
+### 以靜態為基礎
+
+下列建議型別是以靜態為基礎，因為它們只需要目錄資料。 未使用行為資料。
 
 * _最喜歡這個_
-* _最近檢視的專案_
 * _視覺相似度_
 
-根據過去六個月店面行為資料：
+### 動態型
+
+下列建議型別是以動態為基礎，因為它們使用店面行為資料。
+
+過去六個月店面行為資料：
 
 * _已檢視此專案，已檢視該專案_
 * _已檢視此專案，已購買該專案_
 * _已購買此專案，已購買該專案_
 * _為您推薦_
 
-基於人氣的建議型別使用最近七天的店面行為資料：
+過去七天的店面行為資料：
 
 * 檢視次數最多
 * 購買最多
 * 已新增至購物車
 * 趨勢
 
-整備指標值可能會因為某些因素而波動，例如目錄的整體大小、產品互動事件的數量（檢視、加入購物車、購買），以及在特定時間範圍內註冊這些事件的SKU百分比（如上所列）。 例如，在假期旺季的流量中，整備程度指標顯示的值可能會高於正常流量時的值。
+最近購物者行為資料（僅限檢視）：
 
-為了協助您視覺化每個建議型別的訓練進度，_選取建議型別_&#x200B;區段會顯示每個型別的整備程度。 這些整備程度指標是根據兩個因素計算：
+* _最近檢視的專案_
 
-* 足夠的結果集大小：大多數案例中傳回的結果是否足夠避免使用[備份建議](behavioral-data.md#backuprecs)？
+### 視覺化進度
 
-* 足夠的結果集變化：傳回的產品是否代表目錄中的各種產品？ 此因素的目標是避免少數產品成為整個網站唯一建議的專案。
-
-系統會根據上述因素計算並顯示整備程度值。 當建議型別的整備程度值為75%或以上時，即視為已準備好部署。 當建議型別的整備程度至少為50%時，即視為部分整備。 當建議型別的整備值小於50%時，即視為未準備好部署。 這些是一般准則，但每個個別案例可能會因上述收集資料的性質而有所不同。
+為了協助您視覺化每個建議型別的訓練進度，_選取建議型別_&#x200B;區段會顯示每個型別的整備程度。
 
 ![建議型別](assets/create-recommendation-select-type.png)
 _建議型別_
@@ -119,6 +138,29 @@ _建議型別_
 >[!NOTE]
 >
 >指標可能永遠不會達到100%。
+
+相依於目錄資料的建議型別的整備程度指標百分比不會經常變更，因為商家的目錄不會經常變更。 但根據購物者行為資料的建議型別整備程度指標百分比會根據每日購物者活動而經常變更。
+
+#### 如果整備程度指標百分比很低，該怎麼辦
+
+低整備百分比表示您的目錄中沒有許多產品符合納入此建議型別之建議中的資格。 這表示，如果仍要部署此建議型別，很可能傳回[備份建議](behavioral-data.md#backuprecs)。
+
+以下列出常見低整備分數的可能原因和解決方案：
+
+* **以靜態為基礎** — 這些指示器的低百分比可能是因為遺失可顯示產品的目錄資料所造成。 如果低於預期值，完整同步可以修正此問題。
+* **以動態為基礎的指標** — 以下原因可能導致以動態為基礎的指標百分比低：
+
+   * 各建議型別（requestId、產品內容等）的必填店面事件中缺少欄位。
+   * 商店流量低，因此我們收到的行為事件數量低。
+   * 商店中不同產品的店面行為事件多樣性很低。 例如，如果大部分時間都只檢視或購買您產品的10%，則各自的整備程度指標將會很低。
+
+#### 如何計算整備程度指標
+
+整備程度指示器會指出接受多少模型訓練。 指標與收集的事件型別、互動的產品廣度以及目錄的大小無關。
+
+整備程度指標百分比是透過計算得出，該計算可指出根據建議型別可能建議的產品數量。 統計資料會根據目錄的整體大小、互動數量（例如檢視、點按、新增至購物車）以及在特定時間範圍內註冊這些事件的SKU百分比，套用至產品。 例如，在假期旺季的流量中，整備程度指標顯示的值可能會高於正常流量時的值。
+
+由於這些變數，整備程度指標百分比可能會波動。 這說明了為何您可能會看到建議型別在「準備部署」時進出。
 
 ## 預覽Recommendations {#preview}
 

@@ -2,9 +2,9 @@
 title: 篩選產品
 description: 定義包含或排除不將產品用作建議的條件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 類別
 
-根據產品類別的篩選器會使用直接類別指派及其子類別。 例如，啟用類別`Gear`的排除條件會排除指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。 對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
+根據產品類別的篩選器會使用直接類別指派及其子類別。 例如，啟用類別`Gear`的排除條件會排除指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。 這同樣適用於類別上的包含篩選器。 例如，啟用類別`Gear`的包含條件，會包含指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。
+
+>[!NOTE]
+>
+>對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
 
 當您將建議部署至頁面型別時，Adobe Commerce建議您使用以下類別篩選設定：
 

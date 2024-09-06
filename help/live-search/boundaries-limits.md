@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 0%
 - [!DNL Live Search]欄位和產品清單頁面Widget中不支援[層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)和[特殊定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)。
 - 產品價格不含增值稅(VAT)。
 - 不支援內容搜尋。
-- 可分頁的產品上限為10,000件。
+- 可分頁的產品上限為10,000件。 雖然此限制可以增加，但會影響效能。 若類別或搜尋結果中有大量產品，請務必提供有意義的產品篩選方式，讓購物者不必使用深層分頁。
 - 每個屬性有1MB的硬性限制，包括說明和自訂屬性。
 - 搜尋配接卡不支援使用自訂來源模型建立並當作Facet使用的產品屬性。 若要支援此功能，您必須使用[產品清單頁面Widget](plp-styling.md)。
+- 不支援自訂產品型別。
 
 ## 索引
 
@@ -84,3 +85,15 @@ ht-degree: 0%
 - [!DNL popover]不支援&#x200B;*空白*&#x200B;主題。
 - 快速訂購表單不支援[!DNL popover]。
 - 不支援願望清單和產品比較。
+- 不支援秘魯索爾(PEN)的貨幣符號。
+
+## 疑難排解
+
+如需疑難排解[!DNL Live Search]中某些常見問題的協助，請參閱下列知識庫文章：
+
+- [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- 無論Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)中的庫存狀態設定為何，[[!DNL Live Search] 都會顯示無庫存的產品
+- [[!DNL Live Search] Facet未依字母順序排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
 - [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
 
-如果您未使用搜尋轉接器、Luma Widget或AEM CIF Widget等標準元件，依預設將無法自動收集使用者互動資料。 Adobe Sensei會將這些收集的資料用於智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
+若您未使用搜尋配接器、Luma Widget或AEM CIF Widget等標準元件，預設將無法自動收集使用者互動資料。 Adobe Sensei會使用這項收集到的資料進行智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
 
 [!DNL Live Search]的最新版本已使用[!DNL Catalog Service]。
 
