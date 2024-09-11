@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行資訊。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
+### V1.23版本
+
+_2024年8月22日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg)您現在可以擷取產品資訊，而不需要產品覆寫（價格）資料。 在舊版中，這些查詢傳回下列錯誤：
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### V1.22版本
 
 _2024年8月13日_
@@ -34,6 +43,14 @@ _2024年8月13日_
 ## 舊版
 
 +++ 舊版
+
+### V1.22版本
+
+_2024年8月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。 檢視[目錄服務API參考](https://developer.adobe.com/commerce/services/graphql/catalog-service/)。<!--DATA-6067-->
 
 ### V1.19版本
 
