@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 這些發行說明說明說明所發生的功能變更和修正，這些變更和修正是在託管服務的定期功能發行之外發行的。
 
 +++託管服務更新
+
+_2024年8月30日_
+
+![新問題](../assets/new.svg)<!-- Issue PAY-5658 -->現在，商戶可以在[交易報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)中依付款詳細資訊篩選交易，以取得更詳細且精確的付款方式資料。
 
 _2024年7月15日_
 
@@ -86,6 +90,20 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 -->您現在可以使用[資料行]設定控制項來顯示或隱藏資料行，以自訂[訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns)與[付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)中顯示的資料。
 
 +++
+
+## v2.8.0
+
+_2024年9月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-5499 --> 在Adobe Commerce中輸入[追蹤號碼](track-shipment.md)時，[!DNL Payment Services]現在支援傳送追蹤號碼資訊至PayPal。
+
+![修正](../assets/fix.svg)<!-- PAY-5626 --> 當客戶造訪Commerce結帳頁面時，[!DNL Payment Services]已針對商家登入最佳化要求流程。 之前，使用者會針對每種支付方式(託管欄位、Google Pay、Apple Pay和智慧型按鈕)分別提出要求。 這項改善會減少呼叫次數，提高結帳程式期間的效能和效率。
+
+![修正](../assets/fix.svg)<!-- PAY-5645 --> 如果購物者不同意商家在結帳頁面上建立自訂條款與條件，[!DNL Payment Services]現在會阻止開啟PayPal/Google Pay快顯視窗。
+
+![修正](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services]已解決與PayPal入口網站上的明細專案稅捐劃分相關的問題。 如果訂單的送貨成本有關聯稅捐，則稅捐會納入送貨成本中，並顯示在PayPal入口網站顯示的明細專案詳細資訊中。
 
 ## v2.7.0
 

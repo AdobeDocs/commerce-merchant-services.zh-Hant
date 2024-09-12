@@ -1,16 +1,17 @@
 ---
-title: 簽出
-description: 根據客戶需求自訂結帳。
+title: 在 [!DNL Payment Services]簽出
+description: 自訂 [!DNL Payment Services] 結帳以符合客戶需求。
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# 簽出
+
+# 在[!DNL Payment Services]中籤出
 
 您可以設定Adobe Commerce [!DNL Payment Services]的結帳，以最符合購物者的需要。 [訂單自動作廢](#order-auto-voided-if-error)和[信用卡存放](#credit-card-vaulting)等功能，確保您的購物者擁有順暢的使用者體驗。
 

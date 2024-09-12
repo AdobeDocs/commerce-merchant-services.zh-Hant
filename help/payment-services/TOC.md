@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 3%
 - 付款及結帳{#payments-checkout}
    - [付款選項](payments-options.md)
    - [信用卡保險存放](vaulting.md)
-   - [簽出](checkout.md)
-   - [在管理員中建立訂單](create-order.md)
+   - [在 [!DNL Payment Services]簽出](checkout.md)
    - 管理付款{#manage}
       - [ [!DNL Payment Services]的行專案](line-items.md)
       - [退款](refunds.md)
       - [空隙](voids.md)
+   - [在管理員中建立訂單](create-order.md)
+   - [正在追蹤您在 [!DNL Payment Services]中的出貨](track-shipment.md)
 - Financial Reporting {#reporting}
    - [交易報表](transactions.md)
    - [訂單付款狀態報表](order-payment-status.md)
