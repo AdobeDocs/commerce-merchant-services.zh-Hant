@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 -->您現在可以使用[資料行]設定控制項來顯示或隱藏資料行，以自訂[訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns)與[付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)中顯示的資料。
 
 +++
+
+## v2.8.1
+
+_2024年9月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg)<!-- PAY-5644 -->修正在[!DNL Payment Services]中使用多個領域時，SDK引數快取的問題。 SDK設定現在會針對每個範圍個別進行快取，而非使用單一索引鍵。 這樣可確保每個範圍的快取獨立失效，進而在管理多個範圍時提高可靠性。
 
 ## v2.8.0
 
