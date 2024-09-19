@@ -2,7 +2,7 @@
 title: "新增Facet"
 description: 「瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] Facet。」
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*Publish變更*&
 
    * 標籤 — （僅限[Headless](facets-type.md)）輸入您要使用的Facet標籤。
    * 排序型別 — Facet會依字母順序排序所有[!DNL Commerce]個店面。 針對Headless實作，Facet可依字母順序或計數排序。 選項：字母順序、計數（僅限Headless）
-   * 最大值 — 輸入店面中顯示的多面值數目上限。 有效專案： 0 - 30；預設： 8
+   * 最大值 — 輸入店面中顯示的多面值數目上限。 有效專案： 0 - 100；預設： 8
 
 1. 完成時，按一下&#x200B;**儲存**。
 
@@ -65,7 +65,7 @@ Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*Publish變更*&
 |--- |--- |
 | 標籤 | （僅限[Headless](facets-type.md)）可編輯店面中顯示的[Facet標籤](facets-type.md)，使其與您的品牌保持一致。 |
 | 排序型別 | 用於[排序](facets-type.md)多面向的方法。 所有[!DNL Commerce]店面僅依字母順序排序Facet。 Headless實作也可以依`Count`排序。 選項：<br />依字母順序 — 依字母順序排序多面向。<br />計數 — （僅限Headless）根據找到的相符數來排序Facet。 |
-| 最大值 | 可在店面中針對每個多面顯示的最大值數量。 代表值範圍的多面會平均分佈。 有效專案： 0 - 30；預設： 8 |
+| 最大值 | 可在店面中針對每個多面顯示的最大值數量。 代表值範圍的多面會平均分佈。 有效專案： 0 - 100；預設： 8 |
 
 ### 控制項
 
