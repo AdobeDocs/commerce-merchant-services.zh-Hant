@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: 「來自Adobe Commerce的 [!DNL Live Search] 的最新發行資訊。」
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
+source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 託管服務更新
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+
+_2024年9月19日_
+
+![新](../assets/new.svg)已發行支援三種新搜尋功能的測試版：分層、開頭為和包含。 [深入瞭解](install.md#install-the-live-search-beta)。
 
 _2024年9月4日_
 

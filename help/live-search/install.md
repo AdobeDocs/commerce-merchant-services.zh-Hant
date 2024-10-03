@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
+source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 >[!IMPORTANT]
 >
->如果您想探索[!DNL Live Search]中可用的新功能，請考慮安裝Beta版。
+>以下功能為測試版。 若要參與測試版，請傳送電子郵件要求給[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)。
 
 此Beta版支援[`productSearch`查詢](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)的三個新功能：
 
@@ -141,13 +141,15 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 您可以在搜尋結果頁面上實作這些新條件。 例如，您可以在頁面上新增區段，讓購物者可以進一步縮小搜尋結果。 您可以允許購物者選取特定產品屬性，例如「製造商」、「零件編號」和「說明」。 從該位置，他們使用`contains`或`startsWith`條件在這些屬性中搜尋。 如需可搜尋的[屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單，請參閱管理員指南。
 
-1. 若要安裝Beta版，請從命令列執行以下命令：
+1. 若要安裝測試版，請在專案中新增下列相依性：
 
    ```bash
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-   此Beta版在Admin中新增&#x200B;**[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**&#x200B;和&#x200B;**[!UICONTROL Starts with]**&#x200B;的&#x200B;**[!UICONTROL Search types]**&#x200B;核取方塊。 它也會更新`productSearch` GraphQL API，以包含這些新搜尋功能。
+1. 認可並將變更推送至您的`composer.json`和`composer.lock`檔案至雲端專案。 [深入瞭解](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+
+   此Beta版在Admin中新增&#x200B;**[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**&#x200B;和&#x200B;**[!UICONTROL Starts with]**&#x200B;的&#x200B;**[!UICONTROL Search types]**&#x200B;核取方塊。 它也會更新[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API，以包含這些新搜尋功能。
 
 1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋，並指定該屬性的搜尋功能，例如&#x200B;**包含** （預設）或&#x200B;**開頭為**。 您最多可以為&#x200B;**Contains**&#x200B;指定6個要啟用的屬性，並為&#x200B;**Starts with**&#x200B;指定6個要啟用的屬性。 若為測試版，請注意，管理員不會強制執行此限制，但會在API搜尋中強制執行。
 
@@ -159,7 +161,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 | 欄位 | 說明 |
 |--- |--- |
-| `Autocomplete` | 預設為啟用，無法修改。 透過`Autocomplete`，您可以在[搜尋篩選器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)中使用`contains`。 此處，`contains`中的搜尋查詢會傳回自動完成型別搜尋回應。 Adobe建議您使用此型別的搜尋來搜尋說明欄位，這些欄位通常有>50個字元。 |
+| `Autocomplete` | 預設為啟用，無法修改。 透過`Autocomplete`，您可以在[搜尋篩選器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)中使用`contains`。 此處，`contains`中的搜尋查詢會傳回自動完成型別搜尋回應。 Adobe建議您使用此型別的搜尋來搜尋說明欄位，這些欄位通常超過50個字元。 |
 | `Contains` | 啟用真正的「字串中包含的文字」搜尋，而非自動完成搜尋。 在[搜尋篩選器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)中使用`contains`。 如需詳細資訊，請參閱[限制](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)。 |
 | `Starts with` | 可讓您查詢以特定值開頭的字串。 在[搜尋篩選器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)中使用`startsWith`。 |
 
