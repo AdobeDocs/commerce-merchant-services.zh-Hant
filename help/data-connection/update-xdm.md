@@ -4,9 +4,9 @@ description: 瞭解如何建立結構、資料集和資料串流，以收集和�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ ht-degree: 0%
 使用為行為和後台資料設定的結構描述、資料集和資料串流，您可以[設定](connect-data.md#data-collection)您的Commerce執行個體，以收集該資料並將其傳送給Experience Platform。
 
 若要包含購物者的設定檔資訊，請參閱[時間序列設定檔事件資料](#time-series-profile-event-data)。
-
-### 新增自訂屬性
-
-如果您想要將自訂後台事件資料從Commerce執行個體傳遞至Experience Platform，可以使用自訂屬性。
-
-自訂屬性支援兩個層級：
-
-- 訂單層級
-- 訂單料號層次
-
->[!NOTE]
->
->Adobe Commerce支援資料型別為字串或字串陣列的自訂屬性。
-
-1. 在[!DNL Commerce]應用程式中新增並啟用其他模組。 請參閱下列[範例](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php)。
-
-   您需要修改範常式式碼以公開其他自訂屬性。 實作會因這些屬性的儲存位置以及擷取它們所需的邏輯而有所不同。
-
-1. 擴充您現有的XDM結構描述。 請參閱下列[指南](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)，以建立「訂單」與「訂單」專案層級的自訂屬性。 租使用者ID欄位是動態產生的，但欄位結構應與提供的範例類似。
-
-   >[!IMPORTANT]
-   >
-   >XDM自訂屬性必須符合從[!DNL Commerce]傳送的屬性。
-
-1. 確定與您的XDM結構描述相關聯的資料流與[資料收集](connect-data.md#data-collection)索引標籤上指定的資料流相同。
-
-1. 按一下&#x200B;**資料彙集**&#x200B;標籤上的&#x200B;**[!UICONTROL Save]**&#x200B;以擷取您指定的任何自訂屬性。
 
 ## 時間序列設定檔事件資料
 

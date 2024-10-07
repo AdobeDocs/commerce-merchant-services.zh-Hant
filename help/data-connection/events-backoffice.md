@@ -4,9 +4,9 @@ description: 瞭解每個後台事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 類別的路徑。 |
 
 ## 客戶設定檔事件
-
->[!IMPORTANT]
->
->此功能為測試版。
 
 從伺服器端擷取的設定檔事件包含帳戶資訊，例如`accountCreated`、`accountUpdated`和`accountDeleted`。 此資料可用於協助填入重要客戶詳細資訊，以更好地定義區段或執行行銷活動，例如傳送註冊折扣優惠、帳戶變更確認等。 從[店面](events.md#customer-profile-events)擷取到類似的設定檔事件。
 

@@ -3,9 +3,9 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將Commerce資料連結至Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**儲存設定**。
 
+1. 按一下&#x200B;**[!UICONTROL Test connection]**&#x200B;按鈕，確定您輸入的服務帳戶與認證資訊正確無誤。
+
 ### 一般
 
 1. 在Admin中，移至&#x200B;**系統** >服務> **[!DNL Data Connection]**。
+
+   ![[!DNL Data Connection]設定](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. 在「**一般**」下的「**設定**」標籤上，確認與您的Adobe Experience Platform帳戶相關聯的ID (如[Commerce Services Connector](../landing/saas.md#organizationid)中所設定)。 組織ID為全域。 每個Adobe Commerce例項只能關聯一個組織ID。
 
@@ -97,7 +101,7 @@ ht-degree: 0%
 
 - **後台** （伺服器端資料）是在Commerce伺服器中擷取的資料。 這包括訂單狀態的相關資訊，例如，訂單是否已下達、取消、退款、出貨或完成。 其中也包含[歷史訂單資料](#send-historical-order-data)。
 
-- **設定檔(Beta)**&#x200B;是與購物者設定檔資訊相關的資料。 瞭解[更多](#send-customer-profile-data)。
+- **設定檔**&#x200B;是與購物者設定檔資訊相關的資料。 瞭解[更多](#send-customer-profile-data)。
 
 若要確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱[必要條件](overview.md#prerequisites)。
 
@@ -158,13 +162,9 @@ ht-degree: 0%
 
 ### 傳送客戶設定檔資料
 
->[!IMPORTANT]
->
->此功能為測試版。
-
 您可傳送兩種型別的設定檔資料至Experience Platform：設定檔記錄和時間序列設定檔事件。
 
-個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構描述和資料集已正確設定[時](profile-data.md)，設定檔記錄會傳送至Experience Platform並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hant)。
+個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構描述和資料集已正確設定[時](profile-data.md)，設定檔記錄會傳送至Experience Platform並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
 
 時間序列設定檔事件包含購物者設定檔資訊的相關資料，例如是否他們在您的網站上建立、編輯或刪除帳戶。 將設定檔事件資料傳送至Experience Platform時，該資料會位於資料集中，以供其他DX產品使用。
 
@@ -240,6 +240,8 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 1. 選取「**訂單歷史記錄**」標籤。
 
+   ![[!DNL Data Connection]訂單歷史記錄](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. 在&#x200B;**訂單歷程記錄同步**&#x200B;下，**從設定複製資料集ID**&#x200B;核取方塊已經啟用。 這可確保您使用的資料集與&#x200B;**設定**&#x200B;索引標籤中指定的資料集相同。
 
 1. 在&#x200B;**From**&#x200B;與&#x200B;**To**&#x200B;欄位中，指定您要傳送之歷史訂單資料的日期範圍。 您無法選取超過五年的日期範圍。
@@ -255,6 +257,36 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 | 從 | 您要開始收集訂單歷史記錄資料的日期。 |
 | 至 | 您要結束收集訂單歷史記錄資料的開始日期。 |
 | 開始同步 | 開始將訂單歷史記錄資料同步至Experience Platform邊緣的程式。 如果&#x200B;**[!UICONTROL Dataset ID]**&#x200B;欄位空白或資料集ID無效，此按鈕會停用。 |
+
+### 資料自訂
+
+在&#x200B;**資料自訂**&#x200B;索引標籤上，您可以檢視[!DNL Commerce]中設定並傳送給Experience Platform的任何自訂屬性。
+
+![[!DNL Data Connection]資料自訂](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>確定您在&#x200B;**資料彙集**&#x200B;索引標籤上[指定的](#data-collection)資料串流ID符合連結至結構描述以擷取自訂屬性的ID。
+
+建立訂單的自訂屬性並將其傳送至Experience Platform時，Commerce中的屬性名稱必須與Experience Platform上[!DNL Commerce]結構描述中的屬性名稱相符。 如果兩者不符，就很難辨識差異。 如果名稱不相符，**自訂訂單屬性**&#x200B;表格可協助解決問題。
+
+**自訂訂單屬性**&#x200B;表格可顯示[!DNL Commerce]後台與Experience Platform中的[!DNL Commerce]結構描述之間的自訂訂單屬性組態與對應。 此表格可讓您檢視不同來源的訂單層次與訂單料號層次自訂屬性，讓您更容易識別遺失或不對齊的屬性。 它也會顯示資料集ID，以協助區分即時和歷史資料集，因為每個資料集都可以有自己的自訂屬性。
+
+如果您在表格中的自訂屬性名稱旁邊沒有看到綠色核取記號，表示來源中的屬性名稱不符。 在一個來源中更正屬性名稱，將會出現綠色核取記號，表示名稱現在相符。
+
+- 如果屬性名稱在Experience Platform的結構描述中更新，您必須將組態儲存在&#x200B;**資料自訂**&#x200B;索引標籤上，以觸發Experience Platform結構描述變更。 當您按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;按鈕時，此變更將會反映在&#x200B;**自訂訂單屬性**&#x200B;表格中。
+- 如果屬性名稱在[!DNL Commerce]中更新，則必須產生訂單事件以更新&#x200B;**自訂訂單屬性**&#x200B;資料表中的名稱。 此變更將在60分鐘左右反映出來。
+
+深入瞭解如何[設定自訂屬性](custom-attributes.md)。
+
+#### 欄位說明
+
+| 欄位 | 說明 |
+|--- |--- |
+| 資料集 | 顯示包含自訂屬性的資料集。 即時和歷史資料集可以有自己的自訂屬性。 |
+| Adobe Commerce | 顯示在[!DNL Commerce]後台中建立的任何自訂屬性。 |
+| Experience Platform | 以Experience Platform顯示[!DNL Commerce]結構描述中指定的任何自訂屬性。 |
+| 重新整理 | 從Experience Platform中的[!DNL Commerce]結構描述擷取任何自訂屬性名稱。 |
 
 ## 確認已收集事件資料
 

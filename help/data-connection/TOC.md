@@ -5,9 +5,9 @@ breadcrumb-title: "適用於Adobe Commerce的[!DNL Data Connection]擴充功能"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 3%
 
 ---
@@ -20,13 +20,14 @@ ht-degree: 3%
    - [安裝 [!DNL Data Connection] 擴充功能](install.md)
    - [Commerce資料型別](data-ingestion.md)
    - [更新Commerce資料擷取的時間序列事件結構](update-xdm.md)
-   - [更新Commerce資料擷取(Beta)的設定檔記錄結構](profile-data.md)
+   - [更新Commerce資料擷取的設定檔記錄結構描述](profile-data.md)
    - [將Commerce資料連線至Adobe Experience Platform](connect-data.md)
    - [將Adobe Experience Platform Mobile SDK與Commerce整合](mobile-sdk-epc.md)
 - 擷取資料{#event-forwarding}
    - [行為事件](events.md)
    - [後台活動](events-backoffice.md)
-   - [設定檔記錄(Beta)](events-profilerecord.md)
+   - [設定檔記錄](events-profilerecord.md)
+   - [新增自訂訂單屬性](custom-attributes.md)
    - [自訂事件](custom-events.md)
    - [使用Adobe Experience Platform標籤](using-tags.md)
 - 使用案例{#use-cases}
