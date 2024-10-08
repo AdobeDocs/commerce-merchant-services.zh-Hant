@@ -2,8 +2,8 @@
 title: 擴充及自訂SaaS資料匯出摘要資料
 description: 瞭解如何擴充及自訂 [!DNL SaaS Data Export] 摘要資料。
 role: Admin, Developer
-recommendations: noCatalog
-source-git-commit: 51238f86f36a756b86d07bdf6bb0a5cf0c61cbeb
+exl-id: 69300242-d317-4ec8-86d0-0cd5d0c9c958
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

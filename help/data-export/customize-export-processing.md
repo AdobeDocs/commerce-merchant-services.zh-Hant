@@ -2,9 +2,8 @@
 title: 改善SaaS資料匯出效能
 description: 瞭解如何使用多執行緒資料匯出模式，改善Commerce服務的SaaS資料匯出效能。
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%

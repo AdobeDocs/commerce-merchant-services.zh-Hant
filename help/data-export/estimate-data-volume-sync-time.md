@@ -2,9 +2,8 @@
 title: 預估資料量和傳輸時間
 description: 瞭解如何估算 [!DNL data export] 工具所需的資料量和傳輸時間，以便在Adobe Commerce和連線的服務之間同步摘要資料。
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
