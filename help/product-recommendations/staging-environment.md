@@ -3,7 +3,7 @@ title: 在中繼環境中測試
 description: 瞭解如何在測試環境中使用生產環境中的 [!DNL Product Recommendations] 進行測試。
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 在將建議部署至生產環境之前，請在非生產環境中測試服務以確保一切都如預期般運作。
 
-[!DNL Product Recommendations]根據從您的店面收集的[購物者行為資料](behavioral-data.md)傳回產品。 不過，在非生產環境中，您可能沒有任何來自購物者的行為資料。 唯一可以在沒有行為資料的情況下測試的建議型別是`More like this`。 此建議型別不需要任何輸入資料，因為它使用直接內容相似度比對。
+[!DNL Product Recommendations]根據從您的店面收集的[購物者行為資料](events.md)傳回產品。 不過，在非生產環境中，您可能沒有任何來自購物者的行為資料。 唯一可以在沒有行為資料的情況下測試的建議型別是`More like this`。 此建議型別不需要任何輸入資料，因為它使用直接內容相似度比對。
 
 下列建議型別需要行為資料：
 

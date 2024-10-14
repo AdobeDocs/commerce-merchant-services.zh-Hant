@@ -2,9 +2,9 @@
 title: 產品Recommendations管理員開發
 description: 產品Recommendations架構和開發功能的概觀。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ ht-degree: 0%
 ![產品建議架構圖](assets/arch-diag-sensei.svg)
 
 安裝及設定建議模組後，您的店面就會開始收集行為資料。 Adobe Sensei會處理此行為資料與目錄資料，並計算Recommendations服務所利用的產品關聯。 此時，商家可以直接從管理UI建立、管理產品推薦單位，並將其部署至店面。
-
-## 資料型別
-
-產品Recommendations需要下列資料：
-
-- **行為** — 購物者在您網站上的參與度資料，例如產品檢視、加入購物車的商品和購買。 Commerce和Adobe Sensei不會收集個人識別資訊。
-
-- **目錄** — 產品中繼資料，例如名稱、價格、可用性等。
-
-安裝`magento/product-recommendations`模組時，Adobe Sensei會彙總行為和目錄資料，並為每種建議型別建立產品Recommendations。 然後，產品Recommendations服務會將這些建議部署至您的店面。
-
->[!NOTE]
->
->對於可設定的產品，「產品Recommendations」會使用建議單位中上層產品的影像。 如果可設定的產品未指定影像，則該特定產品的建議單位將為空白。
 
 ## 後續步驟
 

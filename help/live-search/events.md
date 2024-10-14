@@ -3,34 +3,25 @@ title: '[!DNL Live Search]個事件'
 description: 瞭解事件如何收集 [!DNL Live Search]的資料。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]個事件
 
-[!DNL Live Search]會使用事件來增強搜尋演演算法，例如「檢視次數最多」和「已檢視這個專案，已檢視那個專案」。 雖然LUMA使用者可立即使用事件，但Headless和其他自訂實作仍必須根據自己的需求實作事件。
+[!DNL Live Search]會使用事件來增強搜尋演演算法，例如「檢視次數最多」和「已檢視這個專案，已檢視那個專案」。 雖然[Commerce範例Luma佈景主題](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)已可立即使用事件，但Headless和其他自訂實作必須根據自己的需求實作事件。
 
-由於[!DNL Live Search]和[!DNL Product Recommendations]使用相同的後端演演算法，因此某些事件會由這兩個服務共用。 有些產品Recommendations事件需要填入Recommendations控制面板。
+此表格說明[!DNL Live Search] [排名策略](rules-add.md#intelligent-ranking)所使用的事件。
 
-此表格說明[!DNL Live Search]策略使用的事件。
-
-| 策略 | 產品 | 活動 | 頁面 |
+| 排名策略 | 活動 | 頁面 |
 | --- | --- | --- | ---|
-| 檢視次數最多 | 即時搜尋<br>產品記錄 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 購買最多 | 即時搜尋<br>產品記錄 | 頁面檢視<br>完成簽出 | 購物車/結帳 |
-| 加入購物車次數最多 | 即時搜尋<br>產品記錄 | 頁面檢視<br>加入購物車 | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
-| 已檢視這個專案，已檢視那個專案 | 即時搜尋<br>產品記錄 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 趨勢 | 即時搜尋<br>產品記錄 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 已檢視此專案，但購買了其他專案 | 產品推薦 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面<br>購物車/結帳 |
-| 已購買此專案，已購買該專案 | 產品推薦 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 轉換：檢視以購買 | 產品推薦 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 轉換：檢視以購買 | 產品推薦 | 頁面檢視<br>完成簽出 | 購物車/結帳 |
-| 轉換：檢視到購物車 | 產品推薦 | 頁面檢視<br>產品檢視 | 產品詳細資料頁面 |
-| 轉換：檢視到購物車 | 產品推薦 | 頁面檢視<br>加入購物車 | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
+| 檢視次數最多 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
+| 購買最多 | `page-view`<br>`complete-checkout` | 購物車/結帳 |
+| 加入購物車次數最多 | `page-view`<br>`add-to-cart` | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
+| 已檢視這個專案，已檢視那個專案 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ ht-degree: 0%
 
 | 儀表板區域 | 活動 | 加入欄位 |
 | ------------------- | ------------- | ---------- |
-| 不重複搜尋 | `page-view`，`search-request-sent`， | searchRequestId |
-| 零結果搜尋 | `page-view`，`search-request-sent`， | searchRequestId |
-| 零結果率 | `page-view`，`search-request-sent`， | searchRequestId |
-| 熱門搜尋 | `page-view`，`search-request-sent`， | searchRequestId |
+| 不重複搜尋 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 零結果搜尋 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 零結果率 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 熱門搜尋 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
 | 平均 按一下位置 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | searchRequestId |
-| 點進率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | searchRequestId， sku |
-| 轉換率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click`，`product-view`，`add-to-cart`，`place-order` | searchRequestId， sku |
+| 點進率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | `searchRequestId`，`sku`，`parentSku` |
+| 轉換率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click`，`product-view`，`add-to-cart`，`place-order` | `searchRequestId`，`sku`，`parentSku` |
 
 ### 必要內容
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## 警告
 
-廣告封鎖程式和隱私權設定可能會防止擷取事件，且可能導致參與和收入[量度](workspace.md)少報。
-
-事件不會擷取商家網站上發生的每個交易。 事件旨在讓商家大致瞭解網站上發生的事件。
-
-Headless實作必須實作事件以支援[產品Recommendations儀表板](../product-recommendations/events.md)。
+- 廣告封鎖程式和隱私權設定可能會防止擷取事件，且可能導致參與和收入[量度](performance.md)少報。 此外，由於購物者離開頁面或網路問題，部分事件可能不會傳送。
+- Headless實作必須實作事件來推動智慧型銷售。
 
 >[!NOTE]
 >

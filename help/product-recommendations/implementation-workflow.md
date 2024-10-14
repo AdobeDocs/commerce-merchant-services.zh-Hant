@@ -2,9 +2,9 @@
 title: 實作工作流程
 description: 瞭解在您的店面成功實作 [!DNL Product Recommendations] 的步驟。
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. **將資料收集部署至生產環境**
 
-   部署[!DNL Product Recommendations]需要兩個主要[資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此儘早在生產上開始資料收集對您最有利。 [瞭解](behavioral-data.md) Adobe Sensei如何訓練產生更高品質建議的機器學習模型。 額外好處是，當您開始收集生產環境的行為資料時，可以在非生產環境中作業時，根據此生產資料[擷取建議](verify.md)。 接著，您可以測試和實驗不同的建議，這些建議是根據實際生產中收集的購物者資料計算而得。
+   部署[!DNL Product Recommendations]需要兩個主要[資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此請儘早在生產上開始收集資料。 [瞭解](events.md) Adobe Sensei如何訓練產生更高品質建議的機器學習模型。 額外好處是，當您開始收集生產環境的行為資料時，可以在非生產環境中作業時，根據此生產資料[擷取建議](verify.md)。 接著，您可以測試和實驗不同的建議，這些建議是根據實際生產中收集的購物者資料計算而得。
 
    若要將資料收集部署至生產環境，您必須[藉由提供[API金鑰](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html)來](install-configure.md)安裝並設定[!DNL Product Recommendations]模組。
 

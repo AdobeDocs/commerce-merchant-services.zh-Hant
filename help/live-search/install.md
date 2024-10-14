@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 從高層面來看，上線[!DNL Live Search]需要您：
 
-![即時搜尋工作流程](assets/livesearch-workflow.png)
+1. [安裝](#1-install-the-live-search-extension) [!DNL Live Search]延伸模組
+1. [設定](#2-configure-api-keys) API金鑰
+1. [同步處理](#3-sync-your-catalog-data)您的目錄資料
+1. [驗證](#4-verify-that-the-data-was-exported)目錄資料是否已匯出
+1. [設定](#5-configure-the-data)資料
+1. [測試](#6-test-the-connection)連線
+1. [驗證](#7-validate-events-are-capturing-data)事件正在擷取資料
+1. [自訂](#8-customize-for-your-storefront)您的店面
 
 ## 1.安裝[!DNL Live Search]擴充功能
 
@@ -272,7 +279,15 @@ bin/magento saas:resync --feed categoryPermissions
 
 若要允許[!DNL Live Search]通過防火牆，請新增`commerce.adobe.io`至允許清單。
 
-## 7.根據您的店面量身打造
+## 7.確認事件正在擷取資料
+
+確保部署到您網站的店面事件可正常運作。 這對Headless實作尤其重要。
+
+- 檢閱[!DNL Live Search]所需的[事件](events.md)。
+- 確定[即時搜尋儀表板](performance.md)顯示的是來自非生產環境的資料。
+- [驗證事件集合](../product-recommendations/verify.md)。 此頁面位於[!DNL Product Recommendations]指南中，驗證步驟也適用於[!DNL Live Search]。
+
+## 8.為您的店面量身打造
 
 您已安裝[!DNL Live Search]擴充功能、同步處理、驗證及設定您的資料。 下一步是確保[!DNL Live Search] Widget符合您商店的外觀與風格。
 
