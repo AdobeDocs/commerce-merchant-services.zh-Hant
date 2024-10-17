@@ -3,7 +3,7 @@ title: 收集資料
 description: 瞭解事件如何收集產品建議的資料。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 [Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)會列出所有部署到店面的事件。 但是，從該清單中，會有產品Recommendations專屬的事件子集。 當購物者與店面的推薦單位互動時，這些活動會收集資料，並支援用於協助您分析建議執行效果的量度。
 
 | 事件 | 說明 |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | 在頁面上轉譯建議單位時傳送。 如果頁面有兩個建議單位（已購買、已檢視），則會傳送兩個`impression-render`事件。 此事件用於追蹤曝光次數的量度。 |
 | `rec-add-to-cart-click` | 購物者按一下建議單位中專案的&#x200B;**加入購物車**&#x200B;按鈕。 |
 | `rec-click` | 購物者按一下建議單位中的產品。 |
@@ -113,7 +113,7 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 此表格說明每種建議型別所使用的事件。
 
 | 建議型別 | 活動 | 頁面 |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 檢視次數最多 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
 | 購買最多 | `page-view`<br>`complete-checkout` | 購物車/結帳 |
 | 加入購物車次數最多 | `page-view`<br>`add-to-cart` | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
