@@ -2,9 +2,9 @@
 title: 篩選產品
 description: 定義包含或排除不將產品用作建議的條件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 類別
 
-根據產品類別的篩選器會使用直接類別指派及其子類別。 例如，啟用類別`Gear`的排除條件會排除指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。 這同樣適用於類別上的包含篩選器。 例如，啟用類別`Gear`的包含條件，會包含指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。
+根據產品類別來篩選產品。 類別篩選器使用直接類別指派及其子類別。 例如，啟用類別`Gear`的排除條件會排除指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。 這同樣適用於類別上的包含篩選器。 例如，啟用類別`Gear`的包含條件，會包含指派給`Gear`的產品及其所有子類別，例如`Gear/Bags`或`Gear/Fitness Equipment`。
+
+類別欄位會顯示屬於目前商店的類別。
 
 >[!NOTE]
 >
