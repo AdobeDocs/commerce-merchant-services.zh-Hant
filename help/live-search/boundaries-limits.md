@@ -3,9 +3,9 @@ title: '邊界和限制'
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
+source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 0%
 
 - [!DNL Live Search]使用唯一的[GraphQL端點](https://developer.adobe.com/commerce/services/graphql/live-search/)進行查詢，以支援dynamic faceting和search-as-you-type等功能。 雖然與[GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)類似，但有一些差異且部分欄位可能並不完全相容。
 - 搜尋查詢中可傳回的結果數量上限為10,000。
+- 每頁的結果數量上限為500。
 - 無法使用日期型別屬性來篩選結果。
 
 ## 規則
