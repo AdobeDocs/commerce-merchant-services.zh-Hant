@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 2bb5cbe2360a82de0dbad73d6beae58a6bc6937e
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 # [!DNL Payment Services]簡介
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]是您的turnkey自助式解決方案，包括沙箱測試和簡單的設定，可為您的Commerce網站提供穩定且安全的付款處理。
-
-![[!DNL Payment Services]延伸模組管理員檢視](assets/admin-view.png){width="300" zoomable="yes"}
 
 無論您是小型企業、中端市場競爭者或大型企業，此支付解決方案都能協助您減少營運開銷並增加收入，同時為您提供有用的工具以改善整體購物體驗。
 
