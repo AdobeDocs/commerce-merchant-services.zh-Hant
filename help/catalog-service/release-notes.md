@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行資訊。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
+source-git-commit: 3b440f01c063fd2675be95a645450adc5c696d18
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ ht-degree: 0%
 ![錯誤](../assets/bug.svg)已知問題
 
 ## 目前的主要版本
+
+### V1.26版本
+
+_2024年10月22日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新](../assets/new.svg) GraphQL結構描述現在在產品資訊中包含`lastModifiedAt`屬性。 此精確的時間戳記可協助客戶確保Sitemap準確反映其產品的最新更新。 此外，它還有助於Google等搜尋引擎判斷何時需要重新索引、最佳化編目流程，以及在無法取得精確資訊時，防止與使用的積極上次修改日期相關的問題。<!--DATA-6209-->
+
+## 舊版
+
++++ 舊版
 
 ### V1.23版本
 
@@ -38,11 +50,6 @@ _2024年8月13日_
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
 ![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。 檢視[目錄服務API參考](https://developer.adobe.com/commerce/services/graphql/catalog-service/)。<!--DATA-6067-->
-
-
-## 舊版
-
-+++ 舊版
 
 ### V1.22版本
 
