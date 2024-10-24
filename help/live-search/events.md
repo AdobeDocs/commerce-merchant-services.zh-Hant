@@ -3,7 +3,7 @@ title: '[!DNL Live Search]個事件'
 description: 瞭解事件如何收集 [!DNL Live Search]的資料。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
+source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 此表格說明[!DNL Live Search] [排名策略](rules-add.md#intelligent-ranking)所使用的事件。
 
 | 排名策略 | 活動 | 頁面 |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 檢視次數最多 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
 | 購買最多 | `page-view`<br>`complete-checkout` | 購物車/結帳 |
 | 加入購物車次數最多 | `page-view`<br>`add-to-cart` | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
