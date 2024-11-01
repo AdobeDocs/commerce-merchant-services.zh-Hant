@@ -4,7 +4,7 @@ description: 設定一般設定以啟用商店的 [!DNL Store Fulfillment] 。 �
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ Store Fulfillment可藉由擴充原生Adobe Commerce [!DNL In-Store Delivery]功
 
 >[!NOTE]
 >
->如需設定店內傳遞選項的詳細資訊，請參閱&#x200B;_Adobe Commerce使用手冊_&#x200B;中的[店內傳遞](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html)。
+>如需設定店內傳遞選項的詳細資訊，請參閱&#x200B;_Adobe Commerce使用手冊_&#x200B;中的[店內傳遞](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
 
 
 ### 傳遞方法設定

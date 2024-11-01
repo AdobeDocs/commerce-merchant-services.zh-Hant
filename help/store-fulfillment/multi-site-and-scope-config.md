@@ -5,7 +5,7 @@ role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # 多個網站和範圍設定
 
-您可以為幾個元素設定[範圍](https://docs.magento.com/user-guide/configuration/scope.html)，以容納多個網站、商店和商店檢視：
+您可以為幾個元素設定[範圍](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)，以容納多個網站、商店和商店檢視：
 
-- [管理每個範圍的庫存](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [管理每個範圍的庫存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
 - 管理每個領域的[!DNL Delivery Methods]
 

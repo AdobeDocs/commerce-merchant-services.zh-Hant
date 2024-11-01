@@ -3,7 +3,7 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## 取得API認證
 
-若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰(Commerce公開API金鑰和私密金鑰)，這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://docs.magento.com/user-guide/configuration/services/saas.html)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
+若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰(Commerce公開API金鑰和私密金鑰)，這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
 
 >[!NOTE]
 >
->需要協助存取您的[!UICONTROL My Account]儀表板嗎？ 請參閱[建立Commerce帳戶](https://docs.magento.com/user-guide/magento/magento-account-create.html)。
+>需要協助存取您的[!UICONTROL My Account]儀表板嗎？ 請參閱[建立Commerce帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)。
 
 公開API金鑰一經建立，即可在您的「我的帳戶控制面板」中使用。 您可以視需要複製或刪除它。 當您為沙箱或生產環境建立公用API金鑰時，私用API金鑰會變成可見；它只能從後續的對話方塊中複製或儲存，並且之後無法存取。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 如果您的API金鑰遺失，新的API金鑰組必須[產生](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key)且[已套用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project)至Admin中的Commerce Services Connector設定。 如果設定了錯誤的金鑰或設定中沒有金鑰，則付款服務中會顯示帳戶驗證錯誤對話方塊，通知您帳戶未驗證。
 
-檢視使用API](https://docs.magento.com/user-guide/system/saas.html#available-services)的可用Commerce服務清單[。
+檢視使用API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices)的可用Commerce服務清單[。
 
 若要瞭解如何為沙箱或生產環境產生API金鑰，請參閱[認證](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey)。
 

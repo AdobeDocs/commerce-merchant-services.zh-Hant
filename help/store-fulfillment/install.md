@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >依照&#x200B;_Adobe Commerce升級指南_&#x200B;中的[升級指示](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)，升級Adobe Commerce內部部署的Store Fulfillment擴充功能。 如需雲端基礎結構上的Adobe Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce指南*&#x200B;中的[升級擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension)。
 
-## 必要條件
+## 先決條件
 
 檢閱Store Fulfillment解決方案的[需求](solution-requirements.md)，並收集必要的資訊，然後再安裝或升級Adobe Commerce的[!DNL Store Fulfillment]擴充功能。
 
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **存取Walmart Commerce Technologies軟體封存（.zip檔案）的Store Fulfillment** — 在上線和啟用程式期間，請與您的客戶經理合作，存取Store Fulfillment擴充功能的安裝檔案。
 
-- **Adobe Commerce帳戶資訊** — 安裝[!DNL Store Fulfillment]解決方案需要[[!DNL Commerce] 帳戶](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}。 您需要帳戶ID和認證，且擁有[!DNL Adobe Commerce]專案的擁有者或管理員存取權。
+- **Adobe Commerce帳戶資訊** — 安裝[!DNL Store Fulfillment]解決方案需要[[!DNL Commerce] 帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}。 您需要帳戶ID和認證，且擁有[!DNL Adobe Commerce]專案的擁有者或管理員存取權。
 
-- 對於雲端基礎結構專案上的[!DNL Adobe Commerce]，軟體安裝程式必須擁有雲端專案的管理員存取權。 請參閱[管理使用者存取權](https://devdocs.magento.com/cloud/project/user-admin.html)。
+- 對於雲端基礎結構專案上的[!DNL Adobe Commerce]，軟體安裝程式必須擁有雲端專案的管理員存取權。 請參閱[管理使用者存取權](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)。
 
-- **使用Composer與[!DNL Commerce CLI]**&#x200B;的體驗 — 請參閱[一般CLI安裝](https://devdocs.magento.com/extensions/install/){target="_blank"}，瞭解如何使用這些工具在[!DNL Adobe Commerce]平台上安裝和管理擴充功能。
+- **使用Composer與[!DNL Commerce CLI]**&#x200B;的體驗 — 請參閱[一般CLI安裝](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}，瞭解如何使用這些工具在[!DNL Adobe Commerce]平台上安裝和管理擴充功能。
 
 - **在Adobe Commerce上安裝協力廠商擴充功能體驗** — 如需參考資訊，請參閱Adobe Commerce檔案。
 
-   - [在雲端基礎結構執行個體上安裝Adobe Commerce的擴充功能](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)。
+   - [在雲端基礎結構執行個體上安裝Adobe Commerce的擴充功能](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
 
-   - [安裝Adobe Commerce內部部署執行個體的擴充功能](https://devdocs.magento.com/extensions/install/)。
+   - [安裝Adobe Commerce內部部署執行個體的擴充功能](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)。
 
 ### 步驟1：下載擴充功能套件組合
 
@@ -135,7 +135,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 登入伺服器。
 
-   若為雲端基礎結構上的Adobe Commerce安裝，[請使用SSH登入遠端環境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh)。
+   若為雲端基礎結構上的Adobe Commerce安裝，[請使用SSH登入遠端環境](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)。
 
 1. 確認「商店履行服務」模組已啟用。
 

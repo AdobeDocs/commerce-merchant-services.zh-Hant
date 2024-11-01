@@ -3,7 +3,7 @@ title: 信用卡存放
 description: 購物者可以儲存信用卡詳細資料，以便日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![使用已儲存的認證進行未來的購買](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-他們也可以從「我的帳戶」中的[儲存的付款方式](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html)輕鬆刪除儲存的信用卡。
+他們也可以從「我的帳戶」中的[儲存的付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)輕鬆刪除儲存的信用卡。
 
 ![儲存的付款方式在我的帳戶中](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

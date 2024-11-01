@@ -4,7 +4,7 @@ description: 「瞭解 [!DNL Store Fulfillment for Adobe Commerce by Walmart Com
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Store Fulfillment解決方案支援並強化原生Adobe Commerce功能。
 
 * 支援大多數產品型別 — 簡單、可設定、分組、套件和虛擬
 
-* 與[[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)整合
+* 與[[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)整合
 
 * 整合銷售點(POS)商家存貨管理系統，例如ERP、OMS及WMS
 

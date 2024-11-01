@@ -4,7 +4,7 @@ description: 使用「交易」報表來瞭解交易授權率及交易趨勢。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 | 欄 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce訂單ID （僅包含成功交易的值，且被拒絕的交易為空白）<br> <br>若要檢視相關的[訂單資訊](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，請按一下ID。 |
+| [!UICONTROL Order ID] | Commerce訂單ID （僅包含成功交易的值，且被拒絕的交易為空白）<br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，請按一下ID。 |
 | [!UICONTROL PayPal Transaction ID] | 付款提供者提供的交易ID；僅包含成功交易的值，並包含拒絕交易的破折號。 您可以按一下此ID以存取PayPal交易詳細資訊頁面。 |
 | [!UICONTROL Customer ID] | 訂單的Commerce客戶ID<br> <br>如需詳細資訊，請參閱[客戶資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主題。 |
 | [!UICONTROL Transaction Date] | 交易日期時間戳記 |

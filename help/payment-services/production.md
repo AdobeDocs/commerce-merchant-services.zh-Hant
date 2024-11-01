@@ -3,7 +3,7 @@ title: 為生產啟用 [!DNL Payment Services]
 description: 啟用 [!DNL Payment Services] 以進行生產，以完成入門流程。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    如果您尚未將[!DNL Payment Services]設定為您一或多個網站的付款方式，便會顯示此選項。
 
-   您被導向到[首頁]檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}。
+   您被導向到[首頁]檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_中，將&#x200B;**[!UICONTROL Enable]**設為`Yes`。
 1. 將&#x200B;_[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
@@ -157,7 +157,7 @@ _生產商家識別碼_&#x200B;已自動產生，並填入[組態](configure-adm
 1. 在首頁上，按一下頁面右上角的&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[首頁](payments-home.md)。
 1. 在&#x200B;_[!UICONTROL General Configuration]_區段中，將&#x200B;**[!UICONTROL Payment mode]**設為`Production`。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. [清除您的快取](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}。
+1. [清除您的快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >
