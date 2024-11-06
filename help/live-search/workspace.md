@@ -2,7 +2,7 @@
 title: '設定即時搜尋'
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 | [同義字](synonyms.md) | 擴大搜尋範圍，納入購物者可能會用來尋找與目錄中不同產品的字詞。 |
 | [搜尋銷售](rules.md) | 使用可觸發已排程動作的邏輯規則來塑造搜尋體驗。 提升、隱藏、釘選或隱藏產品，以校正搜尋結果，支援您的業務目標。 |
 | [類別銷售](category-merch.md) | 在類別層級套用規則和智慧型銷售。 |
-| [GraphQL](graphql.md) | 開發人員若已登入您商店的管理員，可使用實際目錄資料撰寫和測試查詢。 若要深入瞭解，請前往[!DNL Live Search]開發人員檔案中的[GraphQL概觀](https://developer.adobe.com/commerce/webapi/graphql/)。 |
+| [GraphQL](graphql.md) | 開發人員若已登入您商店的管理員，可使用實際目錄資料撰寫和測試查詢。 若要深入瞭解，請前往[!DNL Live Search]開發人員檔案中的[GraphQL概觀](https://developer.adobe.com/commerce/services/graphql/live-search/)。 |
 | [設定](settings.md) | 決定如何在店面中依價格範圍分組價格方面值，並設定索引語言。 |
 
 ## 將屬性設定為可搜尋

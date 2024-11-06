@@ -2,9 +2,9 @@
 title: 建立新建議
 description: 瞭解如何建立產品推薦單位。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ _建議型別_
 #### 如果整備程度指標百分比很低，該怎麼辦
 
 低整備百分比表示您的目錄中沒有許多產品符合納入此建議型別之建議中的資格。 這表示，如果仍要部署此建議型別，很可能傳回[備份建議](events.md#backuprecs)。
+
+>[!IMPORTANT]
+>
+>不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。 如果您的目錄包含大量這類產品型別，可預期會有一個低整備分數。 此外，任何含有空格的SKU可能會降低建議的相關性，應加以避免。
 
 以下列出常見低整備分數的可能原因和解決方案：
 

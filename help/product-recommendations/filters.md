@@ -2,9 +2,9 @@
 title: 篩選產品
 description: 定義包含或排除不將產品用作建議的條件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 型別
 
-根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;或&#x200B;_禮卡_。 尚未支援&#x200B;_組合_&#x200B;和&#x200B;_群組_&#x200B;產品。
+根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;或&#x200B;_禮卡_。 不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。
 
 ### 可見度
 

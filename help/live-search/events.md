@@ -3,9 +3,9 @@ title: '[!DNL Live Search]個事件'
 description: 瞭解事件如何收集 [!DNL Live Search]的資料。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
+source-git-commit: e1bf54b9fde42746a8c2f75253cbb3730821fb8c
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 | 零結果搜尋 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
 | 零結果率 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
 | 熱門搜尋 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
-| 平均 按一下位置 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | searchRequestId |
+| 平均 按一下位置 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | `searchRequestId` |
 | 點進率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | `searchRequestId`，`sku`，`parentSku` |
 | 轉換率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click`，`product-view`，`add-to-cart`，`place-order` | `searchRequestId`，`sku`，`parentSku` |
 

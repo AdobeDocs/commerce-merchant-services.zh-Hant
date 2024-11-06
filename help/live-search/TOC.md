@@ -4,10 +4,10 @@ user-guide-description: 「本指南提供使用Adobe Commerce中 [!DNL Live Sea
 breadcrumb-title: 「[!DNL Live Search] 指南」
 role: Admin
 feature: Services, Search
-source-git-commit: 2e13908ff96259bb707b6d0f897206bcd2059386
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 9%
+source-wordcount: '76'
+ht-degree: 11%
 
 ---
 
@@ -46,7 +46,4 @@ ht-degree: 9%
    - [GraphQL](graphql.md)
    - [設定](settings.md)
 - [活動](events.md)
-- GraphQL查詢{#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
 - [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

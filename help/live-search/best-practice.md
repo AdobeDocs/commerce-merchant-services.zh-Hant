@@ -2,9 +2,10 @@
 title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ ht-degree: 0%
 
 ### 利用產品中繼資料
 
-確定精確且詳細的產品屬性已[設定為可搜尋](workspace.md#set-attributes-as-searchable)。 請注意，SKU、名稱和類別屬性預設為可搜尋，且無法從搜尋中排除。 
+確定精確且詳細的產品屬性已[設定為可搜尋](workspace.md#set-attributes-as-searchable)。 請注意，SKU、名稱和類別屬性預設為可搜尋，且無法從搜尋中排除。 為達到最佳效果，請勿在SKU中使用空格。
 
 若要增加搜尋關聯性，請為每個可搜尋的屬性指定加權。 權重較高的屬性在搜尋結果中應會顯示得較高。 依關聯性排序會受到多個條件影響，例如搜尋權重。 這表示有時候搜尋權重較低的屬性仍可以比搜尋權重較高的屬性有更多的關聯性。 其他條件可包含任何指定屬性中的相符專案數、找到的搜尋字詞位置，以及搜尋字詞前後的整體文字結構。
 
