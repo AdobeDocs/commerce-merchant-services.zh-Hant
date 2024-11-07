@@ -3,7 +3,7 @@ title: 改善SaaS資料匯出效能
 description: 瞭解如何使用多執行緒資料匯出模式，改善Commerce服務的SaaS資料匯出效能。
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Adobe建議使用資料擷取的預設設定，這通常符合Commerce商家的�
 
 所有[同步處理方法](data-synchronization.md#synchronization-process)都支援多重執行緒模式 — 完整同步處理、部分同步處理及失敗專案同步處理。 若要設定多執行緒，請指定同步處理期間要使用的執行緒數目和批次大小。
 
-- `threadCount`是啟動以處理實體的執行緒數目。 預設`threadCount`為`1`。
-- `batchSize`是在一個反複專案中處理的實體數目。 除價格摘要外，所有摘要的預設`batchSize`都是`100`記錄。 對於價格摘要，預設值為`500`筆記錄。
+- `thread-count`是啟動以處理實體的執行緒數目。 預設`thread-count`為`1`。
+- `batch-size`是在一個反複專案中處理的實體數目。 除價格摘要外，所有摘要的預設`batch-size`都是`100`記錄。 對於價格摘要，預設值為`500`筆記錄。
 
 您可以在執行resync命令時將多執行緒設定為暫存選項，或將多執行緒組態新增到Adobe Commerce應用程式組態中。
 
@@ -52,10 +52,10 @@ Adobe建議使用資料擷取的預設設定，這通常符合Commerce商家的�
 
 ### 在執行階段設定多執行緒
 
-當您從命令列執行完整同步處理命令時，請將`threadCount`和`batchSize`選項新增至CLI命令以指定多執行緒處理。
+當您從命令列執行完整同步處理命令時，請將`thread-count`和`batch-size`選項新增至CLI命令以指定多執行緒處理。
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 命令列上指定的選項會覆寫Adobe Commerce應用程式`config.php`檔案中指定的資料匯出組態。
