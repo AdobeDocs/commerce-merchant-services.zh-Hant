@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: Adobe Commerce的'[!DNL Catalog Service]，提供比原生Adobe Commerce GraphQL查詢更快擷取產品顯示頁面和產品清單頁面內容的方法。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 * 複雜的產品是由多個簡單的產品所組成。 元件簡單產品可以有不同的價格。 也可以定義複雜產品，讓購物者可以指定元件簡單產品的數量。 目錄服務將可設定、套件組合和群組產品型別對應至`complexProductViews`。
 
 複雜的產品選項會根據其行為而非型別進行統一和區分。 每個選項值代表簡單產品。 此選項值可存取簡單產品屬性，包括價格。 當購物者選取複雜產品的所有選項時，所選選項的組合會指向特定的簡單產品。 在購物者為所有可用選項選取值之前，簡單產品會保持模稜兩可。
+
+#### 產品檢視屬性
+
+簡單和複雜的產品都有客戶定義的屬性，可顯示在店面上。 這些屬性會傳回為[ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)。 在Adobe Commerce中，可用的屬性會在建立產品時定義。 您可以從Adobe Commerce後端或以程式設計方式新增其他屬性。 請參閱[延伸與自訂SaaS資料匯出摘要資料](../data-export/extensibility-and-customizations.md)。
+
+>[!TIP]
+>
+>您可以將[API Mesh與目錄服務](mesh.md)搭配使用，擴充目錄服務GraphQL結構描述，以新增資料或設定現有的目錄資料，以啟用新功能，而不將資料型別新增到Commerce後端。
 
 ### 價格
 
