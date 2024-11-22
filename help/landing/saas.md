@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ ht-degree: 0%
 任何與您的金鑰相關聯的SaaS專案都會顯示在&#x200B;**SaaS識別碼**&#x200B;區段的&#x200B;**專案**&#x200B;欄位中。
 
 1. 如果沒有SaaS專案，請按一下&#x200B;**建立專案**。 然後在&#x200B;**專案**&#x200B;欄位中，輸入您的SaaS專案名稱。
+
+>[!NOTE]
+>
+>為避免混淆，請勿使用特定的Commerce服務作為專案的名稱，例如&#x200B;*即時搜尋*、*產品Recommendations*&#x200B;或&#x200B;*資料連線*。  除非您的授權已布建在多個SaaS專案，否則您可以對多個服務使用相同的SaaS專案。
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
