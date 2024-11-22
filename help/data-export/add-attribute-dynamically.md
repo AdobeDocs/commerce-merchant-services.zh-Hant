@@ -1,15 +1,15 @@
 ---
-title: 以程式設計方式將產品屬性新增至資料匯出工具摘要
-description: 瞭解如何將自訂產品屬性新增至 [!DNL SaaS Data Export] 摘要資料。
+title: 動態新增產品屬性
+description: 瞭解如何在資料同步程式進行期間，以動態方式將自訂產品屬性新增至資料匯出摘要。
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# 以程式設計方式將產品屬性新增至資料匯出工具摘要
+# 在資料同步期間動態新增產品屬性
 
 您可以在資料同步過程中建立外掛程式來新增屬性，以擴充產品屬性而不需在Adobe Commerce中註冊它們。
 
