@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: b2425eb7204400899dfe6eaa9978e49c3ff00ec7
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -189,7 +189,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 其他步驟
 
-如有需要，請使用[setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI命令，將靜態檢視檔案部署至您的生產環境。
+如有需要，請使用[setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI命令，將靜態檢視檔案部署至您的生產環境。
 
 ```bash
 php bin/magento setup:static-content:deploy -f
