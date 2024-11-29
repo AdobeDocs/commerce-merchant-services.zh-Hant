@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ ht-degree: 0%
 
 產品頁面、迷你購物車、購物車和結帳檢視中會顯示[!DNL Apple Pay]按鈕。
 
+若要將[!DNL Apple Pay]用於您的商店，請完成[使用 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)的自我註冊（_僅註冊您的即時網域_&#x200B;區段），並[在 [!DNL Payment Services]](settings.md#payment-buttons)中為您的商店設定它。
+
 >[!NOTE]
 >
-> 若要將[!DNL Apple Pay]用於您的商店，請完成[使用 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)的自我註冊（_僅註冊您的即時網域_&#x200B;區段），並[在 [!DNL Payment Services]](settings.md#payment-buttons)中為您的商店設定它。
+> 請參閱PayPal開發人員檔案中的[進階結帳](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank}，瞭解如何讓買家能夠在您的網站上使用Apple Pay付款。
 
 您可以在商店設定或付款服務首頁設定[!UICONTROL Apple Pay]。 如需詳細資訊，請參閱[設定](settings.md#apple-pay)。
 

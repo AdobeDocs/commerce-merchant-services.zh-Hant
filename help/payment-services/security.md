@@ -4,9 +4,9 @@ description: 檢閱您網站的安全與法規遵循需求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 
 如果您是歐盟或英國境內需要3DS法規遵循的商家，您必須在[設定](settings.md#credit-card-fields)中手動開啟3DS （預設為`Off`）。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >3DS規定適用於企業和持卡人的銀行位於[歐洲經濟區](https://www.efta.int/eea) (EEA)和英國的交易中。 美國商家不需要3DS，但可視需要為其交易啟用。
 
 商家/店舖人員為買家下單的訂單未設定3DS合規性措施。
 
-如需詳細資訊，請參閱設定](settings.md#3ds)中的[3DS。
+>[!MORELIKETHIS]
+>
+> * 如需詳細資訊，請參閱設定](settings.md#3ds)中的[3DS。
+> * 請參閱PayPal開發人員檔案中的[測試卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)，以取得有關3DS測試之特定信用卡的詳細資訊。
 
 ### 卡片存放
 
@@ -65,7 +68,9 @@ PayPal也整合了防欺詐功能，使用機器學習協助您對抗欺詐行�
 
 ## 欺詐保護
 
-您可以使用[Signifyd延伸模組](https://commercemarketplace.adobe.com/signifyd-module-connect.html)為付款服務啟用自動詐騙保護。
+您可以使用[Signifyd延伸模組](https://commercemarketplace.adobe.com/signifyd-module-connect.html)為付款服務啟用自動詐騙保護。 如需詳細資訊，請參閱[表示詐騙保護](fraud-protection.md)。
 
-如需詳細資訊，請參閱[表示詐騙保護](fraud-protection.md)。
+PayPal在其開發人員檔案中提供[詐騙保護](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank}的其他選項：
 
+* 如需詳細資訊，請參閱[進階詐騙保護](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank}。
+* 如需詳細資訊，請參閱[借項衝回保護](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}。
