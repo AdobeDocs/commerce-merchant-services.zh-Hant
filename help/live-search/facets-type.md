@@ -1,6 +1,6 @@
 ---
-title: 「多面向型別」
-description: '[!DNL Live Search]個Facet為動態的，並在相關時出現在篩選器清單中。'
+title: 多面向型別
+description: '[!DNL Live Search]個Facet是動態的，並在相關時出現在篩選器清單中。'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

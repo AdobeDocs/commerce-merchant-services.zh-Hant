@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Catalog Service]指南概述'
+title: '[!DNL Catalog Service]指南總覽'
 description: '[!DNL Catalog Service for Adobe Commerce]提供比原生Adobe Commerce GraphQL查詢更快擷取產品顯示頁面和產品清單頁面內容的方法。'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog

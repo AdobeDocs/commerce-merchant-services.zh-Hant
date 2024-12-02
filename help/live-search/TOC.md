@@ -1,7 +1,7 @@
 ---
-user-guide-title: 「[!DNL Live Search] 指南」
-user-guide-description: 「本指南提供使用Adobe Commerce中 [!DNL Live Search] 的詳細指示。」
-breadcrumb-title: 「[!DNL Live Search] 指南」
+user-guide-title: '[!DNL Live Search] 指南'
+user-guide-description: 本指南提供使用Adobe Commerce中 [!DNL Live Search] 的詳細指示。
+breadcrumb-title: '[!DNL Live Search] 指南'
 role: Admin
 feature: Services, Search
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

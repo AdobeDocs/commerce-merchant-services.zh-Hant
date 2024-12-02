@@ -1,6 +1,6 @@
 ---
-title: 「管理Facet」
-description: 「瞭解如何管理現有的 [!DNL Live Search] Facet。」
+title: 管理Facet
+description: 瞭解如何管理現有的 [!DNL Live Search] 多面向。
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt

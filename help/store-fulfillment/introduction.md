@@ -1,6 +1,6 @@
 ---
-title: 「 [!DNL Store Fulfillment]簡介」
-description: 「瞭解 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 如何支援客戶的線上購買、到店取貨(BOPIS)。 使用Store Assist行動版來簡化BOPIS的履行程式，以及商店夥伴和Commerce客戶的訂單處理。」
+title: ' [!DNL Store Fulfillment]簡介'
+description: 瞭解 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 如何支援客戶的線上購買、到店取貨(BOPIS)。 使用「商店協助」行動裝置簡化商店夥伴與Commerce客戶的BOPIS履行與訂單處理。
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c

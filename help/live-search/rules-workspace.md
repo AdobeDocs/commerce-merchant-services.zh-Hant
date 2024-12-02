@@ -1,6 +1,6 @@
 ---
-title: 「搜尋銷售Workspace」
-description: 「在Search Merchandising工作區中瞭解自己的路。」
+title: 搜尋銷售Workspace
+description: 瞭解如何在Search Merchandising工作區中運作。
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

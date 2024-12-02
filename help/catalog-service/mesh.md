@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: 適用於Adobe Commerce的'[!DNL API Mesh]，可讓您透過共同的GraphQL端點整合多個資料來源。'
+description: 適用於Adobe Commerce的[!DNL API Mesh]提供透過通用GraphQL端點整合多個資料來源的方法。
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service

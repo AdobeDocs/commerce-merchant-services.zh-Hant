@@ -1,10 +1,11 @@
 ---
 title: '[!DNL Catalog Adapter]發行說明'
-description: '適用於Adobe Commerce的 [!DNL Catalog Adapter] 的最新發行資訊。'
+description: 適用於Adobe Commerce的 [!DNL Catalog Adapter] 的最新發行資訊。
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
+source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -31,4 +32,3 @@ ht-degree: 0%
 ## 1.0.8版本
 
 ![修正](../assets/fix.svg)修正將具有數值SKU的可設定產品變體新增至願望清單時，造成例外狀況記錄錯誤的問題。 &lt;！-MDEE-876—>
-

@@ -1,6 +1,6 @@
 ---
 title: 什麼是 [!DNL Live Search]？
-description: 「Adobe Commerce的[!DNL Live Search]提供快速、相關且直覺式的搜尋體驗。」
+description: Adobe Commerce的[!DNL Live Search]提供快速、相關且直覺式的搜尋體驗。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

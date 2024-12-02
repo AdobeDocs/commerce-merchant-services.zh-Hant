@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Store Fulfillment]指南概述'
-description: 「有關Adobe Commerce管理員 [!DNL Store Fulfillment] 的完整資訊，包括安裝和上線。」
+title: '[!DNL Store Fulfillment]指南總覽'
+description: 有關Adobe Commerce管理員 [!DNL Store Fulfillment] 的完整資訊，包括安裝和上線。
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay

@@ -1,6 +1,6 @@
 ---
 title: 背景處理程式設定
-description: 「設定用於與履行服務同步資料的 [!DNL Store Fulfillment] 背景處理作業的排程。」
+description: 設定與履行服務同步資料時所使用的 [!DNL Store Fulfillment] 背景處理作業的排程。
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

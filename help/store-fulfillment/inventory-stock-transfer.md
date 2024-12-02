@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source傳輸
-description: 「使用Adobe Commerce Inventory management設定 [!DNL Store Fulfillment solution] 的庫存。 設定新存貨並將存貨移出預設存貨，以便您可以將其指定給設定為啟用「商店履行」解決方案所需的「商店提貨」功能的來源。」
+description: 使用Adobe Commerce Inventory management設定 [!DNL Store Fulfillment solution] 的庫存。 設定新存貨並將存貨移出預設存貨，以便您可以將其指定給設定為啟用「商店履行」解決方案所需的「商店提貨」功能的來源。
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

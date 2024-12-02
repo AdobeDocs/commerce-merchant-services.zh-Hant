@@ -1,6 +1,6 @@
 ---
-title: "索引"
-description: 「瞭解 [!DNL Live Search] 如何索引產品屬性屬性。」
+title: 索引
+description: 瞭解 [!DNL Live Search] 如何索引產品屬性屬性。
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 2833b723845312fe657b29024b9d715ee07d5a1e
 workflow-type: tm+mt

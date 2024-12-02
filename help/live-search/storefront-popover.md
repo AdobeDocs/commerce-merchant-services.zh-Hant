@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Storefront Popover]"
-description: 「此 [!DNL Live Search storefront popover] 會動態傳回建議的產品和縮圖。」
+title: '[!DNL Storefront Popover]'
+description: ' [!DNL Live Search storefront popover] 會動態傳回建議的產品與縮圖。'
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt

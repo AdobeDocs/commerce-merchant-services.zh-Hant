@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Product Recommendations]指南概述'
+title: '[!DNL Product Recommendations]指南總覽'
 description: 有關Adobe Commerce管理員 [!DNL Product Recommendations] 的完整資訊，包括安裝和上線
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.

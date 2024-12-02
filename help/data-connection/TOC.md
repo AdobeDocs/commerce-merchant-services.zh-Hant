@@ -1,7 +1,7 @@
 ---
-user-guide-title: "適用於Adobe Commerce的[!DNL Data Connection]擴充功能"
-user-guide-description: 「本指南提供在Adobe Commerce中使用 [!DNL Data Connection] 擴充功能的詳細指示。」
-breadcrumb-title: "適用於Adobe Commerce的[!DNL Data Connection]擴充功能"
+user-guide-title: Adobe Commerce的[!DNL Data Connection]延伸模組
+user-guide-description: 本指南提供在Adobe Commerce中使用 [!DNL Data Connection] 擴充功能的詳細指示。
+breadcrumb-title: Adobe Commerce的[!DNL Data Connection]延伸模組
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay

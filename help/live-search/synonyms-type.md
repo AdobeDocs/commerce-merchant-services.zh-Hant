@@ -1,6 +1,6 @@
 ---
-title: 「同義字型別」
-description: 「單向和雙向 [!DNL Live Search] 同義字會擴展關鍵字的定義。」
+title: 同義字的型別
+description: 單向 [!DNL Live Search] 和雙向同義字會擴展關鍵字的定義。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

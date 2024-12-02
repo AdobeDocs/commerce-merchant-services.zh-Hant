@@ -1,6 +1,6 @@
 ---
 title: Financial reporting
-description: 「[!DNL Payment Services]提供完整的報告，讓您清楚瞭解商店的訂單和付款。」
+description: '[!DNL Payment Services]提供完整的報告，讓您清楚瞭解商店的訂購與付款。'
 role: User
 feature: Payments, Checkout
 level: Intermediate

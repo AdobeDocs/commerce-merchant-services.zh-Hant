@@ -1,6 +1,6 @@
 ---
 title: 開始使用 [!DNL Live Search]
-description: 「從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。」
+description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491

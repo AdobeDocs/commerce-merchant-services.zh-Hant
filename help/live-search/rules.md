@@ -1,6 +1,6 @@
 ---
-title: 「搜尋銷售」
-description: '[!DNL Live Search]銷售規則結合邏輯與動作來塑造購物體驗。'
+title: 搜尋銷售
+description: '[!DNL Live Search]銷售規則結合邏輯與動作，以塑造購物體驗。'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
-user-guide-title: '[!DNL Data Export] SaaS服務指南'
-user-guide-description: 「本指南提供使用Adobe Commerce SaaS服務 [!DNL Data Export] 擴充功能的詳細指示。」
-breadcrumb-title: '[!DNL Data Export] SaaS服務指南'
+user-guide-title: SaaS服務的[!DNL Data Export]指南
+user-guide-description: 本指南提供使用Adobe Commerce SaaS服務 [!DNL Data Export] 擴充功能的詳細指示。
+breadcrumb-title: SaaS服務的[!DNL Data Export]指南
 role: Admin
 feature: Services
 source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772

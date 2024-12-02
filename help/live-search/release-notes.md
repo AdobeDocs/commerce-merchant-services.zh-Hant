@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search]發行說明'
-description: 「來自Adobe Commerce的 [!DNL Live Search] 的最新發行資訊。」
+description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

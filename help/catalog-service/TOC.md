@@ -1,7 +1,7 @@
 ---
-user-guide-title: 「[!DNL Catalog Service] 指南」
-user-guide-description: 「本指南提供使用Adobe Commerce之 [!DNL Catalog Service] 的詳細指示。」
-breadcrumb-title: 「[!DNL Catalog Service] 指南」
+user-guide-title: '[!DNL Catalog Service] 指南'
+user-guide-description: 本指南提供使用Adobe Commerce之 [!DNL Catalog Service] 的詳細指示。
+breadcrumb-title: '[!DNL Catalog Service] 指南'
 hide: true
 role: Admin
 feature: Services, Catalog Service

@@ -1,5 +1,5 @@
 ---
-title: '設定即時搜尋'
+title: 設定即時搜尋
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

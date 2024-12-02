@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: 有關為Adobe Commerce商店安裝、設定和使用Store Fulfillment的詳細資訊。
 breadcrumb-title: Adobe Commerce 的 Store Fulfillment
 index: true

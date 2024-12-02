@@ -1,6 +1,6 @@
 ---
-title: 「同義字」
-description: 「[!DNL Live Search]同義字使用與目錄中不同的字詞來展開查詢。」
+title: 同義字
+description: '[!DNL Live Search]同義字會展開與您目錄中的字詞不同的查詢。'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

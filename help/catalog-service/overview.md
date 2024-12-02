@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service]'
-description: Adobe Commerce的'[!DNL Catalog Service]，提供比原生Adobe Commerce GraphQL查詢更快擷取產品顯示頁面和產品清單頁面內容的方法。
+description: 適用於Adobe Commerce的[!DNL Catalog Service]提供一種比原生Adobe Commerce GraphQL查詢更快擷取產品顯示頁面和產品清單頁面內容的方法。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 role: Admin, Developer
 recommendations: noCatalog

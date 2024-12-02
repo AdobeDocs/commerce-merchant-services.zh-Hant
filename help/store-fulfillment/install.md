@@ -1,6 +1,6 @@
 ---
 title: 安裝
-description: 「使用適用於PHP的撰寫器為Adobe Commerce店面安裝 [!DNL Store Fulfillment solution] 。」
+description: 使用適用於PHP的撰寫器為Adobe Commerce店面安裝 [!DNL Store Fulfillment solution] 。
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install

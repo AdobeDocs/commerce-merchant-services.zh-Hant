@@ -1,6 +1,6 @@
 ---
-title: 「效能」
-description: 「 [!DNL Live Search] 效能工作區可讓您深入瞭解購物者使用的搜尋字詞。」
+title: 效能
+description: ' [!DNL Live Search] 效能工作區可讓您深入瞭解購物者使用的搜尋字詞。'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

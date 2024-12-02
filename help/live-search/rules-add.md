@@ -1,6 +1,6 @@
 ---
-title: "新增規則"
-description: 「瞭解如何建立Search Merchandising規則。」
+title: 新增規則
+description: 瞭解如何建立搜尋銷售規則。
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ ht-degree: 0%
 1. 按一下&#x200B;**搜尋銷售**&#x200B;工作區。
 1. 按一下&#x200B;**新增規則**&#x200B;以啟動規則編輯器。
 
-## 規則型別
+## 規則類型
 
 「搜尋」查詢可讓您定義特定的搜尋字詞、條件和排名型別。
 

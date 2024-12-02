@@ -1,7 +1,7 @@
 ---
-user-guide-title: 「[!DNL Payment Services] 指南」
+user-guide-title: '[!DNL Payment Services] 指南'
 user-guide-description: 本指南提供為 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存放區安裝和設定 [!DNL Payment Services] 的詳細資訊。
-breadcrumb-title: 「[!DNL Payment Services] 指南」
+breadcrumb-title: '[!DNL Payment Services] 指南'
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
