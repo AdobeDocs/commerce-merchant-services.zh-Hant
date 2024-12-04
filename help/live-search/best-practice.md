@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ ht-degree: 0%
 ## 改善搜尋結果關聯性
 
 本節探討如何實作有效的搜尋規則，並使用產品中繼資料來確保精確且詳細的屬性可供搜尋，進而改善搜尋結果的相關性。
+
+### 影像
+
+請確定可設定產品的子產品具有含有正確角色的影像。 擁有父項或子項產品可能會導致搜尋結果沒有影像。
+
+>[!NOTE]
+>
+>搜尋結果中的影像可能會因搜尋字詞而異。 如果搜尋字詞判斷子產品更相關，則會使用子產品的影像，而非父產品的影像。
 
 ### 搜尋規則
 
