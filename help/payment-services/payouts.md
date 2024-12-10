@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
 1. [自訂交易的日期範圍時間範圍](#customize-transactions-timeframe)。
-1. 按一下「_下載_」(![](assets/icon-download.png){width="20" zoomable="yes"})圖示。
+1. 按一下「_下載_」（![下載圖示](assets/icon-download.png){width="20" zoomable="yes"}）圖示。
 
 您的付款交易會以.csv格式下載。
 
