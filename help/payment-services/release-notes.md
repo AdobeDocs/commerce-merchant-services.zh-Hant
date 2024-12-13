@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,24 @@ _2021年6月28日_
 
 +++
 
+## v2.10.0
+
+_2024年12月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![新增](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services]現在支援GraphQL端點進行儲存而不購買，讓客戶儲存其付款方式而不完成交易。
+
+![新增](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services]現在支援[使用Google Pay的3D安全驗證](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds)，在付款交易期間增強商家和客戶的安全性。
+
+![修正](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services]新增了[客戶直接將卡片儲存在其&#x200B;**我的帳戶**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting)中的功能，改善了便利性，並簡化了未來的結帳。`Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/)。
+
+![修正](../assets/fix.svg)<!-- PAY-5762 -->修正從產品詳細資料頁面(PDP)起始訂單時，未在訂單稽核頁面上套用優惠券代碼的問題。
+
+![修正](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services]現在會在結帳頁面](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting)上顯示[儲存卡的說明和帳單地址，讓客戶更清楚瞭解他們儲存的付款方式。
+
+![修正](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services]可讓商戶直接從結帳頁面儲儲存儲存儲存儲存存庫存卡的帳單地址，以確保正確且完整的付款資訊。
+
 ## v2.9.0
 
 _2024年11月7日_
@@ -99,7 +117,7 @@ _2024年11月7日_
 
 ![新增](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]現在支援Apple Pay **的**&#x200B;升級SDK URL，改善使用Apple Pay的商家整合。 此功能與macOS 14和更新版本相容，執行舊版macOS的裝置將不會顯示此功能。
 
-![全新](../assets/new.svg)<!-- PAY-5630 -->已更新&#x200B;**結帳**、**產品**、**購物車**&#x200B;及&#x200B;**迷你購物車**&#x200B;頁面，以支援Apple Pay **的**&#x200B;升級SDK URL，為提供Apple Pay付款選項的商家改善使用者體驗。
+![全新](../assets/new.svg)<!-- PAY-5630 -->已更新&#x200B;**結帳**、**產品**、**購物車**&#x200B;和&#x200B;**迷你購物車**&#x200B;頁面，以支援Apple Pay的&#x200B;**已升級SDK URL**，為提供Apple Pay付款選項的商家改善使用者體驗。
 
 ![新](../assets/new.svg)<!-- PAY-5635 -->改善以Apple付款地址&#x200B;**為基礎的運送預估**，讓客戶在結帳時檢視準確的運送成本。
 
@@ -115,7 +133,7 @@ _2024年9月13日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![修正](../assets/fix.svg)<!-- PAY-5644 -->修正在[!DNL Payment Services]中使用多個領域時，SDK引數快取的問題。 SDK設定現在會針對每個範圍個別進行快取，而非使用單一索引鍵。 這樣可確保每個範圍的快取獨立失效，進而在管理多個範圍時提高可靠性。
+![修正](../assets/fix.svg)<!-- PAY-5644 -->修正在[!DNL Payment Services]中使用多個範圍時，SDK引數快取的問題。 現在會針對每個範圍分別快取SDK設定，而非使用單一索引鍵。 這樣可確保每個範圍的快取獨立失效，進而在管理多個範圍時提高可靠性。
 
 ## v2.8.0
 

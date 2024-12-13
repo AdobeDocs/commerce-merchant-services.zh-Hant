@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 1. 對於&#x200B;**[!UICONTROL Show on checkout page]**，請選擇`Yes`以啟用結帳頁面上的信用卡欄位。
 1. 針對&#x200B;**[!UICONTROL Vault Enabled]**，選擇`Yes`以啟用信用卡存放區以進行簽出。
 1. 針對&#x200B;**[!UICONTROL Vault Enabled in Admin]**，選擇`Yes`以讓商家使用客戶的保管卡建立訂單。
-1. 若要啟用&#x200B;**[!UICONTROL 3DS Secure authentication]** （預設為`Off`），請選擇`Always`或`When required`。
+1. 若要啟用&#x200B;**[!UICONTROL 3D Secure authentication]** （預設為`Off`），請選擇`Always`或`When required`。
 1. 針對&#x200B;**[!UICONTROL Debug Mode]**，選擇`Yes`以啟用偵錯模式，或選擇`No`以停用偵錯模式。
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 1. 導覽至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以重新整理所有無效的快取。
@@ -82,7 +82,7 @@ ht-degree: 0%
 | [!UICONTROL Show on checkout page] | 網站 | 啟用或停用結帳頁面上的信用卡欄位。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | 存放區檢視 | 啟用或停用[信用卡存放區](vaulting.md)。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | 存放區檢視 | 啟用或停用[商家使用保管庫付款方式完成管理員](vaulting.md)中客戶訂單的功能。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | 網站 | 啟用或停用[3DS安全驗證](security.md#3ds)。 選項： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | 網站 | 啟用或停用[3DS安全驗證](security.md#3ds)。 選項： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. 若要啟用&#x200B;**[!UICONTROL 3D Secure authentication]** （預設為`Off`），請選擇`Always`或`When required`。
 1. 若要啟用偵錯模式，請為&#x200B;**[!UICONTROL Debug Mode]**&#x200B;選取`Yes` （`No`停用它）。
 1. 視需要選取&#x200B;**[!UICONTROL Button Color]**、**[!UICONTROL Button Type]**&#x200B;和&#x200B;**[!UICONTROL Button Style]**，以設定&#x200B;_[!UICONTROL Google Pay]_按鈕的外觀。
 1. 若要設定高度，請使用&#x200B;**[!UICONTROL Button Style]**&#x200B;中定義之高度的預設值。
@@ -153,6 +154,7 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 存放區檢視 | 啟用或停用產品詳細資料頁面上的[!DNL Google Pay]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | 存放區檢視 | 啟用或停用迷你購物車預覽中的[!DNL Google Pay]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | 存放區檢視 | 啟用或停用購物車頁面上的[!DNL Google Pay]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | 存放區檢視 | 啟用或停用[3D安全驗證](security.md#3ds)。 選項： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | 存放區檢視 | 定義[!DNL Google Pay]按鈕的顏色。 選項： `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | 存放區檢視 | 定義[!DNL Google Pay]按鈕的型別。 選項： `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
