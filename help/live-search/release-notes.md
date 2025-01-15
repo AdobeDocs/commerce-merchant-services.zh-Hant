@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新](../assets/new.svg) [!DNL Live Search] PLP Widget現在支援色票。
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_2025年1月6日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg)已修正Adobe Commerce 2.4.5版和更舊版本上`categoryList` GraphqL查詢發生錯誤的問題。
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -327,7 +335,7 @@ _2023年3月14日_
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
 ![新](../assets/new.svg) [效能](performance.md)報告儀表板提供購物者使用之搜尋字詞的深入分析。
-![新](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供對一般資料層的存取權，其中包含事件發佈和訂閱服務以及量度。
+![新](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供對一般資料層的存取權，其中包含事件發佈和訂閱服務以及量度。
 ![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)具有控制可見性的`.search-autocomplete`容器的新`active`類別。
 ![修正](../assets/fix.svg)在店面中，[搜尋詞](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)頁尾連結已移除，且已針對[!DNL Live Search]個安裝停用其快取。
 ![錯誤](../assets/bug.svg)搜尋配接器的修補程式會處理重複的產品。
