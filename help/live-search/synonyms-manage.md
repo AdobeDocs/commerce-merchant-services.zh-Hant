@@ -2,9 +2,9 @@
 title: 管理同義字
 description: 瞭解如何管理現有的 [!DNL Live Search] 同義字。
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 0%
 1. 按一下&#x200B;**編輯**。
 關鍵字是清單中的第一個詞語，每個詞語以逗號分隔。 關鍵字和展開詞可以更新，但同義字的型別無法變更。
 1. 按一下您要編輯的專案。 然後，視需要更新文字。
-
-   ![編輯雙向同義字](assets/synonym-two-way-edit.png)
 
 1. 完成時，按一下&#x200B;**儲存**。
 
