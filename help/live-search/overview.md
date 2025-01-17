@@ -3,9 +3,9 @@ title: 什麼是 [!DNL Live Search]？
 description: Adobe Commerce的[!DNL Live Search]提供快速、相關且直覺式的搜尋體驗。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ ht-degree: 0%
 ## Live Search元件
 
 - [!DNL Live Search] [彈出視窗Widget](storefront-popover.md)是在包含搜尋結果的搜尋欄位下開啟的方塊。
-- [產品清單頁面Widget](plp-styling.md) (PLP)提供具有Facet和同義字支援的可搜尋產品清單頁面。 Widget已安裝並在Live Search 4.0.0+中啟用。
-- （**已棄用**）搜尋配接器是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。
+- [產品清單頁面Widget](plp-styling.md) (PLP)提供具有Facet和同義字支援的可搜尋產品清單頁面。 Widget已安裝並在Live Search 4.0.0+中啟用，並取代搜尋配接器。
+- （**已棄用**） Search Adapter是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。 日後，搜尋配接卡只會更新以解決安全性問題。
 
 ## [!DNL Live Search]工作區
 

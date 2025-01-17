@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _2023年11月13日_
 ### 更新
 
 ![修正](../assets/fix.svg) [!DNL Live Search] PLP Widget現在已預設為新安裝啟用。
+![修正](../assets/fix.svg)已棄用搜尋配接器。 日後，搜尋配接卡只會更新以解決安全性問題。
 ![修正](../assets/fix.svg)已重新設定CSS樣式，以便更妥善地隔離Widget類別。
 ![修正](../assets/fix.svg)微幅錯誤修正
 
