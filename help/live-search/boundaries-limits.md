@@ -3,9 +3,9 @@ title: 邊界和限制
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 - 每個屬性有1MB的硬性限制，包括說明和自訂屬性。
 - 搜尋配接卡不支援使用自訂來源模型建立並當作Facet使用的產品屬性。 若要支援此功能，您必須使用[產品清單頁面Widget](plp-styling.md)。
 - 不支援自訂產品型別。
+- 不支援以`"is_user_defined": false`程式化建立的自訂屬性。
 - 您可以使用「開頭為」或「包含」條件篩選結果，但有一些限制，如[此處](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)所述。
 
 ## 索引
