@@ -3,7 +3,7 @@ title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 在[Commerce Services Connector](../landing/saas.md)文章中瞭解如何設定您的API金鑰。
 
-## 3.同步處理您的目錄資料 {#synchronize-catalog-data}
+## 3.同步處理您的目錄資料
 
 [!DNL Live Search]將目錄資料移動到Adobe的SaaS基礎結構。 資料會編制索引，而搜尋結果會從此索引直接傳送到店面。 根據大小和複雜性，索引可能需要30分鐘到數小時的時間。
 
@@ -214,7 +214,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 初始同步後，增量產品更新最多可能需要15分鐘才能用於店面搜尋。 若要深入瞭解，請參閱索引檔案中的[串流產品更新](indexing.md)。
 
-## 4.確認資料已匯出 {#verify-export}
+## 4.確認資料已匯出
 
 若要檢查您的目錄資料是否已從Adobe Commerce匯出並與[!DNL Live Search]同步，您有幾個選擇：
 
@@ -265,7 +265,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
 
-## 6.測試連線 {#test-connection}
+## 6.測試連線
 
 現在，如果您的目錄資料在SaaS中，請進行測試以確保在以下情況下傳回產品資料：
 
@@ -299,7 +299,7 @@ bin/magento saas:resync --feed categoryPermissions
 - [PLP Widget存放庫](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列存放庫](https://github.com/adobe/storefront-search-as-you-type)
 
-## 正在更新[!DNL Live Search] {#update}
+## 正在更新[!DNL Live Search]
 
 在更新Live Search之前，請從命令列執行下列操作以檢查已安裝的Live Search版本：
 
@@ -345,11 +345,11 @@ composer update magento/live-search --with-dependencies
    composer update magento/live-search --with-dependencies
    ```
 
-## 正在解除安裝[!DNL Live Search] {#uninstall}
+## 正在解除安裝[!DNL Live Search]
 
 若要解除安裝[!DNL Live Search]，請參閱[解除安裝模組](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
-## [!DNL Live Search]個套件 {#packages}
+## [!DNL Live Search]個套件
 
 [!DNL Live Search]擴充功能包含下列封裝：
 
@@ -359,7 +359,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search-adapter` | 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從店面右上角的[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)方塊路由到[!DNL Live Search]服務。 |
 | `module-live-search-storefront-popover` | 「依輸入方式搜尋」彈出視窗會取代標準快速搜尋，並傳回熱門搜尋結果的資料和縮圖。 |
 
-## [!DNL Live Search]相依性 {#dependencies}
+## [!DNL Live Search]相依性
 
 安裝[!DNL Live Search]擴充功能的[!DNL Composer]中繼套件包含下列模組相依性。
 

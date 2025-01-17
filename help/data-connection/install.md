@@ -4,9 +4,9 @@ description: 瞭解如何從Adobe Commerce安裝、更新及解除安裝 [!DNL D
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 0%
 1. （選擇性）若要包含[!DNL Live Search]資料（包含[搜尋事件](events.md#search-events)），請安裝[[!DNL Live Search]](../live-search/install.md)擴充功能。
 
 1. （選擇性）若要包含[請購單事件](events.md#b2b-events)的B2B資料，請安裝[B2B擴充功能](#install-the-b2b-extension)。
+
+1. （選擇性）若您是醫療保健業者，請安裝[資料服務HIPAA](#install-the-data-services-hipaa-extension)擴充功能，讓您的[!DNL Commerce]後台資料可使用HIPAA。
 
 ### 安裝Adobe I/O事件並設定客戶聯結器模組
 
@@ -109,6 +111,16 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### 安裝資料服務HIPAA擴充功能
+
+對於醫療保健商家，請安裝下列擴充功能，以確保後端辦公室事件資料可隨時使用HIPAA。
+
+從命令列執行下列動作來下載`magento/module-data-services-hipaa`擴充功能：
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## 更新[!DNL Data Connection]副檔名 {#update}

@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Commerce的[!DNL Data Connection]延伸模組
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Adobe Commerce的[!DNL Data Connection]延伸模組 {#data-connection}
 
 - [指南概觀](overview.md)
+- [Commerce服務的HIPAA整備](hipaa-readiness.md)
+- [Commerce服務如何處理隱私權請求](handle-privacy-request.md)
 - [發行說明](release-notes.md)
 - 基礎知識{#fundamentals}
    - [安裝 [!DNL Data Connection] 擴充功能](install.md)

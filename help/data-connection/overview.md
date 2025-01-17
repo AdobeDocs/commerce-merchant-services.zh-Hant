@@ -3,9 +3,9 @@ title: 指南概觀
 description: 瞭解如何使用 [!DNL Data Connection] 擴充功能整合Adobe Commerce資料與Adobe Experience Platform。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -49,23 +49,23 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 
 在這兩個系統之間共用資料需要您瞭解數個概念。
 
-* **資料** — 與Experience Platform共用的資料是從店面上的瀏覽器事件、伺服器上的後台事件和設定檔記錄資料所收集到的資料。 店面活動是從網站上的購物者互動擷取的，並包括[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout)等事件。 如需店面活動的完整清單，請參閱[店面活動](events.md#storefront-events)。 伺服器端或後台事件包含[訂單狀態](events-backoffice.md#order-status)資訊，例如[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled)等。 如需後台事件的完整清單，請參閱[後台事件](events-backoffice.md)。 個人資料記錄資料包含建立、更新或刪除新個人資料時的資訊。 檢視[個人資料記錄資料](events-profilerecord.md)以深入瞭解。
+- **資料** — 與Experience Platform共用的資料是從店面上的瀏覽器事件、伺服器上的後台事件和設定檔記錄資料所收集到的資料。 店面活動是從網站上的購物者互動擷取的，並包括[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout)等事件。 如需店面活動的完整清單，請參閱[店面活動](events.md#storefront-events)。 伺服器端或後台事件包含[訂單狀態](events-backoffice.md#order-status)資訊，例如[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled)等。 如需後台事件的完整清單，請參閱[後台事件](events-backoffice.md)。 個人資料記錄資料包含建立、更新或刪除新個人資料時的資訊。 檢視[個人資料記錄資料](events-profilerecord.md)以深入瞭解。
 
-* **Experience Platform和Edge Network** — 大部分AdobeDX產品的資料倉儲。 傳送至Experience Platform的資料會透過Experience PlatformEdge Network傳播至AdobeDX產品。 例如，您可以啟動Journey Optimizer、從邊緣擷取您的特定Commerce事件資料，以及在Journey Optimizer中建立捨棄的購物車電子郵件。 如果Commerce商店中有任何放棄的購物車，Journey Optimizer就可以傳送該電子郵件。 深入瞭解[Experience Platform和Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)。
+- **Experience Platform和Edge Network** — 大部分AdobeDX產品的資料倉儲。 傳送至Experience Platform的資料會透過Experience PlatformEdge Network傳播至AdobeDX產品。 例如，您可以啟動Journey Optimizer、從邊緣擷取您的特定Commerce事件資料，以及在Journey Optimizer中建立捨棄的購物車電子郵件。 如果Commerce商店中有任何放棄的購物車，Journey Optimizer就可以傳送該電子郵件。 深入瞭解[Experience Platform和Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)。
 
-* **結構描述** — 此結構描述描述所傳送的資料結構。 在Experience Platform可內嵌Commerce資料之前，您必須撰寫結構描述資料結構，並對可包含在每個欄位中的資料型別提供限制。 結構描述包含一個基底類別和零個或多個結構描述欄位群組。 此結構描述會使用XDM結構，所有AdobeDX產品都可以讀取該結構。 因此，當您傳送資料給Experience Platform時，可以確定所有DX產品都能瞭解您的資料。 深入瞭解[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
+- **結構描述** — 結構描述描述正在傳送的資料結構。 在Experience Platform可內嵌Commerce資料之前，您必須撰寫結構描述資料結構，並針對可包含在每個欄位中的資料型別提供限制。 結構描述包含一個基底類別和零個或多個結構描述欄位群組。 此結構描述會使用XDM結構，所有AdobeDX產品都可以讀取該結構。 結構描述可確保所有DX產品都能瞭解傳送給Experience Platform的資料。 深入瞭解[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
 
-* **資料集** — 資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 所有成功擷取至Adobe Experience Platform的資料都包含在資料集中。 深入瞭解[資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)。
+- **資料集** — 資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 所有成功擷取至Adobe Experience Platform的資料都包含在資料集中。 深入瞭解[資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)。
 
-* **資料串流** — 可讓資料從Adobe Experience Platform流向其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce執行個體中的特定網站相關聯。 當您建立此資料流時，請指定您在上面建立的XDM結構描述。 深入瞭解[資料串流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
+- **資料串流** — 可讓資料從Adobe Experience Platform流向其他AdobeDX產品的ID。 此ID必須與您特定Adobe Commerce執行個體中的特定網站相關聯。 當您建立此資料流時，請指定您在上面建立的XDM結構描述。 深入瞭解[資料串流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。
 
 ## 支援的架構
 
 [!DNL Data Connection]擴充功能適用於下列架構：
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 
 若要使用[!DNL Data Connection]擴充功能，您必須具備下列條件：
 
-* Adobe Commerce 2.4.4或更新版本
-* Adobe ID和組織ID
-* [Adobe使用者端資料層(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，這是收集店面事件資料所需
-* 其他AdobeDX產品的權益。
+- Adobe Commerce 2.4.4或更新版本
+- Adobe ID和組織ID
+- [Adobe使用者端資料層(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，這是收集店面事件資料所需
+- 其他AdobeDX產品的權益。
 
 >[!ENDSHADEBOX]
 
@@ -100,6 +100,10 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 >
 >針對行動開發人員瞭解如何[整合](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce。
 
+## HIPAA整備
+
+[!DNL Data Connection]擴充功能可讓您與Experience Platform共用[!DNL Commerce]個後台資料，並維持HIPAA合規性。 [深入瞭解](hipaa-readiness.md)。
+
 ## 客群
 
 本指南是專為想要豐富及個人化Commerce商店，以提升客戶購物體驗的Adobe Commerce商家所設計。
@@ -108,5 +112,5 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 
 如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票證以接收其他說明。
+- [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票證以接收其他說明。
