@@ -2,7 +2,7 @@
 title: 管理Facet
 description: 瞭解如何管理現有的 [!DNL Live Search] 多面向。
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ ht-degree: 0%
 
 1. 在&#x200B;**最大值**&#x200B;欄中，設定要顯示在店面中的Facet篩選值數目上限（從0到10）。
 1. 完成時，按一下&#x200B;**儲存**。
-您的變更要等到發佈後才顯示在店面上。
+
+   您的變更要等到發佈後才顯示在店面上。
 
 ## 釘選/取消釘選面向
 
 圖釘在按一下時會變更顏色，可用來將多面向移動至&#x200B;*釘選多面向*&#x200B;或&#x200B;*動態多面向*&#x200B;區段。
 
 1. 若要將Facet釘選到&#x200B;*篩選器*&#x200B;清單的頂端，請在&#x200B;*動態Facet*&#x200B;清單中尋找Facet，然後按一下灰色圖釘（![釘選器](assets/btn-pin-gray.png)）。
-圖釘會變成藍色，而Facet會移至*釘住Facet*&#x200B;區段。
+
+   圖釘會變成藍色，而Facet會移至&#x200B;*釘住Facet*&#x200B;區段。
+
 1. 若要取消釘選Facet，請在&#x200B;*釘選Facet*&#x200B;清單中尋找Facet，然後按一下藍色圖釘（![釘選器](assets/btn-pin-blue.png)）。
-圖釘會變成灰色，而多面會移至*動態Facet*&#x200B;區段。
+
+   圖釘會變成灰色，而多面會移至&#x200B;*動態Facet*&#x200B;區段。
 
    ![釘選與動態Facet](assets/facets-pinned-unpinned.png)
 
@@ -76,8 +80,9 @@ ht-degree: 0%
 將列移至不同位置可變更釘選多面的順序。 釘選的多面資料列開頭有&#x200B;*移動*&#x200B;圖示（![移動選取器](assets/btn-move.png)）。 與釘選多面不同，動態Facet無法移動。
 
 1. 在清單的&#x200B;*釘選Facet*&#x200B;區段中尋找Facet。
-1. 使用&#x200B;**移動** （![移動選取器](assets/btn-move.png)）圖示，將資料列拖曳至&#x200B;*釘選Facet*區段中的新位置。
-發佈變更後，重新排序的多面會出現在店面*篩選器*&#x200B;清單中。
+1. 使用&#x200B;**移動** （![移動選取器](assets/btn-move.png)）圖示，將資料列拖曳至&#x200B;*釘選Facet*&#x200B;區段中的新位置。
+
+   發佈變更後，重新排序的多面會出現在店面&#x200B;*篩選器*&#x200B;清單中。
 
 ## 刪除Facet
 
