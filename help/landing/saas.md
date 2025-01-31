@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ ht-degree: 0%
 
 只要不同時在多個環境中使用相同的資料空間，您就可以在任何非生產環境中使用測試資料空間。 若要在不同的環境中使用測試資料空間，請先執行資料清理，然後再在該環境中選取和設定資料空間。
 
-對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，為每個中繼環境要求額外的測試資料空間。 不過，如果您只有一個測試環境，且需要額外的測試資料空間，您有以下選項：
-- 請聯絡客戶成功團隊或您指派的客戶成功案例經理，以要求額外的測試環境。 另外需要額外付費。
-- [提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以取得額外的測試資料空間，並說明額外資料空間的商業理由。 此請求有待核准。
+對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)，為每個中繼環境要求額外的測試資料空間。 不過，如果您只有一個測試環境，且需要額外的測試資料空間，您有以下選項：
+- 請聯絡客戶成功團隊或您指派的客戶成功案例經理，以要求額外的測試環境。
+- [提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求額外的測試資料空間，並指明額外資料空間的商業理由。 此請求有待核准。
+
+使用Adobe支付服務的Magento Open Source客戶可能也會要求額外的資料空間。 請在提交[支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求測試資料空間之前，先連絡付款團隊以取得其他資料空間的預先核准。
 
 ### 選取或建立SaaS專案 {#createsaasenv}
 
