@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.3.18版
 
-產品與類別實體的![修正](../assets/fix.svg)測試更新現在會在資料匯出資料更新上正確觸發。&lt;！-MDEE-963—>
+產品與類別實體的![修正](../assets/fix.svg)測試更新現在已在資料匯出資料更新上正確觸發。<!--MDEE-963-->
 
 ## 103.3.17版
 
