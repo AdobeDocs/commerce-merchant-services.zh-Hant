@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
+## 103.3.18版
+
+產品與類別實體的![修正](../assets/fix.svg)測試更新現在會在資料匯出資料更新上正確觸發。&lt;！-MDEE-963—>
+
 ## 103.3.17版
 
-![修正](../assets/fix.svg)已新增PHP 8.4的相容性。 &lt;！-MDEE-941—>
+![修正](../assets/fix.svg)已新增PHP 8.4的相容性。<!--MDEE-941-->
 
 ## 103.3.16版
 
-針對多個商店檢視的可設定產品，![Fix](../assets/fix.svg)選項值可以空白。 &lt;！-MDEE-926—>
+針對多個商店檢視的可設定產品，![Fix](../assets/fix.svg)選項值可以空白。<!--MDEE-926-->
 
 ## 103.3.15版
 
-![修正](../assets/fix.svg)已確保在舊組態上穩定執行整合測試。 &lt;！-MDEE-869—>
-![修正](../assets/fix.svg)停止傳播不必要的屬性選項。 &lt;！-MDEE-882—>
-![修正](../assets/fix.svg)修正當資料序列化失敗時，傳送至資料匯出記錄檔的錯誤訊息。 &lt;！-MDEE-913—>
-![修正](../assets/fix.svg)透過額外的測試涵蓋範圍來增強簡單產品更新的可靠性。 &lt;！-MDEE-886—>
+![修正](../assets/fix.svg)已確保在舊組態上穩定執行整合測試。 <!--MDEE-869-->
+![修正](../assets/fix.svg)停止傳播不必要的屬性選項。 <!--MDEE-882-->
+![修正](../assets/fix.svg)修正當資料序列化失敗時，傳送至資料匯出記錄檔的錯誤訊息。 <!--MDEE-913-->
+![修正](../assets/fix.svg)透過額外的測試涵蓋範圍來增強簡單產品更新的可靠性。<!--MDEE-886-->
 
 ## 103.3.14版
 
-![修正](../assets/fix.svg)匯出工具索引器現在會維持相依索引器的正確狀態。 以前，這些索引錯誤地失效，需要進行額外的檢查和驗證，以減緩索引效能。 &lt;！-MDEE-866—>
+![修正](../assets/fix.svg)匯出工具索引器現在會維持相依索引器的正確狀態。 以前，這些索引錯誤地失效，需要進行額外的檢查和驗證，以減緩索引效能。<!--MDEE-866-->
 
 ## 103.3.13版本
 
-![修正](../assets/fix.svg)為屬性選項資料新增本機快取，以改善資料同步處理程式的效能。&lt;！-MDEE-864—>
+![修正](../assets/fix.svg)為屬性選項資料新增本機快取，以改善資料同步處理程式的效能。<!--MDEE-864-->
 
 ## 103.3.12版
 
-![修正](../assets/fix.svg)解決增加簡單與虛擬產品同步處理時間的問題。 &lt;！-MDEE-861—>
+![修正](../assets/fix.svg)解決增加簡單與虛擬產品同步處理時間的問題。<!--MDEE-861-->
 
 ## 103.3.11版
 
