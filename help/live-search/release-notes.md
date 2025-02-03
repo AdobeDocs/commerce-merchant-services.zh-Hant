@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 託管服務更新
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+
+_2025年1月31日_
+
+![新](../assets/new.svg)測試環境中未查詢的目錄資料有新的資料保留原則。 [深入瞭解](overview.md#catalog-data-retention-policy)。
 
 _2024年9月19日_
 

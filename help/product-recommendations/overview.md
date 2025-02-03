@@ -3,9 +3,9 @@ title: ' [!DNL Product Recommendations]簡介'
 description: '[!DNL Product Recommendations]是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ ht-degree: 0%
 觀看此影片以瞭解[!DNL Product Recommendations]：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## 目錄資料保留原則
+
+如果您連續90天未提交測試環境中目錄資料的查詢，則目錄資料會設定為休眠模式，且任何查詢都不會傳回任何資料。 此原則不會影響生產環境中的目錄資料。
+
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Product Recommendations]」的支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。

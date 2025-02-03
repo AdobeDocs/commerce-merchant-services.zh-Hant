@@ -2,9 +2,9 @@
 title: 效能
 description: ' [!DNL Live Search] 效能工作區可讓您深入瞭解購物者使用的搜尋字詞。'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 您也可以參閱[資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)，以取得資料同步的詳細資訊。
 
+>[!NOTE]
+>
+>效能工作區每12小時更新一次。
+
 ## 檢視報告
 
 1. 若要輸入&#x200B;**日期範圍**，請按一下行事曆（![行事曆](assets/btn-calendar.png)），然後執行下列任一項作業：
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->效能工作區每12小時更新一次。
+>日期範圍不能超過一年。
 
 ## 欄位說明
 
