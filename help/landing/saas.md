@@ -4,9 +4,9 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ ht-degree: 0%
 
 1. 從&#x200B;_環境_&#x200B;功能表，選取&#x200B;**生產**&#x200B;或&#x200B;**沙箱**。
 
+   >[!NOTE]
+   >
+   >*生產*&#x200B;和&#x200B;*沙箱*&#x200B;是指資料儲存在AdobeSaaS後端系統中的資料空間環境。 它並非指您將使用金鑰的商務環境。
+
 1. 在&#x200B;_API金鑰_&#x200B;區段中輸入名稱，然後按一下&#x200B;**新增**&#x200B;以開啟對話方塊下載新金鑰。
 
    ![下載私密金鑰](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ ht-degree: 0%
 
 1. 對每個環境（生產和沙箱）重複上述步驟。
 
-   **API金鑰**&#x200B;區段現在會顯示您的API （公開）金鑰。 當您[在與授權相關的任何環境/安裝中選取或建立SaaS專案](#createsaasenv)時，您需要所有四個金鑰（生產金鑰和沙箱金鑰，均為Public+Private）。
+   **API金鑰**&#x200B;區段現在會顯示您的API （公開）金鑰。 當您[在與授權相關的任何環境或安裝中選取或建立SaaS專案](#createsaasenv)時，您需要所有四個金鑰（生產金鑰和沙箱金鑰，均為Public+Private）。
 
 ## SaaS設定 {#saasenv}
 
