@@ -5,9 +5,9 @@ feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
-source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 
 ## 目前的主要版本
 
+## 1.0.9版
+
+![修正](../assets/fix.svg)已新增PHP 8.4的相容性。<!--MDEE-941-->
+
 ## 1.0.8版本
 
-![修正](../assets/fix.svg)修正將具有數值SKU的可設定產品變體新增至願望清單時，造成例外狀況記錄錯誤的問題。 &lt;！-MDEE-876—>
+![修正](../assets/fix.svg)修正將具有數值SKU的可設定產品變體新增至願望清單時，造成例外狀況記錄錯誤的問題。<!--MDEE-876-->
