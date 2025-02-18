@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 ## 1.安裝[!DNL Live Search]擴充功能
 
-已從[Adobe市集](https://commercemarketplace.adobe.com/magento-live-search.html)透過[Composer](https://getcomposer.org/)將[!DNL Live Search]安裝為擴充功能。 安裝並設定[!DNL Live Search]後，Adobe[!DNL Commerce]會開始與SaaS服務共用搜尋和目錄資料。 此時，*管理員*&#x200B;使用者可以設定、自訂及管理搜尋Facet、同義字及銷售規則。
+已從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)透過[Composer](https://getcomposer.org/)將[!DNL Live Search]安裝為擴充功能。 安裝並設定[!DNL Live Search]後，Adobe [!DNL Commerce]會開始與SaaS服務共用搜尋和目錄資料。 此時，*管理員*&#x200B;使用者可以設定、自訂及管理搜尋Facet、同義字及銷售規則。
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
    >[!IMPORTANT]
    >
-   >由於Elasticsearch7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱&#x200B;_升級指南_&#x200B;中的[移轉至OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
+   >鑑於Elasticsearch 7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱&#x200B;_升級指南_&#x200B;中的[移轉至OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
 
-1. 從[Adobe市集](https://commercemarketplace.adobe.com/magento-live-search.html)下載`live-search`套件。
+1. 從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)下載`live-search`套件。
 
 1. 從命令列執行以下命令：
 
@@ -227,7 +227,7 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >如果您收到`table does not exist`錯誤，請尋找`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表格中的專案。 這些資料表名稱用於4.2.1之前的[!DNL Live Search]版本。
 
-- 使用具有預設查詢的[GraphQL遊樂場](https://developer.adobe.com/commerce/services/graphql/live-search/)來驗證以下內容：
+- 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) (如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/services/graphql/live-search/))以驗證下列專案：
 
    - 傳回的產品計數接近您對商店檢視的預期。
    - 會傳回多面向。
@@ -402,7 +402,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
 - [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
 
-若您未使用搜尋配接器、Luma Widget或AEM CIF Widget等標準元件，預設將無法自動收集使用者互動資料。 Adobe Sensei會使用這項收集到的資料進行智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
+若您未使用搜尋配接器、Luma Widget或AEM CIF Widget等標準元件，預設無法自動收集使用者互動資料。 Adobe Sensei會使用這項收集到的資料進行智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
 
 [!DNL Live Search]的最新版本已使用[!DNL Catalog Service]。
 
@@ -508,13 +508,13 @@ composer require magento/module-data-services-graphql
 
 ### PWA支援
 
-[!DNL Live Search]可與PWA Studio搭配使用，但使用者可能會看到與其他Commerce實作稍微有些差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 可能也會有效能差異。
+[!DNL Live Search]可與PWA Studio搭配使用，但使用者在其他Commerce實作中可能會看到細微的差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 可能也會有效能差異。
 
 - 目前[!DNL Live Search]的PWA實作需要比[!DNL Live Search]更長的處理時間才能傳回搜尋結果(使用原生Commerce店面)。
 - PWA中的[!DNL Live Search]不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜尋報告和智慧型銷售無法在PWA商店上運作。
 - 使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)時，GraphQL不支援直接篩選`description`、`name`、`short_description`，但這些欄位可透過較一般的篩選傳回。
 
-若要搭配PWA Studio使用[!DNL Live Search]，整合器也必須：
+若要搭配PWA Studio使用[!DNL Live Search]，整合經銷商也必須：
 
 1. 安裝[livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)。
 1. 在`storeDetails`物件中設定`environmentId`。
