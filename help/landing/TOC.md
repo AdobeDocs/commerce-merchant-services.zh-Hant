@@ -5,10 +5,10 @@ title: Adobe Commerce 服務
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 851287f4351c3ee8ccd24de4051a831352f73e48
+source-git-commit: 28a0743231c64b10844007db1a86e3448bae46c2
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 34%
+source-wordcount: '62'
+ht-degree: 38%
 
 ---
 
@@ -17,8 +17,6 @@ ht-degree: 34%
 - [概觀](home.md)
 - 發行資訊{#release-information}
    - [發行說明](/help/landing/release-notes-all.md)
-- 可撰寫的目錄{#composable-catalog}
-   - [可撰寫的目錄資料模型](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-data-model/overview.html)
 - Commerce服務{#commerce-services}
    - Commerce服務{#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
